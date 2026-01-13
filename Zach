@@ -273,7 +273,7 @@ local function scan()
         return
     end
 
-    LMG2L["Inject_35"].Text = "Scanning..."
+    LMG2L["Inject_35"].Text = "Injecting..."
     local startTime = tick()
 
     local remotes = {}
@@ -317,16 +317,25 @@ end
 
 local function executeScript(code)
     if not backdoorRemote then
-        warn("Inject dulu bro!")
+        warn("Inject First!")
         return
     end
     fire(backdoorRemote, code)
 end
 
 LMG2L["Execute_6"].MouseButton1Click:Connect(function()
-    local cmd = LMG2L["TextBox_38"].Text
+    local cmd = LMG2L["TextBox_13].Text
     if cmd:gsub("%s","") == "" then return end
-    executeScript(cmd)
+
+    for _, bd in ipairs(foundBackdoors) do
+        pcall(function()
+            if bd:IsA("RemoteEvent") or bd:IsA("BindableEvent") then
+                bd:FireServer(cmd)
+            elseif bd:IsA("RemoteFunction") then
+                bd:InvokeServer(cmd)
+            end
+        end)
+    end
 end)
 
 LMG2L["Clear_28"].MouseButton1Click:Connect(function()
