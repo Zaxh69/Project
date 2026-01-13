@@ -324,7 +324,7 @@ local function executeScript(code)
 end
 
 LMG2L["Execute_6"].MouseButton1Click:Connect(function()
-    local cmd = LMG2L["TextBox_13].Text
+    local cmd = LMG2L["TextBox_38].Text
     if cmd:gsub("%s","") == "" then return end
 
     for _, bd in ipairs(foundBackdoors) do
