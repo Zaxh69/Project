@@ -1,0 +1,3262 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+local LMG2L = {};
+
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["ScreenGui_1"]["IgnoreGuiInset"] = true;
+LMG2L["ScreenGui_1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false;
+
+
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["Frame_2"]["BorderSizePixel"] = 0;
+LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
+LMG2L["Frame_2"]["Size"] = UDim2.new(0, 430, 0, 434);
+LMG2L["Frame_2"]["Position"] = UDim2.new(0, 244, 0, -18);
+
+
+LMG2L["Refresh Me_3"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["Refresh Me_3"]["TextWrapped"] = true;
+LMG2L["Refresh Me_3"]["BorderSizePixel"] = 0;
+LMG2L["Refresh Me_3"]["TextSize"] = 24;
+LMG2L["Refresh Me_3"]["TextScaled"] = true;
+LMG2L["Refresh Me_3"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
+LMG2L["Refresh Me_3"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
+LMG2L["Refresh Me_3"]["Size"] = UDim2.new(0, 78, 0, 30);
+LMG2L["Refresh Me_3"]["Text"] = [[Re]];
+LMG2L["Refresh Me_3"]["Name"] = [[Refresh Me]];
+LMG2L["Refresh Me_3"]["Position"] = UDim2.new(0, 6, 0, 40);
+
+
+LMG2L["LocalScript_4"] = Instance.new("LocalScript", LMG2L["Refresh Me_3"]);
+
+
+
+LMG2L["UIStroke_5"] = Instance.new("UIStroke", LMG2L["Refresh Me_3"]);
+LMG2L["UIStroke_5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_5"]["Color"] = Color3.fromRGB(46, 30, 255);
+
+
+LMG2L["Page 2_6"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["Page 2_6"]["TextWrapped"] = true;
+LMG2L["Page 2_6"]["BorderSizePixel"] = 0;
+LMG2L["Page 2_6"]["TextSize"] = 20;
+LMG2L["Page 2_6"]["TextColor3"] = Color3.fromRGB(58, 26, 255);
+LMG2L["Page 2_6"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 19);
+LMG2L["Page 2_6"]["Size"] = UDim2.new(0, 142, 0, 56);
+LMG2L["Page 2_6"]["Text"] = [[M3sic Page ]];
+LMG2L["Page 2_6"]["Name"] = [[Page 2]];
+LMG2L["Page 2_6"]["Position"] = UDim2.new(0, 438, 0, 242);
+
+
+LMG2L["LocalScript_7"] = Instance.new("LocalScript", LMG2L["Page 2_6"]);
+
+
+
+LMG2L["Frame3_8"] = Instance.new("Frame", LMG2L["Page 2_6"]);
+LMG2L["Frame3_8"]["Visible"] = false;
+LMG2L["Frame3_8"]["BorderSizePixel"] = 0;
+LMG2L["Frame3_8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Frame3_8"]["Size"] = UDim2.new(0, 422, 0, 344);
+LMG2L["Frame3_8"]["Position"] = UDim2.new(0, -434, 0, -158);
+LMG2L["Frame3_8"]["Name"] = [[Frame3]];
+
+
+LMG2L["ScrollingFrame_9"] = Instance.new("ScrollingFrame", LMG2L["Frame3_8"]);
+LMG2L["ScrollingFrame_9"]["BorderSizePixel"] = 2;
+LMG2L["ScrollingFrame_9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["ScrollingFrame_9"]["Size"] = UDim2.new(0, 418, 0, 334);
+LMG2L["ScrollingFrame_9"]["Position"] = UDim2.new(0, -2, 0, 4);
+LMG2L["ScrollingFrame_9"]["BorderColor3"] = Color3.fromRGB(34, 18, 255);
+LMG2L["ScrollingFrame_9"]["BackgroundTransparency"] = 1;
+
+
+LMG2L["Ambatu 1_a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Ambatu 1_a"]["TextWrapped"] = true;
+LMG2L["Ambatu 1_a"]["BorderSizePixel"] = 0;
+LMG2L["Ambatu 1_a"]["TextScaled"] = true;
+LMG2L["Ambatu 1_a"]["TextColor3"] = Color3.fromRGB(255, 7, 76);
+LMG2L["Ambatu 1_a"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Ambatu 1_a"]["Size"] = UDim2.new(0, 128, 0, 50);
+LMG2L["Ambatu 1_a"]["Text"] = [[Ambatukam 1 warnn]];
+LMG2L["Ambatu 1_a"]["Name"] = [[Ambatu 1]];
+LMG2L["Ambatu 1_a"]["Position"] = UDim2.new(0, 274, 0, 168);
+
+
+LMG2L["LocalScript_b"] = Instance.new("LocalScript", LMG2L["Ambatu 1_a"]);
+
+
+
+LMG2L["UIStroke_c"] = Instance.new("UIStroke", LMG2L["Ambatu 1_a"]);
+LMG2L["UIStroke_c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_c"]["Thickness"] = 2;
+LMG2L["UIStroke_c"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Nasheed _d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Nasheed _d"]["TextWrapped"] = true;
+LMG2L["Nasheed _d"]["BorderSizePixel"] = 0;
+LMG2L["Nasheed _d"]["TextScaled"] = true;
+LMG2L["Nasheed _d"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Nasheed _d"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Nasheed _d"]["Size"] = UDim2.new(0, 126, 0, 46);
+LMG2L["Nasheed _d"]["Text"] = [[Nasheed]];
+LMG2L["Nasheed _d"]["Name"] = [[Nasheed ]];
+LMG2L["Nasheed _d"]["Position"] = UDim2.new(0, 276, 0, 278);
+
+
+LMG2L["LocalScript_e"] = Instance.new("LocalScript", LMG2L["Nasheed _d"]);
+
+
+
+LMG2L["UIStroke_f"] = Instance.new("UIStroke", LMG2L["Nasheed _d"]);
+LMG2L["UIStroke_f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_f"]["Thickness"] = 2;
+LMG2L["UIStroke_f"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["2k21 jumping is not a crim_10"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["2k21 jumping is not a crim_10"]["TextWrapped"] = true;
+LMG2L["2k21 jumping is not a crim_10"]["BorderSizePixel"] = 0;
+LMG2L["2k21 jumping is not a crim_10"]["TextScaled"] = true;
+LMG2L["2k21 jumping is not a crim_10"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["2k21 jumping is not a crim_10"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["2k21 jumping is not a crim_10"]["Size"] = UDim2.new(0, 124, 0, 50);
+LMG2L["2k21 jumping is not a crim_10"]["Text"] = [[2k21]];
+LMG2L["2k21 jumping is not a crim_10"]["Name"] = [[2k21 jumping is not a crim]];
+LMG2L["2k21 jumping is not a crim_10"]["Position"] = UDim2.new(0, 8, 0, 384);
+
+
+LMG2L["LocalScript_11"] = Instance.new("LocalScript", LMG2L["2k21 jumping is not a crim_10"]);
+
+
+
+LMG2L["UIStroke_12"] = Instance.new("UIStroke", LMG2L["2k21 jumping is not a crim_10"]);
+LMG2L["UIStroke_12"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_12"]["Thickness"] = 2;
+LMG2L["UIStroke_12"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Loud Moaning_13"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Loud Moaning_13"]["TextWrapped"] = true;
+LMG2L["Loud Moaning_13"]["BorderSizePixel"] = 0;
+LMG2L["Loud Moaning_13"]["TextScaled"] = true;
+LMG2L["Loud Moaning_13"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+LMG2L["Loud Moaning_13"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Loud Moaning_13"]["Size"] = UDim2.new(0, 132, 0, 48);
+LMG2L["Loud Moaning_13"]["Text"] = [[Loud Moaning Warnn]];
+LMG2L["Loud Moaning_13"]["Name"] = [[Loud Moaning]];
+LMG2L["Loud Moaning_13"]["Position"] = UDim2.new(0, 134, 0, 168);
+
+
+LMG2L["LocalScript_14"] = Instance.new("LocalScript", LMG2L["Loud Moaning_13"]);
+
+
+
+LMG2L["UIStroke_15"] = Instance.new("UIStroke", LMG2L["Loud Moaning_13"]);
+LMG2L["UIStroke_15"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_15"]["Thickness"] = 2;
+LMG2L["UIStroke_15"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Theme_16"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Theme_16"]["TextWrapped"] = true;
+LMG2L["Theme_16"]["BorderSizePixel"] = 0;
+LMG2L["Theme_16"]["TextScaled"] = true;
+LMG2L["Theme_16"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Theme_16"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Theme_16"]["Size"] = UDim2.new(0, 132, 0, 48);
+LMG2L["Theme_16"]["Text"] = [[THEME]];
+LMG2L["Theme_16"]["Name"] = [[Theme]];
+LMG2L["Theme_16"]["Position"] = UDim2.new(0, 132, 0, 4);
+
+
+LMG2L["LocalScript_17"] = Instance.new("LocalScript", LMG2L["Theme_16"]);
+
+
+
+LMG2L["UIStroke_18"] = Instance.new("UIStroke", LMG2L["Theme_16"]);
+LMG2L["UIStroke_18"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_18"]["Thickness"] = 2;
+LMG2L["UIStroke_18"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Ambatu 2_19"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Ambatu 2_19"]["TextWrapped"] = true;
+LMG2L["Ambatu 2_19"]["BorderSizePixel"] = 0;
+LMG2L["Ambatu 2_19"]["TextScaled"] = true;
+LMG2L["Ambatu 2_19"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+LMG2L["Ambatu 2_19"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Ambatu 2_19"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Ambatu 2_19"]["Text"] = [[Ambatukam 2 warnn]];
+LMG2L["Ambatu 2_19"]["Name"] = [[Ambatu 2]];
+LMG2L["Ambatu 2_19"]["Position"] = UDim2.new(0, 8, 0, 220);
+
+
+LMG2L["LocalScript_1a"] = Instance.new("LocalScript", LMG2L["Ambatu 2_19"]);
+
+
+
+LMG2L["UIStroke_1b"] = Instance.new("UIStroke", LMG2L["Ambatu 2_19"]);
+LMG2L["UIStroke_1b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_1b"]["Thickness"] = 2;
+LMG2L["UIStroke_1b"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["g00by theme _1c"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["g00by theme _1c"]["TextWrapped"] = true;
+LMG2L["g00by theme _1c"]["BorderSizePixel"] = 0;
+LMG2L["g00by theme _1c"]["TextScaled"] = true;
+LMG2L["g00by theme _1c"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["g00by theme _1c"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["g00by theme _1c"]["Size"] = UDim2.new(0, 116, 0, 48);
+LMG2L["g00by theme _1c"]["Text"] = [[G00by theme ]];
+LMG2L["g00by theme _1c"]["Name"] = [[g00by theme ]];
+LMG2L["g00by theme _1c"]["Position"] = UDim2.new(0, 8, 0, 60);
+
+
+LMG2L["LocalScript_1d"] = Instance.new("LocalScript", LMG2L["g00by theme _1c"]);
+
+
+
+LMG2L["UIStroke_1e"] = Instance.new("UIStroke", LMG2L["g00by theme _1c"]);
+LMG2L["UIStroke_1e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_1e"]["Thickness"] = 2;
+LMG2L["UIStroke_1e"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["fhfh_1f"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["fhfh_1f"]["TextWrapped"] = true;
+LMG2L["fhfh_1f"]["BorderSizePixel"] = 0;
+LMG2L["fhfh_1f"]["TextScaled"] = true;
+LMG2L["fhfh_1f"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["fhfh_1f"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["fhfh_1f"]["Size"] = UDim2.new(0, 116, 0, 44);
+LMG2L["fhfh_1f"]["Text"] = [[fhfh]];
+LMG2L["fhfh_1f"]["Name"] = [[fhfh]];
+LMG2L["fhfh_1f"]["Position"] = UDim2.new(0, 8, 0, 116);
+
+
+LMG2L["LocalScript_20"] = Instance.new("LocalScript", LMG2L["fhfh_1f"]);
+
+
+
+LMG2L["UIStroke_21"] = Instance.new("UIStroke", LMG2L["fhfh_1f"]);
+LMG2L["UIStroke_21"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_21"]["Thickness"] = 2;
+LMG2L["UIStroke_21"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Wonga_22"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Wonga_22"]["TextWrapped"] = true;
+LMG2L["Wonga_22"]["BorderSizePixel"] = 0;
+LMG2L["Wonga_22"]["TextScaled"] = true;
+LMG2L["Wonga_22"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Wonga_22"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Wonga_22"]["Size"] = UDim2.new(0, 128, 0, 48);
+LMG2L["Wonga_22"]["Text"] = [[Wonga]];
+LMG2L["Wonga_22"]["Name"] = [[Wonga]];
+LMG2L["Wonga_22"]["Position"] = UDim2.new(0, 272, 0, 114);
+
+
+LMG2L["LocalScript_23"] = Instance.new("LocalScript", LMG2L["Wonga_22"]);
+
+
+
+LMG2L["UIStroke_24"] = Instance.new("UIStroke", LMG2L["Wonga_22"]);
+LMG2L["UIStroke_24"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_24"]["Thickness"] = 2;
+LMG2L["UIStroke_24"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Epstin Fuck Nigger _25"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Epstin Fuck Nigger _25"]["TextWrapped"] = true;
+LMG2L["Epstin Fuck Nigger _25"]["BorderSizePixel"] = 0;
+LMG2L["Epstin Fuck Nigger _25"]["TextScaled"] = true;
+LMG2L["Epstin Fuck Nigger _25"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Epstin Fuck Nigger _25"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Epstin Fuck Nigger _25"]["Size"] = UDim2.new(0, 118, 0, 48);
+LMG2L["Epstin Fuck Nigger _25"]["Text"] = [[EPSTIN FUCK NIGGER ]];
+LMG2L["Epstin Fuck Nigger _25"]["Name"] = [[Epstin Fuck Nigger ]];
+LMG2L["Epstin Fuck Nigger _25"]["Position"] = UDim2.new(0, 8, 0, 166);
+
+
+LMG2L["LocalScript_26"] = Instance.new("LocalScript", LMG2L["Epstin Fuck Nigger _25"]);
+
+
+
+LMG2L["UIStroke_27"] = Instance.new("UIStroke", LMG2L["Epstin Fuck Nigger _25"]);
+LMG2L["UIStroke_27"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_27"]["Thickness"] = 2;
+LMG2L["UIStroke_27"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Theme2_28"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Theme2_28"]["TextWrapped"] = true;
+LMG2L["Theme2_28"]["BorderSizePixel"] = 0;
+LMG2L["Theme2_28"]["TextScaled"] = true;
+LMG2L["Theme2_28"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Theme2_28"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Theme2_28"]["Size"] = UDim2.new(0, 130, 0, 48);
+LMG2L["Theme2_28"]["Text"] = [[THEME2]];
+LMG2L["Theme2_28"]["Name"] = [[Theme2]];
+LMG2L["Theme2_28"]["Position"] = UDim2.new(0, 270, 0, 4);
+
+
+LMG2L["LocalScript_29"] = Instance.new("LocalScript", LMG2L["Theme2_28"]);
+
+
+
+LMG2L["UIStroke_2a"] = Instance.new("UIStroke", LMG2L["Theme2_28"]);
+LMG2L["UIStroke_2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_2a"]["Thickness"] = 2;
+LMG2L["UIStroke_2a"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["King Von_2b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["King Von_2b"]["TextWrapped"] = true;
+LMG2L["King Von_2b"]["BorderSizePixel"] = 0;
+LMG2L["King Von_2b"]["TextScaled"] = true;
+LMG2L["King Von_2b"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["King Von_2b"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["King Von_2b"]["Size"] = UDim2.new(0, 124, 0, 48);
+LMG2L["King Von_2b"]["Text"] = [[King Von]];
+LMG2L["King Von_2b"]["Name"] = [[King Von]];
+LMG2L["King Von_2b"]["Position"] = UDim2.new(0, 280, 0, 388);
+
+
+LMG2L["LocalScript_2c"] = Instance.new("LocalScript", LMG2L["King Von_2b"]);
+
+
+
+LMG2L["UIStroke_2d"] = Instance.new("UIStroke", LMG2L["King Von_2b"]);
+LMG2L["UIStroke_2d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_2d"]["Thickness"] = 2;
+LMG2L["UIStroke_2d"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Nazi_2e"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Nazi_2e"]["TextWrapped"] = true;
+LMG2L["Nazi_2e"]["BorderSizePixel"] = 0;
+LMG2L["Nazi_2e"]["TextScaled"] = true;
+LMG2L["Nazi_2e"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Nazi_2e"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Nazi_2e"]["Size"] = UDim2.new(0, 122, 0, 48);
+LMG2L["Nazi_2e"]["Text"] = [[Nazi]];
+LMG2L["Nazi_2e"]["Name"] = [[Nazi]];
+LMG2L["Nazi_2e"]["Position"] = UDim2.new(0, 8, 0, 330);
+
+
+LMG2L["LocalScript_2f"] = Instance.new("LocalScript", LMG2L["Nazi_2e"]);
+
+
+
+LMG2L["UIStroke_30"] = Instance.new("UIStroke", LMG2L["Nazi_2e"]);
+LMG2L["UIStroke_30"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_30"]["Thickness"] = 2;
+LMG2L["UIStroke_30"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Audio_31"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Audio_31"]["TextWrapped"] = true;
+LMG2L["Audio_31"]["BorderSizePixel"] = 0;
+LMG2L["Audio_31"]["TextScaled"] = true;
+LMG2L["Audio_31"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Audio_31"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Audio_31"]["Size"] = UDim2.new(0, 132, 0, 48);
+LMG2L["Audio_31"]["Text"] = [[Audio]];
+LMG2L["Audio_31"]["Name"] = [[Audio]];
+LMG2L["Audio_31"]["Position"] = UDim2.new(0, 134, 0, 114);
+
+
+LMG2L["LocalScript_32"] = Instance.new("LocalScript", LMG2L["Audio_31"]);
+
+
+
+LMG2L["UIStroke_33"] = Instance.new("UIStroke", LMG2L["Audio_31"]);
+LMG2L["UIStroke_33"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_33"]["Thickness"] = 2;
+LMG2L["UIStroke_33"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Lazy Town _34"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Lazy Town _34"]["TextWrapped"] = true;
+LMG2L["Lazy Town _34"]["BorderSizePixel"] = 0;
+LMG2L["Lazy Town _34"]["TextScaled"] = true;
+LMG2L["Lazy Town _34"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Lazy Town _34"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Lazy Town _34"]["Size"] = UDim2.new(0, 132, 0, 48);
+LMG2L["Lazy Town _34"]["Text"] = [[Lazy Town ]];
+LMG2L["Lazy Town _34"]["Name"] = [[Lazy Town ]];
+LMG2L["Lazy Town _34"]["Position"] = UDim2.new(0, 136, 0, 222);
+
+
+LMG2L["LocalScript_35"] = Instance.new("LocalScript", LMG2L["Lazy Town _34"]);
+
+
+
+LMG2L["UIStroke_36"] = Instance.new("UIStroke", LMG2L["Lazy Town _34"]);
+LMG2L["UIStroke_36"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_36"]["Thickness"] = 2;
+LMG2L["UIStroke_36"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Spooky Scary Skeleton _37"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Spooky Scary Skeleton _37"]["TextWrapped"] = true;
+LMG2L["Spooky Scary Skeleton _37"]["BorderSizePixel"] = 0;
+LMG2L["Spooky Scary Skeleton _37"]["TextScaled"] = true;
+LMG2L["Spooky Scary Skeleton _37"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Spooky Scary Skeleton _37"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Spooky Scary Skeleton _37"]["Size"] = UDim2.new(0, 132, 0, 48);
+LMG2L["Spooky Scary Skeleton _37"]["Text"] = [[Spooky Scary Skeleton ]];
+LMG2L["Spooky Scary Skeleton _37"]["Name"] = [[Spooky Scary Skeleton ]];
+LMG2L["Spooky Scary Skeleton _37"]["Position"] = UDim2.new(0, 138, 0, 332);
+
+
+LMG2L["LocalScript_38"] = Instance.new("LocalScript", LMG2L["Spooky Scary Skeleton _37"]);
+
+
+
+LMG2L["UIStroke_39"] = Instance.new("UIStroke", LMG2L["Spooky Scary Skeleton _37"]);
+LMG2L["UIStroke_39"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_39"]["Thickness"] = 2;
+LMG2L["UIStroke_39"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["HardStyle _3a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["HardStyle _3a"]["TextWrapped"] = true;
+LMG2L["HardStyle _3a"]["BorderSizePixel"] = 0;
+LMG2L["HardStyle _3a"]["TextScaled"] = true;
+LMG2L["HardStyle _3a"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["HardStyle _3a"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["HardStyle _3a"]["Size"] = UDim2.new(0, 132, 0, 48);
+LMG2L["HardStyle _3a"]["Text"] = [[HardStyle ]];
+LMG2L["HardStyle _3a"]["Name"] = [[HardStyle ]];
+LMG2L["HardStyle _3a"]["Position"] = UDim2.new(0, 140, 0, 386);
+
+
+LMG2L["LocalScript_3b"] = Instance.new("LocalScript", LMG2L["HardStyle _3a"]);
+
+
+
+LMG2L["UIStroke_3c"] = Instance.new("UIStroke", LMG2L["HardStyle _3a"]);
+LMG2L["UIStroke_3c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_3c"]["Thickness"] = 2;
+LMG2L["UIStroke_3c"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Bonita_3d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Bonita_3d"]["TextWrapped"] = true;
+LMG2L["Bonita_3d"]["BorderSizePixel"] = 0;
+LMG2L["Bonita_3d"]["TextScaled"] = true;
+LMG2L["Bonita_3d"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Bonita_3d"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Bonita_3d"]["Size"] = UDim2.new(0, 132, 0, 48);
+LMG2L["Bonita_3d"]["Text"] = [[Bonita]];
+LMG2L["Bonita_3d"]["Name"] = [[Bonita]];
+LMG2L["Bonita_3d"]["Position"] = UDim2.new(0, 136, 0, 276);
+
+
+LMG2L["LocalScript_3e"] = Instance.new("LocalScript", LMG2L["Bonita_3d"]);
+
+
+
+LMG2L["UIStroke_3f"] = Instance.new("UIStroke", LMG2L["Bonita_3d"]);
+LMG2L["UIStroke_3f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_3f"]["Thickness"] = 2;
+LMG2L["UIStroke_3f"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Losta Spaghetti_40"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Losta Spaghetti_40"]["TextWrapped"] = true;
+LMG2L["Losta Spaghetti_40"]["BorderSizePixel"] = 0;
+LMG2L["Losta Spaghetti_40"]["TextScaled"] = true;
+LMG2L["Losta Spaghetti_40"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Losta Spaghetti_40"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Losta Spaghetti_40"]["Size"] = UDim2.new(0, 122, 0, 46);
+LMG2L["Losta Spaghetti_40"]["Text"] = [[Losta Spaghetti ]];
+LMG2L["Losta Spaghetti_40"]["Name"] = [[Losta Spaghetti]];
+LMG2L["Losta Spaghetti_40"]["Position"] = UDim2.new(0, 8, 0, 276);
+
+
+LMG2L["UIStroke_41"] = Instance.new("UIStroke", LMG2L["Losta Spaghetti_40"]);
+LMG2L["UIStroke_41"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_41"]["Thickness"] = 2;
+LMG2L["UIStroke_41"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["LocalScript_42"] = Instance.new("LocalScript", LMG2L["Losta Spaghetti_40"]);
+
+
+
+LMG2L["Stop All Music _43"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Stop All Music _43"]["TextWrapped"] = true;
+LMG2L["Stop All Music _43"]["BorderSizePixel"] = 0;
+LMG2L["Stop All Music _43"]["TextSize"] = 24;
+LMG2L["Stop All Music _43"]["TextScaled"] = true;
+LMG2L["Stop All Music _43"]["TextColor3"] = Color3.fromRGB(16, 17, 255);
+LMG2L["Stop All Music _43"]["BackgroundColor3"] = Color3.fromRGB(12, 12, 12);
+LMG2L["Stop All Music _43"]["Size"] = UDim2.new(0, 116, 0, 50);
+LMG2L["Stop All Music _43"]["Text"] = [[Stop All Music ]];
+LMG2L["Stop All Music _43"]["Name"] = [[Stop All Music ]];
+LMG2L["Stop All Music _43"]["Position"] = UDim2.new(0, 8, 0, 4);
+
+
+LMG2L["LocalScript_44"] = Instance.new("LocalScript", LMG2L["Stop All Music _43"]);
+
+
+
+LMG2L["UIStroke_45"] = Instance.new("UIStroke", LMG2L["Stop All Music _43"]);
+LMG2L["UIStroke_45"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_45"]["Thickness"] = 2;
+LMG2L["UIStroke_45"]["Color"] = Color3.fromRGB(24, 31, 255);
+
+
+LMG2L["trololo_46"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["trololo_46"]["TextWrapped"] = true;
+LMG2L["trololo_46"]["BorderSizePixel"] = 0;
+LMG2L["trololo_46"]["TextScaled"] = true;
+LMG2L["trololo_46"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["trololo_46"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["trololo_46"]["Size"] = UDim2.new(0, 128, 0, 50);
+LMG2L["trololo_46"]["Text"] = [[Trololo]];
+LMG2L["trololo_46"]["Name"] = [[trololo]];
+LMG2L["trololo_46"]["Position"] = UDim2.new(0, 272, 0, 58);
+
+
+LMG2L["LocalScript_47"] = Instance.new("LocalScript", LMG2L["trololo_46"]);
+
+
+
+LMG2L["UIStroke_48"] = Instance.new("UIStroke", LMG2L["trololo_46"]);
+LMG2L["UIStroke_48"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_48"]["Thickness"] = 2;
+LMG2L["UIStroke_48"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["K00pkidd theme_49"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["K00pkidd theme_49"]["TextWrapped"] = true;
+LMG2L["K00pkidd theme_49"]["BorderSizePixel"] = 0;
+LMG2L["K00pkidd theme_49"]["TextScaled"] = true;
+LMG2L["K00pkidd theme_49"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["K00pkidd theme_49"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["K00pkidd theme_49"]["Size"] = UDim2.new(0, 132, 0, 48);
+LMG2L["K00pkidd theme_49"]["Text"] = [[k00pkidd theme ]];
+LMG2L["K00pkidd theme_49"]["Name"] = [[K00pkidd theme]];
+LMG2L["K00pkidd theme_49"]["Position"] = UDim2.new(0, 134, 0, 60);
+
+
+LMG2L["LocalScript_4a"] = Instance.new("LocalScript", LMG2L["K00pkidd theme_49"]);
+
+
+
+LMG2L["UIStroke_4b"] = Instance.new("UIStroke", LMG2L["K00pkidd theme_49"]);
+LMG2L["UIStroke_4b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_4b"]["Thickness"] = 2;
+LMG2L["UIStroke_4b"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Sparta Remix _4c"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Sparta Remix _4c"]["TextWrapped"] = true;
+LMG2L["Sparta Remix _4c"]["BorderSizePixel"] = 0;
+LMG2L["Sparta Remix _4c"]["TextScaled"] = true;
+LMG2L["Sparta Remix _4c"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Sparta Remix _4c"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Sparta Remix _4c"]["Size"] = UDim2.new(0, 126, 0, 48);
+LMG2L["Sparta Remix _4c"]["Text"] = [[Sparta Remix ]];
+LMG2L["Sparta Remix _4c"]["Name"] = [[Sparta Remix ]];
+LMG2L["Sparta Remix _4c"]["Position"] = UDim2.new(0, 276, 0, 224);
+
+
+LMG2L["LocalScript_4d"] = Instance.new("LocalScript", LMG2L["Sparta Remix _4c"]);
+
+
+
+LMG2L["UIStroke_4e"] = Instance.new("UIStroke", LMG2L["Sparta Remix _4c"]);
+LMG2L["UIStroke_4e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_4e"]["Thickness"] = 2;
+LMG2L["UIStroke_4e"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Pirante?_4f"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["Pirante?_4f"]["TextWrapped"] = true;
+LMG2L["Pirante?_4f"]["BorderSizePixel"] = 0;
+LMG2L["Pirante?_4f"]["TextScaled"] = true;
+LMG2L["Pirante?_4f"]["TextColor3"] = Color3.fromRGB(32, 9, 255);
+LMG2L["Pirante?_4f"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Pirante?_4f"]["Size"] = UDim2.new(0, 128, 0, 48);
+LMG2L["Pirante?_4f"]["Text"] = [[Pirante?]];
+LMG2L["Pirante?_4f"]["Name"] = [[Pirante?]];
+LMG2L["Pirante?_4f"]["Position"] = UDim2.new(0, 276, 0, 332);
+
+
+LMG2L["LocalScript_50"] = Instance.new("LocalScript", LMG2L["Pirante?_4f"]);
+
+
+
+LMG2L["UIStroke_51"] = Instance.new("UIStroke", LMG2L["Pirante?_4f"]);
+LMG2L["UIStroke_51"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_51"]["Thickness"] = 2;
+LMG2L["UIStroke_51"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["UIStroke_52"] = Instance.new("UIStroke", LMG2L["Page 2_6"]);
+LMG2L["UIStroke_52"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_52"]["Thickness"] = 2;
+LMG2L["UIStroke_52"]["Color"] = Color3.fromRGB(23, 24, 255);
+
+
+LMG2L["Home_53"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["Home_53"]["TextWrapped"] = true;
+LMG2L["Home_53"]["BorderSizePixel"] = 0;
+LMG2L["Home_53"]["TextSize"] = 20;
+LMG2L["Home_53"]["TextColor3"] = Color3.fromRGB(17, 41, 255);
+LMG2L["Home_53"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+LMG2L["Home_53"]["Size"] = UDim2.new(0, 138, 0, 50);
+LMG2L["Home_53"]["Text"] = [[Home]];
+LMG2L["Home_53"]["Name"] = [[Home]];
+LMG2L["Home_53"]["Position"] = UDim2.new(0, 438, 0, 0);
+
+
+LMG2L["LocalScript_54"] = Instance.new("LocalScript", LMG2L["Home_53"]);
+
+
+
+LMG2L["Frame1_55"] = Instance.new("Frame", LMG2L["Home_53"]);
+LMG2L["Frame1_55"]["BorderSizePixel"] = 0;
+LMG2L["Frame1_55"]["BackgroundColor3"] = Color3.fromRGB(7, 7, 7);
+LMG2L["Frame1_55"]["Size"] = UDim2.new(0, 430, 0, 350);
+LMG2L["Frame1_55"]["Position"] = UDim2.new(0, -438, 0, 80);
+LMG2L["Frame1_55"]["Name"] = [[Frame1]];
+
+
+LMG2L["TextLabel2_56"] = Instance.new("TextLabel", LMG2L["Frame1_55"]);
+LMG2L["TextLabel2_56"]["TextWrapped"] = true;
+LMG2L["TextLabel2_56"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel2_56"]["TextSize"] = 30;
+LMG2L["TextLabel2_56"]["TextScaled"] = true;
+LMG2L["TextLabel2_56"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15);
+LMG2L["TextLabel2_56"]["TextColor3"] = Color3.fromRGB(57, 18, 255);
+LMG2L["TextLabel2_56"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel2_56"]["Size"] = UDim2.new(0, 416, 0, 94);
+LMG2L["TextLabel2_56"]["Text"] = [[MADE BY ZACHXPLOIT/ZACH'S ULTIMATE VERSION V2]];
+LMG2L["TextLabel2_56"]["Name"] = [[TextLabel2]];
+LMG2L["TextLabel2_56"]["Position"] = UDim2.new(0, 4, 0, 252);
+
+
+LMG2L["TextLabel_57"] = Instance.new("TextLabel", LMG2L["Frame1_55"]);
+LMG2L["TextLabel_57"]["TextWrapped"] = true;
+LMG2L["TextLabel_57"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_57"]["TextSize"] = 20;
+LMG2L["TextLabel_57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_57"]["TextColor3"] = Color3.fromRGB(28, 11, 255);
+LMG2L["TextLabel_57"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_57"]["Size"] = UDim2.new(0, 200, 0, 200);
+LMG2L["TextLabel_57"]["Text"] = [[NAME:  USERID:   ]];
+LMG2L["TextLabel_57"]["Position"] = UDim2.new(0, 186, 0, 18);
+
+
+LMG2L["LocalScript_58"] = Instance.new("LocalScript", LMG2L["TextLabel_57"]);
+
+
+
+LMG2L["ImageLabel_59"] = Instance.new("ImageLabel", LMG2L["Frame1_55"]);
+LMG2L["ImageLabel_59"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_59"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["ImageLabel_59"]["Size"] = UDim2.new(0, 150, 0, 114);
+LMG2L["ImageLabel_59"]["Position"] = UDim2.new(0, 14, 0, 32);
+
+
+LMG2L["LocalScript_5a"] = Instance.new("LocalScript", LMG2L["ImageLabel_59"]);
+
+
+
+LMG2L["UIStroke_5b"] = Instance.new("UIStroke", LMG2L["Home_53"]);
+LMG2L["UIStroke_5b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_5b"]["Thickness"] = 2;
+LMG2L["UIStroke_5b"]["Color"] = Color3.fromRGB(49, 28, 255);
+
+
+LMG2L["UIStroke_5c"] = Instance.new("UIStroke", LMG2L["Frame_2"]);
+LMG2L["UIStroke_5c"]["Thickness"] = 3;
+LMG2L["UIStroke_5c"]["Color"] = Color3.fromRGB(7, 26, 255);
+
+
+LMG2L["Get F3x_5d"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["Get F3x_5d"]["TextWrapped"] = true;
+LMG2L["Get F3x_5d"]["BorderSizePixel"] = 0;
+LMG2L["Get F3x_5d"]["TextSize"] = 24;
+LMG2L["Get F3x_5d"]["TextScaled"] = true;
+LMG2L["Get F3x_5d"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
+LMG2L["Get F3x_5d"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
+LMG2L["Get F3x_5d"]["Size"] = UDim2.new(0, 78, 0, 34);
+LMG2L["Get F3x_5d"]["Text"] = [[Get F3x]];
+LMG2L["Get F3x_5d"]["Name"] = [[Get F3x]];
+LMG2L["Get F3x_5d"]["Position"] = UDim2.new(0, 6, 0, 2);
+
+
+LMG2L["LocalScript_5e"] = Instance.new("LocalScript", LMG2L["Get F3x_5d"]);
+
+
+
+LMG2L["UIStroke_5f"] = Instance.new("UIStroke", LMG2L["Get F3x_5d"]);
+LMG2L["UIStroke_5f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_5f"]["Color"] = Color3.fromRGB(46, 30, 255);
+
+
+LMG2L["ImageLabel_60"] = Instance.new("ImageLabel", LMG2L["Frame_2"]);
+LMG2L["ImageLabel_60"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_60"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_60"]["ImageContent"] = ;
+LMG2L["ImageLabel_60"]["Image"] = [[rbxassetid://79440497150256]];
+LMG2L["ImageLabel_60"]["Size"] = UDim2.new(0, 128, 0, 100);
+LMG2L["ImageLabel_60"]["Position"] = UDim2.new(0, 440, 0, 334);
+
+
+LMG2L["Page 1_61"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["Page 1_61"]["TextWrapped"] = true;
+LMG2L["Page 1_61"]["BorderSizePixel"] = 0;
+LMG2L["Page 1_61"]["TextSize"] = 20;
+LMG2L["Page 1_61"]["TextColor3"] = Color3.fromRGB(58, 26, 255);
+LMG2L["Page 1_61"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 19);
+LMG2L["Page 1_61"]["Size"] = UDim2.new(0, 140, 0, 52);
+LMG2L["Page 1_61"]["Text"] = [[F3x Page]];
+LMG2L["Page 1_61"]["Name"] = [[Page 1]];
+LMG2L["Page 1_61"]["Position"] = UDim2.new(0, 438, 0, 126);
+
+
+LMG2L["LocalScript_62"] = Instance.new("LocalScript", LMG2L["Page 1_61"]);
+
+
+
+LMG2L["Frame2_63"] = Instance.new("Frame", LMG2L["Page 1_61"]);
+LMG2L["Frame2_63"]["Visible"] = false;
+LMG2L["Frame2_63"]["BorderSizePixel"] = 0;
+LMG2L["Frame2_63"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Frame2_63"]["Size"] = UDim2.new(0, 426, 0, 354);
+LMG2L["Frame2_63"]["Position"] = UDim2.new(0, -438, 0, -50);
+LMG2L["Frame2_63"]["Name"] = [[Frame2]];
+
+
+LMG2L["ScrollingFrame_64"] = Instance.new("ScrollingFrame", LMG2L["Frame2_63"]);
+LMG2L["ScrollingFrame_64"]["BorderSizePixel"] = 2;
+LMG2L["ScrollingFrame_64"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["ScrollingFrame_64"]["Size"] = UDim2.new(0, 420, 0, 322);
+LMG2L["ScrollingFrame_64"]["Position"] = UDim2.new(0, 4, 0, 22);
+LMG2L["ScrollingFrame_64"]["BorderColor3"] = Color3.fromRGB(80, 27, 255);
+LMG2L["ScrollingFrame_64"]["BackgroundTransparency"] = 1;
+
+
+LMG2L["Night_65"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Night_65"]["TextWrapped"] = true;
+LMG2L["Night_65"]["BorderSizePixel"] = 0;
+LMG2L["Night_65"]["TextScaled"] = true;
+LMG2L["Night_65"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Night_65"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Night_65"]["Size"] = UDim2.new(0, 128, 0, 42);
+LMG2L["Night_65"]["Text"] = [[Night]];
+LMG2L["Night_65"]["Name"] = [[Night]];
+LMG2L["Night_65"]["Position"] = UDim2.new(0, 4, 0, 356);
+
+
+LMG2L["LocalScript_66"] = Instance.new("LocalScript", LMG2L["Night_65"]);
+
+
+
+LMG2L["UIStroke_67"] = Instance.new("UIStroke", LMG2L["Night_65"]);
+LMG2L["UIStroke_67"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_67"]["Thickness"] = 2;
+LMG2L["UIStroke_67"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Disco CH_68"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Disco CH_68"]["TextWrapped"] = true;
+LMG2L["Disco CH_68"]["BorderSizePixel"] = 0;
+LMG2L["Disco CH_68"]["TextScaled"] = true;
+LMG2L["Disco CH_68"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Disco CH_68"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Disco CH_68"]["Size"] = UDim2.new(0, 142, 0, 40);
+LMG2L["Disco CH_68"]["Text"] = [[Disco Character]];
+LMG2L["Disco CH_68"]["Name"] = [[Disco CH]];
+LMG2L["Disco CH_68"]["Position"] = UDim2.new(0, 142, 0, 506);
+
+
+LMG2L["UIStroke_69"] = Instance.new("UIStroke", LMG2L["Disco CH_68"]);
+LMG2L["UIStroke_69"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_69"]["Thickness"] = 2;
+LMG2L["UIStroke_69"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Skybox 2_6a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Skybox 2_6a"]["TextWrapped"] = true;
+LMG2L["Skybox 2_6a"]["BorderSizePixel"] = 0;
+LMG2L["Skybox 2_6a"]["TextScaled"] = true;
+LMG2L["Skybox 2_6a"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Skybox 2_6a"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Skybox 2_6a"]["Size"] = UDim2.new(0, 122, 0, 44);
+LMG2L["Skybox 2_6a"]["Text"] = [[Skybox 2]];
+LMG2L["Skybox 2_6a"]["Name"] = [[Skybox 2]];
+LMG2L["Skybox 2_6a"]["Position"] = UDim2.new(0, 6, 0, 58);
+
+
+LMG2L["LocalScript_6b"] = Instance.new("LocalScript", LMG2L["Skybox 2_6a"]);
+
+
+
+LMG2L["UIStroke_6c"] = Instance.new("UIStroke", LMG2L["Skybox 2_6a"]);
+LMG2L["UIStroke_6c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_6c"]["Thickness"] = 2;
+LMG2L["UIStroke_6c"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Bring all_6d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Bring all_6d"]["TextWrapped"] = true;
+LMG2L["Bring all_6d"]["BorderSizePixel"] = 0;
+LMG2L["Bring all_6d"]["TextScaled"] = true;
+LMG2L["Bring all_6d"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Bring all_6d"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Bring all_6d"]["Size"] = UDim2.new(0, 116, 0, 38);
+LMG2L["Bring all_6d"]["Text"] = [[Bring All]];
+LMG2L["Bring all_6d"]["Name"] = [[Bring all]];
+LMG2L["Bring all_6d"]["Position"] = UDim2.new(0, 290, 0, 358);
+
+
+LMG2L["LocalScript_6e"] = Instance.new("LocalScript", LMG2L["Bring all_6d"]);
+
+
+
+LMG2L["UIStroke_6f"] = Instance.new("UIStroke", LMG2L["Bring all_6d"]);
+LMG2L["UIStroke_6f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_6f"]["Thickness"] = 2;
+LMG2L["UIStroke_6f"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Anime skybox _70"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Anime skybox _70"]["TextWrapped"] = true;
+LMG2L["Anime skybox _70"]["BorderSizePixel"] = 0;
+LMG2L["Anime skybox _70"]["TextScaled"] = true;
+LMG2L["Anime skybox _70"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Anime skybox _70"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Anime skybox _70"]["Size"] = UDim2.new(0, 114, 0, 42);
+LMG2L["Anime skybox _70"]["Text"] = [[Anime skybox ]];
+LMG2L["Anime skybox _70"]["Name"] = [[Anime skybox ]];
+LMG2L["Anime skybox _70"]["Position"] = UDim2.new(0, 294, 0, 454);
+
+
+LMG2L["UIStroke_71"] = Instance.new("UIStroke", LMG2L["Anime skybox _70"]);
+LMG2L["UIStroke_71"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_71"]["Thickness"] = 2;
+LMG2L["UIStroke_71"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["LocalScript_72"] = Instance.new("LocalScript", LMG2L["Anime skybox _70"]);
+
+
+
+LMG2L["Realm _73"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Realm _73"]["TextWrapped"] = true;
+LMG2L["Realm _73"]["BorderSizePixel"] = 0;
+LMG2L["Realm _73"]["TextScaled"] = true;
+LMG2L["Realm _73"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Realm _73"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Realm _73"]["Size"] = UDim2.new(0, 138, 0, 44);
+LMG2L["Realm _73"]["Text"] = [[Realm]];
+LMG2L["Realm _73"]["Name"] = [[Realm ]];
+LMG2L["Realm _73"]["Position"] = UDim2.new(0, 138, 0, 204);
+
+
+LMG2L["UIStroke_74"] = Instance.new("UIStroke", LMG2L["Realm _73"]);
+LMG2L["UIStroke_74"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_74"]["Thickness"] = 2;
+LMG2L["UIStroke_74"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Skybox 1_75"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Skybox 1_75"]["TextWrapped"] = true;
+LMG2L["Skybox 1_75"]["BorderSizePixel"] = 0;
+LMG2L["Skybox 1_75"]["TextScaled"] = true;
+LMG2L["Skybox 1_75"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Skybox 1_75"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Skybox 1_75"]["Size"] = UDim2.new(0, 118, 0, 48);
+LMG2L["Skybox 1_75"]["Text"] = [[Skybox 1]];
+LMG2L["Skybox 1_75"]["Name"] = [[Skybox 1]];
+LMG2L["Skybox 1_75"]["Position"] = UDim2.new(0, 282, 0, 8);
+
+
+LMG2L["LocalScript_76"] = Instance.new("LocalScript", LMG2L["Skybox 1_75"]);
+
+
+
+LMG2L["UIStroke_77"] = Instance.new("UIStroke", LMG2L["Skybox 1_75"]);
+LMG2L["UIStroke_77"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_77"]["Thickness"] = 2;
+LMG2L["UIStroke_77"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Name all_78"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Name all_78"]["TextWrapped"] = true;
+LMG2L["Name all_78"]["BorderSizePixel"] = 0;
+LMG2L["Name all_78"]["TextScaled"] = true;
+LMG2L["Name all_78"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Name all_78"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Name all_78"]["Size"] = UDim2.new(0, 144, 0, 40);
+LMG2L["Name all_78"]["Text"] = [[Name All]];
+LMG2L["Name all_78"]["Name"] = [[Name all]];
+LMG2L["Name all_78"]["Position"] = UDim2.new(0, 138, 0, 356);
+
+
+LMG2L["LocalScript_79"] = Instance.new("LocalScript", LMG2L["Name all_78"]);
+
+
+
+LMG2L["UIStroke_7a"] = Instance.new("UIStroke", LMG2L["Name all_78"]);
+LMG2L["UIStroke_7a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_7a"]["Thickness"] = 2;
+LMG2L["UIStroke_7a"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Clear all_7b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Clear all_7b"]["TextWrapped"] = true;
+LMG2L["Clear all_7b"]["BorderSizePixel"] = 0;
+LMG2L["Clear all_7b"]["TextScaled"] = true;
+LMG2L["Clear all_7b"]["TextColor3"] = Color3.fromRGB(255, 3, 32);
+LMG2L["Clear all_7b"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Clear all_7b"]["Size"] = UDim2.new(0, 144, 0, 42);
+LMG2L["Clear all_7b"]["Text"] = [[Clear all Destory]];
+LMG2L["Clear all_7b"]["Name"] = [[Clear all]];
+LMG2L["Clear all_7b"]["Position"] = UDim2.new(0, 140, 0, 406);
+
+
+LMG2L["UIStroke_7c"] = Instance.new("UIStroke", LMG2L["Clear all_7b"]);
+LMG2L["UIStroke_7c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_7c"]["Thickness"] = 2;
+LMG2L["UIStroke_7c"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Realm Teleport_7d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Realm Teleport_7d"]["TextWrapped"] = true;
+LMG2L["Realm Teleport_7d"]["BorderSizePixel"] = 0;
+LMG2L["Realm Teleport_7d"]["TextScaled"] = true;
+LMG2L["Realm Teleport_7d"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Realm Teleport_7d"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Realm Teleport_7d"]["Size"] = UDim2.new(0, 126, 0, 44);
+LMG2L["Realm Teleport_7d"]["Text"] = [[Realm Teleport]];
+LMG2L["Realm Teleport_7d"]["Name"] = [[Realm Teleport]];
+LMG2L["Realm Teleport_7d"]["Position"] = UDim2.new(0, 4, 0, 204);
+
+
+LMG2L["LocalScript_7e"] = Instance.new("LocalScript", LMG2L["Realm Teleport_7d"]);
+
+
+
+LMG2L["UIStroke_7f"] = Instance.new("UIStroke", LMG2L["Realm Teleport_7d"]);
+LMG2L["UIStroke_7f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_7f"]["Thickness"] = 2;
+LMG2L["UIStroke_7f"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Disco Fog_80"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Disco Fog_80"]["TextWrapped"] = true;
+LMG2L["Disco Fog_80"]["BorderSizePixel"] = 0;
+LMG2L["Disco Fog_80"]["TextScaled"] = true;
+LMG2L["Disco Fog_80"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Disco Fog_80"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Disco Fog_80"]["Size"] = UDim2.new(0, 118, 0, 38);
+LMG2L["Disco Fog_80"]["Text"] = [[Disco Fog]];
+LMG2L["Disco Fog_80"]["Name"] = [[Disco Fog]];
+LMG2L["Disco Fog_80"]["Position"] = UDim2.new(0, 284, 0, 160);
+
+
+LMG2L["LocalScript_81"] = Instance.new("LocalScript", LMG2L["Disco Fog_80"]);
+
+
+
+LMG2L["UIStroke_82"] = Instance.new("UIStroke", LMG2L["Disco Fog_80"]);
+LMG2L["UIStroke_82"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_82"]["Thickness"] = 2;
+LMG2L["UIStroke_82"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Spooky Scary Skeleton Skybox_83"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Spooky Scary Skeleton Skybox_83"]["TextWrapped"] = true;
+LMG2L["Spooky Scary Skeleton Skybox_83"]["BorderSizePixel"] = 0;
+LMG2L["Spooky Scary Skeleton Skybox_83"]["TextScaled"] = true;
+LMG2L["Spooky Scary Skeleton Skybox_83"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Spooky Scary Skeleton Skybox_83"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Spooky Scary Skeleton Skybox_83"]["Size"] = UDim2.new(0, 142, 0, 42);
+LMG2L["Spooky Scary Skeleton Skybox_83"]["Text"] = [[Spooky Scary Skeleton Skybox ]];
+LMG2L["Spooky Scary Skeleton Skybox_83"]["Name"] = [[Spooky Scary Skeleton Skybox]];
+LMG2L["Spooky Scary Skeleton Skybox_83"]["Position"] = UDim2.new(0, 142, 0, 454);
+
+
+LMG2L["UIStroke_84"] = Instance.new("UIStroke", LMG2L["Spooky Scary Skeleton Skybox_83"]);
+LMG2L["UIStroke_84"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_84"]["Thickness"] = 2;
+LMG2L["UIStroke_84"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Team All_85"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Team All_85"]["TextWrapped"] = true;
+LMG2L["Team All_85"]["BorderSizePixel"] = 0;
+LMG2L["Team All_85"]["TextScaled"] = true;
+LMG2L["Team All_85"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Team All_85"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Team All_85"]["Size"] = UDim2.new(0, 116, 0, 44);
+LMG2L["Team All_85"]["Text"] = [[Team All]];
+LMG2L["Team All_85"]["Name"] = [[Team All]];
+LMG2L["Team All_85"]["Position"] = UDim2.new(0, 292, 0, 404);
+
+
+LMG2L["LocalScript_86"] = Instance.new("LocalScript", LMG2L["Team All_85"]);
+
+
+
+LMG2L["UIStroke_87"] = Instance.new("UIStroke", LMG2L["Team All_85"]);
+LMG2L["UIStroke_87"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_87"]["Thickness"] = 2;
+LMG2L["UIStroke_87"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["John Doe_88"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["John Doe_88"]["TextWrapped"] = true;
+LMG2L["John Doe_88"]["BorderSizePixel"] = 0;
+LMG2L["John Doe_88"]["TextScaled"] = true;
+LMG2L["John Doe_88"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["John Doe_88"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["John Doe_88"]["Size"] = UDim2.new(0, 140, 0, 42);
+LMG2L["John Doe_88"]["Text"] = [[John Doe]];
+LMG2L["John Doe_88"]["Name"] = [[John Doe]];
+LMG2L["John Doe_88"]["Position"] = UDim2.new(0, 140, 0, 308);
+
+
+LMG2L["UIStroke_89"] = Instance.new("UIStroke", LMG2L["John Doe_88"]);
+LMG2L["UIStroke_89"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_89"]["Thickness"] = 2;
+LMG2L["UIStroke_89"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Day_8a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Day_8a"]["TextWrapped"] = true;
+LMG2L["Day_8a"]["BorderSizePixel"] = 0;
+LMG2L["Day_8a"]["TextScaled"] = true;
+LMG2L["Day_8a"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Day_8a"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Day_8a"]["Size"] = UDim2.new(0, 118, 0, 42);
+LMG2L["Day_8a"]["Text"] = [[Day]];
+LMG2L["Day_8a"]["Name"] = [[Day]];
+LMG2L["Day_8a"]["Position"] = UDim2.new(0, 288, 0, 308);
+
+
+LMG2L["LocalScript_8b"] = Instance.new("LocalScript", LMG2L["Day_8a"]);
+
+
+
+LMG2L["UIStroke_8c"] = Instance.new("UIStroke", LMG2L["Day_8a"]);
+LMG2L["UIStroke_8c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_8c"]["Thickness"] = 2;
+LMG2L["UIStroke_8c"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Chicken Arm_8d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Chicken Arm_8d"]["TextWrapped"] = true;
+LMG2L["Chicken Arm_8d"]["BorderSizePixel"] = 0;
+LMG2L["Chicken Arm_8d"]["TextScaled"] = true;
+LMG2L["Chicken Arm_8d"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Chicken Arm_8d"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Chicken Arm_8d"]["Size"] = UDim2.new(0, 136, 0, 44);
+LMG2L["Chicken Arm_8d"]["Text"] = [[Chicken Arm]];
+LMG2L["Chicken Arm_8d"]["Name"] = [[Chicken Arm]];
+LMG2L["Chicken Arm_8d"]["Position"] = UDim2.new(0, 138, 0, 108);
+
+
+LMG2L["LocalScript_8e"] = Instance.new("LocalScript", LMG2L["Chicken Arm_8d"]);
+
+
+
+LMG2L["UIStroke_8f"] = Instance.new("UIStroke", LMG2L["Chicken Arm_8d"]);
+LMG2L["UIStroke_8f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_8f"]["Thickness"] = 2;
+LMG2L["UIStroke_8f"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Gear_90"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Gear_90"]["TextWrapped"] = true;
+LMG2L["Gear_90"]["BorderSizePixel"] = 0;
+LMG2L["Gear_90"]["TextScaled"] = true;
+LMG2L["Gear_90"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Gear_90"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Gear_90"]["Size"] = UDim2.new(0, 118, 0, 44);
+LMG2L["Gear_90"]["Text"] = [[Gear]];
+LMG2L["Gear_90"]["Name"] = [[Gear]];
+LMG2L["Gear_90"]["Position"] = UDim2.new(0, 286, 0, 204);
+
+
+LMG2L["LocalScript_91"] = Instance.new("LocalScript", LMG2L["Gear_90"]);
+
+
+
+LMG2L["UIStroke_92"] = Instance.new("UIStroke", LMG2L["Gear_90"]);
+LMG2L["UIStroke_92"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_92"]["Thickness"] = 2;
+LMG2L["UIStroke_92"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Message_93"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Message_93"]["TextWrapped"] = true;
+LMG2L["Message_93"]["BorderSizePixel"] = 0;
+LMG2L["Message_93"]["TextScaled"] = true;
+LMG2L["Message_93"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Message_93"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Message_93"]["Size"] = UDim2.new(0, 122, 0, 44);
+LMG2L["Message_93"]["Text"] = [[Massage ]];
+LMG2L["Message_93"]["Name"] = [[Message]];
+LMG2L["Message_93"]["Position"] = UDim2.new(0, 284, 0, 258);
+
+
+LMG2L["LocalScript_94"] = Instance.new("LocalScript", LMG2L["Message_93"]);
+
+
+
+LMG2L["UIStroke_95"] = Instance.new("UIStroke", LMG2L["Message_93"]);
+LMG2L["UIStroke_95"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_95"]["Thickness"] = 2;
+LMG2L["UIStroke_95"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Avatar all_96"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Avatar all_96"]["TextWrapped"] = true;
+LMG2L["Avatar all_96"]["BorderSizePixel"] = 0;
+LMG2L["Avatar all_96"]["TextScaled"] = true;
+LMG2L["Avatar all_96"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Avatar all_96"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Avatar all_96"]["Size"] = UDim2.new(0, 128, 0, 44);
+LMG2L["Avatar all_96"]["Text"] = [[Avatar all]];
+LMG2L["Avatar all_96"]["Name"] = [[Avatar all]];
+LMG2L["Avatar all_96"]["Position"] = UDim2.new(0, 4, 0, 256);
+
+
+LMG2L["LocalScript_97"] = Instance.new("LocalScript", LMG2L["Avatar all_96"]);
+
+
+
+LMG2L["UIStroke_98"] = Instance.new("UIStroke", LMG2L["Avatar all_96"]);
+LMG2L["UIStroke_98"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_98"]["Thickness"] = 2;
+LMG2L["UIStroke_98"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Cmdbar2_99"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Cmdbar2_99"]["TextWrapped"] = true;
+LMG2L["Cmdbar2_99"]["BorderSizePixel"] = 0;
+LMG2L["Cmdbar2_99"]["TextScaled"] = true;
+LMG2L["Cmdbar2_99"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Cmdbar2_99"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Cmdbar2_99"]["Size"] = UDim2.new(0, 138, 0, 46);
+LMG2L["Cmdbar2_99"]["Text"] = [[Cmdbar2]];
+LMG2L["Cmdbar2_99"]["Name"] = [[Cmdbar2]];
+LMG2L["Cmdbar2_99"]["Position"] = UDim2.new(0, 140, 0, 256);
+
+
+LMG2L["LocalScript_9a"] = Instance.new("LocalScript", LMG2L["Cmdbar2_99"]);
+
+
+
+LMG2L["UIStroke_9b"] = Instance.new("UIStroke", LMG2L["Cmdbar2_99"]);
+LMG2L["UIStroke_9b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_9b"]["Thickness"] = 2;
+LMG2L["UIStroke_9b"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Title _9c"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Title _9c"]["TextWrapped"] = true;
+LMG2L["Title _9c"]["BorderSizePixel"] = 0;
+LMG2L["Title _9c"]["TextScaled"] = true;
+LMG2L["Title _9c"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Title _9c"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Title _9c"]["Size"] = UDim2.new(0, 136, 0, 40);
+LMG2L["Title _9c"]["Text"] = [[Title ]];
+LMG2L["Title _9c"]["Name"] = [[Title ]];
+LMG2L["Title _9c"]["Position"] = UDim2.new(0, 138, 0, 158);
+
+
+LMG2L["LocalScript_9d"] = Instance.new("LocalScript", LMG2L["Title _9c"]);
+
+
+
+LMG2L["UIStroke_9e"] = Instance.new("UIStroke", LMG2L["Title _9c"]);
+LMG2L["UIStroke_9e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_9e"]["Thickness"] = 2;
+LMG2L["UIStroke_9e"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Hint_9f"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Hint_9f"]["TextWrapped"] = true;
+LMG2L["Hint_9f"]["BorderSizePixel"] = 0;
+LMG2L["Hint_9f"]["TextScaled"] = true;
+LMG2L["Hint_9f"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Hint_9f"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Hint_9f"]["Size"] = UDim2.new(0, 128, 0, 42);
+LMG2L["Hint_9f"]["Text"] = [[Hint]];
+LMG2L["Hint_9f"]["Name"] = [[Hint]];
+LMG2L["Hint_9f"]["Position"] = UDim2.new(0, 4, 0, 406);
+
+
+LMG2L["LocalScript_a0"] = Instance.new("LocalScript", LMG2L["Hint_9f"]);
+
+
+
+LMG2L["UIStroke_a1"] = Instance.new("UIStroke", LMG2L["Hint_9f"]);
+LMG2L["UIStroke_a1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_a1"]["Thickness"] = 2;
+LMG2L["UIStroke_a1"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Troll Face sky_a2"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Troll Face sky_a2"]["TextWrapped"] = true;
+LMG2L["Troll Face sky_a2"]["BorderSizePixel"] = 0;
+LMG2L["Troll Face sky_a2"]["TextScaled"] = true;
+LMG2L["Troll Face sky_a2"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Troll Face sky_a2"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Troll Face sky_a2"]["Size"] = UDim2.new(0, 136, 0, 42);
+LMG2L["Troll Face sky_a2"]["Text"] = [[Troll Face Skyboz]];
+LMG2L["Troll Face sky_a2"]["Name"] = [[Troll Face sky]];
+LMG2L["Troll Face sky_a2"]["Position"] = UDim2.new(0, 138, 0, 60);
+
+
+LMG2L["LocalScript_a3"] = Instance.new("LocalScript", LMG2L["Troll Face sky_a2"]);
+
+
+
+LMG2L["UIStroke_a4"] = Instance.new("UIStroke", LMG2L["Troll Face sky_a2"]);
+LMG2L["UIStroke_a4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_a4"]["Thickness"] = 2;
+LMG2L["UIStroke_a4"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["DecalSpam 2_a5"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["DecalSpam 2_a5"]["TextWrapped"] = true;
+LMG2L["DecalSpam 2_a5"]["BorderSizePixel"] = 0;
+LMG2L["DecalSpam 2_a5"]["TextScaled"] = true;
+LMG2L["DecalSpam 2_a5"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["DecalSpam 2_a5"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["DecalSpam 2_a5"]["Size"] = UDim2.new(0, 134, 0, 46);
+LMG2L["DecalSpam 2_a5"]["Text"] = [[DecalSpam 2]];
+LMG2L["DecalSpam 2_a5"]["Name"] = [[DecalSpam 2]];
+LMG2L["DecalSpam 2_a5"]["Position"] = UDim2.new(0, 138, 0, 8);
+
+
+LMG2L["LocalScript_a6"] = Instance.new("LocalScript", LMG2L["DecalSpam 2_a5"]);
+
+
+
+LMG2L["UIStroke_a7"] = Instance.new("UIStroke", LMG2L["DecalSpam 2_a5"]);
+LMG2L["UIStroke_a7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_a7"]["Thickness"] = 2;
+LMG2L["UIStroke_a7"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["rotate Skybox_a8"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["rotate Skybox_a8"]["TextWrapped"] = true;
+LMG2L["rotate Skybox_a8"]["BorderSizePixel"] = 0;
+LMG2L["rotate Skybox_a8"]["TextScaled"] = true;
+LMG2L["rotate Skybox_a8"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["rotate Skybox_a8"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["rotate Skybox_a8"]["Size"] = UDim2.new(0, 120, 0, 42);
+LMG2L["rotate Skybox_a8"]["Text"] = [[Rotate Skybox]];
+LMG2L["rotate Skybox_a8"]["Name"] = [[rotate Skybox]];
+LMG2L["rotate Skybox_a8"]["Position"] = UDim2.new(0, 282, 0, 62);
+
+
+LMG2L["LocalScript_a9"] = Instance.new("LocalScript", LMG2L["rotate Skybox_a8"]);
+
+
+
+LMG2L["UIStroke_aa"] = Instance.new("UIStroke", LMG2L["rotate Skybox_a8"]);
+LMG2L["UIStroke_aa"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_aa"]["Thickness"] = 2;
+LMG2L["UIStroke_aa"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Blur all_ab"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Blur all_ab"]["TextWrapped"] = true;
+LMG2L["Blur all_ab"]["BorderSizePixel"] = 0;
+LMG2L["Blur all_ab"]["TextScaled"] = true;
+LMG2L["Blur all_ab"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Blur all_ab"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Blur all_ab"]["Size"] = UDim2.new(0, 128, 0, 42);
+LMG2L["Blur all_ab"]["Text"] = [[Blur All]];
+LMG2L["Blur all_ab"]["Name"] = [[Blur all]];
+LMG2L["Blur all_ab"]["Position"] = UDim2.new(0, 6, 0, 454);
+
+
+LMG2L["LocalScript_ac"] = Instance.new("LocalScript", LMG2L["Blur all_ab"]);
+
+
+
+LMG2L["UIStroke_ad"] = Instance.new("UIStroke", LMG2L["Blur all_ab"]);
+LMG2L["UIStroke_ad"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_ad"]["Thickness"] = 2;
+LMG2L["UIStroke_ad"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Shutdown_ae"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Shutdown_ae"]["TextWrapped"] = true;
+LMG2L["Shutdown_ae"]["BorderSizePixel"] = 0;
+LMG2L["Shutdown_ae"]["TextScaled"] = true;
+LMG2L["Shutdown_ae"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Shutdown_ae"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Shutdown_ae"]["Size"] = UDim2.new(0, 128, 0, 44);
+LMG2L["Shutdown_ae"]["Text"] = [[Shutdown]];
+LMG2L["Shutdown_ae"]["Name"] = [[Shutdown]];
+LMG2L["Shutdown_ae"]["Position"] = UDim2.new(0, 4, 0, 306);
+
+
+LMG2L["LocalScript_af"] = Instance.new("LocalScript", LMG2L["Shutdown_ae"]);
+
+
+
+LMG2L["UIStroke_b0"] = Instance.new("UIStroke", LMG2L["Shutdown_ae"]);
+LMG2L["UIStroke_b0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_b0"]["Thickness"] = 2;
+LMG2L["UIStroke_b0"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Fire all_b1"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Fire all_b1"]["TextWrapped"] = true;
+LMG2L["Fire all_b1"]["BorderSizePixel"] = 0;
+LMG2L["Fire all_b1"]["TextScaled"] = true;
+LMG2L["Fire all_b1"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Fire all_b1"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Fire all_b1"]["Size"] = UDim2.new(0, 122, 0, 42);
+LMG2L["Fire all_b1"]["Text"] = [[Fire all]];
+LMG2L["Fire all_b1"]["Name"] = [[Fire all]];
+LMG2L["Fire all_b1"]["Position"] = UDim2.new(0, 6, 0, 108);
+
+
+LMG2L["LocalScript_b2"] = Instance.new("LocalScript", LMG2L["Fire all_b1"]);
+
+
+
+LMG2L["UIStroke_b3"] = Instance.new("UIStroke", LMG2L["Fire all_b1"]);
+LMG2L["UIStroke_b3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_b3"]["Thickness"] = 2;
+LMG2L["UIStroke_b3"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Headshake _b4"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Headshake _b4"]["TextWrapped"] = true;
+LMG2L["Headshake _b4"]["BorderSizePixel"] = 0;
+LMG2L["Headshake _b4"]["TextScaled"] = true;
+LMG2L["Headshake _b4"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Headshake _b4"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Headshake _b4"]["Size"] = UDim2.new(0, 118, 0, 44);
+LMG2L["Headshake _b4"]["Text"] = [[Headshake ]];
+LMG2L["Headshake _b4"]["Name"] = [[Headshake ]];
+LMG2L["Headshake _b4"]["Position"] = UDim2.new(0, 284, 0, 110);
+
+
+LMG2L["LocalScript_b5"] = Instance.new("LocalScript", LMG2L["Headshake _b4"]);
+
+
+
+LMG2L["UIStroke_b6"] = Instance.new("UIStroke", LMG2L["Headshake _b4"]);
+LMG2L["UIStroke_b6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_b6"]["Thickness"] = 2;
+LMG2L["UIStroke_b6"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["DecalSpam 1_b7"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["DecalSpam 1_b7"]["TextWrapped"] = true;
+LMG2L["DecalSpam 1_b7"]["BorderSizePixel"] = 0;
+LMG2L["DecalSpam 1_b7"]["TextScaled"] = true;
+LMG2L["DecalSpam 1_b7"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["DecalSpam 1_b7"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["DecalSpam 1_b7"]["Size"] = UDim2.new(0, 122, 0, 44);
+LMG2L["DecalSpam 1_b7"]["Text"] = [[DecalSpam 1]];
+LMG2L["DecalSpam 1_b7"]["Name"] = [[DecalSpam 1]];
+LMG2L["DecalSpam 1_b7"]["Position"] = UDim2.new(0, 6, 0, 8);
+
+
+LMG2L["LocalScript_b8"] = Instance.new("LocalScript", LMG2L["DecalSpam 1_b7"]);
+
+
+
+LMG2L["UIStroke_b9"] = Instance.new("UIStroke", LMG2L["DecalSpam 1_b7"]);
+LMG2L["UIStroke_b9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_b9"]["Thickness"] = 2;
+LMG2L["UIStroke_b9"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Thomas_ba"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Thomas_ba"]["TextWrapped"] = true;
+LMG2L["Thomas_ba"]["BorderSizePixel"] = 0;
+LMG2L["Thomas_ba"]["TextScaled"] = true;
+LMG2L["Thomas_ba"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Thomas_ba"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Thomas_ba"]["Size"] = UDim2.new(0, 122, 0, 42);
+LMG2L["Thomas_ba"]["Text"] = [[Thomas]];
+LMG2L["Thomas_ba"]["Name"] = [[Thomas]];
+LMG2L["Thomas_ba"]["Position"] = UDim2.new(0, 6, 0, 156);
+
+
+LMG2L["LocalScript_bb"] = Instance.new("LocalScript", LMG2L["Thomas_ba"]);
+
+
+
+LMG2L["UIStroke_bc"] = Instance.new("UIStroke", LMG2L["Thomas_ba"]);
+LMG2L["UIStroke_bc"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_bc"]["Thickness"] = 2;
+LMG2L["UIStroke_bc"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["Floating Pad _bd"] = Instance.new("TextButton", LMG2L["ScrollingFrame_64"]);
+LMG2L["Floating Pad _bd"]["TextWrapped"] = true;
+LMG2L["Floating Pad _bd"]["BorderSizePixel"] = 0;
+LMG2L["Floating Pad _bd"]["TextScaled"] = true;
+LMG2L["Floating Pad _bd"]["TextColor3"] = Color3.fromRGB(41, 13, 255);
+LMG2L["Floating Pad _bd"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+LMG2L["Floating Pad _bd"]["Size"] = UDim2.new(0, 128, 0, 42);
+LMG2L["Floating Pad _bd"]["Text"] = [[Floating Pad]];
+LMG2L["Floating Pad _bd"]["Name"] = [[Floating Pad ]];
+LMG2L["Floating Pad _bd"]["Position"] = UDim2.new(0, 6, 0, 504);
+
+
+LMG2L["UIStroke_be"] = Instance.new("UIStroke", LMG2L["Floating Pad _bd"]);
+LMG2L["UIStroke_be"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_be"]["Thickness"] = 2;
+LMG2L["UIStroke_be"]["Color"] = Color3.fromRGB(46, 31, 255);
+
+
+LMG2L["UIStroke_bf"] = Instance.new("UIStroke", LMG2L["Page 1_61"]);
+LMG2L["UIStroke_bf"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_bf"]["Thickness"] = 2;
+LMG2L["UIStroke_bf"]["Color"] = Color3.fromRGB(23, 24, 255);
+
+
+LMG2L["R6_c0"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["R6_c0"]["TextWrapped"] = true;
+LMG2L["R6_c0"]["BorderSizePixel"] = 0;
+LMG2L["R6_c0"]["TextSize"] = 24;
+LMG2L["R6_c0"]["TextScaled"] = true;
+LMG2L["R6_c0"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
+LMG2L["R6_c0"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
+LMG2L["R6_c0"]["Size"] = UDim2.new(0, 68, 0, 26);
+LMG2L["R6_c0"]["Text"] = [[R6]];
+LMG2L["R6_c0"]["Name"] = [[R6]];
+LMG2L["R6_c0"]["Position"] = UDim2.new(0, 358, 0, 4);
+
+
+LMG2L["LocalScript_c1"] = Instance.new("LocalScript", LMG2L["R6_c0"]);
+
+
+
+LMG2L["UIStroke_c2"] = Instance.new("UIStroke", LMG2L["R6_c0"]);
+LMG2L["UIStroke_c2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_c2"]["Color"] = Color3.fromRGB(46, 30, 255);
+
+
+LMG2L["R15_c3"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["R15_c3"]["TextWrapped"] = true;
+LMG2L["R15_c3"]["BorderSizePixel"] = 0;
+LMG2L["R15_c3"]["TextSize"] = 24;
+LMG2L["R15_c3"]["TextScaled"] = true;
+LMG2L["R15_c3"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
+LMG2L["R15_c3"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
+LMG2L["R15_c3"]["Size"] = UDim2.new(0, 68, 0, 26);
+LMG2L["R15_c3"]["Text"] = [[R15]];
+LMG2L["R15_c3"]["Name"] = [[R15]];
+LMG2L["R15_c3"]["Position"] = UDim2.new(0, 358, 0, 34);
+
+
+LMG2L["LocalScript_c4"] = Instance.new("LocalScript", LMG2L["R15_c3"]);
+
+
+
+LMG2L["UIStroke_c5"] = Instance.new("UIStroke", LMG2L["R15_c3"]);
+LMG2L["UIStroke_c5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_c5"]["Color"] = Color3.fromRGB(46, 30, 255);
+
+
+LMG2L["UIDragDetector_c6"] = Instance.new("UIDragDetector", LMG2L["Frame_2"]);
+LMG2L["UIDragDetector_c6"]["DragUDim2"] = UDim2.new(0, -45, 0, 38);
+
+
+LMG2L["TextLabel_c7"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_c7"]["TextWrapped"] = true;
+LMG2L["TextLabel_c7"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_c7"]["TextScaled"] = true;
+LMG2L["TextLabel_c7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_c7"]["TextColor3"] = Color3.fromRGB(61, 36, 255);
+LMG2L["TextLabel_c7"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_c7"]["Size"] = UDim2.new(0, 250, 0, 44);
+LMG2L["TextLabel_c7"]["Text"] = [[ZACHXPLOITZ ULTIMATE V2]];
+LMG2L["TextLabel_c7"]["Position"] = UDim2.new(0, 100, 0, 4);
+
+
+LMG2L["LocalScript_c8"] = Instance.new("LocalScript", LMG2L["TextLabel_c7"]);
+
+
+
+LMG2L["LocalScript2_c9"] = Instance.new("LocalScript", LMG2L["TextLabel_c7"]);
+LMG2L["LocalScript2_c9"]["Name"] = [[LocalScript2]];
+
+
+LMG2L["UIStroke_ca"] = Instance.new("UIStroke", LMG2L["TextLabel_c7"]);
+LMG2L["UIStroke_ca"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_ca"]["Thickness"] = 2;
+LMG2L["UIStroke_ca"]["Color"] = Color3.fromRGB(18, 28, 216);
+
+
+local function C_4()
+	local script = LMG2L["LocalScript_4"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";re me")	
+	end)	
+end;
+task.spawn(C_4);
+local function C_7()
+	local script = LMG2L["LocalScript_7"];
+	local button = script.Parent	
+	local mainFrame = button.Parent	
+	
+	local myFrame = button:WaitForChild("Frame3")	
+	
+	button.MouseButton1Click:Connect(function()	
+		for _, obj in ipairs(mainFrame:GetDescendants()) do	
+			if obj:IsA("Frame") then	
+				obj.Visible = false	
+			end	
+		end	
+			
+		myFrame.Visible = true	
+	end)	
+end;
+task.spawn(C_7);
+local function C_b()
+	local script = LMG2L["LocalScript_b"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music  129822748617039 ;pitch 1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_b);
+local function C_e()
+	local script = LMG2L["LocalScript_e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 108781528188731 ;pitch 1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_e);
+local function C_11()
+	local script = LMG2L["LocalScript_11"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 93650961728068 ;pitch 0.12 ;volume inf")	
+	end)	
+end;
+task.spawn(C_11);
+local function C_14()
+	local script = LMG2L["LocalScript_14"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 6565746553 ;pitch 1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_14);
+local function C_17()
+	local script = LMG2L["LocalScript_17"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 85390427326662 ;pitch 0.12 ;volume inf")	
+	end)	
+end;
+task.spawn(C_17);
+local function C_1a()
+	local script = LMG2L["LocalScript_1a"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 96828170756328 ;pitch 1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_1a);
+local function C_1d()
+	local script = LMG2L["LocalScript_1d"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 1847661821 ;pitch 1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_1d);
+local function C_20()
+	local script = LMG2L["LocalScript_20"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 87174269808530 ;pitch 0.11 ;volume inf")	
+	end)	
+end;
+task.spawn(C_20);
+local function C_23()
+	local script = LMG2L["LocalScript_23"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 100792696468630 ;pitch 0.16 ;volume inf")	
+	end)	
+end;
+task.spawn(C_23);
+local function C_26()
+	local script = LMG2L["LocalScript_26"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 138003633953326 ;pitch 0.12 ;volume inf")	
+	end)	
+end;
+task.spawn(C_26);
+local function C_29()
+	local script = LMG2L["LocalScript_29"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 127653283576622 ;pitch 1.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_29);
+local function C_2c()
+	local script = LMG2L["LocalScript_2c"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 120928196621547 ;pitch 0.108 ;volume inf")	
+	end)	
+end;
+task.spawn(C_2c);
+local function C_2f()
+	local script = LMG2L["LocalScript_2f"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 102894811708275 ;pitch 0.11 ;volume inf")	
+	end)	
+end;
+task.spawn(C_2f);
+local function C_32()
+	local script = LMG2L["LocalScript_32"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 89391873510832 ;pitch 0.11 ;volume inf")	
+	end)	
+end;
+task.spawn(C_32);
+local function C_35()
+	local script = LMG2L["LocalScript_35"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 106687731139619 ;pitch 0.13 ;volume inf")	
+	end)	
+end;
+task.spawn(C_35);
+local function C_38()
+	local script = LMG2L["LocalScript_38"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 72089843969979 ;pitch 0.2 ;volume inf")	
+	end)	
+end;
+task.spawn(C_38);
+local function C_3b()
+	local script = LMG2L["LocalScript_3b"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 1839246774 ;pitch 1.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_3b);
+local function C_3e()
+	local script = LMG2L["LocalScript_3e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 108239208627770 ;pitch 0.12 ;volume inf")	
+	end)	
+end;
+task.spawn(C_3e);
+local function C_42()
+	local script = LMG2L["LocalScript_42"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 99907604701668 ;pitch 0.13 ;volume inf")	
+	end)	
+end;
+task.spawn(C_42);
+local function C_44()
+	local script = LMG2L["LocalScript_44"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";unmusic")	
+	end)	
+end;
+task.spawn(C_44);
+local function C_47()
+	local script = LMG2L["LocalScript_47"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 84690995964261 ;pitch 0.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_47);
+local function C_4a()
+	local script = LMG2L["LocalScript_4a"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 1839246711 ;pitch 0.8 ;volume inf")	
+	end)	
+end;
+task.spawn(C_4a);
+local function C_4d()
+	local script = LMG2L["LocalScript_4d"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 115458754743026 ;pitch 0.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_4d);
+local function C_50()
+	local script = LMG2L["LocalScript_50"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 73002098096282 ;pitch 0.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_50);
+local function C_54()
+	local script = LMG2L["LocalScript_54"];
+	local button = script.Parent	
+	local mainFrame = button.Parent	
+	
+	local myFrame = button:WaitForChild("Frame1")	
+	
+	button.MouseButton1Click:Connect(function()	
+		for _, obj in ipairs(mainFrame:GetDescendants()) do	
+			if obj:IsA("Frame") then	
+				obj.Visible = false	
+			end	
+		end	
+			
+		myFrame.Visible = true	
+	end)	
+end;
+task.spawn(C_54);
+local function C_58()
+	local script = LMG2L["LocalScript_58"];
+	local Players = game:GetService("Players")	
+	local player = Players.LocalPlayer	
+	local label = script.Parent	
+	
+	label.Text =	
+		"Welcome "..player.Name.." !\n"..	
+		"Thank you for using this!!\n"..	
+		"UserId: "..player.UserId.."\n"..	
+		"Can be seen by others: 100%"	
+end;
+task.spawn(C_58);
+local function C_5a()
+	local script = LMG2L["LocalScript_5a"];
+	local Players = game:GetService("Players")	
+	local player = Players.LocalPlayer	
+	
+	local imageLabel = script.Parent	
+	imageLabel.BackgroundTransparency = 1	
+	
+	local content, ready = Players:GetUserThumbnailAsync(	
+		player.UserId,	
+		Enum.ThumbnailType.HeadShot,	
+		Enum.ThumbnailSize.Size420x420	
+	)	
+	
+	while not ready do	
+		content, ready = Players:GetUserThumbnailAsync(	
+			player.UserId,	
+			Enum.ThumbnailType.HeadShot,	
+			Enum.ThumbnailSize.Size420x420	
+		)	
+		task.wait()	
+	end	
+	
+	imageLabel.Image = content	
+end;
+task.spawn(C_5a);
+local function C_5e()
+	local script = LMG2L["LocalScript_5e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";buildingtools me")	
+	end)	
+end;
+task.spawn(C_5e);
+local function C_62()
+	local script = LMG2L["LocalScript_62"];
+	local button = script.Parent	
+	local mainFrame = button.Parent	
+	
+	local myFrame = button:WaitForChild("Frame2")	
+	
+	button.MouseButton1Click:Connect(function()	
+		for _, obj in ipairs(mainFrame:GetDescendants()) do	
+			if obj:IsA("Frame") then	
+				obj.Visible = false	
+			end	
+		end	
+			
+		myFrame.Visible = true	
+	end)	
+end;
+task.spawn(C_62);
+local function C_66()
+	local script = LMG2L["LocalScript_66"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";time 0")	
+	end)	
+end;
+task.spawn(C_66);
+local function C_6b()
+	local script = LMG2L["LocalScript_6b"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local player = game.Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+		local tool	
+	
+		for _, v in player:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+	
+		for _, v in game.ReplicatedStorage:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+	
+		if not tool then return end	
+	
+		local remote = tool.SyncAPI.ServerEndpoint	
+	
+		local function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+	
+		local function CreatePart(cf, parent)	
+			_({"CreatePart","Normal",cf,parent})	
+		end	
+	
+		local function SetAnchor(part, state)	
+			_({"SyncAnchor",{{Part = part, Anchored = state}}})	
+		end	
+	
+		local function AddMesh(part)	
+			_({"CreateMeshes",{{Part = part}}})	
+		end	
+	
+		local function SetMesh(part, meshid)	
+			_({"SyncMesh",{{Part = part, MeshId = "rbxassetid://"..meshid}}})	
+		end	
+	
+		local function SetTexture(part, texid)	
+			_({"SyncMesh",{{Part = part, TextureId = "rbxassetid://"..texid}}})	
+		end	
+	
+		local function MeshResize(part, size)	
+			_({"SyncMesh",{{Part = part, Scale = size}}})	
+		end	
+	
+		local function Sky(id)	
+			local hrp = char:WaitForChild("HumanoidRootPart")	
+			local pos = hrp.Position + Vector3.new(0,6,0)	
+	
+			CreatePart(CFrame.new(pos), workspace)	
+	
+			for _, v in workspace:GetDescendants() do	
+				if v:IsA("BasePart") and (v.Position - pos).Magnitude < 0.1 then	
+					SetAnchor(v,true)	
+					AddMesh(v)	
+					SetMesh(v,111891702759441)	
+					SetTexture(v,id)	
+					MeshResize(v,Vector3.new(8000,8000,8000))	
+				end	
+			end	
+		end	
+	
+		Sky("84437077150729")	
+	end)	
+end;
+task.spawn(C_6b);
+local function C_6e()
+	local script = LMG2L["LocalScript_6e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";bring all")	
+	end)	
+end;
+task.spawn(C_6e);
+local function C_72()
+	local script = LMG2L["LocalScript_72"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/MjRdFbN7"))()	
+	end)	
+end;
+task.spawn(C_72);
+local function C_76()
+	local script = LMG2L["LocalScript_76"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local player = game.Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+		local tool	
+	
+		for _, v in player:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+	
+		for _, v in game.ReplicatedStorage:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+	
+		if not tool then return end	
+	
+		local remote = tool.SyncAPI.ServerEndpoint	
+	
+		local function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+	
+		local function CreatePart(cf, parent)	
+			_({"CreatePart","Normal",cf,parent})	
+		end	
+	
+		local function SetAnchor(part, state)	
+			_({"SyncAnchor",{{Part = part, Anchored = state}}})	
+		end	
+	
+		local function AddMesh(part)	
+			_({"CreateMeshes",{{Part = part}}})	
+		end	
+	
+		local function SetMesh(part, meshid)	
+			_({"SyncMesh",{{Part = part, MeshId = "rbxassetid://"..meshid}}})	
+		end	
+	
+		local function SetTexture(part, texid)	
+			_({"SyncMesh",{{Part = part, TextureId = "rbxassetid://"..texid}}})	
+		end	
+	
+		local function MeshResize(part, size)	
+			_({"SyncMesh",{{Part = part, Scale = size}}})	
+		end	
+	
+		local function Sky(id)	
+			local hrp = char:WaitForChild("HumanoidRootPart")	
+			local pos = hrp.Position + Vector3.new(0,6,0)	
+	
+			CreatePart(CFrame.new(pos), workspace)	
+	
+			for _, v in workspace:GetDescendants() do	
+				if v:IsA("BasePart") and (v.Position - pos).Magnitude < 0.1 then	
+					SetAnchor(v,true)	
+					AddMesh(v)	
+					SetMesh(v,111891702759441)	
+					SetTexture(v,id)	
+					MeshResize(v,Vector3.new(8000,8000,8000))	
+				end	
+			end	
+		end	
+	
+		Sky("79440497150256")	
+	end)	
+end;
+task.spawn(C_76);
+local function C_79()
+	local script = LMG2L["LocalScript_79"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";name all ZachXploitz")	
+	end)	
+end;
+task.spawn(C_79);
+local function C_7e()
+	local script = LMG2L["LocalScript_7e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";globalforceplace 111105964184410 ;place all 111105964184410")	
+	end)	
+end;
+task.spawn(C_7e);
+local function C_81()
+	local script = LMG2L["LocalScript_81"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";disco ;time 0 ;fogcolor black")	
+	end)	
+end;
+task.spawn(C_81);
+local function C_86()
+	local script = LMG2L["LocalScript_86"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";createTeam blue ZachXploitz")	
+	    RequestCommand:InvokeServer(";team all ZachXploitz")	
+	end)	
+end;
+task.spawn(C_86);
+local function C_8b()
+	local script = LMG2L["LocalScript_8b"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";time 10")	
+	end)	
+end;
+task.spawn(C_8b);
+local function C_8e()
+	local script = LMG2L["LocalScript_8e"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	local Players = game:GetService("Players")	
+	local RunService = game:GetService("RunService")	
+	
+	local player = Players.LocalPlayer	
+	local char = player.Character or player.CharacterAdded:Wait()	
+	
+	local tool	
+	for _, v in ipairs(player:GetDescendants()) do	
+		if v.Name == "SyncAPI" then	
+			tool = v.Parent	
+			break	
+		end	
+	end	
+	
+	if not tool then	
+		for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+				break	
+			end	
+		end	
+	end	
+	
+	if not tool then return end	
+	local remote = tool.SyncAPI.ServerEndpoint	
+	
+	local humanoid = char:WaitForChild("Humanoid")	
+	if humanoid.RigType ~= Enum.HumanoidRigType.R6 then return end	
+	
+	local torso = char:WaitForChild("Torso")	
+	local rightShoulder = torso:WaitForChild("Right Shoulder")	
+	local leftShoulder = torso:WaitForChild("Left Shoulder")	
+	
+	local CFNew, CFAng = CFrame.new, CFrame.Angles	
+	local forwardOffset = 0.5	
+	
+	RunService.RenderStepped:Connect(function()	
+		rightShoulder.C0 =	
+			CFNew(1.4, 0.5, -forwardOffset)	
+			* CFAng(0, 0, math.rad(90))	
+	
+		leftShoulder.C0 =	
+			CFNew(-1.4, 0.5, -forwardOffset)	
+			* CFAng(0, 0, math.rad(-90))	
+	
+		remote:InvokeServer("SyncJoints", {	
+			{Joint = rightShoulder, C0 = rightShoulder.C0},	
+			{Joint = leftShoulder, C0 = leftShoulder.C0}	
+		})	
+	end)	
+	end)	
+end;
+task.spawn(C_8e);
+local function C_91()
+	local script = LMG2L["LocalScript_91"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";gear me 116693764")	
+	end)	
+end;
+task.spawn(C_91);
+local function C_94()
+	local script = LMG2L["LocalScript_94"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";sm ZachXploitz Haxx This Placez!!1")	
+	end)	
+end;
+task.spawn(C_94);
+local function C_97()
+	local script = LMG2L["LocalScript_97"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";char all KyuKusangaki")	
+	end)	
+end;
+task.spawn(C_97);
+local function C_9a()
+	local script = LMG2L["LocalScript_9a"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";cmdbar2")	
+	end)	
+end;
+task.spawn(C_9a);
+local function C_9d()
+	local script = LMG2L["LocalScript_9d"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";titledb me ZACHXPLOITZ")	
+	end)	
+end;
+task.spawn(C_9d);
+local function C_a0()
+	local script = LMG2L["LocalScript_a0"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";sh ZachXploitz Fe Bypass Th1s Pl4cez LMAOFFF")	
+	end)	
+end;
+task.spawn(C_a0);
+local function C_a3()
+	local script = LMG2L["LocalScript_a3"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	local player = game.Players.LocalPlayer	
+		local char = player.Character	
+		local tool	
+		for i,v in player:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+		for i,v in game.ReplicatedStorage:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+		remote = tool.SyncAPI.ServerEndpoint	
+		function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+		function SetCollision(part,boolean)	
+			local args = {	
+				[1] = "SyncCollision",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CanCollide"] = boolean	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetAnchor(boolean,part)	
+			local args = {	
+				[1] = "SyncAnchor",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Anchored"] = boolean	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function CreatePart(cf,parent)	
+			local args = {	
+				[1] = "CreatePart",	
+				[2] = "Normal",	
+				[3] = cf,	
+				[4] = parent	
+			}	
+			_(args)	
+		end	
+		function DestroyPart(part)	
+			local args = {	
+				[1] = "Remove",	
+				[2] = {	
+					[1] = part	
+				}	
+			}	
+			_(args)	
+		end	
+		function MovePart(part,cf)	
+			local args = {	
+				[1] = "SyncMove",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CFrame"] = cf	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Resize(part,size,cf)	
+			local args = {	
+				[1] = "SyncResize",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CFrame"] = cf,	
+						["Size"] = size	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function AddMesh(part)	
+			local args = {	
+				[1] = "CreateMeshes",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+	
+		function SetMesh(part,meshid)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["MeshId"] = "rbxassetid://"..meshid	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetTexture(part, texid)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["TextureId"] = "rbxassetid://"..texid	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetName(part, stringg)	
+			local args = {	
+				[1] = "SetName",	
+				[2] = {	
+					[1] = part	
+				},	
+				[3] = stringg	
+			}	
+	
+			_(args)	
+		end	
+		function MeshResize(part,size)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Scale"] = size	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Weld(part1, part2,lead)	
+			local args = {	
+				[1] = "CreateWelds",	
+				[2] = {	
+					[1] = part1,	
+					[2] = part2	
+				},	
+				[3] = lead	
+			}	
+			_(args)	
+	
+		end	
+		function SetLocked(part,boolean)	
+			local args = {	
+				[1] = "SetLocked",	
+				[2] = {	
+					[1] = part	
+				},	
+				[3] = boolean	
+			}	
+			_(args)	
+		end	
+		function SetTrans(part,int)	
+			local args = {	
+				[1] = "SyncMaterial",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Transparency"] = int	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function CreateSpotlight(part)	
+			local args = {	
+				[1] = "CreateLights",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["LightType"] = "SpotLight"	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SyncLighting(part,brightness)	
+			local args = {	
+				[1] = "SyncLighting",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["LightType"] = "SpotLight",	
+						["Brightness"] = brightness	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Color(part,color)	
+			local args = {	
+				[1] = "SyncColor",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Color"] = color --[[Color3]],	
+						["UnionColoring"] = false	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SpawnDecal(part,side)	
+			local args = {	
+				[1] = "CreateTextures",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Face"] = side,	
+						["TextureType"] = "Decal"	
+					}	
+				}	
+			}	
+	
+			_(args)	
+		end	
+		function AddDecal(part,asset,side)	
+			local args = {	
+				[1] = "SyncTexture",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Face"] = side,	
+						["TextureType"] = "Decal",	
+						["Texture"] = "rbxassetid://".. asset	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+	
+		function Sky(id)	
+			e = char.HumanoidRootPart.CFrame.x	
+			f = char.HumanoidRootPart.CFrame.y	
+			g = char.HumanoidRootPart.CFrame.z	
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)	
+			for i,v in game.Workspace:GetDescendants() do	
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then	
+					--spawn(function()	
+					SetName(v,"Sky")	
+					AddMesh(v)	
+					--end)	
+					--spawn(function()	
+					SetMesh(v,"111891702759441")	
+					SetTexture(v,id)	
+					--end)	
+					MeshResize(v,Vector3.new(4000, 4000, 4000))	
+					SetLocked(v,true)	
+				end	
+			end	
+		end	
+		Sky("1752852615")	
+	end)	
+end;
+task.spawn(C_a3);
+local function C_a6()
+	local script = LMG2L["LocalScript_a6"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local player = game.Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+		local tool	
+	
+		for _, v in ipairs(player:GetDescendants()) do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+				break	
+			end	
+		end	
+	
+		if not tool then	
+			for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do	
+				if v.Name == "SyncAPI" then	
+					tool = v.Parent	
+					break	
+				end	
+			end	
+		end	
+	
+		if not tool then return end	
+	
+		local remote = tool.SyncAPI.ServerEndpoint	
+	
+		local function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+	
+		local function SetLocked(part, boolean)	
+			_({"SetLocked", {part}, boolean})	
+		end	
+	
+		local function SpawnDecal(part, side)	
+			_({"CreateTextures", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal"	
+			}}})	
+		end	
+	
+		local function AddDecal(part, asset, side)	
+			_({"SyncTexture", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal",	
+				Texture = "rbxassetid://" .. asset	
+			}}})	
+		end	
+	
+		local function spam(id)	
+			for _, v in ipairs(workspace:GetDescendants()) do	
+				if v:IsA("BasePart") then	
+					task.spawn(function()	
+						SetLocked(v, false)	
+	
+						for _, face in ipairs({	
+							Enum.NormalId.Front,	
+							Enum.NormalId.Back,	
+							Enum.NormalId.Right,	
+							Enum.NormalId.Left,	
+							Enum.NormalId.Top,	
+							Enum.NormalId.Bottom	
+						}) do	
+							SpawnDecal(v, face)	
+							AddDecal(v, id, face)	
+						end	
+					end)	
+				end	
+			end	
+		end	
+	
+		spam("130225880653570")	
+	end)	
+end;
+task.spawn(C_a6);
+local function C_a9()
+	local script = LMG2L["LocalScript_a9"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	local player = game.Players.LocalPlayer	
+		local char = player.Character	
+		local tool	
+		for i,v in player:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+		for i,v in game.ReplicatedStorage:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+		remote = tool.SyncAPI.ServerEndpoint	
+		function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+		function SetCollision(part,boolean)	
+			local args = {	
+				[1] = "SyncCollision",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CanCollide"] = boolean	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetAnchor(boolean,part)	
+			local args = {	
+				[1] = "SyncAnchor",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Anchored"] = boolean	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function CreatePart(cf,parent)	
+			local args = {	
+				[1] = "CreatePart",	
+				[2] = "Normal",	
+				[3] = cf,	
+				[4] = parent	
+			}	
+			_(args)	
+		end	
+		function DestroyPart(part)	
+			local args = {	
+				[1] = "Remove",	
+				[2] = {	
+					[1] = part	
+				}	
+			}	
+			_(args)	
+		end	
+		function MovePart(part,cf)	
+			local args = {	
+				[1] = "SyncMove",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CFrame"] = cf	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Resize(part,size,cf)	
+			local args = {	
+				[1] = "SyncResize",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CFrame"] = cf,	
+						["Size"] = size	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function AddMesh(part)	
+			local args = {	
+				[1] = "CreateMeshes",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+	
+		function SetMesh(part,meshid)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["MeshId"] = "rbxassetid://"..meshid	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetTexture(part, texid)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["TextureId"] = "rbxassetid://"..texid	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetName(part, stringg)	
+			local args = {	
+				[1] = "SetName",	
+				[2] = {	
+					[1] = part	
+				},	
+				[3] = stringg	
+			}	
+	
+			_(args)	
+		end	
+		function MeshResize(part,size)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Scale"] = size	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Weld(part1, part2,lead)	
+			local args = {	
+				[1] = "CreateWelds",	
+				[2] = {	
+					[1] = part1,	
+					[2] = part2	
+				},	
+				[3] = lead	
+			}	
+			_(args)	
+	
+		end	
+		function SetLocked(part,boolean)	
+			local args = {	
+				[1] = "SetLocked",	
+				[2] = {	
+					[1] = part	
+				},	
+				[3] = boolean	
+			}	
+			_(args)	
+		end	
+		function SetTrans(part,int)	
+			local args = {	
+				[1] = "SyncMaterial",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Transparency"] = int	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function CreateSpotlight(part)	
+			local args = {	
+				[1] = "CreateLights",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["LightType"] = "SpotLight"	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SyncLighting(part,brightness)	
+			local args = {	
+				[1] = "SyncLighting",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["LightType"] = "SpotLight",	
+						["Brightness"] = brightness	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Color(part,color)	
+			local args = {	
+				[1] = "SyncColor",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Color"] = color --[[Color3]],	
+						["UnionColoring"] = false	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SpawnDecal(part,side)	
+			local args = {	
+				[1] = "CreateTextures",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Face"] = side,	
+						["TextureType"] = "Decal"	
+					}	
+				}	
+			}	
+	
+			_(args)	
+		end	
+		function AddDecal(part,asset,side)	
+			local args = {	
+				[1] = "SyncTexture",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Face"] = side,	
+						["TextureType"] = "Decal",	
+						["Texture"] = "rbxassetid://".. asset	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+	
+		function Sky(id)	
+			e = char.HumanoidRootPart.CFrame.x	
+			f = char.HumanoidRootPart.CFrame.y	
+			g = char.HumanoidRootPart.CFrame.z	
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)	
+			for i,v in game.Workspace:GetDescendants() do	
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then	
+					--spawn(function()	
+					SetName(v,"Sky")	
+					AddMesh(v)	
+					--end)	
+					--spawn(function()	
+					SetMesh(v,"111891702759441")	
+					SetTexture(v,id)	
+					--end)	
+					MeshResize(v,Vector3.new(4000, 4000, 4000))	
+					SetLocked(v,true)	
+				end	
+			end	
+		end	
+		Sky("79440497150256")	
+	
+	local skyPart	
+	for _, v in workspace:GetDescendants() do	
+		if v:IsA("BasePart") and v.Name == "Sky" then	
+			skyPart = v	
+			break	
+		end	
+	end	
+	
+	if skyPart then	
+		task.spawn(function()	
+			while true do	
+				local currentCFrame = skyPart.CFrame	
+				local newCFrame = currentCFrame * CFrame.Angles(	
+	                                            math.rad(-3),	
+	                                            math.rad(5),	
+	                                            math.rad(8)	
+	                                    )	
+	                                   MovePart(skyPart, newCFrame)	
+	                                   task.wait(0.001)				
+			end	
+		end)	
+	end	
+	end)	
+	end)	
+end;
+task.spawn(C_a9);
+local function C_ac()
+	local script = LMG2L["LocalScript_ac"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";blur all")	
+	end)	
+end;
+task.spawn(C_ac);
+local function C_af()
+	local script = LMG2L["LocalScript_af"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";shutdown ;kick all ZachXploitz hack this game LMA00FF")	
+	end)	
+end;
+task.spawn(C_af);
+local function C_b2()
+	local script = LMG2L["LocalScript_b2"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";fire all")	
+	end)	
+end;
+task.spawn(C_b2);
+local function C_b5()
+	local script = LMG2L["LocalScript_b5"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+		local Players = game:GetService("Players")	
+		local RunService = game:GetService("RunService")	
+	
+		local player = Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+	
+		local tool	
+		for _,v in ipairs(player:GetDescendants()) do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+				break	
+			end	
+		end	
+	
+		if not tool then	
+			for _,v in ipairs(game.ReplicatedStorage:GetDescendants()) do	
+				if v.Name == "SyncAPI" then	
+					tool = v.Parent	
+					break	
+				end	
+			end	
+		end	
+	
+		if not tool then return end	
+		local remote = tool:WaitForChild("SyncAPI"):WaitForChild("ServerEndpoint")	
+	
+		local humanoid = char:WaitForChild("Humanoid")	
+		if humanoid.RigType ~= Enum.HumanoidRigType.R6 then return end	
+	
+		local torso = char:WaitForChild("Torso")	
+		local neck = torso:WaitForChild("Neck")	
+	
+		local base = neck.C0	
+		local t = 0	
+		local speed = 6	
+		local distance = 0.8	
+	
+		RunService.RenderStepped:Connect(function(dt)	
+			t += dt * speed	
+			local offset = math.sin(t) * distance	
+			neck.C0 = base * CFrame.new(offset,0,0)	
+	
+			remote:InvokeServer("SyncJoints", {	
+				{Joint = neck, C0 = neck.C0}	
+			})	
+		end)	
+	end)	
+end;
+task.spawn(C_b5);
+local function C_b8()
+	local script = LMG2L["LocalScript_b8"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local player = game.Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+		local tool	
+	
+		for _, v in ipairs(player:GetDescendants()) do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+				break	
+			end	
+		end	
+	
+		if not tool then	
+			for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do	
+				if v.Name == "SyncAPI" then	
+					tool = v.Parent	
+					break	
+				end	
+			end	
+		end	
+	
+		if not tool then return end	
+	
+		local remote = tool.SyncAPI.ServerEndpoint	
+	
+		local function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+	
+		local function SetLocked(part, boolean)	
+			_({"SetLocked", {part}, boolean})	
+		end	
+	
+		local function SpawnDecal(part, side)	
+			_({"CreateTextures", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal"	
+			}}})	
+		end	
+	
+		local function AddDecal(part, asset, side)	
+			_({"SyncTexture", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal",	
+				Texture = "rbxassetid://" .. asset	
+			}}})	
+		end	
+	
+		local function spam(id)	
+			for _, v in ipairs(workspace:GetDescendants()) do	
+				if v:IsA("BasePart") then	
+					task.spawn(function()	
+						SetLocked(v, false)	
+	
+						for _, face in ipairs({	
+							Enum.NormalId.Front,	
+							Enum.NormalId.Back,	
+							Enum.NormalId.Right,	
+							Enum.NormalId.Left,	
+							Enum.NormalId.Top,	
+							Enum.NormalId.Bottom	
+						}) do	
+							SpawnDecal(v, face)	
+							AddDecal(v, id, face)	
+						end	
+					end)	
+				end	
+			end	
+		end	
+	
+		spam("79440497150256")	
+	end)	
+end;
+task.spawn(C_b8);
+local function C_bb()
+	local script = LMG2L["LocalScript_bb"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/Md8U5MAW"))()	
+	end)	
+end;
+task.spawn(C_bb);
+local function C_c1()
+	local script = LMG2L["LocalScript_c1"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";r6")	
+	end)	
+end;
+task.spawn(C_c1);
+local function C_c4()
+	local script = LMG2L["LocalScript_c4"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";r15")	
+	end)	
+end;
+task.spawn(C_c4);
+local function C_c8()
+	local script = LMG2L["LocalScript_c8"];
+	local label = script.Parent	
+	
+	local fonts = {	
+	Font.new("rbxasset://fonts/families/Arial.json"),	
+	Font.new("rbxasset://fonts/families/SourceSansPro.json"),	
+	Font.new("rbxasset://fonts/families/BodoniModa.json"),	
+	Font.new("rbxasset://fonts/families/Garamond.json"),	
+	Font.new("rbxasset://fonts/families/Cartoon.json"),	
+	Font.new("rbxasset://fonts/families/Code.json"),	
+	Font.new("rbxasset://fonts/families/HighwayGothic.json"),	
+	Font.new("rbxasset://fonts/families/SciFi.json"),	
+	Font.new("rbxasset://fonts/families/Arcade.json"),	
+	Font.new("rbxasset://fonts/families/Fantasy.json"),	
+	Font.new("rbxasset://fonts/families/Antique.json"),	
+	Font.new("rbxasset://fonts/families/Gotham.json"),	
+	Font.new("rbxasset://fonts/families/Oswald.json"),	
+	Font.new("rbxasset://fonts/families/PatrickHand.json"),	
+	Font.new("rbxasset://fonts/families/PermanentMarker.json"),	
+	Font.new("rbxasset://fonts/families/Roboto.json"),	
+	Font.new("rbxasset://fonts/families/AmaticSC.json"),	
+	Font.new("rbxasset://fonts/families/Bangers.json"),	
+	Font.new("rbxasset://fonts/families/Creepster.json"),	
+	Font.new("rbxasset://fonts/families/DenkOne.json"),	
+	Font.new("rbxasset://fonts/families/FredokaOne.json"),	
+	Font.new("rbxasset://fonts/families/GrenzeGotisch.json"),	
+	Font.new("rbxasset://fonts/families/IndieFlower.json"),	
+	Font.new("rbxasset://fonts/families/JosefinSans.json"),	
+	Font.new("rbxasset://fonts/families/Jura.json"),	
+	Font.new("rbxasset://fonts/families/Kalam.json"),	
+	Font.new("rbxasset://fonts/families/LuckiestGuy.json"),	
+	Font.new("rbxasset://fonts/families/Merriweather.json"),	
+	Font.new("rbxasset://fonts/families/Michroma.json"),	
+	Font.new("rbxasset://fonts/families/Montserrat.json"),	
+	Font.new("rbxasset://fonts/families/Nunito.json"),	
+	Font.new("rbxasset://fonts/families/Play.json"),	
+	Font.new("rbxasset://fonts/families/PlayfairDisplay.json"),	
+	Font.new("rbxasset://fonts/families/Poppins.json"),	
+	Font.new("rbxasset://fonts/families/Raleway.json"),	
+	Font.new("rbxasset://fonts/families/Sarpanch.json"),	
+	Font.new("rbxasset://fonts/families/SpecialElite.json"),	
+	Font.new("rbxasset://fonts/families/TitilliumWeb.json"),	
+	Font.new("rbxasset://fonts/families/Ubuntu.json")	
+	}	
+	
+	while true do	
+	for i = 1, #fonts do	
+	label.FontFace = fonts[i]	
+	task.wait(0.05)	
+	end	
+	end	
+end;
+task.spawn(C_c8);
+local function C_c9()
+	local script = LMG2L["LocalScript2_c9"];
+	local RunService = game:GetService("RunService")	
+	local obj = script.Parent	
+	
+	local hue = 0	
+	
+	RunService.RenderStepped:Connect(function(dt)	
+		hue = (hue + dt * 100) % 1	
+		obj.TextColor3 = Color3.fromHSV(hue, 1, 1)	
+	end)	
+end;
+task.spawn(C_c9);
+
+return LMG2L["ScreenGui_1"], require;
