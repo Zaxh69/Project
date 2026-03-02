@@ -2202,7 +2202,7 @@ end
 
 RequestCommand:InvokeServer(";res all")
 task.wait(0.3)
-RequestCommand:InvokeServer(";r6 all ;fog 100)
+RequestCommand:InvokeServer(";r6 all ;fog 100")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
 
