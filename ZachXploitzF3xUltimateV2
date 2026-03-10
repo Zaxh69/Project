@@ -81,7 +81,7 @@ LMG2L["ScrollingFrame_9"]["BorderColor3"] = Color3.fromRGB(80, 27, 255);
 LMG2L["ScrollingFrame_9"]["BackgroundTransparency"] = 1;
 
 
-LMG2L["Return _a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
+LMG2L["ReturnSky _a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_9"]);
 LMG2L["ReturnSky _a"]["TextWrapped"] = true;
 LMG2L["ReturnSky _a"]["BorderSizePixel"] = 0;
 LMG2L["ReturnSky _a"]["TextScaled"] = true;
