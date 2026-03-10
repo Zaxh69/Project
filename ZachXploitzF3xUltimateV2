@@ -93,7 +93,7 @@ LMG2L["ReturnSky _a"]["Name"] = [[Return Skybox]];
 LMG2L["ReturnSky _a"]["Position"] = UDim2.new(0, 406, 0, 8);
 
 
-LMG2L["LocalScript_b"] = Instance.new("LocalScript", LMG2L["Zach Old Skybox _a"]);
+LMG2L["LocalScript_b"] = Instance.new("LocalScript", LMG2L["ReturnSky _a"]);
 
 
 
