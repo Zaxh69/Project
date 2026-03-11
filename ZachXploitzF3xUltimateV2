@@ -15,6 +15,7 @@ LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").Loca
 LMG2L["ScreenGui_1"]["IgnoreGuiInset"] = true;
 LMG2L["ScreenGui_1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false;
 
 
 LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
