@@ -97,7 +97,7 @@ LMG2L["LocalScript_b"] = Instance.new("LocalScript", LMG2L["ReturnSky _a"]);
 
 
 
-LMG2L["UIStroke_c"] = Instance.new("UIStroke", LMG2L["Zach Old Skybox _a"]);
+LMG2L["UIStroke_c"] = Instance.new("UIStroke", LMG2L["ReturnSky _a"]);
 LMG2L["UIStroke_c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 LMG2L["UIStroke_c"]["Thickness"] = 2;
 LMG2L["UIStroke_c"]["Color"] = Color3.fromRGB(34, 11, 255);
