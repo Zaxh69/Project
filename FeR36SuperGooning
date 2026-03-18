@@ -1,0 +1,770 @@
+-- ZACH〆Xploit
+
+local Players = game:GetService("Players")
+local Lighting = game:GetService("Lighting")
+
+local player = game.Players:WaitForChild("KyuKusangaki")
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "Serverside"
+gui.ResetOnSpawn = false
+gui.IgnoreGuiInset = true
+gui.Parent = player:WaitForChild("PlayerGui")
+
+local main = Instance.new("ImageLabel")
+main.Size = UDim2.new(0,550,0,695)
+main.Position = UDim2.new(0.5,-275,0.5,-340)
+main.Image = "rbxassetid://96636795002106"
+main.BackgroundColor3 = Color3.fromRGB(15,15,15)
+main.Parent = gui
+main.Active = true
+main.Draggable = true
+
+local mainStroke = Instance.new("UIStroke",main)
+mainStroke.Color = Color3.fromRGB(120,200,255)
+mainStroke.Thickness = 3
+mainStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+local title = Instance.new("TextLabel",main)
+title.Size = UDim2.new(1,0,0,45)
+title.BackgroundTransparency = 1
+title.Text = "ZachXploit Gui ss"
+title.TextScaled = true
+title.Font = Enum.Font.GrenzeGotisch
+title.TextColor3 = Color3.fromRGB(120,200,255)
+
+local musicLabel = Instance.new("TextLabel",main)
+musicLabel.Size = UDim2.new(1,0,0,35)
+musicLabel.Position = UDim2.new(0,0,0,420)
+musicLabel.BackgroundTransparency = 1
+musicLabel.Text = "ByPaSsEd MuSiC"
+musicLabel.TextScaled = true
+musicLabel.Font = Enum.Font.GrenzeGotisch
+musicLabel.TextColor3 = Color3.fromRGB(120,200,255)
+
+local function btn(t,x,y)
+local b = Instance.new("TextButton")
+b.Parent = main
+b.Size = UDim2.new(0,160,0,50)
+b.Position = UDim2.new(0,x,0,y)
+b.BackgroundTransparency = 1
+b.Text = t
+b.TextScaled = true
+b.Font = Enum.Font.SourceSansBold
+b.TextColor3 = Color3.fromRGB(120,200,255)
+
+local s = Instance.new("UIStroke",b)
+s.Color = Color3.fromRGB(120,200,255)
+s.Thickness = 3
+s.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+return b
+
+end
+
+local decal = btn("DecalSpam",10,60)
+local skybox = btn("Skybox",190,60)
+local particle = btn("Particle",370,60)
+local disco = btn("DiscoFog",10,120)
+local hint = btn("Hint",190,120)
+local spam = btn("MsgSpam",370,120)
+local kick = btn("KickAll",10,180)
+local zxzx = btn("ZXZX",190,180)
+local scare = btn("Jumpscare",370,180)
+local anime = btn("AnimeSky",10,240)
+local un = btn("Unanchor",190,240)
+local shake = btn("Shake basplate",370,240)
+local duck = btn("DuckRoast",370,300)
+local face = btn("FaceAll",10,300)
+local Mesh = btn("Meshify",190,300)
+local chat = btn("Chat all",10,360)
+local fire = btn("Fire all",190,360)
+local rotatesky = btn("Rotate Skybox",370,360)
+
+local stopmusic = btn("StopAllMusic",10,460)
+local bpass = btn("Bodypartz",190,460)
+local alone = btn("BetterOffAlone",370,460)
+local krab = btn("MrKrabs",10,520)
+local doge = btn("DogeBread",190,520)
+local lazy = btn("LazyTown",370,520)
+local sp= btn("Spaghetti",10,580)
+local jump = btn("Jumpstyle",190,580)
+local hs = btn("HardstyleKH",370,580)
+local x1 = btn("1x1x1x1",10,640)
+local sparta = btn("sparta Remix",190,640)
+local sword  = btn("Master Sword Better",370,640)
+
+rotatesky.MouseButton1Click:Connect(function()
+local Lighting = game:GetService("Lighting")
+local RunService = game:GetService("RunService")
+
+local oldSky = Lighting:FindFirstChildOfClass("Sky")
+if oldSky then
+oldSky:Destroy()
+end
+
+local newSky = Instance.new("Sky")
+newSky.SkyboxBk = "rbxassetid://96636795002106"
+newSky.SkyboxDn = "rbxassetid://96636795002106"
+newSky.SkyboxFt = "rbxassetid://96636795002106"
+newSky.SkyboxLf = "rbxassetid://96636795002106"
+newSky.SkyboxRt = "rbxassetid://96636795002106"
+newSky.SkyboxUp = "rbxassetid://96636795002106"
+newSky.Parent = Lighting
+
+local pitch = 0
+local yaw = 0
+
+RunService.Heartbeat:Connect(function(dt)
+if not newSky.Parent then return end
+
+pitch = (pitch + 300 * dt) % 360
+yaw   = (yaw   + 290 * dt) % 360
+
+newSky.SkyboxOrientation = Vector3.new(pitch,yaw,0)
+
+end)
+end)
+face.MouseButton1Click:Connect(function()
+local Players = game:GetService("Players")
+
+for _,player in ipairs(Players:GetPlayers()) do
+if player.Character and player.Character:FindFirstChild("Head") then
+
+local head = player.Character.Head
+
+if not head:FindFirstChild("ZachGui") then
+
+local gui1 = Instance.new("BillboardGui")
+gui1.Name = "ZachGui"
+gui1.Parent = head
+gui1.Adornee = head
+gui1.Size = UDim2.new(2.5,0,2.5,0)
+gui1.StudsOffset = Vector3.new(0,0.2,0)
+gui1.AlwaysOnTop = true
+
+local img = Instance.new("ImageLabel",gui1)
+img.Image = "rbxassetid://79440497150256"
+img.Size = UDim2.new(1,0,1,0)
+img.BackgroundTransparency = 1
+
+head.Transparency = 1
+
+end
+end
+end
+end)
+
+chat.MouseButton1Click:Connect(function()
+local Players = game:GetService("Players")
+local ChatService = game:GetService("Chat")
+
+while true do
+
+for _,player in pairs(Players:GetPlayers()) do
+task.spawn(function()
+
+local character = player.Character or player.CharacterAdded:Wait()
+local head = character:FindFirstChild("Head")
+
+if head then
+ChatService:Chat(head, "Teem ZachXploit Join T0day Niggers!!!1!1!1!1", Enum.ChatColor.White)
+end
+
+end)
+end
+
+task.wait(0.2)
+
+end
+end)
+
+local MeshTypes = {Enum.MeshType.Head, Enum.MeshType.Torso, Enum.MeshType.Wedge, Enum.MeshType.Sphere, Enum.MeshType.Cylinder, Enum.MeshType.Brick}
+local function getAllParts()
+local t = {}
+for _, o in ipairs(Workspace:GetDescendants()) do
+if o:IsA("BasePart") then table.insert(t,o) end
+end
+return t
+end
+
+Mesh.MouseButton1Click:Connect(function()
+task.spawn(function()
+while true do
+for _,p in ipairs(getAllParts()) do
+p.Color = Color3.fromHSV(math.random(),1,1)
+local m = p:FindFirstChildOfClass("SpecialMesh") or Instance.new("SpecialMesh",p)
+m.MeshType = MeshTypes[math.random(1,#MeshTypes)]
+end
+Lighting.Ambient = Color3.fromHSV(math.random(),0.6,0.8)
+Lighting.OutdoorAmbient = Color3.fromHSV(math.random(),0.7,0.9)
+task.wait(0.15)
+end
+end)
+end)
+
+fire.MouseButton1Click:Connect(function()
+for _,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") then
+local f = Instance.new("Fire", v)
+f.Size = 10
+f.Heat = 100
+f.SecondaryColor = Color3.new(0,0,0)
+end
+end
+end)
+particle.MouseButton1Click:Connect(function()
+
+for _,v in ipairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") then
+local p = Instance.new("ParticleEmitter")
+p.Texture = "rbxassetid://96636795002106"
+p.Rate = 120
+p.Lifetime = NumberRange.new(1,2)
+p.Speed = NumberRange.new(50,67)
+p.SpreadAngle = Vector2.new(360,360)
+p.Size = NumberSequence.new(7)
+p.Rotation = NumberRange.new(0,360)
+p.RotSpeed = NumberRange.new(500,1000)
+p.VelocitySpread = 180
+p.Parent = v
+end
+
+end
+end)
+
+stopmusic.MouseButton1Click:Connect(function()
+
+for _,v in pairs(game:GetDescendants()) do
+if v:IsA("Sound") then
+v:Stop()
+v:Destroy()
+end
+end
+
+end)
+
+spam.MouseButton1Click:Connect(function()
+task.spawn(function()
+while true do
+local m = Instance.new("Message")
+m.Text = "Game Ruined By ZachXploitz FACKING NIGGASS!!1!1!1!1!1!2!2!2!2!3!2!11!1!1!1!1!1!1!1!!!1!1!1!1!1!1!1!1"
+m.Name = "zxp"
+m.Parent = workspace
+
+task.wait(0.2)
+m:Destroy()
+task.wait(0.3)
+end
+end)
+
+end)
+
+zxzx.MouseButton1Click:Connect(function()
+
+for i,v in next, workspace:GetChildren() do
+if v:IsA("BasePart") then
+local bbg = Instance.new("BillboardGui", v)
+bbg.Name = "stuf"
+bbg.Adornee = v
+bbg.Size = UDim2.new(2.5,0,2.5,0)
+
+local tlb = Instance.new("TextLabel")
+tlb.Text = "ZX ZX ZX ZX ZX ZX"
+tlb.Font = Enum.Font.SourceSansBold
+tlb.TextSize = 48
+tlb.TextColor3 = Color3.fromRGB(0,0,139)
+tlb.Size = UDim2.new(1.25,0,1.25,0)
+tlb.Position = UDim2.new(-0.125,-22,-1.1,0)
+tlb.BackgroundTransparency = 1
+tlb.Parent = bbg
+end
+
+end
+
+local function xds(dd)
+for i,v in next, dd:GetChildren() do
+if v:IsA("BasePart") then
+v.BrickColor = BrickColor.new("Really black")
+v.TopSurface = Enum.SurfaceType.Smooth
+v.BottomSurface = Enum.SurfaceType.Smooth
+
+local s = Instance.new("SelectionBox", v)
+s.Adornee = v
+s.Color3 = Color3.fromRGB(0,0,139)
+
+local a = Instance.new("PointLight", v)
+a.Color = Color3.fromRGB(0,0,139)
+a.Range = 15
+a.Brightness = 5
+
+local f = Instance.new("Fire", v)
+f.Color = Color3.fromRGB(0,0,139)
+f.SecondaryColor = Color3.new(0,0,0)
+f.Size = 19
+f.Heat = 22
+
+end
+
+if #v:GetChildren() > 0 then
+xds(v)
+end
+
+end
+
+end
+
+xds(workspace)
+
+end)
+
+scare.MouseButton1Click:Connect(function()
+
+local function run(p)
+local pg = p:WaitForChild("PlayerGui")
+
+local gui = Instance.new("ScreenGui",pg)
+gui.ResetOnSpawn = false
+gui.IgnoreGuiInset = true
+
+local img = Instance.new("ImageLabel",gui)
+img.Size = UDim2.fromScale(1,1)
+img.BackgroundTransparency = 1
+img.Image = "rbxassetid://96636795002106"
+
+local s = Instance.new("Sound",pg)
+s.SoundId = "rbxassetid://6129291390"
+s.Volume = 999
+s:Play()
+
+task.delay(5,function()
+gui:Destroy()
+end)
+
+end
+
+for _,p in pairs(game.Players:GetPlayers()) do
+run(p)
+end
+
+end)
+
+hint.MouseButton1Click:Connect(function()
+local h = Instance.new("Hint",workspace)
+h.Text = "🙏🙏https://chat.whatsapp.com/ItnICCt7ETNJBYBjRDFhoJ?mode=gi_t🙏🙏"
+task.delay(3,function() h:Destroy() end)
+end)
+
+kick.MouseButton1Click:Connect(function()
+for _,p in pairs(Players:GetPlayers()) do
+p:Kick("K1Ck3d B7 z4xhXloit nNiggerss!!!!")
+end
+end)
+
+un.MouseButton1Click:Connect(function()
+for _,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") then
+v.Anchored = false
+end
+end
+end)
+
+shake.MouseButton1Click:Connect(function()
+for _,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") then
+v.CFrame *= CFrame.Angles(0,0,math.rad(30))
+end
+end
+end)
+
+stopmusic.MouseButton1Click:Connect(function()
+for _,v in pairs(game:GetDescendants()) do
+if v:IsA("Sound") then
+v:Stop()
+v:Destroy()
+end
+end
+end)
+
+bpass.MouseButton1Click:Connect(function()
+local a = Instance.new("Sound",workspace)
+a.SoundId = "rbxassetid://127653283576622"
+a.Looped = true
+a.PlaybackSpeed = 1.1
+a.Volume = 999
+local distortion = Instance.new("DistortionSoundEffect", a)
+distortion.Level = 0.5
+a:Play()
+end)
+
+alone.MouseButton1Click:Connect(function()
+local sound = Instance.new("Sound", workspace)
+sound.SoundId = "rbxassetid://83197094750741"
+sound.Volume = 1
+sound.PlaybackSpeed = 0.1
+sound.Looped = true
+local distortion = Instance.new("DistortionSoundEffect", sound)
+distortion.Level = 0.5
+sound:Play()
+end)
+
+krab.MouseButton1Click:Connect(function()
+local sound = Instance.new("Sound", workspace)
+sound.SoundId = "rbxassetid://87663330165612"
+sound.Volume = 1
+sound.PlaybackSpeed = 0.1
+sound.Looped = true
+local distortion = Instance.new("DistortionSoundEffect", sound)
+distortion.Level = 0.2
+sound:Play()
+end)
+
+doge.MouseButton1Click:Connect(function()
+local sound = Instance.new("Sound", workspace)
+sound.SoundId = "rbxassetid://79099052007893"
+sound.Volume = 3
+sound.PlaybackSpeed = 1
+sound.Looped = true
+local distortion = Instance.new("DistortionSoundEffect", sound)
+distortion.Level = 0.65
+sound:Play()
+end)
+
+lazy.MouseButton1Click:Connect(function()
+local sound = Instance.new("Sound", workspace)
+sound.SoundId = "rbxassetid://106687731139619"
+sound.Volume = 1
+sound.PlaybackSpeed = 0.13
+sound.Looped = true
+local distortion = Instance.new("DistortionSoundEffect", sound)
+distortion.Level = 0.65
+sound:Play()
+end)
+
+sp.MouseButton1Click:Connect(function()
+local sound = Instance.new("Sound", workspace)
+sound.SoundId = "rbxassetid://99907604701668"
+sound.Volume = 1
+sound.PlaybackSpeed = 0.13
+sound.Looped = true
+local distortion = Instance.new("DistortionSoundEffect", sound)
+distortion.Level = 0.65
+sound:Play()
+end)
+
+jump.MouseButton1Click:Connect(function()
+local sound = Instance.new("Sound", workspace)
+sound.SoundId = "rbxassetid://1839246711"
+sound.Volume = 1
+sound.PlaybackSpeed = 1.1
+sound.Looped = true
+local distortion = Instance.new("DistortionSoundEffect", sound)
+distortion.Level = 1
+sound:Play()
+end)
+
+hs.MouseButton1Click:Connect(function()
+local sound = Instance.new("Sound", workspace)
+sound.SoundId = "rbxassetid://1839246774"
+sound.Volume = 5
+sound.PlaybackSpeed = 1.1
+sound.Looped = true
+local distortion = Instance.new("DistortionSoundEffect", sound)
+distortion.Level = 0.6
+sound:Play()
+end)
+
+x1.MouseButton1Click:Connect(function()
+local sound = Instance.new("Sound", workspace)
+sound.SoundId = "rbxassetid://139488665764275"
+sound.Volume = 99
+sound.PlaybackSpeed = 1.1
+sound.Looped = true
+local distortion = Instance.new("DistortionSoundEffect", sound)
+distortion.Level = 0
+sound:Play()
+end)
+
+sparta.MouseButton1Click:Connect(function()
+local sound = Instance.new("Sound", workspace)
+sound.SoundId = "rbxassetid://115458754743026"
+sound.Volume = 1
+sound.PlaybackSpeed = 0.1
+sound.Looped = true
+local distortion = Instance.new("DistortionSoundEffect", sound)
+distortion.Level = 1
+sound:Play()
+end)
+
+sword.MouseButton1Click:Connect(function()
+local sound = Instance.new("Sound", workspace)
+sound.SoundId = "rbxassetid://91222661873706"
+sound.Volume = 1
+sound.PlaybackSpeed = 0.1
+sound.Looped = true
+local distortion = Instance.new("DistortionSoundEffect", sound)
+distortion.Level = 0.6
+sound:Play()
+end)
+
+decal.MouseButton1Click:Connect(function()
+for _,v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") then
+for _,f in pairs(Enum.NormalId:GetEnumItems()) do
+local d = Instance.new("Decal",v)
+d.Texture = "rbxassetid://96636795002106"
+d.Face = f
+end
+end
+end
+end)
+
+skybox.MouseButton1Click:Connect(function()
+local s = Instance.new("Sky",Lighting)
+s.SkyboxBk = "rbxassetid://96636795002106"
+s.SkyboxDn = "rbxassetid://96636795002106"
+s.SkyboxFt = "rbxassetid://96636795002106"
+s.SkyboxLf = "rbxassetid://96636795002106"
+s.SkyboxRt = "rbxassetid://96636795002106"
+s.SkyboxUp = "rbxassetid://96636795002106"
+end)
+
+disco.MouseButton1Click:Connect(function()
+local light = game:GetService("Lighting")
+local fog = light:FindFirstChild("FogEffect") or Instance.new("ColorCorrectionEffect", light)
+fog.Name = "effect"
+
+local colors = {
+Color3.fromRGB(255, 0, 0),
+Color3.fromRGB(255, 165, 0),
+Color3.fromRGB(255, 255, 0),
+Color3.fromRGB(0, 255, 0),
+Color3.fromRGB(0, 0, 255),
+Color3.fromRGB(255, 192, 203),
+Color3.fromRGB(128, 0, 128)
+}
+
+local run = true
+local index = 1
+local timetrans = 2
+local start = os.clock()
+
+while run do
+local curtime = os.clock() - start
+local progress = curtime / timetrans
+
+local curcolor = colors[index]
+local nxtclr = colors[(index % #colors) + 1]
+
+fog.TintColor = curcolor:Lerp(nxtclr, progress)
+
+if progress >= 1 then
+index = index + 1
+if index > #colors then
+index = 1
+end
+start = os.clock()
+end
+
+task.wait()
+
+end
+end)
+
+duck.MouseButton1Click:Connect(function()
+
+math.randomseed(tick() % 1 * 1e6)
+
+sky = coroutine.create(function()
+while wait(0.3) do
+s = Instance.new("Sky",game.Lighting)
+s.SkyboxBk,s.SkyboxDn,s.SkyboxFt,s.SkyboxLf,s.SkyboxRt,s.SkyboxUp =
+"rbxassetid://11113512609","rbxassetid://11113512609","rbxassetid://11113512609",
+"rbxassetid://11113512609","rbxassetid://11113512609","rbxassetid://11113512609"
+s.CelestialBodiesShown = false
+end
+end)
+
+del = coroutine.create(function()
+while wait(0.3) do
+for i,v in pairs(workspace:GetChildren()) do
+if v:IsA("Model") then
+v:Destroy()
+end
+end
+end
+end)
+
+noises = {
+'rbxassetid://125300526515993'
+}
+
+sound = coroutine.create(function()
+a = Instance.new("Sound",workspace)
+a.SoundId = "rbxassetid://87792473318538"
+a.Name = "RAINING MEN"
+a.Pitch = 0.2
+a.Volume = 58359
+a.Looped = true
+
+distortion = Instance.new("DistortionSoundEffect")
+distortion.Level = 0.9
+distortion.Parent = a
+
+a:Play()
+
+end)
+
+msg = coroutine.create(function()
+while wait(0.4) do
+msg = Instance.new("Message",workspace)
+msg.Text = "Get DuckRoasted by Zachxploitz Miggas!!!1!!11!!1!1"
+wait(0.4)
+msg:Destroy()
+end
+end)
+
+rain = coroutine.create(function()
+while wait(10 % 1 * 1e2) do
+part = Instance.new("Part",workspace)
+part.Name = "Meshes/duck (3)"
+
+mesh = Instance.new("SpecialMesh",part)
+
+sound = Instance.new("Sound",workspace)
+
+part.CanCollide = false
+part.Size = Vector3.new(440,530,380)
+part.Position = Vector3.new(math.random(-3000,1000),math.random(1,3000),math.random(-3000,3000))
+
+sound.SoundId = noises[math.random(1,#noises)]
+sound:Play()
+sound.Ended:connect(function()
+sound:Destroy()
+end)
+
+mesh.MeshType = "FileMesh"
+mesh.MeshId = "http://www.roblox.com/asset/?id=9419831"
+mesh.TextureId = "http://www.roblox.com/asset/?id=9419827"
+mesh.Scale = Vector3.new(200,200,200)
+
+end
+
+end)
+
+coroutine.resume(sky)
+coroutine.resume(del)
+coroutine.resume(sound)
+coroutine.resume(msg)
+coroutine.resume(rain)
+
+end)
+
+anime.MouseButton1Click:Connect(function()
+local Players = game:GetService("Players")
+local Lighting = game:GetService("Lighting")
+local RunService = game:GetService("RunService")
+
+local function byZach(player)
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "FullCover"
+gui.ResetOnSpawn = false
+gui.IgnoreGuiInset = true
+gui.Parent = player:WaitForChild("PlayerGui")
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.fromScale(1,1)
+frame.BackgroundColor3 = Color3.fromRGB(225,225,225)
+frame.BorderSizePixel = 0
+frame.Parent = gui
+
+local image = Instance.new("ImageLabel")
+image.AnchorPoint = Vector2.new(0.5,0.5)
+image.Position = UDim2.fromScale(0.5,0.5)
+image.Size = UDim2.fromScale(1,1)
+image.BackgroundTransparency = 1
+image.Image = "rbxassetid://84838094344701"
+image.Parent = frame
+
+local time = 0
+local conn
+
+conn = RunService.Heartbeat:Connect(function(dt)
+if not image.Parent then
+conn:Disconnect()
+return
+end
+
+time += dt * 5
+
+local shakeX = math.sin(time * 7) * 0.02
+local shakeY = math.cos(time * 8) * 0.02
+local scale = 1 + math.sin(time * 8) * 0.1
+local rotation = math.sin(time * 10) * 9
+
+image.Position = UDim2.fromScale(0.5 + shakeX,0.5 + shakeY)
+image.Size = UDim2.fromScale(scale,scale)
+image.Rotation = rotation
+
+end)
+
+local sound1 = Instance.new("Sound")
+sound1.SoundId = "rbxassetid://82719020266339"
+sound1.Volume = 1
+sound1.Parent = gui
+sound1:Play()
+
+task.delay(2.8,function()
+if image.Parent then
+image.Image = "rbxassetid://95558068230459"
+end
+end)
+
+sound1.Ended:Connect(function()
+
+frame:Destroy()
+
+local sound2 = Instance.new("Sound")
+sound2.SoundId = "rbxassetid://134884767490882"
+sound2.Volume = 0.8
+sound2.Looped = true
+sound2.Parent = workspace
+sound2:Play()
+
+local images = {
+"http://www.roblox.com/asset/?id=21076888",
+"http://www.roblox.com/asset/?id=21076945",
+"http://www.roblox.com/asset/?id=21077007",
+"http://www.roblox.com/asset/?id=21077125",
+"http://www.roblox.com/asset/?id=21077227",
+"http://www.roblox.com/asset/?id=21077345",
+"http://www.roblox.com/asset/?id=21076888",
+"http://www.roblox.com/asset/?id=21076945"
+}
+
+local sky = Instance.new("Sky")
+sky.Parent = Lighting
+
+task.spawn(function()
+while true do
+for _,img in ipairs(images) do
+sky.SkyboxBk = img
+sky.SkyboxDn = img
+sky.SkyboxFt = img
+sky.SkyboxLf = img
+sky.SkyboxRt = img
+sky.SkyboxUp = img
+task.wait(0.2)
+end
+end
+end)
+
+end)
+
+end
+
+for _,player in ipairs(Players:GetPlayers()) do
+byZach(player)
+end
+end)
