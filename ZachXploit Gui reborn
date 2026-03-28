@@ -1,0 +1,4842 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+local LMG2L = {};
+
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["ScreenGui_1"]["IgnoreGuiInset"] = true;
+LMG2L["ScreenGui_1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false;
+
+
+LMG2L["FrameImage_2"] = Instance.new("ImageLabel", LMG2L["ScreenGui_1"]);
+LMG2L["FrameImage_2"]["BorderSizePixel"] = 0;
+LMG2L["FrameImage_2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["FrameImage_2"]["Size"] = UDim2.new(0, 532, 0, 434);
+LMG2L["FrameImage_2"]["Name"] = [[FrameImage]];
+LMG2L["FrameImage_2"]["Position"] = UDim2.new(0, 216, 0, 58);
+
+
+LMG2L["Credit_3"] = Instance.new("TextButton", LMG2L["FrameImage_2"]);
+LMG2L["Credit_3"]["TextWrapped"] = true;
+LMG2L["Credit_3"]["BorderSizePixel"] = 0;
+LMG2L["Credit_3"]["TextScaled"] = true;
+LMG2L["Credit_3"]["TextColor3"] = Color3.fromRGB(5, 42, 255);
+LMG2L["Credit_3"]["BackgroundColor3"] = Color3.fromRGB(2, 2, 2);
+LMG2L["Credit_3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Credit_3"]["Size"] = UDim2.new(0, 72, 0, 18);
+LMG2L["Credit_3"]["Text"] = [[Credit]];
+LMG2L["Credit_3"]["Name"] = [[Credit]];
+LMG2L["Credit_3"]["Position"] = UDim2.new(0, 294, 0, 24);
+
+
+LMG2L["LocalScript_4"] = Instance.new("LocalScript", LMG2L["Credit_3"]);
+
+
+
+LMG2L["Frame4_5"] = Instance.new("Frame", LMG2L["Credit_3"]);
+LMG2L["Frame4_5"]["Visible"] = false;
+LMG2L["Frame4_5"]["BorderSizePixel"] = 0;
+LMG2L["Frame4_5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Frame4_5"]["Size"] = UDim2.new(0, 522, 0, 374);
+LMG2L["Frame4_5"]["Position"] = UDim2.new(0, -288, 0, 30);
+LMG2L["Frame4_5"]["Name"] = [[Frame4]];
+
+
+LMG2L["ImageLabel_6"] = Instance.new("ImageLabel", LMG2L["Frame4_5"]);
+LMG2L["ImageLabel_6"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_6"]["ImageContent"] = ;
+LMG2L["ImageLabel_6"]["Image"] = [[rbxassetid://79440497150256]];
+LMG2L["ImageLabel_6"]["Size"] = UDim2.new(0, 106, 0, 102);
+LMG2L["ImageLabel_6"]["Position"] = UDim2.new(0, 0, 0, 268);
+
+
+LMG2L["UICorner_7"] = Instance.new("UICorner", LMG2L["ImageLabel_6"]);
+LMG2L["UICorner_7"]["CornerRadius"] = UDim.new(9, 9);
+
+
+LMG2L["ImageLabel4_8"] = Instance.new("ImageLabel", LMG2L["Frame4_5"]);
+LMG2L["ImageLabel4_8"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel4_8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel4_8"]["ImageContent"] = ;
+LMG2L["ImageLabel4_8"]["Image"] = [[rbxassetid://133681626381401]];
+LMG2L["ImageLabel4_8"]["Size"] = UDim2.new(0, 136, 0, 120);
+LMG2L["ImageLabel4_8"]["Name"] = [[ImageLabel4]];
+LMG2L["ImageLabel4_8"]["Position"] = UDim2.new(0, 292, 0, 104);
+
+
+LMG2L["ImageLabel5_9"] = Instance.new("ImageLabel", LMG2L["Frame4_5"]);
+LMG2L["ImageLabel5_9"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel5_9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel5_9"]["ImageContent"] = ;
+LMG2L["ImageLabel5_9"]["Image"] = [[rbxassetid://140004550492487]];
+LMG2L["ImageLabel5_9"]["Size"] = UDim2.new(0, 122, 0, 124);
+LMG2L["ImageLabel5_9"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel5_9"]["Name"] = [[ImageLabel5]];
+LMG2L["ImageLabel5_9"]["Position"] = UDim2.new(0, 112, 0, 250);
+
+
+LMG2L["TextLabel_a"] = Instance.new("TextLabel", LMG2L["Frame4_5"]);
+LMG2L["TextLabel_a"]["TextWrapped"] = true;
+LMG2L["TextLabel_a"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_a"]["TextScaled"] = true;
+LMG2L["TextLabel_a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_a"]["TextColor3"] = Color3.fromRGB(35, 12, 255);
+LMG2L["TextLabel_a"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_a"]["Size"] = UDim2.new(0, 516, 0, 98);
+LMG2L["TextLabel_a"]["Text"] = [[hi , welcome to ZachXploitz gui f3x about this gui, the gui was created in 2025 named ZachXploit Gui F3x then I made the ultimate version V1 v2 and this is V3 I didn't set it to public🥭🥀✌️]];
+
+
+LMG2L["ImageLabel3_b"] = Instance.new("ImageLabel", LMG2L["Frame4_5"]);
+LMG2L["ImageLabel3_b"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel3_b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel3_b"]["ImageContent"] = ;
+LMG2L["ImageLabel3_b"]["Image"] = [[rbxassetid://96636795002106]];
+LMG2L["ImageLabel3_b"]["Size"] = UDim2.new(0, 134, 0, 118);
+LMG2L["ImageLabel3_b"]["Name"] = [[ImageLabel3]];
+LMG2L["ImageLabel3_b"]["Position"] = UDim2.new(0, 154, 0, 104);
+
+
+LMG2L["ImageLabel2_c"] = Instance.new("ImageLabel", LMG2L["Frame4_5"]);
+LMG2L["ImageLabel2_c"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel2_c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel2_c"]["ImageContent"] = ;
+LMG2L["ImageLabel2_c"]["Image"] = [[rbxassetid://91739950576102]];
+LMG2L["ImageLabel2_c"]["Size"] = UDim2.new(0, 144, 0, 124);
+LMG2L["ImageLabel2_c"]["Name"] = [[ImageLabel2]];
+LMG2L["ImageLabel2_c"]["Position"] = UDim2.new(0, 4, 0, 98);
+
+
+LMG2L["UIStroke_d"] = Instance.new("UIStroke", LMG2L["Credit_3"]);
+LMG2L["UIStroke_d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_d"]["Thickness"] = 2;
+LMG2L["UIStroke_d"]["Color"] = Color3.fromRGB(14, 15, 255);
+
+
+LMG2L["UIStroke_e"] = Instance.new("UIStroke", LMG2L["FrameImage_2"]);
+LMG2L["UIStroke_e"]["Thickness"] = 2;
+LMG2L["UIStroke_e"]["Color"] = Color3.fromRGB(33, 17, 255);
+
+
+LMG2L["Home Page_f"] = Instance.new("TextButton", LMG2L["FrameImage_2"]);
+LMG2L["Home Page_f"]["TextWrapped"] = true;
+LMG2L["Home Page_f"]["BorderSizePixel"] = 0;
+LMG2L["Home Page_f"]["TextScaled"] = true;
+LMG2L["Home Page_f"]["TextColor3"] = Color3.fromRGB(5, 42, 255);
+LMG2L["Home Page_f"]["BackgroundColor3"] = Color3.fromRGB(2, 2, 2);
+LMG2L["Home Page_f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Home Page_f"]["Size"] = UDim2.new(0, 74, 0, 18);
+LMG2L["Home Page_f"]["Text"] = [[About/home]];
+LMG2L["Home Page_f"]["Name"] = [[Home Page]];
+LMG2L["Home Page_f"]["Position"] = UDim2.new(0, 46, 0, 24);
+
+
+LMG2L["LocalScript_10"] = Instance.new("LocalScript", LMG2L["Home Page_f"]);
+
+
+
+LMG2L["Frame1_11"] = Instance.new("Frame", LMG2L["Home Page_f"]);
+LMG2L["Frame1_11"]["BorderSizePixel"] = 0;
+LMG2L["Frame1_11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Frame1_11"]["Size"] = UDim2.new(0, 526, 0, 378);
+LMG2L["Frame1_11"]["Position"] = UDim2.new(0, -42, 0, 26);
+LMG2L["Frame1_11"]["Name"] = [[Frame1]];
+
+
+LMG2L["DxT gui_12"] = Instance.new("TextButton", LMG2L["Frame1_11"]);
+LMG2L["DxT gui_12"]["TextWrapped"] = true;
+LMG2L["DxT gui_12"]["BorderSizePixel"] = 0;
+LMG2L["DxT gui_12"]["TextScaled"] = true;
+LMG2L["DxT gui_12"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["DxT gui_12"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["DxT gui_12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["DxT gui_12"]["Size"] = UDim2.new(0, 140, 0, 30);
+LMG2L["DxT gui_12"]["Text"] = [[Dxt gui]];
+LMG2L["DxT gui_12"]["Name"] = [[DxT gui]];
+LMG2L["DxT gui_12"]["Position"] = UDim2.new(0, 0, 0, 246);
+
+
+LMG2L["UIStroke_13"] = Instance.new("UIStroke", LMG2L["DxT gui_12"]);
+LMG2L["UIStroke_13"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_13"]["Thickness"] = 2;
+LMG2L["UIStroke_13"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["LocalScript_14"] = Instance.new("LocalScript", LMG2L["DxT gui_12"]);
+
+
+
+LMG2L["fly gui_15"] = Instance.new("TextButton", LMG2L["Frame1_11"]);
+LMG2L["fly gui_15"]["TextWrapped"] = true;
+LMG2L["fly gui_15"]["BorderSizePixel"] = 0;
+LMG2L["fly gui_15"]["TextScaled"] = true;
+LMG2L["fly gui_15"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["fly gui_15"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["fly gui_15"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["fly gui_15"]["Size"] = UDim2.new(0, 142, 0, 30);
+LMG2L["fly gui_15"]["Text"] = [[Fly gui]];
+LMG2L["fly gui_15"]["Name"] = [[fly gui]];
+LMG2L["fly gui_15"]["Position"] = UDim2.new(0, -2, 0, 320);
+
+
+LMG2L["LocalScript_16"] = Instance.new("LocalScript", LMG2L["fly gui_15"]);
+
+
+
+LMG2L["UIStroke_17"] = Instance.new("UIStroke", LMG2L["fly gui_15"]);
+LMG2L["UIStroke_17"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_17"]["Thickness"] = 2;
+LMG2L["UIStroke_17"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["zxp v2_18"] = Instance.new("TextButton", LMG2L["Frame1_11"]);
+LMG2L["zxp v2_18"]["TextWrapped"] = true;
+LMG2L["zxp v2_18"]["BorderSizePixel"] = 0;
+LMG2L["zxp v2_18"]["TextScaled"] = true;
+LMG2L["zxp v2_18"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["zxp v2_18"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["zxp v2_18"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["zxp v2_18"]["Size"] = UDim2.new(0, 140, 0, 36);
+LMG2L["zxp v2_18"]["Text"] = [[ZachXploit Gui F3x ultimate v2 ]];
+LMG2L["zxp v2_18"]["Name"] = [[zxp v2]];
+LMG2L["zxp v2_18"]["Position"] = UDim2.new(0, 0, 0, 280);
+
+
+LMG2L["LocalScript_19"] = Instance.new("LocalScript", LMG2L["zxp v2_18"]);
+
+
+
+LMG2L["UIStroke_1a"] = Instance.new("UIStroke", LMG2L["zxp v2_18"]);
+LMG2L["UIStroke_1a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_1a"]["Thickness"] = 2;
+LMG2L["UIStroke_1a"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Zxp v1_1b"] = Instance.new("TextButton", LMG2L["Frame1_11"]);
+LMG2L["Zxp v1_1b"]["TextWrapped"] = true;
+LMG2L["Zxp v1_1b"]["BorderSizePixel"] = 0;
+LMG2L["Zxp v1_1b"]["TextScaled"] = true;
+LMG2L["Zxp v1_1b"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Zxp v1_1b"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Zxp v1_1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Zxp v1_1b"]["Size"] = UDim2.new(0, 140, 0, 38);
+LMG2L["Zxp v1_1b"]["Text"] = [[ZachXploit Gui F3x ultimate v1 ]];
+LMG2L["Zxp v1_1b"]["Name"] = [[Zxp v1]];
+LMG2L["Zxp v1_1b"]["Position"] = UDim2.new(0, 0, 0, 204);
+
+
+LMG2L["LocalScript_1c"] = Instance.new("LocalScript", LMG2L["Zxp v1_1b"]);
+
+
+
+LMG2L["UIStroke_1d"] = Instance.new("UIStroke", LMG2L["Zxp v1_1b"]);
+LMG2L["UIStroke_1d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_1d"]["Thickness"] = 2;
+LMG2L["UIStroke_1d"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["ImageLabel2_1e"] = Instance.new("ImageLabel", LMG2L["Frame1_11"]);
+LMG2L["ImageLabel2_1e"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel2_1e"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+LMG2L["ImageLabel2_1e"]["Size"] = UDim2.new(0, 146, 0, 100);
+LMG2L["ImageLabel2_1e"]["Name"] = [[ImageLabel2]];
+LMG2L["ImageLabel2_1e"]["Position"] = UDim2.new(0, 6, 0, 98);
+
+
+LMG2L["UICorner_1f"] = Instance.new("UICorner", LMG2L["ImageLabel2_1e"]);
+
+
+
+LMG2L["LocalScript_20"] = Instance.new("LocalScript", LMG2L["ImageLabel2_1e"]);
+
+
+
+LMG2L["ImageLabel_21"] = Instance.new("ImageLabel", LMG2L["Frame1_11"]);
+LMG2L["ImageLabel_21"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["ImageLabel_21"]["Size"] = UDim2.new(0, 144, 0, 88);
+LMG2L["ImageLabel_21"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_21"]["Position"] = UDim2.new(0, 6, 0, 6);
+
+
+LMG2L["LocalScript_22"] = Instance.new("LocalScript", LMG2L["ImageLabel_21"]);
+
+
+
+LMG2L["UIStroke_23"] = Instance.new("UIStroke", LMG2L["ImageLabel_21"]);
+LMG2L["UIStroke_23"]["Color"] = Color3.fromRGB(13, 48, 255);
+
+
+LMG2L["TextLabel_24"] = Instance.new("TextLabel", LMG2L["Frame1_11"]);
+LMG2L["TextLabel_24"]["TextWrapped"] = true;
+LMG2L["TextLabel_24"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_24"]["TextScaled"] = true;
+LMG2L["TextLabel_24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_24"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_24"]["TextColor3"] = Color3.fromRGB(66, 15, 255);
+LMG2L["TextLabel_24"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_24"]["Size"] = UDim2.new(0, 370, 0, 222);
+LMG2L["TextLabel_24"]["Text"] = [[Info Player]];
+LMG2L["TextLabel_24"]["Position"] = UDim2.new(0, 156, 0, 8);
+
+
+LMG2L["LocalScript_25"] = Instance.new("LocalScript", LMG2L["TextLabel_24"]);
+
+
+
+LMG2L["UIStroke_26"] = Instance.new("UIStroke", LMG2L["Home Page_f"]);
+LMG2L["UIStroke_26"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_26"]["Thickness"] = 2;
+LMG2L["UIStroke_26"]["Color"] = Color3.fromRGB(14, 15, 255);
+
+
+LMG2L["Get F3x_27"] = Instance.new("TextButton", LMG2L["FrameImage_2"]);
+LMG2L["Get F3x_27"]["TextWrapped"] = true;
+LMG2L["Get F3x_27"]["BorderSizePixel"] = 0;
+LMG2L["Get F3x_27"]["TextScaled"] = true;
+LMG2L["Get F3x_27"]["TextColor3"] = Color3.fromRGB(5, 42, 255);
+LMG2L["Get F3x_27"]["BackgroundColor3"] = Color3.fromRGB(2, 2, 2);
+LMG2L["Get F3x_27"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Get F3x_27"]["Size"] = UDim2.new(0, 50, 0, 22);
+LMG2L["Get F3x_27"]["Text"] = [[Get F3x]];
+LMG2L["Get F3x_27"]["Name"] = [[Get F3x]];
+LMG2L["Get F3x_27"]["Position"] = UDim2.new(0, 480, 0, 0);
+
+
+LMG2L["LocalScript_28"] = Instance.new("LocalScript", LMG2L["Get F3x_27"]);
+
+
+
+LMG2L["UIStroke_29"] = Instance.new("UIStroke", LMG2L["Get F3x_27"]);
+LMG2L["UIStroke_29"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_29"]["Thickness"] = 2;
+LMG2L["UIStroke_29"]["Color"] = Color3.fromRGB(14, 15, 255);
+
+
+LMG2L["Refresh _2a"] = Instance.new("TextButton", LMG2L["FrameImage_2"]);
+LMG2L["Refresh _2a"]["TextWrapped"] = true;
+LMG2L["Refresh _2a"]["BorderSizePixel"] = 0;
+LMG2L["Refresh _2a"]["TextScaled"] = true;
+LMG2L["Refresh _2a"]["TextColor3"] = Color3.fromRGB(5, 42, 255);
+LMG2L["Refresh _2a"]["BackgroundColor3"] = Color3.fromRGB(2, 2, 2);
+LMG2L["Refresh _2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Refresh _2a"]["Size"] = UDim2.new(0, 40, 0, 22);
+LMG2L["Refresh _2a"]["Text"] = [[Re]];
+LMG2L["Refresh _2a"]["Name"] = [[Refresh ]];
+LMG2L["Refresh _2a"]["Position"] = UDim2.new(0, 2, 0, 0);
+
+
+LMG2L["LocalScript_2b"] = Instance.new("LocalScript", LMG2L["Refresh _2a"]);
+
+
+
+LMG2L["UIStroke_2c"] = Instance.new("UIStroke", LMG2L["Refresh _2a"]);
+LMG2L["UIStroke_2c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_2c"]["Thickness"] = 2;
+LMG2L["UIStroke_2c"]["Color"] = Color3.fromRGB(14, 15, 255);
+
+
+LMG2L["Unmusic_2d"] = Instance.new("TextButton", LMG2L["FrameImage_2"]);
+LMG2L["Unmusic_2d"]["TextWrapped"] = true;
+LMG2L["Unmusic_2d"]["BorderSizePixel"] = 0;
+LMG2L["Unmusic_2d"]["TextScaled"] = true;
+LMG2L["Unmusic_2d"]["TextColor3"] = Color3.fromRGB(5, 42, 255);
+LMG2L["Unmusic_2d"]["BackgroundColor3"] = Color3.fromRGB(2, 2, 2);
+LMG2L["Unmusic_2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Unmusic_2d"]["Size"] = UDim2.new(0, 50, 0, 18);
+LMG2L["Unmusic_2d"]["Text"] = [[Unmusic]];
+LMG2L["Unmusic_2d"]["Name"] = [[Unmusic]];
+LMG2L["Unmusic_2d"]["Position"] = UDim2.new(0, 480, 0, 26);
+
+
+LMG2L["LocalScript_2e"] = Instance.new("LocalScript", LMG2L["Unmusic_2d"]);
+
+
+
+LMG2L["UIStroke_2f"] = Instance.new("UIStroke", LMG2L["Unmusic_2d"]);
+LMG2L["UIStroke_2f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_2f"]["Thickness"] = 2;
+LMG2L["UIStroke_2f"]["Color"] = Color3.fromRGB(14, 15, 255);
+
+
+LMG2L["Script _30"] = Instance.new("TextButton", LMG2L["FrameImage_2"]);
+LMG2L["Script _30"]["TextWrapped"] = true;
+LMG2L["Script _30"]["BorderSizePixel"] = 0;
+LMG2L["Script _30"]["TextScaled"] = true;
+LMG2L["Script _30"]["TextColor3"] = Color3.fromRGB(5, 42, 255);
+LMG2L["Script _30"]["BackgroundColor3"] = Color3.fromRGB(2, 2, 2);
+LMG2L["Script _30"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Script _30"]["Size"] = UDim2.new(0, 82, 0, 18);
+LMG2L["Script _30"]["Text"] = [[Script ]];
+LMG2L["Script _30"]["Name"] = [[Script ]];
+LMG2L["Script _30"]["Position"] = UDim2.new(0, 124, 0, 24);
+
+
+LMG2L["LocalScript_31"] = Instance.new("LocalScript", LMG2L["Script _30"]);
+
+
+
+LMG2L["Frame2_32"] = Instance.new("Frame", LMG2L["Script _30"]);
+LMG2L["Frame2_32"]["Visible"] = false;
+LMG2L["Frame2_32"]["BorderSizePixel"] = 0;
+LMG2L["Frame2_32"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Frame2_32"]["Size"] = UDim2.new(0, 528, 0, 382);
+LMG2L["Frame2_32"]["Position"] = UDim2.new(0, -122, 0, 24);
+LMG2L["Frame2_32"]["Name"] = [[Frame2]];
+
+
+LMG2L["ScrollingFrame_33"] = Instance.new("ScrollingFrame", LMG2L["Frame2_32"]);
+LMG2L["ScrollingFrame_33"]["BorderSizePixel"] = 2;
+LMG2L["ScrollingFrame_33"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ScrollingFrame_33"]["ScrollBarImageTransparency"] = 1;
+LMG2L["ScrollingFrame_33"]["Size"] = UDim2.new(0, 508, 0, 354);
+LMG2L["ScrollingFrame_33"]["Position"] = UDim2.new(0, 8, 0, 8);
+LMG2L["ScrollingFrame_33"]["BorderColor3"] = Color3.fromRGB(18, 13, 255);
+
+
+LMG2L["Shake baseplate _34"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Shake baseplate _34"]["TextWrapped"] = true;
+LMG2L["Shake baseplate _34"]["BorderSizePixel"] = 0;
+LMG2L["Shake baseplate _34"]["TextScaled"] = true;
+LMG2L["Shake baseplate _34"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Shake baseplate _34"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Shake baseplate _34"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Shake baseplate _34"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Shake baseplate _34"]["Text"] = [[Shake Baseplate ]];
+LMG2L["Shake baseplate _34"]["Name"] = [[Shake baseplate ]];
+LMG2L["Shake baseplate _34"]["Position"] = UDim2.new(0, 250, 0, 150);
+
+
+LMG2L["LocalScript_35"] = Instance.new("LocalScript", LMG2L["Shake baseplate _34"]);
+
+
+
+LMG2L["UIStroke_36"] = Instance.new("UIStroke", LMG2L["Shake baseplate _34"]);
+LMG2L["UIStroke_36"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_36"]["Thickness"] = 2;
+LMG2L["UIStroke_36"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Nds Map_37"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Nds Map_37"]["TextWrapped"] = true;
+LMG2L["Nds Map_37"]["BorderSizePixel"] = 0;
+LMG2L["Nds Map_37"]["TextScaled"] = true;
+LMG2L["Nds Map_37"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Nds Map_37"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Nds Map_37"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Nds Map_37"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Nds Map_37"]["Text"] = [[Nds Map]];
+LMG2L["Nds Map_37"]["Name"] = [[Nds Map]];
+LMG2L["Nds Map_37"]["Position"] = UDim2.new(0, 124, 0, 302);
+
+
+LMG2L["LocalScript_38"] = Instance.new("LocalScript", LMG2L["Nds Map_37"]);
+
+
+
+LMG2L["UIStroke_39"] = Instance.new("UIStroke", LMG2L["Nds Map_37"]);
+LMG2L["UIStroke_39"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_39"]["Thickness"] = 2;
+LMG2L["UIStroke_39"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Message 1_3a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Message 1_3a"]["TextWrapped"] = true;
+LMG2L["Message 1_3a"]["BorderSizePixel"] = 0;
+LMG2L["Message 1_3a"]["TextScaled"] = true;
+LMG2L["Message 1_3a"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Message 1_3a"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Message 1_3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Message 1_3a"]["Size"] = UDim2.new(0, 118, 0, 44);
+LMG2L["Message 1_3a"]["Text"] = [[Message 1]];
+LMG2L["Message 1_3a"]["Name"] = [[Message 1]];
+LMG2L["Message 1_3a"]["Position"] = UDim2.new(0, 374, 0, 454);
+
+
+LMG2L["LocalScript_3b"] = Instance.new("LocalScript", LMG2L["Message 1_3a"]);
+
+
+
+LMG2L["UIStroke_3c"] = Instance.new("UIStroke", LMG2L["Message 1_3a"]);
+LMG2L["UIStroke_3c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_3c"]["Thickness"] = 2;
+LMG2L["UIStroke_3c"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Realm tp_3d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Realm tp_3d"]["TextWrapped"] = true;
+LMG2L["Realm tp_3d"]["BorderSizePixel"] = 0;
+LMG2L["Realm tp_3d"]["TextScaled"] = true;
+LMG2L["Realm tp_3d"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Realm tp_3d"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Realm tp_3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Realm tp_3d"]["Size"] = UDim2.new(0, 118, 0, 44);
+LMG2L["Realm tp_3d"]["Text"] = [[Realm Teleport]];
+LMG2L["Realm tp_3d"]["Name"] = [[Realm tp]];
+LMG2L["Realm tp_3d"]["Position"] = UDim2.new(0, 126, 0, 352);
+
+
+LMG2L["LocalScript_3e"] = Instance.new("LocalScript", LMG2L["Realm tp_3d"]);
+
+
+
+LMG2L["UIStroke_3f"] = Instance.new("UIStroke", LMG2L["Realm tp_3d"]);
+LMG2L["UIStroke_3f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_3f"]["Thickness"] = 2;
+LMG2L["UIStroke_3f"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Unchoar all_40"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Unchoar all_40"]["TextWrapped"] = true;
+LMG2L["Unchoar all_40"]["BorderSizePixel"] = 0;
+LMG2L["Unchoar all_40"]["TextScaled"] = true;
+LMG2L["Unchoar all_40"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Unchoar all_40"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Unchoar all_40"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Unchoar all_40"]["Size"] = UDim2.new(0, 116, 0, 44);
+LMG2L["Unchoar all_40"]["Text"] = [[Unchoar all]];
+LMG2L["Unchoar all_40"]["Name"] = [[Unchoar all]];
+LMG2L["Unchoar all_40"]["Position"] = UDim2.new(0, 374, 0, 150);
+
+
+LMG2L["LocalScript_41"] = Instance.new("LocalScript", LMG2L["Unchoar all_40"]);
+
+
+
+LMG2L["UIStroke_42"] = Instance.new("UIStroke", LMG2L["Unchoar all_40"]);
+LMG2L["UIStroke_42"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_42"]["Thickness"] = 2;
+LMG2L["UIStroke_42"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Decalspam 2_43"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Decalspam 2_43"]["TextWrapped"] = true;
+LMG2L["Decalspam 2_43"]["BorderSizePixel"] = 0;
+LMG2L["Decalspam 2_43"]["TextScaled"] = true;
+LMG2L["Decalspam 2_43"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Decalspam 2_43"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Decalspam 2_43"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Decalspam 2_43"]["Size"] = UDim2.new(0, 116, 0, 46);
+LMG2L["Decalspam 2_43"]["Text"] = [[Decalspam 2]];
+LMG2L["Decalspam 2_43"]["Name"] = [[Decalspam 2]];
+LMG2L["Decalspam 2_43"]["Position"] = UDim2.new(0, 126, 0, 2);
+
+
+LMG2L["LocalScript_44"] = Instance.new("LocalScript", LMG2L["Decalspam 2_43"]);
+
+
+
+LMG2L["UIStroke_45"] = Instance.new("UIStroke", LMG2L["Decalspam 2_43"]);
+LMG2L["UIStroke_45"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_45"]["Thickness"] = 2;
+LMG2L["UIStroke_45"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Gun_46"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Gun_46"]["TextWrapped"] = true;
+LMG2L["Gun_46"]["BorderSizePixel"] = 0;
+LMG2L["Gun_46"]["TextScaled"] = true;
+LMG2L["Gun_46"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Gun_46"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Gun_46"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Gun_46"]["Size"] = UDim2.new(0, 118, 0, 46);
+LMG2L["Gun_46"]["Text"] = [[Gun]];
+LMG2L["Gun_46"]["Name"] = [[Gun]];
+LMG2L["Gun_46"]["Position"] = UDim2.new(0, 374, 0, 402);
+
+
+LMG2L["LocalScript_47"] = Instance.new("LocalScript", LMG2L["Gun_46"]);
+
+
+
+LMG2L["UIStroke_48"] = Instance.new("UIStroke", LMG2L["Gun_46"]);
+LMG2L["UIStroke_48"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_48"]["Thickness"] = 2;
+LMG2L["UIStroke_48"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Decalspam 1_49"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Decalspam 1_49"]["TextWrapped"] = true;
+LMG2L["Decalspam 1_49"]["BorderSizePixel"] = 0;
+LMG2L["Decalspam 1_49"]["TextScaled"] = true;
+LMG2L["Decalspam 1_49"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Decalspam 1_49"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Decalspam 1_49"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Decalspam 1_49"]["Size"] = UDim2.new(0, 114, 0, 46);
+LMG2L["Decalspam 1_49"]["Text"] = [[Decalspam 1]];
+LMG2L["Decalspam 1_49"]["Name"] = [[Decalspam 1]];
+LMG2L["Decalspam 1_49"]["Position"] = UDim2.new(0, 6, 0, 2);
+
+
+LMG2L["LocalScript_4a"] = Instance.new("LocalScript", LMG2L["Decalspam 1_49"]);
+
+
+
+LMG2L["UIStroke_4b"] = Instance.new("UIStroke", LMG2L["Decalspam 1_49"]);
+LMG2L["UIStroke_4b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_4b"]["Thickness"] = 2;
+LMG2L["UIStroke_4b"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["loopkill _4c"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["loopkill _4c"]["TextWrapped"] = true;
+LMG2L["loopkill _4c"]["BorderSizePixel"] = 0;
+LMG2L["loopkill _4c"]["TextScaled"] = true;
+LMG2L["loopkill _4c"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["loopkill _4c"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["loopkill _4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["loopkill _4c"]["Size"] = UDim2.new(0, 110, 0, 44);
+LMG2L["loopkill _4c"]["Text"] = [[LoopKill Others ]];
+LMG2L["loopkill _4c"]["Name"] = [[loopkill ]];
+LMG2L["loopkill _4c"]["Position"] = UDim2.new(0, 378, 0, 554);
+
+
+LMG2L["LocalScript_4d"] = Instance.new("LocalScript", LMG2L["loopkill _4c"]);
+
+
+
+LMG2L["UIStroke_4e"] = Instance.new("UIStroke", LMG2L["loopkill _4c"]);
+LMG2L["UIStroke_4e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_4e"]["Thickness"] = 2;
+LMG2L["UIStroke_4e"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["snoop dogg skybox _4f"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["snoop dogg skybox _4f"]["TextWrapped"] = true;
+LMG2L["snoop dogg skybox _4f"]["BorderSizePixel"] = 0;
+LMG2L["snoop dogg skybox _4f"]["TextScaled"] = true;
+LMG2L["snoop dogg skybox _4f"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["snoop dogg skybox _4f"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["snoop dogg skybox _4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["snoop dogg skybox _4f"]["Size"] = UDim2.new(0, 114, 0, 42);
+LMG2L["snoop dogg skybox _4f"]["Text"] = [[Snoop dogg skybox ]];
+LMG2L["snoop dogg skybox _4f"]["Name"] = [[snoop dogg skybox ]];
+LMG2L["snoop dogg skybox _4f"]["Position"] = UDim2.new(0, 6, 0, 252);
+
+
+LMG2L["LocalScript_50"] = Instance.new("LocalScript", LMG2L["snoop dogg skybox _4f"]);
+
+
+
+LMG2L["UIStroke_51"] = Instance.new("UIStroke", LMG2L["snoop dogg skybox _4f"]);
+LMG2L["UIStroke_51"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_51"]["Thickness"] = 2;
+LMG2L["UIStroke_51"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Name all_52"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Name all_52"]["TextWrapped"] = true;
+LMG2L["Name all_52"]["BorderSizePixel"] = 0;
+LMG2L["Name all_52"]["TextScaled"] = true;
+LMG2L["Name all_52"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Name all_52"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Name all_52"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Name all_52"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Name all_52"]["Text"] = [[Name all]];
+LMG2L["Name all_52"]["Name"] = [[Name all]];
+LMG2L["Name all_52"]["Position"] = UDim2.new(0, 250, 0, 352);
+
+
+LMG2L["LocalScript_53"] = Instance.new("LocalScript", LMG2L["Name all_52"]);
+
+
+
+LMG2L["UIStroke_54"] = Instance.new("UIStroke", LMG2L["Name all_52"]);
+LMG2L["UIStroke_54"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_54"]["Thickness"] = 2;
+LMG2L["UIStroke_54"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Mario Exe_55"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Mario Exe_55"]["TextWrapped"] = true;
+LMG2L["Mario Exe_55"]["BorderSizePixel"] = 0;
+LMG2L["Mario Exe_55"]["TextScaled"] = true;
+LMG2L["Mario Exe_55"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Mario Exe_55"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Mario Exe_55"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Mario Exe_55"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Mario Exe_55"]["Text"] = [[Mario Exe]];
+LMG2L["Mario Exe_55"]["Name"] = [[Mario Exe]];
+LMG2L["Mario Exe_55"]["Position"] = UDim2.new(0, 250, 0, 202);
+
+
+LMG2L["LocalScript_56"] = Instance.new("LocalScript", LMG2L["Mario Exe_55"]);
+
+
+
+LMG2L["UIStroke_57"] = Instance.new("UIStroke", LMG2L["Mario Exe_55"]);
+LMG2L["UIStroke_57"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_57"]["Thickness"] = 2;
+LMG2L["UIStroke_57"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Sword_58"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Sword_58"]["TextWrapped"] = true;
+LMG2L["Sword_58"]["BorderSizePixel"] = 0;
+LMG2L["Sword_58"]["TextScaled"] = true;
+LMG2L["Sword_58"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Sword_58"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Sword_58"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Sword_58"]["Size"] = UDim2.new(0, 118, 0, 44);
+LMG2L["Sword_58"]["Text"] = [[Sword me]];
+LMG2L["Sword_58"]["Name"] = [[Sword]];
+LMG2L["Sword_58"]["Position"] = UDim2.new(0, 126, 0, 454);
+
+
+LMG2L["LocalScript_59"] = Instance.new("LocalScript", LMG2L["Sword_58"]);
+
+
+
+LMG2L["UIStroke_5a"] = Instance.new("UIStroke", LMG2L["Sword_58"]);
+LMG2L["UIStroke_5a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_5a"]["Thickness"] = 2;
+LMG2L["UIStroke_5a"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Day_5b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Day_5b"]["TextWrapped"] = true;
+LMG2L["Day_5b"]["BorderSizePixel"] = 0;
+LMG2L["Day_5b"]["TextScaled"] = true;
+LMG2L["Day_5b"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Day_5b"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Day_5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Day_5b"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Day_5b"]["Text"] = [[Day]];
+LMG2L["Day_5b"]["Name"] = [[Day]];
+LMG2L["Day_5b"]["Position"] = UDim2.new(0, 378, 0, 602);
+
+
+LMG2L["LocalScript_5c"] = Instance.new("LocalScript", LMG2L["Day_5b"]);
+
+
+
+LMG2L["UIStroke_5d"] = Instance.new("UIStroke", LMG2L["Day_5b"]);
+LMG2L["UIStroke_5d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_5d"]["Thickness"] = 2;
+LMG2L["UIStroke_5d"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["kill all_5e"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["kill all_5e"]["TextWrapped"] = true;
+LMG2L["kill all_5e"]["BorderSizePixel"] = 0;
+LMG2L["kill all_5e"]["TextScaled"] = true;
+LMG2L["kill all_5e"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["kill all_5e"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["kill all_5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["kill all_5e"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["kill all_5e"]["Text"] = [[kill all]];
+LMG2L["kill all_5e"]["Name"] = [[kill all]];
+LMG2L["kill all_5e"]["Position"] = UDim2.new(0, 378, 0, 650);
+
+
+LMG2L["LocalScript_5f"] = Instance.new("LocalScript", LMG2L["kill all_5e"]);
+
+
+
+LMG2L["UIStroke_60"] = Instance.new("UIStroke", LMG2L["kill all_5e"]);
+LMG2L["UIStroke_60"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_60"]["Thickness"] = 2;
+LMG2L["UIStroke_60"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["crash all_61"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["crash all_61"]["TextWrapped"] = true;
+LMG2L["crash all_61"]["BorderSizePixel"] = 0;
+LMG2L["crash all_61"]["TextScaled"] = true;
+LMG2L["crash all_61"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+LMG2L["crash all_61"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["crash all_61"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["crash all_61"]["Size"] = UDim2.new(0, 116, 0, 42);
+LMG2L["crash all_61"]["Text"] = [[warn ! crash all]];
+LMG2L["crash all_61"]["Name"] = [[crash all]];
+LMG2L["crash all_61"]["Position"] = UDim2.new(0, 4, 0, 600);
+
+
+LMG2L["LocalScript_62"] = Instance.new("LocalScript", LMG2L["crash all_61"]);
+
+
+
+LMG2L["UIStroke_63"] = Instance.new("UIStroke", LMG2L["crash all_61"]);
+LMG2L["UIStroke_63"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_63"]["Thickness"] = 2;
+LMG2L["UIStroke_63"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Krusty Krab_64"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Krusty Krab_64"]["TextWrapped"] = true;
+LMG2L["Krusty Krab_64"]["BorderSizePixel"] = 0;
+LMG2L["Krusty Krab_64"]["TextScaled"] = true;
+LMG2L["Krusty Krab_64"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Krusty Krab_64"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Krusty Krab_64"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Krusty Krab_64"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Krusty Krab_64"]["Text"] = [[KK map]];
+LMG2L["Krusty Krab_64"]["Name"] = [[Krusty Krab]];
+LMG2L["Krusty Krab_64"]["Position"] = UDim2.new(0, 0, 0, 100);
+
+
+LMG2L["LocalScript_65"] = Instance.new("LocalScript", LMG2L["Krusty Krab_64"]);
+
+
+
+LMG2L["UIStroke_66"] = Instance.new("UIStroke", LMG2L["Krusty Krab_64"]);
+LMG2L["UIStroke_66"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_66"]["Thickness"] = 2;
+LMG2L["UIStroke_66"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Explode Others _67"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Explode Others _67"]["TextWrapped"] = true;
+LMG2L["Explode Others _67"]["BorderSizePixel"] = 0;
+LMG2L["Explode Others _67"]["TextScaled"] = true;
+LMG2L["Explode Others _67"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Explode Others _67"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Explode Others _67"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Explode Others _67"]["Size"] = UDim2.new(0, 118, 0, 46);
+LMG2L["Explode Others _67"]["Text"] = [[Explode Others ]];
+LMG2L["Explode Others _67"]["Name"] = [[Explode Others ]];
+LMG2L["Explode Others _67"]["Position"] = UDim2.new(0, 2, 0, 454);
+
+
+LMG2L["LocalScript_68"] = Instance.new("LocalScript", LMG2L["Explode Others _67"]);
+
+
+
+LMG2L["UIStroke_69"] = Instance.new("UIStroke", LMG2L["Explode Others _67"]);
+LMG2L["UIStroke_69"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_69"]["Thickness"] = 2;
+LMG2L["UIStroke_69"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Title _6a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Title _6a"]["TextWrapped"] = true;
+LMG2L["Title _6a"]["BorderSizePixel"] = 0;
+LMG2L["Title _6a"]["TextScaled"] = true;
+LMG2L["Title _6a"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Title _6a"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Title _6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Title _6a"]["Size"] = UDim2.new(0, 118, 0, 44);
+LMG2L["Title _6a"]["Text"] = [[title me]];
+LMG2L["Title _6a"]["Name"] = [[Title ]];
+LMG2L["Title _6a"]["Position"] = UDim2.new(0, 128, 0, 552);
+
+
+LMG2L["LocalScript_6b"] = Instance.new("LocalScript", LMG2L["Title _6a"]);
+
+
+
+LMG2L["UIStroke_6c"] = Instance.new("UIStroke", LMG2L["Title _6a"]);
+LMG2L["UIStroke_6c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_6c"]["Thickness"] = 2;
+LMG2L["UIStroke_6c"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Thomas_6d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Thomas_6d"]["TextWrapped"] = true;
+LMG2L["Thomas_6d"]["BorderSizePixel"] = 0;
+LMG2L["Thomas_6d"]["TextScaled"] = true;
+LMG2L["Thomas_6d"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Thomas_6d"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Thomas_6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Thomas_6d"]["Size"] = UDim2.new(0, 116, 0, 46);
+LMG2L["Thomas_6d"]["Text"] = [[Thomas]];
+LMG2L["Thomas_6d"]["Name"] = [[Thomas]];
+LMG2L["Thomas_6d"]["Position"] = UDim2.new(0, 4, 0, 150);
+
+
+LMG2L["LocalScript_6e"] = Instance.new("LocalScript", LMG2L["Thomas_6d"]);
+
+
+
+LMG2L["UIStroke_6f"] = Instance.new("UIStroke", LMG2L["Thomas_6d"]);
+LMG2L["UIStroke_6f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_6f"]["Thickness"] = 2;
+LMG2L["UIStroke_6f"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Kick all_70"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Kick all_70"]["TextWrapped"] = true;
+LMG2L["Kick all_70"]["BorderSizePixel"] = 0;
+LMG2L["Kick all_70"]["TextScaled"] = true;
+LMG2L["Kick all_70"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Kick all_70"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Kick all_70"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Kick all_70"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Kick all_70"]["Text"] = [[Kick all]];
+LMG2L["Kick all_70"]["Name"] = [[Kick all]];
+LMG2L["Kick all_70"]["Position"] = UDim2.new(0, 126, 0, 602);
+
+
+LMG2L["LocalScript_71"] = Instance.new("LocalScript", LMG2L["Kick all_70"]);
+
+
+
+LMG2L["UIStroke_72"] = Instance.new("UIStroke", LMG2L["Kick all_70"]);
+LMG2L["UIStroke_72"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_72"]["Thickness"] = 2;
+LMG2L["UIStroke_72"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Earth Spin_73"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Earth Spin_73"]["TextWrapped"] = true;
+LMG2L["Earth Spin_73"]["BorderSizePixel"] = 0;
+LMG2L["Earth Spin_73"]["TextScaled"] = true;
+LMG2L["Earth Spin_73"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Earth Spin_73"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Earth Spin_73"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Earth Spin_73"]["Size"] = UDim2.new(0, 118, 0, 44);
+LMG2L["Earth Spin_73"]["Text"] = [[Earth Spin ]];
+LMG2L["Earth Spin_73"]["Name"] = [[Earth Spin]];
+LMG2L["Earth Spin_73"]["Position"] = UDim2.new(0, 374, 0, 302);
+
+
+LMG2L["LocalScript_74"] = Instance.new("LocalScript", LMG2L["Earth Spin_73"]);
+
+
+
+LMG2L["UIStroke_75"] = Instance.new("UIStroke", LMG2L["Earth Spin_73"]);
+LMG2L["UIStroke_75"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_75"]["Thickness"] = 2;
+LMG2L["UIStroke_75"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Chicken arm_76"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Chicken arm_76"]["TextWrapped"] = true;
+LMG2L["Chicken arm_76"]["BorderSizePixel"] = 0;
+LMG2L["Chicken arm_76"]["TextScaled"] = true;
+LMG2L["Chicken arm_76"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Chicken arm_76"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Chicken arm_76"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Chicken arm_76"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Chicken arm_76"]["Text"] = [[Chicken arm]];
+LMG2L["Chicken arm_76"]["Name"] = [[Chicken arm]];
+LMG2L["Chicken arm_76"]["Position"] = UDim2.new(0, 250, 0, 100);
+
+
+LMG2L["LocalScript_77"] = Instance.new("LocalScript", LMG2L["Chicken arm_76"]);
+
+
+
+LMG2L["UIStroke_78"] = Instance.new("UIStroke", LMG2L["Chicken arm_76"]);
+LMG2L["UIStroke_78"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_78"]["Thickness"] = 2;
+LMG2L["UIStroke_78"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Tex spam_79"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Tex spam_79"]["TextWrapped"] = true;
+LMG2L["Tex spam_79"]["BorderSizePixel"] = 0;
+LMG2L["Tex spam_79"]["TextScaled"] = true;
+LMG2L["Tex spam_79"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Tex spam_79"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Tex spam_79"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Tex spam_79"]["Size"] = UDim2.new(0, 116, 0, 44);
+LMG2L["Tex spam_79"]["Text"] = [[Texture Spam]];
+LMG2L["Tex spam_79"]["Name"] = [[Tex spam]];
+LMG2L["Tex spam_79"]["Position"] = UDim2.new(0, 6, 0, 202);
+
+
+LMG2L["LocalScript_7a"] = Instance.new("LocalScript", LMG2L["Tex spam_79"]);
+
+
+
+LMG2L["UIStroke_7b"] = Instance.new("UIStroke", LMG2L["Tex spam_79"]);
+LMG2L["UIStroke_7b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_7b"]["Thickness"] = 2;
+LMG2L["UIStroke_7b"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Noot Noot_7c"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Noot Noot_7c"]["TextWrapped"] = true;
+LMG2L["Noot Noot_7c"]["BorderSizePixel"] = 0;
+LMG2L["Noot Noot_7c"]["TextScaled"] = true;
+LMG2L["Noot Noot_7c"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Noot Noot_7c"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Noot Noot_7c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Noot Noot_7c"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Noot Noot_7c"]["Text"] = [[Noot Noot]];
+LMG2L["Noot Noot_7c"]["Name"] = [[Noot Noot]];
+LMG2L["Noot Noot_7c"]["Position"] = UDim2.new(0, 250, 0, 504);
+
+
+LMG2L["LocalScript_7d"] = Instance.new("LocalScript", LMG2L["Noot Noot_7c"]);
+
+
+
+LMG2L["UIStroke_7e"] = Instance.new("UIStroke", LMG2L["Noot Noot_7c"]);
+LMG2L["UIStroke_7e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_7e"]["Thickness"] = 2;
+LMG2L["UIStroke_7e"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["headshake_7f"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["headshake_7f"]["TextWrapped"] = true;
+LMG2L["headshake_7f"]["BorderSizePixel"] = 0;
+LMG2L["headshake_7f"]["TextScaled"] = true;
+LMG2L["headshake_7f"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["headshake_7f"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["headshake_7f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["headshake_7f"]["Size"] = UDim2.new(0, 116, 0, 44);
+LMG2L["headshake_7f"]["Text"] = [[headshake ]];
+LMG2L["headshake_7f"]["Name"] = [[headshake]];
+LMG2L["headshake_7f"]["Position"] = UDim2.new(0, 374, 0, 100);
+
+
+LMG2L["LocalScript_80"] = Instance.new("LocalScript", LMG2L["headshake_7f"]);
+
+
+
+LMG2L["UIStroke_81"] = Instance.new("UIStroke", LMG2L["headshake_7f"]);
+LMG2L["UIStroke_81"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_81"]["Thickness"] = 2;
+LMG2L["UIStroke_81"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Bring all_82"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Bring all_82"]["TextWrapped"] = true;
+LMG2L["Bring all_82"]["BorderSizePixel"] = 0;
+LMG2L["Bring all_82"]["TextScaled"] = true;
+LMG2L["Bring all_82"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Bring all_82"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Bring all_82"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Bring all_82"]["Size"] = UDim2.new(0, 116, 0, 44);
+LMG2L["Bring all_82"]["Text"] = [[Bring all]];
+LMG2L["Bring all_82"]["Name"] = [[Bring all]];
+LMG2L["Bring all_82"]["Position"] = UDim2.new(0, 374, 0, 252);
+
+
+LMG2L["LocalScript_83"] = Instance.new("LocalScript", LMG2L["Bring all_82"]);
+
+
+
+LMG2L["UIStroke_84"] = Instance.new("UIStroke", LMG2L["Bring all_82"]);
+LMG2L["UIStroke_84"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_84"]["Thickness"] = 2;
+LMG2L["UIStroke_84"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Notice all_85"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Notice all_85"]["TextWrapped"] = true;
+LMG2L["Notice all_85"]["BorderSizePixel"] = 0;
+LMG2L["Notice all_85"]["TextScaled"] = true;
+LMG2L["Notice all_85"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Notice all_85"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Notice all_85"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Notice all_85"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Notice all_85"]["Text"] = [[Notice all ]];
+LMG2L["Notice all_85"]["Name"] = [[Notice all]];
+LMG2L["Notice all_85"]["Position"] = UDim2.new(0, 250, 0, 454);
+
+
+LMG2L["LocalScript_86"] = Instance.new("LocalScript", LMG2L["Notice all_85"]);
+
+
+
+LMG2L["UIStroke_87"] = Instance.new("UIStroke", LMG2L["Notice all_85"]);
+LMG2L["UIStroke_87"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_87"]["Thickness"] = 2;
+LMG2L["UIStroke_87"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Hint_88"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Hint_88"]["TextWrapped"] = true;
+LMG2L["Hint_88"]["BorderSizePixel"] = 0;
+LMG2L["Hint_88"]["TextScaled"] = true;
+LMG2L["Hint_88"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Hint_88"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Hint_88"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Hint_88"]["Size"] = UDim2.new(0, 118, 0, 44);
+LMG2L["Hint_88"]["Text"] = [[Hint]];
+LMG2L["Hint_88"]["Name"] = [[Hint]];
+LMG2L["Hint_88"]["Position"] = UDim2.new(0, 126, 0, 504);
+
+
+LMG2L["LocalScript_89"] = Instance.new("LocalScript", LMG2L["Hint_88"]);
+
+
+
+LMG2L["UIStroke_8a"] = Instance.new("UIStroke", LMG2L["Hint_88"]);
+LMG2L["UIStroke_8a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_8a"]["Thickness"] = 2;
+LMG2L["UIStroke_8a"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Message 2_8b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Message 2_8b"]["TextWrapped"] = true;
+LMG2L["Message 2_8b"]["BorderSizePixel"] = 0;
+LMG2L["Message 2_8b"]["TextScaled"] = true;
+LMG2L["Message 2_8b"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Message 2_8b"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Message 2_8b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Message 2_8b"]["Size"] = UDim2.new(0, 118, 0, 42);
+LMG2L["Message 2_8b"]["Text"] = [[Message 2]];
+LMG2L["Message 2_8b"]["Name"] = [[Message 2]];
+LMG2L["Message 2_8b"]["Position"] = UDim2.new(0, 2, 0, 504);
+
+
+LMG2L["LocalScript_8c"] = Instance.new("LocalScript", LMG2L["Message 2_8b"]);
+
+
+
+LMG2L["UIStroke_8d"] = Instance.new("UIStroke", LMG2L["Message 2_8b"]);
+LMG2L["UIStroke_8d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_8d"]["Thickness"] = 2;
+LMG2L["UIStroke_8d"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Blur Others_8e"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Blur Others_8e"]["TextWrapped"] = true;
+LMG2L["Blur Others_8e"]["BorderSizePixel"] = 0;
+LMG2L["Blur Others_8e"]["TextScaled"] = true;
+LMG2L["Blur Others_8e"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Blur Others_8e"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Blur Others_8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Blur Others_8e"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Blur Others_8e"]["Text"] = [[blur Others]];
+LMG2L["Blur Others_8e"]["Name"] = [[Blur Others]];
+LMG2L["Blur Others_8e"]["Position"] = UDim2.new(0, 252, 0, 600);
+
+
+LMG2L["LocalScript_8f"] = Instance.new("LocalScript", LMG2L["Blur Others_8e"]);
+
+
+
+LMG2L["UIStroke_90"] = Instance.new("UIStroke", LMG2L["Blur Others_8e"]);
+LMG2L["UIStroke_90"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_90"]["Thickness"] = 2;
+LMG2L["UIStroke_90"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Rotate Skybox 2_91"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Rotate Skybox 2_91"]["TextWrapped"] = true;
+LMG2L["Rotate Skybox 2_91"]["BorderSizePixel"] = 0;
+LMG2L["Rotate Skybox 2_91"]["TextScaled"] = true;
+LMG2L["Rotate Skybox 2_91"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Rotate Skybox 2_91"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Rotate Skybox 2_91"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Rotate Skybox 2_91"]["Size"] = UDim2.new(0, 116, 0, 44);
+LMG2L["Rotate Skybox 2_91"]["Text"] = [[Rotate Skybox 2]];
+LMG2L["Rotate Skybox 2_91"]["Name"] = [[Rotate Skybox 2]];
+LMG2L["Rotate Skybox 2_91"]["Position"] = UDim2.new(0, 374, 0, 50);
+
+
+LMG2L["LocalScript_92"] = Instance.new("LocalScript", LMG2L["Rotate Skybox 2_91"]);
+
+
+
+LMG2L["UIStroke_93"] = Instance.new("UIStroke", LMG2L["Rotate Skybox 2_91"]);
+LMG2L["UIStroke_93"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_93"]["Thickness"] = 2;
+LMG2L["UIStroke_93"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["char all 1_94"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["char all 1_94"]["TextWrapped"] = true;
+LMG2L["char all 1_94"]["BorderSizePixel"] = 0;
+LMG2L["char all 1_94"]["TextScaled"] = true;
+LMG2L["char all 1_94"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["char all 1_94"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["char all 1_94"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["char all 1_94"]["Size"] = UDim2.new(0, 118, 0, 44);
+LMG2L["char all 1_94"]["Text"] = [[ZachXploit all]];
+LMG2L["char all 1_94"]["Name"] = [[char all 1]];
+LMG2L["char all 1_94"]["Position"] = UDim2.new(0, 374, 0, 352);
+
+
+LMG2L["LocalScript_95"] = Instance.new("LocalScript", LMG2L["char all 1_94"]);
+
+
+
+LMG2L["UIStroke_96"] = Instance.new("UIStroke", LMG2L["char all 1_94"]);
+LMG2L["UIStroke_96"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_96"]["Thickness"] = 2;
+LMG2L["UIStroke_96"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["sparkle_97"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["sparkle_97"]["TextWrapped"] = true;
+LMG2L["sparkle_97"]["BorderSizePixel"] = 0;
+LMG2L["sparkle_97"]["TextScaled"] = true;
+LMG2L["sparkle_97"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["sparkle_97"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["sparkle_97"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["sparkle_97"]["Size"] = UDim2.new(0, 116, 0, 44);
+LMG2L["sparkle_97"]["Text"] = [[Sparkle all]];
+LMG2L["sparkle_97"]["Name"] = [[sparkle]];
+LMG2L["sparkle_97"]["Position"] = UDim2.new(0, 376, 0, 504);
+
+
+LMG2L["LocalScript_98"] = Instance.new("LocalScript", LMG2L["sparkle_97"]);
+
+
+
+LMG2L["UIStroke_99"] = Instance.new("UIStroke", LMG2L["sparkle_97"]);
+LMG2L["UIStroke_99"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_99"]["Thickness"] = 2;
+LMG2L["UIStroke_99"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Decalspam 3_9a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Decalspam 3_9a"]["TextWrapped"] = true;
+LMG2L["Decalspam 3_9a"]["BorderSizePixel"] = 0;
+LMG2L["Decalspam 3_9a"]["TextScaled"] = true;
+LMG2L["Decalspam 3_9a"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Decalspam 3_9a"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Decalspam 3_9a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Decalspam 3_9a"]["Size"] = UDim2.new(0, 118, 0, 46);
+LMG2L["Decalspam 3_9a"]["Text"] = [[Decalspam 3]];
+LMG2L["Decalspam 3_9a"]["Name"] = [[Decalspam 3]];
+LMG2L["Decalspam 3_9a"]["Position"] = UDim2.new(0, 248, 0, 2);
+
+
+LMG2L["LocalScript_9b"] = Instance.new("LocalScript", LMG2L["Decalspam 3_9a"]);
+
+
+
+LMG2L["UIStroke_9c"] = Instance.new("UIStroke", LMG2L["Decalspam 3_9a"]);
+LMG2L["UIStroke_9c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_9c"]["Thickness"] = 2;
+LMG2L["UIStroke_9c"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["char all 2_9d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["char all 2_9d"]["TextWrapped"] = true;
+LMG2L["char all 2_9d"]["BorderSizePixel"] = 0;
+LMG2L["char all 2_9d"]["TextScaled"] = true;
+LMG2L["char all 2_9d"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["char all 2_9d"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["char all 2_9d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["char all 2_9d"]["Size"] = UDim2.new(0, 120, 0, 46);
+LMG2L["char all 2_9d"]["Text"] = [[DimasGGrtrt9 all]];
+LMG2L["char all 2_9d"]["Name"] = [[char all 2]];
+LMG2L["char all 2_9d"]["Position"] = UDim2.new(0, 0, 0, 402);
+
+
+LMG2L["LocalScript_9e"] = Instance.new("LocalScript", LMG2L["char all 2_9d"]);
+
+
+
+LMG2L["UIStroke_9f"] = Instance.new("UIStroke", LMG2L["char all 2_9d"]);
+LMG2L["UIStroke_9f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_9f"]["Thickness"] = 2;
+LMG2L["UIStroke_9f"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Disco Fog _a0"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Disco Fog _a0"]["TextWrapped"] = true;
+LMG2L["Disco Fog _a0"]["BorderSizePixel"] = 0;
+LMG2L["Disco Fog _a0"]["TextScaled"] = true;
+LMG2L["Disco Fog _a0"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Disco Fog _a0"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Disco Fog _a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Disco Fog _a0"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Disco Fog _a0"]["Text"] = [[Disco Fog]];
+LMG2L["Disco Fog _a0"]["Name"] = [[Disco Fog ]];
+LMG2L["Disco Fog _a0"]["Position"] = UDim2.new(0, 124, 0, 100);
+
+
+LMG2L["LocalScript_a1"] = Instance.new("LocalScript", LMG2L["Disco Fog _a0"]);
+
+
+
+LMG2L["UIStroke_a2"] = Instance.new("UIStroke", LMG2L["Disco Fog _a0"]);
+LMG2L["UIStroke_a2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_a2"]["Thickness"] = 2;
+LMG2L["UIStroke_a2"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["skybox 2_a3"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["skybox 2_a3"]["TextWrapped"] = true;
+LMG2L["skybox 2_a3"]["BorderSizePixel"] = 0;
+LMG2L["skybox 2_a3"]["TextScaled"] = true;
+LMG2L["skybox 2_a3"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["skybox 2_a3"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["skybox 2_a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["skybox 2_a3"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["skybox 2_a3"]["Text"] = [[skybox 2]];
+LMG2L["skybox 2_a3"]["Name"] = [[skybox 2]];
+LMG2L["skybox 2_a3"]["Position"] = UDim2.new(0, 124, 0, 50);
+
+
+LMG2L["LocalScript_a4"] = Instance.new("LocalScript", LMG2L["skybox 2_a3"]);
+
+
+
+LMG2L["UIStroke_a5"] = Instance.new("UIStroke", LMG2L["skybox 2_a3"]);
+LMG2L["UIStroke_a5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_a5"]["Thickness"] = 2;
+LMG2L["UIStroke_a5"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["alert all_a6"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["alert all_a6"]["TextWrapped"] = true;
+LMG2L["alert all_a6"]["BorderSizePixel"] = 0;
+LMG2L["alert all_a6"]["TextScaled"] = true;
+LMG2L["alert all_a6"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["alert all_a6"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["alert all_a6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["alert all_a6"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["alert all_a6"]["Text"] = [[Alert]];
+LMG2L["alert all_a6"]["Name"] = [[alert all]];
+LMG2L["alert all_a6"]["Position"] = UDim2.new(0, 252, 0, 648);
+
+
+LMG2L["LocalScript_a7"] = Instance.new("LocalScript", LMG2L["alert all_a6"]);
+
+
+
+LMG2L["UIStroke_a8"] = Instance.new("UIStroke", LMG2L["alert all_a6"]);
+LMG2L["UIStroke_a8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_a8"]["Thickness"] = 2;
+LMG2L["UIStroke_a8"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Anime Skybox_a9"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Anime Skybox_a9"]["TextWrapped"] = true;
+LMG2L["Anime Skybox_a9"]["BorderSizePixel"] = 0;
+LMG2L["Anime Skybox_a9"]["TextScaled"] = true;
+LMG2L["Anime Skybox_a9"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Anime Skybox_a9"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Anime Skybox_a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Anime Skybox_a9"]["Size"] = UDim2.new(0, 116, 0, 44);
+LMG2L["Anime Skybox_a9"]["Text"] = [[Anime Skybox ]];
+LMG2L["Anime Skybox_a9"]["Name"] = [[Anime Skybox]];
+LMG2L["Anime Skybox_a9"]["Position"] = UDim2.new(0, 374, 0, 202);
+
+
+LMG2L["LocalScript_aa"] = Instance.new("LocalScript", LMG2L["Anime Skybox_a9"]);
+
+
+
+LMG2L["UIStroke_ab"] = Instance.new("UIStroke", LMG2L["Anime Skybox_a9"]);
+LMG2L["UIStroke_ab"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_ab"]["Thickness"] = 2;
+LMG2L["UIStroke_ab"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["UIStroke_ac"] = Instance.new("UIStroke", LMG2L["ScrollingFrame_33"]);
+LMG2L["UIStroke_ac"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_ac"]["Thickness"] = 2;
+LMG2L["UIStroke_ac"]["Color"] = Color3.fromRGB(21, 22, 255);
+
+
+LMG2L["Night_ad"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Night_ad"]["TextWrapped"] = true;
+LMG2L["Night_ad"]["BorderSizePixel"] = 0;
+LMG2L["Night_ad"]["TextScaled"] = true;
+LMG2L["Night_ad"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Night_ad"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Night_ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Night_ad"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Night_ad"]["Text"] = [[Night]];
+LMG2L["Night_ad"]["Name"] = [[Night]];
+LMG2L["Night_ad"]["Position"] = UDim2.new(0, 2, 0, 646);
+
+
+LMG2L["LocalScript_ae"] = Instance.new("LocalScript", LMG2L["Night_ad"]);
+
+
+
+LMG2L["UIStroke_af"] = Instance.new("UIStroke", LMG2L["Night_ad"]);
+LMG2L["UIStroke_af"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_af"]["Thickness"] = 2;
+LMG2L["UIStroke_af"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["char all 3_b0"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["char all 3_b0"]["TextWrapped"] = true;
+LMG2L["char all 3_b0"]["BorderSizePixel"] = 0;
+LMG2L["char all 3_b0"]["TextScaled"] = true;
+LMG2L["char all 3_b0"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["char all 3_b0"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["char all 3_b0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["char all 3_b0"]["Size"] = UDim2.new(0, 118, 0, 46);
+LMG2L["char all 3_b0"]["Text"] = [[h4000_audio8 all]];
+LMG2L["char all 3_b0"]["Name"] = [[char all 3]];
+LMG2L["char all 3_b0"]["Position"] = UDim2.new(0, 126, 0, 402);
+
+
+LMG2L["LocalScript_b1"] = Instance.new("LocalScript", LMG2L["char all 3_b0"]);
+
+
+
+LMG2L["UIStroke_b2"] = Instance.new("UIStroke", LMG2L["char all 3_b0"]);
+LMG2L["UIStroke_b2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_b2"]["Thickness"] = 2;
+LMG2L["UIStroke_b2"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Nofog_b3"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Nofog_b3"]["TextWrapped"] = true;
+LMG2L["Nofog_b3"]["BorderSizePixel"] = 0;
+LMG2L["Nofog_b3"]["TextScaled"] = true;
+LMG2L["Nofog_b3"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Nofog_b3"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Nofog_b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Nofog_b3"]["Size"] = UDim2.new(0, 118, 0, 40);
+LMG2L["Nofog_b3"]["Text"] = [[No Fog]];
+LMG2L["Nofog_b3"]["Name"] = [[Nofog]];
+LMG2L["Nofog_b3"]["Position"] = UDim2.new(0, 126, 0, 650);
+
+
+LMG2L["LocalScript_b4"] = Instance.new("LocalScript", LMG2L["Nofog_b3"]);
+
+
+
+LMG2L["UIStroke_b5"] = Instance.new("UIStroke", LMG2L["Nofog_b3"]);
+LMG2L["UIStroke_b5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_b5"]["Thickness"] = 2;
+LMG2L["UIStroke_b5"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["rotate Skybox 1_b6"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["rotate Skybox 1_b6"]["TextWrapped"] = true;
+LMG2L["rotate Skybox 1_b6"]["BorderSizePixel"] = 0;
+LMG2L["rotate Skybox 1_b6"]["TextScaled"] = true;
+LMG2L["rotate Skybox 1_b6"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["rotate Skybox 1_b6"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["rotate Skybox 1_b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["rotate Skybox 1_b6"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["rotate Skybox 1_b6"]["Text"] = [[Rotate Skybox 1]];
+LMG2L["rotate Skybox 1_b6"]["Name"] = [[rotate Skybox 1]];
+LMG2L["rotate Skybox 1_b6"]["Position"] = UDim2.new(0, 248, 0, 50);
+
+
+LMG2L["LocalScript_b7"] = Instance.new("LocalScript", LMG2L["rotate Skybox 1_b6"]);
+
+
+
+LMG2L["UIStroke_b8"] = Instance.new("UIStroke", LMG2L["rotate Skybox 1_b6"]);
+LMG2L["UIStroke_b8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_b8"]["Thickness"] = 2;
+LMG2L["UIStroke_b8"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Realm _b9"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Realm _b9"]["TextWrapped"] = true;
+LMG2L["Realm _b9"]["BorderSizePixel"] = 0;
+LMG2L["Realm _b9"]["TextScaled"] = true;
+LMG2L["Realm _b9"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Realm _b9"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Realm _b9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Realm _b9"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Realm _b9"]["Text"] = [[Realm]];
+LMG2L["Realm _b9"]["Name"] = [[Realm ]];
+LMG2L["Realm _b9"]["Position"] = UDim2.new(0, 0, 0, 352);
+
+
+LMG2L["LocalScript_ba"] = Instance.new("LocalScript", LMG2L["Realm _b9"]);
+
+
+
+LMG2L["UIStroke_bb"] = Instance.new("UIStroke", LMG2L["Realm _b9"]);
+LMG2L["UIStroke_bb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_bb"]["Thickness"] = 2;
+LMG2L["UIStroke_bb"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["skybox 1_bc"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["skybox 1_bc"]["TextWrapped"] = true;
+LMG2L["skybox 1_bc"]["BorderSizePixel"] = 0;
+LMG2L["skybox 1_bc"]["TextScaled"] = true;
+LMG2L["skybox 1_bc"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["skybox 1_bc"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["skybox 1_bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["skybox 1_bc"]["Size"] = UDim2.new(0, 118, 0, 46);
+LMG2L["skybox 1_bc"]["Text"] = [[skybox 1]];
+LMG2L["skybox 1_bc"]["Name"] = [[skybox 1]];
+LMG2L["skybox 1_bc"]["Position"] = UDim2.new(0, 2, 0, 52);
+
+
+LMG2L["LocalScript_bd"] = Instance.new("LocalScript", LMG2L["skybox 1_bc"]);
+
+
+
+LMG2L["UIStroke_be"] = Instance.new("UIStroke", LMG2L["skybox 1_bc"]);
+LMG2L["UIStroke_be"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_be"]["Thickness"] = 2;
+LMG2L["UIStroke_be"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Mosque _bf"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Mosque _bf"]["TextWrapped"] = true;
+LMG2L["Mosque _bf"]["BorderSizePixel"] = 0;
+LMG2L["Mosque _bf"]["TextScaled"] = true;
+LMG2L["Mosque _bf"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Mosque _bf"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Mosque _bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Mosque _bf"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Mosque _bf"]["Text"] = [[Mosque Map]];
+LMG2L["Mosque _bf"]["Name"] = [[Mosque ]];
+LMG2L["Mosque _bf"]["Position"] = UDim2.new(0, 2, 0, 550);
+
+
+LMG2L["LocalScript_c0"] = Instance.new("LocalScript", LMG2L["Mosque _bf"]);
+
+
+
+LMG2L["UIStroke_c1"] = Instance.new("UIStroke", LMG2L["Mosque _bf"]);
+LMG2L["UIStroke_c1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_c1"]["Thickness"] = 2;
+LMG2L["UIStroke_c1"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Mesh_c2"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Mesh_c2"]["TextWrapped"] = true;
+LMG2L["Mesh_c2"]["BorderSizePixel"] = 0;
+LMG2L["Mesh_c2"]["TextScaled"] = true;
+LMG2L["Mesh_c2"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Mesh_c2"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Mesh_c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Mesh_c2"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Mesh_c2"]["Text"] = [[Mesh]];
+LMG2L["Mesh_c2"]["Name"] = [[Mesh]];
+LMG2L["Mesh_c2"]["Position"] = UDim2.new(0, 124, 0, 150);
+
+
+LMG2L["LocalScript_c3"] = Instance.new("LocalScript", LMG2L["Mesh_c2"]);
+
+
+
+LMG2L["UIStroke_c4"] = Instance.new("UIStroke", LMG2L["Mesh_c2"]);
+LMG2L["UIStroke_c4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_c4"]["Thickness"] = 2;
+LMG2L["UIStroke_c4"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["John Doe_c5"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["John Doe_c5"]["TextWrapped"] = true;
+LMG2L["John Doe_c5"]["BorderSizePixel"] = 0;
+LMG2L["John Doe_c5"]["TextScaled"] = true;
+LMG2L["John Doe_c5"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["John Doe_c5"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["John Doe_c5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["John Doe_c5"]["Size"] = UDim2.new(0, 118, 0, 46);
+LMG2L["John Doe_c5"]["Text"] = [[John Doe]];
+LMG2L["John Doe_c5"]["Name"] = [[John Doe]];
+LMG2L["John Doe_c5"]["Position"] = UDim2.new(0, 2, 0, 302);
+
+
+LMG2L["LocalScript_c6"] = Instance.new("LocalScript", LMG2L["John Doe_c5"]);
+
+
+
+LMG2L["UIStroke_c7"] = Instance.new("UIStroke", LMG2L["John Doe_c5"]);
+LMG2L["UIStroke_c7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_c7"]["Thickness"] = 2;
+LMG2L["UIStroke_c7"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Anime skybox2_c8"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Anime skybox2_c8"]["TextWrapped"] = true;
+LMG2L["Anime skybox2_c8"]["BorderSizePixel"] = 0;
+LMG2L["Anime skybox2_c8"]["TextScaled"] = true;
+LMG2L["Anime skybox2_c8"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Anime skybox2_c8"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Anime skybox2_c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Anime skybox2_c8"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Anime skybox2_c8"]["Text"] = [[Anime Skybox with Jumpscare ]];
+LMG2L["Anime skybox2_c8"]["Name"] = [[Anime skybox2]];
+LMG2L["Anime skybox2_c8"]["Position"] = UDim2.new(0, 126, 0, 252);
+
+
+LMG2L["LocalScript_c9"] = Instance.new("LocalScript", LMG2L["Anime skybox2_c8"]);
+
+
+
+LMG2L["UIStroke_ca"] = Instance.new("UIStroke", LMG2L["Anime skybox2_c8"]);
+LMG2L["UIStroke_ca"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_ca"]["Thickness"] = 2;
+LMG2L["UIStroke_ca"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Particle_cb"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Particle_cb"]["TextWrapped"] = true;
+LMG2L["Particle_cb"]["BorderSizePixel"] = 0;
+LMG2L["Particle_cb"]["TextScaled"] = true;
+LMG2L["Particle_cb"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Particle_cb"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Particle_cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Particle_cb"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Particle_cb"]["Text"] = [[Particle]];
+LMG2L["Particle_cb"]["Name"] = [[Particle]];
+LMG2L["Particle_cb"]["Position"] = UDim2.new(0, 126, 0, 202);
+
+
+LMG2L["LocalScript_cc"] = Instance.new("LocalScript", LMG2L["Particle_cb"]);
+
+
+
+LMG2L["UIStroke_cd"] = Instance.new("UIStroke", LMG2L["Particle_cb"]);
+LMG2L["UIStroke_cd"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_cd"]["Thickness"] = 2;
+LMG2L["UIStroke_cd"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Fire all_ce"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Fire all_ce"]["TextWrapped"] = true;
+LMG2L["Fire all_ce"]["BorderSizePixel"] = 0;
+LMG2L["Fire all_ce"]["TextScaled"] = true;
+LMG2L["Fire all_ce"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Fire all_ce"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Fire all_ce"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Fire all_ce"]["Size"] = UDim2.new(0, 120, 0, 46);
+LMG2L["Fire all_ce"]["Text"] = [[Fire all]];
+LMG2L["Fire all_ce"]["Name"] = [[Fire all]];
+LMG2L["Fire all_ce"]["Position"] = UDim2.new(0, 250, 0, 402);
+
+
+LMG2L["LocalScript_cf"] = Instance.new("LocalScript", LMG2L["Fire all_ce"]);
+
+
+
+LMG2L["UIStroke_d0"] = Instance.new("UIStroke", LMG2L["Fire all_ce"]);
+LMG2L["UIStroke_d0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_d0"]["Thickness"] = 2;
+LMG2L["UIStroke_d0"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Decalspam 4_d1"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Decalspam 4_d1"]["TextWrapped"] = true;
+LMG2L["Decalspam 4_d1"]["BorderSizePixel"] = 0;
+LMG2L["Decalspam 4_d1"]["TextScaled"] = true;
+LMG2L["Decalspam 4_d1"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Decalspam 4_d1"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Decalspam 4_d1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Decalspam 4_d1"]["Size"] = UDim2.new(0, 114, 0, 44);
+LMG2L["Decalspam 4_d1"]["Text"] = [[Decalspam 4]];
+LMG2L["Decalspam 4_d1"]["Name"] = [[Decalspam 4]];
+LMG2L["Decalspam 4_d1"]["Position"] = UDim2.new(0, 374, 0, 2);
+
+
+LMG2L["LocalScript_d2"] = Instance.new("LocalScript", LMG2L["Decalspam 4_d1"]);
+
+
+
+LMG2L["UIStroke_d3"] = Instance.new("UIStroke", LMG2L["Decalspam 4_d1"]);
+LMG2L["UIStroke_d3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_d3"]["Thickness"] = 2;
+LMG2L["UIStroke_d3"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["Cmdbar2 _d4"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["Cmdbar2 _d4"]["TextWrapped"] = true;
+LMG2L["Cmdbar2 _d4"]["BorderSizePixel"] = 0;
+LMG2L["Cmdbar2 _d4"]["TextScaled"] = true;
+LMG2L["Cmdbar2 _d4"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["Cmdbar2 _d4"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Cmdbar2 _d4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Cmdbar2 _d4"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["Cmdbar2 _d4"]["Text"] = [[Cmdbar2]];
+LMG2L["Cmdbar2 _d4"]["Name"] = [[Cmdbar2 ]];
+LMG2L["Cmdbar2 _d4"]["Position"] = UDim2.new(0, 252, 0, 552);
+
+
+LMG2L["LocalScript_d5"] = Instance.new("LocalScript", LMG2L["Cmdbar2 _d4"]);
+
+
+
+LMG2L["UIStroke_d6"] = Instance.new("UIStroke", LMG2L["Cmdbar2 _d4"]);
+LMG2L["UIStroke_d6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_d6"]["Thickness"] = 2;
+LMG2L["UIStroke_d6"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["fencing Map_d7"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["fencing Map_d7"]["TextWrapped"] = true;
+LMG2L["fencing Map_d7"]["BorderSizePixel"] = 0;
+LMG2L["fencing Map_d7"]["TextScaled"] = true;
+LMG2L["fencing Map_d7"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["fencing Map_d7"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["fencing Map_d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["fencing Map_d7"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["fencing Map_d7"]["Text"] = [[Fencing map]];
+LMG2L["fencing Map_d7"]["Name"] = [[fencing Map]];
+LMG2L["fencing Map_d7"]["Position"] = UDim2.new(0, 250, 0, 302);
+
+
+LMG2L["LocalScript_d8"] = Instance.new("LocalScript", LMG2L["fencing Map_d7"]);
+
+
+
+LMG2L["UIStroke_d9"] = Instance.new("UIStroke", LMG2L["fencing Map_d7"]);
+LMG2L["UIStroke_d9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_d9"]["Thickness"] = 2;
+LMG2L["UIStroke_d9"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["ToadRoast _da"] = Instance.new("TextButton", LMG2L["ScrollingFrame_33"]);
+LMG2L["ToadRoast _da"]["TextWrapped"] = true;
+LMG2L["ToadRoast _da"]["BorderSizePixel"] = 0;
+LMG2L["ToadRoast _da"]["TextScaled"] = true;
+LMG2L["ToadRoast _da"]["TextColor3"] = Color3.fromRGB(14, 27, 255);
+LMG2L["ToadRoast _da"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["ToadRoast _da"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["ToadRoast _da"]["Size"] = UDim2.new(0, 120, 0, 44);
+LMG2L["ToadRoast _da"]["Text"] = [[ToadRoast ]];
+LMG2L["ToadRoast _da"]["Name"] = [[ToadRoast ]];
+LMG2L["ToadRoast _da"]["Position"] = UDim2.new(0, 250, 0, 252);
+
+
+LMG2L["LocalScript_db"] = Instance.new("LocalScript", LMG2L["ToadRoast _da"]);
+
+
+
+LMG2L["UIStroke_dc"] = Instance.new("UIStroke", LMG2L["ToadRoast _da"]);
+LMG2L["UIStroke_dc"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_dc"]["Thickness"] = 2;
+LMG2L["UIStroke_dc"]["Color"] = Color3.fromRGB(38, 9, 255);
+
+
+LMG2L["UIStroke_dd"] = Instance.new("UIStroke", LMG2L["Script _30"]);
+LMG2L["UIStroke_dd"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_dd"]["Thickness"] = 2;
+LMG2L["UIStroke_dd"]["Color"] = Color3.fromRGB(14, 15, 255);
+
+
+LMG2L["UIDragDetector_de"] = Instance.new("UIDragDetector", LMG2L["FrameImage_2"]);
+LMG2L["UIDragDetector_de"]["DragUDim2"] = UDim2.new(0, -7, 0, -14);
+
+
+LMG2L["R six_df"] = Instance.new("TextButton", LMG2L["FrameImage_2"]);
+LMG2L["R six_df"]["TextWrapped"] = true;
+LMG2L["R six_df"]["BorderSizePixel"] = 0;
+LMG2L["R six_df"]["TextScaled"] = true;
+LMG2L["R six_df"]["TextColor3"] = Color3.fromRGB(5, 42, 255);
+LMG2L["R six_df"]["BackgroundColor3"] = Color3.fromRGB(2, 2, 2);
+LMG2L["R six_df"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["R six_df"]["Size"] = UDim2.new(0, 40, 0, 18);
+LMG2L["R six_df"]["Text"] = [[R6]];
+LMG2L["R six_df"]["Name"] = [[R six]];
+LMG2L["R six_df"]["Position"] = UDim2.new(0, 2, 0, 24);
+
+
+LMG2L["LocalScript_e0"] = Instance.new("LocalScript", LMG2L["R six_df"]);
+
+
+
+LMG2L["UIStroke_e1"] = Instance.new("UIStroke", LMG2L["R six_df"]);
+LMG2L["UIStroke_e1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_e1"]["Thickness"] = 2;
+LMG2L["UIStroke_e1"]["Color"] = Color3.fromRGB(14, 15, 255);
+
+
+LMG2L["Music Page_e2"] = Instance.new("TextButton", LMG2L["FrameImage_2"]);
+LMG2L["Music Page_e2"]["TextWrapped"] = true;
+LMG2L["Music Page_e2"]["BorderSizePixel"] = 0;
+LMG2L["Music Page_e2"]["TextScaled"] = true;
+LMG2L["Music Page_e2"]["TextColor3"] = Color3.fromRGB(5, 42, 255);
+LMG2L["Music Page_e2"]["BackgroundColor3"] = Color3.fromRGB(2, 2, 2);
+LMG2L["Music Page_e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Music Page_e2"]["Size"] = UDim2.new(0, 78, 0, 18);
+LMG2L["Music Page_e2"]["Text"] = [[Musics]];
+LMG2L["Music Page_e2"]["Name"] = [[Music Page]];
+LMG2L["Music Page_e2"]["Position"] = UDim2.new(0, 210, 0, 24);
+
+
+LMG2L["LocalScript_e3"] = Instance.new("LocalScript", LMG2L["Music Page_e2"]);
+
+
+
+LMG2L["Frame3_e4"] = Instance.new("Frame", LMG2L["Music Page_e2"]);
+LMG2L["Frame3_e4"]["Visible"] = false;
+LMG2L["Frame3_e4"]["BorderSizePixel"] = 0;
+LMG2L["Frame3_e4"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
+LMG2L["Frame3_e4"]["Size"] = UDim2.new(0, 522, 0, 376);
+LMG2L["Frame3_e4"]["Position"] = UDim2.new(0, -206, 0, 28);
+LMG2L["Frame3_e4"]["Name"] = [[Frame3]];
+
+
+LMG2L["ScrollingFrame_e5"] = Instance.new("ScrollingFrame", LMG2L["Frame3_e4"]);
+LMG2L["ScrollingFrame_e5"]["BorderSizePixel"] = 2;
+LMG2L["ScrollingFrame_e5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["ScrollingFrame_e5"]["ScrollBarImageTransparency"] = 1;
+LMG2L["ScrollingFrame_e5"]["Size"] = UDim2.new(0, 512, 0, 348);
+LMG2L["ScrollingFrame_e5"]["Position"] = UDim2.new(0, 6, 0, 6);
+LMG2L["ScrollingFrame_e5"]["BorderColor3"] = Color3.fromRGB(7, 14, 255);
+LMG2L["ScrollingFrame_e5"]["BackgroundTransparency"] = 1;
+
+
+LMG2L["scatmat_e6"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["scatmat_e6"]["TextWrapped"] = true;
+LMG2L["scatmat_e6"]["BorderSizePixel"] = 0;
+LMG2L["scatmat_e6"]["TextScaled"] = true;
+LMG2L["scatmat_e6"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["scatmat_e6"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["scatmat_e6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["scatmat_e6"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["scatmat_e6"]["Text"] = [[scatmat]];
+LMG2L["scatmat_e6"]["Name"] = [[scatmat]];
+LMG2L["scatmat_e6"]["Position"] = UDim2.new(0, 254, 0, 108);
+
+
+LMG2L["LocalScript_e7"] = Instance.new("LocalScript", LMG2L["scatmat_e6"]);
+
+
+
+LMG2L["UIStroke_e8"] = Instance.new("UIStroke", LMG2L["scatmat_e6"]);
+LMG2L["UIStroke_e8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_e8"]["Thickness"] = 2;
+LMG2L["UIStroke_e8"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["better of alone_e9"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["better of alone_e9"]["TextWrapped"] = true;
+LMG2L["better of alone_e9"]["BorderSizePixel"] = 0;
+LMG2L["better of alone_e9"]["TextScaled"] = true;
+LMG2L["better of alone_e9"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["better of alone_e9"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["better of alone_e9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["better of alone_e9"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["better of alone_e9"]["Text"] = [[better of alone ]];
+LMG2L["better of alone_e9"]["Name"] = [[better of alone]];
+LMG2L["better of alone_e9"]["Position"] = UDim2.new(0, 380, 0, 0);
+
+
+LMG2L["LocalScript_ea"] = Instance.new("LocalScript", LMG2L["better of alone_e9"]);
+
+
+
+LMG2L["UIStroke_eb"] = Instance.new("UIStroke", LMG2L["better of alone_e9"]);
+LMG2L["UIStroke_eb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_eb"]["Thickness"] = 2;
+LMG2L["UIStroke_eb"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Khmer Jumpstyle _ec"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Khmer Jumpstyle _ec"]["TextWrapped"] = true;
+LMG2L["Khmer Jumpstyle _ec"]["BorderSizePixel"] = 0;
+LMG2L["Khmer Jumpstyle _ec"]["TextScaled"] = true;
+LMG2L["Khmer Jumpstyle _ec"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Khmer Jumpstyle _ec"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Khmer Jumpstyle _ec"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Khmer Jumpstyle _ec"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Khmer Jumpstyle _ec"]["Text"] = [[Khmer Jumpstyle ]];
+LMG2L["Khmer Jumpstyle _ec"]["Name"] = [[Khmer Jumpstyle ]];
+LMG2L["Khmer Jumpstyle _ec"]["Position"] = UDim2.new(0, 124, 0, 272);
+
+
+LMG2L["LocalScript_ed"] = Instance.new("LocalScript", LMG2L["Khmer Jumpstyle _ec"]);
+
+
+
+LMG2L["UIStroke_ee"] = Instance.new("UIStroke", LMG2L["Khmer Jumpstyle _ec"]);
+LMG2L["UIStroke_ee"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_ee"]["Thickness"] = 2;
+LMG2L["UIStroke_ee"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Hardstyle_ef"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Hardstyle_ef"]["TextWrapped"] = true;
+LMG2L["Hardstyle_ef"]["BorderSizePixel"] = 0;
+LMG2L["Hardstyle_ef"]["TextScaled"] = true;
+LMG2L["Hardstyle_ef"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Hardstyle_ef"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Hardstyle_ef"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Hardstyle_ef"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Hardstyle_ef"]["Text"] = [[HardStyle]];
+LMG2L["Hardstyle_ef"]["Name"] = [[Hardstyle]];
+LMG2L["Hardstyle_ef"]["Position"] = UDim2.new(0, 124, 0, 488);
+
+
+LMG2L["LocalScript_f0"] = Instance.new("LocalScript", LMG2L["Hardstyle_ef"]);
+
+
+
+LMG2L["UIStroke_f1"] = Instance.new("UIStroke", LMG2L["Hardstyle_ef"]);
+LMG2L["UIStroke_f1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_f1"]["Thickness"] = 2;
+LMG2L["UIStroke_f1"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Wonga_f2"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Wonga_f2"]["TextWrapped"] = true;
+LMG2L["Wonga_f2"]["BorderSizePixel"] = 0;
+LMG2L["Wonga_f2"]["TextScaled"] = true;
+LMG2L["Wonga_f2"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Wonga_f2"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Wonga_f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Wonga_f2"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Wonga_f2"]["Text"] = [[Wonga]];
+LMG2L["Wonga_f2"]["Name"] = [[Wonga]];
+LMG2L["Wonga_f2"]["Position"] = UDim2.new(0, -2, 0, 326);
+
+
+LMG2L["LocalScript_f3"] = Instance.new("LocalScript", LMG2L["Wonga_f2"]);
+
+
+
+LMG2L["UIStroke_f4"] = Instance.new("UIStroke", LMG2L["Wonga_f2"]);
+LMG2L["UIStroke_f4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_f4"]["Thickness"] = 2;
+LMG2L["UIStroke_f4"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["King Von_f5"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["King Von_f5"]["TextWrapped"] = true;
+LMG2L["King Von_f5"]["BorderSizePixel"] = 0;
+LMG2L["King Von_f5"]["TextScaled"] = true;
+LMG2L["King Von_f5"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["King Von_f5"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["King Von_f5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["King Von_f5"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["King Von_f5"]["Text"] = [[King Von]];
+LMG2L["King Von_f5"]["Name"] = [[King Von]];
+LMG2L["King Von_f5"]["Position"] = UDim2.new(0, 250, 0, 434);
+
+
+LMG2L["LocalScript_f6"] = Instance.new("LocalScript", LMG2L["King Von_f5"]);
+
+
+
+LMG2L["UIStroke_f7"] = Instance.new("UIStroke", LMG2L["King Von_f5"]);
+LMG2L["UIStroke_f7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_f7"]["Thickness"] = 2;
+LMG2L["UIStroke_f7"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Gemi2_f8"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Gemi2_f8"]["TextWrapped"] = true;
+LMG2L["Gemi2_f8"]["BorderSizePixel"] = 0;
+LMG2L["Gemi2_f8"]["TextScaled"] = true;
+LMG2L["Gemi2_f8"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Gemi2_f8"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Gemi2_f8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Gemi2_f8"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Gemi2_f8"]["Text"] = [[Gemi2]];
+LMG2L["Gemi2_f8"]["Name"] = [[Gemi2]];
+LMG2L["Gemi2_f8"]["Position"] = UDim2.new(0, 252, 0, 272);
+
+
+LMG2L["LocalScript_f9"] = Instance.new("LocalScript", LMG2L["Gemi2_f8"]);
+
+
+
+LMG2L["UIStroke_fa"] = Instance.new("UIStroke", LMG2L["Gemi2_f8"]);
+LMG2L["UIStroke_fa"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_fa"]["Thickness"] = 2;
+LMG2L["UIStroke_fa"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["M.U.L.E_fb"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["M.U.L.E_fb"]["TextWrapped"] = true;
+LMG2L["M.U.L.E_fb"]["BorderSizePixel"] = 0;
+LMG2L["M.U.L.E_fb"]["TextScaled"] = true;
+LMG2L["M.U.L.E_fb"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["M.U.L.E_fb"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["M.U.L.E_fb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["M.U.L.E_fb"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["M.U.L.E_fb"]["Text"] = [[M.U.L.E]];
+LMG2L["M.U.L.E_fb"]["Name"] = [[M.U.L.E]];
+LMG2L["M.U.L.E_fb"]["Position"] = UDim2.new(0, -2, 0, 272);
+
+
+LMG2L["LocalScript_fc"] = Instance.new("LocalScript", LMG2L["M.U.L.E_fb"]);
+
+
+
+LMG2L["UIStroke_fd"] = Instance.new("UIStroke", LMG2L["M.U.L.E_fb"]);
+LMG2L["UIStroke_fd"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_fd"]["Thickness"] = 2;
+LMG2L["UIStroke_fd"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Roblox remix_fe"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Roblox remix_fe"]["TextWrapped"] = true;
+LMG2L["Roblox remix_fe"]["BorderSizePixel"] = 0;
+LMG2L["Roblox remix_fe"]["TextScaled"] = true;
+LMG2L["Roblox remix_fe"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Roblox remix_fe"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Roblox remix_fe"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Roblox remix_fe"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Roblox remix_fe"]["Text"] = [[Roblox remix]];
+LMG2L["Roblox remix_fe"]["Name"] = [[Roblox remix]];
+LMG2L["Roblox remix_fe"]["Position"] = UDim2.new(0, 382, 0, 108);
+
+
+LMG2L["LocalScript_ff"] = Instance.new("LocalScript", LMG2L["Roblox remix_fe"]);
+
+
+
+LMG2L["UIStroke_100"] = Instance.new("UIStroke", LMG2L["Roblox remix_fe"]);
+LMG2L["UIStroke_100"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_100"]["Thickness"] = 2;
+LMG2L["UIStroke_100"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["jumpstyle fast_101"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["jumpstyle fast_101"]["TextWrapped"] = true;
+LMG2L["jumpstyle fast_101"]["BorderSizePixel"] = 0;
+LMG2L["jumpstyle fast_101"]["TextScaled"] = true;
+LMG2L["jumpstyle fast_101"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["jumpstyle fast_101"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["jumpstyle fast_101"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["jumpstyle fast_101"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["jumpstyle fast_101"]["Text"] = [[Jumpstyle Fast]];
+LMG2L["jumpstyle fast_101"]["Name"] = [[jumpstyle fast]];
+LMG2L["jumpstyle fast_101"]["Position"] = UDim2.new(0, 0, 0, 110);
+
+
+LMG2L["LocalScript_102"] = Instance.new("LocalScript", LMG2L["jumpstyle fast_101"]);
+
+
+
+LMG2L["UIStroke_103"] = Instance.new("UIStroke", LMG2L["jumpstyle fast_101"]);
+LMG2L["UIStroke_103"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_103"]["Thickness"] = 2;
+LMG2L["UIStroke_103"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Trololo_104"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Trololo_104"]["TextWrapped"] = true;
+LMG2L["Trololo_104"]["BorderSizePixel"] = 0;
+LMG2L["Trololo_104"]["TextScaled"] = true;
+LMG2L["Trololo_104"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Trololo_104"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Trololo_104"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Trololo_104"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Trololo_104"]["Text"] = [[Trololo]];
+LMG2L["Trololo_104"]["Name"] = [[Trololo]];
+LMG2L["Trololo_104"]["Position"] = UDim2.new(0, 124, 0, 326);
+
+
+LMG2L["LocalScript_105"] = Instance.new("LocalScript", LMG2L["Trololo_104"]);
+
+
+
+LMG2L["UIStroke_106"] = Instance.new("UIStroke", LMG2L["Trololo_104"]);
+LMG2L["UIStroke_106"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_106"]["Thickness"] = 2;
+LMG2L["UIStroke_106"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Ambatukam 1_107"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Ambatukam 1_107"]["TextWrapped"] = true;
+LMG2L["Ambatukam 1_107"]["BorderSizePixel"] = 0;
+LMG2L["Ambatukam 1_107"]["TextScaled"] = true;
+LMG2L["Ambatukam 1_107"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Ambatukam 1_107"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Ambatukam 1_107"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Ambatukam 1_107"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Ambatukam 1_107"]["Text"] = [[Ambatukam 1]];
+LMG2L["Ambatukam 1_107"]["Name"] = [[Ambatukam 1]];
+LMG2L["Ambatukam 1_107"]["Position"] = UDim2.new(0, 124, 0, 218);
+
+
+LMG2L["UIStroke_108"] = Instance.new("UIStroke", LMG2L["Ambatukam 1_107"]);
+LMG2L["UIStroke_108"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_108"]["Thickness"] = 2;
+LMG2L["UIStroke_108"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["sadskid_109"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["sadskid_109"]["TextWrapped"] = true;
+LMG2L["sadskid_109"]["BorderSizePixel"] = 0;
+LMG2L["sadskid_109"]["TextScaled"] = true;
+LMG2L["sadskid_109"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["sadskid_109"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["sadskid_109"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["sadskid_109"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["sadskid_109"]["Text"] = [[Sadkid tutorial]];
+LMG2L["sadskid_109"]["Name"] = [[sadskid]];
+LMG2L["sadskid_109"]["Position"] = UDim2.new(0, 380, 0, 434);
+
+
+LMG2L["LocalScript_10a"] = Instance.new("LocalScript", LMG2L["sadskid_109"]);
+
+
+
+LMG2L["UIStroke_10b"] = Instance.new("UIStroke", LMG2L["sadskid_109"]);
+LMG2L["UIStroke_10b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_10b"]["Thickness"] = 2;
+LMG2L["UIStroke_10b"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Piraten _10c"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Piraten _10c"]["TextWrapped"] = true;
+LMG2L["Piraten _10c"]["BorderSizePixel"] = 0;
+LMG2L["Piraten _10c"]["TextScaled"] = true;
+LMG2L["Piraten _10c"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Piraten _10c"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Piraten _10c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Piraten _10c"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Piraten _10c"]["Text"] = [[Piraten?]];
+LMG2L["Piraten _10c"]["Name"] = [[Piraten ]];
+LMG2L["Piraten _10c"]["Position"] = UDim2.new(0, 124, 0, 380);
+
+
+LMG2L["LocalScript_10d"] = Instance.new("LocalScript", LMG2L["Piraten _10c"]);
+
+
+
+LMG2L["UIStroke_10e"] = Instance.new("UIStroke", LMG2L["Piraten _10c"]);
+LMG2L["UIStroke_10e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_10e"]["Thickness"] = 2;
+LMG2L["UIStroke_10e"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["niggaa_10f"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["niggaa_10f"]["TextWrapped"] = true;
+LMG2L["niggaa_10f"]["BorderSizePixel"] = 0;
+LMG2L["niggaa_10f"]["TextScaled"] = true;
+LMG2L["niggaa_10f"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["niggaa_10f"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["niggaa_10f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["niggaa_10f"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["niggaa_10f"]["Text"] = [[funny]];
+LMG2L["niggaa_10f"]["Name"] = [[niggaa]];
+LMG2L["niggaa_10f"]["Position"] = UDim2.new(0, -2, 0, 488);
+
+
+LMG2L["LocalScript_110"] = Instance.new("LocalScript", LMG2L["niggaa_10f"]);
+
+
+
+LMG2L["UIStroke_111"] = Instance.new("UIStroke", LMG2L["niggaa_10f"]);
+LMG2L["UIStroke_111"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_111"]["Thickness"] = 2;
+LMG2L["UIStroke_111"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["ambatukam 2_112"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["ambatukam 2_112"]["TextWrapped"] = true;
+LMG2L["ambatukam 2_112"]["BorderSizePixel"] = 0;
+LMG2L["ambatukam 2_112"]["TextScaled"] = true;
+LMG2L["ambatukam 2_112"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["ambatukam 2_112"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["ambatukam 2_112"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["ambatukam 2_112"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["ambatukam 2_112"]["Text"] = [[ambatukam 2]];
+LMG2L["ambatukam 2_112"]["Name"] = [[ambatukam 2]];
+LMG2L["ambatukam 2_112"]["Position"] = UDim2.new(0, 252, 0, 218);
+
+
+LMG2L["LocalScript_113"] = Instance.new("LocalScript", LMG2L["ambatukam 2_112"]);
+
+
+
+LMG2L["UIStroke_114"] = Instance.new("UIStroke", LMG2L["ambatukam 2_112"]);
+LMG2L["UIStroke_114"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_114"]["Thickness"] = 2;
+LMG2L["UIStroke_114"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Stadium Rave_115"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Stadium Rave_115"]["TextWrapped"] = true;
+LMG2L["Stadium Rave_115"]["BorderSizePixel"] = 0;
+LMG2L["Stadium Rave_115"]["TextScaled"] = true;
+LMG2L["Stadium Rave_115"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Stadium Rave_115"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Stadium Rave_115"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Stadium Rave_115"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Stadium Rave_115"]["Text"] = [[Stadium Rave (A)]];
+LMG2L["Stadium Rave_115"]["Name"] = [[Stadium Rave]];
+LMG2L["Stadium Rave_115"]["Position"] = UDim2.new(0, 380, 0, 490);
+
+
+LMG2L["LocalScript_116"] = Instance.new("LocalScript", LMG2L["Stadium Rave_115"]);
+
+
+
+LMG2L["UIStroke_117"] = Instance.new("UIStroke", LMG2L["Stadium Rave_115"]);
+LMG2L["UIStroke_117"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_117"]["Thickness"] = 2;
+LMG2L["UIStroke_117"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["You Get Nothing_118"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["You Get Nothing_118"]["TextWrapped"] = true;
+LMG2L["You Get Nothing_118"]["BorderSizePixel"] = 0;
+LMG2L["You Get Nothing_118"]["TextScaled"] = true;
+LMG2L["You Get Nothing_118"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["You Get Nothing_118"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["You Get Nothing_118"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["You Get Nothing_118"]["Size"] = UDim2.new(0, 122, 0, 48);
+LMG2L["You Get Nothing_118"]["Text"] = [[You Get Nothing ]];
+LMG2L["You Get Nothing_118"]["Name"] = [[You Get Nothing]];
+LMG2L["You Get Nothing_118"]["Position"] = UDim2.new(0, 252, 0, 162);
+
+
+LMG2L["LocalScript_119"] = Instance.new("LocalScript", LMG2L["You Get Nothing_118"]);
+
+
+
+LMG2L["UIStroke_11a"] = Instance.new("UIStroke", LMG2L["You Get Nothing_118"]);
+LMG2L["UIStroke_11a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_11a"]["Thickness"] = 2;
+LMG2L["UIStroke_11a"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Fuck all Nigger _11b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Fuck all Nigger _11b"]["TextWrapped"] = true;
+LMG2L["Fuck all Nigger _11b"]["BorderSizePixel"] = 0;
+LMG2L["Fuck all Nigger _11b"]["TextScaled"] = true;
+LMG2L["Fuck all Nigger _11b"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Fuck all Nigger _11b"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Fuck all Nigger _11b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Fuck all Nigger _11b"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Fuck all Nigger _11b"]["Text"] = [[Fuck all Nigger ]];
+LMG2L["Fuck all Nigger _11b"]["Name"] = [[Fuck all Nigger ]];
+LMG2L["Fuck all Nigger _11b"]["Position"] = UDim2.new(0, 250, 0, 380);
+
+
+LMG2L["UIStroke_11c"] = Instance.new("UIStroke", LMG2L["Fuck all Nigger _11b"]);
+LMG2L["UIStroke_11c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_11c"]["Thickness"] = 2;
+LMG2L["UIStroke_11c"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["won't stop un c_11d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["won't stop un c_11d"]["TextWrapped"] = true;
+LMG2L["won't stop un c_11d"]["BorderSizePixel"] = 0;
+LMG2L["won't stop un c_11d"]["TextScaled"] = true;
+LMG2L["won't stop un c_11d"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["won't stop un c_11d"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["won't stop un c_11d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["won't stop un c_11d"]["Size"] = UDim2.new(0, 120, 0, 50);
+LMG2L["won't stop un c_11d"]["Text"] = [[G00by theme]];
+LMG2L["won't stop un c_11d"]["Name"] = [[won't stop un c]];
+LMG2L["won't stop un c_11d"]["Position"] = UDim2.new(0, 126, 0, 108);
+
+
+LMG2L["LocalScript_11e"] = Instance.new("LocalScript", LMG2L["won't stop un c_11d"]);
+
+
+
+LMG2L["UIStroke_11f"] = Instance.new("UIStroke", LMG2L["won't stop un c_11d"]);
+LMG2L["UIStroke_11f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_11f"]["Thickness"] = 2;
+LMG2L["UIStroke_11f"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["fucking nigger_120"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["fucking nigger_120"]["TextWrapped"] = true;
+LMG2L["fucking nigger_120"]["BorderSizePixel"] = 0;
+LMG2L["fucking nigger_120"]["TextScaled"] = true;
+LMG2L["fucking nigger_120"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["fucking nigger_120"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["fucking nigger_120"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["fucking nigger_120"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["fucking nigger_120"]["Text"] = [[Fucking Nigger]];
+LMG2L["fucking nigger_120"]["Name"] = [[fucking nigger]];
+LMG2L["fucking nigger_120"]["Position"] = UDim2.new(0, 254, 0, 54);
+
+
+LMG2L["LocalScript_121"] = Instance.new("LocalScript", LMG2L["fucking nigger_120"]);
+
+
+
+LMG2L["UIStroke_122"] = Instance.new("UIStroke", LMG2L["fucking nigger_120"]);
+LMG2L["UIStroke_122"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_122"]["Thickness"] = 2;
+LMG2L["UIStroke_122"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["sparta remix _123"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["sparta remix _123"]["TextWrapped"] = true;
+LMG2L["sparta remix _123"]["BorderSizePixel"] = 0;
+LMG2L["sparta remix _123"]["TextScaled"] = true;
+LMG2L["sparta remix _123"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["sparta remix _123"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["sparta remix _123"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["sparta remix _123"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["sparta remix _123"]["Text"] = [[sparta remix ]];
+LMG2L["sparta remix _123"]["Name"] = [[sparta remix ]];
+LMG2L["sparta remix _123"]["Position"] = UDim2.new(0, -2, 0, 164);
+
+
+LMG2L["LocalScript_124"] = Instance.new("LocalScript", LMG2L["sparta remix _123"]);
+
+
+
+LMG2L["UIStroke_125"] = Instance.new("UIStroke", LMG2L["sparta remix _123"]);
+LMG2L["UIStroke_125"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_125"]["Thickness"] = 2;
+LMG2L["UIStroke_125"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["SSS_126"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["SSS_126"]["TextWrapped"] = true;
+LMG2L["SSS_126"]["BorderSizePixel"] = 0;
+LMG2L["SSS_126"]["TextScaled"] = true;
+LMG2L["SSS_126"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["SSS_126"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["SSS_126"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["SSS_126"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["SSS_126"]["Text"] = [[Spooky Scary Skeleton ]];
+LMG2L["SSS_126"]["Name"] = [[SSS]];
+LMG2L["SSS_126"]["Position"] = UDim2.new(0, 252, 0, 326);
+
+
+LMG2L["LocalScript_127"] = Instance.new("LocalScript", LMG2L["SSS_126"]);
+
+
+
+LMG2L["UIStroke_128"] = Instance.new("UIStroke", LMG2L["SSS_126"]);
+LMG2L["UIStroke_128"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_128"]["Thickness"] = 2;
+LMG2L["UIStroke_128"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["fhfh_129"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["fhfh_129"]["TextWrapped"] = true;
+LMG2L["fhfh_129"]["BorderSizePixel"] = 0;
+LMG2L["fhfh_129"]["TextScaled"] = true;
+LMG2L["fhfh_129"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["fhfh_129"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["fhfh_129"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["fhfh_129"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["fhfh_129"]["Text"] = [[fuck her fuck her]];
+LMG2L["fhfh_129"]["Name"] = [[fhfh]];
+LMG2L["fhfh_129"]["Position"] = UDim2.new(0, 252, 0, 0);
+
+
+LMG2L["LocalScript_12a"] = Instance.new("LocalScript", LMG2L["fhfh_129"]);
+
+
+
+LMG2L["UIStroke_12b"] = Instance.new("UIStroke", LMG2L["fhfh_129"]);
+LMG2L["UIStroke_12b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_12b"]["Thickness"] = 2;
+LMG2L["UIStroke_12b"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["2k21_12c"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["2k21_12c"]["TextWrapped"] = true;
+LMG2L["2k21_12c"]["BorderSizePixel"] = 0;
+LMG2L["2k21_12c"]["TextScaled"] = true;
+LMG2L["2k21_12c"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["2k21_12c"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["2k21_12c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["2k21_12c"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["2k21_12c"]["Text"] = [[2k21]];
+LMG2L["2k21_12c"]["Name"] = [[2k21]];
+LMG2L["2k21_12c"]["Position"] = UDim2.new(0, 124, 0, 434);
+
+
+LMG2L["LocalScript_12d"] = Instance.new("LocalScript", LMG2L["2k21_12c"]);
+
+
+
+LMG2L["UIStroke_12e"] = Instance.new("UIStroke", LMG2L["2k21_12c"]);
+LMG2L["UIStroke_12e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_12e"]["Thickness"] = 2;
+LMG2L["UIStroke_12e"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["UIStroke_12f"] = Instance.new("UIStroke", LMG2L["ScrollingFrame_e5"]);
+LMG2L["UIStroke_12f"]["Thickness"] = 2;
+LMG2L["UIStroke_12f"]["Color"] = Color3.fromRGB(47, 13, 255);
+
+
+LMG2L["Nasheed _130"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Nasheed _130"]["TextWrapped"] = true;
+LMG2L["Nasheed _130"]["BorderSizePixel"] = 0;
+LMG2L["Nasheed _130"]["TextScaled"] = true;
+LMG2L["Nasheed _130"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Nasheed _130"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Nasheed _130"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Nasheed _130"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Nasheed _130"]["Text"] = [[Nasheed]];
+LMG2L["Nasheed _130"]["Name"] = [[Nasheed ]];
+LMG2L["Nasheed _130"]["Position"] = UDim2.new(0, -2, 0, 380);
+
+
+LMG2L["LocalScript_131"] = Instance.new("LocalScript", LMG2L["Nasheed _130"]);
+
+
+
+LMG2L["UIStroke_132"] = Instance.new("UIStroke", LMG2L["Nasheed _130"]);
+LMG2L["UIStroke_132"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_132"]["Thickness"] = 2;
+LMG2L["UIStroke_132"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["jumpstyle slow_133"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["jumpstyle slow_133"]["TextWrapped"] = true;
+LMG2L["jumpstyle slow_133"]["BorderSizePixel"] = 0;
+LMG2L["jumpstyle slow_133"]["TextScaled"] = true;
+LMG2L["jumpstyle slow_133"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["jumpstyle slow_133"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["jumpstyle slow_133"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["jumpstyle slow_133"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["jumpstyle slow_133"]["Text"] = [[Jumpstyle slow]];
+LMG2L["jumpstyle slow_133"]["Name"] = [[jumpstyle slow]];
+LMG2L["jumpstyle slow_133"]["Position"] = UDim2.new(0, 382, 0, 54);
+
+
+LMG2L["LocalScript_134"] = Instance.new("LocalScript", LMG2L["jumpstyle slow_133"]);
+
+
+
+LMG2L["UIStroke_135"] = Instance.new("UIStroke", LMG2L["jumpstyle slow_133"]);
+LMG2L["UIStroke_135"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_135"]["Thickness"] = 2;
+LMG2L["UIStroke_135"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Nazi_136"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Nazi_136"]["TextWrapped"] = true;
+LMG2L["Nazi_136"]["BorderSizePixel"] = 0;
+LMG2L["Nazi_136"]["TextScaled"] = true;
+LMG2L["Nazi_136"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Nazi_136"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Nazi_136"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Nazi_136"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Nazi_136"]["Text"] = [[Nazi]];
+LMG2L["Nazi_136"]["Name"] = [[Nazi]];
+LMG2L["Nazi_136"]["Position"] = UDim2.new(0, 382, 0, 326);
+
+
+LMG2L["LocalScript_137"] = Instance.new("LocalScript", LMG2L["Nazi_136"]);
+
+
+
+LMG2L["UIStroke_138"] = Instance.new("UIStroke", LMG2L["Nazi_136"]);
+LMG2L["UIStroke_138"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_138"]["Thickness"] = 2;
+LMG2L["UIStroke_138"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["epstin 2_139"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["epstin 2_139"]["TextWrapped"] = true;
+LMG2L["epstin 2_139"]["BorderSizePixel"] = 0;
+LMG2L["epstin 2_139"]["TextScaled"] = true;
+LMG2L["epstin 2_139"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["epstin 2_139"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["epstin 2_139"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["epstin 2_139"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["epstin 2_139"]["Text"] = [[EFN 2]];
+LMG2L["epstin 2_139"]["Name"] = [[epstin 2]];
+LMG2L["epstin 2_139"]["Position"] = UDim2.new(0, -2, 0, 218);
+
+
+LMG2L["LocalScript_13a"] = Instance.new("LocalScript", LMG2L["epstin 2_139"]);
+
+
+
+LMG2L["UIStroke_13b"] = Instance.new("UIStroke", LMG2L["epstin 2_139"]);
+LMG2L["UIStroke_13b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_13b"]["Thickness"] = 2;
+LMG2L["UIStroke_13b"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Lazy Town _13c"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Lazy Town _13c"]["TextWrapped"] = true;
+LMG2L["Lazy Town _13c"]["BorderSizePixel"] = 0;
+LMG2L["Lazy Town _13c"]["TextScaled"] = true;
+LMG2L["Lazy Town _13c"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Lazy Town _13c"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Lazy Town _13c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Lazy Town _13c"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Lazy Town _13c"]["Text"] = [[Lazy Town ]];
+LMG2L["Lazy Town _13c"]["Name"] = [[Lazy Town ]];
+LMG2L["Lazy Town _13c"]["Position"] = UDim2.new(0, 380, 0, 380);
+
+
+LMG2L["LocalScript_13d"] = Instance.new("LocalScript", LMG2L["Lazy Town _13c"]);
+
+
+
+LMG2L["UIStroke_13e"] = Instance.new("UIStroke", LMG2L["Lazy Town _13c"]);
+LMG2L["UIStroke_13e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_13e"]["Thickness"] = 2;
+LMG2L["UIStroke_13e"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["dreamybull remix _13f"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["dreamybull remix _13f"]["TextWrapped"] = true;
+LMG2L["dreamybull remix _13f"]["BorderSizePixel"] = 0;
+LMG2L["dreamybull remix _13f"]["TextScaled"] = true;
+LMG2L["dreamybull remix _13f"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["dreamybull remix _13f"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["dreamybull remix _13f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["dreamybull remix _13f"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["dreamybull remix _13f"]["Text"] = [[Dreamybull remix ]];
+LMG2L["dreamybull remix _13f"]["Name"] = [[dreamybull remix ]];
+LMG2L["dreamybull remix _13f"]["Position"] = UDim2.new(0, 382, 0, 218);
+
+
+LMG2L["LocalScript_140"] = Instance.new("LocalScript", LMG2L["dreamybull remix _13f"]);
+
+
+
+LMG2L["UIStroke_141"] = Instance.new("UIStroke", LMG2L["dreamybull remix _13f"]);
+LMG2L["UIStroke_141"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_141"]["Thickness"] = 2;
+LMG2L["UIStroke_141"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Bonita_142"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Bonita_142"]["TextWrapped"] = true;
+LMG2L["Bonita_142"]["BorderSizePixel"] = 0;
+LMG2L["Bonita_142"]["TextScaled"] = true;
+LMG2L["Bonita_142"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Bonita_142"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Bonita_142"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Bonita_142"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Bonita_142"]["Text"] = [[Bonita]];
+LMG2L["Bonita_142"]["Name"] = [[Bonita]];
+LMG2L["Bonita_142"]["Position"] = UDim2.new(0, -2, 0, 434);
+
+
+LMG2L["LocalScript_143"] = Instance.new("LocalScript", LMG2L["Bonita_142"]);
+
+
+
+LMG2L["UIStroke_144"] = Instance.new("UIStroke", LMG2L["Bonita_142"]);
+LMG2L["UIStroke_144"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_144"]["Thickness"] = 2;
+LMG2L["UIStroke_144"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["epstin 1_145"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["epstin 1_145"]["TextWrapped"] = true;
+LMG2L["epstin 1_145"]["BorderSizePixel"] = 0;
+LMG2L["epstin 1_145"]["TextScaled"] = true;
+LMG2L["epstin 1_145"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["epstin 1_145"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["epstin 1_145"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["epstin 1_145"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["epstin 1_145"]["Text"] = [[EFN 1]];
+LMG2L["epstin 1_145"]["Name"] = [[epstin 1]];
+LMG2L["epstin 1_145"]["Position"] = UDim2.new(0, 382, 0, 162);
+
+
+LMG2L["LocalScript_146"] = Instance.new("LocalScript", LMG2L["epstin 1_145"]);
+
+
+
+LMG2L["UIStroke_147"] = Instance.new("UIStroke", LMG2L["epstin 1_145"]);
+LMG2L["UIStroke_147"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_147"]["Thickness"] = 2;
+LMG2L["UIStroke_147"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["sparta remix instrumental _148"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["sparta remix instrumental _148"]["TextWrapped"] = true;
+LMG2L["sparta remix instrumental _148"]["BorderSizePixel"] = 0;
+LMG2L["sparta remix instrumental _148"]["TextScaled"] = true;
+LMG2L["sparta remix instrumental _148"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["sparta remix instrumental _148"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["sparta remix instrumental _148"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["sparta remix instrumental _148"]["Size"] = UDim2.new(0, 122, 0, 46);
+LMG2L["sparta remix instrumental _148"]["Text"] = [[sparta remix instrumental ]];
+LMG2L["sparta remix instrumental _148"]["Name"] = [[sparta remix instrumental ]];
+LMG2L["sparta remix instrumental _148"]["Position"] = UDim2.new(0, 124, 0, 164);
+
+
+LMG2L["LocalScript_149"] = Instance.new("LocalScript", LMG2L["sparta remix instrumental _148"]);
+
+
+
+LMG2L["UIStroke_14a"] = Instance.new("UIStroke", LMG2L["sparta remix instrumental _148"]);
+LMG2L["UIStroke_14a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_14a"]["Thickness"] = 2;
+LMG2L["UIStroke_14a"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Losta Spaghetti _14b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Losta Spaghetti _14b"]["TextWrapped"] = true;
+LMG2L["Losta Spaghetti _14b"]["BorderSizePixel"] = 0;
+LMG2L["Losta Spaghetti _14b"]["TextScaled"] = true;
+LMG2L["Losta Spaghetti _14b"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Losta Spaghetti _14b"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Losta Spaghetti _14b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Losta Spaghetti _14b"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Losta Spaghetti _14b"]["Text"] = [[Losta Spaghetti ]];
+LMG2L["Losta Spaghetti _14b"]["Name"] = [[Losta Spaghetti ]];
+LMG2L["Losta Spaghetti _14b"]["Position"] = UDim2.new(0, 382, 0, 272);
+
+
+LMG2L["LocalScript_14c"] = Instance.new("LocalScript", LMG2L["Losta Spaghetti _14b"]);
+
+
+
+LMG2L["UIStroke_14d"] = Instance.new("UIStroke", LMG2L["Losta Spaghetti _14b"]);
+LMG2L["UIStroke_14d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_14d"]["Thickness"] = 2;
+LMG2L["UIStroke_14d"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Gothic_14e"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Gothic_14e"]["TextWrapped"] = true;
+LMG2L["Gothic_14e"]["BorderSizePixel"] = 0;
+LMG2L["Gothic_14e"]["TextScaled"] = true;
+LMG2L["Gothic_14e"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Gothic_14e"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Gothic_14e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Gothic_14e"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Gothic_14e"]["Text"] = [[Gothic]];
+LMG2L["Gothic_14e"]["Name"] = [[Gothic]];
+LMG2L["Gothic_14e"]["Position"] = UDim2.new(0, 250, 0, 488);
+
+
+LMG2L["LocalScript_14f"] = Instance.new("LocalScript", LMG2L["Gothic_14e"]);
+
+
+
+LMG2L["UIStroke_150"] = Instance.new("UIStroke", LMG2L["Gothic_14e"]);
+LMG2L["UIStroke_150"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_150"]["Thickness"] = 2;
+LMG2L["UIStroke_150"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Allahuakbar 2_151"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Allahuakbar 2_151"]["TextWrapped"] = true;
+LMG2L["Allahuakbar 2_151"]["BorderSizePixel"] = 0;
+LMG2L["Allahuakbar 2_151"]["TextScaled"] = true;
+LMG2L["Allahuakbar 2_151"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Allahuakbar 2_151"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Allahuakbar 2_151"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Allahuakbar 2_151"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Allahuakbar 2_151"]["Text"] = [[Allahuakbar 2]];
+LMG2L["Allahuakbar 2_151"]["Name"] = [[Allahuakbar 2]];
+LMG2L["Allahuakbar 2_151"]["Position"] = UDim2.new(0, 126, 0, 54);
+
+
+LMG2L["LocalScript_152"] = Instance.new("LocalScript", LMG2L["Allahuakbar 2_151"]);
+
+
+
+LMG2L["UIStroke_153"] = Instance.new("UIStroke", LMG2L["Allahuakbar 2_151"]);
+LMG2L["UIStroke_153"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_153"]["Thickness"] = 2;
+LMG2L["UIStroke_153"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Allahuakbar 1_154"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Allahuakbar 1_154"]["TextWrapped"] = true;
+LMG2L["Allahuakbar 1_154"]["BorderSizePixel"] = 0;
+LMG2L["Allahuakbar 1_154"]["TextScaled"] = true;
+LMG2L["Allahuakbar 1_154"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Allahuakbar 1_154"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Allahuakbar 1_154"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Allahuakbar 1_154"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Allahuakbar 1_154"]["Text"] = [[Allahuakbar 1]];
+LMG2L["Allahuakbar 1_154"]["Name"] = [[Allahuakbar 1]];
+LMG2L["Allahuakbar 1_154"]["Position"] = UDim2.new(0, 0, 0, 54);
+
+
+LMG2L["LocalScript_155"] = Instance.new("LocalScript", LMG2L["Allahuakbar 1_154"]);
+
+
+
+LMG2L["UIStroke_156"] = Instance.new("UIStroke", LMG2L["Allahuakbar 1_154"]);
+LMG2L["UIStroke_156"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_156"]["Thickness"] = 2;
+LMG2L["UIStroke_156"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Theme_157"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Theme_157"]["TextWrapped"] = true;
+LMG2L["Theme_157"]["BorderSizePixel"] = 0;
+LMG2L["Theme_157"]["TextScaled"] = true;
+LMG2L["Theme_157"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Theme_157"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Theme_157"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Theme_157"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Theme_157"]["Text"] = [[Theme 1]];
+LMG2L["Theme_157"]["Name"] = [[Theme]];
+
+
+LMG2L["LocalScript_158"] = Instance.new("LocalScript", LMG2L["Theme_157"]);
+
+
+
+LMG2L["UIStroke_159"] = Instance.new("UIStroke", LMG2L["Theme_157"]);
+LMG2L["UIStroke_159"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_159"]["Thickness"] = 2;
+LMG2L["UIStroke_159"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["Masta swo batte_15a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_e5"]);
+LMG2L["Masta swo batte_15a"]["TextWrapped"] = true;
+LMG2L["Masta swo batte_15a"]["BorderSizePixel"] = 0;
+LMG2L["Masta swo batte_15a"]["TextScaled"] = true;
+LMG2L["Masta swo batte_15a"]["TextColor3"] = Color3.fromRGB(13, 0, 255);
+LMG2L["Masta swo batte_15a"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
+LMG2L["Masta swo batte_15a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Masta swo batte_15a"]["Size"] = UDim2.new(0, 120, 0, 48);
+LMG2L["Masta swo batte_15a"]["Text"] = [[Zelda Song ]];
+LMG2L["Masta swo batte_15a"]["Name"] = [[Masta swo batte]];
+LMG2L["Masta swo batte_15a"]["Position"] = UDim2.new(0, 126, 0, 0);
+
+
+LMG2L["LocalScript_15b"] = Instance.new("LocalScript", LMG2L["Masta swo batte_15a"]);
+
+
+
+LMG2L["UIStroke_15c"] = Instance.new("UIStroke", LMG2L["Masta swo batte_15a"]);
+LMG2L["UIStroke_15c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_15c"]["Thickness"] = 2;
+LMG2L["UIStroke_15c"]["Color"] = Color3.fromRGB(38, 10, 255);
+
+
+LMG2L["UIStroke_15d"] = Instance.new("UIStroke", LMG2L["Music Page_e2"]);
+LMG2L["UIStroke_15d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_15d"]["Thickness"] = 2;
+LMG2L["UIStroke_15d"]["Color"] = Color3.fromRGB(14, 15, 255);
+
+
+LMG2L["TextLabel_15e"] = Instance.new("TextLabel", LMG2L["FrameImage_2"]);
+LMG2L["TextLabel_15e"]["TextWrapped"] = true;
+LMG2L["TextLabel_15e"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_15e"]["TextScaled"] = true;
+LMG2L["TextLabel_15e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_15e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_15e"]["TextColor3"] = Color3.fromRGB(20, 27, 255);
+LMG2L["TextLabel_15e"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_15e"]["Size"] = UDim2.new(0, 430, 0, 22);
+LMG2L["TextLabel_15e"]["Text"] = [[ZachXploit Reborn F3x V3]];
+LMG2L["TextLabel_15e"]["Position"] = UDim2.new(0, 46, 0, 0);
+
+
+LMG2L["UIStroke_15f"] = Instance.new("UIStroke", LMG2L["TextLabel_15e"]);
+LMG2L["UIStroke_15f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_15f"]["Color"] = Color3.fromRGB(26, 15, 252);
+
+
+local function C_4()
+	local script = LMG2L["LocalScript_4"];
+	local button = script.Parent	
+	local mainFrame = button.Parent	
+	
+	local myFrame = button:WaitForChild("Frame4")	
+	
+	button.MouseButton1Click:Connect(function()	
+		for _, obj in ipairs(mainFrame:GetDescendants()) do	
+			if obj:IsA("Frame") then	
+				obj.Visible = false	
+			end	
+		end	
+			
+		myFrame.Visible = true	
+	end)	
+end;
+task.spawn(C_4);
+local function C_10()
+	local script = LMG2L["LocalScript_10"];
+	local button = script.Parent	
+	local mainFrame = button.Parent	
+	
+	local myFrame = button:WaitForChild("Frame1")	
+	
+	button.MouseButton1Click:Connect(function()	
+		for _, obj in ipairs(mainFrame:GetDescendants()) do	
+			if obj:IsA("Frame") then	
+				obj.Visible = false	
+			end	
+		end	
+			
+		myFrame.Visible = true	
+	end)	
+end;
+task.spawn(C_10);
+local function C_14()
+	local script = LMG2L["LocalScript_14"];
+	local Button = script.Parent		
+			
+	Button.MouseButton1Click:Connect(function()		
+		    loadstring(game:HttpGet("https://pastefy.app/VD7gM6UL/raw?part=F3X"))()		
+		end)		
+end;
+task.spawn(C_14);
+local function C_16()
+	local script = LMG2L["LocalScript_16"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaxh69/Project/refs/heads/main/FlyGui.txt"))()	
+	end)	
+end;
+task.spawn(C_16);
+local function C_19()
+	local script = LMG2L["LocalScript_19"];
+	local button = script.Parent	
+	 button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaxh69/Project/refs/heads/main/ZachXploitzF3xUltimateV2"))()	
+	end)	
+end;
+task.spawn(C_19);
+local function C_1c()
+	local script = LMG2L["LocalScript_1c"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastefy.app/A896sFEs/raw"))()	
+	end)	
+end;
+task.spawn(C_1c);
+local function C_20()
+	local script = LMG2L["LocalScript_20"];
+	local img = script.Parent	
+	local MarketplaceService = game:GetService("MarketplaceService")	
+	
+	local info = MarketplaceService:GetProductInfo(game.PlaceId)	
+	
+	img.Image = "rbxassetid://"..info.IconImageAssetId	
+end;
+task.spawn(C_20);
+local function C_22()
+	local script = LMG2L["LocalScript_22"];
+	local Players = game:GetService("Players")	
+	local player = Players.LocalPlayer	
+	
+	local imageLabel = script.Parent	
+	imageLabel.BackgroundTransparency = 1	
+	
+	local content, ready = Players:GetUserThumbnailAsync(	
+		player.UserId,	
+		Enum.ThumbnailType.HeadShot,	
+		Enum.ThumbnailSize.Size420x420	
+	)	
+	
+	while not ready do	
+		content, ready = Players:GetUserThumbnailAsync(	
+			player.UserId,	
+			Enum.ThumbnailType.HeadShot,	
+			Enum.ThumbnailSize.Size420x420	
+		)	
+		task.wait()	
+	end	
+	
+	imageLabel.Image = content	
+end;
+task.spawn(C_22);
+local function C_25()
+	local script = LMG2L["LocalScript_25"];
+	local label = script.Parent	
+	local player = game.Players.LocalPlayer	
+	local MarketplaceService = game:GetService("MarketplaceService")	
+	
+	local placeName = MarketplaceService:GetProductInfo(game.PlaceId).Name	
+	
+	while true do	
+		local time = os.date("%H:%M:%S")	
+	
+		label.Text =	
+		"Username: "..player.Name..	
+		"\nDisplay: "..player.DisplayName..	
+		"\nUserId: "..player.UserId..	
+		"\nAccountAge: "..player.AccountAge..	
+		"\nPlaceId: "..game.PlaceId..	
+		"\nJobId: "..game.JobId..	
+		"\nPlaceName: "..placeName..	
+		"\nTime: "..time..	
+		"\nyou Know save gui ZachXploit Gui F3x ultimate v2 is missing so I recreated it 😭🥀"	
+	
+		task.wait(1)	
+	end	
+end;
+task.spawn(C_25);
+local function C_28()
+	local script = LMG2L["LocalScript_28"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";btools")	
+	end)	
+end;
+task.spawn(C_28);
+local function C_2b()
+	local script = LMG2L["LocalScript_2b"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";refresh me")	
+	end)	
+end;
+task.spawn(C_2b);
+local function C_2e()
+	local script = LMG2L["LocalScript_2e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";unmusic")	
+	end)	
+end;
+task.spawn(C_2e);
+local function C_31()
+	local script = LMG2L["LocalScript_31"];
+	local button = script.Parent	
+	local mainFrame = button.Parent	
+	
+	local myFrame = button:WaitForChild("Frame2")	
+	
+	button.MouseButton1Click:Connect(function()	
+		for _, obj in ipairs(mainFrame:GetDescendants()) do	
+			if obj:IsA("Frame") then	
+				obj.Visible = false	
+			end	
+		end	
+			
+		myFrame.Visible = true	
+	end)	
+end;
+task.spawn(C_31);
+local function C_35()
+	local script = LMG2L["LocalScript_35"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastefy.app/SUyMLMC5/raw"))()	
+	end)	
+end;
+task.spawn(C_35);
+local function C_38()
+	local script = LMG2L["LocalScript_38"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://pastebin.com/raw/3EV59jLS"))()	
+	end)	
+end;
+task.spawn(C_38);
+local function C_3b()
+	local script = LMG2L["LocalScript_3b"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";SM teem ZachXploit Join T0day LMA00")	
+	end)	
+end;
+task.spawn(C_3b);
+local function C_3e()
+	local script = LMG2L["LocalScript_3e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";place all 111105964184410 ;globalforceplace 111105964184410")	
+	end)	
+end;
+task.spawn(C_3e);
+local function C_41()
+	local script = LMG2L["LocalScript_41"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastefy.app/r2Q3XIlj/raw"))()	
+	end)	
+end;
+task.spawn(C_41);
+local function C_44()
+	local script = LMG2L["LocalScript_44"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	local player = game.Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+		local tool	
+	
+		for _, v in ipairs(player:GetDescendants()) do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+				break	
+			end	
+		end	
+	
+		if not tool then	
+			for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do	
+				if v.Name == "SyncAPI" then	
+					tool = v.Parent	
+					break	
+				end	
+			end	
+		end	
+	
+		if not tool then return end	
+	
+		local remote = tool.SyncAPI.ServerEndpoint	
+	
+		local function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+	
+		local function SetLocked(part, boolean)	
+			_({"SetLocked", {part}, boolean})	
+		end	
+	
+		local function SpawnDecal(part, side)	
+			_({"CreateTextures", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal"	
+			}}})	
+		end	
+	
+		local function AddDecal(part, asset, side)	
+			_({"SyncTexture", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal",	
+				Texture = "rbxassetid://" .. asset	
+			}}})	
+		end	
+	
+		local function spam(id)	
+			for _, v in ipairs(workspace:GetDescendants()) do	
+				if v:IsA("BasePart") then	
+					task.spawn(function()	
+						SetLocked(v, false)	
+	
+						for _, face in ipairs({	
+							Enum.NormalId.Front,	
+							Enum.NormalId.Back,	
+							Enum.NormalId.Right,	
+							Enum.NormalId.Left,	
+							Enum.NormalId.Top,	
+							Enum.NormalId.Bottom	
+						}) do	
+							SpawnDecal(v, face)	
+							AddDecal(v, id, face)	
+						end	
+					end)	
+				end	
+			end	
+		end	
+	
+		spam("91739950576102")	
+	end)	
+end;
+task.spawn(C_44);
+local function C_47()
+	local script = LMG2L["LocalScript_47"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";gear me 116693764")	
+	end)	
+end;
+task.spawn(C_47);
+local function C_4a()
+	local script = LMG2L["LocalScript_4a"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	local player = game.Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+		local tool	
+	
+		for _, v in ipairs(player:GetDescendants()) do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+				break	
+			end	
+		end	
+	
+		if not tool then	
+			for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do	
+				if v.Name == "SyncAPI" then	
+					tool = v.Parent	
+					break	
+				end	
+			end	
+		end	
+	
+		if not tool then return end	
+	
+		local remote = tool.SyncAPI.ServerEndpoint	
+	
+		local function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+	
+		local function SetLocked(part, boolean)	
+			_({"SetLocked", {part}, boolean})	
+		end	
+	
+		local function SpawnDecal(part, side)	
+			_({"CreateTextures", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal"	
+			}}})	
+		end	
+	
+		local function AddDecal(part, asset, side)	
+			_({"SyncTexture", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal",	
+				Texture = "rbxassetid://" .. asset	
+			}}})	
+		end	
+	
+		local function spam(id)	
+			for _, v in ipairs(workspace:GetDescendants()) do	
+				if v:IsA("BasePart") then	
+					task.spawn(function()	
+						SetLocked(v, false)	
+	
+						for _, face in ipairs({	
+							Enum.NormalId.Front,	
+							Enum.NormalId.Back,	
+							Enum.NormalId.Right,	
+							Enum.NormalId.Left,	
+							Enum.NormalId.Top,	
+							Enum.NormalId.Bottom	
+						}) do	
+							SpawnDecal(v, face)	
+							AddDecal(v, id, face)	
+						end	
+					end)	
+				end	
+			end	
+		end	
+	
+		spam("130225880653570")	
+	end)	
+end;
+task.spawn(C_4a);
+local function C_4d()
+	local script = LMG2L["LocalScript_4d"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";loopkill others")	
+	end)	
+end;
+task.spawn(C_4d);
+local function C_50()
+	local script = LMG2L["LocalScript_50"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastefy.app/tICDTqL3/raw"))()	
+	end)	
+end;
+task.spawn(C_50);
+local function C_53()
+	local script = LMG2L["LocalScript_53"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";name all ZachXploitz")	
+	end)	
+end;
+task.spawn(C_53);
+local function C_56()
+	local script = LMG2L["LocalScript_56"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-mario-exe-remake-for-f3x-games-45037"))()	
+	end)	
+end;
+task.spawn(C_56);
+local function C_59()
+	local script = LMG2L["LocalScript_59"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";sword me")	
+	end)	
+end;
+task.spawn(C_59);
+local function C_5c()
+	local script = LMG2L["LocalScript_5c"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";time 10")	
+	end)	
+end;
+task.spawn(C_5c);
+local function C_5f()
+	local script = LMG2L["LocalScript_5f"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";kill all")	
+	end)	
+end;
+task.spawn(C_5f);
+local function C_62()
+	local script = LMG2L["LocalScript_62"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";crash all ")	
+	end)	
+	
+end;
+task.spawn(C_62);
+local function C_65()
+	local script = LMG2L["LocalScript_65"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Krusty-Krab-F3X-MAP-149096"))()	
+	end)	
+end;
+task.spawn(C_65);
+local function C_68()
+	local script = LMG2L["LocalScript_68"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";explode Others")	
+	end)	
+end;
+task.spawn(C_68);
+local function C_6b()
+	local script = LMG2L["LocalScript_6b"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";titledb me  zachXpl0it")	
+	end)	
+end;
+task.spawn(C_6b);
+local function C_6e()
+	local script = LMG2L["LocalScript_6e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/Md8U5MAW"))()	
+	end)	
+end;
+task.spawn(C_6e);
+local function C_71()
+	local script = LMG2L["LocalScript_71"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";kick all Kicked by Zachxploiz")	
+	end)	
+end;
+task.spawn(C_71);
+local function C_74()
+	local script = LMG2L["LocalScript_74"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastefy.app/bIR5jI2O/raw"))()	
+	end)	
+end;
+task.spawn(C_74);
+local function C_77()
+	local script = LMG2L["LocalScript_77"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/r7rk9zXM"))()	
+	end)	
+end;
+task.spawn(C_77);
+local function C_7a()
+	local script = LMG2L["LocalScript_7a"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/Q1urc43s"))()	
+	end)	
+end;
+task.spawn(C_7a);
+local function C_7d()
+	local script = LMG2L["LocalScript_7d"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://pastebin.com/raw/Kn1gr7w4"))()	
+	end)	
+end;
+task.spawn(C_7d);
+local function C_80()
+	local script = LMG2L["LocalScript_80"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/zg8JUa13"))()	
+	end)	
+end;
+task.spawn(C_80);
+local function C_83()
+	local script = LMG2L["LocalScript_83"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";bring all")	
+	end)	
+end;
+task.spawn(C_83);
+local function C_86()
+	local script = LMG2L["LocalScript_86"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";notice all server hack by Zachxploit")	
+	end)	
+end;
+task.spawn(C_86);
+local function C_89()
+	local script = LMG2L["LocalScript_89"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";SH ruined by ZachXploitz!!!")	
+	end)	
+end;
+task.spawn(C_89);
+local function C_8c()
+	local script = LMG2L["LocalScript_8c"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";SM hacked by Zachxploiz lol")	
+	end)	
+end;
+task.spawn(C_8c);
+local function C_8f()
+	local script = LMG2L["LocalScript_8f"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";blur others")	
+	end)	
+end;
+task.spawn(C_8f);
+local function C_92()
+	local script = LMG2L["LocalScript_92"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://pastebin.com/raw/VwbNgZqu"))()	
+	end)	
+end;
+task.spawn(C_92);
+local function C_95()
+	local script = LMG2L["LocalScript_95"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";char all KyuKusangaki")	
+	end)	
+end;
+task.spawn(C_95);
+local function C_98()
+	local script = LMG2L["LocalScript_98"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";sparkles all")	
+	end)	
+end;
+task.spawn(C_98);
+local function C_9b()
+	local script = LMG2L["LocalScript_9b"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	local player = game.Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+		local tool	
+	
+		for _, v in ipairs(player:GetDescendants()) do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+				break	
+			end	
+		end	
+	
+		if not tool then	
+			for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do	
+				if v.Name == "SyncAPI" then	
+					tool = v.Parent	
+					break	
+				end	
+			end	
+		end	
+	
+		if not tool then return end	
+	
+		local remote = tool.SyncAPI.ServerEndpoint	
+	
+		local function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+	
+		local function SetLocked(part, boolean)	
+			_({"SetLocked", {part}, boolean})	
+		end	
+	
+		local function SpawnDecal(part, side)	
+			_({"CreateTextures", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal"	
+			}}})	
+		end	
+	
+		local function AddDecal(part, asset, side)	
+			_({"SyncTexture", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal",	
+				Texture = "rbxassetid://" .. asset	
+			}}})	
+		end	
+	
+		local function spam(id)	
+			for _, v in ipairs(workspace:GetDescendants()) do	
+				if v:IsA("BasePart") then	
+					task.spawn(function()	
+						SetLocked(v, false)	
+	
+						for _, face in ipairs({	
+							Enum.NormalId.Front,	
+							Enum.NormalId.Back,	
+							Enum.NormalId.Right,	
+							Enum.NormalId.Left,	
+							Enum.NormalId.Top,	
+							Enum.NormalId.Bottom	
+						}) do	
+							SpawnDecal(v, face)	
+							AddDecal(v, id, face)	
+						end	
+					end)	
+				end	
+			end	
+		end	
+	
+		spam("96636795002106")	
+	end)	
+end;
+task.spawn(C_9b);
+local function C_9e()
+	local script = LMG2L["LocalScript_9e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer("char all DimasGGrtrt9")	
+	end)	
+end;
+task.spawn(C_9e);
+local function C_a1()
+	local script = LMG2L["LocalScript_a1"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";disco ;fog 100 ;time 0")	
+	end)	
+end;
+task.spawn(C_a1);
+local function C_a4()
+	local script = LMG2L["LocalScript_a4"];
+	local button = script.Parent	
+	 button.MouseButton1Click:Connect(function()	
+	local player = game.Players.LocalPlayer	
+		local char = player.Character	
+		local tool	
+		for i,v in player:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+		for i,v in game.ReplicatedStorage:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+		remote = tool.SyncAPI.ServerEndpoint	
+		function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+		function SetCollision(part,boolean)	
+			local args = {	
+				[1] = "SyncCollision",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CanCollide"] = boolean	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetAnchor(boolean,part)	
+			local args = {	
+				[1] = "SyncAnchor",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Anchored"] = boolean	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function CreatePart(cf,parent)	
+			local args = {	
+				[1] = "CreatePart",	
+				[2] = "Normal",	
+				[3] = cf,	
+				[4] = parent	
+			}	
+			_(args)	
+		end	
+		function DestroyPart(part)	
+			local args = {	
+				[1] = "Remove",	
+				[2] = {	
+					[1] = part	
+				}	
+			}	
+			_(args)	
+		end	
+		function MovePart(part,cf)	
+			local args = {	
+				[1] = "SyncMove",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CFrame"] = cf	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Resize(part,size,cf)	
+			local args = {	
+				[1] = "SyncResize",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CFrame"] = cf,	
+						["Size"] = size	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function AddMesh(part)	
+			local args = {	
+				[1] = "CreateMeshes",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+	
+		function SetMesh(part,meshid)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["MeshId"] = "rbxassetid://"..meshid	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetTexture(part, texid)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["TextureId"] = "rbxassetid://"..texid	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetName(part, stringg)	
+			local args = {	
+				[1] = "SetName",	
+				[2] = {	
+					[1] = part	
+				},	
+				[3] = stringg	
+			}	
+	
+			_(args)	
+		end	
+		function MeshResize(part,size)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Scale"] = size	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Weld(part1, part2,lead)	
+			local args = {	
+				[1] = "CreateWelds",	
+				[2] = {	
+					[1] = part1,	
+					[2] = part2	
+				},	
+				[3] = lead	
+			}	
+			_(args)	
+	
+		end	
+		function SetLocked(part,boolean)	
+			local args = {	
+				[1] = "SetLocked",	
+				[2] = {	
+					[1] = part	
+				},	
+				[3] = boolean	
+			}	
+			_(args)	
+		end	
+		function SetTrans(part,int)	
+			local args = {	
+				[1] = "SyncMaterial",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Transparency"] = int	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function CreateSpotlight(part)	
+			local args = {	
+				[1] = "CreateLights",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["LightType"] = "SpotLight"	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SyncLighting(part,brightness)	
+			local args = {	
+				[1] = "SyncLighting",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["LightType"] = "SpotLight",	
+						["Brightness"] = brightness	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Color(part,color)	
+			local args = {	
+				[1] = "SyncColor",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Color"] = color --[[Color3]],	
+						["UnionColoring"] = false	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SpawnDecal(part,side)	
+			local args = {	
+				[1] = "CreateTextures",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Face"] = side,	
+						["TextureType"] = "Decal"	
+					}	
+				}	
+			}	
+	
+			_(args)	
+		end	
+		function AddDecal(part,asset,side)	
+			local args = {	
+				[1] = "SyncTexture",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Face"] = side,	
+						["TextureType"] = "Decal",	
+						["Texture"] = "rbxassetid://".. asset	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+	
+		function Sky(id)	
+			e = char.HumanoidRootPart.CFrame.x	
+			f = char.HumanoidRootPart.CFrame.y	
+			g = char.HumanoidRootPart.CFrame.z	
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)	
+			for i,v in game.Workspace:GetDescendants() do	
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then	
+					--spawn(function()	
+					SetName(v,"Sky")	
+					AddMesh(v)	
+					--end)	
+					--spawn(function()	
+					SetMesh(v,"111891702759441")	
+					SetTexture(v,id)	
+					--end)	
+					MeshResize(v,Vector3.new(4000, 4000, 4000))	
+					SetLocked(v,true)	
+				end	
+			end	
+		end	
+		Sky("96636795002106")	
+	end)	
+end;
+task.spawn(C_a4);
+local function C_a7()
+	local script = LMG2L["LocalScript_a7"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";alert all ⚠️ GAME WILL GET ZACHED !!⚠️")	
+	end)	
+end;
+task.spawn(C_a7);
+local function C_aa()
+	local script = LMG2L["LocalScript_aa"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/MjRdFbN7"))()	
+	end)	
+end;
+task.spawn(C_aa);
+local function C_ae()
+	local script = LMG2L["LocalScript_ae"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";time 0")	
+	end)	
+end;
+task.spawn(C_ae);
+local function C_b1()
+	local script = LMG2L["LocalScript_b1"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";char all h4000_audio8")	
+	end)	
+end;
+task.spawn(C_b1);
+local function C_b4()
+	local script = LMG2L["LocalScript_b4"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";fog 9999999")	
+	end)	
+end;
+task.spawn(C_b4);
+local function C_b7()
+	local script = LMG2L["LocalScript_b7"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+	loadstring(Game:HttpGet("https://pastebin.com/raw/7t1TS2z1"))()	
+	end)	
+end;
+task.spawn(C_b7);
+local function C_ba()
+	local script = LMG2L["LocalScript_ba"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://pastebin.com/raw/8msENFDp"))()	
+	end)	
+end;
+task.spawn(C_ba);
+local function C_bd()
+	local script = LMG2L["LocalScript_bd"];
+	local button = script.Parent	
+	 button.MouseButton1Click:Connect(function()	
+	local player = game.Players.LocalPlayer	
+		local char = player.Character	
+		local tool	
+		for i,v in player:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+		for i,v in game.ReplicatedStorage:GetDescendants() do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+			end	
+		end	
+		remote = tool.SyncAPI.ServerEndpoint	
+		function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+		function SetCollision(part,boolean)	
+			local args = {	
+				[1] = "SyncCollision",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CanCollide"] = boolean	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetAnchor(boolean,part)	
+			local args = {	
+				[1] = "SyncAnchor",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Anchored"] = boolean	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function CreatePart(cf,parent)	
+			local args = {	
+				[1] = "CreatePart",	
+				[2] = "Normal",	
+				[3] = cf,	
+				[4] = parent	
+			}	
+			_(args)	
+		end	
+		function DestroyPart(part)	
+			local args = {	
+				[1] = "Remove",	
+				[2] = {	
+					[1] = part	
+				}	
+			}	
+			_(args)	
+		end	
+		function MovePart(part,cf)	
+			local args = {	
+				[1] = "SyncMove",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CFrame"] = cf	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Resize(part,size,cf)	
+			local args = {	
+				[1] = "SyncResize",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["CFrame"] = cf,	
+						["Size"] = size	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function AddMesh(part)	
+			local args = {	
+				[1] = "CreateMeshes",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+	
+		function SetMesh(part,meshid)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["MeshId"] = "rbxassetid://"..meshid	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetTexture(part, texid)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["TextureId"] = "rbxassetid://"..texid	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SetName(part, stringg)	
+			local args = {	
+				[1] = "SetName",	
+				[2] = {	
+					[1] = part	
+				},	
+				[3] = stringg	
+			}	
+	
+			_(args)	
+		end	
+		function MeshResize(part,size)	
+			local args = {	
+				[1] = "SyncMesh",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Scale"] = size	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Weld(part1, part2,lead)	
+			local args = {	
+				[1] = "CreateWelds",	
+				[2] = {	
+					[1] = part1,	
+					[2] = part2	
+				},	
+				[3] = lead	
+			}	
+			_(args)	
+	
+		end	
+		function SetLocked(part,boolean)	
+			local args = {	
+				[1] = "SetLocked",	
+				[2] = {	
+					[1] = part	
+				},	
+				[3] = boolean	
+			}	
+			_(args)	
+		end	
+		function SetTrans(part,int)	
+			local args = {	
+				[1] = "SyncMaterial",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Transparency"] = int	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function CreateSpotlight(part)	
+			local args = {	
+				[1] = "CreateLights",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["LightType"] = "SpotLight"	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SyncLighting(part,brightness)	
+			local args = {	
+				[1] = "SyncLighting",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["LightType"] = "SpotLight",	
+						["Brightness"] = brightness	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function Color(part,color)	
+			local args = {	
+				[1] = "SyncColor",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Color"] = color --[[Color3]],	
+						["UnionColoring"] = false	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+		function SpawnDecal(part,side)	
+			local args = {	
+				[1] = "CreateTextures",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Face"] = side,	
+						["TextureType"] = "Decal"	
+					}	
+				}	
+			}	
+	
+			_(args)	
+		end	
+		function AddDecal(part,asset,side)	
+			local args = {	
+				[1] = "SyncTexture",	
+				[2] = {	
+					[1] = {	
+						["Part"] = part,	
+						["Face"] = side,	
+						["TextureType"] = "Decal",	
+						["Texture"] = "rbxassetid://".. asset	
+					}	
+				}	
+			}	
+			_(args)	
+		end	
+	
+		function Sky(id)	
+			e = char.HumanoidRootPart.CFrame.x	
+			f = char.HumanoidRootPart.CFrame.y	
+			g = char.HumanoidRootPart.CFrame.z	
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)	
+			for i,v in game.Workspace:GetDescendants() do	
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then	
+					--spawn(function()	
+					SetName(v,"Sky")	
+					AddMesh(v)	
+					--end)	
+					--spawn(function()	
+					SetMesh(v,"111891702759441")	
+					SetTexture(v,id)	
+					--end)	
+					MeshResize(v,Vector3.new(4000, 4000, 4000))	
+					SetLocked(v,true)	
+				end	
+			end	
+		end	
+		Sky("79440497150256")	
+	end)	
+end;
+task.spawn(C_bd);
+local function C_c0()
+	local script = LMG2L["LocalScript_c0"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/BvBtAujC"))()	
+	end)	
+end;
+task.spawn(C_c0);
+local function C_c3()
+	local script = LMG2L["LocalScript_c3"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-mesh-disco-f3x-client-sided-93981"))()	
+	end)	
+end;
+task.spawn(C_c3);
+local function C_c6()
+	local script = LMG2L["LocalScript_c6"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://pastebin.com/raw/8msENFDp"))()	
+	end)	
+end;
+task.spawn(C_c6);
+local function C_c9()
+	local script = LMG2L["LocalScript_c9"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	loadstring(game:HttpGet("https://pastefy.app/V5jeFs4i/raw"))()	
+	end)	
+end;
+task.spawn(C_c9);
+local function C_cc()
+	local script = LMG2L["LocalScript_cc"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+	loadstring(Game:HttpGet("https://pastebin.com/raw/aFpDBYP5"))()	
+	end)	
+end;
+task.spawn(C_cc);
+local function C_cf()
+	local script = LMG2L["LocalScript_cf"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";fire all")	
+	end)	
+end;
+task.spawn(C_cf);
+local function C_d2()
+	local script = LMG2L["LocalScript_d2"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	local player = game.Players.LocalPlayer	
+		local char = player.Character or player.CharacterAdded:Wait()	
+		local tool	
+	
+		for _, v in ipairs(player:GetDescendants()) do	
+			if v.Name == "SyncAPI" then	
+				tool = v.Parent	
+				break	
+			end	
+		end	
+	
+		if not tool then	
+			for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do	
+				if v.Name == "SyncAPI" then	
+					tool = v.Parent	
+					break	
+				end	
+			end	
+		end	
+	
+		if not tool then return end	
+	
+		local remote = tool.SyncAPI.ServerEndpoint	
+	
+		local function _(args)	
+			remote:InvokeServer(unpack(args))	
+		end	
+	
+		local function SetLocked(part, boolean)	
+			_({"SetLocked", {part}, boolean})	
+		end	
+	
+		local function SpawnDecal(part, side)	
+			_({"CreateTextures", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal"	
+			}}})	
+		end	
+	
+		local function AddDecal(part, asset, side)	
+			_({"SyncTexture", {{	
+				Part = part,	
+				Face = side,	
+				TextureType = "Decal",	
+				Texture = "rbxassetid://" .. asset	
+			}}})	
+		end	
+	
+		local function spam(id)	
+			for _, v in ipairs(workspace:GetDescendants()) do	
+				if v:IsA("BasePart") then	
+					task.spawn(function()	
+						SetLocked(v, false)	
+	
+						for _, face in ipairs({	
+							Enum.NormalId.Front,	
+							Enum.NormalId.Back,	
+							Enum.NormalId.Right,	
+							Enum.NormalId.Left,	
+							Enum.NormalId.Top,	
+							Enum.NormalId.Bottom	
+						}) do	
+							SpawnDecal(v, face)	
+							AddDecal(v, id, face)	
+						end	
+					end)	
+				end	
+			end	
+		end	
+	
+		spam("79440497150256")	
+	end)	
+end;
+task.spawn(C_d2);
+local function C_d5()
+	local script = LMG2L["LocalScript_d5"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";cmdbar2")	
+	end)	
+end;
+task.spawn(C_d5);
+local function C_d8()
+	local script = LMG2L["LocalScript_d8"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-old-fencing-134647"))()	
+	end)	
+end;
+task.spawn(C_d8);
+local function C_db()
+	local script = LMG2L["LocalScript_db"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+		loadstring(game:HttpGet("https://pastebin.com/raw/uHC0ZVkP"))()	
+	end)	
+end;
+task.spawn(C_db);
+local function C_e0()
+	local script = LMG2L["LocalScript_e0"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";r6")	
+	end)	
+end;
+task.spawn(C_e0);
+local function C_e3()
+	local script = LMG2L["LocalScript_e3"];
+	local button = script.Parent	
+	local mainFrame = button.Parent	
+	
+	local myFrame = button:WaitForChild("Frame3")	
+	
+	button.MouseButton1Click:Connect(function()	
+		for _, obj in ipairs(mainFrame:GetDescendants()) do	
+			if obj:IsA("Frame") then	
+				obj.Visible = false	
+			end	
+		end	
+			
+		myFrame.Visible = true	
+	end)	
+end;
+task.spawn(C_e3);
+local function C_e7()
+	local script = LMG2L["LocalScript_e7"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 73056619288510 ;pitch 0.17 ;volume inf")	
+	end)	
+end;
+task.spawn(C_e7);
+local function C_ea()
+	local script = LMG2L["LocalScript_ea"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 83197094750741 ;pitch 0.1 ;volume 6")	
+	end)	
+end;
+task.spawn(C_ea);
+local function C_ed()
+	local script = LMG2L["LocalScript_ed"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 104879348278763 ;pitch 1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_ed);
+local function C_f0()
+	local script = LMG2L["LocalScript_f0"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 1839246774 ;pitch 1.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_f0);
+local function C_f3()
+	local script = LMG2L["LocalScript_f3"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 100792696468630 ;pitch 0.16 ;volume inf")	
+	end)	
+end;
+task.spawn(C_f3);
+local function C_f6()
+	local script = LMG2L["LocalScript_f6"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 120928196621547 ;pitch 0.108 ;volume inf")	
+	end)	
+end;
+task.spawn(C_f6);
+local function C_f9()
+	local script = LMG2L["LocalScript_f9"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 74417580252324 ;pitch 0.3 ;volume inf")	
+	end)	
+end;
+task.spawn(C_f9);
+local function C_fc()
+	local script = LMG2L["LocalScript_fc"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 122973494003273 ;pitch 0.1 ;volume 6")	
+	end)	
+end;
+task.spawn(C_fc);
+local function C_ff()
+	local script = LMG2L["LocalScript_ff"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 89391873510832 ;pitch 0.11 ;volume inf")	
+	end)	
+end;
+task.spawn(C_ff);
+local function C_102()
+	local script = LMG2L["LocalScript_102"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 1839246711 ;pitch 1.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_102);
+local function C_105()
+	local script = LMG2L["LocalScript_105"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 84690995964261 ;pitch 0.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_105);
+local function C_10a()
+	local script = LMG2L["LocalScript_10a"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 73066038434278 ;pitch 1.2 ;volume inf")	
+	end)	
+end;
+task.spawn(C_10a);
+local function C_10d()
+	local script = LMG2L["LocalScript_10d"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 73002098096282 ;pitch  0.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_10d);
+local function C_110()
+	local script = LMG2L["LocalScript_110"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 110112357564356 ;pitch 0.22 ;volume inf")	
+	end)	
+end;
+task.spawn(C_110);
+local function C_113()
+	local script = LMG2L["LocalScript_113"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 129822748617039 ;pitch 1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_113);
+local function C_116()
+	local script = LMG2L["LocalScript_116"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 1846368080 ;pitch 1.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_116);
+local function C_119()
+	local script = LMG2L["LocalScript_119"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 109255629287595 ;pitch 0.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_119);
+local function C_11e()
+	local script = LMG2L["LocalScript_11e"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 1847661821 ;pitch 1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_11e);
+local function C_121()
+	local script = LMG2L["LocalScript_121"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 136240084994418; pitch 0.23 ;volume inf")	
+	end)	
+end;
+task.spawn(C_121);
+local function C_124()
+	local script = LMG2L["LocalScript_124"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 115458754743026 ;pitch 0.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_124);
+local function C_127()
+	local script = LMG2L["LocalScript_127"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 72089843969979 ;pitch 0.2 ;volume inf")	
+	end)	
+end;
+task.spawn(C_127);
+local function C_12a()
+	local script = LMG2L["LocalScript_12a"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 87174269808530 ;pitch 0.11 ;volume inf")	
+	end)	
+end;
+task.spawn(C_12a);
+local function C_12d()
+	local script = LMG2L["LocalScript_12d"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 93650961728068 ;pitch 0.12  ;volume inf")	
+	end)	
+end;
+task.spawn(C_12d);
+local function C_131()
+	local script = LMG2L["LocalScript_131"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 108781528188731 ;pitch 1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_131);
+local function C_134()
+	local script = LMG2L["LocalScript_134"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 1839246711 ;pitch 0.8 ;volume inf")	
+	end)	
+end;
+task.spawn(C_134);
+local function C_137()
+	local script = LMG2L["LocalScript_137"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 102894811708275 ;pitch 0.12 ;volume inf")	
+	end)	
+end;
+task.spawn(C_137);
+local function C_13a()
+	local script = LMG2L["LocalScript_13a"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 81881418977857 ;pitch 0.11 ;volume inf")	
+	end)	
+end;
+task.spawn(C_13a);
+local function C_13d()
+	local script = LMG2L["LocalScript_13d"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 106687731139619 ;pitch 0.13 ;volume inf")	
+	end)	
+end;
+task.spawn(C_13d);
+local function C_140()
+	local script = LMG2L["LocalScript_140"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 132586099861720 ;pitch 0.2 ;volume inf")	
+	end)	
+end;
+task.spawn(C_140);
+local function C_143()
+	local script = LMG2L["LocalScript_143"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 108239208627770 ;pitch 0.12 ;volume inf")	
+	end)	
+end;
+task.spawn(C_143);
+local function C_146()
+	local script = LMG2L["LocalScript_146"];
+	
+end;
+task.spawn(C_146);
+local function C_149()
+	local script = LMG2L["LocalScript_149"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 73293994328169 ;pitch 0.13 ;volume inf")	
+	end)	
+end;
+task.spawn(C_149);
+local function C_14c()
+	local script = LMG2L["LocalScript_14c"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 99907604701668 ;pitch 0.13 ;volume inf")	
+	end)	
+end;
+task.spawn(C_14c);
+local function C_14f()
+	local script = LMG2L["LocalScript_14f"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music ;pitch 1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_14f);
+local function C_152()
+	local script = LMG2L["LocalScript_152"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 85390427326662 ;pitch 0.11 ;volume inf")	
+	end)	
+end;
+task.spawn(C_152);
+local function C_155()
+	local script = LMG2L["LocalScript_155"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 113031811875792 ;pitch 0.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_155);
+local function C_158()
+	local script = LMG2L["LocalScript_158"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 127653283576622 ;pitch 1.1 ;volume inf")	
+	end)	
+end;
+task.spawn(C_158);
+local function C_15b()
+	local script = LMG2L["LocalScript_15b"];
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")	
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
+		local RequestCommand = hd.Signals.RequestCommandSilent	
+	
+		RequestCommand:InvokeServer(";music 91222661873706 ;pitch 0.1  ;volume inf")	
+	end)	
+end;
+task.spawn(C_15b);
+
+return LMG2L["ScreenGui_1"], require;
