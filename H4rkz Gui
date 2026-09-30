@@ -3029,6 +3029,7 @@ local function C_44()
 	end)	
 end;
 task.spawn(C_44);
+local function C_44()
 local script = LMG2L["LocalScript_47"];
 	local Button = script.Parent	
 	
