@@ -3029,7 +3029,7 @@ local function C_44()
 	end)	
 end;
 task.spawn(C_44);
-local function script = LMG2L["LocalScript_47"];
+local script = LMG2L["LocalScript_47"];
 	local Button = script.Parent	
 	
 	Button.MouseButton1Click:Connect(function()	
