@@ -2928,7 +2928,7 @@ local function C_3b()
 end;
 task.spawn(C_3b);
 local function C_3e()
-	local LMG2L["LocalScript_3e"];
+	local script = LMG2L["LocalScript_3e"];
 	local Button = script.Parent	
 	
 	Button.MouseButton1Click:Connect(function()	
