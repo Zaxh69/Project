@@ -4834,26 +4834,5 @@ local function C_15b()
 		RequestCommand:InvokeServer(";music 91222661873706 ;pitch 0.1  ;volume inf")	
 	end)	
 end;
-local CoreGui = game:GetService("CoreGui")
-
-local function fix(obj)
-	if obj:IsA("UIStroke") then
-		obj.Color = Color3.fromRGB(255, 255, 255)
-
-	elseif obj:IsA("TextLabel")
-		or obj:IsA("TextButton")
-		or obj:IsA("TextBox") then
-		obj.TextColor3 = Color3.fromRGB(255, 255, 255)
-	end
-end
-
-for _, obj in ipairs(CoreGui:GetDescendants()) do
-	fix(obj)
-end
-
-CoreGui.DescendantAdded:Connect(function(obj)
-	task.wait()
-	fix(obj)
-end)
 task.spawn(C_15b);
 return LMG2L["ScreenGui_1"], require;
