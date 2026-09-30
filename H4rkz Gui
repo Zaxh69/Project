@@ -95,8 +95,7 @@ LMG2L["TextLabel_a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsol
 LMG2L["TextLabel_a"]["TextColor3"] = Color3.fromRGB(35, 12, 255);
 LMG2L["TextLabel_a"]["BackgroundTransparency"] = 1;
 LMG2L["TextLabel_a"]["Size"] = UDim2.new(0, 516, 0, 98);
-LMG2L["TextLabel_a"]["Text"] = [[hi , welcome to ZachXploitz gui f3x about this gui, the gui was created in 2025 named ZachXploit Gui F3x then I made the ultimate version V1 v2 and this is V3 I didn't set it to public🥭🥀✌️]];
-
+LMG2L["TextLabel_a"]["Text"] = [[H4rkz Gui Was made By |@thechoosenone4kz| follow on tiktok! about this gui , this gui jst for f3x game yeah..]];
 
 LMG2L["ImageLabel3_b"] = Instance.new("ImageLabel", LMG2L["Frame4_5"]);
 LMG2L["ImageLabel3_b"]["BorderSizePixel"] = 0;
@@ -106,7 +105,6 @@ LMG2L["ImageLabel3_b"]["Image"] = [[rbxassetid://96636795002106]];
 LMG2L["ImageLabel3_b"]["Size"] = UDim2.new(0, 134, 0, 118);
 LMG2L["ImageLabel3_b"]["Name"] = [[ImageLabel3]];
 LMG2L["ImageLabel3_b"]["Position"] = UDim2.new(0, 154, 0, 104);
-
 
 LMG2L["ImageLabel2_c"] = Instance.new("ImageLabel", LMG2L["Frame4_5"]);
 LMG2L["ImageLabel2_c"]["BorderSizePixel"] = 0;
@@ -2699,7 +2697,7 @@ LMG2L["TextLabel_15e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Incons
 LMG2L["TextLabel_15e"]["TextColor3"] = Color3.fromRGB(20, 27, 255);
 LMG2L["TextLabel_15e"]["BackgroundTransparency"] = 1;
 LMG2L["TextLabel_15e"]["Size"] = UDim2.new(0, 430, 0, 22);
-LMG2L["TextLabel_15e"]["Text"] = [[ZachXploit Reborn F3x V3]];
+LMG2L["TextLabel_15e"]["Text"] = [[H4rkz Gui V67]];
 LMG2L["TextLabel_15e"]["Position"] = UDim2.new(0, 46, 0, 0);
 
 
@@ -2835,7 +2833,7 @@ local function C_25()
 		"\nJobId: "..game.JobId..	
 		"\nPlaceName: "..placeName..	
 		"\nTime: "..time..	
-		"\nyou Know save gui ZachXploit Gui F3x ultimate v2 is missing so I recreated it 😭🥀"	
+		"\nyou this is my old gui (ZachXploit) but i changed it to H4rkz Gui"	
 	
 		task.wait(1)	
 	end	
@@ -2925,12 +2923,12 @@ local function C_3b()
 		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";SM teem ZachXploit Join T0day LMA00")	
+		RequestCommand:InvokeServer(";SM team H4rkzz Join T0day!")	
 	end)	
 end;
 task.spawn(C_3b);
 local function C_3e()
-	local script = LMG2L["LocalScript_3e"];
+	local LMG2L["LocalScript_3e"];
 	local Button = script.Parent	
 	
 	Button.MouseButton1Click:Connect(function()	
@@ -3027,12 +3025,11 @@ local function C_44()
 			end	
 		end	
 	
-		spam("91739950576102")	
+		spam("107718665619260")	
 	end)	
 end;
 task.spawn(C_44);
-local function C_47()
-	local script = LMG2L["LocalScript_47"];
+local function script = LMG2L["LocalScript_47"];
 	local Button = script.Parent	
 	
 	Button.MouseButton1Click:Connect(function()	
@@ -3120,7 +3117,7 @@ local function C_4a()
 			end	
 		end	
 	
-		spam("130225880653570")	
+		spam("105378595017204")	
 	end)	
 end;
 task.spawn(C_4a);
@@ -3252,7 +3249,7 @@ local function C_6b()
 		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";titledb me  zachXpl0it")	
+		RequestCommand:InvokeServer(";titledb me  H4RKZCOOL")	
 	end)	
 end;
 task.spawn(C_6b);
@@ -3274,7 +3271,7 @@ local function C_71()
 		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";kick all Kicked by Zachxploiz")	
+		RequestCommand:InvokeServer(";kick all THIS GAME WAS DESTROYED BY H4RKZCOOLTEAM")	
 	end)	
 end;
 task.spawn(C_71);
@@ -3345,7 +3342,7 @@ local function C_86()
 		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";notice all server hack by Zachxploit")	
+		RequestCommand:InvokeServer(";notice all server hack by H4rkzcool team")	
 	end)	
 end;
 task.spawn(C_86);
@@ -3358,7 +3355,7 @@ local function C_89()
 		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";SH ruined by ZachXploitz!!!")	
+		RequestCommand:InvokeServer(";SH ruined by H4rkzcoolTeam!!!!!")
 	end)	
 end;
 task.spawn(C_89);
@@ -3371,7 +3368,7 @@ local function C_8c()
 		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";SM hacked by Zachxploiz lol")	
+		RequestCommand:InvokeServer(";SM hacked by H4rkzcool lol")	
 	end)	
 end;
 task.spawn(C_8c);
@@ -3499,7 +3496,7 @@ local function C_9b()
 			end	
 		end	
 	
-		spam("96636795002106")	
+		spam("91814047892681")	
 	end)	
 end;
 task.spawn(C_9b);
@@ -3797,7 +3794,7 @@ local function C_a4()
 				end	
 			end	
 		end	
-		Sky("96636795002106")	
+		Sky("105378595017204")	
 	end)	
 end;
 task.spawn(C_a4);
@@ -3810,7 +3807,7 @@ local function C_a7()
 		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";alert all ⚠️ GAME WILL GET ZACHED !!⚠️")	
+		RequestCommand:InvokeServer(";alert all ⚠️ THIS GAME WILL BE HACKED BY H4RKZCOOLTEAM ⚠️")	
 	end)	
 end;
 task.spawn(C_a7);
@@ -4148,7 +4145,7 @@ local function C_bd()
 				end	
 			end	
 		end	
-		Sky("79440497150256")	
+		Sky("91814047892681")	
 	end)	
 end;
 task.spawn(C_bd);
@@ -4286,7 +4283,7 @@ local function C_d2()
 			end	
 		end	
 	
-		spam("79440497150256")	
+		spam("107718665619260")	
 	end)	
 end;
 task.spawn(C_d2);
@@ -4837,6 +4834,26 @@ local function C_15b()
 		RequestCommand:InvokeServer(";music 91222661873706 ;pitch 0.1  ;volume inf")	
 	end)	
 end;
-task.spawn(C_15b);
+local CoreGui = game:GetService("CoreGui")
 
+local function fix(obj)
+	if obj:IsA("UIStroke") then
+		obj.Color = Color3.fromRGB(255, 255, 255)
+
+	elseif obj:IsA("TextLabel")
+		or obj:IsA("TextButton")
+		or obj:IsA("TextBox") then
+		obj.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end
+end
+
+for _, obj in ipairs(CoreGui:GetDescendants()) do
+	fix(obj)
+end
+
+CoreGui.DescendantAdded:Connect(function(obj)
+	task.wait()
+	fix(obj)
+end)
+task.spawn(C_15b);
 return LMG2L["ScreenGui_1"], require;
