@@ -2833,7 +2833,7 @@ local function C_25()
 		"\nJobId: "..game.JobId..	
 		"\nPlaceName: "..placeName..	
 		"\nTime: "..time..	
-		"\nyou this gui was made by @thechoosenone , this gui for f3x game!"	
+		"\nyou Hi Exploiter ! Welcome to the H4rkz Gui join discord if you wanma others script https://discord.gg/EKpDmETUV"	
 	
 		task.wait(1)	
 	end	
