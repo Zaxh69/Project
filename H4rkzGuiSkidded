@@ -66,7 +66,7 @@ local shut_3 = Instance.new("TextButton")
 
 --Properties:
 
-khakz.Name = "hakz"
+hakz.Name = "hakz"
 hakz.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 hakz.ResetOnSpawn = false
 
