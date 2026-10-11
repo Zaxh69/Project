@@ -1,8 +1,8 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+ --[[
+	HEH NIGGER THIS GUI JST SKIDDED TO K00PGUI H4RKZ IS LAZY TO MAKE HIS GUI
 ]]
--- Gui to Lua
--- Version: 3.2
+-- Skidded by H4rkz
+-- @thechoosenone4kz
 
 -- Instances:
 
@@ -66,11 +66,11 @@ local shut_3 = Instance.new("TextButton")
 
 --Properties:
 
-k00ply.Name = "k00ply"
+k00ply.Name = "hakz"
 k00ply.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 k00ply.ResetOnSpawn = false
 
-Frame.Parent = k00ply
+Frame.Parent = hakz
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderColor3 = Color3.fromRGB(1, 53, 10)
 Frame.BorderSizePixel = 5
@@ -92,7 +92,7 @@ ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.BorderSizePixel = 0
 ImageLabel.Size = UDim2.new(1, 0, 1, 0)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=123724497894158"
+ImageLabel.Image = "http://www.roblox.com/asset/?id=107718665619260"
 ImageLabel.ImageTransparency = 0.600
 
 TextLabel.Parent = ImageLabel
@@ -102,7 +102,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextLabel.Position = UDim2.new(0.272000015, 0, 0.0189999994, 0)
 TextLabel.Size = UDim2.new(0, 170, 0, 32)
 TextLabel.Font = Enum.Font.Arial
-TextLabel.Text = "k00pgui v8 (F3X)"
+TextLabel.Text = "H4rkz Gui F3x Skidded to K00pgui"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -115,7 +115,7 @@ TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextLabel_2.Position = UDim2.new(-0.00465016067, 0, 1.25834417, 0)
 TextLabel_2.Size = UDim2.new(0, 170, 0, 32)
 TextLabel_2.Font = Enum.Font.Arial
-TextLabel_2.Text = "by @k00pkiddAlt      [team k00pkidd]"
+TextLabel_2.Text = "Skidded by @thechoosenonee4kz Niggers!"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -141,7 +141,7 @@ TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextLabel_4.Position = UDim2.new(0.442408621, 0, 21.7270947, 0)
 TextLabel_4.Size = UDim2.new(0, 170, 0, 14)
 TextLabel_4.Font = Enum.Font.Arial
-TextLabel_4.Text = "by k00pkiddAlt [team k00pkidd]"
+TextLabel_4.Text = "by thechoosenone4kz [team H4rkz]"
 TextLabel_4.TextColor3 = Color3.fromRGB(24, 24, 24)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
@@ -732,7 +732,7 @@ ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel_2.BorderSizePixel = 0
 ImageLabel_2.Position = UDim2.new(0.388235301, 0, 25.1428566, 0)
 ImageLabel_2.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel_2.Image = "http://www.roblox.com/asset/?id=123724497894158"
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=105378595017204"
 
 shut.Name = "shut"
 shut.Parent = TextLabel_4
