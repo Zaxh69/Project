@@ -6,7 +6,7 @@
 
 -- Instances:
 
-local k00ply = Instance.new("ScreenGui")
+local hakz = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local ImageLabel = Instance.new("ImageLabel")
@@ -66,9 +66,9 @@ local shut_3 = Instance.new("TextButton")
 
 --Properties:
 
-k00ply.Name = "hakz"
-k00ply.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-k00ply.ResetOnSpawn = false
+khakz.Name = "hakz"
+hakz.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+hakz.ResetOnSpawn = false
 
 Frame.Parent = hakz
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
