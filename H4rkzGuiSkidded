@@ -14,7 +14,7 @@ local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local _666 = Instance.new("TextButton")
-local canada = Instance.new("TextButton")
+local ShakeBaseplate = Instance.new("TextButton")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local shut = Instance.new("TextButton")
 local musicbypas10 = Instance.new("TextButton")
@@ -321,7 +321,7 @@ _666.MouseButton1Click:Connect(function()
 	end
 
 	local function decalspam()
-		local decalid = "96757457442198"
+		local decalid = "91814047892681"
 		for _, v in ipairs(workspace:GetDescendants()) do
 			if v.Name == "Sky" then
 				print("no")
@@ -438,19 +438,19 @@ _666.MouseButton1Click:Connect(function()
 	sixsixsix()
 end)
 
-canada.Name = "canada"
-canada.Parent = TextLabel_4
-canada.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-canada.BorderColor3 = Color3.fromRGB(0, 53, 11)
-canada.Position = UDim2.new(-0.86517638, 0, -12.5, 0)
-canada.Size = UDim2.new(0, 99, 0, 39)
-canada.Font = Enum.Font.SourceSans
-canada.Text = "Canada Spam"
-canada.TextColor3 = Color3.fromRGB(255, 255, 255)
-canada.TextScaled = true
-canada.TextSize = 14.000
-canada.TextWrapped = true
-canada.MouseButton1Click:Connect(function()
+ShakeBaseplate.Name = "ShakeBaseplate"
+ShakeBaseplate.Parent = TextLabel_4
+ShakeBaseplate.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ShakeBaseplate.BorderColor3 = Color3.fromRGB(0, 53, 11)
+ShakeBaseplate.Position = UDim2.new(-0.86517638, 0, -12.5, 0)
+ShakeBaseplate.Size = UDim2.new(0, 99, 0, 39)
+ShakeBaseplate.Font = Enum.Font.SourceSans
+ShakeBaseplate.Text = "Shake Baseplate"
+ShakeBaseplate.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShakeBaseplate.TextScaled = true
+ShakeBaseplate.TextSize = 14.000
+ShakeBaseplate.TextWrapped = true
+ShakeBaseplate.MouseButton1Click:Connect(function()
 	local player = game.Players.LocalPlayer
 	local char = player.Character
 	local tool
