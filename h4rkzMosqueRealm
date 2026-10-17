@@ -755,7 +755,7 @@ end
 if generatedParts[48] then
  pcall(function() SpawnDecal(generatedParts[48], Enum.NormalId.Back) end)
  task.wait(0.15)
- pcall(function() AddDecal(generatedParts[48], "109379618540463", Enum.NormalId.Back) end)
+ pcall(function() AddDecal(generatedParts[48], "106394355967874", Enum.NormalId.Back) end)
 end
 if generatedParts[51] then
  pcall(function() SpawnDecal(generatedParts[51], Enum.NormalId.Left) end)
