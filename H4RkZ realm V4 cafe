@@ -877,7 +877,7 @@ if generatedParts[31] then
 end
 if generatedParts[32] then
  table.insert(resizes, {['Part'] = generatedParts[32], ['CFrame'] = (origin + offset) * CFrame.new(-44.432, 5.000, -26.119, 0.707, 0.000, 0.707, 0.000, 1.000, 0.000, -0.707, 0.000, 0.707), ['Size'] = Vector3.new(1.000, 1.000, 1.000)})
- table.insert(colors, {['Part'] = generatedParts[32], ['Color'] = Color3.new(0.000, 0.000, 0.000), ['UnionColoring'] = false})
+ table.insert(colors, {['Part'] = generatedParts[32], ['Color'] = Color3.new(1.000, 0.667, 0.000), ['UnionColoring'] = false})
  table.insert(materials, {['Part'] = generatedParts[32], ['Material'] = Enum.Material.Plastic, ['Transparency'] = 0.000, ['Reflectance'] = 0.000})
  table.insert(anchors, {['Part'] = generatedParts[32], ['Anchored'] = true})
  table.insert(collisions, {['Part'] = generatedParts[32], ['CanCollide'] = false})
