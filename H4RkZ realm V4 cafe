@@ -507,7 +507,8 @@ if generatedParts[41] then
  pcall(function() AddMesh(generatedParts[41]) end)
  task.wait(0.15)
  pcall(function() SetMesh(generatedParts[41], "138086046609740") end)
- pcall(function() MeshResize(generatedParts[41], Vector3.new(1.000, 1.000, 1.000)) end)
- pcall(function() vect(generatedParts[41], Vector3.new(0.000, 0.000, 0.000)) end)
+pcall(function()SetTexture(generatedParts[41], "110392995468944")end)
+pcall(function() MeshResize(generatedParts[41], Vector3.new(1.000, 1.000, 1.000)) end)
+pcall(function() vect(generatedParts[41], Vector3.new(0.000, 0.000, 0.000)) end)
 end
 if root then root.Anchored = false end
