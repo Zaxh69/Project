@@ -648,7 +648,7 @@ if generatedParts[3] then
  table.insert(colors, {['Part'] = generatedParts[3], ['Color'] = Color3.new(0.498, 0.247, 0.000), ['UnionColoring'] = false})
  table.insert(materials, {['Part'] = generatedParts[3], ['Material'] = Enum.Material.WoodPlanks, ['Transparency'] = 0.000, ['Reflectance'] = 0.000})
  table.insert(anchors, {['Part'] = generatedParts[3], ['Anchored'] = true})
- table.insert(collisions, {['Part'] = generatedParts[3], ['CanCollide'] = false})
+ table.insert(collisions, {['Part'] = generatedParts[3], ['CanCollide'] = true})
  table.insert(names, {['Part'] = generatedParts[3], ['Name'] = "Part5"})
 end
 if generatedParts[4] then
