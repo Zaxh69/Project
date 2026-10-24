@@ -164,7 +164,7 @@ end
 if generatedParts[3] then
 pcall(function() SpawnDecal(generatedParts[3], Enum.NormalId.Top) end)
 task.wait(0.15)
-pcall(function() AddDecal(generatedParts[3], "15283944412", Enum.NormalId.Top) end)
+pcall(function() AddDecal(generatedParts[3], "106228398533086", Enum.NormalId.Top) end)
 end
 if root then root.Anchored = false end
 -- make other again
