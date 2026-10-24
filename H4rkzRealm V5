@@ -749,7 +749,7 @@ end
 if generatedParts[43] then
  pcall(function() SpawnDecal(generatedParts[43], Enum.NormalId.Top) end)
  task.wait(0.15)
- pcall(function() AddDecal(generatedParts[43], "15283944412", Enum.NormalId.Top) end)
+ pcall(function() AddDecal(generatedParts[43], "103090501277573", Enum.NormalId.Top) end)
 end
 if generatedParts[45] then
  pcall(function() SpawnDecal(generatedParts[45], Enum.NormalId.Top) end)
@@ -1101,4 +1101,4 @@ local player = game.Players.LocalPlayer
 			end
 		end
 	end
-	Sky("84390365562355")
+	Sky("106228398533086")
