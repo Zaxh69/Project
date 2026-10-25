@@ -42,7 +42,10 @@ TextButton15.Font = Enum.Font.Code
 TextButton15.TextXAlignment = Enum.TextXAlignment.Center
 TextButton15.TextYAlignment = Enum.TextYAlignment.Center
 TextButton15.MouseButton1Click:Connect(function()
-    print('TextButton15 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";refresh me")
 end)
 
 local TextButton15_1 = Instance.new('TextButton')
@@ -65,7 +68,10 @@ TextButton15_1.Font = Enum.Font.Code
 TextButton15_1.TextXAlignment = Enum.TextXAlignment.Center
 TextButton15_1.TextYAlignment = Enum.TextYAlignment.Center
 TextButton15_1.MouseButton1Click:Connect(function()
-    print('TextButton15_1 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";buildingtools me")
 end)
 
 local UIStroke = Instance.new('UIStroke')
@@ -125,7 +131,10 @@ TextButton2.Font = Enum.Font.Code
 TextButton2.TextXAlignment = Enum.TextXAlignment.Center
 TextButton2.TextYAlignment = Enum.TextYAlignment.Center
 TextButton2.MouseButton1Click:Connect(function()
-    print('TextButton2 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";music 119543964108805 ;pitch 0.7 ;volume inf")
 end)
 
 local TextButton2_1 = Instance.new('TextButton')
@@ -444,7 +453,10 @@ TextButton3.Font = Enum.Font.Code
 TextButton3.TextXAlignment = Enum.TextXAlignment.Center
 TextButton3.TextYAlignment = Enum.TextYAlignment.Center
 TextButton3.MouseButton1Click:Connect(function()
-    print('TextButton3 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";unmusic")
 end)
 
 local TextButton2_12 = Instance.new('TextButton')
@@ -644,7 +656,7 @@ TextButton2_18.BackgroundColor3 = Color3.fromRGB(255,255,255)
 TextButton2_18.BackgroundTransparency = 0
 TextButton2_18.BorderSizePixel = 1
 TextButton2_18.BorderColor3 = Color3.fromRGB(27,42,53)
-TextButton2_18.Text = [[NightCore]]
+TextButton2_18.Text = [[NightCore 18]]
 TextButton2_18.TextColor3 = Color3.fromRGB(0,0,0)
 TextButton2_18.TextTransparency = 0
 TextButton2_18.TextSize = 24
@@ -746,7 +758,10 @@ TextButton15_2.Font = Enum.Font.Code
 TextButton15_2.TextXAlignment = Enum.TextXAlignment.Center
 TextButton15_2.TextYAlignment = Enum.TextYAlignment.Center
 TextButton15_2.MouseButton1Click:Connect(function()
-    print('TextButton15_2 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";r6 me")
 end)
 
 local TextButton15_3 = Instance.new('TextButton')
@@ -769,7 +784,10 @@ TextButton15_3.Font = Enum.Font.Code
 TextButton15_3.TextXAlignment = Enum.TextXAlignment.Center
 TextButton15_3.TextYAlignment = Enum.TextYAlignment.Center
 TextButton15_3.MouseButton1Click:Connect(function()
-    print('TextButton15_3 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";r15 me")
 end)
 
 local TextLabel2 = Instance.new('TextLabel')
@@ -891,7 +909,10 @@ TextButton15_4.Font = Enum.Font.Code
 TextButton15_4.TextXAlignment = Enum.TextXAlignment.Center
 TextButton15_4.TextYAlignment = Enum.TextYAlignment.Center
 TextButton15_4.MouseButton1Click:Connect(function()
-    print('TextButton15_4 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";fog 999999 9999999")
 end)
 
 local TextButton16 = Instance.new('TextButton')
@@ -937,7 +958,10 @@ TextButton7.Font = Enum.Font.Code
 TextButton7.TextXAlignment = Enum.TextXAlignment.Center
 TextButton7.TextYAlignment = Enum.TextYAlignment.Center
 TextButton7.MouseButton1Click:Connect(function()
-    print('TextButton7 clicked')
+     local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";disco ;fog 999")
 end)
 
 local TextButton2_21 = Instance.new('TextButton')
@@ -983,7 +1007,10 @@ TextButton16_1.Font = Enum.Font.Code
 TextButton16_1.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_1.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_1.MouseButton1Click:Connect(function()
-    print('TextButton16_1 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";explode others")
 end)
 
 local TextButton16_2 = Instance.new('TextButton')
@@ -1052,7 +1079,10 @@ TextButton16_4.Font = Enum.Font.Code
 TextButton16_4.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_4.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_4.MouseButton1Click:Connect(function()
-    print('TextButton16_4 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";fire all ")
 end)
 
 local TextButton16_5 = Instance.new('TextButton')
@@ -1111,7 +1141,7 @@ TextButton5_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
 TextButton5_1.BackgroundTransparency = 0
 TextButton5_1.BorderSizePixel = 1
 TextButton5_1.BorderColor3 = Color3.fromRGB(27,42,53)
-TextButton5_1.Text = [[Sky2]]
+TextButton5_1.Text = [[Sky3]]
 TextButton5_1.TextColor3 = Color3.fromRGB(0,0,0)
 TextButton5_1.TextTransparency = 0
 TextButton5_1.TextSize = 8
@@ -1190,7 +1220,10 @@ TextButton9.Font = Enum.Font.Code
 TextButton9.TextXAlignment = Enum.TextXAlignment.Center
 TextButton9.TextYAlignment = Enum.TextYAlignment.Center
 TextButton9.MouseButton1Click:Connect(function()
-    print('TextButton9 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";bring all")
 end)
 
 local TextButton8 = Instance.new('TextButton')
@@ -1213,7 +1246,10 @@ TextButton8.Font = Enum.Font.Code
 TextButton8.TextXAlignment = Enum.TextXAlignment.Center
 TextButton8.TextYAlignment = Enum.TextYAlignment.Center
 TextButton8.MouseButton1Click:Connect(function()
-    print('TextButton8 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";title me WHITE2SPOOKY")
 end)
 
 local TextButton17 = Instance.new('TextButton')
@@ -1236,7 +1272,10 @@ TextButton17.Font = Enum.Font.Code
 TextButton17.TextXAlignment = Enum.TextXAlignment.Center
 TextButton17.TextYAlignment = Enum.TextYAlignment.Center
 TextButton17.MouseButton1Click:Connect(function()
-    print('TextButton17 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";char all KyuKusangaki")
 end)
 
 local TextButton16_8 = Instance.new('TextButton')
@@ -1259,7 +1298,10 @@ TextButton16_8.Font = Enum.Font.Code
 TextButton16_8.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_8.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_8.MouseButton1Click:Connect(function()
-    print('TextButton16_8 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";place all 111105964184410 ;globalforceplace all 111105964184410 ")
 end)
 
 local TextButton16_9 = Instance.new('TextButton')
