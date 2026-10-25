@@ -259,7 +259,7 @@ TextButton2_5.BackgroundColor3 = Color3.fromRGB(255,255,255)
 TextButton2_5.BackgroundTransparency = 0
 TextButton2_5.BorderSizePixel = 1
 TextButton2_5.BorderColor3 = Color3.fromRGB(27,42,53)
-TextButton2_5.Text = [[Terranova]]
+TextButton2_5.Text = [[Cartel]]
 TextButton2_5.TextColor3 = Color3.fromRGB(0,0,0)
 TextButton2_5.TextTransparency = 0
 TextButton2_5.TextSize = 24
@@ -269,7 +269,12 @@ TextButton2_5.Font = Enum.Font.Code
 TextButton2_5.TextXAlignment = Enum.TextXAlignment.Center
 TextButton2_5.TextYAlignment = Enum.TextYAlignment.Center
 TextButton2_5.MouseButton1Click:Connect(function()
-    print('TextButton2_5 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+
+RequestCommand:InvokeServer(";music 80225779962452")
+RequestCommand:InvokeServer(";pitch 0.2")
+RequestCommand:InvokeServer(";volume inf")
 end)
 
 local TextButton5 = Instance.new('TextButton')
@@ -804,7 +809,7 @@ TextButton2_20.BackgroundColor3 = Color3.fromRGB(255,255,255)
 TextButton2_20.BackgroundTransparency = 0
 TextButton2_20.BorderSizePixel = 1
 TextButton2_20.BorderColor3 = Color3.fromRGB(27,42,53)
-TextButton2_20.Text = [[YuGetNothing]]
+TextButton2_20.Text = [[Mat3L0rd Theme]]
 TextButton2_20.TextColor3 = Color3.fromRGB(0,0,0)
 TextButton2_20.TextTransparency = 0
 TextButton2_20.TextSize = 24
@@ -817,9 +822,9 @@ TextButton2_20.MouseButton1Click:Connect(function()
     local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
 
-RequestCommand:InvokeServer(";music 109255629287595")
-RequestCommand:InvokeServer(";pitch 0.1")
-RequestCommand:InvokeServer(";volume 8")
+RequestCommand:InvokeServer(";music 1839272148")
+RequestCommand:InvokeServer(";pitch 1.1")
+RequestCommand:InvokeServer(";volume inf")
 end)
 
 local TextButton6 = Instance.new('TextButton')
