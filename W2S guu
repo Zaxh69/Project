@@ -1,0 +1,1773 @@
+local CoreGui = game:GetService("CoreGui")
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Parent = CoreGui
+ScreenGui.ResetOnSpawn = false
+
+local Frame = Instance.new('Frame')
+Frame.Parent = ScreenGui
+Frame.Visible = true
+Frame.Size = UDim2.new(0.4496611952781677,0,0.6653213500976562,0)
+Frame.Position = UDim2.new(0.3037455081939697,0,0.05790404602885246,0)
+Frame.Rotation = 0
+Frame.BackgroundColor3 = Color3.fromRGB(0,0,0)
+Frame.BackgroundTransparency = 0
+Frame.BorderSizePixel = 1
+Frame.BorderColor3 = Color3.fromRGB(27,42,53)
+local Frame_UIStroke = Instance.new('UIStroke')
+Frame_UIStroke.Parent = Frame
+Frame_UIStroke.Color = Color3.fromRGB(255,255,255)
+Frame_UIStroke.Transparency = 0
+Frame_UIStroke.Thickness = 2
+Frame_UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+Frame_UIStroke.LineJoinMode = Enum.LineJoinMode.Round
+Frame_UIStroke.Enabled = true
+
+local TextButton15 = Instance.new('TextButton')
+TextButton15.Parent = Frame
+TextButton15.Visible = true
+TextButton15.Size = UDim2.new(0.13828177750110626,0,0.08621696382761002,0)
+TextButton15.Position = UDim2.new(0.8364265561103821,0,0.9046068787574768,0)
+TextButton15.Rotation = 0
+TextButton15.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton15.BackgroundTransparency = 0
+TextButton15.BorderSizePixel = 1
+TextButton15.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton15.Text = [[rE]]
+TextButton15.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton15.TextTransparency = 0
+TextButton15.TextSize = 8
+TextButton15.TextWrapped = true
+TextButton15.TextScaled = true
+TextButton15.Font = Enum.Font.Code
+TextButton15.TextXAlignment = Enum.TextXAlignment.Center
+TextButton15.TextYAlignment = Enum.TextYAlignment.Center
+TextButton15.MouseButton1Click:Connect(function()
+    print('TextButton15 clicked')
+end)
+
+local TextButton15_1 = Instance.new('TextButton')
+TextButton15_1.Parent = Frame
+TextButton15_1.Visible = true
+TextButton15_1.Size = UDim2.new(0.14423330128192902,0,0.08856195956468582,0)
+TextButton15_1.Position = UDim2.new(0.8433669209480286,0,0.8108012080192566,0)
+TextButton15_1.Rotation = 0
+TextButton15_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton15_1.BackgroundTransparency = 0
+TextButton15_1.BorderSizePixel = 1
+TextButton15_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton15_1.Text = [[F3x]]
+TextButton15_1.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton15_1.TextTransparency = 0
+TextButton15_1.TextSize = 8
+TextButton15_1.TextWrapped = true
+TextButton15_1.TextScaled = true
+TextButton15_1.Font = Enum.Font.Code
+TextButton15_1.TextXAlignment = Enum.TextXAlignment.Center
+TextButton15_1.TextYAlignment = Enum.TextYAlignment.Center
+TextButton15_1.MouseButton1Click:Connect(function()
+    print('TextButton15_1 clicked')
+end)
+
+local UIStroke = Instance.new('UIStroke')
+UIStroke.Parent = Frame
+
+local ImageLabel = Instance.new('ImageLabel')
+ImageLabel.Parent = Frame
+ImageLabel.Visible = true
+ImageLabel.Size = UDim2.new(0.9984318614006042,0,1.0006248950958252,0)
+ImageLabel.Position = UDim2.new(0,0,0,0)
+ImageLabel.Rotation = 0
+ImageLabel.BackgroundColor3 = Color3.fromRGB(162,162,162)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.BorderSizePixel = 1
+ImageLabel.BorderColor3 = Color3.fromRGB(27,42,53)
+ImageLabel.Image = [[rbxthumb://type=Asset&id=103090501277573&w=420&h=420]]
+ImageLabel.ImageTransparency = 0.6000000238418579
+ImageLabel.ImageRectOffset = Vector2.new(0,0)
+ImageLabel.ImageRectSize = Vector2.new(0,0)
+
+local Music_frm = Instance.new('ScrollingFrame')
+Music_frm.Parent = Frame
+Music_frm.Visible = true
+Music_frm.Size = UDim2.new(0.43265631794929504,0,0.6660351753234863,0)
+Music_frm.Position = UDim2.new(0.5467764139175415,0,0.1258683204650879,0)
+Music_frm.Rotation = 0
+Music_frm.BackgroundColor3 = Color3.fromRGB(162,162,162)
+Music_frm.BackgroundTransparency = 1
+Music_frm.BorderSizePixel = 1
+Music_frm.BorderColor3 = Color3.fromRGB(255,255,255)
+local Music_frm_UIStroke = Instance.new('UIStroke')
+Music_frm_UIStroke.Parent = Music_frm
+Music_frm_UIStroke.Color = Color3.fromRGB(255,255,255)
+Music_frm_UIStroke.Transparency = 0
+Music_frm_UIStroke.Thickness = 2
+Music_frm_UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+Music_frm_UIStroke.LineJoinMode = Enum.LineJoinMode.Round
+Music_frm_UIStroke.Enabled = true
+
+local TextButton2 = Instance.new('TextButton')
+TextButton2.Parent = Music_frm
+TextButton2.Visible = true
+TextButton2.Size = UDim2.new(0.3801273703575134,0,0.037513911724090576,0)
+TextButton2.Position = UDim2.new(0.5681542754173279,0,0.562565267086029,0)
+TextButton2.Rotation = 0
+TextButton2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2.BackgroundTransparency = 0
+TextButton2.BorderSizePixel = 1
+TextButton2.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2.Text = [[Red Zone(pengu)]]
+TextButton2.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2.TextTransparency = 0
+TextButton2.TextSize = 24
+TextButton2.TextWrapped = true
+TextButton2.TextScaled = true
+TextButton2.Font = Enum.Font.Code
+TextButton2.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2.MouseButton1Click:Connect(function()
+    print('TextButton2 clicked')
+end)
+
+local TextButton2_1 = Instance.new('TextButton')
+TextButton2_1.Parent = Music_frm
+TextButton2_1.Visible = true
+TextButton2_1.Size = UDim2.new(0.472455233335495,0,0.022420145571231842,0)
+TextButton2_1.Position = UDim2.new(0.4290802776813507,0,0.352263867855072,0)
+TextButton2_1.Rotation = 0
+TextButton2_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_1.BackgroundTransparency = 0
+TextButton2_1.BorderSizePixel = 1
+TextButton2_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_1.Text = [[SmackySkeleton😱]]
+TextButton2_1.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_1.TextTransparency = 0
+TextButton2_1.TextSize = 24
+TextButton2_1.TextWrapped = true
+TextButton2_1.TextScaled = true
+TextButton2_1.Font = Enum.Font.Code
+TextButton2_1.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_1.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_1.MouseButton1Click:Connect(function()
+    print('TextButton2_1 clicked')
+end)
+
+local TextButton2_2 = Instance.new('TextButton')
+TextButton2_2.Parent = Music_frm
+TextButton2_2.Visible = true
+TextButton2_2.Size = UDim2.new(0.36930689215660095,0,0.053613562136888504,0)
+TextButton2_2.Position = UDim2.new(0.008578733541071415,0,0.4508732855319977,0)
+TextButton2_2.Rotation = 0
+TextButton2_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_2.BackgroundTransparency = 0
+TextButton2_2.BorderSizePixel = 1
+TextButton2_2.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_2.Text = [[Nigga motherFucker]]
+TextButton2_2.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_2.TextTransparency = 0
+TextButton2_2.TextSize = 24
+TextButton2_2.TextWrapped = true
+TextButton2_2.TextScaled = true
+TextButton2_2.Font = Enum.Font.Code
+TextButton2_2.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_2.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_2.MouseButton1Click:Connect(function()
+    print('TextButton2_2 clicked')
+end)
+
+local TextButton2_3 = Instance.new('TextButton')
+TextButton2_3.Parent = Music_frm
+TextButton2_3.Visible = true
+TextButton2_3.Size = UDim2.new(0.3525802791118622,0,0.04153863713145256,0)
+TextButton2_3.Position = UDim2.new(-0.00999661535024643,0,0.40156856179237366,0)
+TextButton2_3.Rotation = 0
+TextButton2_3.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_3.BackgroundTransparency = 0
+TextButton2_3.BorderSizePixel = 1
+TextButton2_3.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_3.Text = [[LotsA Spaghetti!]]
+TextButton2_3.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_3.TextTransparency = 0
+TextButton2_3.TextSize = 24
+TextButton2_3.TextWrapped = true
+TextButton2_3.TextScaled = true
+TextButton2_3.Font = Enum.Font.Code
+TextButton2_3.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_3.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_3.MouseButton1Click:Connect(function()
+    print('TextButton2_3 clicked')
+end)
+
+local TextButton2_4 = Instance.new('TextButton')
+TextButton2_4.Parent = Music_frm
+TextButton2_4.Visible = true
+TextButton2_4.Size = UDim2.new(0.4710614085197449,0,0.02694816142320633,0)
+TextButton2_4.Position = UDim2.new(0.011547766625881195,0,0.32207727432250977,0)
+TextButton2_4.Rotation = 0
+TextButton2_4.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_4.BackgroundTransparency = 0
+TextButton2_4.BorderSizePixel = 1
+TextButton2_4.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_4.Text = [[Montage Luna Diamante]]
+TextButton2_4.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_4.TextTransparency = 0
+TextButton2_4.TextSize = 24
+TextButton2_4.TextWrapped = true
+TextButton2_4.TextScaled = true
+TextButton2_4.Font = Enum.Font.Code
+TextButton2_4.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_4.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_4.MouseButton1Click:Connect(function()
+    print('TextButton2_4 clicked')
+end)
+
+local TextButton2_5 = Instance.new('TextButton')
+TextButton2_5.Parent = Music_frm
+TextButton2_5.Visible = true
+TextButton2_5.Size = UDim2.new(0.3379899561405182,0,0.0697130486369133,0)
+TextButton2_5.Position = UDim2.new(0.5521579384803772,0,0.21139143407344818,0)
+TextButton2_5.Rotation = 0
+TextButton2_5.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_5.BackgroundTransparency = 0
+TextButton2_5.BorderSizePixel = 1
+TextButton2_5.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_5.Text = [[Terranova]]
+TextButton2_5.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_5.TextTransparency = 0
+TextButton2_5.TextSize = 24
+TextButton2_5.TextWrapped = true
+TextButton2_5.TextScaled = true
+TextButton2_5.Font = Enum.Font.Code
+TextButton2_5.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_5.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_5.MouseButton1Click:Connect(function()
+    print('TextButton2_5 clicked')
+end)
+
+local TextButton5 = Instance.new('TextButton')
+TextButton5.Parent = Music_frm
+TextButton5.Visible = true
+TextButton5.Size = UDim2.new(0.3826122283935547,0,0.032985538244247437,0)
+TextButton5.Position = UDim2.new(0.011651738546788692,0,0.13793496787548065,0)
+TextButton5.Rotation = 0
+TextButton5.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton5.BackgroundTransparency = 0
+TextButton5.BorderSizePixel = 1
+TextButton5.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton5.Text = [[Buur]]
+TextButton5.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton5.TextTransparency = 0
+TextButton5.TextSize = 24
+TextButton5.TextWrapped = false
+TextButton5.TextScaled = false
+TextButton5.Font = Enum.Font.Code
+TextButton5.TextXAlignment = Enum.TextXAlignment.Center
+TextButton5.TextYAlignment = Enum.TextYAlignment.Center
+TextButton5.MouseButton1Click:Connect(function()
+    print('TextButton5 clicked')
+end)
+
+local TextButton2_6 = Instance.new('TextButton')
+TextButton2_6.Parent = Music_frm
+TextButton2_6.Visible = true
+TextButton2_6.Size = UDim2.new(0.48104986548423767,0,0.02342664636671543,0)
+TextButton2_6.Position = UDim2.new(0.029908014461398125,0,0.5957711338996887,0)
+TextButton2_6.Rotation = 0
+TextButton2_6.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_6.BackgroundTransparency = 0
+TextButton2_6.BorderSizePixel = 1
+TextButton2_6.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_6.Text = [[LazyTownn]]
+TextButton2_6.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_6.TextTransparency = 0
+TextButton2_6.TextSize = 24
+TextButton2_6.TextWrapped = true
+TextButton2_6.TextScaled = true
+TextButton2_6.Font = Enum.Font.Code
+TextButton2_6.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_6.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_6.MouseButton1Click:Connect(function()
+    print('TextButton2_6 clicked')
+end)
+
+local TextLabel = Instance.new('TextLabel')
+TextLabel.Parent = Music_frm
+TextLabel.Visible = true
+TextLabel.Size = UDim2.new(0.8816846609115601,0,0.04689018800854683,0)
+TextLabel.Position = UDim2.new(0,0,0,0)
+TextLabel.Rotation = 0
+TextLabel.BackgroundColor3 = Color3.fromRGB(162,162,162)
+TextLabel.BackgroundTransparency = 0
+TextLabel.BorderSizePixel = 1
+TextLabel.BorderColor3 = Color3.fromRGB(27,42,53)
+TextLabel.Text = [[Bypa*sed music]]
+TextLabel.TextColor3 = Color3.fromRGB(255,255,255)
+TextLabel.TextTransparency = 0
+TextLabel.TextSize = 8
+TextLabel.TextWrapped = true
+TextLabel.TextScaled = true
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel.TextYAlignment = Enum.TextYAlignment.Center
+
+local TextButton2_7 = Instance.new('TextButton')
+TextButton2_7.Parent = Music_frm
+TextButton2_7.Visible = true
+TextButton2_7.Size = UDim2.new(0.3913458287715912,0,0.07424147427082062,0)
+TextButton2_7.Position = UDim2.new(0.0149593036621809,0,0.6249515414237976,0)
+TextButton2_7.Rotation = 0
+TextButton2_7.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_7.BackgroundTransparency = 0
+TextButton2_7.BorderSizePixel = 1
+TextButton2_7.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_7.Text = [[G00byTheme]]
+TextButton2_7.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_7.TextTransparency = 0
+TextButton2_7.TextSize = 24
+TextButton2_7.TextWrapped = true
+TextButton2_7.TextScaled = true
+TextButton2_7.Font = Enum.Font.Code
+TextButton2_7.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_7.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_7.MouseButton1Click:Connect(function()
+    print('TextButton2_7 clicked')
+end)
+
+local TextButton2_8 = Instance.new('TextButton')
+TextButton2_8.Parent = Music_frm
+TextButton2_8.Visible = true
+TextButton2_8.Size = UDim2.new(0.46687963604927063,0,0.03348870202898979,0)
+TextButton2_8.Position = UDim2.new(0.4290800094604492,0,0.3774193525314331,0)
+TextButton2_8.Rotation = 0
+TextButton2_8.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_8.BackgroundTransparency = 0
+TextButton2_8.BorderSizePixel = 1
+TextButton2_8.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_8.Text = [[Fuck All Nigga!]]
+TextButton2_8.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_8.TextTransparency = 0
+TextButton2_8.TextSize = 24
+TextButton2_8.TextWrapped = true
+TextButton2_8.TextScaled = true
+TextButton2_8.Font = Enum.Font.Code
+TextButton2_8.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_8.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_8.MouseButton1Click:Connect(function()
+    print('TextButton2_8 clicked')
+end)
+
+local TextButton2_9 = Instance.new('TextButton')
+TextButton2_9.Parent = Music_frm
+TextButton2_9.Visible = true
+TextButton2_9.Size = UDim2.new(0.4766066074371338,0,0.037010498344898224,0)
+TextButton2_9.Position = UDim2.new(0.0115512041375041,0,0.28132423758506775,0)
+TextButton2_9.Rotation = 0
+TextButton2_9.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_9.BackgroundTransparency = 0
+TextButton2_9.BorderSizePixel = 1
+TextButton2_9.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_9.Text = [[Tees S Sparta!!]]
+TextButton2_9.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_9.TextTransparency = 0
+TextButton2_9.TextSize = 24
+TextButton2_9.TextWrapped = true
+TextButton2_9.TextScaled = true
+TextButton2_9.Font = Enum.Font.Code
+TextButton2_9.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_9.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_9.MouseButton1Click:Connect(function()
+    print('TextButton2_9 clicked')
+end)
+
+local TextButton2_10 = Instance.new('TextButton')
+TextButton2_10.Parent = Music_frm
+TextButton2_10.Visible = true
+TextButton2_10.Size = UDim2.new(0.5015576481819153,0,0.03248243406414986,0)
+TextButton2_10.Position = UDim2.new(0.022640615701675415,0,0.24359041452407837,0)
+TextButton2_10.Rotation = 0
+TextButton2_10.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_10.BackgroundTransparency = 0
+TextButton2_10.BorderSizePixel = 1
+TextButton2_10.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_10.Text = [[Hardstyle]]
+TextButton2_10.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_10.TextTransparency = 0
+TextButton2_10.TextSize = 24
+TextButton2_10.TextWrapped = true
+TextButton2_10.TextScaled = true
+TextButton2_10.Font = Enum.Font.Code
+TextButton2_10.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_10.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_10.MouseButton1Click:Connect(function()
+    print('TextButton2_10 clicked')
+end)
+
+local TextButton2_11 = Instance.new('TextButton')
+TextButton2_11.Parent = Music_frm
+TextButton2_11.Visible = true
+TextButton2_11.Size = UDim2.new(0.531525194644928,0,0.03047013096511364,0)
+TextButton2_11.Position = UDim2.new(0.01582149975001812,0,0.5112475156784058,0)
+TextButton2_11.Rotation = 0
+TextButton2_11.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_11.BackgroundTransparency = 0
+TextButton2_11.BorderSizePixel = 1
+TextButton2_11.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_11.Text = [[HIJ4CxKed]]
+TextButton2_11.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_11.TextTransparency = 0
+TextButton2_11.TextSize = 24
+TextButton2_11.TextWrapped = true
+TextButton2_11.TextScaled = true
+TextButton2_11.Font = Enum.Font.Code
+TextButton2_11.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_11.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_11.MouseButton1Click:Connect(function()
+    print('TextButton2_11 clicked')
+end)
+
+local TextButton3 = Instance.new('TextButton')
+TextButton3.Parent = Music_frm
+TextButton3.Visible = true
+TextButton3.Size = UDim2.new(0.3658047914505005,0,0.03197929263114929,0)
+TextButton3.Position = UDim2.new(-0.0023521678522229195,0,0.053412213921546936,0)
+TextButton3.Rotation = 0
+TextButton3.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton3.BackgroundTransparency = 0
+TextButton3.BorderSizePixel = 1
+TextButton3.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton3.Text = [[Stop]]
+TextButton3.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton3.TextTransparency = 0
+TextButton3.TextSize = 24
+TextButton3.TextWrapped = false
+TextButton3.TextScaled = false
+TextButton3.Font = Enum.Font.Code
+TextButton3.TextXAlignment = Enum.TextXAlignment.Center
+TextButton3.TextYAlignment = Enum.TextYAlignment.Center
+TextButton3.MouseButton1Click:Connect(function()
+    print('TextButton3 clicked')
+end)
+
+local TextButton2_12 = Instance.new('TextButton')
+TextButton2_12.Parent = Music_frm
+TextButton2_12.Visible = true
+TextButton2_12.Size = UDim2.new(0.36930689215660095,0,0.036507632583379745,0)
+TextButton2_12.Position = UDim2.new(0.341264933347702,0,0.4126371145248413,0)
+TextButton2_12.Rotation = 0
+TextButton2_12.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_12.BackgroundTransparency = 0
+TextButton2_12.BorderSizePixel = 1
+TextButton2_12.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_12.Text = [[Kmer Jumpstail]]
+TextButton2_12.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_12.TextTransparency = 0
+TextButton2_12.TextSize = 24
+TextButton2_12.TextWrapped = true
+TextButton2_12.TextScaled = true
+TextButton2_12.Font = Enum.Font.Code
+TextButton2_12.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_12.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_12.MouseButton1Click:Connect(function()
+    print('TextButton2_12 clicked')
+end)
+
+local TextButton2_13 = Instance.new('TextButton')
+TextButton2_13.Parent = Music_frm
+TextButton2_13.Visible = true
+TextButton2_13.Size = UDim2.new(0.44367456436157227,0,0.036507733166217804,0)
+TextButton2_13.Position = UDim2.new(0.48592039942741394,0,0.6038212180137634,0)
+TextButton2_13.Rotation = 0
+TextButton2_13.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_13.BackgroundTransparency = 0
+TextButton2_13.BorderSizePixel = 1
+TextButton2_13.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_13.Text = [[Blue2spooky Theme]]
+TextButton2_13.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_13.TextTransparency = 0
+TextButton2_13.TextSize = 24
+TextButton2_13.TextWrapped = true
+TextButton2_13.TextScaled = true
+TextButton2_13.Font = Enum.Font.Code
+TextButton2_13.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_13.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_13.MouseButton1Click:Connect(function()
+    print('TextButton2_13 clicked')
+end)
+
+local UIStroke_1 = Instance.new('UIStroke')
+UIStroke_1.Parent = Music_frm
+
+local TextButton4 = Instance.new('TextButton')
+TextButton4.Parent = Music_frm
+TextButton4.Visible = true
+TextButton4.Size = UDim2.new(0.519867479801178,0,0.04405410215258598,0)
+TextButton4.Position = UDim2.new(0.37019744515419006,0,0.053412023931741714,0)
+TextButton4.Rotation = 0
+TextButton4.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton4.BackgroundTransparency = 0
+TextButton4.BorderSizePixel = 1
+TextButton4.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton4.Text = [[BettrOfLone]]
+TextButton4.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton4.TextTransparency = 0
+TextButton4.TextSize = 24
+TextButton4.TextWrapped = false
+TextButton4.TextScaled = false
+TextButton4.Font = Enum.Font.Code
+TextButton4.TextXAlignment = Enum.TextXAlignment.Center
+TextButton4.TextYAlignment = Enum.TextYAlignment.Center
+TextButton4.MouseButton1Click:Connect(function()
+    print('TextButton4 clicked')
+end)
+
+local TextButton2_14 = Instance.new('TextButton')
+TextButton2_14.Parent = Music_frm
+TextButton2_14.Visible = true
+TextButton2_14.Size = UDim2.new(0.32967251539230347,0,0.056129008531570435,0)
+TextButton2_14.Position = UDim2.new(0.538294792175293,0,0.28635546565055847,0)
+TextButton2_14.Rotation = 0
+TextButton2_14.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_14.BackgroundTransparency = 0
+TextButton2_14.BorderSizePixel = 1
+TextButton2_14.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_14.Text = [[Neigger!!!]]
+TextButton2_14.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_14.TextTransparency = 0
+TextButton2_14.TextSize = 24
+TextButton2_14.TextWrapped = true
+TextButton2_14.TextScaled = true
+TextButton2_14.Font = Enum.Font.Code
+TextButton2_14.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_14.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_14.MouseButton1Click:Connect(function()
+    print('TextButton2_14 clicked')
+end)
+
+local TextButton2_15 = Instance.new('TextButton')
+TextButton2_15.Parent = Music_frm
+TextButton2_15.Visible = true
+TextButton2_15.Size = UDim2.new(0.8952288031578064,0,0.030973009765148163,0)
+TextButton2_15.Position = UDim2.new(0.001847385778091848,0,0.17617282271385193,0)
+TextButton2_15.Rotation = 0
+TextButton2_15.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_15.BackgroundTransparency = 0
+TextButton2_15.BorderSizePixel = 1
+TextButton2_15.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_15.Text = [[Theme 2 (doge for bread)]]
+TextButton2_15.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_15.TextTransparency = 0
+TextButton2_15.TextSize = 24
+TextButton2_15.TextWrapped = true
+TextButton2_15.TextScaled = true
+TextButton2_15.Font = Enum.Font.Code
+TextButton2_15.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_15.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_15.MouseButton1Click:Connect(function()
+    print('TextButton2_15 clicked')
+end)
+
+local TextButton2_16 = Instance.new('TextButton')
+TextButton2_16.Parent = Music_frm
+TextButton2_16.Visible = true
+TextButton2_16.Size = UDim2.new(0.5514594912528992,0,0.02946365438401699,0)
+TextButton2_16.Position = UDim2.new(-0.01201422419399023,0,0.2113911658525467,0)
+TextButton2_16.Rotation = 0
+TextButton2_16.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_16.BackgroundTransparency = 0
+TextButton2_16.BorderSizePixel = 1
+TextButton2_16.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_16.Text = [[Allahuakbar ]]
+TextButton2_16.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_16.TextTransparency = 0
+TextButton2_16.TextSize = 24
+TextButton2_16.TextWrapped = true
+TextButton2_16.TextScaled = true
+TextButton2_16.Font = Enum.Font.Code
+TextButton2_16.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_16.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_16.MouseButton1Click:Connect(function()
+    print('TextButton2_16 clicked')
+end)
+
+local TextButton2_17 = Instance.new('TextButton')
+TextButton2_17.Parent = Music_frm
+TextButton2_17.Visible = true
+TextButton2_17.Size = UDim2.new(0.531525194644928,0,0.03047013096511364,0)
+TextButton2_17.Position = UDim2.new(0.3924981355667114,0,0.4518798589706421,0)
+TextButton2_17.Rotation = 0
+TextButton2_17.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_17.BackgroundTransparency = 0
+TextButton2_17.BorderSizePixel = 1
+TextButton2_17.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_17.Text = [[Nigger Loud]]
+TextButton2_17.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_17.TextTransparency = 0
+TextButton2_17.TextSize = 24
+TextButton2_17.TextWrapped = true
+TextButton2_17.TextScaled = true
+TextButton2_17.Font = Enum.Font.Code
+TextButton2_17.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_17.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_17.MouseButton1Click:Connect(function()
+    print('TextButton2_17 clicked')
+end)
+
+local TextButton = Instance.new('TextButton')
+TextButton.Parent = Music_frm
+TextButton.Visible = true
+TextButton.Size = UDim2.new(0.8896195292472839,0,0.03298554569482803,0)
+TextButton.Position = UDim2.new(0.0032481492962688208,0,0.10271765291690826,0)
+TextButton.Rotation = 0
+TextButton.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton.BackgroundTransparency = 0
+TextButton.BorderSizePixel = 1
+TextButton.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton.Text = [[Theme 1 (BodyPartz)]]
+TextButton.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton.TextTransparency = 0
+TextButton.TextSize = 24
+TextButton.TextWrapped = false
+TextButton.TextScaled = false
+TextButton.Font = Enum.Font.Code
+TextButton.TextXAlignment = Enum.TextXAlignment.Center
+TextButton.TextYAlignment = Enum.TextYAlignment.Center
+TextButton.MouseButton1Click:Connect(function()
+    print('TextButton clicked')
+end)
+
+local TextButton2_18 = Instance.new('TextButton')
+TextButton2_18.Parent = Music_frm
+TextButton2_18.Visible = true
+TextButton2_18.Size = UDim2.new(0.5081543922424316,0,0.04506058245897293,0)
+TextButton2_18.Position = UDim2.new(0.059809360653162,0,0.5464654564857483,0)
+TextButton2_18.Rotation = 0
+TextButton2_18.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_18.BackgroundTransparency = 0
+TextButton2_18.BorderSizePixel = 1
+TextButton2_18.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_18.Text = [[NightCore]]
+TextButton2_18.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_18.TextTransparency = 0
+TextButton2_18.TextSize = 24
+TextButton2_18.TextWrapped = true
+TextButton2_18.TextScaled = true
+TextButton2_18.Font = Enum.Font.Code
+TextButton2_18.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_18.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_18.MouseButton1Click:Connect(function()
+    print('TextButton2_18 clicked')
+end)
+
+local TextButton2_19 = Instance.new('TextButton')
+TextButton2_19.Parent = Music_frm
+TextButton2_19.Visible = true
+TextButton2_19.Size = UDim2.new(0.41809338331222534,0,0.03902285173535347,0)
+TextButton2_19.Position = UDim2.new(0.013701927848160267,0,0.355282723903656,0)
+TextButton2_19.Rotation = 0
+TextButton2_19.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_19.BackgroundTransparency = 0
+TextButton2_19.BorderSizePixel = 1
+TextButton2_19.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_19.Text = [[JumpIzNot a Crims]]
+TextButton2_19.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_19.TextTransparency = 0
+TextButton2_19.TextSize = 24
+TextButton2_19.TextWrapped = true
+TextButton2_19.TextScaled = true
+TextButton2_19.Font = Enum.Font.Code
+TextButton2_19.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_19.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_19.MouseButton1Click:Connect(function()
+    print('TextButton2_19 clicked')
+end)
+
+local TextButton2_20 = Instance.new('TextButton')
+TextButton2_20.Parent = Music_frm
+TextButton2_20.Visible = true
+TextButton2_20.Size = UDim2.new(0.3459359109401703,0,0.07524764537811279,0)
+TextButton2_20.Position = UDim2.new(0.5739587545394897,0,0.4850858151912689,0)
+TextButton2_20.Rotation = 0
+TextButton2_20.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_20.BackgroundTransparency = 0
+TextButton2_20.BorderSizePixel = 1
+TextButton2_20.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_20.Text = [[YuGetNothing]]
+TextButton2_20.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_20.TextTransparency = 0
+TextButton2_20.TextSize = 24
+TextButton2_20.TextWrapped = true
+TextButton2_20.TextScaled = true
+TextButton2_20.Font = Enum.Font.Code
+TextButton2_20.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_20.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_20.MouseButton1Click:Connect(function()
+    print('TextButton2_20 clicked')
+end)
+
+local TextButton6 = Instance.new('TextButton')
+TextButton6.Parent = Music_frm
+TextButton6.Visible = true
+TextButton6.Size = UDim2.new(0.5058631300926208,0,0.0339917354285717,0)
+TextButton6.Position = UDim2.new(0.3968081474304199,0,0.1369287371635437,0)
+TextButton6.Rotation = 0
+TextButton6.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton6.BackgroundTransparency = 0
+TextButton6.BorderSizePixel = 1
+TextButton6.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton6.Text = [[Jumpstyle ]]
+TextButton6.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton6.TextTransparency = 0
+TextButton6.TextSize = 24
+TextButton6.TextWrapped = false
+TextButton6.TextScaled = false
+TextButton6.Font = Enum.Font.Code
+TextButton6.TextXAlignment = Enum.TextXAlignment.Center
+TextButton6.TextYAlignment = Enum.TextYAlignment.Center
+TextButton6.MouseButton1Click:Connect(function()
+    print('TextButton6 clicked')
+end)
+
+local TextButton15_2 = Instance.new('TextButton')
+TextButton15_2.Parent = Frame
+TextButton15_2.Visible = true
+TextButton15_2.Size = UDim2.new(0.13629789650440216,0,0.17767392098903656,0)
+TextButton15_2.Position = UDim2.new(0.7005324363708496,0,0.8108028769493103,0)
+TextButton15_2.Rotation = 0
+TextButton15_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton15_2.BackgroundTransparency = 0
+TextButton15_2.BorderSizePixel = 1
+TextButton15_2.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton15_2.Text = [[r6]]
+TextButton15_2.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton15_2.TextTransparency = 0
+TextButton15_2.TextSize = 8
+TextButton15_2.TextWrapped = true
+TextButton15_2.TextScaled = true
+TextButton15_2.Font = Enum.Font.Code
+TextButton15_2.TextXAlignment = Enum.TextXAlignment.Center
+TextButton15_2.TextYAlignment = Enum.TextYAlignment.Center
+TextButton15_2.MouseButton1Click:Connect(function()
+    print('TextButton15_2 clicked')
+end)
+
+local TextButton15_3 = Instance.new('TextButton')
+TextButton15_3.Parent = Frame
+TextButton15_3.Visible = true
+TextButton15_3.Size = UDim2.new(0.13629789650440216,0,0.17767392098903656,0)
+TextButton15_3.Position = UDim2.new(0.5557122230529785,0,0.803769588470459,0)
+TextButton15_3.Rotation = 0
+TextButton15_3.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton15_3.BackgroundTransparency = 0
+TextButton15_3.BorderSizePixel = 1
+TextButton15_3.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton15_3.Text = [[r15]]
+TextButton15_3.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton15_3.TextTransparency = 0
+TextButton15_3.TextSize = 8
+TextButton15_3.TextWrapped = true
+TextButton15_3.TextScaled = true
+TextButton15_3.Font = Enum.Font.Code
+TextButton15_3.TextXAlignment = Enum.TextXAlignment.Center
+TextButton15_3.TextYAlignment = Enum.TextYAlignment.Center
+TextButton15_3.MouseButton1Click:Connect(function()
+    print('TextButton15_3 clicked')
+end)
+
+local TextLabel2 = Instance.new('TextLabel')
+TextLabel2.Parent = Frame
+TextLabel2.Visible = true
+TextLabel2.Size = UDim2.new(0.5228694081306458,0,0.15921807289123535,0)
+TextLabel2.Position = UDim2.new(0.03160587698221207,0,0.8148539066314697,0)
+TextLabel2.Rotation = 0
+TextLabel2.BackgroundColor3 = Color3.fromRGB(162,162,162)
+TextLabel2.BackgroundTransparency = 1
+TextLabel2.BorderSizePixel = 1
+TextLabel2.BorderColor3 = Color3.fromRGB(27,42,53)
+TextLabel2.Text = [[hehehe Meen Thiss Gui Maseee byy : thechoosenone4kz on tiktok hehhe Enjoy Your Skidding]]
+TextLabel2.TextColor3 = Color3.fromRGB(255,255,255)
+TextLabel2.TextTransparency = 0
+TextLabel2.TextSize = 28
+TextLabel2.TextWrapped = true
+TextLabel2.TextScaled = true
+TextLabel2.Font = Enum.Font.Arcade
+TextLabel2.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel2.TextYAlignment = Enum.TextYAlignment.Center
+
+local ImageLabel2 = Instance.new('ImageLabel')
+ImageLabel2.Parent = TextLabel2
+ImageLabel2.Visible = true
+ImageLabel2.Size = UDim2.new(0.4174393117427826,0,1.3124481439590454,0)
+ImageLabel2.Position = UDim2.new(0.8181735277175903,0,1.264331579208374,0)
+ImageLabel2.Rotation = 0
+ImageLabel2.BackgroundColor3 = Color3.fromRGB(162,162,162)
+ImageLabel2.BackgroundTransparency = 0
+ImageLabel2.BorderSizePixel = 1
+ImageLabel2.BorderColor3 = Color3.fromRGB(27,42,53)
+ImageLabel2.Image = [[rbxthumb://type=Asset&id=106228398533086&w=420&h=420]]
+ImageLabel2.ImageTransparency = 0
+ImageLabel2.ImageRectOffset = Vector2.new(0,0)
+ImageLabel2.ImageRectSize = Vector2.new(0,0)
+
+local ImageLabel4 = Instance.new('ImageLabel')
+ImageLabel4.Parent = TextLabel2
+ImageLabel4.Visible = true
+ImageLabel4.Size = UDim2.new(0.3320072591304779,0,1.2606308460235596,0)
+ImageLabel4.Position = UDim2.new(1.2530021667480469,0,1.279879093170166,0)
+ImageLabel4.Rotation = 0
+ImageLabel4.BackgroundColor3 = Color3.fromRGB(162,162,162)
+ImageLabel4.BackgroundTransparency = 1
+ImageLabel4.BorderSizePixel = 1
+ImageLabel4.BorderColor3 = Color3.fromRGB(27,42,53)
+ImageLabel4.Image = [[rbxthumb://type=Asset&id=103090501277573&w=420&h=420]]
+ImageLabel4.ImageTransparency = 0
+ImageLabel4.ImageRectOffset = Vector2.new(0,0)
+ImageLabel4.ImageRectSize = Vector2.new(0,0)
+
+local ImageLabel3 = Instance.new('ImageLabel')
+ImageLabel3.Parent = TextLabel2
+ImageLabel3.Visible = true
+ImageLabel3.Size = UDim2.new(0.8555516600608826,0,1.3435360193252563,0)
+ImageLabel3.Position = UDim2.new(-0.05558241903781891,0,1.2526108026504517,0)
+ImageLabel3.Rotation = 0
+ImageLabel3.BackgroundColor3 = Color3.fromRGB(162,162,162)
+ImageLabel3.BackgroundTransparency = 0
+ImageLabel3.BorderSizePixel = 1
+ImageLabel3.BorderColor3 = Color3.fromRGB(27,42,53)
+ImageLabel3.Image = [[rbxthumb://type=Asset&id=96852595721988&w=420&h=420]]
+ImageLabel3.ImageTransparency = 0
+ImageLabel3.ImageRectOffset = Vector2.new(0,0)
+ImageLabel3.ImageRectSize = Vector2.new(0,0)
+
+local ImageLabel_1 = Instance.new('ImageLabel')
+ImageLabel_1.Parent = TextLabel2
+ImageLabel_1.Visible = true
+ImageLabel_1.Size = UDim2.new(0.29695820808410645,0,1.2399035692214966,0)
+ImageLabel_1.Position = UDim2.new(1.5552994012832642,0,1.2902495861053467,0)
+ImageLabel_1.Rotation = 0
+ImageLabel_1.BackgroundColor3 = Color3.fromRGB(162,162,162)
+ImageLabel_1.BackgroundTransparency = 1
+ImageLabel_1.BorderSizePixel = 1
+ImageLabel_1.BorderColor3 = Color3.fromRGB(27,42,53)
+ImageLabel_1.Image = [[rbxthumb://type=Asset&id=107718665619260&w=420&h=420]]
+ImageLabel_1.ImageTransparency = 0
+ImageLabel_1.ImageRectOffset = Vector2.new(0,0)
+ImageLabel_1.ImageRectSize = Vector2.new(0,0)
+
+local Script_Frm = Instance.new('ScrollingFrame')
+Script_Frm.Parent = Frame
+Script_Frm.Visible = true
+Script_Frm.Size = UDim2.new(0.5138556361198425,0,0.6621280908584595,0)
+Script_Frm.Position = UDim2.new(0.01688711903989315,0,0.12889151275157928,0)
+Script_Frm.Rotation = 0
+Script_Frm.BackgroundColor3 = Color3.fromRGB(162,162,162)
+Script_Frm.BackgroundTransparency = 1
+Script_Frm.BorderSizePixel = 1
+Script_Frm.BorderColor3 = Color3.fromRGB(255,255,255)
+local Script_Frm_UIStroke = Instance.new('UIStroke')
+Script_Frm_UIStroke.Parent = Script_Frm
+Script_Frm_UIStroke.Color = Color3.fromRGB(255,255,255)
+Script_Frm_UIStroke.Transparency = 0
+Script_Frm_UIStroke.Thickness = 2
+Script_Frm_UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+Script_Frm_UIStroke.LineJoinMode = Enum.LineJoinMode.Round
+Script_Frm_UIStroke.Enabled = true
+
+local TextButton15_4 = Instance.new('TextButton')
+TextButton15_4.Parent = Script_Frm
+TextButton15_4.Visible = true
+TextButton15_4.Size = UDim2.new(0.26326337456703186,0,0.039315976202487946,0)
+TextButton15_4.Position = UDim2.new(0.21449284255504608,0,0.20577681064605713,0)
+TextButton15_4.Rotation = 0
+TextButton15_4.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton15_4.BackgroundTransparency = 0
+TextButton15_4.BorderSizePixel = 1
+TextButton15_4.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton15_4.Text = [[Nofog]]
+TextButton15_4.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton15_4.TextTransparency = 0
+TextButton15_4.TextSize = 8
+TextButton15_4.TextWrapped = true
+TextButton15_4.TextScaled = true
+TextButton15_4.Font = Enum.Font.Code
+TextButton15_4.TextXAlignment = Enum.TextXAlignment.Center
+TextButton15_4.TextYAlignment = Enum.TextYAlignment.Center
+TextButton15_4.MouseButton1Click:Connect(function()
+    print('TextButton15_4 clicked')
+end)
+
+local TextButton16 = Instance.new('TextButton')
+TextButton16.Parent = Script_Frm
+TextButton16.Visible = true
+TextButton16.Size = UDim2.new(0.5077605247497559,0,0.031686678528785706,0)
+TextButton16.Position = UDim2.new(0.013237442821264267,0,0.640074610710144,0)
+TextButton16.Rotation = 0
+TextButton16.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16.BackgroundTransparency = 0
+TextButton16.BorderSizePixel = 1
+TextButton16.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16.Text = [[Fencing Map]]
+TextButton16.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16.TextTransparency = 0
+TextButton16.TextSize = 8
+TextButton16.TextWrapped = true
+TextButton16.TextScaled = true
+TextButton16.Font = Enum.Font.Code
+TextButton16.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16.MouseButton1Click:Connect(function()
+    print('TextButton16 clicked')
+end)
+
+local TextButton7 = Instance.new('TextButton')
+TextButton7.Parent = Script_Frm
+TextButton7.Visible = true
+TextButton7.Size = UDim2.new(0.322074294090271,0,0.042120229452848434,0)
+TextButton7.Position = UDim2.new(0.023875918239355087,0,0.10449447482824326,0)
+TextButton7.Rotation = 0
+TextButton7.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton7.BackgroundTransparency = 0
+TextButton7.BorderSizePixel = 1
+TextButton7.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton7.Text = [[Disco Fog]]
+TextButton7.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton7.TextTransparency = 0
+TextButton7.TextSize = 8
+TextButton7.TextWrapped = true
+TextButton7.TextScaled = true
+TextButton7.Font = Enum.Font.Code
+TextButton7.TextXAlignment = Enum.TextXAlignment.Center
+TextButton7.TextYAlignment = Enum.TextYAlignment.Center
+TextButton7.MouseButton1Click:Connect(function()
+    print('TextButton7 clicked')
+end)
+
+local TextButton2_21 = Instance.new('TextButton')
+TextButton2_21.Parent = Script_Frm
+TextButton2_21.Visible = true
+TextButton2_21.Size = UDim2.new(0.3124329447746277,0,0.04866359382867813,0)
+TextButton2_21.Position = UDim2.new(0.28531762957572937,0,0.004890048410743475,0)
+TextButton2_21.Rotation = 0
+TextButton2_21.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton2_21.BackgroundTransparency = 0
+TextButton2_21.BorderSizePixel = 1
+TextButton2_21.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton2_21.Text = [[Decal2]]
+TextButton2_21.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton2_21.TextTransparency = 0
+TextButton2_21.TextSize = 8
+TextButton2_21.TextWrapped = true
+TextButton2_21.TextScaled = true
+TextButton2_21.Font = Enum.Font.Code
+TextButton2_21.TextXAlignment = Enum.TextXAlignment.Center
+TextButton2_21.TextYAlignment = Enum.TextYAlignment.Center
+TextButton2_21.MouseButton1Click:Connect(function()
+    print('TextButton2_21 clicked')
+end)
+
+local TextButton16_1 = Instance.new('TextButton')
+TextButton16_1.Parent = Script_Frm
+TextButton16_1.Visible = true
+TextButton16_1.Size = UDim2.new(0.3249666094779968,0,0.041185412555933,0)
+TextButton16_1.Position = UDim2.new(0.22004395723342896,0,0.24923761188983917,0)
+TextButton16_1.Rotation = 0
+TextButton16_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_1.BackgroundTransparency = 0
+TextButton16_1.BorderSizePixel = 1
+TextButton16_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_1.Text = [[Explode Others]]
+TextButton16_1.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_1.TextTransparency = 0
+TextButton16_1.TextSize = 8
+TextButton16_1.TextWrapped = true
+TextButton16_1.TextScaled = true
+TextButton16_1.Font = Enum.Font.Code
+TextButton16_1.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_1.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_1.MouseButton1Click:Connect(function()
+    print('TextButton16_1 clicked')
+end)
+
+local TextButton16_2 = Instance.new('TextButton')
+TextButton16_2.Parent = Script_Frm
+TextButton16_2.Visible = true
+TextButton16_2.Size = UDim2.new(0.659952700138092,0,0.022228151559829712,0)
+TextButton16_2.Position = UDim2.new(0.048359405249357224,0,0.6116994619369507,0)
+TextButton16_2.Rotation = 0
+TextButton16_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_2.BackgroundTransparency = 0
+TextButton16_2.BorderSizePixel = 1
+TextButton16_2.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_2.Text = [[John Doe]]
+TextButton16_2.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_2.TextTransparency = 0
+TextButton16_2.TextSize = 8
+TextButton16_2.TextWrapped = true
+TextButton16_2.TextScaled = true
+TextButton16_2.Font = Enum.Font.Code
+TextButton16_2.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_2.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_2.MouseButton1Click:Connect(function()
+    print('TextButton16_2 clicked')
+end)
+
+local TextButton16_3 = Instance.new('TextButton')
+TextButton16_3.Parent = Script_Frm
+TextButton16_3.Visible = true
+TextButton16_3.Size = UDim2.new(0.8280404806137085,0,0.0327727273106575,0)
+TextButton16_3.Position = UDim2.new(0.0695926621556282,0,0.3763628304004669,0)
+TextButton16_3.Rotation = 0
+TextButton16_3.BackgroundColor3 = Color3.fromRGB(187,0,0)
+TextButton16_3.BackgroundTransparency = 0
+TextButton16_3.BorderSizePixel = 1
+TextButton16_3.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_3.Text = [[H4Rkz Realm Ver1]]
+TextButton16_3.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_3.TextTransparency = 0
+TextButton16_3.TextSize = 8
+TextButton16_3.TextWrapped = true
+TextButton16_3.TextScaled = true
+TextButton16_3.Font = Enum.Font.Code
+TextButton16_3.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_3.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_3.MouseButton1Click:Connect(function()
+    print('TextButton16_3 clicked')
+end)
+
+local TextButton16_4 = Instance.new('TextButton')
+TextButton16_4.Parent = Script_Frm
+TextButton16_4.Visible = true
+TextButton16_4.Size = UDim2.new(0.2062978446483612,0,0.06242642551660538,0)
+TextButton16_4.Position = UDim2.new(0.7303003668785095,0,0.5715016722679138,0)
+TextButton16_4.Rotation = 0
+TextButton16_4.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_4.BackgroundTransparency = 0
+TextButton16_4.BorderSizePixel = 1
+TextButton16_4.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_4.Text = [[Fire all]]
+TextButton16_4.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_4.TextTransparency = 0
+TextButton16_4.TextSize = 8
+TextButton16_4.TextWrapped = true
+TextButton16_4.TextScaled = true
+TextButton16_4.Font = Enum.Font.Code
+TextButton16_4.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_4.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_4.MouseButton1Click:Connect(function()
+    print('TextButton16_4 clicked')
+end)
+
+local TextButton16_5 = Instance.new('TextButton')
+TextButton16_5.Parent = Script_Frm
+TextButton16_5.Visible = true
+TextButton16_5.Size = UDim2.new(0.5077605247497559,0,0.031686678528785706,0)
+TextButton16_5.Position = UDim2.new(0.010277388617396355,0,0.677908182144165,0)
+TextButton16_5.Rotation = 0
+TextButton16_5.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_5.BackgroundTransparency = 0
+TextButton16_5.BorderSizePixel = 1
+TextButton16_5.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_5.Text = [[Naz* map]]
+TextButton16_5.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_5.TextTransparency = 0
+TextButton16_5.TextSize = 8
+TextButton16_5.TextWrapped = true
+TextButton16_5.TextScaled = true
+TextButton16_5.Font = Enum.Font.Code
+TextButton16_5.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_5.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_5.MouseButton1Click:Connect(function()
+    print('TextButton16_5 clicked')
+end)
+
+local TextButton6_1 = Instance.new('TextButton')
+TextButton6_1.Parent = Script_Frm
+TextButton6_1.Visible = true
+TextButton6_1.Size = UDim2.new(0.322074294090271,0,0.042120229452848434,0)
+TextButton6_1.Position = UDim2.new(0.5965575575828552,0,0.055887386202812195,0)
+TextButton6_1.Rotation = 0
+TextButton6_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton6_1.BackgroundTransparency = 0
+TextButton6_1.BorderSizePixel = 1
+TextButton6_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton6_1.Text = [[Sky2]]
+TextButton6_1.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton6_1.TextTransparency = 0
+TextButton6_1.TextSize = 8
+TextButton6_1.TextWrapped = true
+TextButton6_1.TextScaled = true
+TextButton6_1.Font = Enum.Font.Code
+TextButton6_1.TextXAlignment = Enum.TextXAlignment.Center
+TextButton6_1.TextYAlignment = Enum.TextYAlignment.Center
+TextButton6_1.MouseButton1Click:Connect(function()
+    print('TextButton6_1 clicked')
+end)
+
+local TextButton5_1 = Instance.new('TextButton')
+TextButton5_1.Parent = Script_Frm
+TextButton5_1.Visible = true
+TextButton5_1.Size = UDim2.new(0.322074294090271,0,0.042120229452848434,0)
+TextButton5_1.Position = UDim2.new(0.26875877380371094,0,0.055887363851070404,0)
+TextButton5_1.Rotation = 0
+TextButton5_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton5_1.BackgroundTransparency = 0
+TextButton5_1.BorderSizePixel = 1
+TextButton5_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton5_1.Text = [[Sky2]]
+TextButton5_1.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton5_1.TextTransparency = 0
+TextButton5_1.TextSize = 8
+TextButton5_1.TextWrapped = true
+TextButton5_1.TextScaled = true
+TextButton5_1.Font = Enum.Font.Code
+TextButton5_1.TextXAlignment = Enum.TextXAlignment.Center
+TextButton5_1.TextYAlignment = Enum.TextYAlignment.Center
+TextButton5_1.MouseButton1Click:Connect(function()
+    print('TextButton5_1 clicked')
+end)
+
+local TextButton16_6 = Instance.new('TextButton')
+TextButton16_6.Parent = Script_Frm
+TextButton16_6.Visible = true
+TextButton16_6.Size = UDim2.new(0.40411001443862915,0,0.051785871386528015,0)
+TextButton16_6.Position = UDim2.new(0.534458577632904,0,0.6944602131843567,0)
+TextButton16_6.Rotation = 0
+TextButton16_6.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_6.BackgroundTransparency = 0
+TextButton16_6.BorderSizePixel = 1
+TextButton16_6.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_6.Text = [[Mosque Map]]
+TextButton16_6.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_6.TextTransparency = 0
+TextButton16_6.TextSize = 8
+TextButton16_6.TextWrapped = true
+TextButton16_6.TextScaled = true
+TextButton16_6.Font = Enum.Font.Code
+TextButton16_6.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_6.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_6.MouseButton1Click:Connect(function()
+    print('TextButton16_6 clicked')
+end)
+
+local TextButton16_7 = Instance.new('TextButton')
+TextButton16_7.Parent = Script_Frm
+TextButton16_7.Visible = true
+TextButton16_7.Size = UDim2.new(0.3175155818462372,0,0.03464217111468315,0)
+TextButton16_7.Position = UDim2.new(0.34207943081855774,0,0.33149486780166626,0)
+TextButton16_7.Rotation = 0
+TextButton16_7.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_7.BackgroundTransparency = 0
+TextButton16_7.BorderSizePixel = 1
+TextButton16_7.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_7.Text = [[Rotate Sky]]
+TextButton16_7.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_7.TextTransparency = 0
+TextButton16_7.TextSize = 8
+TextButton16_7.TextWrapped = true
+TextButton16_7.TextScaled = true
+TextButton16_7.Font = Enum.Font.Code
+TextButton16_7.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_7.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_7.MouseButton1Click:Connect(function()
+    print('TextButton16_7 clicked')
+end)
+
+local TextButton9 = Instance.new('TextButton')
+TextButton9.Parent = Script_Frm
+TextButton9.Visible = true
+TextButton9.Size = UDim2.new(0.2468734085559845,0,0.04772873595356941,0)
+TextButton9.Position = UDim2.new(0.7151476740837097,0,0.10542918741703033,0)
+TextButton9.Rotation = 0
+TextButton9.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton9.BackgroundTransparency = 0
+TextButton9.BorderSizePixel = 1
+TextButton9.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton9.Text = [[Bring]]
+TextButton9.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton9.TextTransparency = 0
+TextButton9.TextSize = 8
+TextButton9.TextWrapped = true
+TextButton9.TextScaled = true
+TextButton9.Font = Enum.Font.Code
+TextButton9.TextXAlignment = Enum.TextXAlignment.Center
+TextButton9.TextYAlignment = Enum.TextYAlignment.Center
+TextButton9.MouseButton1Click:Connect(function()
+    print('TextButton9 clicked')
+end)
+
+local TextButton8 = Instance.new('TextButton')
+TextButton8.Parent = Script_Frm
+TextButton8.Visible = true
+TextButton8.Size = UDim2.new(0.322074294090271,0,0.042120229452848434,0)
+TextButton8.Position = UDim2.new(0.3748127222061157,0,0.1044943705201149,0)
+TextButton8.Rotation = 0
+TextButton8.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton8.BackgroundTransparency = 0
+TextButton8.BorderSizePixel = 1
+TextButton8.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton8.Text = [[Title]]
+TextButton8.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton8.TextTransparency = 0
+TextButton8.TextSize = 8
+TextButton8.TextWrapped = true
+TextButton8.TextScaled = true
+TextButton8.Font = Enum.Font.Code
+TextButton8.TextXAlignment = Enum.TextXAlignment.Center
+TextButton8.TextYAlignment = Enum.TextYAlignment.Center
+TextButton8.MouseButton1Click:Connect(function()
+    print('TextButton8 clicked')
+end)
+
+local TextButton17 = Instance.new('TextButton')
+TextButton17.Parent = Script_Frm
+TextButton17.Visible = true
+TextButton17.Size = UDim2.new(0.2671199440956116,0,0.034642163664102554,0)
+TextButton17.Position = UDim2.new(0.4952775537967682,0,0.208107128739357,0)
+TextButton17.Rotation = 0
+TextButton17.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton17.BackgroundTransparency = 0
+TextButton17.BorderSizePixel = 1
+TextButton17.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton17.Text = [[Char all]]
+TextButton17.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton17.TextTransparency = 0
+TextButton17.TextSize = 8
+TextButton17.TextWrapped = true
+TextButton17.TextScaled = true
+TextButton17.Font = Enum.Font.Code
+TextButton17.TextXAlignment = Enum.TextXAlignment.Center
+TextButton17.TextYAlignment = Enum.TextYAlignment.Center
+TextButton17.MouseButton1Click:Connect(function()
+    print('TextButton17 clicked')
+end)
+
+local TextButton16_8 = Instance.new('TextButton')
+TextButton16_8.Parent = Script_Frm
+TextButton16_8.Visible = true
+TextButton16_8.Size = UDim2.new(0.2746642231941223,0,0.03464217111468315,0)
+TextButton16_8.Position = UDim2.new(0.6718538403511047,0,0.33102738857269287,0)
+TextButton16_8.Rotation = 0
+TextButton16_8.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_8.BackgroundTransparency = 0
+TextButton16_8.BorderSizePixel = 1
+TextButton16_8.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_8.Text = [[Please All]]
+TextButton16_8.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_8.TextTransparency = 0
+TextButton16_8.TextSize = 8
+TextButton16_8.TextWrapped = true
+TextButton16_8.TextScaled = true
+TextButton16_8.Font = Enum.Font.Code
+TextButton16_8.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_8.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_8.MouseButton1Click:Connect(function()
+    print('TextButton16_8 clicked')
+end)
+
+local TextButton16_9 = Instance.new('TextButton')
+TextButton16_9.Parent = Script_Frm
+TextButton16_9.Visible = true
+TextButton16_9.Size = UDim2.new(0.29329463839530945,0,0.039315901696681976,0)
+TextButton16_9.Position = UDim2.new(0.03187040239572525,0,0.3333640992641449,0)
+TextButton16_9.Rotation = 0
+TextButton16_9.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_9.BackgroundTransparency = 0
+TextButton16_9.BorderSizePixel = 1
+TextButton16_9.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_9.Text = [[Message 2]]
+TextButton16_9.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_9.TextTransparency = 0
+TextButton16_9.TextSize = 8
+TextButton16_9.TextWrapped = true
+TextButton16_9.TextScaled = true
+TextButton16_9.Font = Enum.Font.Code
+TextButton16_9.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_9.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_9.MouseButton1Click:Connect(function()
+    print('TextButton16_9 clicked')
+end)
+
+local TextButton16_10 = Instance.new('TextButton')
+TextButton16_10.Parent = Script_Frm
+TextButton16_10.Visible = true
+TextButton16_10.Size = UDim2.new(0.3175155818462372,0,0.03464217111468315,0)
+TextButton16_10.Position = UDim2.new(0.0406201146543026,0,0.5726845860481262,0)
+TextButton16_10.Rotation = 0
+TextButton16_10.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_10.BackgroundTransparency = 0
+TextButton16_10.BorderSizePixel = 1
+TextButton16_10.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_10.Text = [[Shake Baseplate ]]
+TextButton16_10.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_10.TextTransparency = 0
+TextButton16_10.TextSize = 8
+TextButton16_10.TextWrapped = true
+TextButton16_10.TextScaled = true
+TextButton16_10.Font = Enum.Font.Code
+TextButton16_10.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_10.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_10.MouseButton1Click:Connect(function()
+    print('TextButton16_10 clicked')
+end)
+
+local TextButton16_11 = Instance.new('TextButton')
+TextButton16_11.Parent = Script_Frm
+TextButton16_11.Visible = true
+TextButton16_11.Size = UDim2.new(0.29329463839530945,0,0.039315901696681976,0)
+TextButton16_11.Position = UDim2.new(0.6429726481437683,0,0.2922349274158478,0)
+TextButton16_11.Rotation = 0
+TextButton16_11.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_11.BackgroundTransparency = 0
+TextButton16_11.BorderSizePixel = 1
+TextButton16_11.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_11.Text = [[Message 1]]
+TextButton16_11.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_11.TextTransparency = 0
+TextButton16_11.TextSize = 8
+TextButton16_11.TextWrapped = true
+TextButton16_11.TextScaled = true
+TextButton16_11.Font = Enum.Font.Code
+TextButton16_11.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_11.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_11.MouseButton1Click:Connect(function()
+    print('TextButton16_11 clicked')
+end)
+
+local TextButton16_12 = Instance.new('TextButton')
+TextButton16_12.Parent = Script_Frm
+TextButton16_12.Visible = true
+TextButton16_12.Size = UDim2.new(0.3249666094779968,0,0.041185412555933,0)
+TextButton16_12.Position = UDim2.new(0.5507447719573975,0,0.24830229580402374,0)
+TextButton16_12.Rotation = 0
+TextButton16_12.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_12.BackgroundTransparency = 0
+TextButton16_12.BorderSizePixel = 1
+TextButton16_12.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_12.Text = [[Team All]]
+TextButton16_12.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_12.TextTransparency = 0
+TextButton16_12.TextSize = 8
+TextButton16_12.TextWrapped = true
+TextButton16_12.TextScaled = true
+TextButton16_12.Font = Enum.Font.Code
+TextButton16_12.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_12.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_12.MouseButton1Click:Connect(function()
+    print('TextButton16_12 clicked')
+end)
+
+local TextButton3_1 = Instance.new('TextButton')
+TextButton3_1.Parent = Script_Frm
+TextButton3_1.Visible = true
+TextButton3_1.Size = UDim2.new(0.3124329447746277,0,0.04866359382867813,0)
+TextButton3_1.Position = UDim2.new(0.6399434208869934,0,0.0035415301099419594,0)
+TextButton3_1.Rotation = 0
+TextButton3_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton3_1.BackgroundTransparency = 0
+TextButton3_1.BorderSizePixel = 1
+TextButton3_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton3_1.Text = [[Decal3]]
+TextButton3_1.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton3_1.TextTransparency = 0
+TextButton3_1.TextSize = 8
+TextButton3_1.TextWrapped = true
+TextButton3_1.TextScaled = true
+TextButton3_1.Font = Enum.Font.Code
+TextButton3_1.TextXAlignment = Enum.TextXAlignment.Center
+TextButton3_1.TextYAlignment = Enum.TextYAlignment.Center
+TextButton3_1.MouseButton1Click:Connect(function()
+    print('TextButton3_1 clicked')
+end)
+
+local TextButton16_13 = Instance.new('TextButton')
+TextButton16_13.Parent = Script_Frm
+TextButton16_13.Visible = true
+TextButton16_13.Size = UDim2.new(0.4514940679073334,0,0.06360897421836853,0)
+TextButton16_13.Position = UDim2.new(0.02804875746369362,0,0.715741753578186,0)
+TextButton16_13.Rotation = 0
+TextButton16_13.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_13.BackgroundTransparency = 0
+TextButton16_13.BorderSizePixel = 1
+TextButton16_13.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_13.Text = [[Sparkle All]]
+TextButton16_13.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_13.TextTransparency = 0
+TextButton16_13.TextSize = 8
+TextButton16_13.TextWrapped = true
+TextButton16_13.TextScaled = true
+TextButton16_13.Font = Enum.Font.Code
+TextButton16_13.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_13.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_13.MouseButton1Click:Connect(function()
+    print('TextButton16_13 clicked')
+end)
+
+local TextButton12 = Instance.new('TextButton')
+TextButton12.Parent = Script_Frm
+TextButton12.Visible = true
+TextButton12.Size = UDim2.new(0.2468734085559845,0,0.04772873595356941,0)
+TextButton12.Position = UDim2.new(0.5435359477996826,0,0.15684011578559875,0)
+TextButton12.Rotation = 0
+TextButton12.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton12.BackgroundTransparency = 0
+TextButton12.BorderSizePixel = 1
+TextButton12.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton12.Text = [[Night]]
+TextButton12.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton12.TextTransparency = 0
+TextButton12.TextSize = 8
+TextButton12.TextWrapped = true
+TextButton12.TextScaled = true
+TextButton12.Font = Enum.Font.Code
+TextButton12.TextXAlignment = Enum.TextXAlignment.Center
+TextButton12.TextYAlignment = Enum.TextYAlignment.Center
+TextButton12.MouseButton1Click:Connect(function()
+    print('TextButton12 clicked')
+end)
+
+local TextButton16_14 = Instance.new('TextButton')
+TextButton16_14.Parent = Script_Frm
+TextButton16_14.Visible = true
+TextButton16_14.Size = UDim2.new(0.3614218533039093,0,0.045874420553445816,0)
+TextButton16_14.Position = UDim2.new(0.5751785039901733,0,0.6424393653869629,0)
+TextButton16_14.Rotation = 0
+TextButton16_14.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_14.BackgroundTransparency = 0
+TextButton16_14.BorderSizePixel = 1
+TextButton16_14.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_14.Text = [[Nds Map]]
+TextButton16_14.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_14.TextTransparency = 0
+TextButton16_14.TextSize = 8
+TextButton16_14.TextWrapped = true
+TextButton16_14.TextScaled = true
+TextButton16_14.Font = Enum.Font.Code
+TextButton16_14.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_14.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_14.MouseButton1Click:Connect(function()
+    print('TextButton16_14 clicked')
+end)
+
+local TextButton_1 = Instance.new('TextButton')
+TextButton_1.Parent = Script_Frm
+TextButton_1.Visible = true
+TextButton_1.Size = UDim2.new(0.24108870327472687,0,0.04679398983716965,0)
+TextButton_1.Position = UDim2.new(0.017446093261241913,0,0.005770450923591852,0)
+TextButton_1.Rotation = 0
+TextButton_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton_1.BackgroundTransparency = 0
+TextButton_1.BorderSizePixel = 1
+TextButton_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton_1.Text = [[Decal1]]
+TextButton_1.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton_1.TextTransparency = 0
+TextButton_1.TextSize = 8
+TextButton_1.TextWrapped = true
+TextButton_1.TextScaled = true
+TextButton_1.Font = Enum.Font.Code
+TextButton_1.TextXAlignment = Enum.TextXAlignment.Center
+TextButton_1.TextYAlignment = Enum.TextYAlignment.Center
+TextButton_1.MouseButton1Click:Connect(function()
+    print('TextButton_1 clicked')
+end)
+
+local TextButton16_15 = Instance.new('TextButton')
+TextButton16_15.Parent = Script_Frm
+TextButton16_15.Visible = true
+TextButton16_15.Size = UDim2.new(0.27279970049858093,0,0.03651164472103119,0)
+TextButton16_15.Position = UDim2.new(0.02627696469426155,0,0.29223525524139404,0)
+TextButton16_15.Rotation = 0
+TextButton16_15.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_15.BackgroundTransparency = 0
+TextButton16_15.BorderSizePixel = 1
+TextButton16_15.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_15.Text = [[Hint 1]]
+TextButton16_15.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_15.TextTransparency = 0
+TextButton16_15.TextSize = 8
+TextButton16_15.TextWrapped = true
+TextButton16_15.TextScaled = true
+TextButton16_15.Font = Enum.Font.Code
+TextButton16_15.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_15.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_15.MouseButton1Click:Connect(function()
+    print('TextButton16_15 clicked')
+end)
+
+local TextButton16_16 = Instance.new('TextButton')
+TextButton16_16.Parent = Script_Frm
+TextButton16_16.Visible = true
+TextButton16_16.Size = UDim2.new(0.3193780481815338,0,0.03838116675615311,0)
+TextButton16_16.Position = UDim2.new(0.3104032874107361,0,0.2903653383255005,0)
+TextButton16_16.Rotation = 0
+TextButton16_16.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_16.BackgroundTransparency = 0
+TextButton16_16.BorderSizePixel = 1
+TextButton16_16.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_16.Text = [[Hint 2]]
+TextButton16_16.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_16.TextTransparency = 0
+TextButton16_16.TextSize = 8
+TextButton16_16.TextWrapped = true
+TextButton16_16.TextScaled = true
+TextButton16_16.Font = Enum.Font.Code
+TextButton16_16.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_16.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_16.MouseButton1Click:Connect(function()
+    print('TextButton16_16 clicked')
+end)
+
+local TextButton4_1 = Instance.new('TextButton')
+TextButton4_1.Parent = Script_Frm
+TextButton4_1.Visible = true
+TextButton4_1.Size = UDim2.new(0.24301695823669434,0,0.045859336853027344,0)
+TextButton4_1.Position = UDim2.new(0.01808975264430046,0,0.054952505975961685,0)
+TextButton4_1.Rotation = 0
+TextButton4_1.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton4_1.BackgroundTransparency = 0
+TextButton4_1.BorderSizePixel = 1
+TextButton4_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton4_1.Text = [[Sky1]]
+TextButton4_1.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton4_1.TextTransparency = 0
+TextButton4_1.TextSize = 8
+TextButton4_1.TextWrapped = true
+TextButton4_1.TextScaled = true
+TextButton4_1.Font = Enum.Font.Code
+TextButton4_1.TextXAlignment = Enum.TextXAlignment.Center
+TextButton4_1.TextYAlignment = Enum.TextYAlignment.Center
+TextButton4_1.MouseButton1Click:Connect(function()
+    print('TextButton4_1 clicked')
+end)
+
+local TextButton13 = Instance.new('TextButton')
+TextButton13.Parent = Script_Frm
+TextButton13.Visible = true
+TextButton13.Size = UDim2.new(0.17456497251987457,0,0.07951018959283829,0)
+TextButton13.Position = UDim2.new(0.7942072153091431,0,0.15777483582496643,0)
+TextButton13.Rotation = 0
+TextButton13.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton13.BackgroundTransparency = 0
+TextButton13.BorderSizePixel = 1
+TextButton13.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton13.Text = [[Particle]]
+TextButton13.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton13.TextTransparency = 0
+TextButton13.TextSize = 8
+TextButton13.TextWrapped = true
+TextButton13.TextScaled = true
+TextButton13.Font = Enum.Font.Code
+TextButton13.TextXAlignment = Enum.TextXAlignment.Center
+TextButton13.TextYAlignment = Enum.TextYAlignment.Center
+TextButton13.MouseButton1Click:Connect(function()
+    print('TextButton13 clicked')
+end)
+
+local TextButton11 = Instance.new('TextButton')
+TextButton11.Parent = Script_Frm
+TextButton11.Visible = true
+TextButton11.Size = UDim2.new(0.2468734085559845,0,0.04772873595356941,0)
+TextButton11.Position = UDim2.new(0.2851537764072418,0,0.15123167634010315,0)
+TextButton11.Rotation = 0
+TextButton11.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton11.BackgroundTransparency = 0
+TextButton11.BorderSizePixel = 1
+TextButton11.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton11.Text = [[Day]]
+TextButton11.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton11.TextTransparency = 0
+TextButton11.TextSize = 8
+TextButton11.TextWrapped = true
+TextButton11.TextScaled = true
+TextButton11.Font = Enum.Font.Code
+TextButton11.TextXAlignment = Enum.TextXAlignment.Center
+TextButton11.TextYAlignment = Enum.TextYAlignment.Center
+TextButton11.MouseButton1Click:Connect(function()
+    print('TextButton11 clicked')
+end)
+
+local TextButton16_17 = Instance.new('TextButton')
+TextButton16_17.Parent = Script_Frm
+TextButton16_17.Visible = true
+TextButton16_17.Size = UDim2.new(0.8280404806137085,0,0.0327727273106575,0)
+TextButton16_17.Position = UDim2.new(0.09215562790632248,0,0.5324626564979553,0)
+TextButton16_17.Rotation = 0
+TextButton16_17.BackgroundColor3 = Color3.fromRGB(187,0,0)
+TextButton16_17.BackgroundTransparency = 0
+TextButton16_17.BorderSizePixel = 1
+TextButton16_17.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_17.Text = [[White2spooky & h4rkz Realm]]
+TextButton16_17.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_17.TextTransparency = 0
+TextButton16_17.TextSize = 8
+TextButton16_17.TextWrapped = true
+TextButton16_17.TextScaled = true
+TextButton16_17.Font = Enum.Font.Code
+TextButton16_17.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_17.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_17.MouseButton1Click:Connect(function()
+    print('TextButton16_17 clicked')
+end)
+
+local TextButton10 = Instance.new('TextButton')
+TextButton10.Parent = Script_Frm
+TextButton10.Visible = true
+TextButton10.Size = UDim2.new(0.2468734085559845,0,0.04772873595356941,0)
+TextButton10.Position = UDim2.new(0.02484392188489437,0,0.15029695630073547,0)
+TextButton10.Rotation = 0
+TextButton10.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton10.BackgroundTransparency = 0
+TextButton10.BorderSizePixel = 1
+TextButton10.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton10.Text = [[Kill All]]
+TextButton10.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton10.TextTransparency = 0
+TextButton10.TextSize = 8
+TextButton10.TextWrapped = true
+TextButton10.TextScaled = true
+TextButton10.Font = Enum.Font.Code
+TextButton10.TextXAlignment = Enum.TextXAlignment.Center
+TextButton10.TextYAlignment = Enum.TextYAlignment.Center
+TextButton10.MouseButton1Click:Connect(function()
+    print('TextButton10 clicked')
+end)
+
+local TextButton14 = Instance.new('TextButton')
+TextButton14.Parent = Script_Frm
+TextButton14.Visible = true
+TextButton14.Size = UDim2.new(0.17456497251987457,0,0.07951018959283829,0)
+TextButton14.Position = UDim2.new(0.0287014227360487,0,0.20264168083667755,0)
+TextButton14.Rotation = 0
+TextButton14.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton14.BackgroundTransparency = 0
+TextButton14.BorderSizePixel = 1
+TextButton14.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton14.Text = [[Thomas]]
+TextButton14.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton14.TextTransparency = 0
+TextButton14.TextSize = 8
+TextButton14.TextWrapped = true
+TextButton14.TextScaled = true
+TextButton14.Font = Enum.Font.Code
+TextButton14.TextXAlignment = Enum.TextXAlignment.Center
+TextButton14.TextYAlignment = Enum.TextYAlignment.Center
+TextButton14.MouseButton1Click:Connect(function()
+    print('TextButton14 clicked')
+end)
+
+local TextButton16_18 = Instance.new('TextButton')
+TextButton16_18.Parent = Script_Frm
+TextButton16_18.Visible = true
+TextButton16_18.Size = UDim2.new(0.8280404806137085,0,0.0327727273106575,0)
+TextButton16_18.Position = UDim2.new(0.08087556809186935,0,0.45861998200416565,0)
+TextButton16_18.Rotation = 0
+TextButton16_18.BackgroundColor3 = Color3.fromRGB(187,0,0)
+TextButton16_18.BackgroundTransparency = 0
+TextButton16_18.BorderSizePixel = 1
+TextButton16_18.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_18.Text = [[H4Rkz Realm like k00pkidd ]]
+TextButton16_18.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_18.TextTransparency = 0
+TextButton16_18.TextSize = 8
+TextButton16_18.TextWrapped = true
+TextButton16_18.TextScaled = true
+TextButton16_18.Font = Enum.Font.Code
+TextButton16_18.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_18.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_18.MouseButton1Click:Connect(function()
+    print('TextButton16_18 clicked')
+end)
+
+local TextButton16_19 = Instance.new('TextButton')
+TextButton16_19.Parent = Script_Frm
+TextButton16_19.Visible = true
+TextButton16_19.Size = UDim2.new(0.8280404806137085,0,0.0327727273106575,0)
+TextButton16_19.Position = UDim2.new(0.08651493489742279,0,0.49413853883743286,0)
+TextButton16_19.Rotation = 0
+TextButton16_19.BackgroundColor3 = Color3.fromRGB(187,0,0)
+TextButton16_19.BackgroundTransparency = 0
+TextButton16_19.BorderSizePixel = 1
+TextButton16_19.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_19.Text = [[White2spooky Coffe Map]]
+TextButton16_19.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_19.TextTransparency = 0
+TextButton16_19.TextSize = 8
+TextButton16_19.TextWrapped = true
+TextButton16_19.TextScaled = true
+TextButton16_19.Font = Enum.Font.Code
+TextButton16_19.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_19.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_19.MouseButton1Click:Connect(function()
+    print('TextButton16_19 clicked')
+end)
+
+local UIStroke_2 = Instance.new('UIStroke')
+UIStroke_2.Parent = Script_Frm
+
+local TextButton16_20 = Instance.new('TextButton')
+TextButton16_20.Parent = Script_Frm
+TextButton16_20.Visible = true
+TextButton16_20.Size = UDim2.new(0.8280404806137085,0,0.0327727273106575,0)
+TextButton16_20.Position = UDim2.new(0.07711485028266907,0,0.41655659675598145,0)
+TextButton16_20.Rotation = 0
+TextButton16_20.BackgroundColor3 = Color3.fromRGB(187,0,0)
+TextButton16_20.BackgroundTransparency = 0
+TextButton16_20.BorderSizePixel = 1
+TextButton16_20.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_20.Text = [[H4Rkz Mosque Realm ]]
+TextButton16_20.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_20.TextTransparency = 0
+TextButton16_20.TextSize = 8
+TextButton16_20.TextWrapped = true
+TextButton16_20.TextScaled = true
+TextButton16_20.Font = Enum.Font.Code
+TextButton16_20.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_20.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_20.MouseButton1Click:Connect(function()
+    print('TextButton16_20 clicked')
+end)
+
+local TextButton16_21 = Instance.new('TextButton')
+TextButton16_21.Parent = Script_Frm
+TextButton16_21.Visible = true
+TextButton16_21.Size = UDim2.new(0.3175155818462372,0,0.03464217111468315,0)
+TextButton16_21.Position = UDim2.new(0.38012707233428955,0,0.5703198909759521,0)
+TextButton16_21.Rotation = 0
+TextButton16_21.BackgroundColor3 = Color3.fromRGB(255,255,255)
+TextButton16_21.BackgroundTransparency = 0
+TextButton16_21.BorderSizePixel = 1
+TextButton16_21.BorderColor3 = Color3.fromRGB(27,42,53)
+TextButton16_21.Text = [[Unchor all]]
+TextButton16_21.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton16_21.TextTransparency = 0
+TextButton16_21.TextSize = 8
+TextButton16_21.TextWrapped = true
+TextButton16_21.TextScaled = true
+TextButton16_21.Font = Enum.Font.Code
+TextButton16_21.TextXAlignment = Enum.TextXAlignment.Center
+TextButton16_21.TextYAlignment = Enum.TextYAlignment.Center
+TextButton16_21.MouseButton1Click:Connect(function()
+    print('TextButton16_21 clicked')
+end)
+
+local UIDragDetector = Instance.new('UIDragDetector')
+UIDragDetector.Parent = Frame
+
+local TextLabel_1 = Instance.new('TextLabel')
+TextLabel_1.Parent = Frame
+TextLabel_1.Visible = true
+TextLabel_1.Size = UDim2.new(1.0000004768371582,0,0.14078184962272644,0)
+TextLabel_1.Position = UDim2.new(0,0,0,0)
+TextLabel_1.Rotation = 0
+TextLabel_1.BackgroundColor3 = Color3.fromRGB(162,162,162)
+TextLabel_1.BackgroundTransparency = 1
+TextLabel_1.BorderSizePixel = 1
+TextLabel_1.BorderColor3 = Color3.fromRGB(27,42,53)
+TextLabel_1.Text = [[Wh1Te2Sp*oky gui]]
+TextLabel_1.TextColor3 = Color3.fromRGB(255,255,255)
+TextLabel_1.TextTransparency = 0
+TextLabel_1.TextSize = 36
+TextLabel_1.TextWrapped = true
+TextLabel_1.TextScaled = false
+TextLabel_1.Font = Enum.Font.Creepster
+TextLabel_1.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel_1.TextYAlignment = Enum.TextYAlignment.Center
+
