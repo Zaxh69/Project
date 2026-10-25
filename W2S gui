@@ -787,7 +787,7 @@ TextButton15_3.MouseButton1Click:Connect(function()
     local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
  
-RequestCommand:InvokeServer(";r15 me")
+RequestCommand:InvokeServer(";cmdbar2 me")
 end)
 
 local TextLabel2 = Instance.new('TextLabel')
