@@ -1,12 +1,3 @@
-
--- Map 2 F3X loader (converter by X9D)
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
-RequestCommand:InvokeServer(";btools me")
-task.wait(1.2)
-RequestCommand:InvokeServer(";punish all")
-task.wait(0.5)
-
 local player = game.Players.LocalPlayer
 local function getF3X()
     for _,v in ipairs(player.Backpack:GetChildren()) do if v:FindFirstChild("SyncAPI") then return v end end
@@ -16,7 +7,7 @@ local f3x = getF3X()
 if not f3x then warn("F3X not found - equip btools") return end
 local endpoint = f3x.SyncAPI.ServerEndpoint
 
--- === UNLOCK EVERYTHING FIRST ===
+-- === UNLOCK EVERYTHING FIRST === --
 do
     local all = {}
     for _, v in ipairs(workspace:GetDescendants()) do
@@ -704,7 +695,3 @@ if #missed > 0 then
         task.wait()
     end
 end
-RequestCommand:InvokeServer(";res all")
-task.wait(0.2)
-RequestCommand:InvokeServer(";re all")
-print("[Map 2 F3X] Loader finished.")
