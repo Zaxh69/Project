@@ -270,7 +270,7 @@ if P[24] then matT[#matT+1] = {Part=P[24], Material=Enum.Material.Plastic} end
 if P[267] then matT[#matT+1] = {Part=P[267], Material=Enum.Material.Plastic} end
 if P[11] then matT[#matT+1] = {Part=P[11], Material=Enum.Material.Plastic} end
 if P[157] then matT[#matT+1] = {Part=P[157], Material=Enum.Material.Plastic} end
-if P[74] then matT[#matT+1] = {Part=P[74], Material=Enum.Material.Studs} end
+if P[74] then matT[#matT+1] = {Part=P[74], Material=Enum.Material.Plastic} end
 if P[249] then matT[#matT+1] = {Part=P[249], Material=Enum.Material.Plastic} end
 if P[227] then matT[#matT+1] = {Part=P[227], Material=Enum.Material.Plastic} end
 if P[17] then matT[#matT+1] = {Part=P[17], Material=Enum.Material.Concrete} end
