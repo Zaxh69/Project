@@ -2894,29 +2894,6 @@ SetTexture(v,id)
 --end)
 MeshResize(v,Vector3.new(2000, 2000, 2000))
 SetLocked(v,true)
-local args = {
-[1] = "CreateLights",
-[2] = {
-[1] = {
-["Part"] = v,
-["LightType"] = "PointLight"
-}
-}
-}
-_(args)
-
-local args2 = {
-[1] = "SyncLighting",
-[2] = {
-[1] = {
-["Part"] = v,
-["LightType"] = "PointLight",
-["Brightness"] = 90,
-["Range"] = 60
-}
-}
-}
-_(args2)
 end
 end
 end
