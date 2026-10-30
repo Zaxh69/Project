@@ -1,11 +1,3 @@
--- Map 2 F3X loader (converter by X9D)
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
-RequestCommand:InvokeServer(";btools me")
-task.wait(1.2)
-RequestCommand:InvokeServer(";punish all")
-task.wait(0.5)
-
 local player = game.Players.LocalPlayer
 local function getF3X()
     for _,v in ipairs(player.Backpack:GetChildren()) do if v:FindFirstChild("SyncAPI") then return v end end
@@ -14,67 +6,6 @@ end
 local f3x = getF3X()
 if not f3x then warn("F3X not found - equip btools") return end
 local endpoint = f3x.SyncAPI.ServerEndpoint
-
--- === UNLOCK EVERYTHING FIRST ===
-do
-    local all = {}
-    for _, v in ipairs(workspace:GetDescendants()) do
-        if v:IsA("BasePart") or v:IsA("UnionOperation") or v:IsA("MeshPart") then
-            table.insert(all, v)
-        end
-    end
-    for i = 1, #all, 200 do
-        local chunk = {}
-        for j = i, math.min(i+199, #all) do chunk[#chunk+1] = all[j] end
-        pcall(function() endpoint:InvokeServer("SetLocked", chunk, false) end)
-        task.wait(0.05)
-    end
-    task.wait(0.3)
-end
-
--- === REMOVE UNTIL WORKSPACE IS CLEAN ===
-local lastCount = -1
-for pass = 1, 15 do
-    local toDelete = {}
-    for _, v in ipairs(workspace:GetDescendants()) do
-        if v:IsA("BasePart") or v:IsA("UnionOperation") or v:IsA("MeshPart") then
-            table.insert(toDelete, v)
-        end
-    end
-
-    if #toDelete == 0 then
-        print("[removal] workspace clean after " .. pass .. " pass(es)")
-        break
-    end
-
-    if #toDelete == lastCount then
-        print("[removal] stuck at " .. #toDelete .. " parts - forcing unlock again")
-        for i = 1, #toDelete, 200 do
-            local chunk = {}
-            for j = i, math.min(i+199, #toDelete) do chunk[#chunk+1] = toDelete[j] end
-            pcall(function() endpoint:InvokeServer("SetLocked", chunk, false) end)
-        end
-        task.wait(0.5)
-    end
-    lastCount = #toDelete
-
-    for i = 1, #toDelete, 200 do
-        local chunk = {}
-        for j = i, math.min(i+199, #toDelete) do chunk[#chunk+1] = toDelete[j] end
-        pcall(function() endpoint:InvokeServer("Remove", chunk) end)
-        task.wait(0.1)
-    end
-    task.wait(0.5)
-end
-
-local remaining = 0
-for _, v in ipairs(workspace:GetDescendants()) do
-    if v:IsA("BasePart") or v:IsA("UnionOperation") or v:IsA("MeshPart") then
-        remaining = remaining + 1
-    end
-end
-print("[removal] " .. remaining .. " parts remaining")
-
 local function syncAnchor(ep, part, a) ep:InvokeServer("SyncAnchor", {{Part = part, Anchored = a}}) end
 local function bResize(ep,t) if #t>0 then ep:InvokeServer("SyncResize", t) end end
 local function bMaterial(ep,t) if #t>0 then ep:InvokeServer("SyncMaterial", t) end end
@@ -1876,36 +1807,52 @@ if P[612] then ccT[#ccT+1] = {Part=P[612], CanCollide=false} end
 if P[640] then ccT[#ccT+1] = {Part=P[640], CanCollide=false} end
 if P[586] then ccT[#ccT+1] = {Part=P[586], CanCollide=false} end
 if P[320] then ccT[#ccT+1] = {Part=P[320], CanCollide=false} end
-if P[333] then ccT[#ccT+1] = {Part=P[333], CanCollide=false} end
-if P[318] then ccT[#ccT+1] = {Part=P[318], CanCollide=false} end
-if P[716] then ccT[#ccT+1] = {Part=P[716], CanCollide=false} end
-if P[345] then ccT[#ccT+1] = {Part=P[345], CanCollide=false} end
-if P[280] then ccT[#ccT+1] = {Part=P[280], CanCollide=false} end
-if P[662] then ccT[#ccT+1] = {Part=P[662], CanCollide=false} end
+if P[349] then ccT[#ccT+1] = {Part=P[349], CanCollide=true} end
+if P[601] then ccT[#ccT+1] = {Part=P[601], CanCollide=true} end
+if P[688] then ccT[#ccT+1] = {Part=P[688], CanCollide=true} end
+if P[348] then ccT[#ccT+1] = {Part=P[348], CanCollide=true} end
+if P[347] then ccT[#ccT+1] = {Part=P[347], CanCollide=true} end
+if P[363] then ccT[#ccT+1] = {Part=P[363], CanCollide=true} end
+if P[549] then ccT[#ccT+1] = {Part=P[549], CanCollide=true} end
+if P[335] then ccT[#ccT+1] = {Part=P[335], CanCollide=true} end
+if P[723] then ccT[#ccT+1] = {Part=P[723], CanCollide=true} end
+if P[300] then ccT[#ccT+1] = {Part=P[300], CanCollide=true} end
+if P[338] then ccT[#ccT+1] = {Part=P[338], CanCollide=true} end
+if P[612] then ccT[#ccT+1] = {Part=P[612], CanCollide=true} end
+if P[640] then ccT[#ccT+1] = {Part=P[640], CanCollide=true} end
+if P[586] then ccT[#ccT+1] = {Part=P[586], CanCollide=true} end
+if P[320] then ccT[#ccT+1] = {Part=P[320], CanCollide=true} end
+if P[333] then ccT[#ccT+1] = {Part=P[333], CanCollide=true} end
+if P[318] then ccT[#ccT+1] = {Part=P[318], CanCollide=true} end
+if P[716] then ccT[#ccT+1] = {Part=P[716], CanCollide=true} end
+if P[345] then ccT[#ccT+1] = {Part=P[345], CanCollide=true} end
+if P[280] then ccT[#ccT+1] = {Part=P[280], CanCollide=true} end
+if P[662] then ccT[#ccT+1] = {Part=P[662], CanCollide=true} end
 if P[505] then ccT[#ccT+1] = {Part=P[505], CanCollide=true} end
-if P[583] then ccT[#ccT+1] = {Part=P[583], CanCollide=false} end
-if P[408] then ccT[#ccT+1] = {Part=P[408], CanCollide=false} end
-if P[719] then ccT[#ccT+1] = {Part=P[719], CanCollide=false} end
-if P[471] then ccT[#ccT+1] = {Part=P[471], CanCollide=false} end
-if P[617] then ccT[#ccT+1] = {Part=P[617], CanCollide=false} end
-if P[686] then ccT[#ccT+1] = {Part=P[686], CanCollide=false} end
-if P[704] then ccT[#ccT+1] = {Part=P[704], CanCollide=false} end
-if P[681] then ccT[#ccT+1] = {Part=P[681], CanCollide=false} end
-if P[670] then ccT[#ccT+1] = {Part=P[670], CanCollide=false} end
-if P[283] then ccT[#ccT+1] = {Part=P[283], CanCollide=false} end
-if P[665] then ccT[#ccT+1] = {Part=P[665], CanCollide=false} end
-if P[286] then ccT[#ccT+1] = {Part=P[286], CanCollide=false} end
-if P[325] then ccT[#ccT+1] = {Part=P[325], CanCollide=false} end
-if P[649] then ccT[#ccT+1] = {Part=P[649], CanCollide=false} end
-if P[734] then ccT[#ccT+1] = {Part=P[734], CanCollide=false} end
-if P[638] then ccT[#ccT+1] = {Part=P[638], CanCollide=false} end
-if P[636] then ccT[#ccT+1] = {Part=P[636], CanCollide=false} end
-if P[627] then ccT[#ccT+1] = {Part=P[627], CanCollide=false} end
-if P[304] then ccT[#ccT+1] = {Part=P[304], CanCollide=false} end
-if P[356] then ccT[#ccT+1] = {Part=P[356], CanCollide=false} end
+if P[583] then ccT[#ccT+1] = {Part=P[583], CanCollide=true} end
+if P[408] then ccT[#ccT+1] = {Part=P[408], CanCollide=true} end
+if P[719] then ccT[#ccT+1] = {Part=P[719], CanCollide=true} end
+if P[471] then ccT[#ccT+1] = {Part=P[471], CanCollide=true} end
+if P[617] then ccT[#ccT+1] = {Part=P[617], CanCollide=true} end
+if P[686] then ccT[#ccT+1] = {Part=P[686], CanCollide=true} end
+if P[704] then ccT[#ccT+1] = {Part=P[704], CanCollide=true} end
+if P[681] then ccT[#ccT+1] = {Part=P[681], CanCollide=true} end
+if P[670] then ccT[#ccT+1] = {Part=P[670], CanCollide=true} end
+if P[283] then ccT[#ccT+1] = {Part=P[283], CanCollide=true} end
+if P[665] then ccT[#ccT+1] = {Part=P[665], CanCollide=true} end
+if P[286] then ccT[#ccT+1] = {Part=P[286], CanCollide=true} end
+if P[325] then ccT[#ccT+1] = {Part=P[325], CanCollide=true} end
+if P[649] then ccT[#ccT+1] = {Part=P[649], CanCollide=true} end
+if P[734] then ccT[#ccT+1] = {Part=P[734], CanCollide=true} end
+if P[638] then ccT[#ccT+1] = {Part=P[638], CanCollide=true} end
+if P[636] then ccT[#ccT+1] = {Part=P[636], CanCollide=true} end
+if P[627] then ccT[#ccT+1] = {Part=P[627], CanCollide=true} end
+if P[304] then ccT[#ccT+1] = {Part=P[304], CanCollide=true} end
+if P[356] then ccT[#ccT+1] = {Part=P[356], CanCollide=true} end
 if P[533] then ccT[#ccT+1] = {Part=P[533], CanCollide=true} end
-if P[666] then ccT[#ccT+1] = {Part=P[666], CanCollide=false} end
-if P[493] then ccT[#ccT+1] = {Part=P[493], CanCollide=false} end
+if P[666] then ccT[#ccT+1] = {Part=P[666], CanCollide=true} end
+if P[493] then ccT[#ccT+1] = {Part=P[493], CanCollide=true} end
+if P[497] then ccT[#ccT+1] = {Part=P[497], CanCollide=false} end
 bCollision(endpoint, ccT)
 if P[3] then task.spawn(function() setLocked(endpoint, P[3], true) end) end
 if P[3] then task.spawn(function() setName(endpoint, P[3], "FlyCameraFocus") end) end
