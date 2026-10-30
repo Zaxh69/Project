@@ -2630,7 +2630,4 @@ if #missed > 0 then
         task.wait()
     end
 end
-RequestCommand:InvokeServer(";res all")
-task.wait(0.2)
-RequestCommand:InvokeServer(";re all")
-print("[Map 2 F3X] Loader finished.")
+print("finnaly done huh")
