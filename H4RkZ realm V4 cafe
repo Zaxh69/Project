@@ -1542,3 +1542,32 @@ pcall(function() _({'SyncCollision', collisions}) end)
 task.wait(0.35)
 for _, v in ipairs(names) do if v.Part then pcall(function() _({'SetName', {v.Part}, v.Name}) end) end end
 if root then root.Anchored = false end
+-- ass antiNigga
+local player = game.Players.LocalPlayer
+local tool
+
+for _, v in ipairs(player:GetDescendants()) do
+    if v.Name == "SyncAPI" then
+        tool = v.Parent
+        break
+    end
+end
+
+if not tool then
+    for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do
+        if v.Name == "SyncAPI" then
+            tool = v.Parent
+            break
+        end
+    end
+end
+
+if not tool then return end
+
+local remote = tool.SyncAPI.ServerEndpoint
+
+for _, v in ipairs(workspace:GetDescendants()) do
+    if v:IsA("BasePart") then
+        remote:InvokeServer("SetLocked", {v}, true)
+    end
+end
