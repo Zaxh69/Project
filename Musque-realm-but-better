@@ -39,7 +39,23 @@ local function syncLight(ep,p,lt,br,rg,co,sh,fa,an)
     if an then a.Angle = an end
     ep:InvokeServer("SyncLighting", {a})
 end
-local function createGroup(ep,gt,pr,it) return ep:InvokeServer("CreateGroup", gt, pr, it) end
+local function createGroup(ep, gt, pr, ids)
+    local items = {}
+
+    for _, id in ipairs(ids) do
+        local part = P[id]
+
+        if part and typeof(part) == "Instance" then
+            table.insert(items, part)
+        end
+    end
+
+    if #items == 0 then
+        return nil
+    end
+
+    return ep:InvokeServer("CreateGroup", gt, pr, items)
+end
 local function setName(ep,o,n) ep:InvokeServer("SetName", {o}, n) end
 local function setLocked(ep,p,l) ep:InvokeServer("SetLocked", {p}, l) end
 
