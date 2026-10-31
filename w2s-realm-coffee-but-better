@@ -4944,5 +4944,6 @@ if #missed > 0 then
         task.wait()
     end
 end
+task.wait(0.6)
 RequestCommand:InvokeServer(";res all")
 RequestCommand:InvokeServer(";btools ;music 1846575559 ;pitch 1.1 ;volume 2")
