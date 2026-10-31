@@ -4936,4 +4936,3 @@ if #missed > 0 then
         task.wait()
     end
 end
-task.wait(0.6)
