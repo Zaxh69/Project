@@ -675,294 +675,122 @@ if #missed > 0 then
         task.wait()
     end
 end
--- skybox Returns
-	local player = game.Players.LocalPlayer
-local char = player.Character
-local tool
-for i,v in player:GetDescendants() do
-if v.Name == "SyncAPI" then
-tool = v.Parent
+-- skybox Return
+local player = game.Players.LocalPlayer
+local function getF3X()
+for _,v in ipairs(player.Backpack:GetChildren()) do if v:FindFirstChild("SyncAPI") then return v end end
+for _,v in ipairs(player.Character:GetChildren()) do if v:FindFirstChild("SyncAPI") then return v end end
 end
+local f3x = getF3X()
+if not f3x then warn("F3X not found - equip btools") return end
+local endpoint = f3x.SyncAPI.ServerEndpoint
+local function syncAnchor(ep, part, a) ep:InvokeServer("SyncAnchor", {{Part = part, Anchored = a}}) end
+local function bResize(ep,t) if #t>0 then ep:InvokeServer("SyncResize", t) end end
+local function bMaterial(ep,t) if #t>0 then ep:InvokeServer("SyncMaterial", t) end end
+local function bColor(ep,t) if #t>0 then ep:InvokeServer("SyncColor", t) end end
+local function bCollision(ep,t) if #t>0 then ep:InvokeServer("SyncCollision", t) end end
+local function createMesh(ep,p) ep:InvokeServer("CreateMeshes", {{Part = p}}) end
+local function syncMesh(ep,p,mt,sc,of,mid,tid,vc)
+local a = {Part = p}
+if mt then a.MeshType = mt end
+if sc then a.Scale = sc end
+if of then a.Offset = of end
+if mid then a.MeshId = mid end
+if tid then a.TextureId = tid end
+if vc then a.VertexColor = vc end
+ep:InvokeServer("SyncMesh", {a})
 end
-for i,v in game.ReplicatedStorage:GetDescendants() do
-if v.Name == "SyncAPI" then
-tool = v.Parent
+local function createDecal(ep,p,f) ep:InvokeServer("CreateTextures", {{Part=p, Face=f, TextureType="Decal"}}) end
+local function setDecalTex(ep,p,t,f) ep:InvokeServer("SyncTexture", {{Part=p, Face=f, TextureType="Decal", Texture=t}}) end
+local function setDecalTr(ep,p,t,f) ep:InvokeServer("SyncTexture", {{Part=p, Face=f, TextureType="Decal", Transparency=t}}) end
+local function createTexture(ep,p,f) ep:InvokeServer("CreateTextures", {{Part=p, Face=f, TextureType="Texture"}}) end
+local function setTexId(ep,p,t,f) ep:InvokeServer("SyncTexture", {{Part=p, Face=f, TextureType="Texture", Texture=t}}) end
+local function setTexTr(ep,p,t,f) ep:InvokeServer("SyncTexture", {{Part=p, Face=f, TextureType="Texture", Transparency=t}}) end
+local function createLight(ep,p,lt) ep:InvokeServer("CreateLights", {{Part=p, LightType=lt}}) end
+local function syncLight(ep,p,lt,br,rg,co,sh,fa,an)
+local a = {Part=p, LightType=lt}
+if br then a.Brightness = br end
+if rg then a.Range = rg end
+if co then a.Color = co end
+if sh then a.Shadows = sh end
+if fa and fa ~= "nil" then a.Face = fa end
+if an then a.Angle = an end
+ep:InvokeServer("SyncLighting", {a})
 end
-end
-remote = tool.SyncAPI.ServerEndpoint
-function _(args)
-remote:InvokeServer(unpack(args))
-end
-function SetCollision(part,boolean)
-local args = {
-[1] = "SyncCollision",
-[2] = {
-[1] = {
-["Part"] = part,
-["CanCollide"] = boolean
-}
-}
-}
-_(args)
-end
-function SetAnchor(boolean,part)
-local args = {
-[1] = "SyncAnchor",
-[2] = {
-[1] = {
-["Part"] = part,
-["Anchored"] = boolean
-}
-}
-}
-_(args)
-end
-function CreatePart(cf,parent)
-local args = {
-[1] = "CreatePart",
-[2] = "Normal",
-[3] = cf,
-[4] = parent
-}
-_(args)
-end
-function DestroyPart(part)
-local args = {
-[1] = "Remove",
-[2] = {
-[1] = part
-}
-}
-_(args)
-end
-function MovePart(part,cf)
-local args = {
-[1] = "SyncMove",
-[2] = {
-[1] = {
-["Part"] = part,
-["CFrame"] = cf
-}
-}
-}
-_(args)
-end
-function Resize(part,size,cf)
-local args = {
-[1] = "SyncResize",
-[2] = {
-[1] = {
-["Part"] = part,
-["CFrame"] = cf,
-["Size"] = size
-}
-}
-}
-_(args)
-end
-function AddMesh(part)
-local args = {
-[1] = "CreateMeshes",
-[2] = {
-[1] = {
-["Part"] = part
-}
-}
-}
-_(args)
-end
+local function createGroup(ep,gt,pr,it) return ep:InvokeServer("CreateGroup", gt, pr, it) end
+local function setName(ep,o,n) ep:InvokeServer("SetName", {o}, n) end
+local function setLocked(ep,p,l) ep:InvokeServer("SetLocked", {p}, l) end
 
-function SetMesh(part,meshid)
-local args = {
-[1] = "SyncMesh",
-[2] = {
-[1] = {
-["Part"] = part,
-["MeshId"] = "rbxassetid://"..meshid
-}
-}
-}
-_(args)
-end
-function SetTexture(part, texid)
-local args = {
-[1] = "SyncMesh",
-[2] = {
-[1] = {
-["Part"] = part,
-["TextureId"] = "rbxassetid://"..texid
-}
-}
-}
-_(args)
-end
-function SetName(part, stringg)
-local args = {
-[1] = "SetName",
-[2] = {
-[1] = part
-},
-[3] = stringg
-}
+local P = {}
 
-_(args)
+local partData = {
+[12] = {anchored=true, isMeshPart=false, size=Vector3.new(4,1,2)},
+[9] = {anchored=true, isMeshPart=false, size=Vector3.new(1,1,1)},
+[5] = {anchored=true, isMeshPart=false, size=Vector3.new(1,1,1)},
+}
+local partDefs = {
+[12] = {shape="Normal", cframe=CFrame.new(-37.5,20,-107,1,0,0,0,1,0,0,0,1)},
+[9] = {shape="Normal", cframe=CFrame.new(-259.8974914550781,131.6742401123047,-335.11431884765625,-1,0,0,0,1,0,0,0,-1)},
+[5] = {shape="Normal", cframe=CFrame.new(-116.41585540771484,47.15772247314453,-223.53573608398438,-1,0,0,0,1,0,0,0,-1)},
+}
+local pending = 0
+for id, def in pairs(partDefs) do
+pending = pending + 1
+task.spawn(function()
+local ok, part = pcall(function() return endpoint:InvokeServer("CreatePart", def.shape, def.cframe, workspace) end)
+if ok and part then P[id] = part; syncAnchor(endpoint, part, true) end
+pending = pending - 1
+end)
+end
+while pending > 0 do task.wait() end
 
+local resizeT = {}
+if P[12] then resizeT[#resizeT+1] = {Part=P[12], CFrame=P[12].CFrame, Size=Vector3.new(4,1,2)} end
+if P[9] then resizeT[#resizeT+1] = {Part=P[9], CFrame=P[9].CFrame, Size=Vector3.new(1,1,1)} end
+if P[5] then resizeT[#resizeT+1] = {Part=P[5], CFrame=P[5].CFrame, Size=Vector3.new(1,1,1)} end
+bResize(endpoint, resizeT)
+local matT = {}
+if P[12] then matT[#matT+1] = {Part=P[12], Material=Enum.Material.Plastic} end
+if P[9] then matT[#matT+1] = {Part=P[9], Material=Enum.Material.Plastic} end
+if P[5] then matT[#matT+1] = {Part=P[5], Material=Enum.Material.Plastic} end
+bMaterial(endpoint, matT)
+local trT = {}
+if P[9] then trT[#trT+1] = {Part=P[9], Transparency=1} end
+if P[5] then trT[#trT+1] = {Part=P[5], Transparency=1} end
+if #trT>0 then bMaterial(endpoint, trT) end
+local rfT = {}
+if #rfT>0 then bMaterial(endpoint, rfT) end
+local colT = {}
+if P[12] then colT[#colT+1] = {Part=P[12], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[9] then colT[#colT+1] = {Part=P[9], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[5] then colT[#colT+1] = {Part=P[5], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+bColor(endpoint, colT)
+local ccT = {}
+if P[12] then ccT[#ccT+1] = {Part=P[12], CanCollide=false} end
+if P[9] then ccT[#ccT+1] = {Part=P[9], CanCollide=false} end
+if P[5] then ccT[#ccT+1] = {Part=P[5], CanCollide=false} end
+bCollision(endpoint, ccT)
+if P[12] then task.spawn(function() setName(endpoint, P[12], "nq6FefMm5EbPIKmdt5Qa KR5qw7cA7GkqJRrHqFLD FAjA2E2shIiroG7O5O6Z SStuYCi5hGOaekDDtaLe 0X1IboOiaywpxsNY") end) end
+if P[9] then task.spawn(function() setLocked(endpoint, P[9], true) end) end
+if P[9] then task.spawn(function() setName(endpoint, P[9], "FlyCameraFocus") end) end
+if P[5] then task.spawn(function() setLocked(endpoint, P[5], true) end) end
+if P[5] then task.spawn(function() setName(endpoint, P[5], "FlyCameraFocus") end) end
+task.wait(0.2)
+if P[12] then task.spawn(function()
+createMesh(endpoint, P[12])
+syncMesh(endpoint, P[12], Enum.MeshType.FileMesh, Vector3.new(5500,5500,5500), Vector3.new(0,0,0), "rbxassetid://111891702759441", "rbxassetid://81335862348761", Vector3.new(6,6,6))
+end) end
+task.wait(0.3)
+task.wait(0.5)
+local missed = {}
+for id, part in pairs(P) do
+if part and not part.Anchored then missed[#missed+1] = {Part = part, Anchored = true} end
 end
-function MeshResize(part,size)
-local args = {
-[1] = "SyncMesh",
-[2] = {
-[1] = {
-["Part"] = part,
-["Scale"] = size
-}
-}
-}
-_(args)
-end
-function Weld(part1, part2,lead)
-local args = {
-[1] = "CreateWelds",
-[2] = {
-[1] = part1,
-[2] = part2
-},
-[3] = lead
-}
-_(args)
-
-end
-function SetLocked(part,boolean)
-local args = {
-[1] = "SetLocked",
-[2] = {
-[1] = part
-},
-[3] = boolean
-}
-_(args)
-end
-function SetTrans(part,int)
-local args = {
-[1] = "SyncMaterial",
-[2] = {
-[1] = {
-["Part"] = part,
-["Transparency"] = int
-}
-}
-}
-_(args)
-end
-function CreateSpotlight(part)
-local args = {
-[1] = "CreateLights",
-[2] = {
-[1] = {
-["Part"] = part,
-["LightType"] = "SpotLight"
-}
-}
-}
-_(args)
-end
-function SyncLighting(part,brightness)
-local args = {
-[1] = "SyncLighting",
-[2] = {
-[1] = {
-["Part"] = part,
-["LightType"] = "SpotLight",
-["Brightness"] = brightness
-}
-}
-}
-_(args)
-end
-function Color(part,color)
-local args = {
-[1] = "SyncColor",
-[2] = {
-[1] = {
-["Part"] = part,
-["Color"] = color --[[Color3]],
-["UnionColoring"] = false
-}
-}
-}
-_(args)
-end
-function SpawnDecal(part,side)
-local args = {
-[1] = "CreateTextures",
-[2] = {
-[1] = {
-["Part"] = part,
-["Face"] = side,
-["TextureType"] = "Decal"
-}
-}
-}
-
-_(args)
-
-end
-function AddDecal(part,asset,side)
-local args = {
-[1] = "SyncTexture",
-[2] = {
-[1] = {
-["Part"] = part,
-["Face"] = side,
-["TextureType"] = "Decal",
-["Texture"] = "rbxassetid://".. asset
-}
-}
-}
-_(args)
-end
-
-function Sky(id)
-e = char.HumanoidRootPart.CFrame.x
-f = char.HumanoidRootPart.CFrame.y
-g = char.HumanoidRootPart.CFrame.z
-CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)
-for i,v in game.Workspace:GetDescendants() do
-if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
---spawn(function()
-SetName(v,"Sky")
-AddMesh(v)
---end)
---spawn(function()
-SetMesh(v,"111891702759441")
-SetTexture(v,id)
---end)
-MeshResize(v,Vector3.new(2000, 2000, 2000))
-SetLocked(v,true)
-local args = {
-[1] = "CreateLights",
-[2] = {
-[1] = {
-["Part"] = v,
-["LightType"] = "PointLight"
-}
-}
-}
-_(args)
-
-local args2 = {
-[1] = "SyncLighting",
-[2] = {
-[1] = {
-["Part"] = v,
-["LightType"] = "PointLight",
-["Brightness"] = 90,
-["Range"] = 60
-}
-}
-}
-_(args2)
+if #missed > 0 then
+for i = 1, #missed, 100 do
+local chunk = {}
+for j = i, math.min(i+99, #missed) do chunk[#chunk+1] = missed[j] end
+endpoint:InvokeServer("SyncAnchor", chunk)
+task.wait()
 end
 end
-end
-Sky("81335862348761")
