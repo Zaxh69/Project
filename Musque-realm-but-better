@@ -3646,3 +3646,25 @@ if #missed > 0 then
         task.wait()
     end
 end
+-- locked all parts yeahh!!!
+local partsToLock = {}
+
+for _, part in pairs(P) do
+    if typeof(part) == "Instance" and part:IsA("BasePart") then
+        table.insert(partsToLock, part)
+    end
+end
+
+if #partsToLock > 0 then
+    local success, err = pcall(function()
+        endpoint:InvokeServer("SetLocked", partsToLock, true)
+    end)
+
+    if success then
+        print("[F3X] Berhasil mengirim SetLocked:", #partsToLock, "parts")
+    else
+        warn("[F3X] SetLocked gagal:", err)
+    end
+else
+    warn("[F3X] Tidak ada part yang ditemukan di tabel P")
+end
