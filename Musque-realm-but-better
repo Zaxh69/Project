@@ -3075,4 +3075,1042 @@ if #missed > 0 then
         task.wait()
     end
 end
+-- a little addition
+local player = game.Players.LocalPlayer
+local function getF3X()
+    for _,v in ipairs(player.Backpack:GetChildren()) do if v:FindFirstChild("SyncAPI") then return v end end
+    for _,v in ipairs(player.Character:GetChildren()) do if v:FindFirstChild("SyncAPI") then return v end end
+end
+local f3x = getF3X()
+if not f3x then warn("F3X not found - equip btools") return end
+local endpoint = f3x.SyncAPI.ServerEndpoint
+local function syncAnchor(ep, part, a) ep:InvokeServer("SyncAnchor", {{Part = part, Anchored = a}}) end
+local function bResize(ep,t) if #t>0 then ep:InvokeServer("SyncResize", t) end end
+local function bMaterial(ep,t) if #t>0 then ep:InvokeServer("SyncMaterial", t) end end
+local function bColor(ep,t) if #t>0 then ep:InvokeServer("SyncColor", t) end end
+local function bCollision(ep,t) if #t>0 then ep:InvokeServer("SyncCollision", t) end end
+local function createMesh(ep,p) ep:InvokeServer("CreateMeshes", {{Part = p}}) end
+local function syncMesh(ep,p,mt,sc,of,mid,tid,vc)
+    local a = {Part = p}
+    if mt then a.MeshType = mt end
+    if sc then a.Scale = sc end
+    if of then a.Offset = of end
+    if mid then a.MeshId = mid end
+    if tid then a.TextureId = tid end
+    if vc then a.VertexColor = vc end
+    ep:InvokeServer("SyncMesh", {a})
+end
+local function createDecal(ep,p,f) ep:InvokeServer("CreateTextures", {{Part=p, Face=f, TextureType="Decal"}}) end
+local function setDecalTex(ep,p,t,f) ep:InvokeServer("SyncTexture", {{Part=p, Face=f, TextureType="Decal", Texture=t}}) end
+local function setDecalTr(ep,p,t,f) ep:InvokeServer("SyncTexture", {{Part=p, Face=f, TextureType="Decal", Transparency=t}}) end
+local function createTexture(ep,p,f) ep:InvokeServer("CreateTextures", {{Part=p, Face=f, TextureType="Texture"}}) end
+local function setTexId(ep,p,t,f) ep:InvokeServer("SyncTexture", {{Part=p, Face=f, TextureType="Texture", Texture=t}}) end
+local function setTexTr(ep,p,t,f) ep:InvokeServer("SyncTexture", {{Part=p, Face=f, TextureType="Texture", Transparency=t}}) end
+local function createLight(ep,p,lt) ep:InvokeServer("CreateLights", {{Part=p, LightType=lt}}) end
+local function syncLight(ep,p,lt,br,rg,co,sh,fa,an)
+    local a = {Part=p, LightType=lt}
+    if br then a.Brightness = br end
+    if rg then a.Range = rg end
+    if co then a.Color = co end
+    if sh then a.Shadows = sh end
+    if fa and fa ~= "nil" then a.Face = fa end
+    if an then a.Angle = an end
+    ep:InvokeServer("SyncLighting", {a})
+end
+local function createGroup(ep,gt,pr,it) return ep:InvokeServer("CreateGroup", gt, pr, it) end
+local function setName(ep,o,n) ep:InvokeServer("SetName", {o}, n) end
+local function setLocked(ep,p,l) ep:InvokeServer("SetLocked", {p}, l) end
+
+local P = {}
+
+local partData = {
+    [6] = {anchored=true, isMeshPart=false, size=Vector3.new(1,1,1)},
+    [240] = {anchored=true, isMeshPart=false, size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)},
+    [174] = {anchored=true, isMeshPart=false, size=Vector3.new(0.05000000074505806,2.030846357345581,3.5843427181243896)},
+    [21] = {anchored=true, isMeshPart=false, size=Vector3.new(4.899999141693115,2.5599992275238037,6.419999599456787)},
+    [20] = {anchored=true, isMeshPart=false, size=Vector3.new(3.7100067138671875,4.208563804626465,0.3800201416015625)},
+    [245] = {anchored=true, isMeshPart=false, size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)},
+    [173] = {anchored=true, isMeshPart=true, size=Vector3.new(0.10081157833337784,3.6231689453125,0.06738007813692093)},
+    [177] = {anchored=true, isMeshPart=true, size=Vector3.new(2.1580400466918945,3.623168706893921,0.06738000363111496)},
+    [172] = {anchored=true, isMeshPart=true, size=Vector3.new(2.1580400466918945,3.6231689453125,0.06738027930259705)},
+    [226] = {anchored=true, isMeshPart=false, size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)},
+    [161] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2,1)},
+    [165] = {anchored=true, isMeshPart=false, size=Vector3.new(4,1.2000000476837158,4)},
+    [183] = {anchored=true, isMeshPart=true, size=Vector3.new(1.7898176908493042,2.3011229038238525,1.2252753973007202)},
+    [144] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2,1)},
+    [18] = {anchored=true, isMeshPart=false, size=Vector3.new(4.899999141693115,4.970000267028809,0.209999218583107)},
+    [171] = {anchored=true, isMeshPart=true, size=Vector3.new(2.1580400466918945,3.6231689453125,0.4583488404750824)},
+    [23] = {anchored=true, isMeshPart=false, size=Vector3.new(0.6992642283439636,0.45773184299468994,0.273154616355896)},
+    [25] = {anchored=true, isMeshPart=false, size=Vector3.new(3.211244821548462,2.5552616119384766,0.3081457018852234)},
+    [71] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2,1)},
+    [16] = {anchored=true, isMeshPart=false, size=Vector3.new(4.899999141693115,0.05000000074505806,2.599999189376831)},
+    [17] = {anchored=true, isMeshPart=false, size=Vector3.new(9.68000602722168,0.5599997639656067,2.859999656677246)},
+    [163] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2,1)},
+    [188] = {anchored=true, isMeshPart=false, size=Vector3.new(7.999999046325684,0.20000000298023224,3.000000238418579)},
+    [90] = {anchored=true, isMeshPart=false, size=Vector3.new(6,1.2000007629394531,2)},
+    [91] = {anchored=true, isMeshPart=false, size=Vector3.new(1,14.200000762939453,2)},
+    [180] = {anchored=true, isMeshPart=true, size=Vector3.new(1.7395697832107544,2.3220596313476562,1.0661574602127075)},
+    [218] = {anchored=true, isMeshPart=false, size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)},
+    [164] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2,1)},
+    [179] = {anchored=true, isMeshPart=true, size=Vector3.new(1.651636004447937,2.3220596313476562,1.1289671659469604)},
+    [98] = {anchored=true, isMeshPart=false, size=Vector3.new(6,1.2000007629394531,2)},
+    [113] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2.200000047683716,1)},
+    [19] = {anchored=true, isMeshPart=false, size=Vector3.new(7.600000858306885,1.2199996709823608,2.859999656677246)},
+    [186] = {anchored=true, isMeshPart=false, size=Vector3.new(2.6000001430511475,4.200000286102295,4.200000286102295)},
+    [259] = {anchored=true, isMeshPart=false, size=Vector3.new(72,8.199999809265137,2)},
+    [146] = {anchored=true, isMeshPart=false, size=Vector3.new(2,1,1)},
+    [189] = {anchored=true, isMeshPart=false, size=Vector3.new(0.20000000298023224,4.200000286102295,0.46000003814697266)},
+    [109] = {anchored=true, isMeshPart=false, size=Vector3.new(1,1,1)},
+    [197] = {anchored=true, isMeshPart=false, size=Vector3.new(9.84855842590332,0.2000022530555725,4.848525047302246)},
+    [97] = {anchored=true, isMeshPart=false, size=Vector3.new(7,1.2000007629394531,2)},
+    [141] = {anchored=true, isMeshPart=false, size=Vector3.new(2,2,1)},
+    [116] = {anchored=true, isMeshPart=false, size=Vector3.new(1,1,1)},
+    [103] = {anchored=true, isMeshPart=false, size=Vector3.new(1,1,1)},
+    [210] = {anchored=true, isMeshPart=false, size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)},
+    [104] = {anchored=true, isMeshPart=true, size=Vector3.new(0.8683481812477112,0.9018223285675049,0.7787032127380371)},
+    [13] = {anchored=true, isMeshPart=false, size=Vector3.new(1.9700002670288086,1.809999942779541,1.4099998474121094)},
+    [96] = {anchored=true, isMeshPart=false, size=Vector3.new(7,1.2000007629394531,1)},
+    [227] = {anchored=true, isMeshPart=false, size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)},
+    [252] = {anchored=true, isMeshPart=false, size=Vector3.new(0.49000054597854614,4.200000286102295,0.46000003814697266)},
+    [93] = {anchored=true, isMeshPart=false, size=Vector3.new(10,1.2000007629394531,1)},
+    [32] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2,1)},
+    [250] = {anchored=true, isMeshPart=false, size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)},
+    [120] = {anchored=true, isMeshPart=false, size=Vector3.new(1,1,1)},
+    [247] = {anchored=true, isMeshPart=false, size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)},
+    [243] = {anchored=true, isMeshPart=false, size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)},
+    [73] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2,1)},
+    [192] = {anchored=true, isMeshPart=false, size=Vector3.new(0.20000025629997253,3.000000476837158,2.930001735687256)},
+    [214] = {anchored=true, isMeshPart=false, size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)},
+    [198] = {anchored=true, isMeshPart=false, size=Vector3.new(8.799999237060547,0.20000000298023224,3.799999237060547)},
+    [194] = {anchored=true, isMeshPart=false, size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)},
+    [193] = {anchored=true, isMeshPart=false, size=Vector3.new(9.600000381469727,4.200000286102295,0.40000003576278687)},
+    [236] = {anchored=true, isMeshPart=false, size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)},
+    [199] = {anchored=true, isMeshPart=false, size=Vector3.new(10.414220809936523,0.2000025510787964,5.414229869842529)},
+    [99] = {anchored=true, isMeshPart=false, size=Vector3.new(1,14.200000762939453,2)},
+    [231] = {anchored=true, isMeshPart=false, size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)},
+    [85] = {anchored=true, isMeshPart=false, size=Vector3.new(4.899999141693115,4.230000972747803,0.3699997067451477)},
+    [78] = {anchored=true, isMeshPart=false, size=Vector3.new(1.9700002670288086,1.809999942779541,1.4099998474121094)},
+    [126] = {anchored=true, isMeshPart=false, size=Vector3.new(2,2,1)},
+    [253] = {anchored=true, isMeshPart=true, size=Vector3.new(4,0.18295982480049133,1.4925119876861572)},
+    [223] = {anchored=true, isMeshPart=false, size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)},
+    [222] = {anchored=true, isMeshPart=false, size=Vector3.new(0.20000025629997253,3.000000476837158,2.930001735687256)},
+    [238] = {anchored=true, isMeshPart=false, size=Vector3.new(0.49000054597854614,4.200000286102295,0.46000003814697266)},
+    [213] = {anchored=true, isMeshPart=false, size=Vector3.new(7.600008964538574,3.0000030994415283,0.20000025629997253)},
+    [184] = {anchored=true, isMeshPart=true, size=Vector3.new(1.7395697832107544,2.3220596313476562,1.0326590538024902)},
+    [190] = {anchored=true, isMeshPart=false, size=Vector3.new(2.6000001430511475,4.200000286102295,4.199999809265137)},
+    [9] = {anchored=true, isMeshPart=false, size=Vector3.new(1,1,1)},
+    [111] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2.200000047683716,1)},
+    [233] = {anchored=true, isMeshPart=false, size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)},
+    [52] = {anchored=true, isMeshPart=false, size=Vector3.new(2,2,1)},
+    [206] = {anchored=true, isMeshPart=false, size=Vector3.new(0.20000000298023224,4.200000286102295,0.46000003814697266)},
+    [207] = {anchored=true, isMeshPart=false, size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)},
+    [100] = {anchored=true, isMeshPart=false, size=Vector3.new(5,1.2000007629394531,2)},
+    [28] = {anchored=true, isMeshPart=false, size=Vector3.new(1.9700002670288086,1.809999942779541,1.4099998474121094)},
+    [101] = {anchored=true, isMeshPart=false, size=Vector3.new(10,1.2000007629394531,1)},
+    [110] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2.200000047683716,1)},
+    [114] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2.200000047683716,1)},
+    [241] = {anchored=true, isMeshPart=false, size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)},
+    [182] = {anchored=true, isMeshPart=true, size=Vector3.new(1.7395697832107544,2.3220596313476562,0.9907859563827515)},
+    [92] = {anchored=true, isMeshPart=false, size=Vector3.new(5,1.2000007629394531,2)},
+    [256] = {anchored=true, isMeshPart=false, size=Vector3.new(0.6140022277832031,0.2499997317790985,1.0000038146972656)},
+    [181] = {anchored=true, isMeshPart=true, size=Vector3.new(1.7395697832107544,2.3220596313476562,1.137341856956482)},
+    [112] = {anchored=true, isMeshPart=false, size=Vector3.new(1.0010000467300415,4.199999809265137,4)},
+    [29] = {anchored=true, isMeshPart=false, size=Vector3.new(1,2,1)},
+    [15] = {anchored=true, isMeshPart=false, size=Vector3.new(3.7100067138671875,4.208563804626465,0.3800201416015625)},
+    [67] = {anchored=true, isMeshPart=false, size=Vector3.new(2,2,1)},
+    [170] = {anchored=true, isMeshPart=false, size=Vector3.new(0.360109806060791,0.14655594527721405,0.4103570282459259)},
+    [191] = {anchored=true, isMeshPart=false, size=Vector3.new(4.399999618530273,0.20000001788139343,4.199999809265137)},
+    [26] = {anchored=true, isMeshPart=false, size=Vector3.new(6.380002021789551,1.809999704360962,2.859999656677246)},
+    [45] = {anchored=true, isMeshPart=false, size=Vector3.new(2,1,1)},
+    [229] = {anchored=true, isMeshPart=false, size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)},
+    [88] = {anchored=true, isMeshPart=false, size=Vector3.new(7,1.2000007629394531,1)},
+    [168] = {anchored=true, isMeshPart=true, size=Vector3.new(0.17660042643547058,0.05000000074505806,0.06551006436347961)},
+    [89] = {anchored=true, isMeshPart=false, size=Vector3.new(7,1.2000007629394531,2)},
+    [95] = {anchored=true, isMeshPart=false, size=Vector3.new(9,1.2000007629394531,2)},
+    [14] = {anchored=true, isMeshPart=false, size=Vector3.new(8.700002670288086,0.7999997138977051,2.859999656677246)},
+    [87] = {anchored=true, isMeshPart=false, size=Vector3.new(9,1.2000007629394531,2)},
+}
+local partDefs = {
+    [6] = {shape="Normal", cframe=CFrame.new(10.54154109954834,15.650479316711426,-20.107385635375977,-1,0,0,0,1,0,0,0,-1)},
+    [240] = {shape="Normal", cframe=CFrame.new(38.065032958984375,4.153599739074707,-46.50000762939453,0,0,1,0,1,-0,-1,0,0)},
+    [174] = {shape="Normal", cframe=CFrame.new(40.525020599365234,9.823492050170898,-42.79136657714844,1,0,0,0,0.9999996423721313,-0.0008632202516309917,0,0.0008632202516309917,0.9999996423721313)},
+    [21] = {shape="Normal", cframe=CFrame.new(38.38569641113281,3.739999771118164,-12.438720703125,0,0,-1,0,1,0,1,0,0)},
+    [20] = {shape="Normal", cframe=CFrame.new(37.03065490722656,6.124284744262695,-10.178695678710938,-1,0,0,0,1,0,0,0,-1)},
+    [245] = {shape="Normal", cframe=CFrame.new(38.065032958984375,6.9536895751953125,-46.50000762939453,0,0,1,0,1,-0,-1,0,0)},
+    [173] = {shape="Normal", cframe=CFrame.new(40.569175720214844,8.753450393676758,-42.785648345947266,0,0,-1,1,0,0,0,-1,0)},
+    [177] = {shape="Normal", cframe=CFrame.new(40.569175720214844,9.782106399536133,-42.78565216064453,0,0,-1,1,0,0,0,-1,0)},
+    [172] = {shape="Normal", cframe=CFrame.new(40.569175720214844,9.782106399536133,-42.78565216064453,0,0,-1,1,0,0,0,-1,0)},
+    [226] = {shape="Normal", cframe=CFrame.new(38.065032958984375,4.153593063354492,-39.5,0,0,1,0,1,-0,-1,0,0)},
+    [161] = {shape="Normal", cframe=CFrame.new(36.745731353759766,8.094076156616211,-44.10844421386719,0.00004935264587402344,-0.9961984157562256,0.08711425215005875,0.9983928203582764,-0.004887938499450684,-0.05646190047264099,0.05667305737733841,0.0869770348072052,0.9945969581604004)},
+    [165] = {shape="Normal", cframe=CFrame.new(36,5.554204940795898,-43,1,0,0,0,1,0,0,0,1)},
+    [183] = {shape="Normal", cframe=CFrame.new(40.720245361328125,9.159574508666992,-42.794925689697266,0.038278400897979736,-0.058637555688619614,0.9975451827049255,0.0019170679152011871,0.9982792735099792,0.05860714614391327,-0.9992652535438538,-0.00033102743327617645,0.038324952125549316)},
+    [144] = {shape="Normal", cframe=CFrame.new(36.92005157470703,8.098641395568848,-41.1186637878418,-0.00006783008575439453,-0.9961897134780884,-0.08721363544464111,-0.9995334148406982,0.0027314424514770508,-0.030425652861595154,0.03054795041680336,0.08717086911201477,-0.995725154876709)},
+    [18] = {shape="Normal", cframe=CFrame.new(41.64070129394531,5.0649871826171875,-12.438720703125,0,0,-1,0,1,0,1,0,0)},
+    [171] = {shape="Normal", cframe=CFrame.new(40.83186721801758,9.782106399536133,-42.785667419433594,0,0,-1,1,0,0,0,-1,0)},
+    [23] = {shape="Normal", cframe=CFrame.new(35.26545715332031,6.2409210205078125,-13.378725051879883,0,0,-1,0,1,0,1,0,0)},
+    [25] = {shape="Normal", cframe=CFrame.new(35.26502990722656,5.647626876831055,-12.44293212890625,0,0,-1,0,1,0,1,0,0)},
+    [71] = {shape="Normal", cframe=CFrame.new(38.5,6.000001907348633,-13,0,0,1,0,1,0,-1,0,0)},
+    [16] = {shape="Normal", cframe=CFrame.new(36.71345520019531,7.486217498779297,-12.438720703125,0.0000024437904357910156,0.2947835922241211,-0.9555640816688538,-3.725290298461914e-07,0.955564022064209,0.2947835922241211,1,-3.725290298461914e-07,0.0000024437904357910156)},
+    [17] = {shape="Normal", cframe=CFrame.new(40.16572570800781,2.9099960327148438,-12.418716430664062,0,0,-1,0,1,0,1,0,0)},
+    [163] = {shape="Normal", cframe=CFrame.new(36.83283615112305,7.0687432289123535,-42.0837287902832,0.0018741488456726074,0.001552162691950798,-0.999997079372406,0.03746980428695679,0.9992964267730713,0.0016212984919548035,0.9992960095405579,-0.03747272863984108,0.0018146634101867676)},
+    [188] = {shape="Normal", cframe=CFrame.new(40.000022888183594,7.853481292724609,-43.00001907348633,0,0,1,0,1,-0,-1,0,0)},
+    [90] = {shape="Normal", cframe=CFrame.new(-13.156757354736328,29.003896713256836,-49.000003814697266,-0.7071342468261719,-0.707079291343689,0,0.707079291343689,-0.7071342468261719,0,0,0,1)},
+    [91] = {shape="Normal", cframe=CFrame.new(-20.227821350097656,26.882572174072266,-49,-0.7071342468261719,-0.707079291343689,0,0.707079291343689,-0.7071342468261719,0,0,0,1)},
+    [180] = {shape="Normal", cframe=CFrame.new(40.68593978881836,9.147071838378906,-42.7962646484375,0.038278400897979736,-0.058637555688619614,0.9975451827049255,0.0019170679152011871,0.9982792735099792,0.05860714614391327,-0.9992652535438538,-0.00033102743327617645,0.038324952125549316)},
+    [218] = {shape="Normal", cframe=CFrame.new(42.10503387451172,3.2536349296569824,-38.395015716552734,0,0,1,0,1,-0,-1,0,0)},
+    [164] = {shape="Normal", cframe=CFrame.new(36.83284378051758,7.038097858428955,-43.08311080932617,0.0018741488456726074,0.001552162691950798,-0.999997079372406,0.03746980428695679,0.9992964267730713,0.0016212984919548035,0.9992960095405579,-0.03747272863984108,0.0018146634101867676)},
+    [179] = {shape="Normal", cframe=CFrame.new(40.68939971923828,9.147275924682617,-42.79404067993164,0.038278400897979736,-0.058637555688619614,0.9975451827049255,0.0019170679152011871,0.9982792735099792,0.05860714614391327,-0.9992652535438538,-0.00033102743327617645,0.038324952125549316)},
+    [98] = {shape="Normal", cframe=CFrame.new(32.097991943359375,19.104454040527344,-50,0.7071342468261719,-0.707079291343689,0,0.707079291343689,0.7071342468261719,0,0,0,1)},
+    [113] = {shape="Normal", cframe=CFrame.new(34.5,4.054204940795898,-44.5,1,0,0,0,1,0,0,0,1)},
+    [19] = {shape="Normal", cframe=CFrame.new(40.16572570800781,3.239999771118164,-12.418716430664062,0,0,-1,0,1,0,1,0,0)},
+    [186] = {shape="Normal", cframe=CFrame.new(39.80002975463867,5.4536333084106445,-39.5000114440918,0,0,1,0,1,-0,-1,0,0)},
+    [259] = {shape="Normal", cframe=CFrame.new(6.5,14.491345405578613,38.5,1,0,0,0,1,0,0,0,1)},
+    [146] = {shape="Normal", cframe=CFrame.new(35.83296585083008,9.552437782287598,-42.6596794128418,0.0018741488456726074,0.001552162691950798,-0.999997079372406,0.03746980428695679,0.9992964267730713,0.0016212984919548035,0.9992960095405579,-0.03747272863984108,0.0018146634101867676)},
+    [189] = {shape="Normal", cframe=CFrame.new(37.930015563964844,5.453639030456543,-47.749977111816406,0,0,1,0,1,-0,-1,0,0)},
+    [109] = {shape="Normal", cframe=CFrame.new(35.8330078125,10.351143836975098,-42.714141845703125,0.0018741488456726074,0.001552162691950798,-0.999997079372406,0.03746980428695679,0.9992964267730713,0.0016212984919548035,0.9992960095405579,-0.03747272863984108,0.0018146634101867676)},
+    [197] = {shape="Normal", cframe=CFrame.new(40.000022888183594,7.853485107421875,-43.00002670288086,0,0,1,0,1,-0,-1,0,0)},
+    [97] = {shape="Normal", cframe=CFrame.new(33.158653259277344,28.650394439697266,-50,0.7071342468261719,-0.707079291343689,0,0.707079291343689,0.7071342468261719,0,0,0,1)},
+    [141] = {shape="Normal", cframe=CFrame.new(35.832881927490234,8.053040504455566,-42.61387634277344,0.0018741488456726074,0.001552162691950798,-0.999997079372406,0.03746980428695679,0.9992964267730713,0.0016212984919548035,0.9992960095405579,-0.03747272863984108,0.0018146634101867676)},
+    [116] = {shape="Normal", cframe=CFrame.new(35.8330078125,10.351143836975098,-42.714141845703125,0.0018741488456726074,0.001552162691950798,-0.999997079372406,0.03746980428695679,0.9992964267730713,0.0016212984919548035,0.9992960095405579,-0.03747272863984108,0.0018146634101867676)},
+    [103] = {shape="Normal", cframe=CFrame.new(35.8330078125,10.351143836975098,-42.714141845703125,0.0018741488456726074,0.001552162691950798,-0.999997079372406,0.03746980428695679,0.9992964267730713,0.0016212984919548035,0.9992960095405579,-0.03747272863984108,0.0018146634101867676)},
+    [210] = {shape="Normal", cframe=CFrame.new(42.10503387451172,3.253643035888672,-47.59502029418945,0,0,1,0,1,-0,-1,0,0)},
+    [104] = {shape="Normal", cframe=CFrame.new(39.889373779296875,8.404415130615234,-45.43419647216797,0,0,1,0,1,-0,-1,0,0)},
+    [13] = {shape="Normal", cframe=CFrame.new(38.39027404785156,10.050002098083496,-12.5,0,0,1,0,1,0,-1,0,0)},
+    [96] = {shape="Normal", cframe=CFrame.new(37.692726135253906,28.357267379760742,-49.0140380859375,0.7068700790405273,0.0051142871379852295,-0.7073248624801636,-0.7073432207107544,0.005644798278808594,-0.7068476676940918,0.000377655029296875,0.9999709129333496,0.007607698440551758)},
+    [227] = {shape="Normal", cframe=CFrame.new(38.065032958984375,5.5536394119262695,-39.5,0,0,1,0,1,-0,-1,0,0)},
+    [252] = {shape="Normal", cframe=CFrame.new(42.13003921508789,5.453634262084961,-38.355018615722656,0,0,1,0,1,-0,-1,0,0)},
+    [93] = {shape="Normal", cframe=CFrame.new(-18.268211364746094,20.337589263916016,-47.91756057739258,0.7073355317115784,-0.00558626651763916,0.7068558931350708,0.7068778872489929,0.005195260047912598,-0.707316517829895,0.0002789497375488281,0.9999709129333496,0.007623612880706787)},
+    [32] = {shape="Normal", cframe=CFrame.new(37.5,8.000001907348633,-13.999998092651367,0,1,0,0,0,-1,-1,0,0)},
+    [250] = {shape="Normal", cframe=CFrame.new(37.74803161621094,6.955905914306641,-46.54802322387695,0,-1,0,0,0,1,-1,0,0)},
+    [120] = {shape="Normal", cframe=CFrame.new(35.8330078125,10.351143836975098,-42.714141845703125,0.0018741488456726074,0.001552162691950798,-0.999997079372406,0.03746980428695679,0.9992964267730713,0.0016212984919548035,0.9992960095405579,-0.03747272863984108,0.0018146634101867676)},
+    [247] = {shape="Normal", cframe=CFrame.new(37.74803161621094,4.155817031860352,-46.54802322387695,0,-1,0,0,0,1,-1,0,0)},
+    [243] = {shape="Normal", cframe=CFrame.new(37.74803161621094,5.555859565734863,-46.54802322387695,0,-1,0,0,0,1,-1,0,0)},
+    [73] = {shape="Normal", cframe=CFrame.new(38.5,6.000001907348633,-12,0,0,1,0,1,0,-1,0,0)},
+    [192] = {shape="Normal", cframe=CFrame.new(40.045021057128906,5.653650283813477,-47.749996185302734,0,0,1,0,1,-0,-1,0,0)},
+    [214] = {shape="Normal", cframe=CFrame.new(37.905025482177734,3.253631591796875,-38.39501953125,0,0,1,0,1,-0,-1,0,0)},
+    [198] = {shape="Normal", cframe=CFrame.new(40.000022888183594,7.753480911254883,-43.00001525878906,0,0,1,0,1,-0,-1,0,0)},
+    [194] = {shape="Normal", cframe=CFrame.new(37.90502166748047,3.2536401748657227,-47.59502410888672,0,0,1,0,1,-0,-1,0,0)},
+    [193] = {shape="Normal", cframe=CFrame.new(42.10002517700195,5.453638076782227,-43.000003814697266,0,0,1,0,1,-0,-1,0,0)},
+    [236] = {shape="Normal", cframe=CFrame.new(37.74803161621094,6.955899238586426,-39.548011779785156,0,-1,0,0,0,1,-1,0,0)},
+    [199] = {shape="Normal", cframe=CFrame.new(40.0000114440918,7.653482437133789,-43.000038146972656,0,0,1,0,1,-0,-1,0,0)},
+    [99] = {shape="Normal", cframe=CFrame.new(29.976669311523438,26.175519943237305,-50,0.7071342468261719,-0.707079291343689,0,0.707079291343689,0.7071342468261719,0,0,0,1)},
+    [231] = {shape="Normal", cframe=CFrame.new(38.065032958984375,6.953682899475098,-39.5,0,0,1,0,1,-0,-1,0,0)},
+    [85] = {shape="Normal", cframe=CFrame.new(35.34071350097656,6.13499641418457,-12.438720703125,0,0,-1,0,1,0,1,0,0)},
+    [78] = {shape="Normal", cframe=CFrame.new(38.39027404785156,10.050002098083496,-12.5,0,0,1,0,1,0,-1,0,0)},
+    [126] = {shape="Normal", cframe=CFrame.new(35.832881927490234,8.053040504455566,-42.61387634277344,0.000011265277862548828,-1.7229467630386353e-07,-1,0.0305158868432045,0.9995343089103699,1.7229467630386353e-07,0.9995343089103699,-0.0305158868432045,0.000011265277862548828)},
+    [253] = {shape="Normal", cframe=CFrame.new(39.24627685546875,8.044967651367188,-43.00001907348633,0,0,1,0,1,-0,-1,0,0)},
+    [223] = {shape="Normal", cframe=CFrame.new(37.90502166748047,3.2536377906799316,-45.39501953125,0,0,1,0,1,-0,-1,0,0)},
+    [222] = {shape="Normal", cframe=CFrame.new(40.04502487182617,5.653641700744629,-38.230003356933594,0,0,1,0,1,-0,-1,0,0)},
+    [238] = {shape="Normal", cframe=CFrame.new(42.13003921508789,5.453642845153809,-47.6049919128418,0,0,1,0,1,-0,-1,0,0)},
+    [213] = {shape="Normal", cframe=CFrame.new(42.240020751953125,5.653651237487793,-43.0000114440918,0,0,1,0,1,-0,-1,0,0)},
+    [184] = {shape="Normal", cframe=CFrame.new(40.66923141479492,9.146089553833008,-42.796905517578125,0.038278400897979736,-0.058637555688619614,0.9975451827049255,0.0019170679152011871,0.9982792735099792,0.05860714614391327,-0.9992652535438538,-0.00033102743327617645,0.038324952125549316)},
+    [190] = {shape="Normal", cframe=CFrame.new(39.80002975463867,5.453639984130859,-46.50002670288086,0,0,1,0,1,-0,-1,0,0)},
+    [9] = {shape="Normal", cframe=CFrame.new(0,14.999571800231934,-30,-1,0,0,0,1,0,0,0,-1)},
+    [111] = {shape="Normal", cframe=CFrame.new(37.5,4.054204940795898,-44.5,1,0,0,0,1,0,0,0,1)},
+    [233] = {shape="Normal", cframe=CFrame.new(37.7480354309082,4.155810356140137,-39.54800796508789,0,-1,0,0,0,1,-1,0,0)},
+    [52] = {shape="Normal", cframe=CFrame.new(38.5,8.000001907348633,-12.5,0,0,1,0,1,0,-1,0,0)},
+    [206] = {shape="Normal", cframe=CFrame.new(37.93001937866211,5.453630447387695,-38.210018157958984,0,0,1,0,1,-0,-1,0,0)},
+    [207] = {shape="Normal", cframe=CFrame.new(37.90502166748047,3.253633499145508,-40.59502410888672,0,0,1,0,1,-0,-1,0,0)},
+    [100] = {shape="Normal", cframe=CFrame.new(28.208904266357422,23.700645446777344,-50,0.7071342468261719,-0.707079291343689,0,0.707079291343689,0.7071342468261719,0,0,0,1)},
+    [28] = {shape="Normal", cframe=CFrame.new(38.39027404785156,10.050002098083496,-12.5,0,0,1,0,1,0,-1,0,0)},
+    [101] = {shape="Normal", cframe=CFrame.new(23.43168830871582,24.215911865234375,-48.91756057739258,0.7068700790405273,0.0051142871379852295,-0.7073248624801636,-0.7073432207107544,0.005644798278808594,-0.7068476676940918,0.000377655029296875,0.9999709129333496,0.007607698440551758)},
+    [110] = {shape="Normal", cframe=CFrame.new(37.5,4.054204940795898,-41.5,1,0,0,0,1,0,0,0,1)},
+    [114] = {shape="Normal", cframe=CFrame.new(34.5,4.054204940795898,-41.5,1,0,0,0,1,0,0,0,1)},
+    [241] = {shape="Normal", cframe=CFrame.new(38.065032958984375,5.553646087646484,-46.50000762939453,0,0,1,0,1,-0,-1,0,0)},
+    [182] = {shape="Normal", cframe=CFrame.new(40.648338317871094,9.144861221313477,-42.797706604003906,0.038278400897979736,-0.058637555688619614,0.9975451827049255,0.0019170679152011871,0.9982792735099792,0.05860714614391327,-0.9992652535438538,-0.00033102743327617645,0.038324952125549316)},
+    [92] = {shape="Normal", cframe=CFrame.new(-17.752948760986328,25.11480712890625,-49,-0.7071342468261719,-0.707079291343689,0,0.707079291343689,-0.7071342468261719,0,0,0,1)},
+    [256] = {shape="Normal", cframe=CFrame.new(39.0000114440918,8.078487396240234,-40.30702590942383,0,0,1,0,1,-0,-1,0,0)},
+    [181] = {shape="Normal", cframe=CFrame.new(40.721439361572266,9.149160385131836,-42.79490280151367,0.038278400897979736,-0.058637555688619614,0.9975451827049255,0.0019170679152011871,0.9982792735099792,0.05860714614391327,-0.9992652535438538,-0.00033102743327617645,0.038324952125549316)},
+    [112] = {shape="Normal", cframe=CFrame.new(34.5,7.054204940795898,-43,1,0,0,0,1,0,0,0,1)},
+    [29] = {shape="Normal", cframe=CFrame.new(38.5,9.992391586303711,-10.825689315795898,0.0000476837158203125,0.00000208243727684021,-1,0.08720242977142334,-0.9961906671524048,0.00000208243727684021,-0.9961906671524048,-0.08720242977142334,-0.0000476837158203125)},
+    [15] = {shape="Normal", cframe=CFrame.new(37.03065490722656,6.1242828369140625,-14.708686828613281,-1,0,0,0,1,0,0,0,-1)},
+    [67] = {shape="Normal", cframe=CFrame.new(38.5,8.000001907348633,-12.5,0,0,1,0,1,-0,-1,0,0)},
+    [170] = {shape="Normal", cframe=CFrame.new(40.87767791748047,9.786523818969727,-42.8029670715332,0.9975427389144897,-0.05867943540215492,-0.03827808424830437,0.058646347373723984,0.9982768297195435,-0.0019875664729624987,0.038328755646944046,-0.0002621872699819505,0.9992651343345642)},
+    [191] = {shape="Normal", cframe=CFrame.new(39.80002975463867,7.4534759521484375,-43.00001525878906,0,0,1,0,1,-0,-1,0,0)},
+    [26] = {shape="Normal", cframe=CFrame.new(40.16572570800781,3.5349979400634766,-12.418716430664062,0,0,-1,0,1,0,1,0,0)},
+    [45] = {shape="Normal", cframe=CFrame.new(38.5,9.500001907348633,-12.5,0,0,1,0,1,0,-1,0,0)},
+    [229] = {shape="Normal", cframe=CFrame.new(37.74803161621094,5.555852890014648,-39.548011779785156,0,-1,0,0,0,1,-1,0,0)},
+    [88] = {shape="Normal", cframe=CFrame.new(-22.409568786621094,34.5986328125,-48.014041900634766,0.7073355317115784,-0.00558626651763916,0.7068558931350708,0.7068778872489929,0.005195260047912598,-0.707316517829895,0.0002789497375488281,0.9999709129333496,0.007623612880706787)},
+    [168] = {shape="Normal", cframe=CFrame.new(40.53645706176758,8.758600234985352,-42.7847900390625,-0.0007268190383911133,-0.9994020462036133,-0.03457018733024597,-0.005323499441146851,-0.03456592559814453,0.9993883371353149,-0.9999855756759644,0.0009104311466217041,-0.005295276641845703)},
+    [89] = {shape="Normal", cframe=CFrame.new(-22.70269775390625,30.064558029174805,-49,-0.7071342468261719,-0.707079291343689,0,0.707079291343689,-0.7071342468261719,0,0,0,1)},
+    [95] = {shape="Normal", cframe=CFrame.new(28.208904266357422,33.60014343261719,-50,0.7071342468261719,-0.707079291343689,0,0.707079291343689,0.7071342468261719,0,0,0,1)},
+    [14] = {shape="Normal", cframe=CFrame.new(40.16572570800781,3.030010223388672,-12.418716430664062,0,0,-1,0,1,0,1,0,0)},
+    [87] = {shape="Normal", cframe=CFrame.new(-27.652450561523438,25.11480712890625,-49,-0.7071342468261719,-0.707079291343689,0,0.707079291343689,-0.7071342468261719,0,0,0,1)},
+}
+local pending = 0
+for id, def in pairs(partDefs) do
+    pending = pending + 1
+    task.spawn(function()
+        local ok, part = pcall(function() return endpoint:InvokeServer("CreatePart", def.shape, def.cframe, workspace) end)
+        if ok and part then P[id] = part; syncAnchor(endpoint, part, true) end
+        pending = pending - 1
+    end)
+end
+while pending > 0 do task.wait() end
+
+local resizeT = {}
+if P[6] then resizeT[#resizeT+1] = {Part=P[6], CFrame=P[6].CFrame, Size=Vector3.new(1,1,1)} end
+if P[240] then resizeT[#resizeT+1] = {Part=P[240], CFrame=P[240].CFrame, Size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)} end
+if P[174] then resizeT[#resizeT+1] = {Part=P[174], CFrame=P[174].CFrame, Size=Vector3.new(0.05000000074505806,2.030846357345581,3.5843427181243896)} end
+if P[21] then resizeT[#resizeT+1] = {Part=P[21], CFrame=P[21].CFrame, Size=Vector3.new(4.899999141693115,2.5599992275238037,6.419999599456787)} end
+if P[20] then resizeT[#resizeT+1] = {Part=P[20], CFrame=P[20].CFrame, Size=Vector3.new(3.7100067138671875,4.208563804626465,0.3800201416015625)} end
+if P[245] then resizeT[#resizeT+1] = {Part=P[245], CFrame=P[245].CFrame, Size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)} end
+if P[173] then resizeT[#resizeT+1] = {Part=P[173], CFrame=P[173].CFrame, Size=Vector3.new(1,1,1)} end
+if P[177] then resizeT[#resizeT+1] = {Part=P[177], CFrame=P[177].CFrame, Size=Vector3.new(1,1,1)} end
+if P[172] then resizeT[#resizeT+1] = {Part=P[172], CFrame=P[172].CFrame, Size=Vector3.new(1,1,1)} end
+if P[226] then resizeT[#resizeT+1] = {Part=P[226], CFrame=P[226].CFrame, Size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)} end
+if P[161] then resizeT[#resizeT+1] = {Part=P[161], CFrame=P[161].CFrame, Size=Vector3.new(1,2,1)} end
+if P[165] then resizeT[#resizeT+1] = {Part=P[165], CFrame=P[165].CFrame, Size=Vector3.new(4,1.2000000476837158,4)} end
+if P[183] then resizeT[#resizeT+1] = {Part=P[183], CFrame=P[183].CFrame, Size=Vector3.new(1,1,1)} end
+if P[144] then resizeT[#resizeT+1] = {Part=P[144], CFrame=P[144].CFrame, Size=Vector3.new(1,2,1)} end
+if P[18] then resizeT[#resizeT+1] = {Part=P[18], CFrame=P[18].CFrame, Size=Vector3.new(4.899999141693115,4.970000267028809,0.209999218583107)} end
+if P[171] then resizeT[#resizeT+1] = {Part=P[171], CFrame=P[171].CFrame, Size=Vector3.new(1,1,1)} end
+if P[23] then resizeT[#resizeT+1] = {Part=P[23], CFrame=P[23].CFrame, Size=Vector3.new(0.6992642283439636,0.45773184299468994,0.273154616355896)} end
+if P[25] then resizeT[#resizeT+1] = {Part=P[25], CFrame=P[25].CFrame, Size=Vector3.new(3.211244821548462,2.5552616119384766,0.3081457018852234)} end
+if P[71] then resizeT[#resizeT+1] = {Part=P[71], CFrame=P[71].CFrame, Size=Vector3.new(1,2,1)} end
+if P[16] then resizeT[#resizeT+1] = {Part=P[16], CFrame=P[16].CFrame, Size=Vector3.new(4.899999141693115,0.05000000074505806,2.599999189376831)} end
+if P[17] then resizeT[#resizeT+1] = {Part=P[17], CFrame=P[17].CFrame, Size=Vector3.new(9.68000602722168,0.5599997639656067,2.859999656677246)} end
+if P[163] then resizeT[#resizeT+1] = {Part=P[163], CFrame=P[163].CFrame, Size=Vector3.new(1,2,1)} end
+if P[188] then resizeT[#resizeT+1] = {Part=P[188], CFrame=P[188].CFrame, Size=Vector3.new(7.999999046325684,0.20000000298023224,3.000000238418579)} end
+if P[90] then resizeT[#resizeT+1] = {Part=P[90], CFrame=P[90].CFrame, Size=Vector3.new(6,1.2000007629394531,2)} end
+if P[91] then resizeT[#resizeT+1] = {Part=P[91], CFrame=P[91].CFrame, Size=Vector3.new(1,14.200000762939453,2)} end
+if P[180] then resizeT[#resizeT+1] = {Part=P[180], CFrame=P[180].CFrame, Size=Vector3.new(1,1,1)} end
+if P[218] then resizeT[#resizeT+1] = {Part=P[218], CFrame=P[218].CFrame, Size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)} end
+if P[164] then resizeT[#resizeT+1] = {Part=P[164], CFrame=P[164].CFrame, Size=Vector3.new(1,2,1)} end
+if P[179] then resizeT[#resizeT+1] = {Part=P[179], CFrame=P[179].CFrame, Size=Vector3.new(1,1,1)} end
+if P[98] then resizeT[#resizeT+1] = {Part=P[98], CFrame=P[98].CFrame, Size=Vector3.new(6,1.2000007629394531,2)} end
+if P[113] then resizeT[#resizeT+1] = {Part=P[113], CFrame=P[113].CFrame, Size=Vector3.new(1,2.200000047683716,1)} end
+if P[19] then resizeT[#resizeT+1] = {Part=P[19], CFrame=P[19].CFrame, Size=Vector3.new(7.600000858306885,1.2199996709823608,2.859999656677246)} end
+if P[186] then resizeT[#resizeT+1] = {Part=P[186], CFrame=P[186].CFrame, Size=Vector3.new(2.6000001430511475,4.200000286102295,4.200000286102295)} end
+if P[259] then resizeT[#resizeT+1] = {Part=P[259], CFrame=P[259].CFrame, Size=Vector3.new(72,8.199999809265137,2)} end
+if P[146] then resizeT[#resizeT+1] = {Part=P[146], CFrame=P[146].CFrame, Size=Vector3.new(2,1,1)} end
+if P[189] then resizeT[#resizeT+1] = {Part=P[189], CFrame=P[189].CFrame, Size=Vector3.new(0.20000000298023224,4.200000286102295,0.46000003814697266)} end
+if P[109] then resizeT[#resizeT+1] = {Part=P[109], CFrame=P[109].CFrame, Size=Vector3.new(1,1,1)} end
+if P[197] then resizeT[#resizeT+1] = {Part=P[197], CFrame=P[197].CFrame, Size=Vector3.new(9.84855842590332,0.2000022530555725,4.848525047302246)} end
+if P[97] then resizeT[#resizeT+1] = {Part=P[97], CFrame=P[97].CFrame, Size=Vector3.new(7,1.2000007629394531,2)} end
+if P[141] then resizeT[#resizeT+1] = {Part=P[141], CFrame=P[141].CFrame, Size=Vector3.new(2,2,1)} end
+if P[116] then resizeT[#resizeT+1] = {Part=P[116], CFrame=P[116].CFrame, Size=Vector3.new(1,1,1)} end
+if P[103] then resizeT[#resizeT+1] = {Part=P[103], CFrame=P[103].CFrame, Size=Vector3.new(1,1,1)} end
+if P[210] then resizeT[#resizeT+1] = {Part=P[210], CFrame=P[210].CFrame, Size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)} end
+if P[104] then resizeT[#resizeT+1] = {Part=P[104], CFrame=P[104].CFrame, Size=Vector3.new(1,1,1)} end
+if P[13] then resizeT[#resizeT+1] = {Part=P[13], CFrame=P[13].CFrame, Size=Vector3.new(1.9700002670288086,1.809999942779541,1.4099998474121094)} end
+if P[96] then resizeT[#resizeT+1] = {Part=P[96], CFrame=P[96].CFrame, Size=Vector3.new(7,1.2000007629394531,1)} end
+if P[227] then resizeT[#resizeT+1] = {Part=P[227], CFrame=P[227].CFrame, Size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)} end
+if P[252] then resizeT[#resizeT+1] = {Part=P[252], CFrame=P[252].CFrame, Size=Vector3.new(0.49000054597854614,4.200000286102295,0.46000003814697266)} end
+if P[93] then resizeT[#resizeT+1] = {Part=P[93], CFrame=P[93].CFrame, Size=Vector3.new(10,1.2000007629394531,1)} end
+if P[32] then resizeT[#resizeT+1] = {Part=P[32], CFrame=P[32].CFrame, Size=Vector3.new(1,2,1)} end
+if P[250] then resizeT[#resizeT+1] = {Part=P[250], CFrame=P[250].CFrame, Size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)} end
+if P[120] then resizeT[#resizeT+1] = {Part=P[120], CFrame=P[120].CFrame, Size=Vector3.new(1,1,1)} end
+if P[247] then resizeT[#resizeT+1] = {Part=P[247], CFrame=P[247].CFrame, Size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)} end
+if P[243] then resizeT[#resizeT+1] = {Part=P[243], CFrame=P[243].CFrame, Size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)} end
+if P[73] then resizeT[#resizeT+1] = {Part=P[73], CFrame=P[73].CFrame, Size=Vector3.new(1,2,1)} end
+if P[192] then resizeT[#resizeT+1] = {Part=P[192], CFrame=P[192].CFrame, Size=Vector3.new(0.20000025629997253,3.000000476837158,2.930001735687256)} end
+if P[214] then resizeT[#resizeT+1] = {Part=P[214], CFrame=P[214].CFrame, Size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)} end
+if P[198] then resizeT[#resizeT+1] = {Part=P[198], CFrame=P[198].CFrame, Size=Vector3.new(8.799999237060547,0.20000000298023224,3.799999237060547)} end
+if P[194] then resizeT[#resizeT+1] = {Part=P[194], CFrame=P[194].CFrame, Size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)} end
+if P[193] then resizeT[#resizeT+1] = {Part=P[193], CFrame=P[193].CFrame, Size=Vector3.new(9.600000381469727,4.200000286102295,0.40000003576278687)} end
+if P[236] then resizeT[#resizeT+1] = {Part=P[236], CFrame=P[236].CFrame, Size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)} end
+if P[199] then resizeT[#resizeT+1] = {Part=P[199], CFrame=P[199].CFrame, Size=Vector3.new(10.414220809936523,0.2000025510787964,5.414229869842529)} end
+if P[99] then resizeT[#resizeT+1] = {Part=P[99], CFrame=P[99].CFrame, Size=Vector3.new(1,14.200000762939453,2)} end
+if P[231] then resizeT[#resizeT+1] = {Part=P[231], CFrame=P[231].CFrame, Size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)} end
+if P[85] then resizeT[#resizeT+1] = {Part=P[85], CFrame=P[85].CFrame, Size=Vector3.new(4.899999141693115,4.230000972747803,0.3699997067451477)} end
+if P[78] then resizeT[#resizeT+1] = {Part=P[78], CFrame=P[78].CFrame, Size=Vector3.new(1.9700002670288086,1.809999942779541,1.4099998474121094)} end
+if P[126] then resizeT[#resizeT+1] = {Part=P[126], CFrame=P[126].CFrame, Size=Vector3.new(2,2,1)} end
+if P[253] then resizeT[#resizeT+1] = {Part=P[253], CFrame=P[253].CFrame, Size=Vector3.new(1,1,1)} end
+if P[223] then resizeT[#resizeT+1] = {Part=P[223], CFrame=P[223].CFrame, Size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)} end
+if P[222] then resizeT[#resizeT+1] = {Part=P[222], CFrame=P[222].CFrame, Size=Vector3.new(0.20000025629997253,3.000000476837158,2.930001735687256)} end
+if P[238] then resizeT[#resizeT+1] = {Part=P[238], CFrame=P[238].CFrame, Size=Vector3.new(0.49000054597854614,4.200000286102295,0.46000003814697266)} end
+if P[213] then resizeT[#resizeT+1] = {Part=P[213], CFrame=P[213].CFrame, Size=Vector3.new(7.600008964538574,3.0000030994415283,0.20000025629997253)} end
+if P[184] then resizeT[#resizeT+1] = {Part=P[184], CFrame=P[184].CFrame, Size=Vector3.new(1,1,1)} end
+if P[190] then resizeT[#resizeT+1] = {Part=P[190], CFrame=P[190].CFrame, Size=Vector3.new(2.6000001430511475,4.200000286102295,4.199999809265137)} end
+if P[9] then resizeT[#resizeT+1] = {Part=P[9], CFrame=P[9].CFrame, Size=Vector3.new(1,1,1)} end
+if P[111] then resizeT[#resizeT+1] = {Part=P[111], CFrame=P[111].CFrame, Size=Vector3.new(1,2.200000047683716,1)} end
+if P[233] then resizeT[#resizeT+1] = {Part=P[233], CFrame=P[233].CFrame, Size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)} end
+if P[52] then resizeT[#resizeT+1] = {Part=P[52], CFrame=P[52].CFrame, Size=Vector3.new(2,2,1)} end
+if P[206] then resizeT[#resizeT+1] = {Part=P[206], CFrame=P[206].CFrame, Size=Vector3.new(0.20000000298023224,4.200000286102295,0.46000003814697266)} end
+if P[207] then resizeT[#resizeT+1] = {Part=P[207], CFrame=P[207].CFrame, Size=Vector3.new(0.49000000953674316,0.20000000298023224,0.49000024795532227)} end
+if P[100] then resizeT[#resizeT+1] = {Part=P[100], CFrame=P[100].CFrame, Size=Vector3.new(5,1.2000007629394531,2)} end
+if P[28] then resizeT[#resizeT+1] = {Part=P[28], CFrame=P[28].CFrame, Size=Vector3.new(1.9700002670288086,1.809999942779541,1.4099998474121094)} end
+if P[101] then resizeT[#resizeT+1] = {Part=P[101], CFrame=P[101].CFrame, Size=Vector3.new(10,1.2000007629394531,1)} end
+if P[110] then resizeT[#resizeT+1] = {Part=P[110], CFrame=P[110].CFrame, Size=Vector3.new(1,2.200000047683716,1)} end
+if P[114] then resizeT[#resizeT+1] = {Part=P[114], CFrame=P[114].CFrame, Size=Vector3.new(1,2.200000047683716,1)} end
+if P[241] then resizeT[#resizeT+1] = {Part=P[241], CFrame=P[241].CFrame, Size=Vector3.new(2.200000047683716,1.200000524520874,0.8700001239776611)} end
+if P[182] then resizeT[#resizeT+1] = {Part=P[182], CFrame=P[182].CFrame, Size=Vector3.new(1,1,1)} end
+if P[92] then resizeT[#resizeT+1] = {Part=P[92], CFrame=P[92].CFrame, Size=Vector3.new(5,1.2000007629394531,2)} end
+if P[256] then resizeT[#resizeT+1] = {Part=P[256], CFrame=P[256].CFrame, Size=Vector3.new(0.6140022277832031,0.2499997317790985,1.0000038146972656)} end
+if P[181] then resizeT[#resizeT+1] = {Part=P[181], CFrame=P[181].CFrame, Size=Vector3.new(1,1,1)} end
+if P[112] then resizeT[#resizeT+1] = {Part=P[112], CFrame=P[112].CFrame, Size=Vector3.new(1.0010000467300415,4.199999809265137,4)} end
+if P[29] then resizeT[#resizeT+1] = {Part=P[29], CFrame=P[29].CFrame, Size=Vector3.new(1,2,1)} end
+if P[15] then resizeT[#resizeT+1] = {Part=P[15], CFrame=P[15].CFrame, Size=Vector3.new(3.7100067138671875,4.208563804626465,0.3800201416015625)} end
+if P[67] then resizeT[#resizeT+1] = {Part=P[67], CFrame=P[67].CFrame, Size=Vector3.new(2,2,1)} end
+if P[170] then resizeT[#resizeT+1] = {Part=P[170], CFrame=P[170].CFrame, Size=Vector3.new(0.360109806060791,0.14655594527721405,0.4103570282459259)} end
+if P[191] then resizeT[#resizeT+1] = {Part=P[191], CFrame=P[191].CFrame, Size=Vector3.new(4.399999618530273,0.20000001788139343,4.199999809265137)} end
+if P[26] then resizeT[#resizeT+1] = {Part=P[26], CFrame=P[26].CFrame, Size=Vector3.new(6.380002021789551,1.809999704360962,2.859999656677246)} end
+if P[45] then resizeT[#resizeT+1] = {Part=P[45], CFrame=P[45].CFrame, Size=Vector3.new(2,1,1)} end
+if P[229] then resizeT[#resizeT+1] = {Part=P[229], CFrame=P[229].CFrame, Size=Vector3.new(0.8379359841346741,0.8379359841346741,0.8379359841346741)} end
+if P[88] then resizeT[#resizeT+1] = {Part=P[88], CFrame=P[88].CFrame, Size=Vector3.new(7,1.2000007629394531,1)} end
+if P[168] then resizeT[#resizeT+1] = {Part=P[168], CFrame=P[168].CFrame, Size=Vector3.new(1,1,1)} end
+if P[89] then resizeT[#resizeT+1] = {Part=P[89], CFrame=P[89].CFrame, Size=Vector3.new(7,1.2000007629394531,2)} end
+if P[95] then resizeT[#resizeT+1] = {Part=P[95], CFrame=P[95].CFrame, Size=Vector3.new(9,1.2000007629394531,2)} end
+if P[14] then resizeT[#resizeT+1] = {Part=P[14], CFrame=P[14].CFrame, Size=Vector3.new(8.700002670288086,0.7999997138977051,2.859999656677246)} end
+if P[87] then resizeT[#resizeT+1] = {Part=P[87], CFrame=P[87].CFrame, Size=Vector3.new(9,1.2000007629394531,2)} end
+bResize(endpoint, resizeT)
+local matT = {}
+if P[6] then matT[#matT+1] = {Part=P[6], Material=Enum.Material.Plastic} end
+if P[240] then matT[#matT+1] = {Part=P[240], Material=Enum.Material.Wood} end
+if P[174] then matT[#matT+1] = {Part=P[174], Material=Enum.Material.Plastic} end
+if P[21] then matT[#matT+1] = {Part=P[21], Material=Enum.Material.WoodPlanks} end
+if P[20] then matT[#matT+1] = {Part=P[20], Material=Enum.Material.WoodPlanks} end
+if P[245] then matT[#matT+1] = {Part=P[245], Material=Enum.Material.Wood} end
+if P[173] then matT[#matT+1] = {Part=P[173], Material=Enum.Material.SmoothPlastic} end
+if P[177] then matT[#matT+1] = {Part=P[177], Material=Enum.Material.Plastic} end
+if P[172] then matT[#matT+1] = {Part=P[172], Material=Enum.Material.SmoothPlastic} end
+if P[226] then matT[#matT+1] = {Part=P[226], Material=Enum.Material.Wood} end
+if P[161] then matT[#matT+1] = {Part=P[161], Material=Enum.Material.Plastic} end
+if P[165] then matT[#matT+1] = {Part=P[165], Material=Enum.Material.WoodPlanks} end
+if P[183] then matT[#matT+1] = {Part=P[183], Material=Enum.Material.SmoothPlastic} end
+if P[144] then matT[#matT+1] = {Part=P[144], Material=Enum.Material.Plastic} end
+if P[18] then matT[#matT+1] = {Part=P[18], Material=Enum.Material.WoodPlanks} end
+if P[171] then matT[#matT+1] = {Part=P[171], Material=Enum.Material.SmoothPlastic} end
+if P[23] then matT[#matT+1] = {Part=P[23], Material=Enum.Material.Marble} end
+if P[25] then matT[#matT+1] = {Part=P[25], Material=Enum.Material.Marble} end
+if P[71] then matT[#matT+1] = {Part=P[71], Material=Enum.Material.Plastic} end
+if P[16] then matT[#matT+1] = {Part=P[16], Material=Enum.Material.WoodPlanks} end
+if P[17] then matT[#matT+1] = {Part=P[17], Material=Enum.Material.WoodPlanks} end
+if P[163] then matT[#matT+1] = {Part=P[163], Material=Enum.Material.Plastic} end
+if P[188] then matT[#matT+1] = {Part=P[188], Material=Enum.Material.WoodPlanks} end
+if P[90] then matT[#matT+1] = {Part=P[90], Material=Enum.Material.Neon} end
+if P[91] then matT[#matT+1] = {Part=P[91], Material=Enum.Material.Neon} end
+if P[180] then matT[#matT+1] = {Part=P[180], Material=Enum.Material.SmoothPlastic} end
+if P[218] then matT[#matT+1] = {Part=P[218], Material=Enum.Material.WoodPlanks} end
+if P[164] then matT[#matT+1] = {Part=P[164], Material=Enum.Material.Plastic} end
+if P[179] then matT[#matT+1] = {Part=P[179], Material=Enum.Material.SmoothPlastic} end
+if P[98] then matT[#matT+1] = {Part=P[98], Material=Enum.Material.Neon} end
+if P[113] then matT[#matT+1] = {Part=P[113], Material=Enum.Material.WoodPlanks} end
+if P[19] then matT[#matT+1] = {Part=P[19], Material=Enum.Material.WoodPlanks} end
+if P[186] then matT[#matT+1] = {Part=P[186], Material=Enum.Material.Wood} end
+if P[259] then matT[#matT+1] = {Part=P[259], Material=Enum.Material.Plastic} end
+if P[146] then matT[#matT+1] = {Part=P[146], Material=Enum.Material.Plastic} end
+if P[189] then matT[#matT+1] = {Part=P[189], Material=Enum.Material.Wood} end
+if P[109] then matT[#matT+1] = {Part=P[109], Material=Enum.Material.Plastic} end
+if P[197] then matT[#matT+1] = {Part=P[197], Material=Enum.Material.WoodPlanks} end
+if P[97] then matT[#matT+1] = {Part=P[97], Material=Enum.Material.Neon} end
+if P[141] then matT[#matT+1] = {Part=P[141], Material=Enum.Material.Plastic} end
+if P[116] then matT[#matT+1] = {Part=P[116], Material=Enum.Material.Plastic} end
+if P[103] then matT[#matT+1] = {Part=P[103], Material=Enum.Material.Plastic} end
+if P[210] then matT[#matT+1] = {Part=P[210], Material=Enum.Material.WoodPlanks} end
+if P[104] then matT[#matT+1] = {Part=P[104], Material=Enum.Material.Plastic} end
+if P[13] then matT[#matT+1] = {Part=P[13], Material=Enum.Material.Plastic} end
+if P[96] then matT[#matT+1] = {Part=P[96], Material=Enum.Material.Neon} end
+if P[227] then matT[#matT+1] = {Part=P[227], Material=Enum.Material.Wood} end
+if P[252] then matT[#matT+1] = {Part=P[252], Material=Enum.Material.Wood} end
+if P[93] then matT[#matT+1] = {Part=P[93], Material=Enum.Material.Neon} end
+if P[32] then matT[#matT+1] = {Part=P[32], Material=Enum.Material.Plastic} end
+if P[250] then matT[#matT+1] = {Part=P[250], Material=Enum.Material.Wood} end
+if P[120] then matT[#matT+1] = {Part=P[120], Material=Enum.Material.Plastic} end
+if P[247] then matT[#matT+1] = {Part=P[247], Material=Enum.Material.Wood} end
+if P[243] then matT[#matT+1] = {Part=P[243], Material=Enum.Material.Wood} end
+if P[73] then matT[#matT+1] = {Part=P[73], Material=Enum.Material.Plastic} end
+if P[192] then matT[#matT+1] = {Part=P[192], Material=Enum.Material.Wood} end
+if P[214] then matT[#matT+1] = {Part=P[214], Material=Enum.Material.WoodPlanks} end
+if P[198] then matT[#matT+1] = {Part=P[198], Material=Enum.Material.Marble} end
+if P[194] then matT[#matT+1] = {Part=P[194], Material=Enum.Material.WoodPlanks} end
+if P[193] then matT[#matT+1] = {Part=P[193], Material=Enum.Material.Wood} end
+if P[236] then matT[#matT+1] = {Part=P[236], Material=Enum.Material.Wood} end
+if P[199] then matT[#matT+1] = {Part=P[199], Material=Enum.Material.Wood} end
+if P[99] then matT[#matT+1] = {Part=P[99], Material=Enum.Material.Neon} end
+if P[231] then matT[#matT+1] = {Part=P[231], Material=Enum.Material.Wood} end
+if P[85] then matT[#matT+1] = {Part=P[85], Material=Enum.Material.WoodPlanks} end
+if P[78] then matT[#matT+1] = {Part=P[78], Material=Enum.Material.Plastic} end
+if P[126] then matT[#matT+1] = {Part=P[126], Material=Enum.Material.Plastic} end
+if P[253] then matT[#matT+1] = {Part=P[253], Material=Enum.Material.Plastic} end
+if P[223] then matT[#matT+1] = {Part=P[223], Material=Enum.Material.WoodPlanks} end
+if P[222] then matT[#matT+1] = {Part=P[222], Material=Enum.Material.Wood} end
+if P[238] then matT[#matT+1] = {Part=P[238], Material=Enum.Material.Wood} end
+if P[213] then matT[#matT+1] = {Part=P[213], Material=Enum.Material.Wood} end
+if P[184] then matT[#matT+1] = {Part=P[184], Material=Enum.Material.SmoothPlastic} end
+if P[190] then matT[#matT+1] = {Part=P[190], Material=Enum.Material.Wood} end
+if P[9] then matT[#matT+1] = {Part=P[9], Material=Enum.Material.Plastic} end
+if P[111] then matT[#matT+1] = {Part=P[111], Material=Enum.Material.WoodPlanks} end
+if P[233] then matT[#matT+1] = {Part=P[233], Material=Enum.Material.Wood} end
+if P[52] then matT[#matT+1] = {Part=P[52], Material=Enum.Material.Plastic} end
+if P[206] then matT[#matT+1] = {Part=P[206], Material=Enum.Material.Wood} end
+if P[207] then matT[#matT+1] = {Part=P[207], Material=Enum.Material.WoodPlanks} end
+if P[100] then matT[#matT+1] = {Part=P[100], Material=Enum.Material.Neon} end
+if P[28] then matT[#matT+1] = {Part=P[28], Material=Enum.Material.Plastic} end
+if P[101] then matT[#matT+1] = {Part=P[101], Material=Enum.Material.Neon} end
+if P[110] then matT[#matT+1] = {Part=P[110], Material=Enum.Material.WoodPlanks} end
+if P[114] then matT[#matT+1] = {Part=P[114], Material=Enum.Material.WoodPlanks} end
+if P[241] then matT[#matT+1] = {Part=P[241], Material=Enum.Material.Wood} end
+if P[182] then matT[#matT+1] = {Part=P[182], Material=Enum.Material.SmoothPlastic} end
+if P[92] then matT[#matT+1] = {Part=P[92], Material=Enum.Material.Neon} end
+if P[256] then matT[#matT+1] = {Part=P[256], Material=Enum.Material.SmoothPlastic} end
+if P[181] then matT[#matT+1] = {Part=P[181], Material=Enum.Material.SmoothPlastic} end
+if P[112] then matT[#matT+1] = {Part=P[112], Material=Enum.Material.WoodPlanks} end
+if P[29] then matT[#matT+1] = {Part=P[29], Material=Enum.Material.Plastic} end
+if P[15] then matT[#matT+1] = {Part=P[15], Material=Enum.Material.WoodPlanks} end
+if P[67] then matT[#matT+1] = {Part=P[67], Material=Enum.Material.Plastic} end
+if P[170] then matT[#matT+1] = {Part=P[170], Material=Enum.Material.Plastic} end
+if P[191] then matT[#matT+1] = {Part=P[191], Material=Enum.Material.Wood} end
+if P[26] then matT[#matT+1] = {Part=P[26], Material=Enum.Material.WoodPlanks} end
+if P[45] then matT[#matT+1] = {Part=P[45], Material=Enum.Material.Plastic} end
+if P[229] then matT[#matT+1] = {Part=P[229], Material=Enum.Material.Wood} end
+if P[88] then matT[#matT+1] = {Part=P[88], Material=Enum.Material.Neon} end
+if P[168] then matT[#matT+1] = {Part=P[168], Material=Enum.Material.SmoothPlastic} end
+if P[89] then matT[#matT+1] = {Part=P[89], Material=Enum.Material.Neon} end
+if P[95] then matT[#matT+1] = {Part=P[95], Material=Enum.Material.Neon} end
+if P[14] then matT[#matT+1] = {Part=P[14], Material=Enum.Material.WoodPlanks} end
+if P[87] then matT[#matT+1] = {Part=P[87], Material=Enum.Material.Neon} end
+bMaterial(endpoint, matT)
+local trT = {}
+if P[6] then trT[#trT+1] = {Part=P[6], Transparency=1} end
+if P[259] then trT[#trT+1] = {Part=P[259], Transparency=1} end
+if P[141] then trT[#trT+1] = {Part=P[141], Transparency=1} end
+if P[9] then trT[#trT+1] = {Part=P[9], Transparency=1} end
+if P[67] then trT[#trT+1] = {Part=P[67], Transparency=1} end
+if #trT>0 then bMaterial(endpoint, trT) end
+local rfT = {}
+if P[177] then rfT[#rfT+1] = {Part=P[177], Reflectance=0.05000000074505806} end
+if #rfT>0 then bMaterial(endpoint, rfT) end
+local colT = {}
+if P[6] then colT[#colT+1] = {Part=P[6], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[240] then colT[#colT+1] = {Part=P[240], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[174] then colT[#colT+1] = {Part=P[174], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[21] then colT[#colT+1] = {Part=P[21], Color=Color3.new(0.4941176474094391,0.40784314274787903,0.24705882370471954), UnionColoring=false} end
+if P[20] then colT[#colT+1] = {Part=P[20], Color=Color3.new(0.4941176474094391,0.40784314274787903,0.24705882370471954), UnionColoring=false} end
+if P[245] then colT[#colT+1] = {Part=P[245], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[173] then colT[#colT+1] = {Part=P[173], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[177] then colT[#colT+1] = {Part=P[177], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[172] then colT[#colT+1] = {Part=P[172], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[226] then colT[#colT+1] = {Part=P[226], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[161] then colT[#colT+1] = {Part=P[161], Color=Color3.new(0.35686275362968445,0.6039215922355652,0.2980392277240753), UnionColoring=false} end
+if P[165] then colT[#colT+1] = {Part=P[165], Color=Color3.new(0.49803921580314636,0.24705882370471954,0), UnionColoring=false} end
+if P[183] then colT[#colT+1] = {Part=P[183], Color=Color3.new(0.6235294342041016,0.6313725709915161,0.6745098233222961), UnionColoring=false} end
+if P[144] then colT[#colT+1] = {Part=P[144], Color=Color3.new(0.35686275362968445,0.6039215922355652,0.2980392277240753), UnionColoring=false} end
+if P[18] then colT[#colT+1] = {Part=P[18], Color=Color3.new(0.4941176474094391,0.40784314274787903,0.24705882370471954), UnionColoring=false} end
+if P[171] then colT[#colT+1] = {Part=P[171], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[23] then colT[#colT+1] = {Part=P[23], Color=Color3.new(0.9607843160629272,0.8039215803146362,0.1882352977991104), UnionColoring=false} end
+if P[25] then colT[#colT+1] = {Part=P[25], Color=Color3.new(0.9607843160629272,0.8039215803146362,0.1882352977991104), UnionColoring=false} end
+if P[71] then colT[#colT+1] = {Part=P[71], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[16] then colT[#colT+1] = {Part=P[16], Color=Color3.new(0.4941176474094391,0.40784314274787903,0.24705882370471954), UnionColoring=false} end
+if P[17] then colT[#colT+1] = {Part=P[17], Color=Color3.new(0.4941176474094391,0.40784314274787903,0.24705882370471954), UnionColoring=false} end
+if P[163] then colT[#colT+1] = {Part=P[163], Color=Color3.new(0.35686275362968445,0.6039215922355652,0.2980392277240753), UnionColoring=false} end
+if P[188] then colT[#colT+1] = {Part=P[188], Color=Color3.new(0.33725491166114807,0.25882354378700256,0.21176470816135406), UnionColoring=false} end
+if P[90] then colT[#colT+1] = {Part=P[90], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[91] then colT[#colT+1] = {Part=P[91], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[180] then colT[#colT+1] = {Part=P[180], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[218] then colT[#colT+1] = {Part=P[218], Color=Color3.new(0.3529411852359772,0.2980392277240753,0.25882354378700256), UnionColoring=false} end
+if P[164] then colT[#colT+1] = {Part=P[164], Color=Color3.new(0.35686275362968445,0.6039215922355652,0.2980392277240753), UnionColoring=false} end
+if P[179] then colT[#colT+1] = {Part=P[179], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[98] then colT[#colT+1] = {Part=P[98], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[113] then colT[#colT+1] = {Part=P[113], Color=Color3.new(0.49803921580314636,0.24705882370471954,0), UnionColoring=false} end
+if P[19] then colT[#colT+1] = {Part=P[19], Color=Color3.new(0.4941176474094391,0.40784314274787903,0.24705882370471954), UnionColoring=false} end
+if P[186] then colT[#colT+1] = {Part=P[186], Color=Color3.new(0.33725491166114807,0.25882354378700256,0.21176470816135406), UnionColoring=false} end
+if P[259] then colT[#colT+1] = {Part=P[259], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[146] then colT[#colT+1] = {Part=P[146], Color=Color3.new(0.35686275362968445,0.6039215922355652,0.2980392277240753), UnionColoring=false} end
+if P[189] then colT[#colT+1] = {Part=P[189], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[109] then colT[#colT+1] = {Part=P[109], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[197] then colT[#colT+1] = {Part=P[197], Color=Color3.new(0.33725491166114807,0.25882354378700256,0.21176470816135406), UnionColoring=false} end
+if P[97] then colT[#colT+1] = {Part=P[97], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[141] then colT[#colT+1] = {Part=P[141], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[116] then colT[#colT+1] = {Part=P[116], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[103] then colT[#colT+1] = {Part=P[103], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[210] then colT[#colT+1] = {Part=P[210], Color=Color3.new(0.3529411852359772,0.2980392277240753,0.25882354378700256), UnionColoring=false} end
+if P[104] then colT[#colT+1] = {Part=P[104], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[13] then colT[#colT+1] = {Part=P[13], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[96] then colT[#colT+1] = {Part=P[96], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[227] then colT[#colT+1] = {Part=P[227], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[252] then colT[#colT+1] = {Part=P[252], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[93] then colT[#colT+1] = {Part=P[93], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[32] then colT[#colT+1] = {Part=P[32], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[250] then colT[#colT+1] = {Part=P[250], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[120] then colT[#colT+1] = {Part=P[120], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[247] then colT[#colT+1] = {Part=P[247], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[243] then colT[#colT+1] = {Part=P[243], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[73] then colT[#colT+1] = {Part=P[73], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[192] then colT[#colT+1] = {Part=P[192], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[214] then colT[#colT+1] = {Part=P[214], Color=Color3.new(0.3529411852359772,0.2980392277240753,0.25882354378700256), UnionColoring=false} end
+if P[198] then colT[#colT+1] = {Part=P[198], Color=Color3.new(0.3529411852359772,0.2980392277240753,0.25882354378700256), UnionColoring=false} end
+if P[194] then colT[#colT+1] = {Part=P[194], Color=Color3.new(0.3529411852359772,0.2980392277240753,0.25882354378700256), UnionColoring=false} end
+if P[193] then colT[#colT+1] = {Part=P[193], Color=Color3.new(0.33725491166114807,0.25882354378700256,0.21176470816135406), UnionColoring=false} end
+if P[236] then colT[#colT+1] = {Part=P[236], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[199] then colT[#colT+1] = {Part=P[199], Color=Color3.new(0.33725491166114807,0.25882354378700256,0.21176470816135406), UnionColoring=false} end
+if P[99] then colT[#colT+1] = {Part=P[99], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[231] then colT[#colT+1] = {Part=P[231], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[85] then colT[#colT+1] = {Part=P[85], Color=Color3.new(0.4941176474094391,0.40784314274787903,0.24705882370471954), UnionColoring=false} end
+if P[78] then colT[#colT+1] = {Part=P[78], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[126] then colT[#colT+1] = {Part=P[126], Color=Color3.new(0.35686275362968445,0.6039215922355652,0.2980392277240753), UnionColoring=false} end
+if P[253] then colT[#colT+1] = {Part=P[253], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[223] then colT[#colT+1] = {Part=P[223], Color=Color3.new(0.3529411852359772,0.2980392277240753,0.25882354378700256), UnionColoring=false} end
+if P[222] then colT[#colT+1] = {Part=P[222], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[238] then colT[#colT+1] = {Part=P[238], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[213] then colT[#colT+1] = {Part=P[213], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[184] then colT[#colT+1] = {Part=P[184], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[190] then colT[#colT+1] = {Part=P[190], Color=Color3.new(0.33725491166114807,0.25882354378700256,0.21176470816135406), UnionColoring=false} end
+if P[9] then colT[#colT+1] = {Part=P[9], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[111] then colT[#colT+1] = {Part=P[111], Color=Color3.new(0.49803921580314636,0.24705882370471954,0), UnionColoring=false} end
+if P[233] then colT[#colT+1] = {Part=P[233], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[52] then colT[#colT+1] = {Part=P[52], Color=Color3.new(0.3803921639919281,0.0941176488995552,0.07450980693101883), UnionColoring=false} end
+if P[206] then colT[#colT+1] = {Part=P[206], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[207] then colT[#colT+1] = {Part=P[207], Color=Color3.new(0.3529411852359772,0.2980392277240753,0.25882354378700256), UnionColoring=false} end
+if P[100] then colT[#colT+1] = {Part=P[100], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[28] then colT[#colT+1] = {Part=P[28], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[101] then colT[#colT+1] = {Part=P[101], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[110] then colT[#colT+1] = {Part=P[110], Color=Color3.new(0.49803921580314636,0.24705882370471954,0), UnionColoring=false} end
+if P[114] then colT[#colT+1] = {Part=P[114], Color=Color3.new(0.49803921580314636,0.24705882370471954,0), UnionColoring=false} end
+if P[241] then colT[#colT+1] = {Part=P[241], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[182] then colT[#colT+1] = {Part=P[182], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[92] then colT[#colT+1] = {Part=P[92], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[256] then colT[#colT+1] = {Part=P[256], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[181] then colT[#colT+1] = {Part=P[181], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[112] then colT[#colT+1] = {Part=P[112], Color=Color3.new(0.49803921580314636,0.24705882370471954,0), UnionColoring=false} end
+if P[29] then colT[#colT+1] = {Part=P[29], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[15] then colT[#colT+1] = {Part=P[15], Color=Color3.new(0.4941176474094391,0.40784314274787903,0.24705882370471954), UnionColoring=false} end
+if P[67] then colT[#colT+1] = {Part=P[67], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[170] then colT[#colT+1] = {Part=P[170], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[191] then colT[#colT+1] = {Part=P[191], Color=Color3.new(0.33725491166114807,0.25882354378700256,0.21176470816135406), UnionColoring=false} end
+if P[26] then colT[#colT+1] = {Part=P[26], Color=Color3.new(0.4941176474094391,0.40784314274787903,0.24705882370471954), UnionColoring=false} end
+if P[45] then colT[#colT+1] = {Part=P[45], Color=Color3.new(0.06666667014360428,0.06666667014360428,0.06666667014360428), UnionColoring=false} end
+if P[229] then colT[#colT+1] = {Part=P[229], Color=Color3.new(0.42352941632270813,0.3450980484485626,0.29411765933036804), UnionColoring=false} end
+if P[88] then colT[#colT+1] = {Part=P[88], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[168] then colT[#colT+1] = {Part=P[168], Color=Color3.new(0.6392157077789307,0.6352941393852234,0.6470588445663452), UnionColoring=false} end
+if P[89] then colT[#colT+1] = {Part=P[89], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[95] then colT[#colT+1] = {Part=P[95], Color=Color3.new(1,1,1), UnionColoring=false} end
+if P[14] then colT[#colT+1] = {Part=P[14], Color=Color3.new(0.4941176474094391,0.40784314274787903,0.24705882370471954), UnionColoring=false} end
+if P[87] then colT[#colT+1] = {Part=P[87], Color=Color3.new(1,1,1), UnionColoring=false} end
+bColor(endpoint, colT)
+local ccT = {}
+if P[6] then ccT[#ccT+1] = {Part=P[6], CanCollide=false} end
+if P[240] then ccT[#ccT+1] = {Part=P[240], CanCollide=true} end
+if P[174] then ccT[#ccT+1] = {Part=P[174], CanCollide=false} end
+if P[21] then ccT[#ccT+1] = {Part=P[21], CanCollide=true} end
+if P[20] then ccT[#ccT+1] = {Part=P[20], CanCollide=true} end
+if P[245] then ccT[#ccT+1] = {Part=P[245], CanCollide=true} end
+if P[173] then ccT[#ccT+1] = {Part=P[173], CanCollide=true} end
+if P[177] then ccT[#ccT+1] = {Part=P[177], CanCollide=true} end
+if P[172] then ccT[#ccT+1] = {Part=P[172], CanCollide=true} end
+if P[226] then ccT[#ccT+1] = {Part=P[226], CanCollide=true} end
+if P[161] then ccT[#ccT+1] = {Part=P[161], CanCollide=true} end
+if P[165] then ccT[#ccT+1] = {Part=P[165], CanCollide=true} end
+if P[183] then ccT[#ccT+1] = {Part=P[183], CanCollide=true} end
+if P[144] then ccT[#ccT+1] = {Part=P[144], CanCollide=true} end
+if P[18] then ccT[#ccT+1] = {Part=P[18], CanCollide=true} end
+if P[171] then ccT[#ccT+1] = {Part=P[171], CanCollide=true} end
+if P[23] then ccT[#ccT+1] = {Part=P[23], CanCollide=true} end
+if P[25] then ccT[#ccT+1] = {Part=P[25], CanCollide=true} end
+if P[71] then ccT[#ccT+1] = {Part=P[71], CanCollide=true} end
+if P[16] then ccT[#ccT+1] = {Part=P[16], CanCollide=true} end
+if P[17] then ccT[#ccT+1] = {Part=P[17], CanCollide=true} end
+if P[163] then ccT[#ccT+1] = {Part=P[163], CanCollide=true} end
+if P[188] then ccT[#ccT+1] = {Part=P[188], CanCollide=true} end
+if P[90] then ccT[#ccT+1] = {Part=P[90], CanCollide=true} end
+if P[91] then ccT[#ccT+1] = {Part=P[91], CanCollide=true} end
+if P[180] then ccT[#ccT+1] = {Part=P[180], CanCollide=true} end
+if P[218] then ccT[#ccT+1] = {Part=P[218], CanCollide=true} end
+if P[164] then ccT[#ccT+1] = {Part=P[164], CanCollide=true} end
+if P[179] then ccT[#ccT+1] = {Part=P[179], CanCollide=true} end
+if P[98] then ccT[#ccT+1] = {Part=P[98], CanCollide=true} end
+if P[113] then ccT[#ccT+1] = {Part=P[113], CanCollide=true} end
+if P[19] then ccT[#ccT+1] = {Part=P[19], CanCollide=true} end
+if P[186] then ccT[#ccT+1] = {Part=P[186], CanCollide=true} end
+if P[259] then ccT[#ccT+1] = {Part=P[259], CanCollide=false} end
+if P[146] then ccT[#ccT+1] = {Part=P[146], CanCollide=true} end
+if P[189] then ccT[#ccT+1] = {Part=P[189], CanCollide=true} end
+if P[109] then ccT[#ccT+1] = {Part=P[109], CanCollide=false} end
+if P[197] then ccT[#ccT+1] = {Part=P[197], CanCollide=true} end
+if P[97] then ccT[#ccT+1] = {Part=P[97], CanCollide=true} end
+if P[141] then ccT[#ccT+1] = {Part=P[141], CanCollide=false} end
+if P[116] then ccT[#ccT+1] = {Part=P[116], CanCollide=false} end
+if P[103] then ccT[#ccT+1] = {Part=P[103], CanCollide=false} end
+if P[210] then ccT[#ccT+1] = {Part=P[210], CanCollide=true} end
+if P[104] then ccT[#ccT+1] = {Part=P[104], CanCollide=true} end
+if P[13] then ccT[#ccT+1] = {Part=P[13], CanCollide=false} end
+if P[96] then ccT[#ccT+1] = {Part=P[96], CanCollide=true} end
+if P[227] then ccT[#ccT+1] = {Part=P[227], CanCollide=true} end
+if P[252] then ccT[#ccT+1] = {Part=P[252], CanCollide=true} end
+if P[93] then ccT[#ccT+1] = {Part=P[93], CanCollide=true} end
+if P[32] then ccT[#ccT+1] = {Part=P[32], CanCollide=true} end
+if P[250] then ccT[#ccT+1] = {Part=P[250], CanCollide=true} end
+if P[120] then ccT[#ccT+1] = {Part=P[120], CanCollide=false} end
+if P[247] then ccT[#ccT+1] = {Part=P[247], CanCollide=true} end
+if P[243] then ccT[#ccT+1] = {Part=P[243], CanCollide=true} end
+if P[73] then ccT[#ccT+1] = {Part=P[73], CanCollide=true} end
+if P[192] then ccT[#ccT+1] = {Part=P[192], CanCollide=true} end
+if P[214] then ccT[#ccT+1] = {Part=P[214], CanCollide=true} end
+if P[198] then ccT[#ccT+1] = {Part=P[198], CanCollide=true} end
+if P[194] then ccT[#ccT+1] = {Part=P[194], CanCollide=true} end
+if P[193] then ccT[#ccT+1] = {Part=P[193], CanCollide=true} end
+if P[236] then ccT[#ccT+1] = {Part=P[236], CanCollide=true} end
+if P[199] then ccT[#ccT+1] = {Part=P[199], CanCollide=true} end
+if P[99] then ccT[#ccT+1] = {Part=P[99], CanCollide=true} end
+if P[231] then ccT[#ccT+1] = {Part=P[231], CanCollide=true} end
+if P[85] then ccT[#ccT+1] = {Part=P[85], CanCollide=true} end
+if P[78] then ccT[#ccT+1] = {Part=P[78], CanCollide=false} end
+if P[126] then ccT[#ccT+1] = {Part=P[126], CanCollide=true} end
+if P[253] then ccT[#ccT+1] = {Part=P[253], CanCollide=true} end
+if P[223] then ccT[#ccT+1] = {Part=P[223], CanCollide=true} end
+if P[222] then ccT[#ccT+1] = {Part=P[222], CanCollide=true} end
+if P[238] then ccT[#ccT+1] = {Part=P[238], CanCollide=true} end
+if P[213] then ccT[#ccT+1] = {Part=P[213], CanCollide=true} end
+if P[184] then ccT[#ccT+1] = {Part=P[184], CanCollide=true} end
+if P[190] then ccT[#ccT+1] = {Part=P[190], CanCollide=true} end
+if P[9] then ccT[#ccT+1] = {Part=P[9], CanCollide=false} end
+if P[111] then ccT[#ccT+1] = {Part=P[111], CanCollide=true} end
+if P[233] then ccT[#ccT+1] = {Part=P[233], CanCollide=true} end
+if P[52] then ccT[#ccT+1] = {Part=P[52], CanCollide=true} end
+if P[206] then ccT[#ccT+1] = {Part=P[206], CanCollide=true} end
+if P[207] then ccT[#ccT+1] = {Part=P[207], CanCollide=true} end
+if P[100] then ccT[#ccT+1] = {Part=P[100], CanCollide=true} end
+if P[28] then ccT[#ccT+1] = {Part=P[28], CanCollide=false} end
+if P[101] then ccT[#ccT+1] = {Part=P[101], CanCollide=true} end
+if P[110] then ccT[#ccT+1] = {Part=P[110], CanCollide=true} end
+if P[114] then ccT[#ccT+1] = {Part=P[114], CanCollide=true} end
+if P[241] then ccT[#ccT+1] = {Part=P[241], CanCollide=true} end
+if P[182] then ccT[#ccT+1] = {Part=P[182], CanCollide=true} end
+if P[92] then ccT[#ccT+1] = {Part=P[92], CanCollide=true} end
+if P[256] then ccT[#ccT+1] = {Part=P[256], CanCollide=true} end
+if P[181] then ccT[#ccT+1] = {Part=P[181], CanCollide=true} end
+if P[112] then ccT[#ccT+1] = {Part=P[112], CanCollide=true} end
+if P[29] then ccT[#ccT+1] = {Part=P[29], CanCollide=true} end
+if P[15] then ccT[#ccT+1] = {Part=P[15], CanCollide=true} end
+if P[67] then ccT[#ccT+1] = {Part=P[67], CanCollide=true} end
+if P[170] then ccT[#ccT+1] = {Part=P[170], CanCollide=true} end
+if P[191] then ccT[#ccT+1] = {Part=P[191], CanCollide=true} end
+if P[26] then ccT[#ccT+1] = {Part=P[26], CanCollide=true} end
+if P[45] then ccT[#ccT+1] = {Part=P[45], CanCollide=false} end
+if P[229] then ccT[#ccT+1] = {Part=P[229], CanCollide=true} end
+if P[88] then ccT[#ccT+1] = {Part=P[88], CanCollide=true} end
+if P[168] then ccT[#ccT+1] = {Part=P[168], CanCollide=false} end
+if P[89] then ccT[#ccT+1] = {Part=P[89], CanCollide=true} end
+if P[95] then ccT[#ccT+1] = {Part=P[95], CanCollide=true} end
+if P[14] then ccT[#ccT+1] = {Part=P[14], CanCollide=true} end
+if P[87] then ccT[#ccT+1] = {Part=P[87], CanCollide=true} end
+bCollision(endpoint, ccT)
+if P[6] then task.spawn(function() setLocked(endpoint, P[6], true) end) end
+if P[6] then task.spawn(function() setName(endpoint, P[6], "FlyCameraFocus") end) end
+if P[240] then task.spawn(function() setName(endpoint, P[240], "Part3") end) end
+if P[174] then task.spawn(function() setName(endpoint, P[174], "Part2") end) end
+if P[21] then task.spawn(function() setName(endpoint, P[21], "Part2") end) end
+if P[20] then task.spawn(function() setName(endpoint, P[20], "Union") end) end
+if P[245] then task.spawn(function() setName(endpoint, P[245], "Part2") end) end
+if P[173] then task.spawn(function() setName(endpoint, P[173], "MeshPart4") end) end
+if P[177] then task.spawn(function() setName(endpoint, P[177], "MeshPart3") end) end
+if P[172] then task.spawn(function() setName(endpoint, P[172], "MeshPart2") end) end
+if P[226] then task.spawn(function() setName(endpoint, P[226], "Part3") end) end
+if P[161] then task.spawn(function() setName(endpoint, P[161], "Left Arm") end) end
+if P[165] then task.spawn(function() setName(endpoint, P[165], "Part6") end) end
+if P[183] then task.spawn(function() setName(endpoint, P[183], "MeshPart6") end) end
+if P[144] then task.spawn(function() setName(endpoint, P[144], "Right Arm") end) end
+if P[18] then task.spawn(function() setName(endpoint, P[18], "Part8") end) end
+if P[171] then task.spawn(function() setName(endpoint, P[171], "MeshPart") end) end
+if P[23] then task.spawn(function() setName(endpoint, P[23], "Union") end) end
+if P[25] then task.spawn(function() setName(endpoint, P[25], "Union") end) end
+if P[71] then task.spawn(function() setName(endpoint, P[71], "Right Leg") end) end
+if P[16] then task.spawn(function() setName(endpoint, P[16], "Part5") end) end
+if P[17] then task.spawn(function() setName(endpoint, P[17], "Part6") end) end
+if P[163] then task.spawn(function() setName(endpoint, P[163], "Right Leg") end) end
+if P[188] then task.spawn(function() setName(endpoint, P[188], "Part67") end) end
+if P[90] then task.spawn(function() setName(endpoint, P[90], "Part4") end) end
+if P[91] then task.spawn(function() setName(endpoint, P[91], "Part2") end) end
+if P[180] then task.spawn(function() setName(endpoint, P[180], "MeshPart2") end) end
+if P[218] then task.spawn(function() setName(endpoint, P[218], "Part48") end) end
+if P[164] then task.spawn(function() setName(endpoint, P[164], "Left Leg") end) end
+if P[179] then task.spawn(function() setName(endpoint, P[179], "MeshPart") end) end
+if P[98] then task.spawn(function() setName(endpoint, P[98], "Part4") end) end
+if P[113] then task.spawn(function() setName(endpoint, P[113], "Part4") end) end
+if P[19] then task.spawn(function() setName(endpoint, P[19], "Part4") end) end
+if P[186] then task.spawn(function() setName(endpoint, P[186], "Part29") end) end
+if P[259] then task.spawn(function() setName(endpoint, P[259], "Discord Invite") end) end
+if P[146] then task.spawn(function() setName(endpoint, P[146], "Head") end) end
+if P[189] then task.spawn(function() setName(endpoint, P[189], "Part45") end) end
+if P[109] then task.spawn(function() setLocked(endpoint, P[109], true) end) end
+if P[109] then task.spawn(function() setName(endpoint, P[109], "Handle") end) end
+if P[197] then task.spawn(function() setName(endpoint, P[197], "Union68") end) end
+if P[97] then task.spawn(function() setName(endpoint, P[97], "Part6") end) end
+if P[141] then task.spawn(function() setName(endpoint, P[141], "HumanoidRootPart") end) end
+if P[116] then task.spawn(function() setLocked(endpoint, P[116], true) end) end
+if P[116] then task.spawn(function() setName(endpoint, P[116], "Handle") end) end
+if P[103] then task.spawn(function() setLocked(endpoint, P[103], true) end) end
+if P[103] then task.spawn(function() setName(endpoint, P[103], "Handle") end) end
+if P[210] then task.spawn(function() setName(endpoint, P[210], "Part42") end) end
+if P[104] then task.spawn(function() setName(endpoint, P[104], "inu skuya") end) end
+if P[13] then task.spawn(function() setLocked(endpoint, P[13], true) end) end
+if P[13] then task.spawn(function() setName(endpoint, P[13], "Handle") end) end
+if P[96] then task.spawn(function() setName(endpoint, P[96], "Part5") end) end
+if P[252] then task.spawn(function() setName(endpoint, P[252], "Part46") end) end
+if P[32] then task.spawn(function() setName(endpoint, P[32], "Right Arm") end) end
+if P[120] then task.spawn(function() setLocked(endpoint, P[120], true) end) end
+if P[120] then task.spawn(function() setName(endpoint, P[120], "Handle") end) end
+if P[73] then task.spawn(function() setName(endpoint, P[73], "Left Leg") end) end
+if P[192] then task.spawn(function() setName(endpoint, P[192], "Union") end) end
+if P[214] then task.spawn(function() setName(endpoint, P[214], "Part31") end) end
+if P[198] then task.spawn(function() setName(endpoint, P[198], "Part3") end) end
+if P[194] then task.spawn(function() setName(endpoint, P[194], "Part54") end) end
+if P[193] then task.spawn(function() setName(endpoint, P[193], "Part2") end) end
+if P[199] then task.spawn(function() setName(endpoint, P[199], "Union60") end) end
+if P[99] then task.spawn(function() setName(endpoint, P[99], "Part2") end) end
+if P[231] then task.spawn(function() setName(endpoint, P[231], "Part2") end) end
+if P[78] then task.spawn(function() setLocked(endpoint, P[78], true) end) end
+if P[78] then task.spawn(function() setName(endpoint, P[78], "Handle") end) end
+if P[126] then task.spawn(function() setName(endpoint, P[126], "Torso") end) end
+if P[253] then task.spawn(function() setName(endpoint, P[253], "Keyboard_Lowpoly") end) end
+if P[223] then task.spawn(function() setName(endpoint, P[223], "Part35") end) end
+if P[222] then task.spawn(function() setName(endpoint, P[222], "Union") end) end
+if P[238] then task.spawn(function() setName(endpoint, P[238], "Part53") end) end
+if P[213] then task.spawn(function() setName(endpoint, P[213], "Union") end) end
+if P[184] then task.spawn(function() setName(endpoint, P[184], "MeshPart3") end) end
+if P[9] then task.spawn(function() setLocked(endpoint, P[9], true) end) end
+if P[9] then task.spawn(function() setName(endpoint, P[9], "FlyCameraFocus") end) end
+if P[111] then task.spawn(function() setName(endpoint, P[111], "Part5") end) end
+if P[52] then task.spawn(function() setName(endpoint, P[52], "Torso") end) end
+if P[206] then task.spawn(function() setName(endpoint, P[206], "Part47") end) end
+if P[207] then task.spawn(function() setName(endpoint, P[207], "Part38") end) end
+if P[100] then task.spawn(function() setName(endpoint, P[100], "Part7") end) end
+if P[28] then task.spawn(function() setLocked(endpoint, P[28], true) end) end
+if P[28] then task.spawn(function() setName(endpoint, P[28], "Handle") end) end
+if P[110] then task.spawn(function() setName(endpoint, P[110], "Part3") end) end
+if P[114] then task.spawn(function() setName(endpoint, P[114], "Part2") end) end
+if P[182] then task.spawn(function() setName(endpoint, P[182], "MeshPart5") end) end
+if P[92] then task.spawn(function() setName(endpoint, P[92], "Part7") end) end
+if P[256] then task.spawn(function() setName(endpoint, P[256], "Mouse") end) end
+if P[181] then task.spawn(function() setName(endpoint, P[181], "MeshPart4") end) end
+if P[29] then task.spawn(function() setName(endpoint, P[29], "Left Arm") end) end
+if P[15] then task.spawn(function() setName(endpoint, P[15], "Union") end) end
+if P[67] then task.spawn(function() setName(endpoint, P[67], "HumanoidRootPart") end) end
+if P[191] then task.spawn(function() setName(endpoint, P[191], "Part4") end) end
+if P[26] then task.spawn(function() setName(endpoint, P[26], "Part7") end) end
+if P[45] then task.spawn(function() setName(endpoint, P[45], "Head") end) end
+if P[88] then task.spawn(function() setName(endpoint, P[88], "Part5") end) end
+if P[168] then task.spawn(function() setName(endpoint, P[168], "MeshPart") end) end
+if P[89] then task.spawn(function() setName(endpoint, P[89], "Part6") end) end
+if P[95] then task.spawn(function() setName(endpoint, P[95], "Part3") end) end
+if P[14] then task.spawn(function() setName(endpoint, P[14], "Part3") end) end
+if P[87] then task.spawn(function() setName(endpoint, P[87], "Part3") end) end
+task.wait(0.2)
+if P[45] then task.spawn(function()
+    createMesh(endpoint, P[45])
+    syncMesh(endpoint, P[45], Enum.MeshType.Head, Vector3.new(1.25,1.25,1.25), Vector3.new(0,0,0), nil, nil, nil)
+end) end
+if P[78] then task.spawn(function()
+    createMesh(endpoint, P[78])
+    syncMesh(endpoint, P[78], Enum.MeshType.FileMesh, Vector3.new(0.5199999809265137,0.5199999809265137,0.5199999809265137), Vector3.new(0,0,0), "http://www.roblox.com/asset/?id=417373422 ", "http://www.roblox.com/asset/?id=417371021", nil)
+end) end
+if P[120] then task.spawn(function()
+    createMesh(endpoint, P[120])
+    syncMesh(endpoint, P[120], Enum.MeshType.FileMesh, Vector3.new(0.699999988079071,0.699999988079071,0.699999988079071), Vector3.new(0,0,0), "rbxassetid://5924046624", "rbxassetid://5924037225", nil)
+end) end
+if P[146] then task.spawn(function()
+    createMesh(endpoint, P[146])
+    syncMesh(endpoint, P[146], Enum.MeshType.FileMesh, Vector3.new(1,1,1), Vector3.new(0,0,0), "https://www.roblox.com/asset/?id=5560742556", nil, nil)
+end) end
+if P[229] then task.spawn(function()
+    createMesh(endpoint, P[229])
+    syncMesh(endpoint, P[229], Enum.MeshType.FileMesh, Vector3.new(1.5,0.8379999995231628,0.8379999995231628), Vector3.new(0,0,0), "http://www.roblox.com/asset/?id=3270017", nil, nil)
+end) end
+if P[233] then task.spawn(function()
+    createMesh(endpoint, P[233])
+    syncMesh(endpoint, P[233], Enum.MeshType.FileMesh, Vector3.new(1.5,0.8379999995231628,0.8379999995231628), Vector3.new(0,0,0), "http://www.roblox.com/asset/?id=3270017", nil, nil)
+end) end
+if P[236] then task.spawn(function()
+    createMesh(endpoint, P[236])
+    syncMesh(endpoint, P[236], Enum.MeshType.FileMesh, Vector3.new(1.5,0.8379999995231628,0.8379999995231628), Vector3.new(0,0,0), "http://www.roblox.com/asset/?id=3270017", nil, nil)
+end) end
+if P[243] then task.spawn(function()
+    createMesh(endpoint, P[243])
+    syncMesh(endpoint, P[243], Enum.MeshType.FileMesh, Vector3.new(1.5,0.8379999995231628,0.8379999995231628), Vector3.new(0,0,0), "http://www.roblox.com/asset/?id=3270017", nil, nil)
+end) end
+if P[247] then task.spawn(function()
+    createMesh(endpoint, P[247])
+    syncMesh(endpoint, P[247], Enum.MeshType.FileMesh, Vector3.new(1.5,0.8379999995231628,0.8379999995231628), Vector3.new(0,0,0), "http://www.roblox.com/asset/?id=3270017", nil, nil)
+end) end
+if P[250] then task.spawn(function()
+    createMesh(endpoint, P[250])
+    syncMesh(endpoint, P[250], Enum.MeshType.FileMesh, Vector3.new(1.5,0.8379999995231628,0.8379999995231628), Vector3.new(0,0,0), "http://www.roblox.com/asset/?id=3270017", nil, nil)
+end) end
+if P[104] then task.spawn(function()
+    createMesh(endpoint, P[104])
+    syncMesh(endpoint, P[104], Enum.MeshType.FileMesh, Vector3.new(0.8683481812477112,0.9018223285675049,0.7787032127380371), Vector3.new(0,0,0), "rbxassetid://5570576531", "rbxassetid://5570577675", nil)
+end) end
+if P[168] then task.spawn(function()
+    createMesh(endpoint, P[168])
+    syncMesh(endpoint, P[168], Enum.MeshType.FileMesh, Vector3.new(0.17660042643547058,0.05000000074505806,0.06551006436347961), Vector3.new(0,0,0), "rbxassetid://5030935774", nil, nil)
+end) end
+if P[171] then task.spawn(function()
+    createMesh(endpoint, P[171])
+    syncMesh(endpoint, P[171], Enum.MeshType.FileMesh, Vector3.new(2.1580400466918945,3.6231689453125,0.4583488404750824), Vector3.new(0,0,0), "rbxassetid://5048189876", nil, nil)
+end) end
+if P[172] then task.spawn(function()
+    createMesh(endpoint, P[172])
+    syncMesh(endpoint, P[172], Enum.MeshType.FileMesh, Vector3.new(2.1580400466918945,3.6231689453125,0.06738027930259705), Vector3.new(0,0,0), "rbxassetid://5048194737", "rbxassetid://5048194818", nil)
+end) end
+if P[173] then task.spawn(function()
+    createMesh(endpoint, P[173])
+    syncMesh(endpoint, P[173], Enum.MeshType.FileMesh, Vector3.new(0.10081157833337784,3.6231689453125,0.06738007813692093), Vector3.new(0,0,0), "rbxassetid://5048203763", "rbxassetid://5048203899", nil)
+end) end
+if P[177] then task.spawn(function()
+    createMesh(endpoint, P[177])
+    syncMesh(endpoint, P[177], Enum.MeshType.FileMesh, Vector3.new(2.1580400466918945,3.623168706893921,0.06738000363111496), Vector3.new(0,0,0), "rbxassetid://5048242881", nil, nil)
+end) end
+if P[179] then task.spawn(function()
+    createMesh(endpoint, P[179])
+    syncMesh(endpoint, P[179], Enum.MeshType.FileMesh, Vector3.new(1.651636004447937,2.3220596313476562,1.1289671659469604), Vector3.new(0,0,0), "rbxassetid://5029973609", nil, nil)
+end) end
+if P[180] then task.spawn(function()
+    createMesh(endpoint, P[180])
+    syncMesh(endpoint, P[180], Enum.MeshType.FileMesh, Vector3.new(1.7395697832107544,2.3220596313476562,1.0661574602127075), Vector3.new(0,0,0), "rbxassetid://5029973609", nil, nil)
+end) end
+if P[181] then task.spawn(function()
+    createMesh(endpoint, P[181])
+    syncMesh(endpoint, P[181], Enum.MeshType.FileMesh, Vector3.new(1.7395697832107544,2.3220596313476562,1.137341856956482), Vector3.new(0,0,0), "rbxassetid://5029973609", nil, nil)
+end) end
+if P[182] then task.spawn(function()
+    createMesh(endpoint, P[182])
+    syncMesh(endpoint, P[182], Enum.MeshType.FileMesh, Vector3.new(1.7395697832107544,2.3220596313476562,0.9907859563827515), Vector3.new(0,0,0), "rbxassetid://5029973609", nil, nil)
+end) end
+if P[183] then task.spawn(function()
+    createMesh(endpoint, P[183])
+    syncMesh(endpoint, P[183], Enum.MeshType.FileMesh, Vector3.new(1.7898176908493042,2.3011229038238525,1.2252753973007202), Vector3.new(0,0,0), "rbxassetid://5029973609", nil, nil)
+end) end
+if P[184] then task.spawn(function()
+    createMesh(endpoint, P[184])
+    syncMesh(endpoint, P[184], Enum.MeshType.FileMesh, Vector3.new(1.7395697832107544,2.3220596313476562,1.0326590538024902), Vector3.new(0,0,0), "rbxassetid://5029973609", nil, nil)
+end) end
+if P[253] then task.spawn(function()
+    createMesh(endpoint, P[253])
+    syncMesh(endpoint, P[253], Enum.MeshType.FileMesh, Vector3.new(4,0.18295982480049133,1.4925119876861572), Vector3.new(0,0,0), "rbxassetid://7058680760", "rbxassetid://7058680873", nil)
+end) end
+if P[13] then task.spawn(function()
+    createMesh(endpoint, P[13])
+    syncMesh(endpoint, P[13], Enum.MeshType.FileMesh, Vector3.new(0.5199999809265137,0.5199999809265137,0.5199999809265137), Vector3.new(0,0,0), "http://www.roblox.com/asset/?id=417373422 ", "http://www.roblox.com/asset/?id=417371021", nil)
+end) end
+if P[28] then task.spawn(function()
+    createMesh(endpoint, P[28])
+    syncMesh(endpoint, P[28], Enum.MeshType.FileMesh, Vector3.new(0.5199999809265137,0.5199999809265137,0.5199999809265137), Vector3.new(0,0,0), "http://www.roblox.com/asset/?id=417373422 ", "http://www.roblox.com/asset/?id=417371021", nil)
+end) end
+if P[103] then task.spawn(function()
+    createMesh(endpoint, P[103])
+    syncMesh(endpoint, P[103], Enum.MeshType.FileMesh, Vector3.new(0.699999988079071,0.699999988079071,0.699999988079071), Vector3.new(0,0,0), "rbxassetid://5924046624", "rbxassetid://5924037225", nil)
+end) end
+if P[109] then task.spawn(function()
+    createMesh(endpoint, P[109])
+    syncMesh(endpoint, P[109], Enum.MeshType.FileMesh, Vector3.new(0.699999988079071,0.699999988079071,0.699999988079071), Vector3.new(0,0,0), "rbxassetid://5924046624", "rbxassetid://5924037225", nil)
+end) end
+if P[116] then task.spawn(function()
+    createMesh(endpoint, P[116])
+    syncMesh(endpoint, P[116], Enum.MeshType.FileMesh, Vector3.new(0.699999988079071,0.699999988079071,0.699999988079071), Vector3.new(0,0,0), "rbxassetid://5924046624", "rbxassetid://5924037225", nil)
+end) end
+task.wait(0.3)
+if P[45] then task.spawn(function()
+    createDecal(endpoint, P[45], Enum.NormalId.Front)
+    setDecalTex(endpoint, P[45], "rbxasset://textures/face.png", Enum.NormalId.Front)
+end) end
+if P[52] then task.spawn(function()
+    createDecal(endpoint, P[52], Enum.NormalId.Front)
+end) end
+if P[126] then task.spawn(function()
+    createDecal(endpoint, P[126], Enum.NormalId.Front)
+    setDecalTex(endpoint, P[126], "rbxassetid://6714375963", Enum.NormalId.Front)
+end) end
+if P[146] then task.spawn(function()
+    createDecal(endpoint, P[146], Enum.NormalId.Front)
+    setDecalTex(endpoint, P[146], "rbxassetid://25321744", Enum.NormalId.Front)
+end) end
+if P[174] then task.spawn(function()
+    createDecal(endpoint, P[174], Enum.NormalId.Left)
+    setDecalTex(endpoint, P[174], "rbxassetid://995607063", Enum.NormalId.Left)
+end) end
+if P[259] then task.spawn(function()
+    createDecal(endpoint, P[259], Enum.NormalId.Front)
+    setDecalTex(endpoint, P[259], "rbxthumb://type=Asset&id=112117373547060&w=420&h=420", Enum.NormalId.Front)
+end) end
+task.wait(0.3)
+local G = {}
+task.spawn(function()
+    G[102] = createGroup(endpoint, "Model", workspace, {104,253,256})
+    setName(endpoint, G[102], "K00pkidd Hacking on My Mosque")
+end)
+task.spawn(function()
+    G[169] = createGroup(endpoint, "Model", workspace, {170,171,172,173,174,177})
+end)
+task.spawn(function()
+    G[185] = createGroup(endpoint, "Model", workspace, {186,188,189,190,191,192,193,194,197,198,199,206,207,210,213,214,218,222,223,238,252})
+    setName(endpoint, G[185], "Desk")
+end)
+task.spawn(function()
+    G[86] = createGroup(endpoint, "Model", workspace, {87,88,89,90,91,92,93})
+    setName(endpoint, G[86], "Nazi")
+end)
+task.spawn(function()
+    G[235] = createGroup(endpoint, "Model", workspace, {236})
+    setName(endpoint, G[235], "Model3")
+end)
+task.spawn(function()
+    G[228] = createGroup(endpoint, "Model", workspace, {229})
+    setName(endpoint, G[228], "Model2")
+end)
+task.spawn(function()
+    G[225] = createGroup(endpoint, "Model", workspace, {226,227,231})
+end)
+task.spawn(function()
+    G[94] = createGroup(endpoint, "Model", workspace, {95,96,97,98,99,100,101})
+    setName(endpoint, G[94], "Nazi")
+end)
+task.spawn(function()
+    G[22] = createGroup(endpoint, "Model", workspace, {23,25})
+end)
+task.spawn(function()
+    G[115] = createGroup(endpoint, "Model", workspace, {126,141,144,146,161,163,164})
+    setName(endpoint, G[115], " K00plarz")
+end)
+task.spawn(function()
+    G[12] = createGroup(endpoint, "Model", workspace, {14,15,16,17,18,19,20,21,26,85})
+    setName(endpoint, G[12], "Talk")
+end)
+task.spawn(function()
+    G[232] = createGroup(endpoint, "Model", workspace, {233})
+end)
+task.spawn(function()
+    G[178] = createGroup(endpoint, "Model", workspace, {179,180,181,182,183,184})
+    setName(endpoint, G[178], "Model2")
+end)
+task.spawn(function()
+    G[246] = createGroup(endpoint, "Model", workspace, {247})
+end)
+task.spawn(function()
+    G[239] = createGroup(endpoint, "Model", workspace, {240,241,245})
+    setName(endpoint, G[239], "Model2")
+end)
+task.spawn(function()
+    G[108] = createGroup(endpoint, "Model", workspace, {110,111,112,113,114,165})
+    setName(endpoint, G[108], "Seat")
+end)
+task.spawn(function()
+    G[249] = createGroup(endpoint, "Model", workspace, {250})
+    setName(endpoint, G[249], "Model3")
+end)
+task.spawn(function()
+    G[242] = createGroup(endpoint, "Model", workspace, {243})
+    setName(endpoint, G[242], "Model2")
+end)
+task.spawn(function()
+    G[167] = createGroup(endpoint, "Model", workspace, {168})
+end)
+task.spawn(function()
+    G[27] = createGroup(endpoint, "Model", workspace, {29,32,45,52,67,71,73})
+    setName(endpoint, G[27], "matieser0")
+end)
+task.wait(0.3)
+task.wait(0.5)
+local missed = {}
+for id, part in pairs(P) do
+    if part and not part.Anchored then missed[#missed+1] = {Part = part, Anchored = true} end
+end
+if #missed > 0 then
+    for i = 1, #missed, 100 do
+        local chunk = {}
+        for j = i, math.min(i+99, #missed) do chunk[#chunk+1] = missed[j] end
+        endpoint:InvokeServer("SyncAnchor", chunk)
+        task.wait()
+    end
+end
 print("finnaly done huh")
