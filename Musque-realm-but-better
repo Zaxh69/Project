@@ -44,7 +44,6 @@ local function setName(ep,o,n) ep:InvokeServer("SetName", {o}, n) end
 local function setLocked(ep,p,l) ep:InvokeServer("SetLocked", {p}, l) end
 
 local P = {}
-
 local partData = {
     [695] = {anchored=true, isMeshPart=false, size=Vector3.new(12.953337669372559,12.2444486618042,0.6444446444511414)},
     [169] = {anchored=true, isMeshPart=false, size=Vector3.new(2.7161636352539062,14.232833862304688,88.83308410644531)},
@@ -3802,54 +3801,4 @@ if #missed > 0 then
         endpoint:InvokeServer("SyncAnchor", chunk)
         task.wait()
     end
-end
--- SetLocked All Parts
-local player = game.Players.LocalPlayer
-local tool
-
-for _, v in ipairs(player:GetDescendants()) do
-    if v.Name == "SyncAPI" then
-        tool = v.Parent
-        break
-    end
-end
-
-if not tool then
-    for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do
-        if v.Name == "SyncAPI" then
-            tool = v.Parent
-            break
-        end
-    end
-end
-
-local remote = tool.SyncAPI.ServerEndpoint
-
-if not remote then
-    warn("[F3X] ServerEndpoint tidak ditemukan!")
-    return
-end
-
-local locked = 0
-local failed = 0
-
-for _, v in ipairs(workspace:GetDescendants()) do
-    if v:IsA("BasePart") then
-        local success, err = pcall(function()
-            remote:InvokeServer("SetLocked", {v}, true)
-        end)
-
-        if success then
-            locked += 1
-        else
-            failed += 1
-            warn("[F3X] Gagal:", v:GetFullName(), err)
-        end
-    end
-end
-
-if failed == 0 then
-    print("[F3X] SetLocked done :", locked, "parts.")
-else
-    warn("[F3X] complete with, failed, "failed error form", locked + failed, "parts.")
 end
