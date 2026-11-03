@@ -909,7 +909,7 @@ end)
 
 gametp.Name = "gametp"
 gametp.Parent = TextLabel_4
-gametp.backgroundColor3 = Color3.fromRGB(0, 0, 0)
+gametp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 gametp.BorderColor3 = Color3.fromRGB(0, 53, 11)
 gametp.Position = UDim2.new(-0.0117647061, -39, -16.0714283, 0)
 gametp.Size = UDim2.new(0, 204, 0, 39)
