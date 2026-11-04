@@ -3646,7 +3646,7 @@ if #missed > 0 then
         task.wait()
     end
 end
--- locked all parts yeahh!!!
+-- locked
 local partsToLock = {}
 
 for _, part in pairs(P) do
@@ -3661,10 +3661,10 @@ if #partsToLock > 0 then
     end)
 
     if success then
-        print("[F3X] Berhasil mengirim SetLocked:", #partsToLock, "parts")
+        print("SetLocked:", #partsToLock, "parts")
     else
-        warn("[F3X] SetLocked gagal:", err)
+        warn("SetLocked ", err)
     end
 else
-    warn("[F3X] Tidak ada part yang ditemukan di tabel P")
+    warn("P no part yg gk bisa di P save")
 end
