@@ -1,0 +1,385 @@
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+local function findF3X()
+	local containers = {
+		player:FindFirstChildOfClass("Backpack"),
+		player.Character,
+		ReplicatedStorage
+	}
+
+	for _, container in ipairs(containers) do
+		if container then
+			for _, v in ipairs(container:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					local endpoint = v:FindFirstChild("ServerEndpoint")
+					if endpoint and endpoint:IsA("RemoteFunction") then
+						return endpoint
+					end
+				end
+			end
+		end
+	end
+end
+
+local endpoint = findF3X()
+
+if not endpoint then
+	warn("you dont have f3x ;btools")
+	return
+end
+
+local function invoke(action, ...)
+	return endpoint:InvokeServer(action, ...)
+end
+
+local glyphs = {
+	A = {" ### ","#   #","#   #","#####","#   #","#   #","#   #"},
+	B = {"#### ","#   #","#   #","#### ","#   #","#   #","#### "},
+	C = {" ####","#    ","#    ","#    ","#    ","#    "," ####"},
+	D = {"#### ","#   #","#   #","#   #","#   #","#   #","#### "},
+	E = {"#####","#    ","#    ","#### ","#    ","#    ","#####"},
+	F = {"#####","#    ","#    ","#### ","#    ","#    ","#    "},
+	G = {" ####","#    ","#    ","#  ##","#   #","#   #"," ####"},
+	H = {"#   #","#   #","#   #","#####","#   #","#   #","#   #"},
+	I = {"#####","  #  ","  #  ","  #  ","  #  ","  #  ","#####"},
+	J = {"#####","    #","    #","    #","    #","#   #"," ### "},
+	K = {"#   #","#  # ","# #  ","##   ","# #  ","#  # ","#   #"},
+	L = {"#    ","#    ","#    ","#    ","#    ","#    ","#####"},
+	M = {"#   #","## ##","# # #","# # #","#   #","#   #","#   #"},
+	N = {"#   #","##  #","# # #","#  ##","#   #","#   #","#   #"},
+	O = {" ### ","#   #","#   #","#   #","#   #","#   #"," ### "},
+	P = {"#### ","#   #","#   #","#### ","#    ","#    ","#    "},
+	Q = {" ### ","#   #","#   #","#   #","# # #","#  # "," ## #"},
+	R = {"#### ","#   #","#   #","#### ","# #  ","#  # ","#   #"},
+	S = {" ####","#    ","#    "," ### ","    #","    #","#### "},
+	T = {"#####","  #  ","  #  ","  #  ","  #  ","  #  ","  #  "},
+	U = {"#   #","#   #","#   #","#   #","#   #","#   #"," ### "},
+	V = {"#   #","#   #","#   #","#   #","#   #"," # # ","  #  "},
+	W = {"#   #","#   #","#   #","# # #","# # #","## ##","#   #"},
+	X = {"#   #","#   #"," # # ","  #  "," # # ","#   #","#   #"},
+	Y = {"#   #","#   #"," # # ","  #  ","  #  ","  #  ","  #  "},
+	Z = {"#####","    #","   # ","  #  "," #   ","#    ","#####"},
+	["0"] = {" ### ","#   #","#  ##","# # #","##  #","#   #"," ### "},
+	["1"] = {"  #  "," ##  ","  #  ","  #  ","  #  ","  #  "," ### "},
+	["2"] = {" ### ","#   #","    #","   # ","  #  "," #   ","#####"},
+	["3"] = {"#### ","    #","    #"," ### ","    #","    #","#### "},
+	["4"] = {"   # ","  ## "," # # ","#  # ","#####","   # ","   # "},
+	["5"] = {"#####","#    ","#### ","    #","    #","#   #"," ### "},
+	["6"] = {" ### ","#    ","#    ","#### ","#   #","#   #"," ### "},
+	["7"] = {"#####","    #","   # ","  #  "," #   "," #   "," #   "},
+	["8"] = {" ### ","#   #","#   #"," ### ","#   #","#   #"," ### "},
+	["9"] = {" ### ","#   #","#   #"," ####","    #","    #"," ### "},
+	[" "] = {"     ","     ","     ","     ","     ","     ","     "}
+}
+
+local builtModels = {}
+local building = false
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "TextBlockBuilderGui"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = playerGui
+
+local frame = Instance.new("Frame")
+frame.Name = "White2spooky"
+frame.Size = UDim2.new(0, 300, 0, 270)
+frame.Position = UDim2.new(0, 20, 0.5, -135)
+frame.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
+frame.BorderSizePixel = 0
+frame.Active = true
+frame.Draggable = true
+frame.Parent = screenGui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 8)
+corner.Parent = frame
+
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, 0, 0, 36)
+title.BackgroundTransparency = 1
+title.Text = "F3X Text Blocks"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.Font = Enum.Font.GothamBold
+title.TextSize = 20
+title.Parent = frame
+
+local function makeBox(name, y, placeholder, value)
+	local box = Instance.new("TextBox")
+	box.Name = name
+	box.Size = UDim2.new(1, -30, 0, 36)
+	box.Position = UDim2.new(0, 15, 0, y)
+	box.BackgroundColor3 = Color3.fromRGB(50, 50, 58)
+	box.TextColor3 = Color3.fromRGB(255, 255, 255)
+	box.PlaceholderText = placeholder
+	box.PlaceholderColor3 = Color3.fromRGB(150, 150, 150)
+	box.Text = value
+	box.ClearTextOnFocus = false
+	box.Font = Enum.Font.Gotham
+	box.TextSize = 16
+	box.Parent = frame
+
+	local c = Instance.new("UICorner")
+	c.CornerRadius = UDim.new(0, 6)
+	c.Parent = box
+
+	return box
+end
+
+local textInput = makeBox("TextInput", 44, "Type text here...", "")
+local sizeInput = makeBox("BlockSize", 88, "Block size (studs)", "1")
+
+local function makeButton(name, x, y, width, label, color)
+	local btn = Instance.new("TextButton")
+	btn.Name = name
+	btn.Size = UDim2.new(0, width, 0, 36)
+	btn.Position = UDim2.new(0, x, 0, y)
+	btn.BackgroundColor3 = color
+	btn.TextColor3 = Color3.new(1, 1, 1)
+	btn.Text = label
+	btn.Font = Enum.Font.GothamBold
+	btn.TextSize = 16
+	btn.Parent = frame
+
+	local c = Instance.new("UICorner")
+	c.CornerRadius = UDim.new(0, 6)
+	c.Parent = btn
+
+	return btn
+end
+
+local buildBtn = makeButton(
+	"BuildButton", 15, 136, 270,
+	"BUILD TEXT", Color3.fromRGB(0, 140, 80)
+)
+
+local undoBtn = makeButton(
+	"UndoButton", 15, 180, 130,
+	"UNDO", Color3.fromRGB(180, 130, 0)
+)
+
+local clearBtn = makeButton(
+	"ClearButton", 155, 180, 130,
+	"CLEAR ALL", Color3.fromRGB(170, 40, 40)
+)
+
+local status = Instance.new("TextLabel")
+status.Size = UDim2.new(1, -30, 0, 20)
+status.Position = UDim2.new(0, 15, 0, 220)
+status.BackgroundTransparency = 1
+status.Text = "Ready"
+status.TextColor3 = Color3.fromRGB(180, 180, 180)
+status.Font = Enum.Font.Gotham
+status.TextSize = 13
+status.TextXAlignment = Enum.TextXAlignment.Left
+status.Parent = frame
+
+local credit = Instance.new("TextLabel")
+credit.Name = "Credit"
+credit.Size = UDim2.new(1, -15, 0, 18)
+credit.Position = UDim2.new(0, 0, 1, -20)
+credit.BackgroundTransparency = 1
+credit.Text = "Made by : sweeper"
+credit.TextColor3 = Color3.fromRGB(150, 150, 150)
+credit.Font = Enum.Font.Gotham
+credit.TextSize = 10
+credit.TextXAlignment = Enum.TextXAlignment.Right
+credit.Parent = frame
+
+local function getRoot()
+	local character = player.Character
+	return character and character:FindFirstChild("HumanoidRootPart")
+end
+
+local function removeParts(parts)
+	if #parts > 0 then
+		invoke("Remove", parts)
+	end
+end
+
+local function buildText()
+	if building then
+		return
+	end
+
+	building = true
+	buildBtn.Text = "BUILDING..."
+
+	local success, result = pcall(function()
+		local root = getRoot()
+
+		if not root then
+			error("No character found")
+		end
+
+		local text = string.upper(textInput.Text)
+
+		if #text == 0 then
+			error("Enter some text first")
+		end
+
+		local size = math.clamp(
+			tonumber(sizeInput.Text) or 1,
+			0.2,
+			10
+		)
+
+		local look = root.CFrame.LookVector
+		local origin = root.Position + look * 3 + Vector3.new(0, 4, 0)
+		local base = CFrame.lookAt(origin, origin + look)
+
+		local parts = {}
+		local resizeChanges = {}
+		local colorChanges = {}
+		local materialChanges = {}
+		local anchorChanges = {}
+		local collisionChanges = {}
+
+		local totalCols = #text * 6 - 1
+		local startX = -((totalCols - 1) / 2) * size
+
+		for i = 1, #text do
+			local ch = string.sub(text, i, i)
+			local glyph = glyphs[ch]
+
+			if glyph then
+				local colOffset = (i - 1) * 6
+				local hue = (i - 1) / math.max(#text, 1)
+				local color = Color3.fromHSV(hue, 0.6, 1)
+
+				for row = 1, 7 do
+					for col = 1, 5 do
+						if string.sub(glyph[row], col, col) == "#" then
+							local x = startX + (colOffset + col - 1) * size
+							local y = (7 - row) * size
+							local cf = base * CFrame.new(x, y, 0)
+
+							local part = invoke(
+								"CreatePart",
+								"Normal",
+								cf,
+								workspace
+							)
+
+							if not part then
+								error("F3X failed to create part")
+							end
+
+							table.insert(parts, part)
+
+							table.insert(resizeChanges, {
+								Part = part,
+								Size = Vector3.new(size, size, size),
+								CFrame = cf
+							})
+
+							table.insert(colorChanges, {
+								Part = part,
+								Color = color
+							})
+
+							table.insert(materialChanges, {
+								Part = part,
+								Material = Enum.Material.SmoothPlastic,
+								Transparency = 0,
+								Reflectance = 0
+							})
+
+							table.insert(anchorChanges, {
+								Part = part,
+								Anchored = true
+							})
+
+							table.insert(collisionChanges, {
+								Part = part,
+								CanCollide = true
+							})
+						end
+					end
+				end
+			end
+		end
+
+		if #parts == 0 then
+			error("No supported characters")
+		end
+
+		status.Text = "Applying block settings..."
+
+		invoke("SyncResize", resizeChanges)
+		invoke("SyncColor", colorChanges)
+		invoke("SyncMaterial", materialChanges)
+		invoke("SyncAnchor", anchorChanges)
+		invoke("SyncCollision", collisionChanges)
+
+		return parts
+	end)
+
+	if success then
+		table.insert(builtModels, result)
+		status.Text = "Built " .. #result .. " blocks"
+	else
+		status.Text = "Error: " .. tostring(result)
+		warn(result)
+	end
+
+	building = false
+	buildBtn.Text = "BUILD TEXT"
+end
+
+buildBtn.MouseButton1Click:Connect(buildText)
+
+undoBtn.MouseButton1Click:Connect(function()
+	if building then
+		return
+	end
+
+	local last = table.remove(builtModels)
+
+	if last then
+		local success, err = pcall(function()
+			removeParts(last)
+		end)
+
+		status.Text = success and "Undid last build" or "Undo failed"
+		if not success then
+			warn(err)
+		end
+	else
+		status.Text = "Nothing to undo"
+	end
+end)
+
+clearBtn.MouseButton1Click:Connect(function()
+	if building then
+		return
+	end
+
+	local allParts = {}
+
+	for _, parts in ipairs(builtModels) do
+		for _, part in ipairs(parts) do
+			table.insert(allParts, part)
+		end
+	end
+
+	if #allParts == 0 then
+		status.Text = "Nothing to clear"
+		return
+	end
+
+	local success, err = pcall(function()
+		removeParts(allParts)
+	end)
+
+	if success then
+		table.clear(builtModels)
+		status.Text = "Cleared all text"
+	else
+		status.Text = "Clear failed"
+		warn(err)
+	end
+end)
