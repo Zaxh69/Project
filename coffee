@@ -5364,3 +5364,42 @@ if #missed > 0 then
         task.wait()
     end
 end
+local player = game.Players.LocalPlayer
+local tool
+
+for _, v in pairs(player:GetDescendants()) do
+    if v.Name == "SyncAPI" then
+        tool = v.Parent
+    end
+end
+
+for _, v in pairs(game.ReplicatedStorage:GetDescendants()) do
+    if v.Name == "SyncAPI" then
+        tool = v.Parent
+    end
+end
+
+local remote = tool.SyncAPI.ServerEndpoint
+
+function _(args)
+    remote:InvokeServer(unpack(args))
+end
+
+for _, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("BasePart") and v.Name == "Baseplate" then
+        _( {
+            [1] = "SyncSurface",
+            [2] = {
+                ["Part"] = v,
+                ["Surfaces"] = {
+                    ["Top"] = "Studs",
+                    ["Bottom"] = "Studs",
+                    ["Left"] = "Studs",
+                    ["Right"] = "Studs",
+                    ["Front"] = "Studs",
+                    ["Back"] = "Studs"
+                }
+            }
+        })
+    end
+end
