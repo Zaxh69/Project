@@ -746,7 +746,7 @@ if P[148] then task.spawn(function()
 end) end
 if P[164] then task.spawn(function()
     createMesh(endpoint, P[164])
-    syncMesh(endpoint, P[164], Enum.MeshType.FileMesh, Vector3.new(5500,5500,5500), Vector3.new(0,0,0), "rbxassetid://111891702759441", "rbxassetid://106228398533086", Vector3.new(2,2,2))
+    syncMesh(endpoint, P[164], Enum.MeshType.FileMesh, Vector3.new(5500,5500,5500), Vector3.new(0,0,0), "rbxassetid://111891702759441", "rbxassetid://138588379933436", Vector3.new(2,2,2))
 end) end
 if P[191] then task.spawn(function()
     createMesh(endpoint, P[191])
