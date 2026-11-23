@@ -1,0 +1,2501 @@
+local Workspace = game:GetService("Workspace")
+local function Build()
+    local folder = Instance.new("Folder")
+    folder.Name = "WorkspaceCopy"
+    folder.Parent = Workspace
+
+    local p2 = Instance.new("Part")
+    p2.Name = "Part3"
+    p2.Size = Vector3.new(2.00100,31.00000,2.00000)
+    p2.CFrame = CFrame.new(-5.00000,121.50000,608.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p2.Color = Color3.new(0.63922,0.63529,0.64706)
+    p2.Material = Enum.Material.Plastic
+    p2.Transparency = 0.00000
+    p2.Reflectance = 0.00000
+    p2.Anchored = true
+    p2.CanCollide = true
+    p2.CanTouch = true
+    p2.CanQuery = true
+    p2.CastShadow = true
+    p2.Shape = Enum.PartType.Block
+    p2.TopSurface = Enum.SurfaceType.Smooth
+    p2.BottomSurface = Enum.SurfaceType.Smooth
+    p2.LeftSurface = Enum.SurfaceType.Smooth
+    p2.RightSurface = Enum.SurfaceType.Smooth
+    p2.FrontSurface = Enum.SurfaceType.Smooth
+    p2.BackSurface = Enum.SurfaceType.Smooth
+    p2.Parent = folder
+
+    local p2_d1 = Instance.new("Texture")
+    p2_d1.Name = "Texture6"
+    p2_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p2_d1.Face = Enum.NormalId.Left
+    p2_d1.Transparency = 0.00000
+    p2_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p2_d1.StudsPerTileU = 2.00000
+    p2_d1.StudsPerTileV = 2.00000
+    p2_d1.OffsetStudsU = 0.00000
+    p2_d1.OffsetStudsV = 0.00000
+    p2_d1.Parent = p2
+
+    local p2_d2 = Instance.new("Texture")
+    p2_d2.Name = "Texture"
+    p2_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p2_d2.Face = Enum.NormalId.Right
+    p2_d2.Transparency = 0.00000
+    p2_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p2_d2.StudsPerTileU = 2.00000
+    p2_d2.StudsPerTileV = 2.00000
+    p2_d2.OffsetStudsU = 0.00000
+    p2_d2.OffsetStudsV = 0.00000
+    p2_d2.Parent = p2
+
+    local p2_d3 = Instance.new("Texture")
+    p2_d3.Name = "Texture2"
+    p2_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p2_d3.Face = Enum.NormalId.Front
+    p2_d3.Transparency = 0.00000
+    p2_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p2_d3.StudsPerTileU = 2.00000
+    p2_d3.StudsPerTileV = 2.00000
+    p2_d3.OffsetStudsU = 0.00000
+    p2_d3.OffsetStudsV = 0.00000
+    p2_d3.Parent = p2
+
+    local p2_d4 = Instance.new("Texture")
+    p2_d4.Name = "Texture4"
+    p2_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p2_d4.Face = Enum.NormalId.Bottom
+    p2_d4.Transparency = 0.00000
+    p2_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p2_d4.StudsPerTileU = 2.00000
+    p2_d4.StudsPerTileV = 2.00000
+    p2_d4.OffsetStudsU = 0.00000
+    p2_d4.OffsetStudsV = 0.00000
+    p2_d4.Parent = p2
+
+    local p2_d5 = Instance.new("Texture")
+    p2_d5.Name = "Texture5"
+    p2_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p2_d5.Face = Enum.NormalId.Back
+    p2_d5.Transparency = 0.00000
+    p2_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p2_d5.StudsPerTileU = 2.00000
+    p2_d5.StudsPerTileV = 2.00000
+    p2_d5.OffsetStudsU = 0.00000
+    p2_d5.OffsetStudsV = 0.00000
+    p2_d5.Parent = p2
+
+    local p2_d6 = Instance.new("Texture")
+    p2_d6.Name = "Texture3"
+    p2_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p2_d6.Face = Enum.NormalId.Top
+    p2_d6.Transparency = 0.00000
+    p2_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p2_d6.StudsPerTileU = 2.00000
+    p2_d6.StudsPerTileV = 2.00000
+    p2_d6.OffsetStudsU = 0.00000
+    p2_d6.OffsetStudsV = 0.00000
+    p2_d6.Parent = p2
+
+    local p3 = Instance.new("Part")
+    p3.Name = "Part5"
+    p3.Size = Vector3.new(2.00100,31.00000,2.00000)
+    p3.CFrame = CFrame.new(15.00000,121.50000,608.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p3.Color = Color3.new(0.63922,0.63529,0.64706)
+    p3.Material = Enum.Material.Plastic
+    p3.Transparency = 0.00000
+    p3.Reflectance = 0.00000
+    p3.Anchored = true
+    p3.CanCollide = true
+    p3.CanTouch = true
+    p3.CanQuery = true
+    p3.CastShadow = true
+    p3.Shape = Enum.PartType.Block
+    p3.TopSurface = Enum.SurfaceType.Smooth
+    p3.BottomSurface = Enum.SurfaceType.Smooth
+    p3.LeftSurface = Enum.SurfaceType.Smooth
+    p3.RightSurface = Enum.SurfaceType.Smooth
+    p3.FrontSurface = Enum.SurfaceType.Smooth
+    p3.BackSurface = Enum.SurfaceType.Smooth
+    p3.Parent = folder
+
+    local p3_d1 = Instance.new("Texture")
+    p3_d1.Name = "Texture6"
+    p3_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p3_d1.Face = Enum.NormalId.Left
+    p3_d1.Transparency = 0.00000
+    p3_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p3_d1.StudsPerTileU = 2.00000
+    p3_d1.StudsPerTileV = 2.00000
+    p3_d1.OffsetStudsU = 0.00000
+    p3_d1.OffsetStudsV = 0.00000
+    p3_d1.Parent = p3
+
+    local p3_d2 = Instance.new("Texture")
+    p3_d2.Name = "Texture"
+    p3_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p3_d2.Face = Enum.NormalId.Right
+    p3_d2.Transparency = 0.00000
+    p3_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p3_d2.StudsPerTileU = 2.00000
+    p3_d2.StudsPerTileV = 2.00000
+    p3_d2.OffsetStudsU = 0.00000
+    p3_d2.OffsetStudsV = 0.00000
+    p3_d2.Parent = p3
+
+    local p3_d3 = Instance.new("Texture")
+    p3_d3.Name = "Texture2"
+    p3_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p3_d3.Face = Enum.NormalId.Front
+    p3_d3.Transparency = 0.00000
+    p3_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p3_d3.StudsPerTileU = 2.00000
+    p3_d3.StudsPerTileV = 2.00000
+    p3_d3.OffsetStudsU = 0.00000
+    p3_d3.OffsetStudsV = 0.00000
+    p3_d3.Parent = p3
+
+    local p3_d4 = Instance.new("Texture")
+    p3_d4.Name = "Texture4"
+    p3_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p3_d4.Face = Enum.NormalId.Bottom
+    p3_d4.Transparency = 0.00000
+    p3_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p3_d4.StudsPerTileU = 2.00000
+    p3_d4.StudsPerTileV = 2.00000
+    p3_d4.OffsetStudsU = 0.00000
+    p3_d4.OffsetStudsV = 0.00000
+    p3_d4.Parent = p3
+
+    local p3_d5 = Instance.new("Texture")
+    p3_d5.Name = "Texture5"
+    p3_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p3_d5.Face = Enum.NormalId.Back
+    p3_d5.Transparency = 0.00000
+    p3_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p3_d5.StudsPerTileU = 2.00000
+    p3_d5.StudsPerTileV = 2.00000
+    p3_d5.OffsetStudsU = 0.00000
+    p3_d5.OffsetStudsV = 0.00000
+    p3_d5.Parent = p3
+
+    local p3_d6 = Instance.new("Texture")
+    p3_d6.Name = "Texture3"
+    p3_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p3_d6.Face = Enum.NormalId.Top
+    p3_d6.Transparency = 0.00000
+    p3_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p3_d6.StudsPerTileU = 2.00000
+    p3_d6.StudsPerTileV = 2.00000
+    p3_d6.OffsetStudsU = 0.00000
+    p3_d6.OffsetStudsV = 0.00000
+    p3_d6.Parent = p3
+
+    local p4 = Instance.new("Part")
+    p4.Name = "Part"
+    p4.Size = Vector3.new(2.00100,31.00000,2.00000)
+    p4.CFrame = CFrame.new(-25.00000,121.50000,608.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p4.Color = Color3.new(0.63922,0.63529,0.64706)
+    p4.Material = Enum.Material.Plastic
+    p4.Transparency = 0.00000
+    p4.Reflectance = 0.00000
+    p4.Anchored = true
+    p4.CanCollide = true
+    p4.CanTouch = true
+    p4.CanQuery = true
+    p4.CastShadow = true
+    p4.Shape = Enum.PartType.Block
+    p4.TopSurface = Enum.SurfaceType.Smooth
+    p4.BottomSurface = Enum.SurfaceType.Smooth
+    p4.LeftSurface = Enum.SurfaceType.Smooth
+    p4.RightSurface = Enum.SurfaceType.Smooth
+    p4.FrontSurface = Enum.SurfaceType.Smooth
+    p4.BackSurface = Enum.SurfaceType.Smooth
+    p4.Parent = folder
+
+    local p4_d1 = Instance.new("Texture")
+    p4_d1.Name = "Texture6"
+    p4_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p4_d1.Face = Enum.NormalId.Left
+    p4_d1.Transparency = 0.00000
+    p4_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p4_d1.StudsPerTileU = 2.00000
+    p4_d1.StudsPerTileV = 2.00000
+    p4_d1.OffsetStudsU = 0.00000
+    p4_d1.OffsetStudsV = 0.00000
+    p4_d1.Parent = p4
+
+    local p4_d2 = Instance.new("Texture")
+    p4_d2.Name = "Texture"
+    p4_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p4_d2.Face = Enum.NormalId.Right
+    p4_d2.Transparency = 0.00000
+    p4_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p4_d2.StudsPerTileU = 2.00000
+    p4_d2.StudsPerTileV = 2.00000
+    p4_d2.OffsetStudsU = 0.00000
+    p4_d2.OffsetStudsV = 0.00000
+    p4_d2.Parent = p4
+
+    local p4_d3 = Instance.new("Texture")
+    p4_d3.Name = "Texture2"
+    p4_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p4_d3.Face = Enum.NormalId.Front
+    p4_d3.Transparency = 0.00000
+    p4_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p4_d3.StudsPerTileU = 2.00000
+    p4_d3.StudsPerTileV = 2.00000
+    p4_d3.OffsetStudsU = 0.00000
+    p4_d3.OffsetStudsV = 0.00000
+    p4_d3.Parent = p4
+
+    local p4_d4 = Instance.new("Texture")
+    p4_d4.Name = "Texture4"
+    p4_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p4_d4.Face = Enum.NormalId.Bottom
+    p4_d4.Transparency = 0.00000
+    p4_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p4_d4.StudsPerTileU = 2.00000
+    p4_d4.StudsPerTileV = 2.00000
+    p4_d4.OffsetStudsU = 0.00000
+    p4_d4.OffsetStudsV = 0.00000
+    p4_d4.Parent = p4
+
+    local p4_d5 = Instance.new("Texture")
+    p4_d5.Name = "Texture5"
+    p4_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p4_d5.Face = Enum.NormalId.Back
+    p4_d5.Transparency = 0.00000
+    p4_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p4_d5.StudsPerTileU = 2.00000
+    p4_d5.StudsPerTileV = 2.00000
+    p4_d5.OffsetStudsU = 0.00000
+    p4_d5.OffsetStudsV = 0.00000
+    p4_d5.Parent = p4
+
+    local p4_d6 = Instance.new("Texture")
+    p4_d6.Name = "Texture3"
+    p4_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p4_d6.Face = Enum.NormalId.Top
+    p4_d6.Transparency = 0.00000
+    p4_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p4_d6.StudsPerTileU = 2.00000
+    p4_d6.StudsPerTileV = 2.00000
+    p4_d6.OffsetStudsU = 0.00000
+    p4_d6.OffsetStudsV = 0.00000
+    p4_d6.Parent = p4
+
+    local p5 = Instance.new("Part")
+    p5.Name = "Part4"
+    p5.Size = Vector3.new(18.00100,31.00000,2.00000)
+    p5.CFrame = CFrame.new(5.00000,121.50000,608.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p5.Color = Color3.new(0.63922,0.63529,0.64706)
+    p5.Material = Enum.Material.Plastic
+    p5.Transparency = 1.00000
+    p5.Reflectance = 0.00000
+    p5.Anchored = true
+    p5.CanCollide = false
+    p5.CanTouch = true
+    p5.CanQuery = true
+    p5.CastShadow = true
+    p5.Shape = Enum.PartType.Block
+    p5.TopSurface = Enum.SurfaceType.Smooth
+    p5.BottomSurface = Enum.SurfaceType.Smooth
+    p5.LeftSurface = Enum.SurfaceType.Smooth
+    p5.RightSurface = Enum.SurfaceType.Smooth
+    p5.FrontSurface = Enum.SurfaceType.Smooth
+    p5.BackSurface = Enum.SurfaceType.Smooth
+    p5.Parent = folder
+
+    local p5_d1 = Instance.new("Decal")
+    p5_d1.Name = "Decal"
+    p5_d1.Texture = "rbxthumb://type=Asset&id=83868993528567&w=420&h=420"
+    p5_d1.Face = Enum.NormalId.Front
+    p5_d1.Transparency = 0.00000
+    p5_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p5_d1.Parent = p5
+
+    local p6 = Instance.new("Part")
+    p6.Name = "Part2"
+    p6.Size = Vector3.new(18.00100,31.00000,2.00000)
+    p6.CFrame = CFrame.new(-15.00000,121.50000,608.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p6.Color = Color3.new(0.63922,0.63529,0.64706)
+    p6.Material = Enum.Material.Plastic
+    p6.Transparency = 1.00000
+    p6.Reflectance = 0.00000
+    p6.Anchored = true
+    p6.CanCollide = false
+    p6.CanTouch = true
+    p6.CanQuery = true
+    p6.CastShadow = true
+    p6.Shape = Enum.PartType.Block
+    p6.TopSurface = Enum.SurfaceType.Smooth
+    p6.BottomSurface = Enum.SurfaceType.Smooth
+    p6.LeftSurface = Enum.SurfaceType.Smooth
+    p6.RightSurface = Enum.SurfaceType.Smooth
+    p6.FrontSurface = Enum.SurfaceType.Smooth
+    p6.BackSurface = Enum.SurfaceType.Smooth
+    p6.Parent = folder
+
+    local p6_d1 = Instance.new("Decal")
+    p6_d1.Name = "Decal"
+    p6_d1.Texture = "rbxthumb://type=Asset&id=138588379933436&w=420&h=420"
+    p6_d1.Face = Enum.NormalId.Front
+    p6_d1.Transparency = 0.00000
+    p6_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p6_d1.Parent = p6
+
+    local p7 = Instance.new("Part")
+    p7.Name = "Part5"
+    p7.Size = Vector3.new(38.47189,2.07189,28.47189)
+    p7.CFrame = CFrame.new(-3.00000,107.43595,752.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p7.Color = Color3.new(0.63922,0.63529,0.64706)
+    p7.Material = Enum.Material.Plastic
+    p7.Transparency = 0.00000
+    p7.Reflectance = 0.00000
+    p7.Anchored = true
+    p7.CanCollide = true
+    p7.CanTouch = true
+    p7.CanQuery = true
+    p7.CastShadow = true
+    p7.Shape = Enum.PartType.Block
+    p7.TopSurface = Enum.SurfaceType.Smooth
+    p7.BottomSurface = Enum.SurfaceType.Smooth
+    p7.LeftSurface = Enum.SurfaceType.Smooth
+    p7.RightSurface = Enum.SurfaceType.Smooth
+    p7.FrontSurface = Enum.SurfaceType.Smooth
+    p7.BackSurface = Enum.SurfaceType.Smooth
+    p7.Parent = folder
+
+    local p7_d1 = Instance.new("Texture")
+    p7_d1.Name = "Texture6"
+    p7_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p7_d1.Face = Enum.NormalId.Left
+    p7_d1.Transparency = 0.00000
+    p7_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p7_d1.StudsPerTileU = 2.00000
+    p7_d1.StudsPerTileV = 2.00000
+    p7_d1.OffsetStudsU = 0.00000
+    p7_d1.OffsetStudsV = 0.00000
+    p7_d1.Parent = p7
+
+    local p7_d2 = Instance.new("Texture")
+    p7_d2.Name = "Texture"
+    p7_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p7_d2.Face = Enum.NormalId.Right
+    p7_d2.Transparency = 0.00000
+    p7_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p7_d2.StudsPerTileU = 2.00000
+    p7_d2.StudsPerTileV = 2.00000
+    p7_d2.OffsetStudsU = 0.00000
+    p7_d2.OffsetStudsV = 0.00000
+    p7_d2.Parent = p7
+
+    local p7_d3 = Instance.new("Texture")
+    p7_d3.Name = "Texture2"
+    p7_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p7_d3.Face = Enum.NormalId.Front
+    p7_d3.Transparency = 0.00000
+    p7_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p7_d3.StudsPerTileU = 2.00000
+    p7_d3.StudsPerTileV = 2.00000
+    p7_d3.OffsetStudsU = 0.00000
+    p7_d3.OffsetStudsV = 0.00000
+    p7_d3.Parent = p7
+
+    local p7_d4 = Instance.new("Texture")
+    p7_d4.Name = "Texture4"
+    p7_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p7_d4.Face = Enum.NormalId.Bottom
+    p7_d4.Transparency = 0.00000
+    p7_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p7_d4.StudsPerTileU = 2.00000
+    p7_d4.StudsPerTileV = 2.00000
+    p7_d4.OffsetStudsU = 0.00000
+    p7_d4.OffsetStudsV = 0.00000
+    p7_d4.Parent = p7
+
+    local p7_d5 = Instance.new("Texture")
+    p7_d5.Name = "Texture5"
+    p7_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p7_d5.Face = Enum.NormalId.Back
+    p7_d5.Transparency = 0.00000
+    p7_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p7_d5.StudsPerTileU = 2.00000
+    p7_d5.StudsPerTileV = 2.00000
+    p7_d5.OffsetStudsU = 0.00000
+    p7_d5.OffsetStudsV = 0.00000
+    p7_d5.Parent = p7
+
+    local p7_d6 = Instance.new("Texture")
+    p7_d6.Name = "Texture3"
+    p7_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p7_d6.Face = Enum.NormalId.Top
+    p7_d6.Transparency = 0.00000
+    p7_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p7_d6.StudsPerTileU = 2.00000
+    p7_d6.StudsPerTileV = 2.00000
+    p7_d6.OffsetStudsU = 0.00000
+    p7_d6.OffsetStudsV = 0.00000
+    p7_d6.Parent = p7
+
+    local p8 = Instance.new("Part")
+    p8.Name = "Part6"
+    p8.Size = Vector3.new(23.00100,108.00000,2.00000)
+    p8.CFrame = CFrame.new(-39.50000,52.00000,102.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p8.Color = Color3.new(0.63922,0.63529,0.64706)
+    p8.Material = Enum.Material.Plastic
+    p8.Transparency = 0.40000
+    p8.Reflectance = 0.00000
+    p8.Anchored = true
+    p8.CanCollide = true
+    p8.CanTouch = true
+    p8.CanQuery = true
+    p8.CastShadow = true
+    p8.Shape = Enum.PartType.Block
+    p8.TopSurface = Enum.SurfaceType.Smooth
+    p8.BottomSurface = Enum.SurfaceType.Smooth
+    p8.LeftSurface = Enum.SurfaceType.Smooth
+    p8.RightSurface = Enum.SurfaceType.Smooth
+    p8.FrontSurface = Enum.SurfaceType.Smooth
+    p8.BackSurface = Enum.SurfaceType.Smooth
+    p8.Parent = folder
+
+    local p8_d1 = Instance.new("Texture")
+    p8_d1.Name = "Texture6"
+    p8_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p8_d1.Face = Enum.NormalId.Left
+    p8_d1.Transparency = 0.40000
+    p8_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p8_d1.StudsPerTileU = 2.00000
+    p8_d1.StudsPerTileV = 2.00000
+    p8_d1.OffsetStudsU = 0.00000
+    p8_d1.OffsetStudsV = 0.00000
+    p8_d1.Parent = p8
+
+    local p8_d2 = Instance.new("Texture")
+    p8_d2.Name = "Texture"
+    p8_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p8_d2.Face = Enum.NormalId.Right
+    p8_d2.Transparency = 0.40000
+    p8_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p8_d2.StudsPerTileU = 2.00000
+    p8_d2.StudsPerTileV = 2.00000
+    p8_d2.OffsetStudsU = 0.00000
+    p8_d2.OffsetStudsV = 0.00000
+    p8_d2.Parent = p8
+
+    local p8_d3 = Instance.new("Texture")
+    p8_d3.Name = "Texture2"
+    p8_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p8_d3.Face = Enum.NormalId.Front
+    p8_d3.Transparency = 0.40000
+    p8_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p8_d3.StudsPerTileU = 2.00000
+    p8_d3.StudsPerTileV = 2.00000
+    p8_d3.OffsetStudsU = 0.00000
+    p8_d3.OffsetStudsV = 0.00000
+    p8_d3.Parent = p8
+
+    local p8_d4 = Instance.new("Texture")
+    p8_d4.Name = "Texture3"
+    p8_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p8_d4.Face = Enum.NormalId.Top
+    p8_d4.Transparency = 0.40000
+    p8_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p8_d4.StudsPerTileU = 2.00000
+    p8_d4.StudsPerTileV = 2.00000
+    p8_d4.OffsetStudsU = 0.00000
+    p8_d4.OffsetStudsV = 0.00000
+    p8_d4.Parent = p8
+
+    local p8_d5 = Instance.new("Texture")
+    p8_d5.Name = "Texture5"
+    p8_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p8_d5.Face = Enum.NormalId.Back
+    p8_d5.Transparency = 0.40000
+    p8_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p8_d5.StudsPerTileU = 2.00000
+    p8_d5.StudsPerTileV = 2.00000
+    p8_d5.OffsetStudsU = 0.00000
+    p8_d5.OffsetStudsV = 0.00000
+    p8_d5.Parent = p8
+
+    local p8_d6 = Instance.new("Texture")
+    p8_d6.Name = "Texture4"
+    p8_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p8_d6.Face = Enum.NormalId.Bottom
+    p8_d6.Transparency = 0.40000
+    p8_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p8_d6.StudsPerTileU = 2.00000
+    p8_d6.StudsPerTileV = 2.00000
+    p8_d6.OffsetStudsU = 0.00000
+    p8_d6.OffsetStudsV = 0.00000
+    p8_d6.Parent = p8
+
+    local p9 = Instance.new("Part")
+    p9.Name = "Part4"
+    p9.Size = Vector3.new(2.00100,108.00000,172.00000)
+    p9.CFrame = CFrame.new(-52.00000,52.00000,17.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p9.Color = Color3.new(0.63922,0.63529,0.64706)
+    p9.Material = Enum.Material.Plastic
+    p9.Transparency = 0.00000
+    p9.Reflectance = 0.00000
+    p9.Anchored = true
+    p9.CanCollide = true
+    p9.CanTouch = true
+    p9.CanQuery = true
+    p9.CastShadow = true
+    p9.Shape = Enum.PartType.Block
+    p9.TopSurface = Enum.SurfaceType.Smooth
+    p9.BottomSurface = Enum.SurfaceType.Smooth
+    p9.LeftSurface = Enum.SurfaceType.Smooth
+    p9.RightSurface = Enum.SurfaceType.Smooth
+    p9.FrontSurface = Enum.SurfaceType.Smooth
+    p9.BackSurface = Enum.SurfaceType.Smooth
+    p9.Parent = folder
+
+    local p9_d1 = Instance.new("Texture")
+    p9_d1.Name = "Texture6"
+    p9_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p9_d1.Face = Enum.NormalId.Left
+    p9_d1.Transparency = 0.00000
+    p9_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p9_d1.StudsPerTileU = 2.00000
+    p9_d1.StudsPerTileV = 2.00000
+    p9_d1.OffsetStudsU = 0.00000
+    p9_d1.OffsetStudsV = 0.00000
+    p9_d1.Parent = p9
+
+    local p9_d2 = Instance.new("Texture")
+    p9_d2.Name = "Texture"
+    p9_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p9_d2.Face = Enum.NormalId.Right
+    p9_d2.Transparency = 0.00000
+    p9_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p9_d2.StudsPerTileU = 2.00000
+    p9_d2.StudsPerTileV = 2.00000
+    p9_d2.OffsetStudsU = 0.00000
+    p9_d2.OffsetStudsV = 0.00000
+    p9_d2.Parent = p9
+
+    local p9_d3 = Instance.new("Texture")
+    p9_d3.Name = "Texture2"
+    p9_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p9_d3.Face = Enum.NormalId.Front
+    p9_d3.Transparency = 0.00000
+    p9_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p9_d3.StudsPerTileU = 2.00000
+    p9_d3.StudsPerTileV = 2.00000
+    p9_d3.OffsetStudsU = 0.00000
+    p9_d3.OffsetStudsV = 0.00000
+    p9_d3.Parent = p9
+
+    local p9_d4 = Instance.new("Texture")
+    p9_d4.Name = "Texture4"
+    p9_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p9_d4.Face = Enum.NormalId.Bottom
+    p9_d4.Transparency = 0.00000
+    p9_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p9_d4.StudsPerTileU = 2.00000
+    p9_d4.StudsPerTileV = 2.00000
+    p9_d4.OffsetStudsU = 0.00000
+    p9_d4.OffsetStudsV = 0.00000
+    p9_d4.Parent = p9
+
+    local p9_d5 = Instance.new("Texture")
+    p9_d5.Name = "Texture5"
+    p9_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p9_d5.Face = Enum.NormalId.Back
+    p9_d5.Transparency = 0.00000
+    p9_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p9_d5.StudsPerTileU = 2.00000
+    p9_d5.StudsPerTileV = 2.00000
+    p9_d5.OffsetStudsU = 0.00000
+    p9_d5.OffsetStudsV = 0.00000
+    p9_d5.Parent = p9
+
+    local p9_d6 = Instance.new("Texture")
+    p9_d6.Name = "Texture3"
+    p9_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p9_d6.Face = Enum.NormalId.Top
+    p9_d6.Transparency = 0.00000
+    p9_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p9_d6.StudsPerTileU = 2.00000
+    p9_d6.StudsPerTileV = 2.00000
+    p9_d6.OffsetStudsU = 0.00000
+    p9_d6.OffsetStudsV = 0.00000
+    p9_d6.Parent = p9
+
+    local p10 = Instance.new("Part")
+    p10.Name = "Part2"
+    p10.Size = Vector3.new(109.00000,2.00000,172.00000)
+    p10.CFrame = CFrame.new(2.50000,122.10424,16.19125,1.00000,-0.00000,0.00000,0.00000,0.98481,0.17362,-0.00000,-0.17362,0.98481)
+    p10.Color = Color3.new(0.63922,0.63529,0.64706)
+    p10.Material = Enum.Material.Plastic
+    p10.Transparency = 0.00000
+    p10.Reflectance = 0.00000
+    p10.Anchored = true
+    p10.CanCollide = true
+    p10.CanTouch = true
+    p10.CanQuery = true
+    p10.CastShadow = true
+    p10.Shape = Enum.PartType.Block
+    p10.TopSurface = Enum.SurfaceType.Smooth
+    p10.BottomSurface = Enum.SurfaceType.Smooth
+    p10.LeftSurface = Enum.SurfaceType.Smooth
+    p10.RightSurface = Enum.SurfaceType.Smooth
+    p10.FrontSurface = Enum.SurfaceType.Smooth
+    p10.BackSurface = Enum.SurfaceType.Smooth
+    p10.Parent = folder
+
+    local p10_d1 = Instance.new("Texture")
+    p10_d1.Name = "Texture6"
+    p10_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p10_d1.Face = Enum.NormalId.Left
+    p10_d1.Transparency = 0.00000
+    p10_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p10_d1.StudsPerTileU = 2.00000
+    p10_d1.StudsPerTileV = 2.00000
+    p10_d1.OffsetStudsU = 0.00000
+    p10_d1.OffsetStudsV = 0.00000
+    p10_d1.Parent = p10
+
+    local p10_d2 = Instance.new("Texture")
+    p10_d2.Name = "Texture"
+    p10_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p10_d2.Face = Enum.NormalId.Right
+    p10_d2.Transparency = 0.00000
+    p10_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p10_d2.StudsPerTileU = 2.00000
+    p10_d2.StudsPerTileV = 2.00000
+    p10_d2.OffsetStudsU = 0.00000
+    p10_d2.OffsetStudsV = 0.00000
+    p10_d2.Parent = p10
+
+    local p10_d3 = Instance.new("Texture")
+    p10_d3.Name = "Texture3"
+    p10_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p10_d3.Face = Enum.NormalId.Top
+    p10_d3.Transparency = 0.00000
+    p10_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p10_d3.StudsPerTileU = 2.00000
+    p10_d3.StudsPerTileV = 2.00000
+    p10_d3.OffsetStudsU = 0.00000
+    p10_d3.OffsetStudsV = 0.00000
+    p10_d3.Parent = p10
+
+    local p10_d4 = Instance.new("Texture")
+    p10_d4.Name = "Texture5"
+    p10_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p10_d4.Face = Enum.NormalId.Back
+    p10_d4.Transparency = 0.00000
+    p10_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p10_d4.StudsPerTileU = 2.00000
+    p10_d4.StudsPerTileV = 2.00000
+    p10_d4.OffsetStudsU = 0.00000
+    p10_d4.OffsetStudsV = 0.00000
+    p10_d4.Parent = p10
+
+    local p10_d5 = Instance.new("Texture")
+    p10_d5.Name = "Texture4"
+    p10_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p10_d5.Face = Enum.NormalId.Bottom
+    p10_d5.Transparency = 0.00000
+    p10_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p10_d5.StudsPerTileU = 2.00000
+    p10_d5.StudsPerTileV = 2.00000
+    p10_d5.OffsetStudsU = 0.00000
+    p10_d5.OffsetStudsV = 0.00000
+    p10_d5.Parent = p10
+
+    local p10_d6 = Instance.new("Texture")
+    p10_d6.Name = "Texture2"
+    p10_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p10_d6.Face = Enum.NormalId.Front
+    p10_d6.Transparency = 0.00000
+    p10_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p10_d6.StudsPerTileU = 2.00000
+    p10_d6.StudsPerTileV = 2.00000
+    p10_d6.OffsetStudsU = 0.00000
+    p10_d6.OffsetStudsV = 0.00000
+    p10_d6.Parent = p10
+
+    local p11 = Instance.new("Part")
+    p11.Name = "Part13"
+    p11.Size = Vector3.new(11.47189,11.47189,11.47189)
+    p11.CFrame = CFrame.new(-5.50000,106.73594,694.50000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p11.Color = Color3.new(0.63922,0.63529,0.64706)
+    p11.Material = Enum.Material.Plastic
+    p11.Transparency = 0.00000
+    p11.Reflectance = 0.00000
+    p11.Anchored = true
+    p11.CanCollide = true
+    p11.CanTouch = true
+    p11.CanQuery = true
+    p11.CastShadow = true
+    p11.Shape = Enum.PartType.Ball
+    p11.TopSurface = Enum.SurfaceType.Smooth
+    p11.BottomSurface = Enum.SurfaceType.Smooth
+    p11.LeftSurface = Enum.SurfaceType.Smooth
+    p11.RightSurface = Enum.SurfaceType.Smooth
+    p11.FrontSurface = Enum.SurfaceType.Smooth
+    p11.BackSurface = Enum.SurfaceType.Smooth
+    p11.Parent = folder
+
+    local p11_d1 = Instance.new("Texture")
+    p11_d1.Name = "Texture6"
+    p11_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p11_d1.Face = Enum.NormalId.Left
+    p11_d1.Transparency = 0.00000
+    p11_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p11_d1.StudsPerTileU = 2.00000
+    p11_d1.StudsPerTileV = 2.00000
+    p11_d1.OffsetStudsU = 0.00000
+    p11_d1.OffsetStudsV = 0.00000
+    p11_d1.Parent = p11
+
+    local p11_d2 = Instance.new("Texture")
+    p11_d2.Name = "Texture"
+    p11_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p11_d2.Face = Enum.NormalId.Right
+    p11_d2.Transparency = 0.00000
+    p11_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p11_d2.StudsPerTileU = 2.00000
+    p11_d2.StudsPerTileV = 2.00000
+    p11_d2.OffsetStudsU = 0.00000
+    p11_d2.OffsetStudsV = 0.00000
+    p11_d2.Parent = p11
+
+    local p11_d3 = Instance.new("Texture")
+    p11_d3.Name = "Texture2"
+    p11_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p11_d3.Face = Enum.NormalId.Front
+    p11_d3.Transparency = 0.00000
+    p11_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p11_d3.StudsPerTileU = 2.00000
+    p11_d3.StudsPerTileV = 2.00000
+    p11_d3.OffsetStudsU = 0.00000
+    p11_d3.OffsetStudsV = 0.00000
+    p11_d3.Parent = p11
+
+    local p11_d4 = Instance.new("Texture")
+    p11_d4.Name = "Texture3"
+    p11_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p11_d4.Face = Enum.NormalId.Top
+    p11_d4.Transparency = 0.00000
+    p11_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p11_d4.StudsPerTileU = 2.00000
+    p11_d4.StudsPerTileV = 2.00000
+    p11_d4.OffsetStudsU = 0.00000
+    p11_d4.OffsetStudsV = 0.00000
+    p11_d4.Parent = p11
+
+    local p11_d5 = Instance.new("Texture")
+    p11_d5.Name = "Texture4"
+    p11_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p11_d5.Face = Enum.NormalId.Bottom
+    p11_d5.Transparency = 0.00000
+    p11_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p11_d5.StudsPerTileU = 2.00000
+    p11_d5.StudsPerTileV = 2.00000
+    p11_d5.OffsetStudsU = 0.00000
+    p11_d5.OffsetStudsV = 0.00000
+    p11_d5.Parent = p11
+
+    local p11_d6 = Instance.new("Texture")
+    p11_d6.Name = "Texture5"
+    p11_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p11_d6.Face = Enum.NormalId.Back
+    p11_d6.Transparency = 0.00000
+    p11_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p11_d6.StudsPerTileU = 2.00000
+    p11_d6.StudsPerTileV = 2.00000
+    p11_d6.OffsetStudsU = 0.00000
+    p11_d6.OffsetStudsV = 0.00000
+    p11_d6.Parent = p11
+
+    local p12 = Instance.new("Part")
+    p12.Name = "Part3"
+    p12.Size = Vector3.new(2.00100,31.00000,2.00000)
+    p12.CFrame = CFrame.new(-5.00000,121.50000,631.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p12.Color = Color3.new(0.63922,0.63529,0.64706)
+    p12.Material = Enum.Material.Plastic
+    p12.Transparency = 0.00000
+    p12.Reflectance = 0.00000
+    p12.Anchored = true
+    p12.CanCollide = true
+    p12.CanTouch = true
+    p12.CanQuery = true
+    p12.CastShadow = true
+    p12.Shape = Enum.PartType.Block
+    p12.TopSurface = Enum.SurfaceType.Smooth
+    p12.BottomSurface = Enum.SurfaceType.Smooth
+    p12.LeftSurface = Enum.SurfaceType.Smooth
+    p12.RightSurface = Enum.SurfaceType.Smooth
+    p12.FrontSurface = Enum.SurfaceType.Smooth
+    p12.BackSurface = Enum.SurfaceType.Smooth
+    p12.Parent = folder
+
+    local p12_d1 = Instance.new("Texture")
+    p12_d1.Name = "Texture6"
+    p12_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p12_d1.Face = Enum.NormalId.Left
+    p12_d1.Transparency = 0.00000
+    p12_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p12_d1.StudsPerTileU = 2.00000
+    p12_d1.StudsPerTileV = 2.00000
+    p12_d1.OffsetStudsU = 0.00000
+    p12_d1.OffsetStudsV = 0.00000
+    p12_d1.Parent = p12
+
+    local p12_d2 = Instance.new("Texture")
+    p12_d2.Name = "Texture"
+    p12_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p12_d2.Face = Enum.NormalId.Right
+    p12_d2.Transparency = 0.00000
+    p12_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p12_d2.StudsPerTileU = 2.00000
+    p12_d2.StudsPerTileV = 2.00000
+    p12_d2.OffsetStudsU = 0.00000
+    p12_d2.OffsetStudsV = 0.00000
+    p12_d2.Parent = p12
+
+    local p12_d3 = Instance.new("Texture")
+    p12_d3.Name = "Texture2"
+    p12_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p12_d3.Face = Enum.NormalId.Front
+    p12_d3.Transparency = 0.00000
+    p12_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p12_d3.StudsPerTileU = 2.00000
+    p12_d3.StudsPerTileV = 2.00000
+    p12_d3.OffsetStudsU = 0.00000
+    p12_d3.OffsetStudsV = 0.00000
+    p12_d3.Parent = p12
+
+    local p12_d4 = Instance.new("Texture")
+    p12_d4.Name = "Texture4"
+    p12_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p12_d4.Face = Enum.NormalId.Bottom
+    p12_d4.Transparency = 0.00000
+    p12_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p12_d4.StudsPerTileU = 2.00000
+    p12_d4.StudsPerTileV = 2.00000
+    p12_d4.OffsetStudsU = 0.00000
+    p12_d4.OffsetStudsV = 0.00000
+    p12_d4.Parent = p12
+
+    local p12_d5 = Instance.new("Texture")
+    p12_d5.Name = "Texture5"
+    p12_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p12_d5.Face = Enum.NormalId.Back
+    p12_d5.Transparency = 0.00000
+    p12_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p12_d5.StudsPerTileU = 2.00000
+    p12_d5.StudsPerTileV = 2.00000
+    p12_d5.OffsetStudsU = 0.00000
+    p12_d5.OffsetStudsV = 0.00000
+    p12_d5.Parent = p12
+
+    local p12_d6 = Instance.new("Texture")
+    p12_d6.Name = "Texture3"
+    p12_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p12_d6.Face = Enum.NormalId.Top
+    p12_d6.Transparency = 0.00000
+    p12_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p12_d6.StudsPerTileU = 2.00000
+    p12_d6.StudsPerTileV = 2.00000
+    p12_d6.OffsetStudsU = 0.00000
+    p12_d6.OffsetStudsV = 0.00000
+    p12_d6.Parent = p12
+
+    local p13 = Instance.new("Part")
+    p13.Name = "Part5"
+    p13.Size = Vector3.new(2.00100,31.00000,2.00000)
+    p13.CFrame = CFrame.new(15.00000,121.50000,631.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p13.Color = Color3.new(0.63922,0.63529,0.64706)
+    p13.Material = Enum.Material.Plastic
+    p13.Transparency = 0.00000
+    p13.Reflectance = 0.00000
+    p13.Anchored = true
+    p13.CanCollide = true
+    p13.CanTouch = true
+    p13.CanQuery = true
+    p13.CastShadow = true
+    p13.Shape = Enum.PartType.Block
+    p13.TopSurface = Enum.SurfaceType.Smooth
+    p13.BottomSurface = Enum.SurfaceType.Smooth
+    p13.LeftSurface = Enum.SurfaceType.Smooth
+    p13.RightSurface = Enum.SurfaceType.Smooth
+    p13.FrontSurface = Enum.SurfaceType.Smooth
+    p13.BackSurface = Enum.SurfaceType.Smooth
+    p13.Parent = folder
+
+    local p13_d1 = Instance.new("Texture")
+    p13_d1.Name = "Texture6"
+    p13_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p13_d1.Face = Enum.NormalId.Left
+    p13_d1.Transparency = 0.00000
+    p13_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p13_d1.StudsPerTileU = 2.00000
+    p13_d1.StudsPerTileV = 2.00000
+    p13_d1.OffsetStudsU = 0.00000
+    p13_d1.OffsetStudsV = 0.00000
+    p13_d1.Parent = p13
+
+    local p13_d2 = Instance.new("Texture")
+    p13_d2.Name = "Texture"
+    p13_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p13_d2.Face = Enum.NormalId.Right
+    p13_d2.Transparency = 0.00000
+    p13_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p13_d2.StudsPerTileU = 2.00000
+    p13_d2.StudsPerTileV = 2.00000
+    p13_d2.OffsetStudsU = 0.00000
+    p13_d2.OffsetStudsV = 0.00000
+    p13_d2.Parent = p13
+
+    local p13_d3 = Instance.new("Texture")
+    p13_d3.Name = "Texture2"
+    p13_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p13_d3.Face = Enum.NormalId.Front
+    p13_d3.Transparency = 0.00000
+    p13_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p13_d3.StudsPerTileU = 2.00000
+    p13_d3.StudsPerTileV = 2.00000
+    p13_d3.OffsetStudsU = 0.00000
+    p13_d3.OffsetStudsV = 0.00000
+    p13_d3.Parent = p13
+
+    local p13_d4 = Instance.new("Texture")
+    p13_d4.Name = "Texture4"
+    p13_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p13_d4.Face = Enum.NormalId.Bottom
+    p13_d4.Transparency = 0.00000
+    p13_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p13_d4.StudsPerTileU = 2.00000
+    p13_d4.StudsPerTileV = 2.00000
+    p13_d4.OffsetStudsU = 0.00000
+    p13_d4.OffsetStudsV = 0.00000
+    p13_d4.Parent = p13
+
+    local p13_d5 = Instance.new("Texture")
+    p13_d5.Name = "Texture5"
+    p13_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p13_d5.Face = Enum.NormalId.Back
+    p13_d5.Transparency = 0.00000
+    p13_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p13_d5.StudsPerTileU = 2.00000
+    p13_d5.StudsPerTileV = 2.00000
+    p13_d5.OffsetStudsU = 0.00000
+    p13_d5.OffsetStudsV = 0.00000
+    p13_d5.Parent = p13
+
+    local p13_d6 = Instance.new("Texture")
+    p13_d6.Name = "Texture3"
+    p13_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p13_d6.Face = Enum.NormalId.Top
+    p13_d6.Transparency = 0.00000
+    p13_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p13_d6.StudsPerTileU = 2.00000
+    p13_d6.StudsPerTileV = 2.00000
+    p13_d6.OffsetStudsU = 0.00000
+    p13_d6.OffsetStudsV = 0.00000
+    p13_d6.Parent = p13
+
+    local p14 = Instance.new("Part")
+    p14.Name = "Part"
+    p14.Size = Vector3.new(2.00100,31.00000,2.00000)
+    p14.CFrame = CFrame.new(-25.00000,121.50000,631.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p14.Color = Color3.new(0.63922,0.63529,0.64706)
+    p14.Material = Enum.Material.Plastic
+    p14.Transparency = 0.00000
+    p14.Reflectance = 0.00000
+    p14.Anchored = true
+    p14.CanCollide = true
+    p14.CanTouch = true
+    p14.CanQuery = true
+    p14.CastShadow = true
+    p14.Shape = Enum.PartType.Block
+    p14.TopSurface = Enum.SurfaceType.Smooth
+    p14.BottomSurface = Enum.SurfaceType.Smooth
+    p14.LeftSurface = Enum.SurfaceType.Smooth
+    p14.RightSurface = Enum.SurfaceType.Smooth
+    p14.FrontSurface = Enum.SurfaceType.Smooth
+    p14.BackSurface = Enum.SurfaceType.Smooth
+    p14.Parent = folder
+
+    local p14_d1 = Instance.new("Texture")
+    p14_d1.Name = "Texture6"
+    p14_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p14_d1.Face = Enum.NormalId.Left
+    p14_d1.Transparency = 0.00000
+    p14_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p14_d1.StudsPerTileU = 2.00000
+    p14_d1.StudsPerTileV = 2.00000
+    p14_d1.OffsetStudsU = 0.00000
+    p14_d1.OffsetStudsV = 0.00000
+    p14_d1.Parent = p14
+
+    local p14_d2 = Instance.new("Texture")
+    p14_d2.Name = "Texture"
+    p14_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p14_d2.Face = Enum.NormalId.Right
+    p14_d2.Transparency = 0.00000
+    p14_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p14_d2.StudsPerTileU = 2.00000
+    p14_d2.StudsPerTileV = 2.00000
+    p14_d2.OffsetStudsU = 0.00000
+    p14_d2.OffsetStudsV = 0.00000
+    p14_d2.Parent = p14
+
+    local p14_d3 = Instance.new("Texture")
+    p14_d3.Name = "Texture2"
+    p14_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p14_d3.Face = Enum.NormalId.Front
+    p14_d3.Transparency = 0.00000
+    p14_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p14_d3.StudsPerTileU = 2.00000
+    p14_d3.StudsPerTileV = 2.00000
+    p14_d3.OffsetStudsU = 0.00000
+    p14_d3.OffsetStudsV = 0.00000
+    p14_d3.Parent = p14
+
+    local p14_d4 = Instance.new("Texture")
+    p14_d4.Name = "Texture4"
+    p14_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p14_d4.Face = Enum.NormalId.Bottom
+    p14_d4.Transparency = 0.00000
+    p14_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p14_d4.StudsPerTileU = 2.00000
+    p14_d4.StudsPerTileV = 2.00000
+    p14_d4.OffsetStudsU = 0.00000
+    p14_d4.OffsetStudsV = 0.00000
+    p14_d4.Parent = p14
+
+    local p14_d5 = Instance.new("Texture")
+    p14_d5.Name = "Texture5"
+    p14_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p14_d5.Face = Enum.NormalId.Back
+    p14_d5.Transparency = 0.00000
+    p14_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p14_d5.StudsPerTileU = 2.00000
+    p14_d5.StudsPerTileV = 2.00000
+    p14_d5.OffsetStudsU = 0.00000
+    p14_d5.OffsetStudsV = 0.00000
+    p14_d5.Parent = p14
+
+    local p14_d6 = Instance.new("Texture")
+    p14_d6.Name = "Texture3"
+    p14_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p14_d6.Face = Enum.NormalId.Top
+    p14_d6.Transparency = 0.00000
+    p14_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p14_d6.StudsPerTileU = 2.00000
+    p14_d6.StudsPerTileV = 2.00000
+    p14_d6.OffsetStudsU = 0.00000
+    p14_d6.OffsetStudsV = 0.00000
+    p14_d6.Parent = p14
+
+    local p15 = Instance.new("Part")
+    p15.Name = "Part4"
+    p15.Size = Vector3.new(18.00100,31.00000,0.00100)
+    p15.CFrame = CFrame.new(5.00000,121.50000,630.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p15.Color = Color3.new(0.00000,0.00000,0.00000)
+    p15.Material = Enum.Material.Plastic
+    p15.Transparency = 0.00000
+    p15.Reflectance = 0.00000
+    p15.Anchored = true
+    p15.CanCollide = false
+    p15.CanTouch = true
+    p15.CanQuery = true
+    p15.CastShadow = true
+    p15.Shape = Enum.PartType.Block
+    p15.TopSurface = Enum.SurfaceType.Smooth
+    p15.BottomSurface = Enum.SurfaceType.Smooth
+    p15.LeftSurface = Enum.SurfaceType.Smooth
+    p15.RightSurface = Enum.SurfaceType.Smooth
+    p15.FrontSurface = Enum.SurfaceType.Smooth
+    p15.BackSurface = Enum.SurfaceType.Smooth
+    p15.Parent = folder
+
+    local p15_d1 = Instance.new("Decal")
+    p15_d1.Name = "Decal"
+    p15_d1.Texture = "rbxthumb://type=Asset&id=139464988141489&w=420&h=420"
+    p15_d1.Face = Enum.NormalId.Front
+    p15_d1.Transparency = 0.00000
+    p15_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p15_d1.Parent = p15
+
+    local p16 = Instance.new("Part")
+    p16.Name = "Part2"
+    p16.Size = Vector3.new(18.00100,31.00000,2.00000)
+    p16.CFrame = CFrame.new(-15.00000,121.50000,631.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p16.Color = Color3.new(0.63922,0.63529,0.64706)
+    p16.Material = Enum.Material.Plastic
+    p16.Transparency = 1.00000
+    p16.Reflectance = 0.00000
+    p16.Anchored = true
+    p16.CanCollide = false
+    p16.CanTouch = true
+    p16.CanQuery = true
+    p16.CastShadow = true
+    p16.Shape = Enum.PartType.Block
+    p16.TopSurface = Enum.SurfaceType.Smooth
+    p16.BottomSurface = Enum.SurfaceType.Smooth
+    p16.LeftSurface = Enum.SurfaceType.Smooth
+    p16.RightSurface = Enum.SurfaceType.Smooth
+    p16.FrontSurface = Enum.SurfaceType.Smooth
+    p16.BackSurface = Enum.SurfaceType.Smooth
+    p16.Parent = folder
+
+    local p16_d1 = Instance.new("Decal")
+    p16_d1.Name = "Decal"
+    p16_d1.Texture = "rbxthumb://type=Asset&id=130551214316891&w=420&h=420"
+    p16_d1.Face = Enum.NormalId.Front
+    p16_d1.Transparency = 0.00000
+    p16_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p16_d1.Parent = p16
+
+    local p17 = Instance.new("Part")
+    p17.Name = "Part14"
+    p17.Size = Vector3.new(11.47189,11.47189,11.47189)
+    p17.CFrame = CFrame.new(-5.50000,106.73594,711.50000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p17.Color = Color3.new(0.63922,0.63529,0.64706)
+    p17.Material = Enum.Material.Plastic
+    p17.Transparency = 0.00000
+    p17.Reflectance = 0.00000
+    p17.Anchored = true
+    p17.CanCollide = true
+    p17.CanTouch = true
+    p17.CanQuery = true
+    p17.CastShadow = true
+    p17.Shape = Enum.PartType.Ball
+    p17.TopSurface = Enum.SurfaceType.Smooth
+    p17.BottomSurface = Enum.SurfaceType.Smooth
+    p17.LeftSurface = Enum.SurfaceType.Smooth
+    p17.RightSurface = Enum.SurfaceType.Smooth
+    p17.FrontSurface = Enum.SurfaceType.Smooth
+    p17.BackSurface = Enum.SurfaceType.Smooth
+    p17.Parent = folder
+
+    local p17_d1 = Instance.new("Texture")
+    p17_d1.Name = "Texture6"
+    p17_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p17_d1.Face = Enum.NormalId.Left
+    p17_d1.Transparency = 0.00000
+    p17_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p17_d1.StudsPerTileU = 2.00000
+    p17_d1.StudsPerTileV = 2.00000
+    p17_d1.OffsetStudsU = 0.00000
+    p17_d1.OffsetStudsV = 0.00000
+    p17_d1.Parent = p17
+
+    local p17_d2 = Instance.new("Texture")
+    p17_d2.Name = "Texture"
+    p17_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p17_d2.Face = Enum.NormalId.Right
+    p17_d2.Transparency = 0.00000
+    p17_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p17_d2.StudsPerTileU = 2.00000
+    p17_d2.StudsPerTileV = 2.00000
+    p17_d2.OffsetStudsU = 0.00000
+    p17_d2.OffsetStudsV = 0.00000
+    p17_d2.Parent = p17
+
+    local p17_d3 = Instance.new("Texture")
+    p17_d3.Name = "Texture2"
+    p17_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p17_d3.Face = Enum.NormalId.Front
+    p17_d3.Transparency = 0.00000
+    p17_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p17_d3.StudsPerTileU = 2.00000
+    p17_d3.StudsPerTileV = 2.00000
+    p17_d3.OffsetStudsU = 0.00000
+    p17_d3.OffsetStudsV = 0.00000
+    p17_d3.Parent = p17
+
+    local p17_d4 = Instance.new("Texture")
+    p17_d4.Name = "Texture3"
+    p17_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p17_d4.Face = Enum.NormalId.Top
+    p17_d4.Transparency = 0.00000
+    p17_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p17_d4.StudsPerTileU = 2.00000
+    p17_d4.StudsPerTileV = 2.00000
+    p17_d4.OffsetStudsU = 0.00000
+    p17_d4.OffsetStudsV = 0.00000
+    p17_d4.Parent = p17
+
+    local p17_d5 = Instance.new("Texture")
+    p17_d5.Name = "Texture4"
+    p17_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p17_d5.Face = Enum.NormalId.Bottom
+    p17_d5.Transparency = 0.00000
+    p17_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p17_d5.StudsPerTileU = 2.00000
+    p17_d5.StudsPerTileV = 2.00000
+    p17_d5.OffsetStudsU = 0.00000
+    p17_d5.OffsetStudsV = 0.00000
+    p17_d5.Parent = p17
+
+    local p17_d6 = Instance.new("Texture")
+    p17_d6.Name = "Texture5"
+    p17_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p17_d6.Face = Enum.NormalId.Back
+    p17_d6.Transparency = 0.00000
+    p17_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p17_d6.StudsPerTileU = 2.00000
+    p17_d6.StudsPerTileV = 2.00000
+    p17_d6.OffsetStudsU = 0.00000
+    p17_d6.OffsetStudsV = 0.00000
+    p17_d6.Parent = p17
+
+    local p18 = Instance.new("Part")
+    p18.Name = "Part10"
+    p18.Size = Vector3.new(108.00100,108.00000,2.00000)
+    p18.CFrame = CFrame.new(1.00000,52.00000,-68.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p18.Color = Color3.new(0.63922,0.63529,0.64706)
+    p18.Material = Enum.Material.Plastic
+    p18.Transparency = 0.00000
+    p18.Reflectance = 0.00000
+    p18.Anchored = true
+    p18.CanCollide = true
+    p18.CanTouch = true
+    p18.CanQuery = true
+    p18.CastShadow = true
+    p18.Shape = Enum.PartType.Block
+    p18.TopSurface = Enum.SurfaceType.Smooth
+    p18.BottomSurface = Enum.SurfaceType.Smooth
+    p18.LeftSurface = Enum.SurfaceType.Smooth
+    p18.RightSurface = Enum.SurfaceType.Smooth
+    p18.FrontSurface = Enum.SurfaceType.Smooth
+    p18.BackSurface = Enum.SurfaceType.Smooth
+    p18.Parent = folder
+
+    local p18_d1 = Instance.new("Texture")
+    p18_d1.Name = "Texture6"
+    p18_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p18_d1.Face = Enum.NormalId.Left
+    p18_d1.Transparency = 0.00000
+    p18_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p18_d1.StudsPerTileU = 2.00000
+    p18_d1.StudsPerTileV = 2.00000
+    p18_d1.OffsetStudsU = 0.00000
+    p18_d1.OffsetStudsV = 0.00000
+    p18_d1.Parent = p18
+
+    local p18_d2 = Instance.new("Texture")
+    p18_d2.Name = "Texture"
+    p18_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p18_d2.Face = Enum.NormalId.Right
+    p18_d2.Transparency = 0.00000
+    p18_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p18_d2.StudsPerTileU = 2.00000
+    p18_d2.StudsPerTileV = 2.00000
+    p18_d2.OffsetStudsU = 0.00000
+    p18_d2.OffsetStudsV = 0.00000
+    p18_d2.Parent = p18
+
+    local p18_d3 = Instance.new("Texture")
+    p18_d3.Name = "Texture2"
+    p18_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p18_d3.Face = Enum.NormalId.Front
+    p18_d3.Transparency = 0.00000
+    p18_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p18_d3.StudsPerTileU = 2.00000
+    p18_d3.StudsPerTileV = 2.00000
+    p18_d3.OffsetStudsU = 0.00000
+    p18_d3.OffsetStudsV = 0.00000
+    p18_d3.Parent = p18
+
+    local p18_d4 = Instance.new("Texture")
+    p18_d4.Name = "Texture4"
+    p18_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p18_d4.Face = Enum.NormalId.Bottom
+    p18_d4.Transparency = 0.00000
+    p18_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p18_d4.StudsPerTileU = 2.00000
+    p18_d4.StudsPerTileV = 2.00000
+    p18_d4.OffsetStudsU = 0.00000
+    p18_d4.OffsetStudsV = 0.00000
+    p18_d4.Parent = p18
+
+    local p18_d5 = Instance.new("Texture")
+    p18_d5.Name = "Texture5"
+    p18_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p18_d5.Face = Enum.NormalId.Back
+    p18_d5.Transparency = 0.00000
+    p18_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p18_d5.StudsPerTileU = 2.00000
+    p18_d5.StudsPerTileV = 2.00000
+    p18_d5.OffsetStudsU = 0.00000
+    p18_d5.OffsetStudsV = 0.00000
+    p18_d5.Parent = p18
+
+    local p18_d6 = Instance.new("Texture")
+    p18_d6.Name = "Texture3"
+    p18_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p18_d6.Face = Enum.NormalId.Top
+    p18_d6.Transparency = 0.00000
+    p18_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p18_d6.StudsPerTileU = 2.00000
+    p18_d6.StudsPerTileV = 2.00000
+    p18_d6.OffsetStudsU = 0.00000
+    p18_d6.OffsetStudsV = 0.00000
+    p18_d6.Parent = p18
+
+    local p19 = Instance.new("Part")
+    p19.Name = "Part"
+    p19.Size = Vector3.new(23.00100,108.00000,2.00000)
+    p19.CFrame = CFrame.new(45.50000,52.00000,102.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p19.Color = Color3.new(0.63922,0.63529,0.64706)
+    p19.Material = Enum.Material.Plastic
+    p19.Transparency = 0.40000
+    p19.Reflectance = 0.00000
+    p19.Anchored = true
+    p19.CanCollide = true
+    p19.CanTouch = true
+    p19.CanQuery = true
+    p19.CastShadow = true
+    p19.Shape = Enum.PartType.Block
+    p19.TopSurface = Enum.SurfaceType.Smooth
+    p19.BottomSurface = Enum.SurfaceType.Smooth
+    p19.LeftSurface = Enum.SurfaceType.Smooth
+    p19.RightSurface = Enum.SurfaceType.Smooth
+    p19.FrontSurface = Enum.SurfaceType.Smooth
+    p19.BackSurface = Enum.SurfaceType.Smooth
+    p19.Parent = folder
+
+    local p19_d1 = Instance.new("Texture")
+    p19_d1.Name = "Texture6"
+    p19_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p19_d1.Face = Enum.NormalId.Left
+    p19_d1.Transparency = 0.40000
+    p19_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p19_d1.StudsPerTileU = 2.00000
+    p19_d1.StudsPerTileV = 2.00000
+    p19_d1.OffsetStudsU = 0.00000
+    p19_d1.OffsetStudsV = 0.00000
+    p19_d1.Parent = p19
+
+    local p19_d2 = Instance.new("Texture")
+    p19_d2.Name = "Texture"
+    p19_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p19_d2.Face = Enum.NormalId.Right
+    p19_d2.Transparency = 0.40000
+    p19_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p19_d2.StudsPerTileU = 2.00000
+    p19_d2.StudsPerTileV = 2.00000
+    p19_d2.OffsetStudsU = 0.00000
+    p19_d2.OffsetStudsV = 0.00000
+    p19_d2.Parent = p19
+
+    local p19_d3 = Instance.new("Texture")
+    p19_d3.Name = "Texture2"
+    p19_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p19_d3.Face = Enum.NormalId.Front
+    p19_d3.Transparency = 0.40000
+    p19_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p19_d3.StudsPerTileU = 2.00000
+    p19_d3.StudsPerTileV = 2.00000
+    p19_d3.OffsetStudsU = 0.00000
+    p19_d3.OffsetStudsV = 0.00000
+    p19_d3.Parent = p19
+
+    local p19_d4 = Instance.new("Texture")
+    p19_d4.Name = "Texture3"
+    p19_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p19_d4.Face = Enum.NormalId.Top
+    p19_d4.Transparency = 0.40000
+    p19_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p19_d4.StudsPerTileU = 2.00000
+    p19_d4.StudsPerTileV = 2.00000
+    p19_d4.OffsetStudsU = 0.00000
+    p19_d4.OffsetStudsV = 0.00000
+    p19_d4.Parent = p19
+
+    local p19_d5 = Instance.new("Texture")
+    p19_d5.Name = "Texture5"
+    p19_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p19_d5.Face = Enum.NormalId.Back
+    p19_d5.Transparency = 0.40000
+    p19_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p19_d5.StudsPerTileU = 2.00000
+    p19_d5.StudsPerTileV = 2.00000
+    p19_d5.OffsetStudsU = 0.00000
+    p19_d5.OffsetStudsV = 0.00000
+    p19_d5.Parent = p19
+
+    local p19_d6 = Instance.new("Texture")
+    p19_d6.Name = "Texture4"
+    p19_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p19_d6.Face = Enum.NormalId.Bottom
+    p19_d6.Transparency = 0.40000
+    p19_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p19_d6.StudsPerTileU = 2.00000
+    p19_d6.StudsPerTileV = 2.00000
+    p19_d6.OffsetStudsU = 0.00000
+    p19_d6.OffsetStudsV = 0.00000
+    p19_d6.Parent = p19
+
+    local p20 = Instance.new("Part")
+    p20.Name = "Part15"
+    p20.Size = Vector3.new(11.47189,11.47189,11.47189)
+    p20.CFrame = CFrame.new(-5.50000,106.73594,728.50000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p20.Color = Color3.new(0.63922,0.63529,0.64706)
+    p20.Material = Enum.Material.Plastic
+    p20.Transparency = 0.00000
+    p20.Reflectance = 0.00000
+    p20.Anchored = true
+    p20.CanCollide = true
+    p20.CanTouch = true
+    p20.CanQuery = true
+    p20.CastShadow = true
+    p20.Shape = Enum.PartType.Ball
+    p20.TopSurface = Enum.SurfaceType.Smooth
+    p20.BottomSurface = Enum.SurfaceType.Smooth
+    p20.LeftSurface = Enum.SurfaceType.Smooth
+    p20.RightSurface = Enum.SurfaceType.Smooth
+    p20.FrontSurface = Enum.SurfaceType.Smooth
+    p20.BackSurface = Enum.SurfaceType.Smooth
+    p20.Parent = folder
+
+    local p20_d1 = Instance.new("Texture")
+    p20_d1.Name = "Texture6"
+    p20_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p20_d1.Face = Enum.NormalId.Left
+    p20_d1.Transparency = 0.00000
+    p20_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p20_d1.StudsPerTileU = 2.00000
+    p20_d1.StudsPerTileV = 2.00000
+    p20_d1.OffsetStudsU = 0.00000
+    p20_d1.OffsetStudsV = 0.00000
+    p20_d1.Parent = p20
+
+    local p20_d2 = Instance.new("Texture")
+    p20_d2.Name = "Texture"
+    p20_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p20_d2.Face = Enum.NormalId.Right
+    p20_d2.Transparency = 0.00000
+    p20_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p20_d2.StudsPerTileU = 2.00000
+    p20_d2.StudsPerTileV = 2.00000
+    p20_d2.OffsetStudsU = 0.00000
+    p20_d2.OffsetStudsV = 0.00000
+    p20_d2.Parent = p20
+
+    local p20_d3 = Instance.new("Texture")
+    p20_d3.Name = "Texture2"
+    p20_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p20_d3.Face = Enum.NormalId.Front
+    p20_d3.Transparency = 0.00000
+    p20_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p20_d3.StudsPerTileU = 2.00000
+    p20_d3.StudsPerTileV = 2.00000
+    p20_d3.OffsetStudsU = 0.00000
+    p20_d3.OffsetStudsV = 0.00000
+    p20_d3.Parent = p20
+
+    local p20_d4 = Instance.new("Texture")
+    p20_d4.Name = "Texture3"
+    p20_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p20_d4.Face = Enum.NormalId.Top
+    p20_d4.Transparency = 0.00000
+    p20_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p20_d4.StudsPerTileU = 2.00000
+    p20_d4.StudsPerTileV = 2.00000
+    p20_d4.OffsetStudsU = 0.00000
+    p20_d4.OffsetStudsV = 0.00000
+    p20_d4.Parent = p20
+
+    local p20_d5 = Instance.new("Texture")
+    p20_d5.Name = "Texture4"
+    p20_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p20_d5.Face = Enum.NormalId.Bottom
+    p20_d5.Transparency = 0.00000
+    p20_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p20_d5.StudsPerTileU = 2.00000
+    p20_d5.StudsPerTileV = 2.00000
+    p20_d5.OffsetStudsU = 0.00000
+    p20_d5.OffsetStudsV = 0.00000
+    p20_d5.Parent = p20
+
+    local p20_d6 = Instance.new("Texture")
+    p20_d6.Name = "Texture5"
+    p20_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p20_d6.Face = Enum.NormalId.Back
+    p20_d6.Transparency = 0.00000
+    p20_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p20_d6.StudsPerTileU = 2.00000
+    p20_d6.StudsPerTileV = 2.00000
+    p20_d6.OffsetStudsU = 0.00000
+    p20_d6.OffsetStudsV = 0.00000
+    p20_d6.Parent = p20
+
+    local p21 = Instance.new("SpawnLocation")
+    p21.Name = "SpawnLocation"
+    p21.Size = Vector3.new(12.00000,1.00000,12.00000)
+    p21.CFrame = CFrame.new(5.00000,0.50000,19.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p21.Color = Color3.new(0.63922,0.63529,0.64706)
+    p21.Material = Enum.Material.Plastic
+    p21.Transparency = 0.00000
+    p21.Reflectance = 0.00000
+    p21.Anchored = true
+    p21.CanCollide = true
+    p21.CanTouch = true
+    p21.CanQuery = true
+    p21.CastShadow = true
+    p21.Shape = Enum.PartType.Block
+    p21.Neutral = true
+    p21.Enabled = true
+    p21.Duration = 0.00000
+    p21.AllowTeamChangeOnTouch = false
+    p21.TopSurface = Enum.SurfaceType.Smooth
+    p21.BottomSurface = Enum.SurfaceType.Smooth
+    p21.LeftSurface = Enum.SurfaceType.Smooth
+    p21.RightSurface = Enum.SurfaceType.Smooth
+    p21.FrontSurface = Enum.SurfaceType.Smooth
+    p21.BackSurface = Enum.SurfaceType.Smooth
+    p21.Parent = folder
+
+    local p21_d1 = Instance.new("Decal")
+    p21_d1.Name = "durhem's"
+    p21_d1.Texture = "rbxthumb://type=Asset&id=83868993528567&w=420&h=420"
+    p21_d1.Face = Enum.NormalId.Top
+    p21_d1.Transparency = 0.00000
+    p21_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p21_d1.Parent = p21
+
+    local p22 = Instance.new("Part")
+    p22.Name = "Part9"
+    p22.Size = Vector3.new(110.00000,2.00000,67.00000)
+    p22.CFrame = CFrame.new(2.00000,-1.00000,136.50000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p22.Color = Color3.new(0.63922,0.63529,0.64706)
+    p22.Material = Enum.Material.Plastic
+    p22.Transparency = 0.00000
+    p22.Reflectance = 0.00000
+    p22.Anchored = true
+    p22.CanCollide = true
+    p22.CanTouch = true
+    p22.CanQuery = true
+    p22.CastShadow = true
+    p22.Shape = Enum.PartType.Block
+    p22.TopSurface = Enum.SurfaceType.Smooth
+    p22.BottomSurface = Enum.SurfaceType.Smooth
+    p22.LeftSurface = Enum.SurfaceType.Smooth
+    p22.RightSurface = Enum.SurfaceType.Smooth
+    p22.FrontSurface = Enum.SurfaceType.Smooth
+    p22.BackSurface = Enum.SurfaceType.Smooth
+    p22.Parent = folder
+
+    local p22_d1 = Instance.new("Texture")
+    p22_d1.Name = "Texture6"
+    p22_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p22_d1.Face = Enum.NormalId.Left
+    p22_d1.Transparency = 0.00000
+    p22_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p22_d1.StudsPerTileU = 2.00000
+    p22_d1.StudsPerTileV = 2.00000
+    p22_d1.OffsetStudsU = 0.00000
+    p22_d1.OffsetStudsV = 0.00000
+    p22_d1.Parent = p22
+
+    local p22_d2 = Instance.new("Texture")
+    p22_d2.Name = "Texture"
+    p22_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p22_d2.Face = Enum.NormalId.Right
+    p22_d2.Transparency = 0.00000
+    p22_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p22_d2.StudsPerTileU = 2.00000
+    p22_d2.StudsPerTileV = 2.00000
+    p22_d2.OffsetStudsU = 0.00000
+    p22_d2.OffsetStudsV = 0.00000
+    p22_d2.Parent = p22
+
+    local p22_d3 = Instance.new("Texture")
+    p22_d3.Name = "Texture2"
+    p22_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p22_d3.Face = Enum.NormalId.Front
+    p22_d3.Transparency = 0.00000
+    p22_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p22_d3.StudsPerTileU = 2.00000
+    p22_d3.StudsPerTileV = 2.00000
+    p22_d3.OffsetStudsU = 0.00000
+    p22_d3.OffsetStudsV = 0.00000
+    p22_d3.Parent = p22
+
+    local p22_d4 = Instance.new("Texture")
+    p22_d4.Name = "Texture4"
+    p22_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p22_d4.Face = Enum.NormalId.Bottom
+    p22_d4.Transparency = 0.00000
+    p22_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p22_d4.StudsPerTileU = 2.00000
+    p22_d4.StudsPerTileV = 2.00000
+    p22_d4.OffsetStudsU = 0.00000
+    p22_d4.OffsetStudsV = 0.00000
+    p22_d4.Parent = p22
+
+    local p22_d5 = Instance.new("Texture")
+    p22_d5.Name = "Texture5"
+    p22_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p22_d5.Face = Enum.NormalId.Back
+    p22_d5.Transparency = 0.00000
+    p22_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p22_d5.StudsPerTileU = 2.00000
+    p22_d5.StudsPerTileV = 2.00000
+    p22_d5.OffsetStudsU = 0.00000
+    p22_d5.OffsetStudsV = 0.00000
+    p22_d5.Parent = p22
+
+    local p22_d6 = Instance.new("Texture")
+    p22_d6.Name = "Texture3"
+    p22_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p22_d6.Face = Enum.NormalId.Top
+    p22_d6.Transparency = 0.00000
+    p22_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p22_d6.StudsPerTileU = 2.00000
+    p22_d6.StudsPerTileV = 2.00000
+    p22_d6.OffsetStudsU = 0.00000
+    p22_d6.OffsetStudsV = 0.00000
+    p22_d6.Parent = p22
+
+    local p23 = Instance.new("Part")
+    p23.Name = "Part3"
+    p23.Size = Vector3.new(2.00100,108.00000,172.00000)
+    p23.CFrame = CFrame.new(56.00000,52.00000,17.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p23.Color = Color3.new(0.63922,0.63529,0.64706)
+    p23.Material = Enum.Material.Plastic
+    p23.Transparency = 0.00000
+    p23.Reflectance = 0.00000
+    p23.Anchored = true
+    p23.CanCollide = true
+    p23.CanTouch = true
+    p23.CanQuery = true
+    p23.CastShadow = true
+    p23.Shape = Enum.PartType.Block
+    p23.TopSurface = Enum.SurfaceType.Smooth
+    p23.BottomSurface = Enum.SurfaceType.Smooth
+    p23.LeftSurface = Enum.SurfaceType.Smooth
+    p23.RightSurface = Enum.SurfaceType.Smooth
+    p23.FrontSurface = Enum.SurfaceType.Smooth
+    p23.BackSurface = Enum.SurfaceType.Smooth
+    p23.Parent = folder
+
+    local p23_d1 = Instance.new("Texture")
+    p23_d1.Name = "Texture6"
+    p23_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p23_d1.Face = Enum.NormalId.Left
+    p23_d1.Transparency = 0.00000
+    p23_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p23_d1.StudsPerTileU = 2.00000
+    p23_d1.StudsPerTileV = 2.00000
+    p23_d1.OffsetStudsU = 0.00000
+    p23_d1.OffsetStudsV = 0.00000
+    p23_d1.Parent = p23
+
+    local p23_d2 = Instance.new("Texture")
+    p23_d2.Name = "Texture"
+    p23_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p23_d2.Face = Enum.NormalId.Right
+    p23_d2.Transparency = 0.00000
+    p23_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p23_d2.StudsPerTileU = 2.00000
+    p23_d2.StudsPerTileV = 2.00000
+    p23_d2.OffsetStudsU = 0.00000
+    p23_d2.OffsetStudsV = 0.00000
+    p23_d2.Parent = p23
+
+    local p23_d3 = Instance.new("Texture")
+    p23_d3.Name = "Texture2"
+    p23_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p23_d3.Face = Enum.NormalId.Front
+    p23_d3.Transparency = 0.00000
+    p23_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p23_d3.StudsPerTileU = 2.00000
+    p23_d3.StudsPerTileV = 2.00000
+    p23_d3.OffsetStudsU = 0.00000
+    p23_d3.OffsetStudsV = 0.00000
+    p23_d3.Parent = p23
+
+    local p23_d4 = Instance.new("Texture")
+    p23_d4.Name = "Texture4"
+    p23_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p23_d4.Face = Enum.NormalId.Bottom
+    p23_d4.Transparency = 0.00000
+    p23_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p23_d4.StudsPerTileU = 2.00000
+    p23_d4.StudsPerTileV = 2.00000
+    p23_d4.OffsetStudsU = 0.00000
+    p23_d4.OffsetStudsV = 0.00000
+    p23_d4.Parent = p23
+
+    local p23_d5 = Instance.new("Texture")
+    p23_d5.Name = "Texture5"
+    p23_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p23_d5.Face = Enum.NormalId.Back
+    p23_d5.Transparency = 0.00000
+    p23_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p23_d5.StudsPerTileU = 2.00000
+    p23_d5.StudsPerTileV = 2.00000
+    p23_d5.OffsetStudsU = 0.00000
+    p23_d5.OffsetStudsV = 0.00000
+    p23_d5.Parent = p23
+
+    local p23_d6 = Instance.new("Texture")
+    p23_d6.Name = "Texture3"
+    p23_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p23_d6.Face = Enum.NormalId.Top
+    p23_d6.Transparency = 0.00000
+    p23_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p23_d6.StudsPerTileU = 2.00000
+    p23_d6.StudsPerTileV = 2.00000
+    p23_d6.OffsetStudsU = 0.00000
+    p23_d6.OffsetStudsV = 0.00000
+    p23_d6.Parent = p23
+
+    local p24 = Instance.new("Part")
+    p24.Name = "Part11"
+    p24.Size = Vector3.new(40.00100,2.00000,18.00000)
+    p24.CFrame = CFrame.new(-4.00000,105.00000,582.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p24.Color = Color3.new(0.63922,0.63529,0.64706)
+    p24.Material = Enum.Material.Plastic
+    p24.Transparency = 0.00000
+    p24.Reflectance = 0.00000
+    p24.Anchored = true
+    p24.CanCollide = true
+    p24.CanTouch = true
+    p24.CanQuery = true
+    p24.CastShadow = true
+    p24.Shape = Enum.PartType.Block
+    p24.TopSurface = Enum.SurfaceType.Smooth
+    p24.BottomSurface = Enum.SurfaceType.Smooth
+    p24.LeftSurface = Enum.SurfaceType.Smooth
+    p24.RightSurface = Enum.SurfaceType.Smooth
+    p24.FrontSurface = Enum.SurfaceType.Smooth
+    p24.BackSurface = Enum.SurfaceType.Smooth
+    p24.Parent = folder
+
+    local p24_d1 = Instance.new("Texture")
+    p24_d1.Name = "Texture6"
+    p24_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p24_d1.Face = Enum.NormalId.Left
+    p24_d1.Transparency = 0.00000
+    p24_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p24_d1.StudsPerTileU = 2.00000
+    p24_d1.StudsPerTileV = 2.00000
+    p24_d1.OffsetStudsU = 0.00000
+    p24_d1.OffsetStudsV = 0.00000
+    p24_d1.Parent = p24
+
+    local p24_d2 = Instance.new("Texture")
+    p24_d2.Name = "Texture"
+    p24_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p24_d2.Face = Enum.NormalId.Right
+    p24_d2.Transparency = 0.00000
+    p24_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p24_d2.StudsPerTileU = 2.00000
+    p24_d2.StudsPerTileV = 2.00000
+    p24_d2.OffsetStudsU = 0.00000
+    p24_d2.OffsetStudsV = 0.00000
+    p24_d2.Parent = p24
+
+    local p24_d3 = Instance.new("Texture")
+    p24_d3.Name = "Texture2"
+    p24_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p24_d3.Face = Enum.NormalId.Front
+    p24_d3.Transparency = 0.00000
+    p24_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p24_d3.StudsPerTileU = 2.00000
+    p24_d3.StudsPerTileV = 2.00000
+    p24_d3.OffsetStudsU = 0.00000
+    p24_d3.OffsetStudsV = 0.00000
+    p24_d3.Parent = p24
+
+    local p24_d4 = Instance.new("Texture")
+    p24_d4.Name = "Texture4"
+    p24_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p24_d4.Face = Enum.NormalId.Bottom
+    p24_d4.Transparency = 0.00000
+    p24_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p24_d4.StudsPerTileU = 2.00000
+    p24_d4.StudsPerTileV = 2.00000
+    p24_d4.OffsetStudsU = 0.00000
+    p24_d4.OffsetStudsV = 0.00000
+    p24_d4.Parent = p24
+
+    local p24_d5 = Instance.new("Texture")
+    p24_d5.Name = "Texture5"
+    p24_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p24_d5.Face = Enum.NormalId.Back
+    p24_d5.Transparency = 0.00000
+    p24_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p24_d5.StudsPerTileU = 2.00000
+    p24_d5.StudsPerTileV = 2.00000
+    p24_d5.OffsetStudsU = 0.00000
+    p24_d5.OffsetStudsV = 0.00000
+    p24_d5.Parent = p24
+
+    local p24_d6 = Instance.new("Texture")
+    p24_d6.Name = "Texture3"
+    p24_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p24_d6.Face = Enum.NormalId.Top
+    p24_d6.Transparency = 0.00000
+    p24_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p24_d6.StudsPerTileU = 2.00000
+    p24_d6.StudsPerTileV = 2.00000
+    p24_d6.OffsetStudsU = 0.00000
+    p24_d6.OffsetStudsV = 0.00000
+    p24_d6.Parent = p24
+
+    local p25 = Instance.new("Part")
+    p25.Name = "Part3"
+    p25.Size = Vector3.new(2.00100,31.00000,2.00000)
+    p25.CFrame = CFrame.new(-5.00000,121.50000,656.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p25.Color = Color3.new(0.63922,0.63529,0.64706)
+    p25.Material = Enum.Material.Plastic
+    p25.Transparency = 0.00000
+    p25.Reflectance = 0.00000
+    p25.Anchored = true
+    p25.CanCollide = true
+    p25.CanTouch = true
+    p25.CanQuery = true
+    p25.CastShadow = true
+    p25.Shape = Enum.PartType.Block
+    p25.TopSurface = Enum.SurfaceType.Smooth
+    p25.BottomSurface = Enum.SurfaceType.Smooth
+    p25.LeftSurface = Enum.SurfaceType.Smooth
+    p25.RightSurface = Enum.SurfaceType.Smooth
+    p25.FrontSurface = Enum.SurfaceType.Smooth
+    p25.BackSurface = Enum.SurfaceType.Smooth
+    p25.Parent = folder
+
+    local p25_d1 = Instance.new("Texture")
+    p25_d1.Name = "Texture6"
+    p25_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p25_d1.Face = Enum.NormalId.Left
+    p25_d1.Transparency = 0.00000
+    p25_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p25_d1.StudsPerTileU = 2.00000
+    p25_d1.StudsPerTileV = 2.00000
+    p25_d1.OffsetStudsU = 0.00000
+    p25_d1.OffsetStudsV = 0.00000
+    p25_d1.Parent = p25
+
+    local p25_d2 = Instance.new("Texture")
+    p25_d2.Name = "Texture"
+    p25_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p25_d2.Face = Enum.NormalId.Right
+    p25_d2.Transparency = 0.00000
+    p25_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p25_d2.StudsPerTileU = 2.00000
+    p25_d2.StudsPerTileV = 2.00000
+    p25_d2.OffsetStudsU = 0.00000
+    p25_d2.OffsetStudsV = 0.00000
+    p25_d2.Parent = p25
+
+    local p25_d3 = Instance.new("Texture")
+    p25_d3.Name = "Texture2"
+    p25_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p25_d3.Face = Enum.NormalId.Front
+    p25_d3.Transparency = 0.00000
+    p25_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p25_d3.StudsPerTileU = 2.00000
+    p25_d3.StudsPerTileV = 2.00000
+    p25_d3.OffsetStudsU = 0.00000
+    p25_d3.OffsetStudsV = 0.00000
+    p25_d3.Parent = p25
+
+    local p25_d4 = Instance.new("Texture")
+    p25_d4.Name = "Texture4"
+    p25_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p25_d4.Face = Enum.NormalId.Bottom
+    p25_d4.Transparency = 0.00000
+    p25_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p25_d4.StudsPerTileU = 2.00000
+    p25_d4.StudsPerTileV = 2.00000
+    p25_d4.OffsetStudsU = 0.00000
+    p25_d4.OffsetStudsV = 0.00000
+    p25_d4.Parent = p25
+
+    local p25_d5 = Instance.new("Texture")
+    p25_d5.Name = "Texture5"
+    p25_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p25_d5.Face = Enum.NormalId.Back
+    p25_d5.Transparency = 0.00000
+    p25_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p25_d5.StudsPerTileU = 2.00000
+    p25_d5.StudsPerTileV = 2.00000
+    p25_d5.OffsetStudsU = 0.00000
+    p25_d5.OffsetStudsV = 0.00000
+    p25_d5.Parent = p25
+
+    local p25_d6 = Instance.new("Texture")
+    p25_d6.Name = "Texture3"
+    p25_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p25_d6.Face = Enum.NormalId.Top
+    p25_d6.Transparency = 0.00000
+    p25_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p25_d6.StudsPerTileU = 2.00000
+    p25_d6.StudsPerTileV = 2.00000
+    p25_d6.OffsetStudsU = 0.00000
+    p25_d6.OffsetStudsV = 0.00000
+    p25_d6.Parent = p25
+
+    local p26 = Instance.new("Part")
+    p26.Name = "Part5"
+    p26.Size = Vector3.new(2.00100,31.00000,2.00000)
+    p26.CFrame = CFrame.new(15.00000,121.50000,656.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p26.Color = Color3.new(0.63922,0.63529,0.64706)
+    p26.Material = Enum.Material.Plastic
+    p26.Transparency = 0.00000
+    p26.Reflectance = 0.00000
+    p26.Anchored = true
+    p26.CanCollide = true
+    p26.CanTouch = true
+    p26.CanQuery = true
+    p26.CastShadow = true
+    p26.Shape = Enum.PartType.Block
+    p26.TopSurface = Enum.SurfaceType.Smooth
+    p26.BottomSurface = Enum.SurfaceType.Smooth
+    p26.LeftSurface = Enum.SurfaceType.Smooth
+    p26.RightSurface = Enum.SurfaceType.Smooth
+    p26.FrontSurface = Enum.SurfaceType.Smooth
+    p26.BackSurface = Enum.SurfaceType.Smooth
+    p26.Parent = folder
+
+    local p26_d1 = Instance.new("Texture")
+    p26_d1.Name = "Texture6"
+    p26_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p26_d1.Face = Enum.NormalId.Left
+    p26_d1.Transparency = 0.00000
+    p26_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p26_d1.StudsPerTileU = 2.00000
+    p26_d1.StudsPerTileV = 2.00000
+    p26_d1.OffsetStudsU = 0.00000
+    p26_d1.OffsetStudsV = 0.00000
+    p26_d1.Parent = p26
+
+    local p26_d2 = Instance.new("Texture")
+    p26_d2.Name = "Texture"
+    p26_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p26_d2.Face = Enum.NormalId.Right
+    p26_d2.Transparency = 0.00000
+    p26_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p26_d2.StudsPerTileU = 2.00000
+    p26_d2.StudsPerTileV = 2.00000
+    p26_d2.OffsetStudsU = 0.00000
+    p26_d2.OffsetStudsV = 0.00000
+    p26_d2.Parent = p26
+
+    local p26_d3 = Instance.new("Texture")
+    p26_d3.Name = "Texture2"
+    p26_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p26_d3.Face = Enum.NormalId.Front
+    p26_d3.Transparency = 0.00000
+    p26_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p26_d3.StudsPerTileU = 2.00000
+    p26_d3.StudsPerTileV = 2.00000
+    p26_d3.OffsetStudsU = 0.00000
+    p26_d3.OffsetStudsV = 0.00000
+    p26_d3.Parent = p26
+
+    local p26_d4 = Instance.new("Texture")
+    p26_d4.Name = "Texture4"
+    p26_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p26_d4.Face = Enum.NormalId.Bottom
+    p26_d4.Transparency = 0.00000
+    p26_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p26_d4.StudsPerTileU = 2.00000
+    p26_d4.StudsPerTileV = 2.00000
+    p26_d4.OffsetStudsU = 0.00000
+    p26_d4.OffsetStudsV = 0.00000
+    p26_d4.Parent = p26
+
+    local p26_d5 = Instance.new("Texture")
+    p26_d5.Name = "Texture5"
+    p26_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p26_d5.Face = Enum.NormalId.Back
+    p26_d5.Transparency = 0.00000
+    p26_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p26_d5.StudsPerTileU = 2.00000
+    p26_d5.StudsPerTileV = 2.00000
+    p26_d5.OffsetStudsU = 0.00000
+    p26_d5.OffsetStudsV = 0.00000
+    p26_d5.Parent = p26
+
+    local p26_d6 = Instance.new("Texture")
+    p26_d6.Name = "Texture3"
+    p26_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p26_d6.Face = Enum.NormalId.Top
+    p26_d6.Transparency = 0.00000
+    p26_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p26_d6.StudsPerTileU = 2.00000
+    p26_d6.StudsPerTileV = 2.00000
+    p26_d6.OffsetStudsU = 0.00000
+    p26_d6.OffsetStudsV = 0.00000
+    p26_d6.Parent = p26
+
+    local p27 = Instance.new("Part")
+    p27.Name = "Part"
+    p27.Size = Vector3.new(2.00100,31.00000,2.00000)
+    p27.CFrame = CFrame.new(-25.00000,121.50000,656.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p27.Color = Color3.new(0.63922,0.63529,0.64706)
+    p27.Material = Enum.Material.Plastic
+    p27.Transparency = 0.00000
+    p27.Reflectance = 0.00000
+    p27.Anchored = true
+    p27.CanCollide = true
+    p27.CanTouch = true
+    p27.CanQuery = true
+    p27.CastShadow = true
+    p27.Shape = Enum.PartType.Block
+    p27.TopSurface = Enum.SurfaceType.Smooth
+    p27.BottomSurface = Enum.SurfaceType.Smooth
+    p27.LeftSurface = Enum.SurfaceType.Smooth
+    p27.RightSurface = Enum.SurfaceType.Smooth
+    p27.FrontSurface = Enum.SurfaceType.Smooth
+    p27.BackSurface = Enum.SurfaceType.Smooth
+    p27.Parent = folder
+
+    local p27_d1 = Instance.new("Texture")
+    p27_d1.Name = "Texture6"
+    p27_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p27_d1.Face = Enum.NormalId.Left
+    p27_d1.Transparency = 0.00000
+    p27_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p27_d1.StudsPerTileU = 2.00000
+    p27_d1.StudsPerTileV = 2.00000
+    p27_d1.OffsetStudsU = 0.00000
+    p27_d1.OffsetStudsV = 0.00000
+    p27_d1.Parent = p27
+
+    local p27_d2 = Instance.new("Texture")
+    p27_d2.Name = "Texture"
+    p27_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p27_d2.Face = Enum.NormalId.Right
+    p27_d2.Transparency = 0.00000
+    p27_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p27_d2.StudsPerTileU = 2.00000
+    p27_d2.StudsPerTileV = 2.00000
+    p27_d2.OffsetStudsU = 0.00000
+    p27_d2.OffsetStudsV = 0.00000
+    p27_d2.Parent = p27
+
+    local p27_d3 = Instance.new("Texture")
+    p27_d3.Name = "Texture2"
+    p27_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p27_d3.Face = Enum.NormalId.Front
+    p27_d3.Transparency = 0.00000
+    p27_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p27_d3.StudsPerTileU = 2.00000
+    p27_d3.StudsPerTileV = 2.00000
+    p27_d3.OffsetStudsU = 0.00000
+    p27_d3.OffsetStudsV = 0.00000
+    p27_d3.Parent = p27
+
+    local p27_d4 = Instance.new("Texture")
+    p27_d4.Name = "Texture4"
+    p27_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p27_d4.Face = Enum.NormalId.Bottom
+    p27_d4.Transparency = 0.00000
+    p27_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p27_d4.StudsPerTileU = 2.00000
+    p27_d4.StudsPerTileV = 2.00000
+    p27_d4.OffsetStudsU = 0.00000
+    p27_d4.OffsetStudsV = 0.00000
+    p27_d4.Parent = p27
+
+    local p27_d5 = Instance.new("Texture")
+    p27_d5.Name = "Texture5"
+    p27_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p27_d5.Face = Enum.NormalId.Back
+    p27_d5.Transparency = 0.00000
+    p27_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p27_d5.StudsPerTileU = 2.00000
+    p27_d5.StudsPerTileV = 2.00000
+    p27_d5.OffsetStudsU = 0.00000
+    p27_d5.OffsetStudsV = 0.00000
+    p27_d5.Parent = p27
+
+    local p27_d6 = Instance.new("Texture")
+    p27_d6.Name = "Texture3"
+    p27_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p27_d6.Face = Enum.NormalId.Top
+    p27_d6.Transparency = 0.00000
+    p27_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p27_d6.StudsPerTileU = 2.00000
+    p27_d6.StudsPerTileV = 2.00000
+    p27_d6.OffsetStudsU = 0.00000
+    p27_d6.OffsetStudsV = 0.00000
+    p27_d6.Parent = p27
+
+    local p28 = Instance.new("Part")
+    p28.Name = "Part4"
+    p28.Size = Vector3.new(18.00100,31.00000,2.00000)
+    p28.CFrame = CFrame.new(5.00000,121.50000,656.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p28.Color = Color3.new(0.63922,0.63529,0.64706)
+    p28.Material = Enum.Material.Plastic
+    p28.Transparency = 1.00000
+    p28.Reflectance = 0.00000
+    p28.Anchored = true
+    p28.CanCollide = false
+    p28.CanTouch = true
+    p28.CanQuery = true
+    p28.CastShadow = true
+    p28.Shape = Enum.PartType.Block
+    p28.TopSurface = Enum.SurfaceType.Smooth
+    p28.BottomSurface = Enum.SurfaceType.Smooth
+    p28.LeftSurface = Enum.SurfaceType.Smooth
+    p28.RightSurface = Enum.SurfaceType.Smooth
+    p28.FrontSurface = Enum.SurfaceType.Smooth
+    p28.BackSurface = Enum.SurfaceType.Smooth
+    p28.Parent = folder
+
+    local p28_d1 = Instance.new("Decal")
+    p28_d1.Name = "Decal"
+    p28_d1.Texture = "rbxthumb://type=Asset&id=120833786279619&w=420&h=420"
+    p28_d1.Face = Enum.NormalId.Front
+    p28_d1.Transparency = 0.00000
+    p28_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p28_d1.Parent = p28
+
+    local p29 = Instance.new("Part")
+    p29.Name = "Part2"
+    p29.Size = Vector3.new(18.00100,31.00000,2.00000)
+    p29.CFrame = CFrame.new(-15.00000,121.50000,656.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p29.Color = Color3.new(0.63922,0.63529,0.64706)
+    p29.Material = Enum.Material.Plastic
+    p29.Transparency = 1.00000
+    p29.Reflectance = 0.00000
+    p29.Anchored = true
+    p29.CanCollide = false
+    p29.CanTouch = true
+    p29.CanQuery = true
+    p29.CastShadow = true
+    p29.Shape = Enum.PartType.Block
+    p29.TopSurface = Enum.SurfaceType.Smooth
+    p29.BottomSurface = Enum.SurfaceType.Smooth
+    p29.LeftSurface = Enum.SurfaceType.Smooth
+    p29.RightSurface = Enum.SurfaceType.Smooth
+    p29.FrontSurface = Enum.SurfaceType.Smooth
+    p29.BackSurface = Enum.SurfaceType.Smooth
+    p29.Parent = folder
+
+    local p29_d1 = Instance.new("Decal")
+    p29_d1.Name = "Decal"
+    p29_d1.Texture = "rbxthumb://type=Asset&id=81335862348761&w=420&h=420"
+    p29_d1.Face = Enum.NormalId.Front
+    p29_d1.Transparency = 0.00000
+    p29_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p29_d1.Parent = p29
+
+    local p30 = Instance.new("Part")
+    p30.Name = "FlyCameraFocus"
+    p30.Size = Vector3.new(1.00000,1.00000,1.00000)
+    p30.CFrame = CFrame.new(0.00000,14.99957,-30.00000,-1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,-1.00000)
+    p30.Color = Color3.new(0.63922,0.63529,0.64706)
+    p30.Material = Enum.Material.Plastic
+    p30.Transparency = 1.00000
+    p30.Reflectance = 0.00000
+    p30.Anchored = false
+    p30.CanCollide = false
+    p30.CanTouch = false
+    p30.CanQuery = false
+    p30.CastShadow = true
+    p30.Shape = Enum.PartType.Block
+    p30.TopSurface = Enum.SurfaceType.Smooth
+    p30.BottomSurface = Enum.SurfaceType.Smooth
+    p30.LeftSurface = Enum.SurfaceType.Smooth
+    p30.RightSurface = Enum.SurfaceType.Smooth
+    p30.FrontSurface = Enum.SurfaceType.Smooth
+    p30.BackSurface = Enum.SurfaceType.Smooth
+    p30.Parent = folder
+
+    local p31 = Instance.new("Part")
+    p31.Name = "Part7"
+    p31.Size = Vector3.new(110.00000,2.00000,411.00000)
+    p31.CFrame = CFrame.new(2.00000,52.46906,368.27591,1.00000,-0.00000,0.00000,0.00000,0.96593,0.25880,-0.00000,-0.25880,0.96593)
+    p31.Color = Color3.new(0.63922,0.63529,0.64706)
+    p31.Material = Enum.Material.Plastic
+    p31.Transparency = 0.00000
+    p31.Reflectance = 0.00000
+    p31.Anchored = true
+    p31.CanCollide = true
+    p31.CanTouch = true
+    p31.CanQuery = true
+    p31.CastShadow = true
+    p31.Shape = Enum.PartType.Block
+    p31.TopSurface = Enum.SurfaceType.Smooth
+    p31.BottomSurface = Enum.SurfaceType.Smooth
+    p31.LeftSurface = Enum.SurfaceType.Smooth
+    p31.RightSurface = Enum.SurfaceType.Smooth
+    p31.FrontSurface = Enum.SurfaceType.Smooth
+    p31.BackSurface = Enum.SurfaceType.Smooth
+    p31.Parent = folder
+
+    local p31_d1 = Instance.new("Texture")
+    p31_d1.Name = "Texture6"
+    p31_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p31_d1.Face = Enum.NormalId.Left
+    p31_d1.Transparency = 0.00000
+    p31_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p31_d1.StudsPerTileU = 2.00000
+    p31_d1.StudsPerTileV = 2.00000
+    p31_d1.OffsetStudsU = 0.00000
+    p31_d1.OffsetStudsV = 0.00000
+    p31_d1.Parent = p31
+
+    local p31_d2 = Instance.new("Texture")
+    p31_d2.Name = "Texture"
+    p31_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p31_d2.Face = Enum.NormalId.Right
+    p31_d2.Transparency = 0.00000
+    p31_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p31_d2.StudsPerTileU = 2.00000
+    p31_d2.StudsPerTileV = 2.00000
+    p31_d2.OffsetStudsU = 0.00000
+    p31_d2.OffsetStudsV = 0.00000
+    p31_d2.Parent = p31
+
+    local p31_d3 = Instance.new("Texture")
+    p31_d3.Name = "Texture3"
+    p31_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p31_d3.Face = Enum.NormalId.Top
+    p31_d3.Transparency = 0.00000
+    p31_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p31_d3.StudsPerTileU = 2.00000
+    p31_d3.StudsPerTileV = 2.00000
+    p31_d3.OffsetStudsU = 0.00000
+    p31_d3.OffsetStudsV = 0.00000
+    p31_d3.Parent = p31
+
+    local p31_d4 = Instance.new("Texture")
+    p31_d4.Name = "Texture5"
+    p31_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p31_d4.Face = Enum.NormalId.Back
+    p31_d4.Transparency = 0.00000
+    p31_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p31_d4.StudsPerTileU = 2.00000
+    p31_d4.StudsPerTileV = 2.00000
+    p31_d4.OffsetStudsU = 0.00000
+    p31_d4.OffsetStudsV = 0.00000
+    p31_d4.Parent = p31
+
+    local p31_d5 = Instance.new("Texture")
+    p31_d5.Name = "Texture4"
+    p31_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p31_d5.Face = Enum.NormalId.Bottom
+    p31_d5.Transparency = 0.00000
+    p31_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p31_d5.StudsPerTileU = 2.00000
+    p31_d5.StudsPerTileV = 2.00000
+    p31_d5.OffsetStudsU = 0.00000
+    p31_d5.OffsetStudsV = 0.00000
+    p31_d5.Parent = p31
+
+    local p31_d6 = Instance.new("Texture")
+    p31_d6.Name = "Texture2"
+    p31_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p31_d6.Face = Enum.NormalId.Front
+    p31_d6.Transparency = 0.00000
+    p31_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p31_d6.StudsPerTileU = 2.00000
+    p31_d6.StudsPerTileV = 2.00000
+    p31_d6.OffsetStudsU = 0.00000
+    p31_d6.OffsetStudsV = 0.00000
+    p31_d6.Parent = p31
+
+    local p32 = Instance.new("Part")
+    p32.Name = "Part12"
+    p32.Size = Vector3.new(43.00100,2.00000,86.00000)
+    p32.CFrame = CFrame.new(-5.50000,105.00000,640.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p32.Color = Color3.new(0.63922,0.63529,0.64706)
+    p32.Material = Enum.Material.Plastic
+    p32.Transparency = 0.00000
+    p32.Reflectance = 0.00000
+    p32.Anchored = true
+    p32.CanCollide = true
+    p32.CanTouch = true
+    p32.CanQuery = true
+    p32.CastShadow = true
+    p32.Shape = Enum.PartType.Block
+    p32.TopSurface = Enum.SurfaceType.Smooth
+    p32.BottomSurface = Enum.SurfaceType.Smooth
+    p32.LeftSurface = Enum.SurfaceType.Smooth
+    p32.RightSurface = Enum.SurfaceType.Smooth
+    p32.FrontSurface = Enum.SurfaceType.Smooth
+    p32.BackSurface = Enum.SurfaceType.Smooth
+    p32.Parent = folder
+
+    local p32_d1 = Instance.new("Texture")
+    p32_d1.Name = "Texture6"
+    p32_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p32_d1.Face = Enum.NormalId.Left
+    p32_d1.Transparency = 0.00000
+    p32_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p32_d1.StudsPerTileU = 2.00000
+    p32_d1.StudsPerTileV = 2.00000
+    p32_d1.OffsetStudsU = 0.00000
+    p32_d1.OffsetStudsV = 0.00000
+    p32_d1.Parent = p32
+
+    local p32_d2 = Instance.new("Texture")
+    p32_d2.Name = "Texture"
+    p32_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p32_d2.Face = Enum.NormalId.Right
+    p32_d2.Transparency = 0.00000
+    p32_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p32_d2.StudsPerTileU = 2.00000
+    p32_d2.StudsPerTileV = 2.00000
+    p32_d2.OffsetStudsU = 0.00000
+    p32_d2.OffsetStudsV = 0.00000
+    p32_d2.Parent = p32
+
+    local p32_d3 = Instance.new("Texture")
+    p32_d3.Name = "Texture2"
+    p32_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p32_d3.Face = Enum.NormalId.Front
+    p32_d3.Transparency = 0.00000
+    p32_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p32_d3.StudsPerTileU = 2.00000
+    p32_d3.StudsPerTileV = 2.00000
+    p32_d3.OffsetStudsU = 0.00000
+    p32_d3.OffsetStudsV = 0.00000
+    p32_d3.Parent = p32
+
+    local p32_d4 = Instance.new("Texture")
+    p32_d4.Name = "Texture4"
+    p32_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p32_d4.Face = Enum.NormalId.Bottom
+    p32_d4.Transparency = 0.00000
+    p32_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p32_d4.StudsPerTileU = 2.00000
+    p32_d4.StudsPerTileV = 2.00000
+    p32_d4.OffsetStudsU = 0.00000
+    p32_d4.OffsetStudsV = 0.00000
+    p32_d4.Parent = p32
+
+    local p32_d5 = Instance.new("Texture")
+    p32_d5.Name = "Texture5"
+    p32_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p32_d5.Face = Enum.NormalId.Back
+    p32_d5.Transparency = 0.00000
+    p32_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p32_d5.StudsPerTileU = 2.00000
+    p32_d5.StudsPerTileV = 2.00000
+    p32_d5.OffsetStudsU = 0.00000
+    p32_d5.OffsetStudsV = 0.00000
+    p32_d5.Parent = p32
+
+    local p32_d6 = Instance.new("Texture")
+    p32_d6.Name = "Texture3"
+    p32_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p32_d6.Face = Enum.NormalId.Top
+    p32_d6.Transparency = 0.00000
+    p32_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p32_d6.StudsPerTileU = 2.00000
+    p32_d6.StudsPerTileV = 2.00000
+    p32_d6.OffsetStudsU = 0.00000
+    p32_d6.OffsetStudsV = 0.00000
+    p32_d6.Parent = p32
+
+    local p33 = Instance.new("Part")
+    p33.Name = "Part8"
+    p33.Size = Vector3.new(109.00000,2.00000,172.00000)
+    p33.CFrame = CFrame.new(2.50000,-1.00000,17.00000,1.00000,0.00000,0.00000,0.00000,1.00000,0.00000,0.00000,0.00000,1.00000)
+    p33.Color = Color3.new(0.63922,0.63529,0.64706)
+    p33.Material = Enum.Material.Plastic
+    p33.Transparency = 0.00000
+    p33.Reflectance = 0.00000
+    p33.Anchored = true
+    p33.CanCollide = true
+    p33.CanTouch = true
+    p33.CanQuery = true
+    p33.CastShadow = true
+    p33.Shape = Enum.PartType.Block
+    p33.TopSurface = Enum.SurfaceType.Smooth
+    p33.BottomSurface = Enum.SurfaceType.Smooth
+    p33.LeftSurface = Enum.SurfaceType.Smooth
+    p33.RightSurface = Enum.SurfaceType.Smooth
+    p33.FrontSurface = Enum.SurfaceType.Smooth
+    p33.BackSurface = Enum.SurfaceType.Smooth
+    p33.Parent = folder
+
+    local p33_d1 = Instance.new("Texture")
+    p33_d1.Name = "Texture6"
+    p33_d1.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p33_d1.Face = Enum.NormalId.Left
+    p33_d1.Transparency = 0.00000
+    p33_d1.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p33_d1.StudsPerTileU = 2.00000
+    p33_d1.StudsPerTileV = 2.00000
+    p33_d1.OffsetStudsU = 0.00000
+    p33_d1.OffsetStudsV = 0.00000
+    p33_d1.Parent = p33
+
+    local p33_d2 = Instance.new("Texture")
+    p33_d2.Name = "Texture"
+    p33_d2.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p33_d2.Face = Enum.NormalId.Right
+    p33_d2.Transparency = 0.00000
+    p33_d2.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p33_d2.StudsPerTileU = 2.00000
+    p33_d2.StudsPerTileV = 2.00000
+    p33_d2.OffsetStudsU = 0.00000
+    p33_d2.OffsetStudsV = 0.00000
+    p33_d2.Parent = p33
+
+    local p33_d3 = Instance.new("Texture")
+    p33_d3.Name = "Texture2"
+    p33_d3.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p33_d3.Face = Enum.NormalId.Front
+    p33_d3.Transparency = 0.00000
+    p33_d3.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p33_d3.StudsPerTileU = 2.00000
+    p33_d3.StudsPerTileV = 2.00000
+    p33_d3.OffsetStudsU = 0.00000
+    p33_d3.OffsetStudsV = 0.00000
+    p33_d3.Parent = p33
+
+    local p33_d4 = Instance.new("Texture")
+    p33_d4.Name = "Texture4"
+    p33_d4.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p33_d4.Face = Enum.NormalId.Bottom
+    p33_d4.Transparency = 0.00000
+    p33_d4.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p33_d4.StudsPerTileU = 2.00000
+    p33_d4.StudsPerTileV = 2.00000
+    p33_d4.OffsetStudsU = 0.00000
+    p33_d4.OffsetStudsV = 0.00000
+    p33_d4.Parent = p33
+
+    local p33_d5 = Instance.new("Texture")
+    p33_d5.Name = "Texture5"
+    p33_d5.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p33_d5.Face = Enum.NormalId.Back
+    p33_d5.Transparency = 0.00000
+    p33_d5.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p33_d5.StudsPerTileU = 2.00000
+    p33_d5.StudsPerTileV = 2.00000
+    p33_d5.OffsetStudsU = 0.00000
+    p33_d5.OffsetStudsV = 0.00000
+    p33_d5.Parent = p33
+
+    local p33_d6 = Instance.new("Texture")
+    p33_d6.Name = "Texture3"
+    p33_d6.Texture = "rbxthumb://type=Asset&id=527885918&w=420&h=420"
+    p33_d6.Face = Enum.NormalId.Top
+    p33_d6.Transparency = 0.00000
+    p33_d6.Color3 = Color3.new(1.00000,1.00000,1.00000)
+    p33_d6.StudsPerTileU = 2.00000
+    p33_d6.StudsPerTileV = 2.00000
+    p33_d6.OffsetStudsU = 0.00000
+    p33_d6.OffsetStudsV = 0.00000
+    p33_d6.Parent = p33
+
+    return folder
+end
+Build()
